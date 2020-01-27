@@ -1,0 +1,269 @@
+AchievmenetsMainFunc 2019-12-28 20:27:52,294 INFO Successful request for 1001200
+AchievmenetsMainFunc 2019-12-28 20:27:57,273 INFO Successful request for 1109460
+AchievmenetsMainFunc 2019-12-28 20:27:57,279 WARNING Failed request for 1172310
+AchievmenetsMainFunc 2019-12-28 20:27:57,288 WARNING Failed request for 1166210
+AchievmenetsMainFunc 2019-12-28 20:27:57,289 WARNING Failed request for 1196400
+AchievmenetsMainFunc 2019-12-28 20:27:57,317 WARNING Failed request for 862220
+AchievmenetsMainFunc 2019-12-28 20:27:57,325 WARNING Failed request for 350300
+AchievmenetsMainFunc 2019-12-28 20:27:57,325 WARNING Failed request for 1166200
+AchievmenetsMainFunc 2019-12-28 20:27:57,346 WARNING Failed request for 1178020
+AchievmenetsMainFunc 2019-12-28 20:27:59,660 INFO Successful request for 836590
+AchievmenetsMainFunc 2019-12-28 20:28:06,027 INFO Successful request for 836590
+AchievmenetsMainFunc 2019-12-28 20:30:21,661 INFO Successful request for 1166200
+AchievmenetsMainFunc 2019-12-28 20:30:21,704 INFO Successful request for 1166210
+AchievmenetsMainFunc 2019-12-28 20:30:21,845 WARNING Failed request for 350300
+AchievmenetsMainFunc 2019-12-28 20:30:26,481 INFO Successful request for 836590
+AchievmenetsMainFunc 2019-12-28 20:30:26,489 INFO Successful request for 1109460
+AchievmenetsMainFunc 2019-12-28 20:30:26,726 WARNING Failed request for 1172310
+AchievmenetsMainFunc 2019-12-28 20:30:26,730 WARNING Failed request for 862220
+AchievmenetsMainFunc 2019-12-28 20:30:26,733 WARNING Failed request for 1196400
+AchievmenetsMainFunc 2019-12-28 20:30:26,755 INFO Successful request for 1001200
+AchievmenetsMainFunc 2019-12-28 20:30:26,815 WARNING Failed request for 1178020
+AchievmenetsMainFunc 2019-12-28 20:30:26,936 WARNING Failed request for 1166200
+AchievmenetsMainFunc 2019-12-28 20:30:27,038 WARNING Failed request for 1166210
+AchievmenetsCrunchFunc 2019-12-28 20:30:27,040 WARNING A problem ocurred with 1166210
+AchievmenetsMainFunc 2019-12-28 20:35:33,174 WARNING Failed request for 862220
+AchievmenetsMainFunc 2019-12-28 20:35:33,181 INFO Successful request for 1166200
+AchievmenetsMainFunc 2019-12-28 20:35:35,263 WARNING Failed request for 350300
+AchievmenetsMainFunc 2019-12-28 20:35:35,266 WARNING Failed request for 1178020
+AchievmenetsMainFunc 2019-12-28 20:35:35,680 WARNING Failed request for 1166200
+AchievmenetsMainFunc 2019-12-28 20:35:37,646 INFO Successful request for 836590
+AchievmenetsMainFunc 2019-12-28 20:35:37,892 WARNING Failed request for 1166210
+AchievmenetsMainFunc 2019-12-28 20:35:37,933 WARNING Failed request for 1172310
+AchievmenetsMainFunc 2019-12-28 20:35:37,972 WARNING Failed request for 1196400
+AchievmenetsMainFunc 2019-12-28 20:35:38,238 INFO Successful request for 1001200
+AchievmenetsMainFunc 2019-12-28 20:35:38,347 INFO Successful request for 1109460
+AchievmenetsCrunchFunc 2019-12-28 20:35:38,349 INFO Achievements for 1109460 correctly saved
+AchievmenetsMainFunc 2019-12-28 20:37:09,313 INFO Successful request for 1172310
+AchievmenetsMainFunc 2019-12-28 20:37:09,322 INFO Successful request for 1109460
+AchievmenetsMainFunc 2019-12-28 20:37:09,358 INFO Successful request for 1178020
+AchievmenetsMainFunc 2019-12-28 20:37:09,374 WARNING Failed request for 1166210
+AchievmenetsMainFunc 2019-12-28 20:37:09,474 WARNING Failed request for 1166200
+AchievmenetsMainFunc 2019-12-28 20:37:09,618 INFO Successful request for 1172310
+AchievmenetsMainFunc 2019-12-28 20:37:11,722 WARNING Failed request for 862220
+AchievmenetsMainFunc 2019-12-28 20:37:14,087 INFO Successful request for 1001200
+AchievmenetsMainFunc 2019-12-28 20:37:14,403 WARNING Failed request for 350300
+AchievmenetsMainFunc 2019-12-28 20:37:14,661 WARNING Failed request for 1178020
+AchievmenetsMainFunc 2019-12-28 20:37:14,932 WARNING Failed request for 1172310
+AchievmenetsMainFunc 2019-12-28 20:37:15,212 INFO Successful request for 836590
+AchievmenetsMainFunc 2019-12-28 20:37:17,407 WARNING Failed request for 1196400
+AchievmenetsCrunchFunc 2019-12-28 20:37:17,410 WARNING A problem ocurred with 1196400
+AchievmenetsCrunchFunc 2019-12-28 20:37:17,414 INFO Achievements for 836590 correctly saved
+AchievmenetsCrunchFunc 2019-12-28 20:37:17,418 WARNING A problem ocurred with 1172310
+AchievmenetsCrunchFunc 2019-12-28 20:37:17,421 WARNING A problem ocurred with 1178020
+AchievmenetsCrunchFunc 2019-12-28 20:37:17,424 WARNING A problem ocurred with 350300
+AchievmenetsCrunchFunc 2019-12-28 20:37:17,426 INFO Achievements for 1001200 correctly saved
+AchievmenetsCrunchFunc 2019-12-28 20:37:17,430 WARNING A problem ocurred with 862220
+AchievmenetsCrunchFunc 2019-12-28 20:37:17,433 WARNING A problem ocurred with 1166200
+AchievmenetsCrunchFunc 2019-12-28 20:37:17,437 WARNING A problem ocurred with 1166210
+AchievmenetsCrunchFunc 2019-12-28 20:37:17,441 INFO Achievements for 1109460 correctly saved
+AchievmenetsMainFunc 2019-12-28 20:37:21,015 INFO Successful request for 1178120
+AchievmenetsMainFunc 2019-12-28 20:37:22,774 WARNING Failed request for 1190410
+AchievmenetsMainFunc 2019-12-28 20:37:22,774 WARNING Failed request for 1191450
+AchievmenetsMainFunc 2019-12-28 20:37:22,781 WARNING Failed request for 1132210
+AchievmenetsMainFunc 2019-12-28 20:37:22,804 WARNING Failed request for 254900
+AchievmenetsMainFunc 2019-12-28 20:37:22,807 WARNING Failed request for 1185950
+AchievmenetsMainFunc 2019-12-28 20:37:22,808 INFO Successful request for 1186580
+AchievmenetsMainFunc 2019-12-28 20:37:22,808 WARNING Failed request for 865160
+AchievmenetsMainFunc 2019-12-28 20:37:22,809 INFO Successful request for 756530
+AchievmenetsMainFunc 2019-12-28 20:37:22,870 INFO Successful request for 728530
+AchievmenetsMainFunc 2019-12-28 20:37:26,364 INFO Successful request for 1178120
+AchievmenetsCrunchFunc 2019-12-28 20:37:26,373 INFO Achievements for 1178120 correctly saved
+AchievmenetsCrunchFunc 2019-12-28 20:37:26,380 INFO Achievements for 728530 correctly saved
+AchievmenetsCrunchFunc 2019-12-28 20:37:26,384 INFO Achievements for 756530 correctly saved
+AchievmenetsCrunchFunc 2019-12-28 20:37:26,387 WARNING A problem ocurred with 865160
+AchievmenetsCrunchFunc 2019-12-28 20:37:26,390 INFO Achievements for 1186580 correctly saved
+AchievmenetsCrunchFunc 2019-12-28 20:37:26,393 WARNING A problem ocurred with 1185950
+AchievmenetsCrunchFunc 2019-12-28 20:37:26,396 WARNING A problem ocurred with 254900
+AchievmenetsCrunchFunc 2019-12-28 20:37:26,399 WARNING A problem ocurred with 1132210
+AchievmenetsCrunchFunc 2019-12-28 20:37:26,401 WARNING A problem ocurred with 1191450
+AchievmenetsCrunchFunc 2019-12-28 20:37:26,403 WARNING A problem ocurred with 1190410
+AchievmenetsMainFunc 2019-12-28 20:37:27,238 INFO Successful request for 1052440
+AchievmenetsMainFunc 2019-12-28 20:37:31,721 INFO Successful request for 1052430
+AchievmenetsMainFunc 2019-12-28 20:37:31,730 WARNING Failed request for 254940
+AchievmenetsMainFunc 2019-12-28 20:37:31,779 WARNING Failed request for 1190150
+AchievmenetsMainFunc 2019-12-28 20:37:31,803 INFO Successful request for 1182720
+AchievmenetsMainFunc 2019-12-28 20:37:31,804 INFO Successful request for 1048020
+AchievmenetsMainFunc 2019-12-28 20:37:31,839 WARNING Failed request for 1193570
+AchievmenetsMainFunc 2019-12-28 20:37:31,848 WARNING Failed request for 696120
+AchievmenetsMainFunc 2019-12-28 20:37:31,855 WARNING Failed request for 1103800
+AchievmenetsMainFunc 2019-12-28 20:37:31,860 WARNING Failed request for 616920
+AchievmenetsCrunchFunc 2019-12-28 20:37:31,862 WARNING A problem ocurred with 616920
+AchievmenetsCrunchFunc 2019-12-28 20:37:31,917 WARNING A problem ocurred with 1103800
+AchievmenetsCrunchFunc 2019-12-28 20:37:31,921 WARNING A problem ocurred with 696120
+AchievmenetsCrunchFunc 2019-12-28 20:37:31,924 WARNING A problem ocurred with 1193570
+AchievmenetsCrunchFunc 2019-12-28 20:37:31,928 INFO Achievements for 1048020 correctly saved
+AchievmenetsCrunchFunc 2019-12-28 20:37:31,932 INFO Achievements for 1182720 correctly saved
+AchievmenetsCrunchFunc 2019-12-28 20:37:31,937 WARNING A problem ocurred with 1190150
+AchievmenetsCrunchFunc 2019-12-28 20:37:31,940 WARNING A problem ocurred with 254940
+AchievmenetsCrunchFunc 2019-12-28 20:37:31,944 INFO Achievements for 1052430 correctly saved
+AchievmenetsCrunchFunc 2019-12-28 20:37:31,948 INFO Achievements for 1052440 correctly saved
+AchievmenetsMainFunc 2019-12-28 20:37:37,307 INFO Successful request for 1192740
+AchievmenetsMainFunc 2019-12-28 20:37:37,310 INFO Successful request for 1191680
+AchievmenetsMainFunc 2019-12-28 20:37:37,320 INFO Successful request for 1109840
+AchievmenetsMainFunc 2019-12-28 20:37:37,340 INFO Successful request for 756890
+AchievmenetsMainFunc 2019-12-28 20:37:37,357 INFO Successful request for 898430
+AchievmenetsMainFunc 2019-12-28 20:37:37,366 WARNING Failed request for 1102940
+AchievmenetsMainFunc 2019-12-28 20:37:37,392 WARNING Failed request for 1193550
+AchievmenetsMainFunc 2019-12-28 20:37:37,410 INFO Successful request for 1165860
+AchievmenetsMainFunc 2019-12-28 20:37:37,423 INFO Successful request for 951680
+AchievmenetsMainFunc 2019-12-28 20:37:37,441 INFO Successful request for 1156980
+AchievmenetsCrunchFunc 2019-12-28 20:37:37,443 INFO Achievements for 1156980 correctly saved
+AchievmenetsCrunchFunc 2019-12-28 20:37:37,446 INFO Achievements for 951680 correctly saved
+AchievmenetsCrunchFunc 2019-12-28 20:37:37,453 INFO Achievements for 1165860 correctly saved
+AchievmenetsCrunchFunc 2019-12-28 20:37:37,461 WARNING A problem ocurred with 1193550
+AchievmenetsCrunchFunc 2019-12-28 20:37:37,464 WARNING A problem ocurred with 1102940
+AchievmenetsCrunchFunc 2019-12-28 20:37:37,471 INFO Achievements for 898430 correctly saved
+AchievmenetsCrunchFunc 2019-12-28 20:37:37,474 INFO Achievements for 756890 correctly saved
+AchievmenetsCrunchFunc 2019-12-28 20:37:37,478 INFO Achievements for 1109840 correctly saved
+AchievmenetsCrunchFunc 2019-12-28 20:37:37,482 INFO Achievements for 1191680 correctly saved
+AchievmenetsCrunchFunc 2019-12-28 20:37:37,488 INFO Achievements for 1192740 correctly saved
+AchievmenetsMainFunc 2019-12-28 20:37:41,105 WARNING Failed request for 1181440
+AchievmenetsMainFunc 2019-12-28 20:37:42,578 WARNING Failed request for 1194380
+AchievmenetsMainFunc 2019-12-28 20:37:42,816 WARNING Failed request for 1198060
+AchievmenetsMainFunc 2019-12-28 20:37:42,852 INFO Successful request for 1066030
+AchievmenetsMainFunc 2019-12-28 20:37:42,854 INFO Successful request for 1194620
+AchievmenetsMainFunc 2019-12-28 20:37:42,913 INFO Successful request for 1184780
+AchievmenetsMainFunc 2019-12-28 20:37:42,985 INFO Successful request for 1171140
+AchievmenetsMainFunc 2019-12-28 20:37:43,486 INFO Successful request for 1113880
+AchievmenetsMainFunc 2019-12-28 20:37:44,640 INFO Successful request for 1179480
+AchievmenetsMainFunc 2019-12-28 20:37:45,971 WARNING Failed request for 1165850
+AchievmenetsMainFunc 2019-12-28 20:37:47,652 INFO Successful request for 1113880
+AchievmenetsMainFunc 2019-12-28 20:37:50,697 WARNING Failed request for 1179480
+AchievmenetsMainFunc 2019-12-28 20:37:52,962 INFO Successful request for 1113880
+AchievmenetsCrunchFunc 2019-12-28 20:37:52,963 INFO Achievements for 1113880 correctly saved
+AchievmenetsCrunchFunc 2019-12-28 20:37:52,966 WARNING A problem ocurred with 1179480
+AchievmenetsCrunchFunc 2019-12-28 20:37:52,972 WARNING A problem ocurred with 1165850
+AchievmenetsCrunchFunc 2019-12-28 20:37:52,975 INFO Achievements for 1171140 correctly saved
+AchievmenetsCrunchFunc 2019-12-28 20:37:52,979 INFO Achievements for 1184780 correctly saved
+AchievmenetsCrunchFunc 2019-12-28 20:37:52,983 INFO Achievements for 1194620 correctly saved
+AchievmenetsCrunchFunc 2019-12-28 20:37:52,990 INFO Achievements for 1066030 correctly saved
+AchievmenetsCrunchFunc 2019-12-28 20:37:52,994 WARNING A problem ocurred with 1198060
+AchievmenetsCrunchFunc 2019-12-28 20:37:52,996 WARNING A problem ocurred with 1194380
+AchievmenetsCrunchFunc 2019-12-28 20:37:52,999 WARNING A problem ocurred with 1181440
+AchievmenetsMainFunc 2019-12-28 20:37:53,244 INFO Successful request for 1147670
+AchievmenetsMainFunc 2019-12-28 20:37:53,470 INFO Successful request for 250900
+AchievmenetsMainFunc 2019-12-28 20:37:53,617 INFO Successful request for 271590
+AchievmenetsMainFunc 2019-12-28 20:37:58,383 INFO Successful request for 440
+AchievmenetsMainFunc 2019-12-28 20:37:58,617 WARNING Failed request for 1147670
+AchievmenetsCrunchFunc 2019-12-28 20:37:58,620 WARNING A problem ocurred with 1147670
+AchievmenetsCrunchFunc 2019-12-28 20:37:58,624 INFO Achievements for 440 correctly saved
+AchievmenetsCrunchFunc 2019-12-28 20:37:58,632 INFO Achievements for 271590 correctly saved
+AchievmenetsCrunchFunc 2019-12-28 20:37:58,638 INFO Achievements for 250900 correctly saved
+AchievmenetsMainFunc 2019-12-28 20:51:28,523 INFO Successful request for 1196400
+AchievmenetsMainFunc 2019-12-28 20:51:28,663 INFO Successful request for 1172310
+AchievmenetsMainFunc 2019-12-28 20:51:28,781 WARNING Failed request for 1178020
+AchievmenetsMainFunc 2019-12-28 20:51:29,013 WARNING Failed request for 1196400
+AchievmenetsMainFunc 2019-12-28 20:51:32,625 WARNING Failed request for 1166210
+AchievmenetsMainFunc 2019-12-28 20:51:33,182 INFO Successful request for 836590
+AchievmenetsMainFunc 2019-12-28 20:51:33,214 INFO Successful request for 1109460
+AchievmenetsMainFunc 2019-12-28 20:51:33,220 INFO Successful request for 1001200
+AchievmenetsMainFunc 2019-12-28 20:51:33,455 WARNING Failed request for 1166200
+AchievmenetsMainFunc 2019-12-28 20:51:33,458 WARNING Failed request for 862220
+AchievmenetsMainFunc 2019-12-28 20:51:33,969 WARNING Failed request for 1172310
+AchievmenetsMainFunc 2019-12-28 20:51:34,484 WARNING Failed request for 350300
+AchievmenetsCrunchFunc 2019-12-28 20:51:34,491 WARNING A problem ocurred with 350300
+AchievmenetsCrunchFunc 2019-12-28 20:51:34,503 WARNING A problem ocurred with 1172310
+AchievmenetsCrunchFunc 2019-12-28 20:51:34,510 WARNING A problem ocurred with 862220
+AchievmenetsCrunchFunc 2019-12-28 20:51:34,517 WARNING A problem ocurred with 1166200
+AchievmenetsCrunchFunc 2019-12-28 20:51:34,524 INFO Achievements for 1001200 correctly saved
+AchievmenetsCrunchFunc 2019-12-28 20:51:34,530 INFO Achievements for 1109460 correctly saved
+AchievmenetsCrunchFunc 2019-12-28 20:51:34,537 INFO Achievements for 836590 correctly saved
+AchievmenetsCrunchFunc 2019-12-28 20:51:34,544 WARNING A problem ocurred with 1166210
+AchievmenetsCrunchFunc 2019-12-28 20:51:34,553 WARNING A problem ocurred with 1196400
+AchievmenetsCrunchFunc 2019-12-28 20:51:34,560 WARNING A problem ocurred with 1178020
+AchievmenetsMainFunc 2019-12-28 20:51:34,925 INFO Successful request for 1178120
+AchievmenetsMainFunc 2019-12-28 20:51:35,012 INFO Successful request for 756530
+AchievmenetsMainFunc 2019-12-28 20:51:35,165 WARNING Failed request for 1185950
+AchievmenetsMainFunc 2019-12-28 20:51:38,194 INFO Successful request for 756530
+AchievmenetsMainFunc 2019-12-28 20:51:39,724 INFO Successful request for 1186580
+AchievmenetsMainFunc 2019-12-28 20:51:39,735 INFO Successful request for 728530
+AchievmenetsMainFunc 2019-12-28 20:51:39,925 WARNING Failed request for 1190410
+AchievmenetsMainFunc 2019-12-28 20:51:39,930 WARNING Failed request for 865160
+AchievmenetsMainFunc 2019-12-28 20:51:39,943 WARNING Failed request for 254900
+AchievmenetsMainFunc 2019-12-28 20:51:39,950 WARNING Failed request for 1132210
+AchievmenetsMainFunc 2019-12-28 20:51:39,954 WARNING Failed request for 1191450
+AchievmenetsMainFunc 2019-12-28 20:51:43,243 INFO Successful request for 756530
+AchievmenetsCrunchFunc 2019-12-28 20:51:43,245 INFO Achievements for 756530 correctly saved
+AchievmenetsCrunchFunc 2019-12-28 20:51:43,253 WARNING A problem ocurred with 1191450
+AchievmenetsCrunchFunc 2019-12-28 20:51:43,260 WARNING A problem ocurred with 1132210
+AchievmenetsCrunchFunc 2019-12-28 20:51:43,268 WARNING A problem ocurred with 254900
+AchievmenetsCrunchFunc 2019-12-28 20:51:43,276 WARNING A problem ocurred with 865160
+AchievmenetsCrunchFunc 2019-12-28 20:51:43,286 WARNING A problem ocurred with 1190410
+AchievmenetsCrunchFunc 2019-12-28 20:51:43,294 INFO Achievements for 728530 correctly saved
+AchievmenetsCrunchFunc 2019-12-28 20:51:43,302 INFO Achievements for 1186580 correctly saved
+AchievmenetsCrunchFunc 2019-12-28 20:51:43,311 WARNING A problem ocurred with 1185950
+AchievmenetsCrunchFunc 2019-12-28 20:51:43,324 INFO Achievements for 1178120 correctly saved
+AchievmenetsMainFunc 2019-12-28 20:51:43,563 INFO Successful request for 1052440
+AchievmenetsMainFunc 2019-12-28 20:51:44,512 WARNING Failed request for 254940
+AchievmenetsMainFunc 2019-12-28 20:51:48,426 INFO Successful request for 1048020
+AchievmenetsMainFunc 2019-12-28 20:51:48,530 INFO Successful request for 1052430
+AchievmenetsMainFunc 2019-12-28 20:51:48,533 INFO Successful request for 1182720
+AchievmenetsMainFunc 2019-12-28 20:51:48,664 INFO Successful request for 1052440
+AchievmenetsMainFunc 2019-12-28 20:51:48,677 WARNING Failed request for 1193570
+AchievmenetsMainFunc 2019-12-28 20:51:48,677 WARNING Failed request for 616920
+AchievmenetsMainFunc 2019-12-28 20:51:48,677 WARNING Failed request for 1103800
+AchievmenetsMainFunc 2019-12-28 20:51:48,719 WARNING Failed request for 1190150
+AchievmenetsMainFunc 2019-12-28 20:51:48,819 WARNING Failed request for 696120
+AchievmenetsCrunchFunc 2019-12-28 20:51:48,820 WARNING A problem ocurred with 696120
+AchievmenetsCrunchFunc 2019-12-28 20:51:48,829 WARNING A problem ocurred with 1190150
+AchievmenetsCrunchFunc 2019-12-28 20:51:48,839 WARNING A problem ocurred with 1103800
+AchievmenetsCrunchFunc 2019-12-28 20:51:48,847 WARNING A problem ocurred with 616920
+AchievmenetsCrunchFunc 2019-12-28 20:51:48,858 WARNING A problem ocurred with 1193570
+AchievmenetsCrunchFunc 2019-12-28 20:51:48,870 INFO Achievements for 1052440 correctly saved
+AchievmenetsCrunchFunc 2019-12-28 20:51:48,880 INFO Achievements for 1182720 correctly saved
+AchievmenetsCrunchFunc 2019-12-28 20:51:48,890 INFO Achievements for 1052430 correctly saved
+AchievmenetsCrunchFunc 2019-12-28 20:51:48,899 INFO Achievements for 1048020 correctly saved
+AchievmenetsCrunchFunc 2019-12-28 20:51:48,909 WARNING A problem ocurred with 254940
+AchievmenetsMainFunc 2019-12-28 20:51:50,428 INFO Successful request for 756890
+AchievmenetsMainFunc 2019-12-28 20:51:54,034 INFO Successful request for 1192740
+AchievmenetsMainFunc 2019-12-28 20:51:54,050 INFO Successful request for 898430
+AchievmenetsMainFunc 2019-12-28 20:51:54,060 INFO Successful request for 1191680
+AchievmenetsMainFunc 2019-12-28 20:51:54,071 INFO Successful request for 1165860
+AchievmenetsMainFunc 2019-12-28 20:51:54,086 INFO Successful request for 1156980
+AchievmenetsMainFunc 2019-12-28 20:51:54,102 INFO Successful request for 951680
+AchievmenetsMainFunc 2019-12-28 20:51:54,260 WARNING Failed request for 1193550
+AchievmenetsMainFunc 2019-12-28 20:51:54,309 WARNING Failed request for 1102940
+AchievmenetsMainFunc 2019-12-28 20:51:55,078 INFO Successful request for 1109840
+AchievmenetsMainFunc 2019-12-28 20:51:55,489 INFO Successful request for 756890
+AchievmenetsCrunchFunc 2019-12-28 20:51:55,492 INFO Achievements for 756890 correctly saved
+AchievmenetsCrunchFunc 2019-12-28 20:51:55,506 INFO Achievements for 1109840 correctly saved
+AchievmenetsCrunchFunc 2019-12-28 20:51:55,520 WARNING A problem ocurred with 1102940
+AchievmenetsCrunchFunc 2019-12-28 20:51:55,530 WARNING A problem ocurred with 1193550
+AchievmenetsCrunchFunc 2019-12-28 20:51:55,540 INFO Achievements for 951680 correctly saved
+AchievmenetsCrunchFunc 2019-12-28 20:51:55,549 INFO Achievements for 1156980 correctly saved
+AchievmenetsCrunchFunc 2019-12-28 20:51:55,560 INFO Achievements for 1165860 correctly saved
+AchievmenetsCrunchFunc 2019-12-28 20:51:55,572 INFO Achievements for 1191680 correctly saved
+AchievmenetsCrunchFunc 2019-12-28 20:51:55,584 INFO Achievements for 898430 correctly saved
+AchievmenetsCrunchFunc 2019-12-28 20:51:55,594 INFO Achievements for 1192740 correctly saved
+AchievmenetsMainFunc 2019-12-28 20:51:59,732 INFO Successful request for 1113880
+AchievmenetsMainFunc 2019-12-28 20:52:00,756 INFO Successful request for 1066030
+AchievmenetsMainFunc 2019-12-28 20:52:00,799 INFO Successful request for 1184780
+AchievmenetsMainFunc 2019-12-28 20:52:00,801 INFO Successful request for 1194620
+AchievmenetsMainFunc 2019-12-28 20:52:00,801 INFO Successful request for 1171140
+AchievmenetsMainFunc 2019-12-28 20:52:00,984 WARNING Failed request for 1194380
+AchievmenetsMainFunc 2019-12-28 20:52:01,004 WARNING Failed request for 1179480
+AchievmenetsMainFunc 2019-12-28 20:52:01,024 WARNING Failed request for 1198060
+AchievmenetsMainFunc 2019-12-28 20:52:01,114 WARNING Failed request for 1181440
+AchievmenetsMainFunc 2019-12-28 20:52:04,646 WARNING Failed request for 1165850
+AchievmenetsCrunchFunc 2019-12-28 20:52:04,648 WARNING A problem ocurred with 1165850
+AchievmenetsCrunchFunc 2019-12-28 20:52:04,661 WARNING A problem ocurred with 1181440
+AchievmenetsCrunchFunc 2019-12-28 20:52:04,674 WARNING A problem ocurred with 1198060
+AchievmenetsCrunchFunc 2019-12-28 20:52:04,687 WARNING A problem ocurred with 1179480
+AchievmenetsCrunchFunc 2019-12-28 20:52:04,700 WARNING A problem ocurred with 1194380
+AchievmenetsCrunchFunc 2019-12-28 20:52:04,714 INFO Achievements for 1171140 correctly saved
+AchievmenetsCrunchFunc 2019-12-28 20:52:04,728 INFO Achievements for 1194620 correctly saved
+AchievmenetsCrunchFunc 2019-12-28 20:52:04,741 INFO Achievements for 1184780 correctly saved
+AchievmenetsCrunchFunc 2019-12-28 20:52:04,770 INFO Achievements for 1066030 correctly saved
+AchievmenetsCrunchFunc 2019-12-28 20:52:04,785 INFO Achievements for 1113880 correctly saved
+AchievmenetsMainFunc 2019-12-28 20:52:05,082 INFO Successful request for 271590
+AchievmenetsMainFunc 2019-12-28 20:52:05,477 INFO Successful request for 271590
+AchievmenetsMainFunc 2019-12-28 20:52:05,738 INFO Successful request for 271590
+AchievmenetsMainFunc 2019-12-28 20:52:10,079 INFO Successful request for 440
+AchievmenetsMainFunc 2019-12-28 20:52:10,256 INFO Successful request for 250900
+AchievmenetsMainFunc 2019-12-28 20:52:14,462 INFO Successful request for 1147670
+AchievmenetsMainFunc 2019-12-28 20:52:19,844 WARNING Failed request for 1147670
+AchievmenetsCrunchFunc 2019-12-28 20:52:19,845 WARNING A problem ocurred with 1147670
+AchievmenetsCrunchFunc 2019-12-28 20:52:19,882 INFO Achievements for 250900 correctly saved
+AchievmenetsCrunchFunc 2019-12-28 20:52:19,908 INFO Achievements for 440 correctly saved
+AchievmenetsCrunchFunc 2019-12-28 20:52:19,931 INFO Achievements for 271590 correctly saved

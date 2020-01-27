@@ -1,0 +1,1066 @@
+URLCrunchFunc 2019-12-08 20:13:22,638 ERROR Unsuccessful request for S30ZX
+URLCrunchFunc 2019-12-08 20:13:23,122 ERROR Unsuccessful request for Fedge777
+URLCrunchFunc 2019-12-08 20:13:59,616 ERROR Unsuccessful request for mondi48473
+URLCrunchFunc 2019-12-08 20:30:45,121 ERROR Unsuccessful request for S30ZX
+URLCrunchFunc 2019-12-08 20:30:45,512 ERROR Unsuccessful request for Fedge777
+URLCrunchFunc 2019-12-08 20:31:22,907 ERROR Unsuccessful request for mondi48473
+URLCrunchFunc 2019-12-08 20:35:51,578 ERROR Unsuccessful request for S30ZX
+URLCrunchFunc 2019-12-08 20:35:52,041 ERROR Unsuccessful request for Fedge777
+URLCrunchFunc 2019-12-08 20:36:27,967 ERROR Unsuccessful request for mondi48473
+URLCrunchFunc 2019-12-08 20:40:20,803 ERROR Unsuccessful request for S30ZX
+URLCrunchFunc 2019-12-08 20:40:21,308 ERROR Unsuccessful request for Fedge777
+URLCrunchFunc 2019-12-08 20:40:57,090 ERROR Unsuccessful request for mondi48473
+URLCrunchFunc 2019-12-08 20:48:15,752 ERROR Unsuccessful request for S30ZX
+URLCrunchFunc 2019-12-08 20:48:16,144 ERROR Unsuccessful request for Fedge777
+URLCrunchFunc 2019-12-08 20:48:52,102 ERROR Unsuccessful request for mondi48473
+URLCrunchFunc 2019-12-08 21:26:09,080 ERROR Unsuccessful request for S30ZX
+URLCrunchFunc 2019-12-08 21:26:09,487 ERROR Unsuccessful request for Fedge777
+URLCrunchFunc 2019-12-08 22:32:42,662 ERROR Unsuccessful request for S30ZX
+URLCrunchFunc 2019-12-08 22:32:43,171 ERROR Unsuccessful request for Fedge777
+URLCrunchFunc 2019-12-08 22:33:17,882 ERROR Unsuccessful request for mondi48473
+URLCrunchFunc 2019-12-08 22:40:55,534 ERROR Unsuccessful request for S30ZX
+URLCrunchFunc 2019-12-08 22:40:55,912 ERROR Unsuccessful request for Fedge777
+URLCrunchFunc 2019-12-08 22:41:24,081 ERROR An exception ocured during request for dansky_png
+Traceback (most recent call last):
+  File "C:\Users\mcnon\OneDrive\Escritorio\Proyecto Owners\Scrapers\ScraperUsersAPI\GetCommunityURL.py", line 49, in main
+    response=requests.get(url,timeout=timeout)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\adapters.py", line 449, in send
+    timeout=timeout
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 672, in urlopen
+    chunked=chunked,
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 421, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 416, in _make_request
+    httplib_response = conn.getresponse()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1321, in getresponse
+    response.begin()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 296, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 257, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\ssl.py", line 1052, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\ssl.py", line 911, in read
+    return self._sslobj.read(len, buffer)
+KeyboardInterrupt
+URLCrunchFunc 2019-12-08 22:41:26,463 ERROR An exception ocured during request for spellsmarket
+Traceback (most recent call last):
+  File "C:\Users\mcnon\OneDrive\Escritorio\Proyecto Owners\Scrapers\ScraperUsersAPI\GetCommunityURL.py", line 49, in main
+    response=requests.get(url,timeout=timeout)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\adapters.py", line 449, in send
+    timeout=timeout
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 672, in urlopen
+    chunked=chunked,
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 376, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 994, in _validate_conn
+    conn.connect()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 334, in connect
+    conn = self._new_conn()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 157, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\connection.py", line 74, in create_connection
+    sock.connect(sa)
+KeyboardInterrupt
+URLCrunchFunc 2019-12-08 22:41:26,953 ERROR An exception ocured during request for mondi48473
+Traceback (most recent call last):
+  File "C:\Users\mcnon\OneDrive\Escritorio\Proyecto Owners\Scrapers\ScraperUsersAPI\GetCommunityURL.py", line 49, in main
+    response=requests.get(url,timeout=timeout)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\adapters.py", line 449, in send
+    timeout=timeout
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 672, in urlopen
+    chunked=chunked,
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 421, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 416, in _make_request
+    httplib_response = conn.getresponse()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1321, in getresponse
+    response.begin()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 296, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 257, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\ssl.py", line 1052, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\ssl.py", line 911, in read
+    return self._sslobj.read(len, buffer)
+KeyboardInterrupt
+URLCrunchFunc 2019-12-08 22:41:28,799 ERROR An exception ocured during request for morat73
+Traceback (most recent call last):
+  File "C:\Users\mcnon\OneDrive\Escritorio\Proyecto Owners\Scrapers\ScraperUsersAPI\GetCommunityURL.py", line 49, in main
+    response=requests.get(url,timeout=timeout)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\adapters.py", line 449, in send
+    timeout=timeout
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 672, in urlopen
+    chunked=chunked,
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 421, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 416, in _make_request
+    httplib_response = conn.getresponse()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1321, in getresponse
+    response.begin()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 296, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 257, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\ssl.py", line 1052, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\ssl.py", line 911, in read
+    return self._sslobj.read(len, buffer)
+KeyboardInterrupt
+URLCrunchFunc 2019-12-08 22:41:28,877 ERROR An exception ocured during request for dampfer
+Traceback (most recent call last):
+  File "C:\Users\mcnon\OneDrive\Escritorio\Proyecto Owners\Scrapers\ScraperUsersAPI\GetCommunityURL.py", line 49, in main
+    response=requests.get(url,timeout=timeout)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\adapters.py", line 449, in send
+    timeout=timeout
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 672, in urlopen
+    chunked=chunked,
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 376, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 994, in _validate_conn
+    conn.connect()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 394, in connect
+    ssl_context=context,
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\ssl_.py", line 370, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\ssl.py", line 412, in wrap_socket
+    session=session
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\ssl.py", line 853, in _create
+    self.do_handshake()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\ssl.py", line 1117, in do_handshake
+    self._sslobj.do_handshake()
+KeyboardInterrupt
+URLCrunchFunc 2019-12-08 22:41:29,305 ERROR An exception ocured during request for cheeselessdorito
+Traceback (most recent call last):
+  File "C:\Users\mcnon\OneDrive\Escritorio\Proyecto Owners\Scrapers\ScraperUsersAPI\GetCommunityURL.py", line 49, in main
+    response=requests.get(url,timeout=timeout)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\adapters.py", line 449, in send
+    timeout=timeout
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 672, in urlopen
+    chunked=chunked,
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 421, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 416, in _make_request
+    httplib_response = conn.getresponse()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1321, in getresponse
+    response.begin()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 296, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 257, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\ssl.py", line 1052, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\ssl.py", line 911, in read
+    return self._sslobj.read(len, buffer)
+KeyboardInterrupt
+URLCrunchFunc 2019-12-08 22:44:48,120 ERROR Unsuccessful request for S30ZX
+URLCrunchFunc 2019-12-08 22:44:48,694 ERROR Unsuccessful request for Fedge777
+URLCrunchFunc 2019-12-08 22:44:51,342 ERROR An exception ocured during request for tmassofficial
+Traceback (most recent call last):
+  File "C:\Users\mcnon\OneDrive\Escritorio\Proyecto Owners\Scrapers\ScraperUsersAPI\GetCommunityURL.py", line 49, in main
+    response=requests.get(url,timeout=timeout)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\adapters.py", line 449, in send
+    timeout=timeout
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 672, in urlopen
+    chunked=chunked,
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 421, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 416, in _make_request
+    httplib_response = conn.getresponse()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1321, in getresponse
+    response.begin()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 296, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 257, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\ssl.py", line 1052, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\ssl.py", line 911, in read
+    return self._sslobj.read(len, buffer)
+KeyboardInterrupt
+URLCrunchFunc 2019-12-08 22:44:51,483 ERROR An exception ocured during request for akmelion
+Traceback (most recent call last):
+  File "C:\Users\mcnon\OneDrive\Escritorio\Proyecto Owners\Scrapers\ScraperUsersAPI\GetCommunityURL.py", line 49, in main
+    response=requests.get(url,timeout=timeout)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\adapters.py", line 449, in send
+    timeout=timeout
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 672, in urlopen
+    chunked=chunked,
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 376, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 994, in _validate_conn
+    conn.connect()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 394, in connect
+    ssl_context=context,
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\ssl_.py", line 370, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\ssl.py", line 412, in wrap_socket
+    session=session
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\ssl.py", line 853, in _create
+    self.do_handshake()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\ssl.py", line 1117, in do_handshake
+    self._sslobj.do_handshake()
+KeyboardInterrupt
+URLCrunchFunc 2019-12-08 22:44:51,962 ERROR An exception ocured during request for virudi100
+Traceback (most recent call last):
+  File "C:\Users\mcnon\OneDrive\Escritorio\Proyecto Owners\Scrapers\ScraperUsersAPI\GetCommunityURL.py", line 49, in main
+    response=requests.get(url,timeout=timeout)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\adapters.py", line 449, in send
+    timeout=timeout
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 672, in urlopen
+    chunked=chunked,
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 421, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 416, in _make_request
+    httplib_response = conn.getresponse()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1321, in getresponse
+    response.begin()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 296, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 257, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\ssl.py", line 1052, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\ssl.py", line 911, in read
+    return self._sslobj.read(len, buffer)
+KeyboardInterrupt
+URLCrunchFunc 2019-12-08 22:45:02,841 ERROR An exception ocured during request for PunXD
+Traceback (most recent call last):
+  File "C:\Users\mcnon\OneDrive\Escritorio\Proyecto Owners\Scrapers\ScraperUsersAPI\GetCommunityURL.py", line 49, in main
+    response=requests.get(url,timeout=timeout)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\adapters.py", line 449, in send
+    timeout=timeout
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 672, in urlopen
+    chunked=chunked,
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 421, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 416, in _make_request
+    httplib_response = conn.getresponse()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1321, in getresponse
+    response.begin()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 296, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 257, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\ssl.py", line 1052, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\ssl.py", line 911, in read
+    return self._sslobj.read(len, buffer)
+KeyboardInterrupt
+URLCrunchFunc 2019-12-08 22:45:20,449 ERROR Unsuccessful request for mondi48473
+URLCrunchFunc 2019-12-08 22:51:36,279 ERROR Unsuccessful request for S30ZX
+URLCrunchFunc 2019-12-08 22:51:36,785 ERROR Unsuccessful request for Fedge777
+URLCrunchFunc 2019-12-08 22:52:12,000 ERROR Unsuccessful request for mondi48473
+URLCrunchFunc 2019-12-08 23:00:19,240 ERROR Unsuccessful request for S30ZX
+URLCrunchFunc 2019-12-08 23:00:19,621 ERROR Unsuccessful request for Fedge777
+URLCrunchFunc 2019-12-08 23:00:48,413 ERROR Unsuccessful request for mondi48473
+URLCrunchFunc 2019-12-08 23:18:18,254 ERROR Unsuccessful request for S30ZX
+URLCrunchFunc 2019-12-08 23:18:18,663 ERROR Unsuccessful request for Fedge777
+URLCrunchFunc 2019-12-08 23:18:51,956 ERROR Unsuccessful request for mondi48473
+URLCrunchFunc 2019-12-08 23:43:13,045 ERROR Unsuccessful request for S30ZX
+URLCrunchFunc 2019-12-08 23:43:13,451 ERROR Unsuccessful request for Fedge777
+URLCrunchFunc 2019-12-08 23:43:45,298 ERROR Unsuccessful request for mondi48473
+URLCrunchFunc 2019-12-09 01:33:46,998 ERROR Unsuccessful request for S30ZX
+URLCrunchFunc 2019-12-09 01:33:47,419 ERROR Unsuccessful request for Fedge777
+URLCrunchFunc 2019-12-09 01:34:16,189 ERROR Unsuccessful request for mondi48473
+URLCrunchFunc 2019-12-09 01:43:54,798 ERROR Unsuccessful request for S30ZX
+URLCrunchFunc 2019-12-09 01:43:55,279 ERROR Unsuccessful request for Fedge777
+URLCrunchFunc 2019-12-09 01:43:55,685 ERROR An exception ocured during request for black07_
+Traceback (most recent call last):
+  File "C:\Users\mcnon\OneDrive\Escritorio\Proyecto Owners\Scrapers\ScraperUsersAPI\GetCommunityURL.py", line 49, in main
+    response=requests.get(url,timeout=timeout)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\adapters.py", line 449, in send
+    timeout=timeout
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 672, in urlopen
+    chunked=chunked,
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 421, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 416, in _make_request
+    httplib_response = conn.getresponse()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1321, in getresponse
+    response.begin()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 296, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 257, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\ssl.py", line 1052, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\ssl.py", line 911, in read
+    return self._sslobj.read(len, buffer)
+KeyboardInterrupt
+URLCrunchFunc 2019-12-09 01:43:56,082 ERROR An exception ocured during request for 11John11
+Traceback (most recent call last):
+  File "C:\Users\mcnon\OneDrive\Escritorio\Proyecto Owners\Scrapers\ScraperUsersAPI\GetCommunityURL.py", line 49, in main
+    response=requests.get(url,timeout=timeout)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\adapters.py", line 449, in send
+    timeout=timeout
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 672, in urlopen
+    chunked=chunked,
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 421, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 416, in _make_request
+    httplib_response = conn.getresponse()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1321, in getresponse
+    response.begin()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 296, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 257, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\ssl.py", line 1052, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\ssl.py", line 911, in read
+    return self._sslobj.read(len, buffer)
+KeyboardInterrupt
+URLCrunchFunc 2019-12-09 01:43:56,153 ERROR An exception ocured during request for lucaasa7
+Traceback (most recent call last):
+  File "C:\Users\mcnon\OneDrive\Escritorio\Proyecto Owners\Scrapers\ScraperUsersAPI\GetCommunityURL.py", line 49, in main
+    response=requests.get(url,timeout=timeout)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\adapters.py", line 449, in send
+    timeout=timeout
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 672, in urlopen
+    chunked=chunked,
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 376, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 994, in _validate_conn
+    conn.connect()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 394, in connect
+    ssl_context=context,
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\ssl_.py", line 336, in ssl_wrap_socket
+    context.load_verify_locations(ca_certs, ca_cert_dir)
+KeyboardInterrupt
+URLCrunchFunc 2019-12-09 01:43:57,213 ERROR An exception ocured during request for myxtc
+Traceback (most recent call last):
+  File "C:\Users\mcnon\OneDrive\Escritorio\Proyecto Owners\Scrapers\ScraperUsersAPI\GetCommunityURL.py", line 49, in main
+    response=requests.get(url,timeout=timeout)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\adapters.py", line 449, in send
+    timeout=timeout
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 672, in urlopen
+    chunked=chunked,
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 421, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 416, in _make_request
+    httplib_response = conn.getresponse()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1321, in getresponse
+    response.begin()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 296, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 257, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\ssl.py", line 1052, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\ssl.py", line 911, in read
+    return self._sslobj.read(len, buffer)
+KeyboardInterrupt
+URLCrunchFunc 2019-12-09 01:43:57,623 ERROR An exception ocured during request for SamDanceParty
+Traceback (most recent call last):
+  File "C:\Users\mcnon\OneDrive\Escritorio\Proyecto Owners\Scrapers\ScraperUsersAPI\GetCommunityURL.py", line 49, in main
+    response=requests.get(url,timeout=timeout)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\adapters.py", line 449, in send
+    timeout=timeout
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 672, in urlopen
+    chunked=chunked,
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 421, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 416, in _make_request
+    httplib_response = conn.getresponse()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1321, in getresponse
+    response.begin()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 296, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 257, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\ssl.py", line 1052, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\ssl.py", line 911, in read
+    return self._sslobj.read(len, buffer)
+KeyboardInterrupt
+URLCrunchFunc 2019-12-09 01:43:59,433 ERROR An exception ocured during request for 45645745765786865
+Traceback (most recent call last):
+  File "C:\Users\mcnon\OneDrive\Escritorio\Proyecto Owners\Scrapers\ScraperUsersAPI\GetCommunityURL.py", line 49, in main
+    response=requests.get(url,timeout=timeout)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\adapters.py", line 449, in send
+    timeout=timeout
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 672, in urlopen
+    chunked=chunked,
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 376, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 994, in _validate_conn
+    conn.connect()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 394, in connect
+    ssl_context=context,
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\ssl_.py", line 336, in ssl_wrap_socket
+    context.load_verify_locations(ca_certs, ca_cert_dir)
+KeyboardInterrupt
+URLCrunchFunc 2019-12-09 01:43:59,884 ERROR An exception ocured during request for radu191289
+Traceback (most recent call last):
+  File "C:\Users\mcnon\OneDrive\Escritorio\Proyecto Owners\Scrapers\ScraperUsersAPI\GetCommunityURL.py", line 49, in main
+    response=requests.get(url,timeout=timeout)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\adapters.py", line 449, in send
+    timeout=timeout
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 672, in urlopen
+    chunked=chunked,
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 421, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 416, in _make_request
+    httplib_response = conn.getresponse()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1321, in getresponse
+    response.begin()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 296, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 257, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\ssl.py", line 1052, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\ssl.py", line 911, in read
+    return self._sslobj.read(len, buffer)
+KeyboardInterrupt
+URLCrunchFunc 2019-12-09 01:43:59,912 ERROR An exception ocured during request for KROVEK161
+Traceback (most recent call last):
+  File "C:\Users\mcnon\OneDrive\Escritorio\Proyecto Owners\Scrapers\ScraperUsersAPI\GetCommunityURL.py", line 49, in main
+    response=requests.get(url,timeout=timeout)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\adapters.py", line 449, in send
+    timeout=timeout
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 672, in urlopen
+    chunked=chunked,
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 376, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 994, in _validate_conn
+    conn.connect()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 334, in connect
+    conn = self._new_conn()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 157, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\connection.py", line 74, in create_connection
+    sock.connect(sa)
+KeyboardInterrupt
+URLCrunchFunc 2019-12-09 01:44:08,079 ERROR An exception ocured during request for rorikonshinshi
+Traceback (most recent call last):
+  File "C:\Users\mcnon\OneDrive\Escritorio\Proyecto Owners\Scrapers\ScraperUsersAPI\GetCommunityURL.py", line 49, in main
+    response=requests.get(url,timeout=timeout)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\adapters.py", line 449, in send
+    timeout=timeout
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 672, in urlopen
+    chunked=chunked,
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 421, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 416, in _make_request
+    httplib_response = conn.getresponse()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1321, in getresponse
+    response.begin()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 296, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 257, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\ssl.py", line 1052, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\ssl.py", line 911, in read
+    return self._sslobj.read(len, buffer)
+KeyboardInterrupt
+URLCrunchFunc 2019-12-09 01:44:08,087 ERROR An exception ocured during request for Turianel
+Traceback (most recent call last):
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\genericpath.py", line 19, in exists
+    os.stat(path)
+FileNotFoundError: [WinError 2] El sistema no puede encontrar el archivo especificado: 'C:\\Users\\mcnon/.netrc'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\mcnon\OneDrive\Escritorio\Proyecto Owners\Scrapers\ScraperUsersAPI\GetCommunityURL.py", line 49, in main
+    response=requests.get(url,timeout=timeout)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\sessions.py", line 519, in request
+    prep = self.prepare_request(req)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\sessions.py", line 449, in prepare_request
+    auth = get_netrc_auth(request.url)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\utils.py", line 185, in get_netrc_auth
+    if os.path.exists(loc):
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\genericpath.py", line 19, in exists
+    os.stat(path)
+KeyboardInterrupt
+URLCrunchFunc 2019-12-09 01:44:08,253 ERROR An exception ocured during request for xoxocandy
+Traceback (most recent call last):
+  File "C:\Users\mcnon\OneDrive\Escritorio\Proyecto Owners\Scrapers\ScraperUsersAPI\GetCommunityURL.py", line 49, in main
+    response=requests.get(url,timeout=timeout)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\adapters.py", line 449, in send
+    timeout=timeout
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 672, in urlopen
+    chunked=chunked,
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 376, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 994, in _validate_conn
+    conn.connect()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 394, in connect
+    ssl_context=context,
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\ssl_.py", line 336, in ssl_wrap_socket
+    context.load_verify_locations(ca_certs, ca_cert_dir)
+KeyboardInterrupt
+URLCrunchFunc 2019-12-09 01:44:09,282 ERROR An exception ocured during request for GNIKAPOOK269737
+Traceback (most recent call last):
+  File "C:\Users\mcnon\OneDrive\Escritorio\Proyecto Owners\Scrapers\ScraperUsersAPI\GetCommunityURL.py", line 49, in main
+    response=requests.get(url,timeout=timeout)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\adapters.py", line 449, in send
+    timeout=timeout
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 672, in urlopen
+    chunked=chunked,
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 376, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 994, in _validate_conn
+    conn.connect()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 334, in connect
+    conn = self._new_conn()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 157, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\connection.py", line 74, in create_connection
+    sock.connect(sa)
+KeyboardInterrupt
+URLCrunchFunc 2019-12-09 01:44:10,642 ERROR An exception ocured during request for Mughen9
+Traceback (most recent call last):
+  File "C:\Users\mcnon\OneDrive\Escritorio\Proyecto Owners\Scrapers\ScraperUsersAPI\GetCommunityURL.py", line 49, in main
+    response=requests.get(url,timeout=timeout)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\adapters.py", line 449, in send
+    timeout=timeout
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 672, in urlopen
+    chunked=chunked,
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 421, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 416, in _make_request
+    httplib_response = conn.getresponse()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1321, in getresponse
+    response.begin()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 296, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 257, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\ssl.py", line 1052, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\ssl.py", line 911, in read
+    return self._sslobj.read(len, buffer)
+KeyboardInterrupt
+URLCrunchFunc 2019-12-09 01:44:10,672 ERROR An exception ocured during request for Itzee
+Traceback (most recent call last):
+  File "C:\Users\mcnon\OneDrive\Escritorio\Proyecto Owners\Scrapers\ScraperUsersAPI\GetCommunityURL.py", line 49, in main
+    response=requests.get(url,timeout=timeout)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\adapters.py", line 449, in send
+    timeout=timeout
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 672, in urlopen
+    chunked=chunked,
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 376, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 994, in _validate_conn
+    conn.connect()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 334, in connect
+    conn = self._new_conn()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 157, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\connection.py", line 74, in create_connection
+    sock.connect(sa)
+KeyboardInterrupt
+URLCrunchFunc 2019-12-09 01:44:11,074 ERROR An exception ocured during request for EDURYN
+Traceback (most recent call last):
+  File "C:\Users\mcnon\OneDrive\Escritorio\Proyecto Owners\Scrapers\ScraperUsersAPI\GetCommunityURL.py", line 49, in main
+    response=requests.get(url,timeout=timeout)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\adapters.py", line 449, in send
+    timeout=timeout
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 672, in urlopen
+    chunked=chunked,
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 421, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 416, in _make_request
+    httplib_response = conn.getresponse()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1321, in getresponse
+    response.begin()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 296, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 257, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\ssl.py", line 1052, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\ssl.py", line 911, in read
+    return self._sslobj.read(len, buffer)
+KeyboardInterrupt
+URLCrunchFunc 2019-12-09 01:44:11,170 ERROR An exception ocured during request for Awan2407
+Traceback (most recent call last):
+  File "C:\Users\mcnon\OneDrive\Escritorio\Proyecto Owners\Scrapers\ScraperUsersAPI\GetCommunityURL.py", line 49, in main
+    response=requests.get(url,timeout=timeout)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\adapters.py", line 449, in send
+    timeout=timeout
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 672, in urlopen
+    chunked=chunked,
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 376, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 994, in _validate_conn
+    conn.connect()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 394, in connect
+    ssl_context=context,
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\ssl_.py", line 370, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\ssl.py", line 412, in wrap_socket
+    session=session
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\ssl.py", line 853, in _create
+    self.do_handshake()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\ssl.py", line 1117, in do_handshake
+    self._sslobj.do_handshake()
+KeyboardInterrupt
+URLCrunchFunc 2019-12-09 01:44:11,658 ERROR An exception ocured during request for sky_216
+Traceback (most recent call last):
+  File "C:\Users\mcnon\OneDrive\Escritorio\Proyecto Owners\Scrapers\ScraperUsersAPI\GetCommunityURL.py", line 49, in main
+    response=requests.get(url,timeout=timeout)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\adapters.py", line 449, in send
+    timeout=timeout
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 672, in urlopen
+    chunked=chunked,
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 421, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 416, in _make_request
+    httplib_response = conn.getresponse()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1321, in getresponse
+    response.begin()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 296, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 257, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\ssl.py", line 1052, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\ssl.py", line 911, in read
+    return self._sslobj.read(len, buffer)
+KeyboardInterrupt
+URLCrunchFunc 2019-12-09 01:44:12,062 ERROR An exception ocured during request for pintology
+Traceback (most recent call last):
+  File "C:\Users\mcnon\OneDrive\Escritorio\Proyecto Owners\Scrapers\ScraperUsersAPI\GetCommunityURL.py", line 49, in main
+    response=requests.get(url,timeout=timeout)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\adapters.py", line 449, in send
+    timeout=timeout
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 672, in urlopen
+    chunked=chunked,
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 421, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 416, in _make_request
+    httplib_response = conn.getresponse()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1321, in getresponse
+    response.begin()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 296, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 257, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\ssl.py", line 1052, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\ssl.py", line 911, in read
+    return self._sslobj.read(len, buffer)
+KeyboardInterrupt
+URLCrunchFunc 2019-12-09 01:44:13,086 ERROR An exception ocured during request for soda1ite
+Traceback (most recent call last):
+  File "C:\Users\mcnon\OneDrive\Escritorio\Proyecto Owners\Scrapers\ScraperUsersAPI\GetCommunityURL.py", line 49, in main
+    response=requests.get(url,timeout=timeout)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\adapters.py", line 449, in send
+    timeout=timeout
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 672, in urlopen
+    chunked=chunked,
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 421, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 416, in _make_request
+    httplib_response = conn.getresponse()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1321, in getresponse
+    response.begin()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 296, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 257, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\ssl.py", line 1052, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\ssl.py", line 911, in read
+    return self._sslobj.read(len, buffer)
+KeyboardInterrupt
+URLCrunchFunc 2019-12-09 01:44:13,204 ERROR An exception ocured during request for WendyCorduroy
+Traceback (most recent call last):
+  File "C:\Users\mcnon\OneDrive\Escritorio\Proyecto Owners\Scrapers\ScraperUsersAPI\GetCommunityURL.py", line 49, in main
+    response=requests.get(url,timeout=timeout)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\adapters.py", line 449, in send
+    timeout=timeout
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 672, in urlopen
+    chunked=chunked,
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 376, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 994, in _validate_conn
+    conn.connect()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 394, in connect
+    ssl_context=context,
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\ssl_.py", line 370, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\ssl.py", line 412, in wrap_socket
+    session=session
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\ssl.py", line 853, in _create
+    self.do_handshake()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\ssl.py", line 1117, in do_handshake
+    self._sslobj.do_handshake()
+KeyboardInterrupt
+URLCrunchFunc 2019-12-09 01:44:51,546 ERROR Unsuccessful request for S30ZX
+URLCrunchFunc 2019-12-09 01:44:52,014 ERROR Unsuccessful request for Fedge777
+URLCrunchFunc 2019-12-09 01:45:33,476 ERROR Unsuccessful request for mondi48473
+URLCrunchFunc 2019-12-09 01:49:10,151 ERROR Unsuccessful request for S30ZX
+URLCrunchFunc 2019-12-09 01:49:10,498 ERROR Unsuccessful request for Fedge777
+URLCrunchFunc 2019-12-09 01:49:41,705 ERROR Unsuccessful request for mondi48473
+URLCrunchFunc 2019-12-09 02:01:28,181 ERROR Unsuccessful request for S30ZX
+URLCrunchFunc 2019-12-09 02:01:28,796 ERROR Unsuccessful request for Fedge777
+URLCrunchFunc 2019-12-09 02:02:03,238 ERROR Unsuccessful request for mondi48473
+URLCrunchFunc 2019-12-09 02:16:08,076 ERROR Unsuccessful request for S30ZX
+URLCrunchFunc 2019-12-09 02:16:08,408 ERROR Unsuccessful request for Fedge777
+URLCrunchFunc 2019-12-09 02:16:40,798 ERROR Unsuccessful request for mondi48473
+URLCrunchFunc 2019-12-09 02:34:56,121 ERROR Unsuccessful request for S30ZX
+URLCrunchFunc 2019-12-09 02:34:56,503 ERROR Unsuccessful request for Fedge777
+URLCrunchFunc 2019-12-09 02:35:38,344 ERROR Unsuccessful request for mondi48473
+URLCrunchFunc 2019-12-09 02:44:32,267 ERROR Unsuccessful request for S30ZX
+URLCrunchFunc 2019-12-09 02:44:32,604 ERROR Unsuccessful request for Fedge777
+URLCrunchFunc 2019-12-09 02:45:03,350 ERROR Unsuccessful request for mondi48473
+URLCrunchFunc 2019-12-09 02:46:11,516 ERROR An exception ocured during request for shizodrych
+Traceback (most recent call last):
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 376, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 994, in _validate_conn
+    conn.connect()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connection.py", line 394, in connect
+    ssl_context=context,
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\ssl_.py", line 370, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\ssl.py", line 412, in wrap_socket
+    session=session
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\ssl.py", line 853, in _create
+    self.do_handshake()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\ssl.py", line 1117, in do_handshake
+    self._sslobj.do_handshake()
+socket.timeout: _ssl.c:1039: The handshake operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\adapters.py", line 449, in send
+    timeout=timeout
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 720, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\util\retry.py", line 400, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\packages\six.py", line 735, in reraise
+    raise value
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 672, in urlopen
+    chunked=chunked,
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 379, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=conn.timeout)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 331, in _raise_timeout
+    self, url, "Read timed out. (read timeout=%s)" % timeout_value
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.steampowered.com', port=443): Read timed out. (read timeout=5)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\mcnon\OneDrive\Escritorio\Proyecto Owners\Scrapers\ScraperUsersAPI\GetCommunityURL.py", line 49, in main
+    response=requests.get(url,timeout=timeout)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\requests\adapters.py", line 529, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='api.steampowered.com', port=443): Read timed out. (read timeout=5)
+URLCrunchFunc 2019-12-09 03:11:12,738 ERROR Unsuccessful request for S30ZX
+URLCrunchFunc 2019-12-09 03:11:13,370 ERROR Unsuccessful request for Fedge777
+URLCrunchFunc 2019-12-09 03:11:44,916 ERROR Unsuccessful request for mondi48473
+URLCrunchFunc 2019-12-09 03:25:51,441 ERROR Unsuccessful request for S30ZX
+URLCrunchFunc 2019-12-09 03:25:51,752 ERROR Unsuccessful request for Fedge777
+URLCrunchFunc 2019-12-09 03:26:24,209 ERROR Unsuccessful request for mondi48473
+URLCrunchFunc 2019-12-09 03:56:06,804 ERROR Unsuccessful request for S30ZX
+URLCrunchFunc 2019-12-09 03:56:07,230 ERROR Unsuccessful request for Fedge777
+URLCrunchFunc 2019-12-09 03:56:40,304 ERROR Unsuccessful request for mondi48473
+URLCrunchFunc 2019-12-11 02:04:24,231 ERROR Unexpected url format: dfdsf

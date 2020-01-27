@@ -1,0 +1,2642 @@
+TestGameCheck 2020-01-05 18:15:16,607 INFO Steam game 69lmao correctly stored
+TestGameCheck 2020-01-05 18:15:16,614 INFO Steam game 440 correctly stored
+TestGameCheck 2020-01-05 18:15:16,621 INFO Steam game 1488 correctly stored
+TestGameCheck 2020-01-05 18:15:16,628 INFO Steam game 101 correctly stored
+TestGameCheck 2020-01-05 18:15:16,635 INFO Steam game 202 correctly stored
+TestGameCheck 2020-01-05 18:15:16,643 INFO Steam game 303 correctly stored
+TestGameCheck 2020-01-05 18:15:16,647 INFO New TimePeriod: 69lmao_0
+TestGameCheck 2020-01-05 18:15:16,648 INFO 
+		Period 69lmao_0 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-05 18:15:16,656 INFO New TimePeriod: 69lmao_1
+TestGameCheck 2020-01-05 18:15:16,657 INFO 
+		Period 69lmao_1 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-05 18:15:16,664 INFO New TimePeriod: 69lmao_2
+TestGameCheck 2020-01-05 18:15:16,674 INFO 
+		Period 69lmao_2 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-05 18:16:20,774 WARNING 
+			Steam game 69lmao already registered, updating fields
+			
+TestGameCheck 2020-01-05 18:16:20,784 INFO Steam game 69lmao correctly stored
+TestGameCheck 2020-01-05 18:16:20,788 WARNING 
+			Steam game 440 already registered, updating fields
+			
+TestGameCheck 2020-01-05 18:16:20,794 INFO Steam game 440 correctly stored
+TestGameCheck 2020-01-05 18:16:20,798 WARNING 
+			Steam game 1488 already registered, updating fields
+			
+TestGameCheck 2020-01-05 18:16:20,807 INFO Steam game 1488 correctly stored
+TestGameCheck 2020-01-05 18:16:20,811 WARNING 
+			Steam game 101 already registered, updating fields
+			
+TestGameCheck 2020-01-05 18:16:20,817 INFO Steam game 101 correctly stored
+TestGameCheck 2020-01-05 18:16:20,821 WARNING 
+			Steam game 202 already registered, updating fields
+			
+TestGameCheck 2020-01-05 18:16:20,827 INFO Steam game 202 correctly stored
+TestGameCheck 2020-01-05 18:16:20,831 WARNING 
+			Steam game 303 already registered, updating fields
+			
+TestGameCheck 2020-01-05 18:16:20,838 INFO Steam game 303 correctly stored
+TestGameCheck 2020-01-05 18:16:20,842 INFO New TimePeriod: 69lmao_0
+TestGameCheck 2020-01-05 18:16:20,843 INFO 
+		Period 69lmao_0 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-05 18:16:20,862 INFO New TimePeriod: 69lmao_1
+TestGameCheck 2020-01-05 18:16:20,882 INFO 
+		Period 69lmao_1 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-05 18:16:20,896 INFO New TimePeriod: 69lmao_2
+TestGameCheck 2020-01-05 18:16:20,897 INFO 
+		Period 69lmao_2 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-05 18:16:20,912 INFO New TimePeriod: 440_0
+TestGameCheck 2020-01-05 18:16:20,916 INFO 
+		Period 440_0 for game 440 correctly saved
+		
+TestGameCheck 2020-01-05 18:16:20,924 INFO New TimePeriod: 440_1
+TestGameCheck 2020-01-05 18:16:20,927 INFO 
+		Period 440_1 for game 440 correctly saved
+		
+TestGameCheck 2020-01-05 18:16:26,794 WARNING 
+			Steam game 69lmao already registered, updating fields
+			
+TestGameCheck 2020-01-05 18:16:26,802 INFO Steam game 69lmao correctly stored
+TestGameCheck 2020-01-05 18:16:26,806 WARNING 
+			Steam game 440 already registered, updating fields
+			
+TestGameCheck 2020-01-05 18:16:26,813 INFO Steam game 440 correctly stored
+TestGameCheck 2020-01-05 18:16:26,816 WARNING 
+			Steam game 1488 already registered, updating fields
+			
+TestGameCheck 2020-01-05 18:16:26,824 INFO Steam game 1488 correctly stored
+TestGameCheck 2020-01-05 18:16:26,828 WARNING 
+			Steam game 101 already registered, updating fields
+			
+TestGameCheck 2020-01-05 18:16:26,835 INFO Steam game 101 correctly stored
+TestGameCheck 2020-01-05 18:16:26,839 WARNING 
+			Steam game 202 already registered, updating fields
+			
+TestGameCheck 2020-01-05 18:16:26,846 INFO Steam game 202 correctly stored
+TestGameCheck 2020-01-05 18:16:26,849 WARNING 
+			Steam game 303 already registered, updating fields
+			
+TestGameCheck 2020-01-05 18:16:26,856 INFO Steam game 303 correctly stored
+TestGameCheck 2020-01-05 18:16:26,861 INFO Modifying TimePeriod: 69lmao_0
+TestGameCheck 2020-01-05 18:16:26,862 INFO 
+		Period 69lmao_0 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-05 18:16:26,862 INFO Modifying TimePeriod: 69lmao_1
+TestGameCheck 2020-01-05 18:16:26,863 INFO 
+		Period 69lmao_1 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-05 18:16:26,863 INFO Modifying TimePeriod: 69lmao_2
+TestGameCheck 2020-01-05 18:16:26,864 INFO 
+		Period 69lmao_2 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-05 18:16:26,874 INFO New TimePeriod: 440_0
+TestGameCheck 2020-01-05 18:16:26,875 INFO 
+		Period 440_0 for game 440 correctly saved
+		
+TestGameCheck 2020-01-05 18:16:26,876 INFO New TimePeriod: 440_1
+TestGameCheck 2020-01-05 18:16:26,876 INFO 
+		Period 440_1 for game 440 correctly saved
+		
+TestGameCheck 2020-01-05 18:16:44,128 WARNING 
+			Steam game 69lmao already registered, updating fields
+			
+TestGameCheck 2020-01-05 18:16:44,137 INFO Steam game 69lmao correctly stored
+TestGameCheck 2020-01-05 18:16:44,142 WARNING 
+			Steam game 440 already registered, updating fields
+			
+TestGameCheck 2020-01-05 18:16:44,149 INFO Steam game 440 correctly stored
+TestGameCheck 2020-01-05 18:16:44,153 WARNING 
+			Steam game 1488 already registered, updating fields
+			
+TestGameCheck 2020-01-05 18:16:44,160 INFO Steam game 1488 correctly stored
+TestGameCheck 2020-01-05 18:16:44,164 WARNING 
+			Steam game 101 already registered, updating fields
+			
+TestGameCheck 2020-01-05 18:16:44,172 INFO Steam game 101 correctly stored
+TestGameCheck 2020-01-05 18:16:44,176 WARNING 
+			Steam game 202 already registered, updating fields
+			
+TestGameCheck 2020-01-05 18:16:44,183 INFO Steam game 202 correctly stored
+TestGameCheck 2020-01-05 18:16:44,187 WARNING 
+			Steam game 303 already registered, updating fields
+			
+TestGameCheck 2020-01-05 18:16:44,195 INFO Steam game 303 correctly stored
+TestGameCheck 2020-01-05 18:16:44,200 INFO Modifying TimePeriod: 69lmao_0
+TestGameCheck 2020-01-05 18:16:44,200 INFO 
+		Period 69lmao_0 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-05 18:16:44,215 INFO Modifying TimePeriod: 69lmao_1
+TestGameCheck 2020-01-05 18:16:44,224 INFO 
+		Period 69lmao_1 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-05 18:16:44,225 INFO Modifying TimePeriod: 69lmao_2
+TestGameCheck 2020-01-05 18:16:44,227 INFO 
+		Period 69lmao_2 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-05 18:16:44,245 INFO New TimePeriod: 440_0
+TestGameCheck 2020-01-05 18:16:44,250 INFO 
+		Period 440_0 for game 440 correctly saved
+		
+TestGameCheck 2020-01-05 18:16:44,251 INFO New TimePeriod: 440_1
+TestGameCheck 2020-01-05 18:16:44,255 INFO 
+		Period 440_1 for game 440 correctly saved
+		
+TestGameCheck 2020-01-05 18:16:44,268 INFO New TimePeriod: 1488_0
+TestGameCheck 2020-01-05 18:16:44,272 INFO 
+		Period 1488_0 for game 1488 correctly saved
+		
+TestGameCheck 2020-01-05 18:16:44,274 INFO New TimePeriod: 1488_1
+TestGameCheck 2020-01-05 18:16:44,282 INFO 
+		Period 1488_1 for game 1488 correctly saved
+		
+TestGameCheck 2020-01-05 18:17:17,538 WARNING 
+			Steam game 69lmao already registered, updating fields
+			
+TestGameCheck 2020-01-05 18:17:17,547 INFO Steam game 69lmao correctly stored
+TestGameCheck 2020-01-05 18:17:17,551 WARNING 
+			Steam game 440 already registered, updating fields
+			
+TestGameCheck 2020-01-05 18:17:17,560 INFO Steam game 440 correctly stored
+TestGameCheck 2020-01-05 18:17:17,564 WARNING 
+			Steam game 1488 already registered, updating fields
+			
+TestGameCheck 2020-01-05 18:17:17,572 INFO Steam game 1488 correctly stored
+TestGameCheck 2020-01-05 18:17:17,576 WARNING 
+			Steam game 101 already registered, updating fields
+			
+TestGameCheck 2020-01-05 18:17:17,583 INFO Steam game 101 correctly stored
+TestGameCheck 2020-01-05 18:17:17,588 WARNING 
+			Steam game 202 already registered, updating fields
+			
+TestGameCheck 2020-01-05 18:17:17,595 INFO Steam game 202 correctly stored
+TestGameCheck 2020-01-05 18:17:17,599 WARNING 
+			Steam game 303 already registered, updating fields
+			
+TestGameCheck 2020-01-05 18:17:17,607 INFO Steam game 303 correctly stored
+TestGameCheck 2020-01-05 18:17:17,612 INFO Modifying TimePeriod: 69lmao_0
+TestGameCheck 2020-01-05 18:17:17,613 INFO 
+		Period 69lmao_0 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-05 18:17:17,615 INFO Modifying TimePeriod: 69lmao_1
+TestGameCheck 2020-01-05 18:17:17,617 INFO 
+		Period 69lmao_1 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-05 18:17:17,618 INFO Modifying TimePeriod: 69lmao_2
+TestGameCheck 2020-01-05 18:17:17,633 INFO 
+		Period 69lmao_2 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-05 18:17:17,649 INFO Modifying TimePeriod: 440_0
+TestGameCheck 2020-01-05 18:17:17,650 INFO 
+		Period 440_0 for game 440 correctly saved
+		
+TestGameCheck 2020-01-05 18:17:17,659 INFO Modifying TimePeriod: 440_1
+TestGameCheck 2020-01-05 18:17:17,663 INFO 
+		Period 440_1 for game 440 correctly saved
+		
+TestGameCheck 2020-01-05 18:17:17,678 INFO New TimePeriod: 1488_0
+TestGameCheck 2020-01-05 18:17:17,678 INFO 
+		Period 1488_0 for game 1488 correctly saved
+		
+TestGameCheck 2020-01-05 18:17:17,697 INFO New TimePeriod: 1488_1
+TestGameCheck 2020-01-05 18:17:17,710 INFO 
+		Period 1488_1 for game 1488 correctly saved
+		
+TestGameCheck 2020-01-05 18:17:17,726 INFO New TimePeriod: 101_0
+TestGameCheck 2020-01-05 18:17:17,727 INFO 
+		Period 101_0 for game 101 correctly saved
+		
+TestGameCheck 2020-01-05 18:17:17,729 INFO New TimePeriod: 101_1
+TestGameCheck 2020-01-05 18:17:17,731 INFO 
+		Period 101_1 for game 101 correctly saved
+		
+TestGameCheck 2020-01-05 18:17:17,755 INFO New TimePeriod: 202_0
+TestGameCheck 2020-01-05 18:17:17,756 INFO 
+		Period 202_0 for game 202 correctly saved
+		
+TestGameCheck 2020-01-05 18:17:17,761 INFO New TimePeriod: 202_1
+TestGameCheck 2020-01-05 18:17:17,762 INFO 
+		Period 202_1 for game 202 correctly saved
+		
+TestGameCheck 2020-01-05 18:17:17,763 INFO New TimePeriod: 202_2
+TestGameCheck 2020-01-05 18:17:17,765 INFO 
+		Period 202_2 for game 202 correctly saved
+		
+TestGameCheck 2020-01-05 18:17:17,766 INFO New TimePeriod: 202_3
+TestGameCheck 2020-01-05 18:17:17,774 INFO 
+		Period 202_3 for game 202 correctly saved
+		
+TestGameCheck 2020-01-05 18:17:17,800 INFO New TimePeriod: 303_0
+TestGameCheck 2020-01-05 18:17:17,806 INFO 
+		Period 303_0 for game 303 correctly saved
+		
+TestGameCheck 2020-01-05 18:17:17,816 INFO New TimePeriod: 303_1
+TestGameCheck 2020-01-05 18:17:17,825 INFO 
+		Period 303_1 for game 303 correctly saved
+		
+TestGameCheck 2020-01-05 18:18:18,225 WARNING 
+			Steam game 69lmao already registered, updating fields
+			
+TestGameCheck 2020-01-05 18:18:18,234 INFO Steam game 69lmao correctly stored
+TestGameCheck 2020-01-05 18:18:18,239 WARNING 
+			Steam game 440 already registered, updating fields
+			
+TestGameCheck 2020-01-05 18:18:18,247 INFO Steam game 440 correctly stored
+TestGameCheck 2020-01-05 18:18:18,251 WARNING 
+			Steam game 1488 already registered, updating fields
+			
+TestGameCheck 2020-01-05 18:18:18,259 INFO Steam game 1488 correctly stored
+TestGameCheck 2020-01-05 18:18:18,263 WARNING 
+			Steam game 101 already registered, updating fields
+			
+TestGameCheck 2020-01-05 18:18:18,271 INFO Steam game 101 correctly stored
+TestGameCheck 2020-01-05 18:18:18,275 WARNING 
+			Steam game 202 already registered, updating fields
+			
+TestGameCheck 2020-01-05 18:18:18,284 INFO Steam game 202 correctly stored
+TestGameCheck 2020-01-05 18:18:18,288 WARNING 
+			Steam game 303 already registered, updating fields
+			
+TestGameCheck 2020-01-05 18:18:18,296 INFO Steam game 303 correctly stored
+TestGameCheck 2020-01-05 18:18:18,302 INFO Modifying TimePeriod: 69lmao_0
+TestGameCheck 2020-01-05 18:18:18,303 INFO 
+		Period 69lmao_0 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-05 18:18:18,309 INFO Modifying TimePeriod: 69lmao_1
+TestGameCheck 2020-01-05 18:18:18,311 INFO 
+		Period 69lmao_1 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-05 18:18:18,314 INFO Modifying TimePeriod: 69lmao_2
+TestGameCheck 2020-01-05 18:18:18,316 INFO 
+		Period 69lmao_2 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-05 18:18:18,331 INFO Modifying TimePeriod: 440_0
+TestGameCheck 2020-01-05 18:18:18,332 INFO 
+		Period 440_0 for game 440 correctly saved
+		
+TestGameCheck 2020-01-05 18:18:18,339 INFO Modifying TimePeriod: 440_1
+TestGameCheck 2020-01-05 18:18:18,341 INFO 
+		Period 440_1 for game 440 correctly saved
+		
+TestGameCheck 2020-01-05 18:18:18,353 INFO Modifying TimePeriod: 1488_0
+TestGameCheck 2020-01-05 18:18:18,381 INFO 
+		Period 1488_0 for game 1488 correctly saved
+		
+TestGameCheck 2020-01-05 18:18:18,389 INFO Modifying TimePeriod: 1488_1
+TestGameCheck 2020-01-05 18:18:18,390 INFO 
+		Period 1488_1 for game 1488 correctly saved
+		
+TestGameCheck 2020-01-05 18:18:18,401 INFO Modifying TimePeriod: 101_0
+TestGameCheck 2020-01-05 18:18:18,403 INFO 
+		Period 101_0 for game 101 correctly saved
+		
+TestGameCheck 2020-01-05 18:18:18,408 INFO Modifying TimePeriod: 101_1
+TestGameCheck 2020-01-05 18:18:18,411 INFO 
+		Period 101_1 for game 101 correctly saved
+		
+TestGameCheck 2020-01-05 18:18:18,425 INFO Modifying TimePeriod: 202_0
+TestGameCheck 2020-01-05 18:18:18,426 INFO 
+		Period 202_0 for game 202 correctly saved
+		
+TestGameCheck 2020-01-05 18:18:18,429 INFO Modifying TimePeriod: 202_1
+TestGameCheck 2020-01-05 18:18:18,431 INFO 
+		Period 202_1 for game 202 correctly saved
+		
+TestGameCheck 2020-01-05 18:18:18,432 INFO Modifying TimePeriod: 202_2
+TestGameCheck 2020-01-05 18:18:18,434 INFO 
+		Period 202_2 for game 202 correctly saved
+		
+TestGameCheck 2020-01-05 18:18:18,439 INFO Modifying TimePeriod: 202_3
+TestGameCheck 2020-01-05 18:18:18,440 INFO 
+		Period 202_3 for game 202 correctly saved
+		
+TestGameCheck 2020-01-05 18:18:18,452 INFO Modifying TimePeriod: 303_0
+TestGameCheck 2020-01-05 18:18:18,459 INFO 
+		Period 303_0 for game 303 correctly saved
+		
+TestGameCheck 2020-01-05 18:18:18,466 INFO Modifying TimePeriod: 303_1
+TestGameCheck 2020-01-05 18:18:18,475 INFO 
+		Period 303_1 for game 303 correctly saved
+		
+TestGameCheck 2020-01-05 18:19:33,706 INFO Steam game 69lmao correctly stored
+TestGameCheck 2020-01-05 18:19:33,712 INFO Steam game 440 correctly stored
+TestGameCheck 2020-01-05 18:19:33,719 INFO Steam game 1488 correctly stored
+TestGameCheck 2020-01-05 18:19:33,727 INFO Steam game 101 correctly stored
+TestGameCheck 2020-01-05 18:19:33,733 INFO Steam game 202 correctly stored
+TestGameCheck 2020-01-05 18:19:33,740 INFO Steam game 303 correctly stored
+TestGameCheck 2020-01-05 18:19:33,743 INFO New TimePeriod: 69lmao_0
+TestGameCheck 2020-01-05 18:19:33,745 INFO 
+		Period 69lmao_0 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-05 18:19:33,757 INFO New TimePeriod: 69lmao_1
+TestGameCheck 2020-01-05 18:19:33,762 INFO 
+		Period 69lmao_1 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-05 18:19:33,767 INFO New TimePeriod: 69lmao_2
+TestGameCheck 2020-01-05 18:19:33,771 INFO 
+		Period 69lmao_2 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-05 18:19:33,783 INFO New TimePeriod: 440_0
+TestGameCheck 2020-01-05 18:19:33,784 INFO 
+		Period 440_0 for game 440 correctly saved
+		
+TestGameCheck 2020-01-05 18:19:33,788 INFO New TimePeriod: 440_1
+TestGameCheck 2020-01-05 18:19:33,790 INFO 
+		Period 440_1 for game 440 correctly saved
+		
+TestGameCheck 2020-01-05 18:19:33,799 INFO New TimePeriod: 1488_0
+TestGameCheck 2020-01-05 18:19:33,800 INFO 
+		Period 1488_0 for game 1488 correctly saved
+		
+TestGameCheck 2020-01-05 18:19:33,802 INFO New TimePeriod: 1488_1
+TestGameCheck 2020-01-05 18:19:33,804 INFO 
+		Period 1488_1 for game 1488 correctly saved
+		
+TestGameCheck 2020-01-05 18:19:33,813 INFO New TimePeriod: 101_0
+TestGameCheck 2020-01-05 18:19:33,814 INFO 
+		Period 101_0 for game 101 correctly saved
+		
+TestGameCheck 2020-01-05 18:19:33,815 INFO New TimePeriod: 101_1
+TestGameCheck 2020-01-05 18:19:33,823 INFO 
+		Period 101_1 for game 101 correctly saved
+		
+TestGameCheck 2020-01-05 18:19:33,836 INFO New TimePeriod: 202_0
+TestGameCheck 2020-01-05 18:19:33,844 INFO 
+		Period 202_0 for game 202 correctly saved
+		
+TestGameCheck 2020-01-05 18:19:33,845 INFO New TimePeriod: 202_1
+TestGameCheck 2020-01-05 18:19:33,860 INFO 
+		Period 202_1 for game 202 correctly saved
+		
+TestGameCheck 2020-01-05 18:19:33,866 INFO New TimePeriod: 202_2
+TestGameCheck 2020-01-05 18:19:33,874 INFO 
+		Period 202_2 for game 202 correctly saved
+		
+TestGameCheck 2020-01-05 18:19:33,881 INFO New TimePeriod: 202_3
+TestGameCheck 2020-01-05 18:19:33,888 INFO 
+		Period 202_3 for game 202 correctly saved
+		
+TestGameCheck 2020-01-05 18:19:33,898 INFO New TimePeriod: 303_0
+TestGameCheck 2020-01-05 18:19:33,899 INFO 
+		Period 303_0 for game 303 correctly saved
+		
+TestGameCheck 2020-01-05 18:19:33,899 INFO New TimePeriod: 303_1
+TestGameCheck 2020-01-05 18:19:33,907 INFO 
+		Period 303_1 for game 303 correctly saved
+		
+TestGameCheck 2020-01-05 18:20:26,112 INFO Steam game 69lmao correctly stored
+TestGameCheck 2020-01-05 18:20:26,119 INFO Steam game 440 correctly stored
+TestGameCheck 2020-01-05 18:20:26,126 INFO Steam game 1488 correctly stored
+TestGameCheck 2020-01-05 18:20:26,132 INFO Steam game 101 correctly stored
+TestGameCheck 2020-01-05 18:20:26,139 INFO Steam game 202 correctly stored
+TestGameCheck 2020-01-05 18:20:26,146 INFO Steam game 303 correctly stored
+TestGameCheck 2020-01-05 18:20:26,149 INFO New TimePeriod: 69lmao_0
+TestGameCheck 2020-01-05 18:20:26,150 INFO 
+		Period 69lmao_0 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-05 18:20:26,182 INFO New TimePeriod: 69lmao_1
+TestGameCheck 2020-01-05 18:20:26,196 INFO 
+		Period 69lmao_1 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-05 18:20:26,211 INFO New TimePeriod: 69lmao_2
+TestGameCheck 2020-01-05 18:20:26,215 INFO 
+		Period 69lmao_2 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-05 18:20:26,230 INFO New TimePeriod: 440_0
+TestGameCheck 2020-01-05 18:20:26,231 INFO 
+		Period 440_0 for game 440 correctly saved
+		
+TestGameCheck 2020-01-05 18:20:26,244 INFO New TimePeriod: 440_1
+TestGameCheck 2020-01-05 18:20:26,259 INFO 
+		Period 440_1 for game 440 correctly saved
+		
+TestGameCheck 2020-01-05 18:20:26,287 INFO New TimePeriod: 1488_0
+TestGameCheck 2020-01-05 18:20:26,310 INFO 
+		Period 1488_0 for game 1488 correctly saved
+		
+TestGameCheck 2020-01-05 18:20:26,313 INFO New TimePeriod: 1488_1
+TestGameCheck 2020-01-05 18:20:26,315 INFO 
+		Period 1488_1 for game 1488 correctly saved
+		
+TestGameCheck 2020-01-05 18:20:26,330 INFO New TimePeriod: 101_0
+TestGameCheck 2020-01-05 18:20:26,331 INFO 
+		Period 101_0 for game 101 correctly saved
+		
+TestGameCheck 2020-01-05 18:20:26,334 INFO New TimePeriod: 101_1
+TestGameCheck 2020-01-05 18:20:26,339 INFO 
+		Period 101_1 for game 101 correctly saved
+		
+TestGameCheck 2020-01-05 18:20:26,353 INFO New TimePeriod: 202_0
+TestGameCheck 2020-01-05 18:20:26,355 INFO 
+		Period 202_0 for game 202 correctly saved
+		
+TestGameCheck 2020-01-05 18:20:26,359 INFO New TimePeriod: 202_1
+TestGameCheck 2020-01-05 18:20:26,361 INFO 
+		Period 202_1 for game 202 correctly saved
+		
+TestGameCheck 2020-01-05 18:20:26,363 INFO New TimePeriod: 202_2
+TestGameCheck 2020-01-05 18:20:26,364 INFO 
+		Period 202_2 for game 202 correctly saved
+		
+TestGameCheck 2020-01-05 18:20:26,365 INFO New TimePeriod: 202_3
+TestGameCheck 2020-01-05 18:20:26,373 INFO 
+		Period 202_3 for game 202 correctly saved
+		
+TestGameCheck 2020-01-05 18:20:26,394 INFO New TimePeriod: 303_0
+TestGameCheck 2020-01-05 18:20:26,395 INFO 
+		Period 303_0 for game 303 correctly saved
+		
+TestGameCheck 2020-01-05 18:20:26,408 INFO New TimePeriod: 303_1
+TestGameCheck 2020-01-05 18:20:26,411 INFO 
+		Period 303_1 for game 303 correctly saved
+		
+TestGameCheck 2020-01-05 18:20:26,600 DEBUG Check id list from db: [<SteamGame: SteamGame object>, <SteamGame: SteamGame object>, <SteamGame: SteamGame object>, <SteamGame: SteamGame object>]
+TestGameCheck 2020-01-05 18:21:28,947 INFO Steam game 69lmao correctly stored
+TestGameCheck 2020-01-05 18:21:28,956 INFO Steam game 440 correctly stored
+TestGameCheck 2020-01-05 18:21:28,964 INFO Steam game 1488 correctly stored
+TestGameCheck 2020-01-05 18:21:28,972 INFO Steam game 101 correctly stored
+TestGameCheck 2020-01-05 18:21:28,979 INFO Steam game 202 correctly stored
+TestGameCheck 2020-01-05 18:21:28,986 INFO Steam game 303 correctly stored
+TestGameCheck 2020-01-05 18:21:28,991 INFO New TimePeriod: 69lmao_0
+TestGameCheck 2020-01-05 18:21:28,992 INFO 
+		Period 69lmao_0 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-05 18:21:29,010 INFO New TimePeriod: 69lmao_1
+TestGameCheck 2020-01-05 18:21:29,021 INFO 
+		Period 69lmao_1 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-05 18:21:29,034 INFO New TimePeriod: 69lmao_2
+TestGameCheck 2020-01-05 18:21:29,040 INFO 
+		Period 69lmao_2 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-05 18:21:29,052 INFO New TimePeriod: 440_0
+TestGameCheck 2020-01-05 18:21:29,054 INFO 
+		Period 440_0 for game 440 correctly saved
+		
+TestGameCheck 2020-01-05 18:21:29,061 INFO New TimePeriod: 440_1
+TestGameCheck 2020-01-05 18:21:29,063 INFO 
+		Period 440_1 for game 440 correctly saved
+		
+TestGameCheck 2020-01-05 18:21:29,076 INFO New TimePeriod: 1488_0
+TestGameCheck 2020-01-05 18:21:29,077 INFO 
+		Period 1488_0 for game 1488 correctly saved
+		
+TestGameCheck 2020-01-05 18:21:29,078 INFO New TimePeriod: 1488_1
+TestGameCheck 2020-01-05 18:21:29,080 INFO 
+		Period 1488_1 for game 1488 correctly saved
+		
+TestGameCheck 2020-01-05 18:21:29,094 INFO New TimePeriod: 101_0
+TestGameCheck 2020-01-05 18:21:29,095 INFO 
+		Period 101_0 for game 101 correctly saved
+		
+TestGameCheck 2020-01-05 18:21:29,096 INFO New TimePeriod: 101_1
+TestGameCheck 2020-01-05 18:21:29,098 INFO 
+		Period 101_1 for game 101 correctly saved
+		
+TestGameCheck 2020-01-05 18:21:29,110 INFO New TimePeriod: 202_0
+TestGameCheck 2020-01-05 18:21:29,111 INFO 
+		Period 202_0 for game 202 correctly saved
+		
+TestGameCheck 2020-01-05 18:21:29,128 INFO New TimePeriod: 202_1
+TestGameCheck 2020-01-05 18:21:29,140 INFO 
+		Period 202_1 for game 202 correctly saved
+		
+TestGameCheck 2020-01-05 18:21:29,146 INFO New TimePeriod: 202_2
+TestGameCheck 2020-01-05 18:21:29,150 INFO 
+		Period 202_2 for game 202 correctly saved
+		
+TestGameCheck 2020-01-05 18:21:29,151 INFO New TimePeriod: 202_3
+TestGameCheck 2020-01-05 18:21:29,159 INFO 
+		Period 202_3 for game 202 correctly saved
+		
+TestGameCheck 2020-01-05 18:21:29,177 INFO New TimePeriod: 303_0
+TestGameCheck 2020-01-05 18:21:29,178 INFO 
+		Period 303_0 for game 303 correctly saved
+		
+TestGameCheck 2020-01-05 18:21:29,180 INFO New TimePeriod: 303_1
+TestGameCheck 2020-01-05 18:21:29,181 INFO 
+		Period 303_1 for game 303 correctly saved
+		
+TestGameCheck 2020-01-05 18:21:29,195 DEBUG Check id list from db: ['1488', '101', '202', '303']
+TestGameCheck 2020-01-05 18:23:32,428 INFO Steam game 69lmao correctly stored
+TestGameCheck 2020-01-05 18:23:32,435 INFO Steam game 440 correctly stored
+TestGameCheck 2020-01-05 18:23:32,442 INFO Steam game 1488 correctly stored
+TestGameCheck 2020-01-05 18:23:32,448 INFO Steam game 101 correctly stored
+TestGameCheck 2020-01-05 18:23:32,455 INFO Steam game 202 correctly stored
+TestGameCheck 2020-01-05 18:23:32,461 INFO Steam game 303 correctly stored
+TestGameCheck 2020-01-05 18:23:32,464 INFO New TimePeriod: 69lmao_0
+TestGameCheck 2020-01-05 18:23:32,465 INFO 
+		Period 69lmao_0 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-05 18:23:32,467 INFO New TimePeriod: 69lmao_1
+TestGameCheck 2020-01-05 18:23:32,484 INFO 
+		Period 69lmao_1 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-05 18:23:32,507 INFO New TimePeriod: 69lmao_2
+TestGameCheck 2020-01-05 18:23:32,539 INFO 
+		Period 69lmao_2 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-05 18:23:32,571 INFO New TimePeriod: 440_0
+TestGameCheck 2020-01-05 18:23:32,572 INFO 
+		Period 440_0 for game 440 correctly saved
+		
+TestGameCheck 2020-01-05 18:23:32,583 INFO New TimePeriod: 440_1
+TestGameCheck 2020-01-05 18:23:32,595 INFO 
+		Period 440_1 for game 440 correctly saved
+		
+TestGameCheck 2020-01-05 18:23:32,609 INFO New TimePeriod: 1488_0
+TestGameCheck 2020-01-05 18:23:32,610 INFO 
+		Period 1488_0 for game 1488 correctly saved
+		
+TestGameCheck 2020-01-05 18:23:32,611 INFO New TimePeriod: 1488_1
+TestGameCheck 2020-01-05 18:23:32,614 INFO 
+		Period 1488_1 for game 1488 correctly saved
+		
+TestGameCheck 2020-01-05 18:23:32,626 INFO New TimePeriod: 101_0
+TestGameCheck 2020-01-05 18:23:32,627 INFO 
+		Period 101_0 for game 101 correctly saved
+		
+TestGameCheck 2020-01-05 18:23:32,628 INFO New TimePeriod: 101_1
+TestGameCheck 2020-01-05 18:23:32,631 INFO 
+		Period 101_1 for game 101 correctly saved
+		
+TestGameCheck 2020-01-05 18:23:32,643 INFO New TimePeriod: 202_0
+TestGameCheck 2020-01-05 18:23:32,644 INFO 
+		Period 202_0 for game 202 correctly saved
+		
+TestGameCheck 2020-01-05 18:23:32,645 INFO New TimePeriod: 202_1
+TestGameCheck 2020-01-05 18:23:32,647 INFO 
+		Period 202_1 for game 202 correctly saved
+		
+TestGameCheck 2020-01-05 18:23:32,648 INFO New TimePeriod: 202_2
+TestGameCheck 2020-01-05 18:23:32,649 INFO 
+		Period 202_2 for game 202 correctly saved
+		
+TestGameCheck 2020-01-05 18:23:32,650 INFO New TimePeriod: 202_3
+TestGameCheck 2020-01-05 18:23:32,651 INFO 
+		Period 202_3 for game 202 correctly saved
+		
+TestGameCheck 2020-01-05 18:23:32,678 INFO New TimePeriod: 303_0
+TestGameCheck 2020-01-05 18:23:32,688 INFO 
+		Period 303_0 for game 303 correctly saved
+		
+TestGameCheck 2020-01-05 18:23:32,692 INFO New TimePeriod: 303_1
+TestGameCheck 2020-01-05 18:23:32,694 INFO 
+		Period 303_1 for game 303 correctly saved
+		
+TestGameCheck 2020-01-05 18:23:32,706 DEBUG Check id list from db: ['440', '1488', '101', '202', '303']
+TestGameCheck 2020-01-06 01:40:11,040 INFO Steam game 69lmao correctly stored
+TestGameCheck 2020-01-06 01:40:11,085 INFO Steam game 440 correctly stored
+TestGameCheck 2020-01-06 01:40:11,094 INFO Steam game 1488 correctly stored
+TestGameCheck 2020-01-06 01:40:11,102 INFO Steam game 101 correctly stored
+TestGameCheck 2020-01-06 01:40:11,109 INFO Steam game 202 correctly stored
+TestGameCheck 2020-01-06 01:40:11,117 INFO Steam game 303 correctly stored
+TestGameCheck 2020-01-06 01:40:11,122 INFO New TimePeriod: 69lmao_0
+TestGameCheck 2020-01-06 01:40:11,123 INFO 
+		Period 69lmao_0 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-06 01:40:11,127 INFO New TimePeriod: 69lmao_1
+TestGameCheck 2020-01-06 01:40:11,130 INFO 
+		Period 69lmao_1 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-06 01:40:11,131 INFO New TimePeriod: 69lmao_2
+TestGameCheck 2020-01-06 01:40:11,131 INFO 
+		Period 69lmao_2 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-06 01:40:11,147 INFO New TimePeriod: 440_0
+TestGameCheck 2020-01-06 01:40:11,149 INFO 
+		Period 440_0 for game 440 correctly saved
+		
+TestGameCheck 2020-01-06 01:40:11,150 INFO New TimePeriod: 440_1
+TestGameCheck 2020-01-06 01:40:11,153 INFO 
+		Period 440_1 for game 440 correctly saved
+		
+TestGameCheck 2020-01-06 01:40:11,181 INFO New TimePeriod: 1488_0
+TestGameCheck 2020-01-06 01:40:11,182 INFO 
+		Period 1488_0 for game 1488 correctly saved
+		
+TestGameCheck 2020-01-06 01:40:11,185 INFO New TimePeriod: 1488_1
+TestGameCheck 2020-01-06 01:40:11,187 INFO 
+		Period 1488_1 for game 1488 correctly saved
+		
+TestGameCheck 2020-01-06 01:40:11,200 INFO New TimePeriod: 101_0
+TestGameCheck 2020-01-06 01:40:11,202 INFO 
+		Period 101_0 for game 101 correctly saved
+		
+TestGameCheck 2020-01-06 01:40:11,203 INFO New TimePeriod: 101_1
+TestGameCheck 2020-01-06 01:40:11,214 INFO 
+		Period 101_1 for game 101 correctly saved
+		
+TestGameCheck 2020-01-06 01:40:11,232 INFO New TimePeriod: 202_0
+TestGameCheck 2020-01-06 01:40:11,233 INFO 
+		Period 202_0 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 01:40:11,235 INFO New TimePeriod: 202_1
+TestGameCheck 2020-01-06 01:40:11,238 INFO 
+		Period 202_1 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 01:40:11,249 INFO New TimePeriod: 202_2
+TestGameCheck 2020-01-06 01:40:11,251 INFO 
+		Period 202_2 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 01:40:11,253 INFO New TimePeriod: 202_3
+TestGameCheck 2020-01-06 01:40:11,255 INFO 
+		Period 202_3 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 01:40:11,269 INFO New TimePeriod: 303_0
+TestGameCheck 2020-01-06 01:40:11,270 INFO 
+		Period 303_0 for game 303 correctly saved
+		
+TestGameCheck 2020-01-06 01:40:11,276 INFO New TimePeriod: 303_1
+TestGameCheck 2020-01-06 01:40:11,278 INFO 
+		Period 303_1 for game 303 correctly saved
+		
+TestGameCheck 2020-01-06 01:40:11,344 DEBUG Check id list from db: ['440', '1488', '101', '202', '303']
+TestGameCheck 2020-01-06 01:48:25,503 INFO Steam game 69lmao correctly stored
+TestGameCheck 2020-01-06 01:48:25,514 INFO Steam game 440 correctly stored
+TestGameCheck 2020-01-06 01:48:25,523 INFO Steam game 1488 correctly stored
+TestGameCheck 2020-01-06 01:48:25,532 INFO Steam game 101 correctly stored
+TestGameCheck 2020-01-06 01:48:25,542 INFO Steam game 202 correctly stored
+TestGameCheck 2020-01-06 01:48:25,551 INFO Steam game 303 correctly stored
+TestGameCheck 2020-01-06 01:48:25,556 INFO New TimePeriod: 69lmao_0
+TestGameCheck 2020-01-06 01:48:25,561 INFO 
+		Period 69lmao_0 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-06 01:48:25,564 INFO New TimePeriod: 69lmao_1
+TestGameCheck 2020-01-06 01:48:25,595 INFO 
+		Period 69lmao_1 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-06 01:48:25,600 INFO New TimePeriod: 69lmao_2
+TestGameCheck 2020-01-06 01:48:25,603 INFO 
+		Period 69lmao_2 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-06 01:48:25,648 INFO New TimePeriod: 440_0
+TestGameCheck 2020-01-06 01:48:25,665 INFO 
+		Period 440_0 for game 440 correctly saved
+		
+TestGameCheck 2020-01-06 01:48:25,668 INFO New TimePeriod: 440_1
+TestGameCheck 2020-01-06 01:48:25,674 INFO 
+		Period 440_1 for game 440 correctly saved
+		
+TestGameCheck 2020-01-06 01:48:25,697 INFO New TimePeriod: 1488_0
+TestGameCheck 2020-01-06 01:48:25,703 INFO 
+		Period 1488_0 for game 1488 correctly saved
+		
+TestGameCheck 2020-01-06 01:48:25,715 INFO New TimePeriod: 1488_1
+TestGameCheck 2020-01-06 01:48:25,720 INFO 
+		Period 1488_1 for game 1488 correctly saved
+		
+TestGameCheck 2020-01-06 01:48:25,749 INFO New TimePeriod: 101_0
+TestGameCheck 2020-01-06 01:48:25,758 INFO 
+		Period 101_0 for game 101 correctly saved
+		
+TestGameCheck 2020-01-06 01:48:25,764 INFO New TimePeriod: 101_1
+TestGameCheck 2020-01-06 01:48:25,766 INFO 
+		Period 101_1 for game 101 correctly saved
+		
+TestGameCheck 2020-01-06 01:48:25,781 INFO New TimePeriod: 202_0
+TestGameCheck 2020-01-06 01:48:25,782 INFO 
+		Period 202_0 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 01:48:25,798 INFO New TimePeriod: 202_1
+TestGameCheck 2020-01-06 01:48:25,801 INFO 
+		Period 202_1 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 01:48:25,808 INFO New TimePeriod: 202_2
+TestGameCheck 2020-01-06 01:48:25,811 INFO 
+		Period 202_2 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 01:48:25,813 INFO New TimePeriod: 202_3
+TestGameCheck 2020-01-06 01:48:25,816 INFO 
+		Period 202_3 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 01:48:25,842 INFO New TimePeriod: 303_0
+TestGameCheck 2020-01-06 01:48:25,845 INFO 
+		Period 303_0 for game 303 correctly saved
+		
+TestGameCheck 2020-01-06 01:48:25,848 INFO New TimePeriod: 303_1
+TestGameCheck 2020-01-06 01:48:25,850 INFO 
+		Period 303_1 for game 303 correctly saved
+		
+TestGameCheck 2020-01-06 01:48:25,907 DEBUG 
+				69lmao last_checked: 2020-01-01 00:00:00
+				
+TestGameCheck 2020-01-06 01:48:25,914 DEBUG 
+				440 last_checked: 2020-01-01 00:00:00
+				
+TestGameCheck 2020-01-06 01:48:25,930 DEBUG 
+				1488 last_checked: 2020-01-01 00:00:00
+				
+TestGameCheck 2020-01-06 01:48:25,936 DEBUG 
+				101 last_checked: 2020-01-01 00:00:00
+				
+TestGameCheck 2020-01-06 01:48:25,944 DEBUG 
+				202 last_checked: 2020-01-04 00:00:00
+				
+TestGameCheck 2020-01-06 01:48:25,951 DEBUG 
+				303 last_checked: 2020-01-05 00:00:00
+				
+TestGameCheck 2020-01-06 01:48:25,984 DEBUG Check id list from db: ['440', '1488', '101', '202', '303']
+TestGameCheck 2020-01-06 01:49:10,860 INFO Steam game 69lmao correctly stored
+TestGameCheck 2020-01-06 01:49:10,869 INFO Steam game 440 correctly stored
+TestGameCheck 2020-01-06 01:49:10,878 INFO Steam game 1488 correctly stored
+TestGameCheck 2020-01-06 01:49:10,886 INFO Steam game 101 correctly stored
+TestGameCheck 2020-01-06 01:49:10,896 INFO Steam game 202 correctly stored
+TestGameCheck 2020-01-06 01:49:10,905 INFO Steam game 303 correctly stored
+TestGameCheck 2020-01-06 01:49:10,910 INFO New TimePeriod: 69lmao_0
+TestGameCheck 2020-01-06 01:49:10,911 INFO 
+		Period 69lmao_0 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-06 01:49:10,915 INFO New TimePeriod: 69lmao_1
+TestGameCheck 2020-01-06 01:49:10,917 INFO 
+		Period 69lmao_1 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-06 01:49:10,918 INFO New TimePeriod: 69lmao_2
+TestGameCheck 2020-01-06 01:49:10,920 INFO 
+		Period 69lmao_2 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-06 01:49:10,943 INFO New TimePeriod: 440_0
+TestGameCheck 2020-01-06 01:49:10,944 INFO 
+		Period 440_0 for game 440 correctly saved
+		
+TestGameCheck 2020-01-06 01:49:10,948 INFO New TimePeriod: 440_1
+TestGameCheck 2020-01-06 01:49:10,949 INFO 
+		Period 440_1 for game 440 correctly saved
+		
+TestGameCheck 2020-01-06 01:49:10,964 INFO New TimePeriod: 1488_0
+TestGameCheck 2020-01-06 01:49:10,981 INFO 
+		Period 1488_0 for game 1488 correctly saved
+		
+TestGameCheck 2020-01-06 01:49:10,985 INFO New TimePeriod: 1488_1
+TestGameCheck 2020-01-06 01:49:10,987 INFO 
+		Period 1488_1 for game 1488 correctly saved
+		
+TestGameCheck 2020-01-06 01:49:11,002 INFO New TimePeriod: 101_0
+TestGameCheck 2020-01-06 01:49:11,003 INFO 
+		Period 101_0 for game 101 correctly saved
+		
+TestGameCheck 2020-01-06 01:49:11,019 INFO New TimePeriod: 101_1
+TestGameCheck 2020-01-06 01:49:11,033 INFO 
+		Period 101_1 for game 101 correctly saved
+		
+TestGameCheck 2020-01-06 01:49:11,052 INFO New TimePeriod: 202_0
+TestGameCheck 2020-01-06 01:49:11,053 INFO 
+		Period 202_0 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 01:49:11,058 INFO New TimePeriod: 202_1
+TestGameCheck 2020-01-06 01:49:11,068 INFO 
+		Period 202_1 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 01:49:11,070 INFO New TimePeriod: 202_2
+TestGameCheck 2020-01-06 01:49:11,074 INFO 
+		Period 202_2 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 01:49:11,075 INFO New TimePeriod: 202_3
+TestGameCheck 2020-01-06 01:49:11,079 INFO 
+		Period 202_3 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 01:49:11,094 INFO New TimePeriod: 303_0
+TestGameCheck 2020-01-06 01:49:11,095 INFO 
+		Period 303_0 for game 303 correctly saved
+		
+TestGameCheck 2020-01-06 01:49:11,099 INFO New TimePeriod: 303_1
+TestGameCheck 2020-01-06 01:49:11,101 INFO 
+		Period 303_1 for game 303 correctly saved
+		
+TestGameCheck 2020-01-06 01:49:11,374 DEBUG 
+				69lmao last_checked: 2020-01-06 01:49:11.123000
+				
+TestGameCheck 2020-01-06 01:49:11,382 DEBUG 
+				440 last_checked: 2020-01-06 01:49:11.291000
+				
+TestGameCheck 2020-01-06 01:49:11,388 DEBUG 
+				1488 last_checked: 2020-01-06 01:49:11.318000
+				
+TestGameCheck 2020-01-06 01:49:11,401 DEBUG 
+				101 last_checked: 2020-01-06 01:49:11.336000
+				
+TestGameCheck 2020-01-06 01:49:11,410 DEBUG 
+				202 last_checked: 2020-01-06 01:49:11.350000
+				
+TestGameCheck 2020-01-06 01:49:11,416 DEBUG 
+				303 last_checked: 2020-01-06 01:49:11.361000
+				
+TestGameCheck 2020-01-06 01:49:11,427 DEBUG Check id list from db: ['440', '1488', '101', '202', '303']
+TestGameCheck 2020-01-06 02:44:29,550 INFO Steam game 69lmao correctly stored
+TestGameCheck 2020-01-06 02:44:29,576 INFO Steam game 440 correctly stored
+TestGameCheck 2020-01-06 02:44:29,584 INFO Steam game 1488 correctly stored
+TestGameCheck 2020-01-06 02:44:29,594 INFO Steam game 101 correctly stored
+TestGameCheck 2020-01-06 02:44:29,603 INFO Steam game 202 correctly stored
+TestGameCheck 2020-01-06 02:44:29,610 INFO Steam game 303 correctly stored
+TestGameCheck 2020-01-06 02:44:29,615 INFO New TimePeriod: 69lmao_0
+TestGameCheck 2020-01-06 02:44:29,616 INFO 
+		Period 69lmao_0 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-06 02:44:29,629 INFO New TimePeriod: 69lmao_1
+TestGameCheck 2020-01-06 02:44:29,632 INFO 
+		Period 69lmao_1 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-06 02:44:29,635 INFO New TimePeriod: 69lmao_2
+TestGameCheck 2020-01-06 02:44:29,641 INFO 
+		Period 69lmao_2 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-06 02:44:29,686 INFO New TimePeriod: 440_0
+TestGameCheck 2020-01-06 02:44:29,688 INFO 
+		Period 440_0 for game 440 correctly saved
+		
+TestGameCheck 2020-01-06 02:44:29,690 INFO New TimePeriod: 440_1
+TestGameCheck 2020-01-06 02:44:29,692 INFO 
+		Period 440_1 for game 440 correctly saved
+		
+TestGameCheck 2020-01-06 02:44:29,704 INFO New TimePeriod: 1488_0
+TestGameCheck 2020-01-06 02:44:29,714 INFO 
+		Period 1488_0 for game 1488 correctly saved
+		
+TestGameCheck 2020-01-06 02:44:29,717 INFO New TimePeriod: 1488_1
+TestGameCheck 2020-01-06 02:44:29,723 INFO 
+		Period 1488_1 for game 1488 correctly saved
+		
+TestGameCheck 2020-01-06 02:44:29,739 INFO New TimePeriod: 101_0
+TestGameCheck 2020-01-06 02:44:29,741 INFO 
+		Period 101_0 for game 101 correctly saved
+		
+TestGameCheck 2020-01-06 02:44:29,746 INFO New TimePeriod: 101_1
+TestGameCheck 2020-01-06 02:44:29,749 INFO 
+		Period 101_1 for game 101 correctly saved
+		
+TestGameCheck 2020-01-06 02:44:29,775 INFO New TimePeriod: 202_0
+TestGameCheck 2020-01-06 02:44:29,776 INFO 
+		Period 202_0 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 02:44:29,781 INFO New TimePeriod: 202_1
+TestGameCheck 2020-01-06 02:44:29,791 INFO 
+		Period 202_1 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 02:44:29,795 INFO New TimePeriod: 202_2
+TestGameCheck 2020-01-06 02:44:29,797 INFO 
+		Period 202_2 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 02:44:29,800 INFO New TimePeriod: 202_3
+TestGameCheck 2020-01-06 02:44:29,803 INFO 
+		Period 202_3 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 02:44:29,826 INFO New TimePeriod: 303_0
+TestGameCheck 2020-01-06 02:44:29,827 INFO 
+		Period 303_0 for game 303 correctly saved
+		
+TestGameCheck 2020-01-06 02:44:29,830 INFO New TimePeriod: 303_1
+TestGameCheck 2020-01-06 02:44:29,831 INFO 
+		Period 303_1 for game 303 correctly saved
+		
+TestGameCheck 2020-01-06 02:44:29,965 DEBUG 
+				69lmao last_checked: 2020-01-06 02:44:29.851000
+				
+TestGameCheck 2020-01-06 02:44:29,972 DEBUG 
+				440 last_checked: 2020-01-06 02:44:29.888000
+				
+TestGameCheck 2020-01-06 02:44:29,979 DEBUG 
+				1488 last_checked: 2020-01-06 02:44:29.901000
+				
+TestGameCheck 2020-01-06 02:44:29,986 DEBUG 
+				101 last_checked: 2020-01-06 02:44:29.927000
+				
+TestGameCheck 2020-01-06 02:44:29,995 DEBUG 
+				202 last_checked: 2020-01-06 02:44:29.940000
+				
+TestGameCheck 2020-01-06 02:44:30,031 DEBUG 
+				303 last_checked: 2020-01-06 02:44:29.952000
+				
+TestGameCheck 2020-01-06 02:44:30,042 DEBUG Check id list from db: ['440', '1488', '101', '202', '303']
+TestGameCheck 2020-01-06 02:44:47,422 INFO Steam game 69lmao correctly stored
+TestGameCheck 2020-01-06 02:44:47,432 INFO Steam game 440 correctly stored
+TestGameCheck 2020-01-06 02:44:47,441 INFO Steam game 1488 correctly stored
+TestGameCheck 2020-01-06 02:44:47,450 INFO Steam game 101 correctly stored
+TestGameCheck 2020-01-06 02:44:47,459 INFO Steam game 202 correctly stored
+TestGameCheck 2020-01-06 02:44:47,469 INFO Steam game 303 correctly stored
+TestGameCheck 2020-01-06 02:44:47,476 INFO New TimePeriod: 69lmao_0
+TestGameCheck 2020-01-06 02:44:47,477 INFO 
+		Period 69lmao_0 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-06 02:44:47,480 INFO New TimePeriod: 69lmao_1
+TestGameCheck 2020-01-06 02:44:47,492 INFO 
+		Period 69lmao_1 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-06 02:44:47,495 INFO New TimePeriod: 69lmao_2
+TestGameCheck 2020-01-06 02:44:47,497 INFO 
+		Period 69lmao_2 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-06 02:44:47,522 INFO New TimePeriod: 440_0
+TestGameCheck 2020-01-06 02:44:47,523 INFO 
+		Period 440_0 for game 440 correctly saved
+		
+TestGameCheck 2020-01-06 02:44:47,526 INFO New TimePeriod: 440_1
+TestGameCheck 2020-01-06 02:44:47,529 INFO 
+		Period 440_1 for game 440 correctly saved
+		
+TestGameCheck 2020-01-06 02:44:47,557 INFO New TimePeriod: 1488_0
+TestGameCheck 2020-01-06 02:44:47,559 INFO 
+		Period 1488_0 for game 1488 correctly saved
+		
+TestGameCheck 2020-01-06 02:44:47,561 INFO New TimePeriod: 1488_1
+TestGameCheck 2020-01-06 02:44:47,564 INFO 
+		Period 1488_1 for game 1488 correctly saved
+		
+TestGameCheck 2020-01-06 02:44:47,578 INFO New TimePeriod: 101_0
+TestGameCheck 2020-01-06 02:44:47,580 INFO 
+		Period 101_0 for game 101 correctly saved
+		
+TestGameCheck 2020-01-06 02:44:47,582 INFO New TimePeriod: 101_1
+TestGameCheck 2020-01-06 02:44:47,584 INFO 
+		Period 101_1 for game 101 correctly saved
+		
+TestGameCheck 2020-01-06 02:44:47,606 INFO New TimePeriod: 202_0
+TestGameCheck 2020-01-06 02:44:47,607 INFO 
+		Period 202_0 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 02:44:47,610 INFO New TimePeriod: 202_1
+TestGameCheck 2020-01-06 02:44:47,612 INFO 
+		Period 202_1 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 02:44:47,613 INFO New TimePeriod: 202_2
+TestGameCheck 2020-01-06 02:44:47,615 INFO 
+		Period 202_2 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 02:44:47,616 INFO New TimePeriod: 202_3
+TestGameCheck 2020-01-06 02:44:47,617 INFO 
+		Period 202_3 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 02:44:47,643 INFO New TimePeriod: 303_0
+TestGameCheck 2020-01-06 02:44:47,644 INFO 
+		Period 303_0 for game 303 correctly saved
+		
+TestGameCheck 2020-01-06 02:44:47,650 INFO New TimePeriod: 303_1
+TestGameCheck 2020-01-06 02:44:47,661 INFO 
+		Period 303_1 for game 303 correctly saved
+		
+TestGameCheck 2020-01-06 02:44:47,792 DEBUG 
+				69lmao last_checked: 2020-01-06 02:44:47.686000
+				
+TestGameCheck 2020-01-06 02:44:47,802 DEBUG 
+				440 last_checked: 2020-01-06 02:44:47.717000
+				
+TestGameCheck 2020-01-06 02:44:47,813 DEBUG 
+				1488 last_checked: 2020-01-06 02:44:47.741000
+				
+TestGameCheck 2020-01-06 02:44:47,819 DEBUG 
+				101 last_checked: 2020-01-06 02:44:47.755000
+				
+TestGameCheck 2020-01-06 02:44:47,826 DEBUG 
+				202 last_checked: 2020-01-06 02:44:47.768000
+				
+TestGameCheck 2020-01-06 02:44:47,832 DEBUG 
+				303 last_checked: 2020-01-06 02:44:47.780000
+				
+TestGameCheck 2020-01-06 02:44:47,845 DEBUG Check id list from db: ['440', '1488', '101', '202', '303']
+TestGameCheck 2020-01-06 02:50:42,164 INFO Steam game 69lmao correctly stored
+TestGameCheck 2020-01-06 02:50:42,190 INFO Steam game 440 correctly stored
+TestGameCheck 2020-01-06 02:50:42,199 INFO Steam game 1488 correctly stored
+TestGameCheck 2020-01-06 02:50:42,209 INFO Steam game 101 correctly stored
+TestGameCheck 2020-01-06 02:50:42,218 INFO Steam game 202 correctly stored
+TestGameCheck 2020-01-06 02:50:42,229 INFO Steam game 303 correctly stored
+TestGameCheck 2020-01-06 02:50:42,234 INFO New TimePeriod: 69lmao_0
+TestGameCheck 2020-01-06 02:50:42,235 INFO 
+		Period 69lmao_0 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-06 02:50:42,239 INFO New TimePeriod: 69lmao_1
+TestGameCheck 2020-01-06 02:50:42,241 INFO 
+		Period 69lmao_1 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-06 02:50:42,243 INFO New TimePeriod: 69lmao_2
+TestGameCheck 2020-01-06 02:50:42,245 INFO 
+		Period 69lmao_2 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-06 02:50:42,262 INFO New TimePeriod: 440_0
+TestGameCheck 2020-01-06 02:50:42,265 INFO 
+		Period 440_0 for game 440 correctly saved
+		
+TestGameCheck 2020-01-06 02:50:42,272 INFO New TimePeriod: 440_1
+TestGameCheck 2020-01-06 02:50:42,297 INFO 
+		Period 440_1 for game 440 correctly saved
+		
+TestGameCheck 2020-01-06 02:50:42,315 INFO New TimePeriod: 1488_0
+TestGameCheck 2020-01-06 02:50:42,317 INFO 
+		Period 1488_0 for game 1488 correctly saved
+		
+TestGameCheck 2020-01-06 02:50:42,321 INFO New TimePeriod: 1488_1
+TestGameCheck 2020-01-06 02:50:42,331 INFO 
+		Period 1488_1 for game 1488 correctly saved
+		
+TestGameCheck 2020-01-06 02:50:42,353 INFO New TimePeriod: 101_0
+TestGameCheck 2020-01-06 02:50:42,355 INFO 
+		Period 101_0 for game 101 correctly saved
+		
+TestGameCheck 2020-01-06 02:50:42,364 INFO New TimePeriod: 101_1
+TestGameCheck 2020-01-06 02:50:42,369 INFO 
+		Period 101_1 for game 101 correctly saved
+		
+TestGameCheck 2020-01-06 02:50:42,391 INFO New TimePeriod: 202_0
+TestGameCheck 2020-01-06 02:50:42,392 INFO 
+		Period 202_0 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 02:50:42,395 INFO New TimePeriod: 202_1
+TestGameCheck 2020-01-06 02:50:42,397 INFO 
+		Period 202_1 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 02:50:42,399 INFO New TimePeriod: 202_2
+TestGameCheck 2020-01-06 02:50:42,400 INFO 
+		Period 202_2 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 02:50:42,401 INFO New TimePeriod: 202_3
+TestGameCheck 2020-01-06 02:50:42,417 INFO 
+		Period 202_3 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 02:50:42,436 INFO New TimePeriod: 303_0
+TestGameCheck 2020-01-06 02:50:42,442 INFO 
+		Period 303_0 for game 303 correctly saved
+		
+TestGameCheck 2020-01-06 02:50:42,444 INFO New TimePeriod: 303_1
+TestGameCheck 2020-01-06 02:50:42,447 INFO 
+		Period 303_1 for game 303 correctly saved
+		
+TestGameCheck 2020-01-06 02:50:42,560 DEBUG 
+				69lmao last_checked: 2020-01-06 02:50:42.476000
+				
+TestGameCheck 2020-01-06 02:50:42,566 DEBUG 
+				440 last_checked: 2020-01-06 02:50:42.490000
+				
+TestGameCheck 2020-01-06 02:50:42,574 DEBUG 
+				1488 last_checked: 2020-01-06 02:50:42.503000
+				
+TestGameCheck 2020-01-06 02:50:42,580 DEBUG 
+				101 last_checked: 2020-01-06 02:50:42.519000
+				
+TestGameCheck 2020-01-06 02:50:42,589 DEBUG 
+				202 last_checked: 2020-01-06 02:50:42.532000
+				
+TestGameCheck 2020-01-06 02:50:42,596 DEBUG 
+				303 last_checked: 2020-01-06 02:50:42.546000
+				
+TestGameCheck 2020-01-06 02:50:42,617 DEBUG Check id list from db: ['440', '1488', '101', '202', '303']
+TestGameCheck 2020-01-06 02:51:20,182 INFO Steam game 69lmao correctly stored
+TestGameCheck 2020-01-06 02:51:20,191 INFO Steam game 440 correctly stored
+TestGameCheck 2020-01-06 02:51:20,201 INFO Steam game 1488 correctly stored
+TestGameCheck 2020-01-06 02:51:20,210 INFO Steam game 101 correctly stored
+TestGameCheck 2020-01-06 02:51:20,219 INFO Steam game 202 correctly stored
+TestGameCheck 2020-01-06 02:51:20,229 INFO Steam game 303 correctly stored
+TestGameCheck 2020-01-06 02:51:20,235 INFO New TimePeriod: 69lmao_0
+TestGameCheck 2020-01-06 02:51:20,236 INFO 
+		Period 69lmao_0 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-06 02:51:20,241 INFO New TimePeriod: 69lmao_1
+TestGameCheck 2020-01-06 02:51:20,243 INFO 
+		Period 69lmao_1 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-06 02:51:20,244 INFO New TimePeriod: 69lmao_2
+TestGameCheck 2020-01-06 02:51:20,245 INFO 
+		Period 69lmao_2 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-06 02:51:20,274 INFO New TimePeriod: 440_0
+TestGameCheck 2020-01-06 02:51:20,275 INFO 
+		Period 440_0 for game 440 correctly saved
+		
+TestGameCheck 2020-01-06 02:51:20,279 INFO New TimePeriod: 440_1
+TestGameCheck 2020-01-06 02:51:20,281 INFO 
+		Period 440_1 for game 440 correctly saved
+		
+TestGameCheck 2020-01-06 02:51:20,296 INFO New TimePeriod: 1488_0
+TestGameCheck 2020-01-06 02:51:20,297 INFO 
+		Period 1488_0 for game 1488 correctly saved
+		
+TestGameCheck 2020-01-06 02:51:20,311 INFO New TimePeriod: 1488_1
+TestGameCheck 2020-01-06 02:51:20,315 INFO 
+		Period 1488_1 for game 1488 correctly saved
+		
+TestGameCheck 2020-01-06 02:51:20,345 INFO New TimePeriod: 101_0
+TestGameCheck 2020-01-06 02:51:20,346 INFO 
+		Period 101_0 for game 101 correctly saved
+		
+TestGameCheck 2020-01-06 02:51:20,351 INFO New TimePeriod: 101_1
+TestGameCheck 2020-01-06 02:51:20,356 INFO 
+		Period 101_1 for game 101 correctly saved
+		
+TestGameCheck 2020-01-06 02:51:20,374 INFO New TimePeriod: 202_0
+TestGameCheck 2020-01-06 02:51:20,375 INFO 
+		Period 202_0 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 02:51:20,378 INFO New TimePeriod: 202_1
+TestGameCheck 2020-01-06 02:51:20,381 INFO 
+		Period 202_1 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 02:51:20,382 INFO New TimePeriod: 202_2
+TestGameCheck 2020-01-06 02:51:20,384 INFO 
+		Period 202_2 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 02:51:20,385 INFO New TimePeriod: 202_3
+TestGameCheck 2020-01-06 02:51:20,394 INFO 
+		Period 202_3 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 02:51:20,413 INFO New TimePeriod: 303_0
+TestGameCheck 2020-01-06 02:51:20,416 INFO 
+		Period 303_0 for game 303 correctly saved
+		
+TestGameCheck 2020-01-06 02:51:20,417 INFO New TimePeriod: 303_1
+TestGameCheck 2020-01-06 02:51:20,422 INFO 
+		Period 303_1 for game 303 correctly saved
+		
+TestGameCheck 2020-01-06 02:51:20,537 DEBUG 
+				69lmao last_checked: 2020-01-06 02:51:20.436000
+				
+TestGameCheck 2020-01-06 02:51:20,554 DEBUG 
+				440 last_checked: 2020-01-06 02:51:20.467000
+				
+TestGameCheck 2020-01-06 02:51:20,562 DEBUG 
+				1488 last_checked: 2020-01-06 02:51:20.484000
+				
+TestGameCheck 2020-01-06 02:51:20,568 DEBUG 
+				101 last_checked: 2020-01-06 02:51:20.500000
+				
+TestGameCheck 2020-01-06 02:51:20,579 DEBUG 
+				202 last_checked: 2020-01-06 02:51:20.512000
+				
+TestGameCheck 2020-01-06 02:51:20,586 DEBUG 
+				303 last_checked: 2020-01-06 02:51:20.525000
+				
+TestGameCheck 2020-01-06 02:51:20,602 DEBUG Check id list from db: ['440', '1488', '101', '202', '303']
+TestGameCheck 2020-01-06 02:52:53,813 INFO Steam game 69lmao correctly stored
+TestGameCheck 2020-01-06 02:52:53,824 INFO Steam game 440 correctly stored
+TestGameCheck 2020-01-06 02:52:53,833 INFO Steam game 1488 correctly stored
+TestGameCheck 2020-01-06 02:52:53,843 INFO Steam game 101 correctly stored
+TestGameCheck 2020-01-06 02:52:53,852 INFO Steam game 202 correctly stored
+TestGameCheck 2020-01-06 02:52:53,862 INFO Steam game 303 correctly stored
+TestGameCheck 2020-01-06 02:52:53,866 INFO New TimePeriod: 69lmao_0
+TestGameCheck 2020-01-06 02:52:53,867 INFO 
+		Period 69lmao_0 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-06 02:52:53,873 INFO New TimePeriod: 69lmao_1
+TestGameCheck 2020-01-06 02:52:53,881 INFO 
+		Period 69lmao_1 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-06 02:52:53,886 INFO New TimePeriod: 69lmao_2
+TestGameCheck 2020-01-06 02:52:53,893 INFO 
+		Period 69lmao_2 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-06 02:52:53,909 INFO New TimePeriod: 440_0
+TestGameCheck 2020-01-06 02:52:53,910 INFO 
+		Period 440_0 for game 440 correctly saved
+		
+TestGameCheck 2020-01-06 02:52:53,915 INFO New TimePeriod: 440_1
+TestGameCheck 2020-01-06 02:52:53,918 INFO 
+		Period 440_1 for game 440 correctly saved
+		
+TestGameCheck 2020-01-06 02:52:53,932 INFO New TimePeriod: 1488_0
+TestGameCheck 2020-01-06 02:52:53,933 INFO 
+		Period 1488_0 for game 1488 correctly saved
+		
+TestGameCheck 2020-01-06 02:52:53,937 INFO New TimePeriod: 1488_1
+TestGameCheck 2020-01-06 02:52:53,941 INFO 
+		Period 1488_1 for game 1488 correctly saved
+		
+TestGameCheck 2020-01-06 02:52:53,954 INFO New TimePeriod: 101_0
+TestGameCheck 2020-01-06 02:52:53,956 INFO 
+		Period 101_0 for game 101 correctly saved
+		
+TestGameCheck 2020-01-06 02:52:53,965 INFO New TimePeriod: 101_1
+TestGameCheck 2020-01-06 02:52:53,969 INFO 
+		Period 101_1 for game 101 correctly saved
+		
+TestGameCheck 2020-01-06 02:52:53,984 INFO New TimePeriod: 202_0
+TestGameCheck 2020-01-06 02:52:53,986 INFO 
+		Period 202_0 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 02:52:54,006 INFO New TimePeriod: 202_1
+TestGameCheck 2020-01-06 02:52:54,014 INFO 
+		Period 202_1 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 02:52:54,017 INFO New TimePeriod: 202_2
+TestGameCheck 2020-01-06 02:52:54,024 INFO 
+		Period 202_2 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 02:52:54,026 INFO New TimePeriod: 202_3
+TestGameCheck 2020-01-06 02:52:54,028 INFO 
+		Period 202_3 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 02:52:54,050 INFO New TimePeriod: 303_0
+TestGameCheck 2020-01-06 02:52:54,052 INFO 
+		Period 303_0 for game 303 correctly saved
+		
+TestGameCheck 2020-01-06 02:52:54,057 INFO New TimePeriod: 303_1
+TestGameCheck 2020-01-06 02:52:54,060 INFO 
+		Period 303_1 for game 303 correctly saved
+		
+TestGameCheck 2020-01-06 02:53:38,709 INFO Steam game 69lmao correctly stored
+TestGameCheck 2020-01-06 02:53:38,718 INFO Steam game 440 correctly stored
+TestGameCheck 2020-01-06 02:53:38,729 INFO Steam game 1488 correctly stored
+TestGameCheck 2020-01-06 02:53:38,738 INFO Steam game 101 correctly stored
+TestGameCheck 2020-01-06 02:53:38,748 INFO Steam game 202 correctly stored
+TestGameCheck 2020-01-06 02:53:38,758 INFO Steam game 303 correctly stored
+TestGameCheck 2020-01-06 02:53:38,763 INFO New TimePeriod: 69lmao_0
+TestGameCheck 2020-01-06 02:53:38,764 INFO 
+		Period 69lmao_0 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-06 02:53:38,768 INFO New TimePeriod: 69lmao_1
+TestGameCheck 2020-01-06 02:53:38,781 INFO 
+		Period 69lmao_1 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-06 02:53:38,782 INFO New TimePeriod: 69lmao_2
+TestGameCheck 2020-01-06 02:53:38,784 INFO 
+		Period 69lmao_2 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-06 02:53:38,800 INFO New TimePeriod: 440_0
+TestGameCheck 2020-01-06 02:53:38,801 INFO 
+		Period 440_0 for game 440 correctly saved
+		
+TestGameCheck 2020-01-06 02:53:38,809 INFO New TimePeriod: 440_1
+TestGameCheck 2020-01-06 02:53:38,810 INFO 
+		Period 440_1 for game 440 correctly saved
+		
+TestGameCheck 2020-01-06 02:53:38,832 INFO New TimePeriod: 1488_0
+TestGameCheck 2020-01-06 02:53:38,849 INFO 
+		Period 1488_0 for game 1488 correctly saved
+		
+TestGameCheck 2020-01-06 02:53:38,857 INFO New TimePeriod: 1488_1
+TestGameCheck 2020-01-06 02:53:38,863 INFO 
+		Period 1488_1 for game 1488 correctly saved
+		
+TestGameCheck 2020-01-06 02:53:38,880 INFO New TimePeriod: 101_0
+TestGameCheck 2020-01-06 02:53:38,881 INFO 
+		Period 101_0 for game 101 correctly saved
+		
+TestGameCheck 2020-01-06 02:53:38,884 INFO New TimePeriod: 101_1
+TestGameCheck 2020-01-06 02:53:38,892 INFO 
+		Period 101_1 for game 101 correctly saved
+		
+TestGameCheck 2020-01-06 02:53:38,913 INFO New TimePeriod: 202_0
+TestGameCheck 2020-01-06 02:53:38,913 INFO 
+		Period 202_0 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 02:53:38,916 INFO New TimePeriod: 202_1
+TestGameCheck 2020-01-06 02:53:38,919 INFO 
+		Period 202_1 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 02:53:38,921 INFO New TimePeriod: 202_2
+TestGameCheck 2020-01-06 02:53:38,924 INFO 
+		Period 202_2 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 02:53:38,926 INFO New TimePeriod: 202_3
+TestGameCheck 2020-01-06 02:53:38,928 INFO 
+		Period 202_3 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 02:53:38,943 INFO New TimePeriod: 303_0
+TestGameCheck 2020-01-06 02:53:38,950 INFO 
+		Period 303_0 for game 303 correctly saved
+		
+TestGameCheck 2020-01-06 02:53:38,960 INFO New TimePeriod: 303_1
+TestGameCheck 2020-01-06 02:53:38,962 INFO 
+		Period 303_1 for game 303 correctly saved
+		
+TestGameCheck 2020-01-06 03:00:58,526 INFO Steam game 69lmao correctly stored
+TestGameCheck 2020-01-06 03:00:58,535 INFO Steam game 440 correctly stored
+TestGameCheck 2020-01-06 03:00:58,544 INFO Steam game 1488 correctly stored
+TestGameCheck 2020-01-06 03:00:58,554 INFO Steam game 101 correctly stored
+TestGameCheck 2020-01-06 03:00:58,563 INFO Steam game 202 correctly stored
+TestGameCheck 2020-01-06 03:00:58,572 INFO Steam game 303 correctly stored
+TestGameCheck 2020-01-06 03:00:58,577 INFO New TimePeriod: 69lmao_0
+TestGameCheck 2020-01-06 03:00:58,578 INFO 
+		Period 69lmao_0 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-06 03:00:58,581 INFO New TimePeriod: 69lmao_1
+TestGameCheck 2020-01-06 03:00:58,583 INFO 
+		Period 69lmao_1 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-06 03:00:58,585 INFO New TimePeriod: 69lmao_2
+TestGameCheck 2020-01-06 03:00:58,590 INFO 
+		Period 69lmao_2 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-06 03:00:58,605 INFO New TimePeriod: 440_0
+TestGameCheck 2020-01-06 03:00:58,607 INFO 
+		Period 440_0 for game 440 correctly saved
+		
+TestGameCheck 2020-01-06 03:00:58,609 INFO New TimePeriod: 440_1
+TestGameCheck 2020-01-06 03:00:58,613 INFO 
+		Period 440_1 for game 440 correctly saved
+		
+TestGameCheck 2020-01-06 03:00:58,630 INFO New TimePeriod: 1488_0
+TestGameCheck 2020-01-06 03:00:58,634 INFO 
+		Period 1488_0 for game 1488 correctly saved
+		
+TestGameCheck 2020-01-06 03:00:58,635 INFO New TimePeriod: 1488_1
+TestGameCheck 2020-01-06 03:00:58,639 INFO 
+		Period 1488_1 for game 1488 correctly saved
+		
+TestGameCheck 2020-01-06 03:00:58,651 INFO New TimePeriod: 101_0
+TestGameCheck 2020-01-06 03:00:58,652 INFO 
+		Period 101_0 for game 101 correctly saved
+		
+TestGameCheck 2020-01-06 03:00:58,655 INFO New TimePeriod: 101_1
+TestGameCheck 2020-01-06 03:00:58,660 INFO 
+		Period 101_1 for game 101 correctly saved
+		
+TestGameCheck 2020-01-06 03:00:58,672 INFO New TimePeriod: 202_0
+TestGameCheck 2020-01-06 03:00:58,673 INFO 
+		Period 202_0 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 03:00:58,674 INFO New TimePeriod: 202_1
+TestGameCheck 2020-01-06 03:00:58,676 INFO 
+		Period 202_1 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 03:00:58,678 INFO New TimePeriod: 202_2
+TestGameCheck 2020-01-06 03:00:58,680 INFO 
+		Period 202_2 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 03:00:58,681 INFO New TimePeriod: 202_3
+TestGameCheck 2020-01-06 03:00:58,683 INFO 
+		Period 202_3 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 03:00:58,698 INFO New TimePeriod: 303_0
+TestGameCheck 2020-01-06 03:00:58,699 INFO 
+		Period 303_0 for game 303 correctly saved
+		
+TestGameCheck 2020-01-06 03:00:58,704 INFO New TimePeriod: 303_1
+TestGameCheck 2020-01-06 03:00:58,706 INFO 
+		Period 303_1 for game 303 correctly saved
+		
+TestGameCheck 2020-01-06 03:00:58,725 DEBUG Check id list from db: ['440', '1488', '101', '202', '303']
+TestGameCheck 2020-01-06 03:02:16,627 INFO Steam game 69lmao correctly stored
+TestGameCheck 2020-01-06 03:02:16,635 INFO Steam game 440 correctly stored
+TestGameCheck 2020-01-06 03:02:16,643 INFO Steam game 1488 correctly stored
+TestGameCheck 2020-01-06 03:02:16,650 INFO Steam game 101 correctly stored
+TestGameCheck 2020-01-06 03:02:16,656 INFO Steam game 202 correctly stored
+TestGameCheck 2020-01-06 03:02:16,663 INFO Steam game 303 correctly stored
+TestGameCheck 2020-01-06 03:02:16,667 INFO New TimePeriod: 69lmao_0
+TestGameCheck 2020-01-06 03:02:16,668 INFO 
+		Period 69lmao_0 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-06 03:02:16,671 INFO New TimePeriod: 69lmao_1
+TestGameCheck 2020-01-06 03:02:16,673 INFO 
+		Period 69lmao_1 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-06 03:02:16,674 INFO New TimePeriod: 69lmao_2
+TestGameCheck 2020-01-06 03:02:16,676 INFO 
+		Period 69lmao_2 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-06 03:02:16,689 INFO New TimePeriod: 440_0
+TestGameCheck 2020-01-06 03:02:16,690 INFO 
+		Period 440_0 for game 440 correctly saved
+		
+TestGameCheck 2020-01-06 03:02:16,695 INFO New TimePeriod: 440_1
+TestGameCheck 2020-01-06 03:02:16,696 INFO 
+		Period 440_1 for game 440 correctly saved
+		
+TestGameCheck 2020-01-06 03:02:16,712 INFO New TimePeriod: 1488_0
+TestGameCheck 2020-01-06 03:02:16,713 INFO 
+		Period 1488_0 for game 1488 correctly saved
+		
+TestGameCheck 2020-01-06 03:02:16,716 INFO New TimePeriod: 1488_1
+TestGameCheck 2020-01-06 03:02:16,720 INFO 
+		Period 1488_1 for game 1488 correctly saved
+		
+TestGameCheck 2020-01-06 03:02:16,730 INFO New TimePeriod: 101_0
+TestGameCheck 2020-01-06 03:02:16,732 INFO 
+		Period 101_0 for game 101 correctly saved
+		
+TestGameCheck 2020-01-06 03:02:16,733 INFO New TimePeriod: 101_1
+TestGameCheck 2020-01-06 03:02:16,738 INFO 
+		Period 101_1 for game 101 correctly saved
+		
+TestGameCheck 2020-01-06 03:02:16,751 INFO New TimePeriod: 202_0
+TestGameCheck 2020-01-06 03:02:16,754 INFO 
+		Period 202_0 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 03:02:16,755 INFO New TimePeriod: 202_1
+TestGameCheck 2020-01-06 03:02:16,758 INFO 
+		Period 202_1 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 03:02:16,760 INFO New TimePeriod: 202_2
+TestGameCheck 2020-01-06 03:02:16,761 INFO 
+		Period 202_2 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 03:02:16,762 INFO New TimePeriod: 202_3
+TestGameCheck 2020-01-06 03:02:16,764 INFO 
+		Period 202_3 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 03:02:16,780 INFO New TimePeriod: 303_0
+TestGameCheck 2020-01-06 03:02:16,781 INFO 
+		Period 303_0 for game 303 correctly saved
+		
+TestGameCheck 2020-01-06 03:02:16,784 INFO New TimePeriod: 303_1
+TestGameCheck 2020-01-06 03:02:16,787 INFO 
+		Period 303_1 for game 303 correctly saved
+		
+TestGameCheck 2020-01-06 03:02:16,801 DEBUG Check id list from db: ['440', '1488', '101', '202', '303']
+TestGameCheck 2020-01-06 03:02:27,021 INFO Steam game 69lmao correctly stored
+TestGameCheck 2020-01-06 03:02:27,030 INFO Steam game 440 correctly stored
+TestGameCheck 2020-01-06 03:02:27,037 INFO Steam game 1488 correctly stored
+TestGameCheck 2020-01-06 03:02:27,045 INFO Steam game 101 correctly stored
+TestGameCheck 2020-01-06 03:02:27,054 INFO Steam game 202 correctly stored
+TestGameCheck 2020-01-06 03:02:27,062 INFO Steam game 303 correctly stored
+TestGameCheck 2020-01-06 03:02:27,066 INFO New TimePeriod: 69lmao_0
+TestGameCheck 2020-01-06 03:02:27,067 INFO 
+		Period 69lmao_0 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-06 03:02:27,071 INFO New TimePeriod: 69lmao_1
+TestGameCheck 2020-01-06 03:02:27,073 INFO 
+		Period 69lmao_1 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-06 03:02:27,073 INFO New TimePeriod: 69lmao_2
+TestGameCheck 2020-01-06 03:02:27,076 INFO 
+		Period 69lmao_2 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-06 03:02:27,093 INFO New TimePeriod: 440_0
+TestGameCheck 2020-01-06 03:02:27,095 INFO 
+		Period 440_0 for game 440 correctly saved
+		
+TestGameCheck 2020-01-06 03:02:27,096 INFO New TimePeriod: 440_1
+TestGameCheck 2020-01-06 03:02:27,097 INFO 
+		Period 440_1 for game 440 correctly saved
+		
+TestGameCheck 2020-01-06 03:02:27,111 INFO New TimePeriod: 1488_0
+TestGameCheck 2020-01-06 03:02:27,112 INFO 
+		Period 1488_0 for game 1488 correctly saved
+		
+TestGameCheck 2020-01-06 03:02:27,114 INFO New TimePeriod: 1488_1
+TestGameCheck 2020-01-06 03:02:27,115 INFO 
+		Period 1488_1 for game 1488 correctly saved
+		
+TestGameCheck 2020-01-06 03:02:27,129 INFO New TimePeriod: 101_0
+TestGameCheck 2020-01-06 03:02:27,130 INFO 
+		Period 101_0 for game 101 correctly saved
+		
+TestGameCheck 2020-01-06 03:02:27,133 INFO New TimePeriod: 101_1
+TestGameCheck 2020-01-06 03:02:27,135 INFO 
+		Period 101_1 for game 101 correctly saved
+		
+TestGameCheck 2020-01-06 03:02:27,146 INFO New TimePeriod: 202_0
+TestGameCheck 2020-01-06 03:02:27,148 INFO 
+		Period 202_0 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 03:02:27,149 INFO New TimePeriod: 202_1
+TestGameCheck 2020-01-06 03:02:27,151 INFO 
+		Period 202_1 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 03:02:27,153 INFO New TimePeriod: 202_2
+TestGameCheck 2020-01-06 03:02:27,156 INFO 
+		Period 202_2 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 03:02:27,158 INFO New TimePeriod: 202_3
+TestGameCheck 2020-01-06 03:02:27,160 INFO 
+		Period 202_3 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 03:02:27,178 INFO New TimePeriod: 303_0
+TestGameCheck 2020-01-06 03:02:27,179 INFO 
+		Period 303_0 for game 303 correctly saved
+		
+TestGameCheck 2020-01-06 03:02:27,182 INFO New TimePeriod: 303_1
+TestGameCheck 2020-01-06 03:02:27,184 INFO 
+		Period 303_1 for game 303 correctly saved
+		
+TestGameCheck 2020-01-06 03:02:27,198 DEBUG Check id list from db: ['440', '1488', '101', '202', '303']
+TestGameCheck 2020-01-06 03:02:56,452 INFO Steam game 69lmao correctly stored
+TestGameCheck 2020-01-06 03:02:56,462 INFO Steam game 440 correctly stored
+TestGameCheck 2020-01-06 03:02:56,471 INFO Steam game 1488 correctly stored
+TestGameCheck 2020-01-06 03:02:56,478 INFO Steam game 101 correctly stored
+TestGameCheck 2020-01-06 03:02:56,486 INFO Steam game 202 correctly stored
+TestGameCheck 2020-01-06 03:02:56,495 INFO Steam game 303 correctly stored
+TestGameCheck 2020-01-06 03:02:56,499 INFO New TimePeriod: 69lmao_0
+TestGameCheck 2020-01-06 03:02:56,500 INFO 
+		Period 69lmao_0 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-06 03:02:56,503 INFO New TimePeriod: 69lmao_1
+TestGameCheck 2020-01-06 03:02:56,505 INFO 
+		Period 69lmao_1 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-06 03:02:56,505 INFO New TimePeriod: 69lmao_2
+TestGameCheck 2020-01-06 03:02:56,507 INFO 
+		Period 69lmao_2 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-06 03:02:56,524 INFO New TimePeriod: 440_0
+TestGameCheck 2020-01-06 03:02:56,525 INFO 
+		Period 440_0 for game 440 correctly saved
+		
+TestGameCheck 2020-01-06 03:02:56,528 INFO New TimePeriod: 440_1
+TestGameCheck 2020-01-06 03:02:56,530 INFO 
+		Period 440_1 for game 440 correctly saved
+		
+TestGameCheck 2020-01-06 03:02:56,543 INFO New TimePeriod: 1488_0
+TestGameCheck 2020-01-06 03:02:56,545 INFO 
+		Period 1488_0 for game 1488 correctly saved
+		
+TestGameCheck 2020-01-06 03:02:56,546 INFO New TimePeriod: 1488_1
+TestGameCheck 2020-01-06 03:02:56,549 INFO 
+		Period 1488_1 for game 1488 correctly saved
+		
+TestGameCheck 2020-01-06 03:02:56,563 INFO New TimePeriod: 101_0
+TestGameCheck 2020-01-06 03:02:56,565 INFO 
+		Period 101_0 for game 101 correctly saved
+		
+TestGameCheck 2020-01-06 03:02:56,566 INFO New TimePeriod: 101_1
+TestGameCheck 2020-01-06 03:02:56,568 INFO 
+		Period 101_1 for game 101 correctly saved
+		
+TestGameCheck 2020-01-06 03:02:56,584 INFO New TimePeriod: 202_0
+TestGameCheck 2020-01-06 03:02:56,588 INFO 
+		Period 202_0 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 03:02:56,592 INFO New TimePeriod: 202_1
+TestGameCheck 2020-01-06 03:02:56,594 INFO 
+		Period 202_1 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 03:02:56,596 INFO New TimePeriod: 202_2
+TestGameCheck 2020-01-06 03:02:56,598 INFO 
+		Period 202_2 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 03:02:56,604 INFO New TimePeriod: 202_3
+TestGameCheck 2020-01-06 03:02:56,606 INFO 
+		Period 202_3 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 03:02:56,617 INFO New TimePeriod: 303_0
+TestGameCheck 2020-01-06 03:02:56,620 INFO 
+		Period 303_0 for game 303 correctly saved
+		
+TestGameCheck 2020-01-06 03:02:56,621 INFO New TimePeriod: 303_1
+TestGameCheck 2020-01-06 03:02:56,625 INFO 
+		Period 303_1 for game 303 correctly saved
+		
+TestGameCheck 2020-01-06 03:02:56,644 DEBUG Check id list from db: ['440', '1488', '101', '202', '303']
+TestGameCheck 2020-01-06 03:03:07,378 INFO Steam game 69lmao correctly stored
+TestGameCheck 2020-01-06 03:03:07,386 INFO Steam game 440 correctly stored
+TestGameCheck 2020-01-06 03:03:07,394 INFO Steam game 1488 correctly stored
+TestGameCheck 2020-01-06 03:03:07,403 INFO Steam game 101 correctly stored
+TestGameCheck 2020-01-06 03:03:07,412 INFO Steam game 202 correctly stored
+TestGameCheck 2020-01-06 03:03:07,419 INFO Steam game 303 correctly stored
+TestGameCheck 2020-01-06 03:03:07,423 INFO New TimePeriod: 69lmao_0
+TestGameCheck 2020-01-06 03:03:07,424 INFO 
+		Period 69lmao_0 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-06 03:03:07,427 INFO New TimePeriod: 69lmao_1
+TestGameCheck 2020-01-06 03:03:07,430 INFO 
+		Period 69lmao_1 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-06 03:03:07,432 INFO New TimePeriod: 69lmao_2
+TestGameCheck 2020-01-06 03:03:07,438 INFO 
+		Period 69lmao_2 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-06 03:03:07,451 INFO New TimePeriod: 440_0
+TestGameCheck 2020-01-06 03:03:07,453 INFO 
+		Period 440_0 for game 440 correctly saved
+		
+TestGameCheck 2020-01-06 03:03:07,455 INFO New TimePeriod: 440_1
+TestGameCheck 2020-01-06 03:03:07,458 INFO 
+		Period 440_1 for game 440 correctly saved
+		
+TestGameCheck 2020-01-06 03:03:07,472 INFO New TimePeriod: 1488_0
+TestGameCheck 2020-01-06 03:03:07,473 INFO 
+		Period 1488_0 for game 1488 correctly saved
+		
+TestGameCheck 2020-01-06 03:03:07,474 INFO New TimePeriod: 1488_1
+TestGameCheck 2020-01-06 03:03:07,477 INFO 
+		Period 1488_1 for game 1488 correctly saved
+		
+TestGameCheck 2020-01-06 03:03:07,490 INFO New TimePeriod: 101_0
+TestGameCheck 2020-01-06 03:03:07,491 INFO 
+		Period 101_0 for game 101 correctly saved
+		
+TestGameCheck 2020-01-06 03:03:07,492 INFO New TimePeriod: 101_1
+TestGameCheck 2020-01-06 03:03:07,494 INFO 
+		Period 101_1 for game 101 correctly saved
+		
+TestGameCheck 2020-01-06 03:03:07,508 INFO New TimePeriod: 202_0
+TestGameCheck 2020-01-06 03:03:07,509 INFO 
+		Period 202_0 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 03:03:07,513 INFO New TimePeriod: 202_1
+TestGameCheck 2020-01-06 03:03:07,515 INFO 
+		Period 202_1 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 03:03:07,517 INFO New TimePeriod: 202_2
+TestGameCheck 2020-01-06 03:03:07,523 INFO 
+		Period 202_2 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 03:03:07,524 INFO New TimePeriod: 202_3
+TestGameCheck 2020-01-06 03:03:07,527 INFO 
+		Period 202_3 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 03:03:07,541 INFO New TimePeriod: 303_0
+TestGameCheck 2020-01-06 03:03:07,542 INFO 
+		Period 303_0 for game 303 correctly saved
+		
+TestGameCheck 2020-01-06 03:03:07,546 INFO New TimePeriod: 303_1
+TestGameCheck 2020-01-06 03:03:07,549 INFO 
+		Period 303_1 for game 303 correctly saved
+		
+TestGameCheck 2020-01-06 03:03:07,567 DEBUG Check id list from db: ['440', '1488', '101', '202', '303']
+TestGameCheck 2020-01-06 03:05:12,601 INFO Steam game 69lmao correctly stored
+TestGameCheck 2020-01-06 03:05:12,612 INFO Steam game 440 correctly stored
+TestGameCheck 2020-01-06 03:05:12,622 INFO Steam game 1488 correctly stored
+TestGameCheck 2020-01-06 03:05:12,632 INFO Steam game 101 correctly stored
+TestGameCheck 2020-01-06 03:05:12,641 INFO Steam game 202 correctly stored
+TestGameCheck 2020-01-06 03:05:12,651 INFO Steam game 303 correctly stored
+TestGameCheck 2020-01-06 03:05:12,658 INFO New TimePeriod: 69lmao_0
+TestGameCheck 2020-01-06 03:05:12,661 INFO 
+		Period 69lmao_0 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-06 03:05:12,663 INFO New TimePeriod: 69lmao_1
+TestGameCheck 2020-01-06 03:05:12,666 INFO 
+		Period 69lmao_1 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-06 03:05:12,675 INFO New TimePeriod: 69lmao_2
+TestGameCheck 2020-01-06 03:05:12,679 INFO 
+		Period 69lmao_2 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-06 03:05:12,692 INFO New TimePeriod: 440_0
+TestGameCheck 2020-01-06 03:05:12,693 INFO 
+		Period 440_0 for game 440 correctly saved
+		
+TestGameCheck 2020-01-06 03:05:12,696 INFO New TimePeriod: 440_1
+TestGameCheck 2020-01-06 03:05:12,698 INFO 
+		Period 440_1 for game 440 correctly saved
+		
+TestGameCheck 2020-01-06 03:05:12,716 INFO New TimePeriod: 1488_0
+TestGameCheck 2020-01-06 03:05:12,717 INFO 
+		Period 1488_0 for game 1488 correctly saved
+		
+TestGameCheck 2020-01-06 03:05:12,725 INFO New TimePeriod: 1488_1
+TestGameCheck 2020-01-06 03:05:12,726 INFO 
+		Period 1488_1 for game 1488 correctly saved
+		
+TestGameCheck 2020-01-06 03:05:12,740 INFO New TimePeriod: 101_0
+TestGameCheck 2020-01-06 03:05:12,742 INFO 
+		Period 101_0 for game 101 correctly saved
+		
+TestGameCheck 2020-01-06 03:05:12,743 INFO New TimePeriod: 101_1
+TestGameCheck 2020-01-06 03:05:12,746 INFO 
+		Period 101_1 for game 101 correctly saved
+		
+TestGameCheck 2020-01-06 03:05:12,766 INFO New TimePeriod: 202_0
+TestGameCheck 2020-01-06 03:05:12,768 INFO 
+		Period 202_0 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 03:05:12,779 INFO New TimePeriod: 202_1
+TestGameCheck 2020-01-06 03:05:12,781 INFO 
+		Period 202_1 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 03:05:12,783 INFO New TimePeriod: 202_2
+TestGameCheck 2020-01-06 03:05:12,785 INFO 
+		Period 202_2 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 03:05:12,793 INFO New TimePeriod: 202_3
+TestGameCheck 2020-01-06 03:05:12,795 INFO 
+		Period 202_3 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 03:05:12,809 INFO New TimePeriod: 303_0
+TestGameCheck 2020-01-06 03:05:12,811 INFO 
+		Period 303_0 for game 303 correctly saved
+		
+TestGameCheck 2020-01-06 03:05:12,815 INFO New TimePeriod: 303_1
+TestGameCheck 2020-01-06 03:05:12,829 INFO 
+		Period 303_1 for game 303 correctly saved
+		
+TestGameCheck 2020-01-06 03:05:12,856 DEBUG Check id list from db: ['440', '1488', '101', '202', '303']
+TestGameCheck 2020-01-06 03:05:27,509 INFO Steam game 69lmao correctly stored
+TestGameCheck 2020-01-06 03:05:27,518 INFO Steam game 440 correctly stored
+TestGameCheck 2020-01-06 03:05:27,526 INFO Steam game 1488 correctly stored
+TestGameCheck 2020-01-06 03:05:27,535 INFO Steam game 101 correctly stored
+TestGameCheck 2020-01-06 03:05:27,544 INFO Steam game 202 correctly stored
+TestGameCheck 2020-01-06 03:05:27,551 INFO Steam game 303 correctly stored
+TestGameCheck 2020-01-06 03:05:27,556 INFO New TimePeriod: 69lmao_0
+TestGameCheck 2020-01-06 03:05:27,557 INFO 
+		Period 69lmao_0 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-06 03:05:27,560 INFO New TimePeriod: 69lmao_1
+TestGameCheck 2020-01-06 03:05:27,565 INFO 
+		Period 69lmao_1 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-06 03:05:27,567 INFO New TimePeriod: 69lmao_2
+TestGameCheck 2020-01-06 03:05:27,573 INFO 
+		Period 69lmao_2 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-06 03:05:27,584 INFO New TimePeriod: 440_0
+TestGameCheck 2020-01-06 03:05:27,585 INFO 
+		Period 440_0 for game 440 correctly saved
+		
+TestGameCheck 2020-01-06 03:05:27,591 INFO New TimePeriod: 440_1
+TestGameCheck 2020-01-06 03:05:27,594 INFO 
+		Period 440_1 for game 440 correctly saved
+		
+TestGameCheck 2020-01-06 03:05:27,612 INFO New TimePeriod: 1488_0
+TestGameCheck 2020-01-06 03:05:27,613 INFO 
+		Period 1488_0 for game 1488 correctly saved
+		
+TestGameCheck 2020-01-06 03:05:27,615 INFO New TimePeriod: 1488_1
+TestGameCheck 2020-01-06 03:05:27,617 INFO 
+		Period 1488_1 for game 1488 correctly saved
+		
+TestGameCheck 2020-01-06 03:05:27,630 INFO New TimePeriod: 101_0
+TestGameCheck 2020-01-06 03:05:27,632 INFO 
+		Period 101_0 for game 101 correctly saved
+		
+TestGameCheck 2020-01-06 03:05:27,634 INFO New TimePeriod: 101_1
+TestGameCheck 2020-01-06 03:05:27,643 INFO 
+		Period 101_1 for game 101 correctly saved
+		
+TestGameCheck 2020-01-06 03:05:27,659 INFO New TimePeriod: 202_0
+TestGameCheck 2020-01-06 03:05:27,660 INFO 
+		Period 202_0 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 03:05:27,664 INFO New TimePeriod: 202_1
+TestGameCheck 2020-01-06 03:05:27,666 INFO 
+		Period 202_1 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 03:05:27,668 INFO New TimePeriod: 202_2
+TestGameCheck 2020-01-06 03:05:27,675 INFO 
+		Period 202_2 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 03:05:27,677 INFO New TimePeriod: 202_3
+TestGameCheck 2020-01-06 03:05:27,680 INFO 
+		Period 202_3 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 03:05:27,694 INFO New TimePeriod: 303_0
+TestGameCheck 2020-01-06 03:05:27,699 INFO 
+		Period 303_0 for game 303 correctly saved
+		
+TestGameCheck 2020-01-06 03:05:27,702 INFO New TimePeriod: 303_1
+TestGameCheck 2020-01-06 03:05:27,707 INFO 
+		Period 303_1 for game 303 correctly saved
+		
+TestGameCheck 2020-01-06 03:05:27,725 DEBUG Check id list from db: ['440', '1488', '101', '202', '303']
+TestGameCheck 2020-01-06 03:06:01,650 INFO Steam game 69lmao correctly stored
+TestGameCheck 2020-01-06 03:06:01,661 INFO Steam game 440 correctly stored
+TestGameCheck 2020-01-06 03:06:01,671 INFO Steam game 1488 correctly stored
+TestGameCheck 2020-01-06 03:06:01,690 INFO Steam game 101 correctly stored
+TestGameCheck 2020-01-06 03:06:01,700 INFO Steam game 202 correctly stored
+TestGameCheck 2020-01-06 03:06:01,710 INFO Steam game 303 correctly stored
+TestGameCheck 2020-01-06 03:06:01,715 INFO New TimePeriod: 69lmao_0
+TestGameCheck 2020-01-06 03:06:01,716 INFO 
+		Period 69lmao_0 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-06 03:06:01,719 INFO New TimePeriod: 69lmao_1
+TestGameCheck 2020-01-06 03:06:01,723 INFO 
+		Period 69lmao_1 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-06 03:06:01,725 INFO New TimePeriod: 69lmao_2
+TestGameCheck 2020-01-06 03:06:01,727 INFO 
+		Period 69lmao_2 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-06 03:06:01,744 INFO New TimePeriod: 440_0
+TestGameCheck 2020-01-06 03:06:01,746 INFO 
+		Period 440_0 for game 440 correctly saved
+		
+TestGameCheck 2020-01-06 03:06:01,748 INFO New TimePeriod: 440_1
+TestGameCheck 2020-01-06 03:06:01,751 INFO 
+		Period 440_1 for game 440 correctly saved
+		
+TestGameCheck 2020-01-06 03:06:01,768 INFO New TimePeriod: 1488_0
+TestGameCheck 2020-01-06 03:06:01,775 INFO 
+		Period 1488_0 for game 1488 correctly saved
+		
+TestGameCheck 2020-01-06 03:06:01,779 INFO New TimePeriod: 1488_1
+TestGameCheck 2020-01-06 03:06:01,781 INFO 
+		Period 1488_1 for game 1488 correctly saved
+		
+TestGameCheck 2020-01-06 03:06:01,803 INFO New TimePeriod: 101_0
+TestGameCheck 2020-01-06 03:06:01,805 INFO 
+		Period 101_0 for game 101 correctly saved
+		
+TestGameCheck 2020-01-06 03:06:01,808 INFO New TimePeriod: 101_1
+TestGameCheck 2020-01-06 03:06:01,810 INFO 
+		Period 101_1 for game 101 correctly saved
+		
+TestGameCheck 2020-01-06 03:06:01,825 INFO New TimePeriod: 202_0
+TestGameCheck 2020-01-06 03:06:01,826 INFO 
+		Period 202_0 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 03:06:01,830 INFO New TimePeriod: 202_1
+TestGameCheck 2020-01-06 03:06:01,833 INFO 
+		Period 202_1 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 03:06:01,835 INFO New TimePeriod: 202_2
+TestGameCheck 2020-01-06 03:06:01,846 INFO 
+		Period 202_2 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 03:06:01,850 INFO New TimePeriod: 202_3
+TestGameCheck 2020-01-06 03:06:01,855 INFO 
+		Period 202_3 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 03:06:01,870 INFO New TimePeriod: 303_0
+TestGameCheck 2020-01-06 03:06:01,873 INFO 
+		Period 303_0 for game 303 correctly saved
+		
+TestGameCheck 2020-01-06 03:06:01,875 INFO New TimePeriod: 303_1
+TestGameCheck 2020-01-06 03:06:01,884 INFO 
+		Period 303_1 for game 303 correctly saved
+		
+TestGameCheck 2020-01-06 03:06:01,909 DEBUG Check id list from db: ['440', '1488', '101', '202', '303']
+TestGameCheck 2020-01-06 03:06:57,422 INFO Steam game 69lmao correctly stored
+TestGameCheck 2020-01-06 03:06:57,431 INFO Steam game 440 correctly stored
+TestGameCheck 2020-01-06 03:06:57,441 INFO Steam game 1488 correctly stored
+TestGameCheck 2020-01-06 03:06:57,449 INFO Steam game 101 correctly stored
+TestGameCheck 2020-01-06 03:06:57,457 INFO Steam game 202 correctly stored
+TestGameCheck 2020-01-06 03:06:57,465 INFO Steam game 303 correctly stored
+TestGameCheck 2020-01-06 03:06:57,470 INFO New TimePeriod: 69lmao_0
+TestGameCheck 2020-01-06 03:06:57,471 INFO 
+		Period 69lmao_0 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-06 03:06:57,476 INFO New TimePeriod: 69lmao_1
+TestGameCheck 2020-01-06 03:06:57,478 INFO 
+		Period 69lmao_1 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-06 03:06:57,479 INFO New TimePeriod: 69lmao_2
+TestGameCheck 2020-01-06 03:06:57,480 INFO 
+		Period 69lmao_2 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-06 03:06:57,500 INFO New TimePeriod: 440_0
+TestGameCheck 2020-01-06 03:06:57,500 INFO 
+		Period 440_0 for game 440 correctly saved
+		
+TestGameCheck 2020-01-06 03:06:57,506 INFO New TimePeriod: 440_1
+TestGameCheck 2020-01-06 03:06:57,508 INFO 
+		Period 440_1 for game 440 correctly saved
+		
+TestGameCheck 2020-01-06 03:06:57,519 INFO New TimePeriod: 1488_0
+TestGameCheck 2020-01-06 03:06:57,521 INFO 
+		Period 1488_0 for game 1488 correctly saved
+		
+TestGameCheck 2020-01-06 03:06:57,527 INFO New TimePeriod: 1488_1
+TestGameCheck 2020-01-06 03:06:57,529 INFO 
+		Period 1488_1 for game 1488 correctly saved
+		
+TestGameCheck 2020-01-06 03:06:57,557 INFO New TimePeriod: 101_0
+TestGameCheck 2020-01-06 03:06:57,558 INFO 
+		Period 101_0 for game 101 correctly saved
+		
+TestGameCheck 2020-01-06 03:06:57,561 INFO New TimePeriod: 101_1
+TestGameCheck 2020-01-06 03:06:57,563 INFO 
+		Period 101_1 for game 101 correctly saved
+		
+TestGameCheck 2020-01-06 03:06:57,577 INFO New TimePeriod: 202_0
+TestGameCheck 2020-01-06 03:06:57,579 INFO 
+		Period 202_0 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 03:06:57,587 INFO New TimePeriod: 202_1
+TestGameCheck 2020-01-06 03:06:57,593 INFO 
+		Period 202_1 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 03:06:57,594 INFO New TimePeriod: 202_2
+TestGameCheck 2020-01-06 03:06:57,597 INFO 
+		Period 202_2 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 03:06:57,599 INFO New TimePeriod: 202_3
+TestGameCheck 2020-01-06 03:06:57,604 INFO 
+		Period 202_3 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 03:06:57,616 INFO New TimePeriod: 303_0
+TestGameCheck 2020-01-06 03:06:57,618 INFO 
+		Period 303_0 for game 303 correctly saved
+		
+TestGameCheck 2020-01-06 03:06:57,630 INFO New TimePeriod: 303_1
+TestGameCheck 2020-01-06 03:06:57,635 INFO 
+		Period 303_1 for game 303 correctly saved
+		
+TestGameCheck 2020-01-06 03:06:57,653 DEBUG Check id list from db: ['440', '1488', '101', '202', '303']
+TestGameCheck 2020-01-06 03:08:21,031 INFO Steam game 69lmao correctly stored
+TestGameCheck 2020-01-06 03:08:21,040 INFO Steam game 440 correctly stored
+TestGameCheck 2020-01-06 03:08:21,049 INFO Steam game 1488 correctly stored
+TestGameCheck 2020-01-06 03:08:21,058 INFO Steam game 101 correctly stored
+TestGameCheck 2020-01-06 03:08:21,067 INFO Steam game 202 correctly stored
+TestGameCheck 2020-01-06 03:08:21,077 INFO Steam game 303 correctly stored
+TestGameCheck 2020-01-06 03:08:21,082 INFO New TimePeriod: 69lmao_0
+TestGameCheck 2020-01-06 03:08:21,083 INFO 
+		Period 69lmao_0 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-06 03:08:21,086 INFO New TimePeriod: 69lmao_1
+TestGameCheck 2020-01-06 03:08:21,091 INFO 
+		Period 69lmao_1 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-06 03:08:21,096 INFO New TimePeriod: 69lmao_2
+TestGameCheck 2020-01-06 03:08:21,098 INFO 
+		Period 69lmao_2 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-06 03:08:21,114 INFO New TimePeriod: 440_0
+TestGameCheck 2020-01-06 03:08:21,117 INFO 
+		Period 440_0 for game 440 correctly saved
+		
+TestGameCheck 2020-01-06 03:08:21,124 INFO New TimePeriod: 440_1
+TestGameCheck 2020-01-06 03:08:21,128 INFO 
+		Period 440_1 for game 440 correctly saved
+		
+TestGameCheck 2020-01-06 03:08:21,144 INFO New TimePeriod: 1488_0
+TestGameCheck 2020-01-06 03:08:21,146 INFO 
+		Period 1488_0 for game 1488 correctly saved
+		
+TestGameCheck 2020-01-06 03:08:21,149 INFO New TimePeriod: 1488_1
+TestGameCheck 2020-01-06 03:08:21,153 INFO 
+		Period 1488_1 for game 1488 correctly saved
+		
+TestGameCheck 2020-01-06 03:08:21,165 INFO New TimePeriod: 101_0
+TestGameCheck 2020-01-06 03:08:21,169 INFO 
+		Period 101_0 for game 101 correctly saved
+		
+TestGameCheck 2020-01-06 03:08:21,171 INFO New TimePeriod: 101_1
+TestGameCheck 2020-01-06 03:08:21,179 INFO 
+		Period 101_1 for game 101 correctly saved
+		
+TestGameCheck 2020-01-06 03:08:21,194 INFO New TimePeriod: 202_0
+TestGameCheck 2020-01-06 03:08:21,195 INFO 
+		Period 202_0 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 03:08:21,196 INFO New TimePeriod: 202_1
+TestGameCheck 2020-01-06 03:08:21,198 INFO 
+		Period 202_1 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 03:08:21,201 INFO New TimePeriod: 202_2
+TestGameCheck 2020-01-06 03:08:21,206 INFO 
+		Period 202_2 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 03:08:21,207 INFO New TimePeriod: 202_3
+TestGameCheck 2020-01-06 03:08:21,209 INFO 
+		Period 202_3 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 03:08:21,226 INFO New TimePeriod: 303_0
+TestGameCheck 2020-01-06 03:08:21,227 INFO 
+		Period 303_0 for game 303 correctly saved
+		
+TestGameCheck 2020-01-06 03:08:21,229 INFO New TimePeriod: 303_1
+TestGameCheck 2020-01-06 03:08:21,231 INFO 
+		Period 303_1 for game 303 correctly saved
+		
+TestGameCheck 2020-01-06 03:08:21,249 DEBUG Check id list from db: ['440', '1488', '101', '202', '303']
+TestGameCheck 2020-01-06 03:09:49,221 INFO Steam game 69lmao correctly stored
+TestGameCheck 2020-01-06 03:09:49,228 INFO Steam game 440 correctly stored
+TestGameCheck 2020-01-06 03:09:49,235 INFO Steam game 1488 correctly stored
+TestGameCheck 2020-01-06 03:09:49,242 INFO Steam game 101 correctly stored
+TestGameCheck 2020-01-06 03:09:49,249 INFO Steam game 202 correctly stored
+TestGameCheck 2020-01-06 03:09:49,256 INFO Steam game 303 correctly stored
+TestGameCheck 2020-01-06 03:09:49,260 INFO New TimePeriod: 69lmao_0
+TestGameCheck 2020-01-06 03:09:49,261 INFO 
+		Period 69lmao_0 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-06 03:09:49,264 INFO New TimePeriod: 69lmao_1
+TestGameCheck 2020-01-06 03:09:49,266 INFO 
+		Period 69lmao_1 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-06 03:09:49,267 INFO New TimePeriod: 69lmao_2
+TestGameCheck 2020-01-06 03:09:49,269 INFO 
+		Period 69lmao_2 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-06 03:09:49,281 INFO New TimePeriod: 440_0
+TestGameCheck 2020-01-06 03:09:49,282 INFO 
+		Period 440_0 for game 440 correctly saved
+		
+TestGameCheck 2020-01-06 03:09:49,286 INFO New TimePeriod: 440_1
+TestGameCheck 2020-01-06 03:09:49,288 INFO 
+		Period 440_1 for game 440 correctly saved
+		
+TestGameCheck 2020-01-06 03:09:49,299 INFO New TimePeriod: 1488_0
+TestGameCheck 2020-01-06 03:09:49,300 INFO 
+		Period 1488_0 for game 1488 correctly saved
+		
+TestGameCheck 2020-01-06 03:09:49,303 INFO New TimePeriod: 1488_1
+TestGameCheck 2020-01-06 03:09:49,304 INFO 
+		Period 1488_1 for game 1488 correctly saved
+		
+TestGameCheck 2020-01-06 03:09:49,317 INFO New TimePeriod: 101_0
+TestGameCheck 2020-01-06 03:09:49,318 INFO 
+		Period 101_0 for game 101 correctly saved
+		
+TestGameCheck 2020-01-06 03:09:49,321 INFO New TimePeriod: 101_1
+TestGameCheck 2020-01-06 03:09:49,323 INFO 
+		Period 101_1 for game 101 correctly saved
+		
+TestGameCheck 2020-01-06 03:09:49,333 INFO New TimePeriod: 202_0
+TestGameCheck 2020-01-06 03:09:49,335 INFO 
+		Period 202_0 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 03:09:49,339 INFO New TimePeriod: 202_1
+TestGameCheck 2020-01-06 03:09:49,341 INFO 
+		Period 202_1 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 03:09:49,342 INFO New TimePeriod: 202_2
+TestGameCheck 2020-01-06 03:09:49,343 INFO 
+		Period 202_2 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 03:09:49,344 INFO New TimePeriod: 202_3
+TestGameCheck 2020-01-06 03:09:49,346 INFO 
+		Period 202_3 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 03:09:49,360 INFO New TimePeriod: 303_0
+TestGameCheck 2020-01-06 03:09:49,362 INFO 
+		Period 303_0 for game 303 correctly saved
+		
+TestGameCheck 2020-01-06 03:09:49,363 INFO New TimePeriod: 303_1
+TestGameCheck 2020-01-06 03:09:49,365 INFO 
+		Period 303_1 for game 303 correctly saved
+		
+TestGameCheck 2020-01-06 03:09:49,379 DEBUG Check id list from db: ['440', '1488', '101', '202', '303']
+TestGameCheck 2020-01-06 03:10:08,246 INFO Steam game 69lmao correctly stored
+TestGameCheck 2020-01-06 03:10:08,256 INFO Steam game 440 correctly stored
+TestGameCheck 2020-01-06 03:10:08,263 INFO Steam game 1488 correctly stored
+TestGameCheck 2020-01-06 03:10:08,272 INFO Steam game 101 correctly stored
+TestGameCheck 2020-01-06 03:10:08,280 INFO Steam game 202 correctly stored
+TestGameCheck 2020-01-06 03:10:08,287 INFO Steam game 303 correctly stored
+TestGameCheck 2020-01-06 03:10:08,291 INFO New TimePeriod: 69lmao_0
+TestGameCheck 2020-01-06 03:10:08,292 INFO 
+		Period 69lmao_0 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-06 03:10:08,295 INFO New TimePeriod: 69lmao_1
+TestGameCheck 2020-01-06 03:10:08,299 INFO 
+		Period 69lmao_1 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-06 03:10:08,301 INFO New TimePeriod: 69lmao_2
+TestGameCheck 2020-01-06 03:10:08,306 INFO 
+		Period 69lmao_2 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-06 03:10:08,319 INFO New TimePeriod: 440_0
+TestGameCheck 2020-01-06 03:10:08,322 INFO 
+		Period 440_0 for game 440 correctly saved
+		
+TestGameCheck 2020-01-06 03:10:08,324 INFO New TimePeriod: 440_1
+TestGameCheck 2020-01-06 03:10:08,328 INFO 
+		Period 440_1 for game 440 correctly saved
+		
+TestGameCheck 2020-01-06 03:10:08,343 INFO New TimePeriod: 1488_0
+TestGameCheck 2020-01-06 03:10:08,345 INFO 
+		Period 1488_0 for game 1488 correctly saved
+		
+TestGameCheck 2020-01-06 03:10:08,346 INFO New TimePeriod: 1488_1
+TestGameCheck 2020-01-06 03:10:08,349 INFO 
+		Period 1488_1 for game 1488 correctly saved
+		
+TestGameCheck 2020-01-06 03:10:08,362 INFO New TimePeriod: 101_0
+TestGameCheck 2020-01-06 03:10:08,364 INFO 
+		Period 101_0 for game 101 correctly saved
+		
+TestGameCheck 2020-01-06 03:10:08,366 INFO New TimePeriod: 101_1
+TestGameCheck 2020-01-06 03:10:08,367 INFO 
+		Period 101_1 for game 101 correctly saved
+		
+TestGameCheck 2020-01-06 03:10:08,383 INFO New TimePeriod: 202_0
+TestGameCheck 2020-01-06 03:10:08,384 INFO 
+		Period 202_0 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 03:10:08,387 INFO New TimePeriod: 202_1
+TestGameCheck 2020-01-06 03:10:08,389 INFO 
+		Period 202_1 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 03:10:08,391 INFO New TimePeriod: 202_2
+TestGameCheck 2020-01-06 03:10:08,393 INFO 
+		Period 202_2 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 03:10:08,394 INFO New TimePeriod: 202_3
+TestGameCheck 2020-01-06 03:10:08,396 INFO 
+		Period 202_3 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 03:10:08,413 INFO New TimePeriod: 303_0
+TestGameCheck 2020-01-06 03:10:08,414 INFO 
+		Period 303_0 for game 303 correctly saved
+		
+TestGameCheck 2020-01-06 03:10:08,417 INFO New TimePeriod: 303_1
+TestGameCheck 2020-01-06 03:10:08,420 INFO 
+		Period 303_1 for game 303 correctly saved
+		
+TestGameCheck 2020-01-06 03:10:08,433 DEBUG Check id list from db: ['440', '1488', '101', '202', '303']
+TestGameCheck 2020-01-06 03:11:41,275 INFO Steam game 69lmao correctly stored
+TestGameCheck 2020-01-06 03:11:41,285 INFO Steam game 440 correctly stored
+TestGameCheck 2020-01-06 03:11:41,294 INFO Steam game 1488 correctly stored
+TestGameCheck 2020-01-06 03:11:41,304 INFO Steam game 101 correctly stored
+TestGameCheck 2020-01-06 03:11:41,312 INFO Steam game 202 correctly stored
+TestGameCheck 2020-01-06 03:11:41,319 INFO Steam game 303 correctly stored
+TestGameCheck 2020-01-06 03:11:41,322 INFO New TimePeriod: 69lmao_0
+TestGameCheck 2020-01-06 03:11:41,323 INFO 
+		Period 69lmao_0 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-06 03:11:41,326 INFO New TimePeriod: 69lmao_1
+TestGameCheck 2020-01-06 03:11:41,329 INFO 
+		Period 69lmao_1 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-06 03:11:41,331 INFO New TimePeriod: 69lmao_2
+TestGameCheck 2020-01-06 03:11:41,338 INFO 
+		Period 69lmao_2 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-06 03:11:41,351 INFO New TimePeriod: 440_0
+TestGameCheck 2020-01-06 03:11:41,353 INFO 
+		Period 440_0 for game 440 correctly saved
+		
+TestGameCheck 2020-01-06 03:11:41,357 INFO New TimePeriod: 440_1
+TestGameCheck 2020-01-06 03:11:41,359 INFO 
+		Period 440_1 for game 440 correctly saved
+		
+TestGameCheck 2020-01-06 03:11:41,372 INFO New TimePeriod: 1488_0
+TestGameCheck 2020-01-06 03:11:41,373 INFO 
+		Period 1488_0 for game 1488 correctly saved
+		
+TestGameCheck 2020-01-06 03:11:41,374 INFO New TimePeriod: 1488_1
+TestGameCheck 2020-01-06 03:11:41,376 INFO 
+		Period 1488_1 for game 1488 correctly saved
+		
+TestGameCheck 2020-01-06 03:11:41,394 INFO New TimePeriod: 101_0
+TestGameCheck 2020-01-06 03:11:41,395 INFO 
+		Period 101_0 for game 101 correctly saved
+		
+TestGameCheck 2020-01-06 03:11:41,396 INFO New TimePeriod: 101_1
+TestGameCheck 2020-01-06 03:11:41,398 INFO 
+		Period 101_1 for game 101 correctly saved
+		
+TestGameCheck 2020-01-06 03:11:41,412 INFO New TimePeriod: 202_0
+TestGameCheck 2020-01-06 03:11:41,413 INFO 
+		Period 202_0 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 03:11:41,415 INFO New TimePeriod: 202_1
+TestGameCheck 2020-01-06 03:11:41,416 INFO 
+		Period 202_1 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 03:11:41,417 INFO New TimePeriod: 202_2
+TestGameCheck 2020-01-06 03:11:41,420 INFO 
+		Period 202_2 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 03:11:41,424 INFO New TimePeriod: 202_3
+TestGameCheck 2020-01-06 03:11:41,427 INFO 
+		Period 202_3 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 03:11:41,442 INFO New TimePeriod: 303_0
+TestGameCheck 2020-01-06 03:11:41,447 INFO 
+		Period 303_0 for game 303 correctly saved
+		
+TestGameCheck 2020-01-06 03:11:41,449 INFO New TimePeriod: 303_1
+TestGameCheck 2020-01-06 03:11:41,451 INFO 
+		Period 303_1 for game 303 correctly saved
+		
+TestGameCheck 2020-01-06 03:11:41,467 DEBUG Check id list from db: ['440', '1488', '101', '202', '303']
+TestGameCheck 2020-01-06 03:12:02,712 INFO Steam game 69lmao correctly stored
+TestGameCheck 2020-01-06 03:12:02,722 INFO Steam game 440 correctly stored
+TestGameCheck 2020-01-06 03:12:02,731 INFO Steam game 1488 correctly stored
+TestGameCheck 2020-01-06 03:12:02,740 INFO Steam game 101 correctly stored
+TestGameCheck 2020-01-06 03:12:02,748 INFO Steam game 202 correctly stored
+TestGameCheck 2020-01-06 03:12:02,755 INFO Steam game 303 correctly stored
+TestGameCheck 2020-01-06 03:12:02,759 INFO New TimePeriod: 69lmao_0
+TestGameCheck 2020-01-06 03:12:02,760 INFO 
+		Period 69lmao_0 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-06 03:12:02,763 INFO New TimePeriod: 69lmao_1
+TestGameCheck 2020-01-06 03:12:02,765 INFO 
+		Period 69lmao_1 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-06 03:12:02,766 INFO New TimePeriod: 69lmao_2
+TestGameCheck 2020-01-06 03:12:02,768 INFO 
+		Period 69lmao_2 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-06 03:12:02,784 INFO New TimePeriod: 440_0
+TestGameCheck 2020-01-06 03:12:02,790 INFO 
+		Period 440_0 for game 440 correctly saved
+		
+TestGameCheck 2020-01-06 03:12:02,792 INFO New TimePeriod: 440_1
+TestGameCheck 2020-01-06 03:12:02,794 INFO 
+		Period 440_1 for game 440 correctly saved
+		
+TestGameCheck 2020-01-06 03:12:02,811 INFO New TimePeriod: 1488_0
+TestGameCheck 2020-01-06 03:12:02,813 INFO 
+		Period 1488_0 for game 1488 correctly saved
+		
+TestGameCheck 2020-01-06 03:12:02,815 INFO New TimePeriod: 1488_1
+TestGameCheck 2020-01-06 03:12:02,817 INFO 
+		Period 1488_1 for game 1488 correctly saved
+		
+TestGameCheck 2020-01-06 03:12:02,829 INFO New TimePeriod: 101_0
+TestGameCheck 2020-01-06 03:12:02,831 INFO 
+		Period 101_0 for game 101 correctly saved
+		
+TestGameCheck 2020-01-06 03:12:02,833 INFO New TimePeriod: 101_1
+TestGameCheck 2020-01-06 03:12:02,837 INFO 
+		Period 101_1 for game 101 correctly saved
+		
+TestGameCheck 2020-01-06 03:12:02,849 INFO New TimePeriod: 202_0
+TestGameCheck 2020-01-06 03:12:02,851 INFO 
+		Period 202_0 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 03:12:02,854 INFO New TimePeriod: 202_1
+TestGameCheck 2020-01-06 03:12:02,855 INFO 
+		Period 202_1 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 03:12:02,859 INFO New TimePeriod: 202_2
+TestGameCheck 2020-01-06 03:12:02,862 INFO 
+		Period 202_2 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 03:12:02,864 INFO New TimePeriod: 202_3
+TestGameCheck 2020-01-06 03:12:02,870 INFO 
+		Period 202_3 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 03:12:02,883 INFO New TimePeriod: 303_0
+TestGameCheck 2020-01-06 03:12:02,885 INFO 
+		Period 303_0 for game 303 correctly saved
+		
+TestGameCheck 2020-01-06 03:12:02,890 INFO New TimePeriod: 303_1
+TestGameCheck 2020-01-06 03:12:02,892 INFO 
+		Period 303_1 for game 303 correctly saved
+		
+TestGameCheck 2020-01-06 03:12:02,906 DEBUG Check id list from db: ['440', '1488', '101', '202', '303']
+TestGameCheck 2020-01-06 03:12:44,906 INFO Steam game 69lmao correctly stored
+TestGameCheck 2020-01-06 03:12:44,915 INFO Steam game 440 correctly stored
+TestGameCheck 2020-01-06 03:12:44,923 INFO Steam game 1488 correctly stored
+TestGameCheck 2020-01-06 03:12:44,932 INFO Steam game 101 correctly stored
+TestGameCheck 2020-01-06 03:12:44,940 INFO Steam game 202 correctly stored
+TestGameCheck 2020-01-06 03:12:44,948 INFO Steam game 303 correctly stored
+TestGameCheck 2020-01-06 03:12:44,952 INFO New TimePeriod: 69lmao_0
+TestGameCheck 2020-01-06 03:12:44,953 INFO 
+		Period 69lmao_0 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-06 03:12:44,956 INFO New TimePeriod: 69lmao_1
+TestGameCheck 2020-01-06 03:12:44,958 INFO 
+		Period 69lmao_1 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-06 03:12:44,959 INFO New TimePeriod: 69lmao_2
+TestGameCheck 2020-01-06 03:12:44,961 INFO 
+		Period 69lmao_2 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-06 03:12:44,973 INFO New TimePeriod: 440_0
+TestGameCheck 2020-01-06 03:12:44,975 INFO 
+		Period 440_0 for game 440 correctly saved
+		
+TestGameCheck 2020-01-06 03:12:44,977 INFO New TimePeriod: 440_1
+TestGameCheck 2020-01-06 03:12:44,978 INFO 
+		Period 440_1 for game 440 correctly saved
+		
+TestGameCheck 2020-01-06 03:12:44,991 INFO New TimePeriod: 1488_0
+TestGameCheck 2020-01-06 03:12:44,993 INFO 
+		Period 1488_0 for game 1488 correctly saved
+		
+TestGameCheck 2020-01-06 03:12:44,994 INFO New TimePeriod: 1488_1
+TestGameCheck 2020-01-06 03:12:44,996 INFO 
+		Period 1488_1 for game 1488 correctly saved
+		
+TestGameCheck 2020-01-06 03:12:45,010 INFO New TimePeriod: 101_0
+TestGameCheck 2020-01-06 03:12:45,011 INFO 
+		Period 101_0 for game 101 correctly saved
+		
+TestGameCheck 2020-01-06 03:12:45,013 INFO New TimePeriod: 101_1
+TestGameCheck 2020-01-06 03:12:45,015 INFO 
+		Period 101_1 for game 101 correctly saved
+		
+TestGameCheck 2020-01-06 03:12:45,027 INFO New TimePeriod: 202_0
+TestGameCheck 2020-01-06 03:12:45,028 INFO 
+		Period 202_0 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 03:12:45,031 INFO New TimePeriod: 202_1
+TestGameCheck 2020-01-06 03:12:45,033 INFO 
+		Period 202_1 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 03:12:45,036 INFO New TimePeriod: 202_2
+TestGameCheck 2020-01-06 03:12:45,038 INFO 
+		Period 202_2 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 03:12:45,041 INFO New TimePeriod: 202_3
+TestGameCheck 2020-01-06 03:12:45,043 INFO 
+		Period 202_3 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 03:12:45,055 INFO New TimePeriod: 303_0
+TestGameCheck 2020-01-06 03:12:45,056 INFO 
+		Period 303_0 for game 303 correctly saved
+		
+TestGameCheck 2020-01-06 03:12:45,057 INFO New TimePeriod: 303_1
+TestGameCheck 2020-01-06 03:12:45,059 INFO 
+		Period 303_1 for game 303 correctly saved
+		
+TestGameCheck 2020-01-06 03:12:45,075 DEBUG Check id list from db: ['440', '1488', '101', '202', '303']
+TestGameCheck 2020-01-06 03:13:18,844 INFO Steam game 69lmao correctly stored
+TestGameCheck 2020-01-06 03:13:18,852 INFO Steam game 440 correctly stored
+TestGameCheck 2020-01-06 03:13:18,860 INFO Steam game 1488 correctly stored
+TestGameCheck 2020-01-06 03:13:18,868 INFO Steam game 101 correctly stored
+TestGameCheck 2020-01-06 03:13:18,877 INFO Steam game 202 correctly stored
+TestGameCheck 2020-01-06 03:13:18,885 INFO Steam game 303 correctly stored
+TestGameCheck 2020-01-06 03:13:18,890 INFO New TimePeriod: 69lmao_0
+TestGameCheck 2020-01-06 03:13:18,891 INFO 
+		Period 69lmao_0 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-06 03:13:18,895 INFO New TimePeriod: 69lmao_1
+TestGameCheck 2020-01-06 03:13:18,896 INFO 
+		Period 69lmao_1 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-06 03:13:18,897 INFO New TimePeriod: 69lmao_2
+TestGameCheck 2020-01-06 03:13:18,899 INFO 
+		Period 69lmao_2 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-06 03:13:18,914 INFO New TimePeriod: 440_0
+TestGameCheck 2020-01-06 03:13:18,915 INFO 
+		Period 440_0 for game 440 correctly saved
+		
+TestGameCheck 2020-01-06 03:13:18,918 INFO New TimePeriod: 440_1
+TestGameCheck 2020-01-06 03:13:18,921 INFO 
+		Period 440_1 for game 440 correctly saved
+		
+TestGameCheck 2020-01-06 03:13:18,937 INFO New TimePeriod: 1488_0
+TestGameCheck 2020-01-06 03:13:18,938 INFO 
+		Period 1488_0 for game 1488 correctly saved
+		
+TestGameCheck 2020-01-06 03:13:18,942 INFO New TimePeriod: 1488_1
+TestGameCheck 2020-01-06 03:13:18,944 INFO 
+		Period 1488_1 for game 1488 correctly saved
+		
+TestGameCheck 2020-01-06 03:13:18,957 INFO New TimePeriod: 101_0
+TestGameCheck 2020-01-06 03:13:18,958 INFO 
+		Period 101_0 for game 101 correctly saved
+		
+TestGameCheck 2020-01-06 03:13:18,962 INFO New TimePeriod: 101_1
+TestGameCheck 2020-01-06 03:13:18,964 INFO 
+		Period 101_1 for game 101 correctly saved
+		
+TestGameCheck 2020-01-06 03:13:18,980 INFO New TimePeriod: 202_0
+TestGameCheck 2020-01-06 03:13:18,981 INFO 
+		Period 202_0 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 03:13:18,983 INFO New TimePeriod: 202_1
+TestGameCheck 2020-01-06 03:13:18,988 INFO 
+		Period 202_1 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 03:13:18,990 INFO New TimePeriod: 202_2
+TestGameCheck 2020-01-06 03:13:18,994 INFO 
+		Period 202_2 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 03:13:18,996 INFO New TimePeriod: 202_3
+TestGameCheck 2020-01-06 03:13:18,997 INFO 
+		Period 202_3 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 03:13:19,012 INFO New TimePeriod: 303_0
+TestGameCheck 2020-01-06 03:13:19,013 INFO 
+		Period 303_0 for game 303 correctly saved
+		
+TestGameCheck 2020-01-06 03:13:19,017 INFO New TimePeriod: 303_1
+TestGameCheck 2020-01-06 03:13:19,020 INFO 
+		Period 303_1 for game 303 correctly saved
+		
+TestGameCheck 2020-01-06 03:13:19,034 DEBUG Check id list from db: ['440', '1488', '101', '202', '303']
+TestGameCheck 2020-01-06 03:15:20,802 INFO Steam game 69lmao correctly stored
+TestGameCheck 2020-01-06 03:15:20,812 INFO Steam game 440 correctly stored
+TestGameCheck 2020-01-06 03:15:20,820 INFO Steam game 1488 correctly stored
+TestGameCheck 2020-01-06 03:15:20,827 INFO Steam game 101 correctly stored
+TestGameCheck 2020-01-06 03:15:20,835 INFO Steam game 202 correctly stored
+TestGameCheck 2020-01-06 03:15:20,842 INFO Steam game 303 correctly stored
+TestGameCheck 2020-01-06 03:15:20,846 INFO New TimePeriod: 69lmao_0
+TestGameCheck 2020-01-06 03:15:20,847 INFO 
+		Period 69lmao_0 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-06 03:15:20,850 INFO New TimePeriod: 69lmao_1
+TestGameCheck 2020-01-06 03:15:20,859 INFO 
+		Period 69lmao_1 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-06 03:15:20,861 INFO New TimePeriod: 69lmao_2
+TestGameCheck 2020-01-06 03:15:20,863 INFO 
+		Period 69lmao_2 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-06 03:15:20,878 INFO New TimePeriod: 440_0
+TestGameCheck 2020-01-06 03:15:20,879 INFO 
+		Period 440_0 for game 440 correctly saved
+		
+TestGameCheck 2020-01-06 03:15:20,881 INFO New TimePeriod: 440_1
+TestGameCheck 2020-01-06 03:15:20,884 INFO 
+		Period 440_1 for game 440 correctly saved
+		
+TestGameCheck 2020-01-06 03:15:20,898 INFO New TimePeriod: 1488_0
+TestGameCheck 2020-01-06 03:15:20,899 INFO 
+		Period 1488_0 for game 1488 correctly saved
+		
+TestGameCheck 2020-01-06 03:15:20,904 INFO New TimePeriod: 1488_1
+TestGameCheck 2020-01-06 03:15:20,906 INFO 
+		Period 1488_1 for game 1488 correctly saved
+		
+TestGameCheck 2020-01-06 03:15:20,917 INFO New TimePeriod: 101_0
+TestGameCheck 2020-01-06 03:15:20,919 INFO 
+		Period 101_0 for game 101 correctly saved
+		
+TestGameCheck 2020-01-06 03:15:20,921 INFO New TimePeriod: 101_1
+TestGameCheck 2020-01-06 03:15:20,924 INFO 
+		Period 101_1 for game 101 correctly saved
+		
+TestGameCheck 2020-01-06 03:15:20,938 INFO New TimePeriod: 202_0
+TestGameCheck 2020-01-06 03:15:20,941 INFO 
+		Period 202_0 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 03:15:20,944 INFO New TimePeriod: 202_1
+TestGameCheck 2020-01-06 03:15:20,947 INFO 
+		Period 202_1 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 03:15:20,950 INFO New TimePeriod: 202_2
+TestGameCheck 2020-01-06 03:15:20,956 INFO 
+		Period 202_2 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 03:15:20,958 INFO New TimePeriod: 202_3
+TestGameCheck 2020-01-06 03:15:20,960 INFO 
+		Period 202_3 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 03:15:20,976 INFO New TimePeriod: 303_0
+TestGameCheck 2020-01-06 03:15:20,977 INFO 
+		Period 303_0 for game 303 correctly saved
+		
+TestGameCheck 2020-01-06 03:15:20,982 INFO New TimePeriod: 303_1
+TestGameCheck 2020-01-06 03:15:20,984 INFO 
+		Period 303_1 for game 303 correctly saved
+		
+TestGameCheck 2020-01-06 03:15:21,006 DEBUG Check id list from db: ['440', '1488', '101', '202', '303']
+TestGameCheck 2020-01-06 03:15:56,700 INFO Steam game 69lmao correctly stored
+TestGameCheck 2020-01-06 03:15:56,710 INFO Steam game 440 correctly stored
+TestGameCheck 2020-01-06 03:15:56,718 INFO Steam game 1488 correctly stored
+TestGameCheck 2020-01-06 03:15:56,725 INFO Steam game 101 correctly stored
+TestGameCheck 2020-01-06 03:15:56,732 INFO Steam game 202 correctly stored
+TestGameCheck 2020-01-06 03:15:56,740 INFO Steam game 303 correctly stored
+TestGameCheck 2020-01-06 03:15:56,744 INFO New TimePeriod: 69lmao_0
+TestGameCheck 2020-01-06 03:15:56,745 INFO 
+		Period 69lmao_0 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-06 03:15:56,747 INFO New TimePeriod: 69lmao_1
+TestGameCheck 2020-01-06 03:15:56,749 INFO 
+		Period 69lmao_1 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-06 03:15:56,750 INFO New TimePeriod: 69lmao_2
+TestGameCheck 2020-01-06 03:15:56,753 INFO 
+		Period 69lmao_2 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-06 03:15:56,772 INFO New TimePeriod: 440_0
+TestGameCheck 2020-01-06 03:15:56,774 INFO 
+		Period 440_0 for game 440 correctly saved
+		
+TestGameCheck 2020-01-06 03:15:56,778 INFO New TimePeriod: 440_1
+TestGameCheck 2020-01-06 03:15:56,779 INFO 
+		Period 440_1 for game 440 correctly saved
+		
+TestGameCheck 2020-01-06 03:15:56,793 INFO New TimePeriod: 1488_0
+TestGameCheck 2020-01-06 03:15:56,794 INFO 
+		Period 1488_0 for game 1488 correctly saved
+		
+TestGameCheck 2020-01-06 03:15:56,798 INFO New TimePeriod: 1488_1
+TestGameCheck 2020-01-06 03:15:56,800 INFO 
+		Period 1488_1 for game 1488 correctly saved
+		
+TestGameCheck 2020-01-06 03:15:56,813 INFO New TimePeriod: 101_0
+TestGameCheck 2020-01-06 03:15:56,814 INFO 
+		Period 101_0 for game 101 correctly saved
+		
+TestGameCheck 2020-01-06 03:15:56,817 INFO New TimePeriod: 101_1
+TestGameCheck 2020-01-06 03:15:56,820 INFO 
+		Period 101_1 for game 101 correctly saved
+		
+TestGameCheck 2020-01-06 03:15:56,831 INFO New TimePeriod: 202_0
+TestGameCheck 2020-01-06 03:15:56,833 INFO 
+		Period 202_0 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 03:15:56,836 INFO New TimePeriod: 202_1
+TestGameCheck 2020-01-06 03:15:56,843 INFO 
+		Period 202_1 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 03:15:56,846 INFO New TimePeriod: 202_2
+TestGameCheck 2020-01-06 03:15:56,847 INFO 
+		Period 202_2 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 03:15:56,851 INFO New TimePeriod: 202_3
+TestGameCheck 2020-01-06 03:15:56,855 INFO 
+		Period 202_3 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 03:15:56,869 INFO New TimePeriod: 303_0
+TestGameCheck 2020-01-06 03:15:56,871 INFO 
+		Period 303_0 for game 303 correctly saved
+		
+TestGameCheck 2020-01-06 03:15:56,876 INFO New TimePeriod: 303_1
+TestGameCheck 2020-01-06 03:15:56,879 INFO 
+		Period 303_1 for game 303 correctly saved
+		
+TestGameCheck 2020-01-06 03:15:56,895 DEBUG Check id list from db: ['440', '1488', '101', '202', '303']
+TestGameCheck 2020-01-06 03:16:16,350 INFO Steam game 69lmao correctly stored
+TestGameCheck 2020-01-06 03:16:16,361 INFO Steam game 440 correctly stored
+TestGameCheck 2020-01-06 03:16:16,370 INFO Steam game 1488 correctly stored
+TestGameCheck 2020-01-06 03:16:16,377 INFO Steam game 101 correctly stored
+TestGameCheck 2020-01-06 03:16:16,385 INFO Steam game 202 correctly stored
+TestGameCheck 2020-01-06 03:16:16,394 INFO Steam game 303 correctly stored
+TestGameCheck 2020-01-06 03:16:16,398 INFO New TimePeriod: 69lmao_0
+TestGameCheck 2020-01-06 03:16:16,399 INFO 
+		Period 69lmao_0 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-06 03:16:16,405 INFO New TimePeriod: 69lmao_1
+TestGameCheck 2020-01-06 03:16:16,409 INFO 
+		Period 69lmao_1 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-06 03:16:16,412 INFO New TimePeriod: 69lmao_2
+TestGameCheck 2020-01-06 03:16:16,414 INFO 
+		Period 69lmao_2 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-06 03:16:16,428 INFO New TimePeriod: 440_0
+TestGameCheck 2020-01-06 03:16:16,429 INFO 
+		Period 440_0 for game 440 correctly saved
+		
+TestGameCheck 2020-01-06 03:16:16,432 INFO New TimePeriod: 440_1
+TestGameCheck 2020-01-06 03:16:16,438 INFO 
+		Period 440_1 for game 440 correctly saved
+		
+TestGameCheck 2020-01-06 03:16:16,451 INFO New TimePeriod: 1488_0
+TestGameCheck 2020-01-06 03:16:16,463 INFO 
+		Period 1488_0 for game 1488 correctly saved
+		
+TestGameCheck 2020-01-06 03:16:16,465 INFO New TimePeriod: 1488_1
+TestGameCheck 2020-01-06 03:16:16,466 INFO 
+		Period 1488_1 for game 1488 correctly saved
+		
+TestGameCheck 2020-01-06 03:16:16,480 INFO New TimePeriod: 101_0
+TestGameCheck 2020-01-06 03:16:16,481 INFO 
+		Period 101_0 for game 101 correctly saved
+		
+TestGameCheck 2020-01-06 03:16:16,483 INFO New TimePeriod: 101_1
+TestGameCheck 2020-01-06 03:16:16,486 INFO 
+		Period 101_1 for game 101 correctly saved
+		
+TestGameCheck 2020-01-06 03:16:16,498 INFO New TimePeriod: 202_0
+TestGameCheck 2020-01-06 03:16:16,499 INFO 
+		Period 202_0 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 03:16:16,504 INFO New TimePeriod: 202_1
+TestGameCheck 2020-01-06 03:16:16,506 INFO 
+		Period 202_1 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 03:16:16,507 INFO New TimePeriod: 202_2
+TestGameCheck 2020-01-06 03:16:16,508 INFO 
+		Period 202_2 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 03:16:16,511 INFO New TimePeriod: 202_3
+TestGameCheck 2020-01-06 03:16:16,514 INFO 
+		Period 202_3 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 03:16:16,527 INFO New TimePeriod: 303_0
+TestGameCheck 2020-01-06 03:16:16,528 INFO 
+		Period 303_0 for game 303 correctly saved
+		
+TestGameCheck 2020-01-06 03:16:16,530 INFO New TimePeriod: 303_1
+TestGameCheck 2020-01-06 03:16:16,534 INFO 
+		Period 303_1 for game 303 correctly saved
+		
+TestGameCheck 2020-01-06 03:16:16,555 DEBUG Check id list from db: ['440', '1488', '101', '202', '303']
+TestGameCheck 2020-01-06 03:16:35,243 INFO Steam game 69lmao correctly stored
+TestGameCheck 2020-01-06 03:16:35,252 INFO Steam game 440 correctly stored
+TestGameCheck 2020-01-06 03:16:35,260 INFO Steam game 1488 correctly stored
+TestGameCheck 2020-01-06 03:16:35,267 INFO Steam game 101 correctly stored
+TestGameCheck 2020-01-06 03:16:35,277 INFO Steam game 202 correctly stored
+TestGameCheck 2020-01-06 03:16:35,285 INFO Steam game 303 correctly stored
+TestGameCheck 2020-01-06 03:16:35,290 INFO New TimePeriod: 69lmao_0
+TestGameCheck 2020-01-06 03:16:35,291 INFO 
+		Period 69lmao_0 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-06 03:16:35,294 INFO New TimePeriod: 69lmao_1
+TestGameCheck 2020-01-06 03:16:35,296 INFO 
+		Period 69lmao_1 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-06 03:16:35,297 INFO New TimePeriod: 69lmao_2
+TestGameCheck 2020-01-06 03:16:35,299 INFO 
+		Period 69lmao_2 for game 69lmao correctly saved
+		
+TestGameCheck 2020-01-06 03:16:35,312 INFO New TimePeriod: 440_0
+TestGameCheck 2020-01-06 03:16:35,314 INFO 
+		Period 440_0 for game 440 correctly saved
+		
+TestGameCheck 2020-01-06 03:16:35,317 INFO New TimePeriod: 440_1
+TestGameCheck 2020-01-06 03:16:35,319 INFO 
+		Period 440_1 for game 440 correctly saved
+		
+TestGameCheck 2020-01-06 03:16:35,338 INFO New TimePeriod: 1488_0
+TestGameCheck 2020-01-06 03:16:35,339 INFO 
+		Period 1488_0 for game 1488 correctly saved
+		
+TestGameCheck 2020-01-06 03:16:35,342 INFO New TimePeriod: 1488_1
+TestGameCheck 2020-01-06 03:16:35,344 INFO 
+		Period 1488_1 for game 1488 correctly saved
+		
+TestGameCheck 2020-01-06 03:16:35,358 INFO New TimePeriod: 101_0
+TestGameCheck 2020-01-06 03:16:35,359 INFO 
+		Period 101_0 for game 101 correctly saved
+		
+TestGameCheck 2020-01-06 03:16:35,363 INFO New TimePeriod: 101_1
+TestGameCheck 2020-01-06 03:16:35,366 INFO 
+		Period 101_1 for game 101 correctly saved
+		
+TestGameCheck 2020-01-06 03:16:35,382 INFO New TimePeriod: 202_0
+TestGameCheck 2020-01-06 03:16:35,383 INFO 
+		Period 202_0 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 03:16:35,390 INFO New TimePeriod: 202_1
+TestGameCheck 2020-01-06 03:16:35,391 INFO 
+		Period 202_1 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 03:16:35,392 INFO New TimePeriod: 202_2
+TestGameCheck 2020-01-06 03:16:35,396 INFO 
+		Period 202_2 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 03:16:35,398 INFO New TimePeriod: 202_3
+TestGameCheck 2020-01-06 03:16:35,399 INFO 
+		Period 202_3 for game 202 correctly saved
+		
+TestGameCheck 2020-01-06 03:16:35,416 INFO New TimePeriod: 303_0
+TestGameCheck 2020-01-06 03:16:35,417 INFO 
+		Period 303_0 for game 303 correctly saved
+		
+TestGameCheck 2020-01-06 03:16:35,423 INFO New TimePeriod: 303_1
+TestGameCheck 2020-01-06 03:16:35,425 INFO 
+		Period 303_1 for game 303 correctly saved
+		
+TestGameCheck 2020-01-06 03:16:35,440 DEBUG Check id list from db: ['440', '1488', '101', '202', '303']

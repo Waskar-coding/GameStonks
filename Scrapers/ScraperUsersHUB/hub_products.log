@@ -1,0 +1,256 @@
+HUBmainfunc 2019-11-15 18:40:34,793 INFO 
+					The following game ids were added to the trending list: ['756530', '1156980', '898430']
+					
+HUBcrunchfunc 2019-11-15 18:42:17,017 INFO 
+					756530 popularity changed from 2 to 3
+					
+HUBcrunchfunc 2019-11-15 18:42:17,057 INFO 
+					271590 popularity changed from 2 to 3
+					
+HUBcrunchfunc 2019-11-15 18:42:17,077 INFO 
+					440 popularity changed from 2 to 3
+					
+HUBcrunchfunc 2019-11-15 18:42:17,085 WARNING 
+							No user profiles matched for 1156980 hub
+							
+HUBcrunchfunc 2019-11-15 18:42:17,093 INFO 
+					1156980 popularity changed from 2 to 1
+					
+HUBmainfunc 2019-12-03 17:49:55,422 WARNING There was a problem with 1100730: 19/11/2019
+HUBmainfunc 2019-12-03 17:49:55,440 INFO 
+					The following game ids were added to the trending list: ['1052430', '1103800', '1132210', '350300', '1178120', '1192740', '254940', '756890', '1191680', '696120', '254900', '616920', '1182720', '1165850', '1109840', '1165860', '1190410', '728530', '1196400', '1052440', '951680', '1102940', '1193550', '1191450', '1048020', '865160', '1185950', '1193570', '1190150', '1186580']
+					
+HUBcrunchfunc 2019-12-03 17:51:17,969 INFO 
+					898430 popularity changed from 2 to 1
+					
+HUBcrunchfunc 2019-12-03 17:51:17,991 INFO 
+					1132210 popularity changed from 2 to 3
+					
+HUBcrunchfunc 2019-12-03 17:51:45,749 INFO 
+					1178120 popularity changed from 2 to 3
+					
+HUBcrunchfunc 2019-12-03 17:51:45,785 WARNING 
+							No user profiles matched for 254940 hub
+							
+HUBcrunchfunc 2019-12-03 17:51:45,790 INFO 
+					254940 popularity changed from 2 to 1
+					
+HUBcrunchfunc 2019-12-03 17:52:34,014 INFO 
+					616920 popularity changed from 2 to 3
+					
+HUBcrunchfunc 2019-12-03 17:52:34,067 INFO 
+					1165850 popularity changed from 2 to 3
+					
+HUBcrunchfunc 2019-12-03 17:52:34,078 WARNING 
+							No user profiles matched for 254900 hub
+							
+HUBcrunchfunc 2019-12-03 17:52:34,082 INFO 
+					254900 popularity changed from 2 to 1
+					
+HUBcrunchfunc 2019-12-03 17:53:00,283 INFO 
+					728530 popularity changed from 2 to 3
+					
+HUBcrunchfunc 2019-12-03 17:53:24,425 WARNING 
+							No user profiles matched for 1102940 hub
+							
+HUBcrunchfunc 2019-12-03 17:53:24,430 INFO 
+					1102940 popularity changed from 2 to 1
+					
+HUBcrunchfunc 2019-12-03 17:53:24,448 WARNING 
+							No user profiles matched for 1191450 hub
+							
+HUBcrunchfunc 2019-12-03 17:53:24,452 INFO 
+					1191450 popularity changed from 2 to 1
+					
+HUBcrunchfunc 2019-12-03 17:53:24,494 INFO 
+					1052440 popularity changed from 2 to 3
+					
+HUBcrunchfunc 2019-12-03 17:53:48,738 INFO 
+					1193570 popularity changed from 2 to 3
+					
+HUBmainfunc 2019-12-31 13:26:06,290 INFO 
+		The following game ids were added to the trending list: ['1122720', '1148810', '1204880', '1000310', '1165780', '1202510', '1194380', '1200200', '906250', '1201140', '869690', '1179480', '1182930', '1202820', '1198290', '1174090', '1199150', '1147670', '1066030', '1194620', '1092300', '1113880', '1193600', '1181440', '1161650', '1176580', '1184780', '998530', '1204930', '1085520', '1188580', '1192870', '1204720', '1197790', '1204210', '1198070', '1204360', '1168280', '1195170', '1186400', '1173740', '955610', '1189090', '1196520', '1196160', '1176140', '1171140', '1083820', '1156320', '1197600', '1090690', '1174500', '960170', '1201880', '1204270', '1198060', '1205720']
+		
+HUBcrunchfunc 2019-12-31 13:44:32,496 INFO 
+					350300 popularity changed from 2 to 1
+					
+HUBcrunchfunc 2019-12-31 13:44:32,528 INFO 
+					756890 popularity changed from 2 to 1
+					
+HUBcrunchfunc 2019-12-31 13:44:32,550 INFO 
+					1052430 popularity changed from 2 to 1
+					
+HUBcrunchfunc 2019-12-31 13:45:17,458 INFO 
+					1182720 popularity changed from 2 to 1
+					
+HUBcrunchfunc 2019-12-31 13:45:17,490 INFO 
+					1109840 popularity changed from 2 to 1
+					
+HUBcrunchfunc 2019-12-31 13:45:17,507 INFO 
+					1165860 popularity changed from 2 to 1
+					
+HUBcrunchfunc 2019-12-31 13:45:17,527 INFO 
+					1191680 popularity changed from 2 to 1
+					
+HUBcrunchfunc 2019-12-31 13:48:08,474 INFO 
+					1122720 popularity changed from 2 to 3
+					
+HUBcrunchfunc 2019-12-31 13:48:08,505 INFO 
+					865160 popularity changed from 2 to 1
+					
+HUBcrunchfunc 2019-12-31 13:49:54,014 INFO 
+					1148810 popularity changed from 2 to 3
+					
+HUBcrunchfunc 2019-12-31 13:51:44,788 INFO 
+					869690 popularity changed from 2 to 3
+					
+HUBcrunchfunc 2019-12-31 13:51:44,819 WARNING 
+							No user profiles matched for 1201140 hub
+							
+HUBcrunchfunc 2019-12-31 13:51:44,819 INFO 
+					1201140 popularity changed from 2 to 1
+					
+HUBcrunchfunc 2019-12-31 13:54:00,797 INFO 
+					1192740 popularity changed from 2 to 1
+					
+HUBcrunchfunc 2019-12-31 13:54:00,810 INFO 
+					1190410 popularity changed from 2 to 1
+					
+HUBcrunchfunc 2019-12-31 13:54:00,824 INFO 
+					696120 popularity changed from 2 to 1
+					
+HUBcrunchfunc 2019-12-31 13:54:00,838 INFO 
+					1103800 popularity changed from 2 to 1
+					
+HUBcrunchfunc 2019-12-31 13:54:00,852 INFO 
+					1196400 popularity changed from 2 to 1
+					
+HUBcrunchfunc 2019-12-31 13:54:24,725 INFO 
+					1185950 popularity changed from 2 to 1
+					
+HUBcrunchfunc 2019-12-31 13:54:24,747 INFO 
+					1048020 popularity changed from 2 to 1
+					
+HUBcrunchfunc 2019-12-31 13:54:24,747 INFO 
+					1193550 popularity changed from 2 to 1
+					
+HUBcrunchfunc 2019-12-31 13:54:24,762 INFO 
+					951680 popularity changed from 2 to 1
+					
+HUBcrunchfunc 2019-12-31 13:54:24,778 INFO 
+					1190150 popularity changed from 2 to 1
+					
+HUBcrunchfunc 2019-12-31 13:54:48,832 INFO 
+					1204880 popularity changed from 2 to 1
+					
+HUBcrunchfunc 2019-12-31 13:54:48,846 INFO 
+					1165780 popularity changed from 2 to 1
+					
+HUBcrunchfunc 2019-12-31 13:54:48,855 INFO 
+					1202510 popularity changed from 2 to 1
+					
+HUBcrunchfunc 2019-12-31 13:54:48,871 INFO 
+					1000310 popularity changed from 2 to 1
+					
+HUBcrunchfunc 2019-12-31 13:54:48,887 INFO 
+					1186580 popularity changed from 2 to 1
+					
+HUBcrunchfunc 2019-12-31 13:55:12,639 INFO 
+					1194380 popularity changed from 2 to 1
+					
+HUBcrunchfunc 2019-12-31 13:55:12,655 INFO 
+					1200200 popularity changed from 2 to 1
+					
+HUBcrunchfunc 2019-12-31 13:55:12,670 INFO 
+					906250 popularity changed from 2 to 1
+					
+HUBcrunchfunc 2019-12-31 13:55:36,472 WARNING 
+							No user profiles matched for 1202820 hub
+							
+HUBcrunchfunc 2019-12-31 13:55:36,472 INFO 
+					1202820 popularity changed from 2 to 1
+					
+HUBcrunchfunc 2019-12-31 13:55:36,488 INFO 
+					1147670 popularity changed from 2 to 3
+					
+HUBcrunchfunc 2019-12-31 13:55:36,504 WARNING 
+							No user profiles matched for 1199150 hub
+							
+HUBcrunchfunc 2019-12-31 13:55:36,504 INFO 
+					1199150 popularity changed from 2 to 1
+					
+HUBcrunchfunc 2019-12-31 13:56:00,756 INFO 
+					1113880 popularity changed from 2 to 3
+					
+HUBcrunchfunc 2019-12-31 13:56:00,784 WARNING 
+							No user profiles matched for 1193600 hub
+							
+HUBcrunchfunc 2019-12-31 13:56:00,788 INFO 
+					1193600 popularity changed from 2 to 1
+					
+HUBcrunchfunc 2019-12-31 13:56:33,948 WARNING 
+							No user profiles matched for 1184780 hub
+							
+HUBcrunchfunc 2019-12-31 13:56:33,948 INFO 
+					1184780 popularity changed from 2 to 1
+					
+HUBcrunchfunc 2019-12-31 13:56:58,195 INFO 
+					1204720 popularity changed from 2 to 3
+					
+HUBcrunchfunc 2019-12-31 13:57:22,886 INFO 
+					1168280 popularity changed from 2 to 3
+					
+HUBcrunchfunc 2019-12-31 13:57:22,918 WARNING 
+							No user profiles matched for 1204210 hub
+							
+HUBcrunchfunc 2019-12-31 13:57:22,918 INFO 
+					1204210 popularity changed from 2 to 1
+					
+HUBcrunchfunc 2019-12-31 13:57:22,933 WARNING 
+							No user profiles matched for 1197790 hub
+							
+HUBcrunchfunc 2019-12-31 13:57:22,933 INFO 
+					1197790 popularity changed from 2 to 1
+					
+HUBcrunchfunc 2019-12-31 13:57:48,843 INFO 
+					1186400 popularity changed from 2 to 3
+					
+HUBcrunchfunc 2019-12-31 13:57:48,858 WARNING 
+							No user profiles matched for 1189090 hub
+							
+HUBcrunchfunc 2019-12-31 13:57:48,858 INFO 
+					1189090 popularity changed from 2 to 1
+					
+HUBcrunchfunc 2019-12-31 13:58:29,171 INFO 
+					1083820 popularity changed from 2 to 3
+					
+HUBcrunchfunc 2019-12-31 13:58:29,186 INFO 
+					1171140 popularity changed from 2 to 3
+					
+HUBcrunchfunc 2019-12-31 13:58:29,202 WARNING 
+							No user profiles matched for 1176140 hub
+							
+HUBcrunchfunc 2019-12-31 13:58:29,202 INFO 
+					1176140 popularity changed from 2 to 1
+					
+HUBcrunchfunc 2019-12-31 13:58:29,218 WARNING 
+							No user profiles matched for 1196520 hub
+							
+HUBcrunchfunc 2019-12-31 13:58:29,218 INFO 
+					1196520 popularity changed from 2 to 1
+					
+HUBcrunchfunc 2019-12-31 13:58:53,234 WARNING 
+							No user profiles matched for 1090690 hub
+							
+HUBcrunchfunc 2019-12-31 13:58:53,234 INFO 
+					1090690 popularity changed from 2 to 1
+					
+HUBcrunchfunc 2019-12-31 13:58:53,249 WARNING 
+							No user profiles matched for 1156320 hub
+							
+HUBcrunchfunc 2019-12-31 13:58:53,249 INFO 
+					1156320 popularity changed from 2 to 1
+					
+HUBcrunchfunc 2019-12-31 13:58:53,296 INFO 
+					960170 popularity changed from 2 to 3
+					

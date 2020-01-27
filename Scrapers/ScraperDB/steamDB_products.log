@@ -1,0 +1,102 @@
+DBmainfunc 2019-11-09 13:59:35,964 ERROR 
+                            Exception while downloading 440 
+                            while using socks5://206.189.5.19:1080
+                            
+Traceback (most recent call last):
+  File "Products_SteamDB.py", line 182, in download_product
+    download_players(appid,driver,'js-chart-year')
+  File "Products_SteamDB.py", line 72, in download_players
+    driver.get(url)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 333, in get
+    self.execute(Command.GET, {'url': url})
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 397, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\request.py", line 80, in request
+    method, url, fields=fields, headers=headers, **urlopen_kw
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\request.py", line 171, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\poolmanager.py", line 330, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 672, in urlopen
+    chunked=chunked,
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 421, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\urllib3\connectionpool.py", line 416, in _make_request
+    httplib_response = conn.getresponse()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 1321, in getresponse
+    response.begin()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 296, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\http\client.py", line 257, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\socket.py", line 589, in readinto
+    return self._sock.recv_into(b)
+KeyboardInterrupt
+DBmainfunc 2019-11-09 14:01:26,610 ERROR 
+                            Exception while downloading 440 
+                            while using https://178.128.254.102:3128
+                            
+Traceback (most recent call last):
+  File "Products_SteamDB.py", line 182, in download_product
+    download_players(appid,driver,'js-chart-year')
+  File "Products_SteamDB.py", line 74, in download_players
+    WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.ID, period)))
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\support\wait.py", line 71, in until
+    value = method(self._driver)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 64, in __call__
+    return _find_element(driver, self.locator)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 415, in _find_element
+    raise e
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 411, in _find_element
+    return driver.find_element(*by)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: chrome not reachable
+  (Session info: chrome=78.0.3904.97)
+
+DBmainfunc 2019-11-09 14:02:25,213 ERROR 
+                            Exception while downloading 440 
+                            while using socks5://72.11.148.222:56533
+                            
+Traceback (most recent call last):
+  File "Products_SteamDB.py", line 182, in download_product
+    download_players(appid,driver,'js-chart-year')
+  File "Products_SteamDB.py", line 74, in download_players
+    WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.ID, period)))
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\support\wait.py", line 71, in until
+    value = method(self._driver)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 64, in __call__
+    return _find_element(driver, self.locator)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 415, in _find_element
+    raise e
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 411, in _find_element
+    return driver.find_element(*by)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=78.0.3904.97)
+
+DBmainfunc 2020-01-02 16:46:26,581 ERROR 
+            Exception while downloading 440 
+            while using socks5://192.169.152.231:61038
+            
+Traceback (most recent call last):
+  File "C:\Users\mcnon\OneDrive\Escritorio\Proyecto Owners\Scrapers\ScraperDB\Products_SteamDB.py", line 372, in download_product
+    get_rating(driver,appid)
+  File "C:\Users\mcnon\OneDrive\Escritorio\Proyecto Owners\Scrapers\ScraperDB\Products_SteamDB.py", line 207, in get_rating
+    good_ratings=driver\
+AttributeError: 'str' object has no attribute 'find_elements_by_class_name'
