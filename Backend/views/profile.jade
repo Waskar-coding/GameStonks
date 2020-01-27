@@ -1,0 +1,14 @@
+//
+   Created by Lazarus of Bethany on 04/05/2017.
+extends layout
+block content
+    if(user)
+        img(src="#{user.pic}")
+        ul
+        li Welcome <strong>#{user.name}</strong>
+        li
+        a(href='mailto:#{user.email}') #{user.email}
+        li ID: #{user.id}
+        li <i>Data provided by <b>#{user.provider}</b></i>
+    p
+        a(href='logout') Logout
