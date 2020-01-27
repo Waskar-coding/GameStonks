@@ -7,7 +7,7 @@ GameStonks the user must comply with the following conditions:
 
 2.	The account must be at least a year old.
 
-3.	The current value of the account must surpass 50€
+3.	The current value of the account must surpass 20€
 
 If the user's profile does not follow this rules it will be banned
 as soon as his/her profile is registered. When they comply with
@@ -24,6 +24,7 @@ __date__ = '27/01/2020'
 #Libraries
 ##Standard
 import os
+import time
 import logging
 
 ##Packages
@@ -66,8 +67,9 @@ def getResume(userid: str) -> dict:
 	response = requests.get(url)
 	MAX_COUNT = 10
 	count = 0
-	while response.status_code != 200 or count<MAX_COUNT:
-		print('This be while loop')
+	while response.status_code != 200 and count<MAX_COUNT:
+		print(response.status_code)
+		print(response.status_code!=200)
 		response = requests.get(url)
 		count += 1
 

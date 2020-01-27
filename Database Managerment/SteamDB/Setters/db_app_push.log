@@ -1,0 +1,271 @@
+DBAppPush 2020-01-27 20:08:18,293 ERROR Error while parsing App 1190800
+Traceback (most recent call last):
+  File "C:\Users\mcnon\OneDrive\Escritorio\Proyecto Owners\Git\GameStonks\Database Managerment\SteamDB\Setters\steam_setters_db.py", line 74, in steam_app_setter
+    SteamApp.save()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\document.py", line 369, in save
+    self.validate(clean=clean)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\base\document.py", line 413, in validate
+    raise ValidationError(message, errors=errors)
+mongoengine.errors.ValidationError: ValidationError (SteamApp:None) (BooleanField only accepts boolean values: ['is_free'] cannot parse date "NaN": ['release_date'])
+DBAppPush 2020-01-27 20:08:28,989 ERROR Error while parsing App 1213610
+Traceback (most recent call last):
+  File "C:\Users\mcnon\OneDrive\Escritorio\Proyecto Owners\Git\GameStonks\Database Managerment\SteamDB\Setters\steam_setters_db.py", line 74, in steam_app_setter
+    SteamApp.save()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\document.py", line 369, in save
+    self.validate(clean=clean)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\base\document.py", line 413, in validate
+    raise ValidationError(message, errors=errors)
+mongoengine.errors.ValidationError: ValidationError (SteamApp:None) (BooleanField only accepts boolean values: ['is_free'] cannot parse date "NaN": ['release_date'])
+DBAppPush 2020-01-27 20:08:29,027 ERROR Error while parsing App 1198831
+Traceback (most recent call last):
+  File "C:\Users\mcnon\OneDrive\Escritorio\Proyecto Owners\Git\GameStonks\Database Managerment\SteamDB\Setters\steam_setters_db.py", line 74, in steam_app_setter
+    SteamApp.save()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\document.py", line 369, in save
+    self.validate(clean=clean)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\base\document.py", line 413, in validate
+    raise ValidationError(message, errors=errors)
+mongoengine.errors.ValidationError: ValidationError (SteamApp:None) (BooleanField only accepts boolean values: ['is_free'] cannot parse date "NaN": ['release_date'])
+DBAppPush 2020-01-27 20:08:29,384 ERROR Error while parsing App 1180440
+Traceback (most recent call last):
+  File "C:\Users\mcnon\OneDrive\Escritorio\Proyecto Owners\Git\GameStonks\Database Managerment\SteamDB\Setters\steam_setters_db.py", line 74, in steam_app_setter
+    SteamApp.save()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\document.py", line 369, in save
+    self.validate(clean=clean)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\base\document.py", line 413, in validate
+    raise ValidationError(message, errors=errors)
+mongoengine.errors.ValidationError: ValidationError (SteamApp:None) (BooleanField only accepts boolean values: ['is_free'] cannot parse date "NaN": ['release_date'])
+DBAppPush 2020-01-27 20:08:29,389 ERROR Error while parsing App 853520
+Traceback (most recent call last):
+  File "C:\Users\mcnon\OneDrive\Escritorio\Proyecto Owners\Git\GameStonks\Database Managerment\SteamDB\Setters\steam_setters_db.py", line 74, in steam_app_setter
+    SteamApp.save()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\document.py", line 369, in save
+    self.validate(clean=clean)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\base\document.py", line 413, in validate
+    raise ValidationError(message, errors=errors)
+mongoengine.errors.ValidationError: ValidationError (SteamApp:None) (BooleanField only accepts boolean values: ['is_free'] cannot parse date "NaN": ['release_date'])
+DBAppPush 2020-01-27 20:08:29,393 ERROR Error while parsing App 1214140
+Traceback (most recent call last):
+  File "C:\Users\mcnon\OneDrive\Escritorio\Proyecto Owners\Git\GameStonks\Database Managerment\SteamDB\Setters\steam_setters_db.py", line 74, in steam_app_setter
+    SteamApp.save()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\document.py", line 369, in save
+    self.validate(clean=clean)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\base\document.py", line 413, in validate
+    raise ValidationError(message, errors=errors)
+mongoengine.errors.ValidationError: ValidationError (SteamApp:None) (BooleanField only accepts boolean values: ['is_free'] cannot parse date "NaN": ['release_date'])
+DBAppPush 2020-01-27 20:08:29,397 ERROR Error while parsing App 1212311
+Traceback (most recent call last):
+  File "C:\Users\mcnon\OneDrive\Escritorio\Proyecto Owners\Git\GameStonks\Database Managerment\SteamDB\Setters\steam_setters_db.py", line 74, in steam_app_setter
+    SteamApp.save()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\document.py", line 369, in save
+    self.validate(clean=clean)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\base\document.py", line 413, in validate
+    raise ValidationError(message, errors=errors)
+mongoengine.errors.ValidationError: ValidationError (SteamApp:None) (BooleanField only accepts boolean values: ['is_free'] cannot parse date "NaN": ['release_date'])
+DBAppPush 2020-01-27 20:08:29,401 ERROR Error while parsing App 1212310
+Traceback (most recent call last):
+  File "C:\Users\mcnon\OneDrive\Escritorio\Proyecto Owners\Git\GameStonks\Database Managerment\SteamDB\Setters\steam_setters_db.py", line 74, in steam_app_setter
+    SteamApp.save()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\document.py", line 369, in save
+    self.validate(clean=clean)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\base\document.py", line 413, in validate
+    raise ValidationError(message, errors=errors)
+mongoengine.errors.ValidationError: ValidationError (SteamApp:None) (BooleanField only accepts boolean values: ['is_free'] cannot parse date "NaN": ['release_date'])
+DBAppPush 2020-01-27 20:08:29,605 ERROR Error while parsing App 1047650
+Traceback (most recent call last):
+  File "C:\Users\mcnon\OneDrive\Escritorio\Proyecto Owners\Git\GameStonks\Database Managerment\SteamDB\Setters\steam_setters_db.py", line 74, in steam_app_setter
+    SteamApp.save()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\document.py", line 369, in save
+    self.validate(clean=clean)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\base\document.py", line 413, in validate
+    raise ValidationError(message, errors=errors)
+mongoengine.errors.ValidationError: ValidationError (SteamApp:None) (BooleanField only accepts boolean values: ['is_free'] cannot parse date "NaN": ['release_date'])
+DBAppPush 2020-01-27 20:08:29,845 ERROR Error while parsing App 1144642
+Traceback (most recent call last):
+  File "C:\Users\mcnon\OneDrive\Escritorio\Proyecto Owners\Git\GameStonks\Database Managerment\SteamDB\Setters\steam_setters_db.py", line 74, in steam_app_setter
+    SteamApp.save()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\document.py", line 369, in save
+    self.validate(clean=clean)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\base\document.py", line 413, in validate
+    raise ValidationError(message, errors=errors)
+mongoengine.errors.ValidationError: ValidationError (SteamApp:None) (BooleanField only accepts boolean values: ['is_free'] cannot parse date "NaN": ['release_date'])
+DBAppPush 2020-01-27 20:08:29,947 ERROR Error while parsing App 1144644
+Traceback (most recent call last):
+  File "C:\Users\mcnon\OneDrive\Escritorio\Proyecto Owners\Git\GameStonks\Database Managerment\SteamDB\Setters\steam_setters_db.py", line 74, in steam_app_setter
+    SteamApp.save()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\document.py", line 369, in save
+    self.validate(clean=clean)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\base\document.py", line 413, in validate
+    raise ValidationError(message, errors=errors)
+mongoengine.errors.ValidationError: ValidationError (SteamApp:None) (BooleanField only accepts boolean values: ['is_free'] cannot parse date "NaN": ['release_date'])
+DBAppPush 2020-01-27 20:08:29,952 ERROR Error while parsing App 1144641
+Traceback (most recent call last):
+  File "C:\Users\mcnon\OneDrive\Escritorio\Proyecto Owners\Git\GameStonks\Database Managerment\SteamDB\Setters\steam_setters_db.py", line 74, in steam_app_setter
+    SteamApp.save()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\document.py", line 369, in save
+    self.validate(clean=clean)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\base\document.py", line 413, in validate
+    raise ValidationError(message, errors=errors)
+mongoengine.errors.ValidationError: ValidationError (SteamApp:None) (BooleanField only accepts boolean values: ['is_free'] cannot parse date "NaN": ['release_date'])
+DBAppPush 2020-01-27 20:08:29,958 ERROR Error while parsing App 1207110
+Traceback (most recent call last):
+  File "C:\Users\mcnon\OneDrive\Escritorio\Proyecto Owners\Git\GameStonks\Database Managerment\SteamDB\Setters\steam_setters_db.py", line 74, in steam_app_setter
+    SteamApp.save()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\document.py", line 369, in save
+    self.validate(clean=clean)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\base\document.py", line 413, in validate
+    raise ValidationError(message, errors=errors)
+mongoengine.errors.ValidationError: ValidationError (SteamApp:None) (BooleanField only accepts boolean values: ['is_free'] cannot parse date "NaN": ['release_date'])
+DBAppPush 2020-01-27 20:08:30,379 ERROR Error while parsing App 1213431
+Traceback (most recent call last):
+  File "C:\Users\mcnon\OneDrive\Escritorio\Proyecto Owners\Git\GameStonks\Database Managerment\SteamDB\Setters\steam_setters_db.py", line 74, in steam_app_setter
+    SteamApp.save()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\document.py", line 369, in save
+    self.validate(clean=clean)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\base\document.py", line 413, in validate
+    raise ValidationError(message, errors=errors)
+mongoengine.errors.ValidationError: ValidationError (SteamApp:None) (BooleanField only accepts boolean values: ['is_free'] cannot parse date "NaN": ['release_date'])
+DBAppPush 2020-01-27 20:08:30,390 INFO Steam App 1207780 correctly stored
+DBAppPush 2020-01-27 20:08:30,393 ERROR Error while parsing App 1213430
+Traceback (most recent call last):
+  File "C:\Users\mcnon\OneDrive\Escritorio\Proyecto Owners\Git\GameStonks\Database Managerment\SteamDB\Setters\steam_setters_db.py", line 74, in steam_app_setter
+    SteamApp.save()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\document.py", line 369, in save
+    self.validate(clean=clean)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\base\document.py", line 413, in validate
+    raise ValidationError(message, errors=errors)
+mongoengine.errors.ValidationError: ValidationError (SteamApp:None) (BooleanField only accepts boolean values: ['is_free'] cannot parse date "NaN": ['release_date'])
+DBAppPush 2020-01-27 20:08:30,425 ERROR Error while parsing App 1205762
+Traceback (most recent call last):
+  File "C:\Users\mcnon\OneDrive\Escritorio\Proyecto Owners\Git\GameStonks\Database Managerment\SteamDB\Setters\steam_setters_db.py", line 74, in steam_app_setter
+    SteamApp.save()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\document.py", line 369, in save
+    self.validate(clean=clean)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\base\document.py", line 413, in validate
+    raise ValidationError(message, errors=errors)
+mongoengine.errors.ValidationError: ValidationError (SteamApp:None) (BooleanField only accepts boolean values: ['is_free'] cannot parse date "NaN": ['release_date'])
+DBAppPush 2020-01-27 20:08:30,460 ERROR Error while parsing App 1205761
+Traceback (most recent call last):
+  File "C:\Users\mcnon\OneDrive\Escritorio\Proyecto Owners\Git\GameStonks\Database Managerment\SteamDB\Setters\steam_setters_db.py", line 74, in steam_app_setter
+    SteamApp.save()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\document.py", line 369, in save
+    self.validate(clean=clean)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\base\document.py", line 413, in validate
+    raise ValidationError(message, errors=errors)
+mongoengine.errors.ValidationError: ValidationError (SteamApp:None) (BooleanField only accepts boolean values: ['is_free'] cannot parse date "NaN": ['release_date'])
+DBAppPush 2020-01-27 20:08:30,490 ERROR Error while parsing App 1117720
+Traceback (most recent call last):
+  File "C:\Users\mcnon\OneDrive\Escritorio\Proyecto Owners\Git\GameStonks\Database Managerment\SteamDB\Setters\steam_setters_db.py", line 74, in steam_app_setter
+    SteamApp.save()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\document.py", line 369, in save
+    self.validate(clean=clean)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\base\document.py", line 413, in validate
+    raise ValidationError(message, errors=errors)
+mongoengine.errors.ValidationError: ValidationError (SteamApp:None) (BooleanField only accepts boolean values: ['is_free'] cannot parse date "NaN": ['release_date'])
+DBAppPush 2020-01-27 20:08:31,148 ERROR Error while parsing App 1218720
+Traceback (most recent call last):
+  File "C:\Users\mcnon\OneDrive\Escritorio\Proyecto Owners\Git\GameStonks\Database Managerment\SteamDB\Setters\steam_setters_db.py", line 74, in steam_app_setter
+    SteamApp.save()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\document.py", line 369, in save
+    self.validate(clean=clean)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\base\document.py", line 413, in validate
+    raise ValidationError(message, errors=errors)
+mongoengine.errors.ValidationError: ValidationError (SteamApp:None) (BooleanField only accepts boolean values: ['is_free'] cannot parse date "NaN": ['release_date'])
+DBAppPush 2020-01-27 20:08:31,458 ERROR Error while parsing App 1198362
+Traceback (most recent call last):
+  File "C:\Users\mcnon\OneDrive\Escritorio\Proyecto Owners\Git\GameStonks\Database Managerment\SteamDB\Setters\steam_setters_db.py", line 74, in steam_app_setter
+    SteamApp.save()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\document.py", line 369, in save
+    self.validate(clean=clean)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\base\document.py", line 413, in validate
+    raise ValidationError(message, errors=errors)
+mongoengine.errors.ValidationError: ValidationError (SteamApp:None) (BooleanField only accepts boolean values: ['is_free'] cannot parse date "NaN": ['release_date'])
+DBAppPush 2020-01-27 20:08:31,463 ERROR Error while parsing App 1198363
+Traceback (most recent call last):
+  File "C:\Users\mcnon\OneDrive\Escritorio\Proyecto Owners\Git\GameStonks\Database Managerment\SteamDB\Setters\steam_setters_db.py", line 74, in steam_app_setter
+    SteamApp.save()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\document.py", line 369, in save
+    self.validate(clean=clean)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\base\document.py", line 413, in validate
+    raise ValidationError(message, errors=errors)
+mongoengine.errors.ValidationError: ValidationError (SteamApp:None) (BooleanField only accepts boolean values: ['is_free'] cannot parse date "NaN": ['release_date'])
+DBAppPush 2020-01-27 20:08:31,468 ERROR Error while parsing App 1198364
+Traceback (most recent call last):
+  File "C:\Users\mcnon\OneDrive\Escritorio\Proyecto Owners\Git\GameStonks\Database Managerment\SteamDB\Setters\steam_setters_db.py", line 74, in steam_app_setter
+    SteamApp.save()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\document.py", line 369, in save
+    self.validate(clean=clean)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\base\document.py", line 413, in validate
+    raise ValidationError(message, errors=errors)
+mongoengine.errors.ValidationError: ValidationError (SteamApp:None) (BooleanField only accepts boolean values: ['is_free'] cannot parse date "NaN": ['release_date'])
+DBAppPush 2020-01-27 20:08:31,473 ERROR Error while parsing App 1198361
+Traceback (most recent call last):
+  File "C:\Users\mcnon\OneDrive\Escritorio\Proyecto Owners\Git\GameStonks\Database Managerment\SteamDB\Setters\steam_setters_db.py", line 74, in steam_app_setter
+    SteamApp.save()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\document.py", line 369, in save
+    self.validate(clean=clean)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\base\document.py", line 413, in validate
+    raise ValidationError(message, errors=errors)
+mongoengine.errors.ValidationError: ValidationError (SteamApp:None) (BooleanField only accepts boolean values: ['is_free'] cannot parse date "NaN": ['release_date'])
+DBAppPush 2020-01-27 20:08:31,490 ERROR Error while parsing App 1198360
+Traceback (most recent call last):
+  File "C:\Users\mcnon\OneDrive\Escritorio\Proyecto Owners\Git\GameStonks\Database Managerment\SteamDB\Setters\steam_setters_db.py", line 74, in steam_app_setter
+    SteamApp.save()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\document.py", line 369, in save
+    self.validate(clean=clean)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\base\document.py", line 413, in validate
+    raise ValidationError(message, errors=errors)
+mongoengine.errors.ValidationError: ValidationError (SteamApp:None) (BooleanField only accepts boolean values: ['is_free'] cannot parse date "NaN": ['release_date'])
+DBAppPush 2020-01-27 20:08:31,593 ERROR Error while parsing App 1199530
+Traceback (most recent call last):
+  File "C:\Users\mcnon\OneDrive\Escritorio\Proyecto Owners\Git\GameStonks\Database Managerment\SteamDB\Setters\steam_setters_db.py", line 74, in steam_app_setter
+    SteamApp.save()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\document.py", line 369, in save
+    self.validate(clean=clean)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\base\document.py", line 413, in validate
+    raise ValidationError(message, errors=errors)
+mongoengine.errors.ValidationError: ValidationError (SteamApp:None) (BooleanField only accepts boolean values: ['is_free'] cannot parse date "NaN": ['release_date'])
+DBAppPush 2020-01-27 20:08:31,609 ERROR Error while parsing App 1199532
+Traceback (most recent call last):
+  File "C:\Users\mcnon\OneDrive\Escritorio\Proyecto Owners\Git\GameStonks\Database Managerment\SteamDB\Setters\steam_setters_db.py", line 74, in steam_app_setter
+    SteamApp.save()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\document.py", line 369, in save
+    self.validate(clean=clean)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\base\document.py", line 413, in validate
+    raise ValidationError(message, errors=errors)
+mongoengine.errors.ValidationError: ValidationError (SteamApp:None) (BooleanField only accepts boolean values: ['is_free'] cannot parse date "NaN": ['release_date'])
+DBAppPush 2020-01-27 20:08:31,614 ERROR Error while parsing App 1199531
+Traceback (most recent call last):
+  File "C:\Users\mcnon\OneDrive\Escritorio\Proyecto Owners\Git\GameStonks\Database Managerment\SteamDB\Setters\steam_setters_db.py", line 74, in steam_app_setter
+    SteamApp.save()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\document.py", line 369, in save
+    self.validate(clean=clean)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\base\document.py", line 413, in validate
+    raise ValidationError(message, errors=errors)
+mongoengine.errors.ValidationError: ValidationError (SteamApp:None) (BooleanField only accepts boolean values: ['is_free'] cannot parse date "NaN": ['release_date'])
+DBAppPush 2020-01-27 20:08:31,650 ERROR Error while parsing App 1223630
+Traceback (most recent call last):
+  File "C:\Users\mcnon\OneDrive\Escritorio\Proyecto Owners\Git\GameStonks\Database Managerment\SteamDB\Setters\steam_setters_db.py", line 74, in steam_app_setter
+    SteamApp.save()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\document.py", line 369, in save
+    self.validate(clean=clean)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\base\document.py", line 413, in validate
+    raise ValidationError(message, errors=errors)
+mongoengine.errors.ValidationError: ValidationError (SteamApp:None) (BooleanField only accepts boolean values: ['is_free'] cannot parse date "NaN": ['release_date'])
+DBAppPush 2020-01-27 20:08:31,788 ERROR Error while parsing App 1203980
+Traceback (most recent call last):
+  File "C:\Users\mcnon\OneDrive\Escritorio\Proyecto Owners\Git\GameStonks\Database Managerment\SteamDB\Setters\steam_setters_db.py", line 74, in steam_app_setter
+    SteamApp.save()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\document.py", line 369, in save
+    self.validate(clean=clean)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\base\document.py", line 413, in validate
+    raise ValidationError(message, errors=errors)
+mongoengine.errors.ValidationError: ValidationError (SteamApp:None) (BooleanField only accepts boolean values: ['is_free'] cannot parse date "NaN": ['release_date'])
+DBAppPush 2020-01-27 20:08:31,792 ERROR Error while parsing App 870950
+Traceback (most recent call last):
+  File "C:\Users\mcnon\OneDrive\Escritorio\Proyecto Owners\Git\GameStonks\Database Managerment\SteamDB\Setters\steam_setters_db.py", line 74, in steam_app_setter
+    SteamApp.save()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\document.py", line 369, in save
+    self.validate(clean=clean)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\base\document.py", line 413, in validate
+    raise ValidationError(message, errors=errors)
+mongoengine.errors.ValidationError: ValidationError (SteamApp:None) (BooleanField only accepts boolean values: ['is_free'] cannot parse date "NaN": ['release_date'])

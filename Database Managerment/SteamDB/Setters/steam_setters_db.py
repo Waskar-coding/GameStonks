@@ -21,8 +21,7 @@ import datetime
 import mongoengine
 
 ##Local
-OBJECT_PATH=r'C:\Users\mcnon\OneDrive\Escritorio'\
-	r'\Proyecto Owners\Database Managerment\SteamDB\Objects'
+OBJECT_PATH=r'../Objects'
 sys.path.append(OBJECT_PATH)
 import steam_app_db
 import steam_user_db

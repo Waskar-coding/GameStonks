@@ -18,8 +18,8 @@ import logging
 import datetime as dt
 
 ##Local
-CONNECTION_PATH=r'C:\Users\mcnon\OneDrive\Escritorio'\
-	r'\Proyecto Owners\Database Managerment\SteamDB'
+CONNECTION_PATH = r'../'
+OBJECT_PATH = r'../Objects'
 sys.path.append(CONNECTION_PATH)
 import steam_setters_db as setterdb
 import steam_connection_db as connectiondb
@@ -118,9 +118,9 @@ def main(
 #Execution
 if __name__=='__main__':
 	##Defining vars
-	app_json_str=r'C:\Users\mcnon\OneDrive\Escritorio\Proyecto Owners\Scrapers\ScraperGamesAPI'
+	app_json_str=r'../../../Scrapers/ScraperGamesAPI'
 	app_json_path=os.path.normpath(app_json_str)
-	docname='stream_products.json'
+	docname='steam_products.json'
 	alias='SteamDB'
 	db='SteamDB'
 
