@@ -53,8 +53,7 @@ var BanRegister = mongoose.Schema({
 var AdditionalRegister = mongoose.Schema({
     event_id: String,
     user_event_start: Date,
-    user_event_end: Date,
-    user_event_dict:
+    user_event_end: Date
 });
 
 
@@ -75,7 +74,7 @@ var user = mongoose.Schema({
     monitored: [GameplayRegister],
 
     ////Recomendations
-    recomendations: [RecomendationRegister]
+    recomendations: [RecomendationRegister],
 
     ////Prizes
     prizes: [PrizeRegister],
@@ -92,5 +91,5 @@ var user = mongoose.Schema({
     additional: [AdditionalRegister]
 
 });
-var User = mongoose.model('SteamUser',game);
+var User = mongoose.model('SteamUser',user);
 module.exports = User;
