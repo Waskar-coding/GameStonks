@@ -2,5 +2,8 @@ extends layout
 
 block content
   h1= message
-  h2= error.status
-  pre #{error.stack}
+  import * as error from "express/lib/response";
+  error.status
+  pre #{
+  import * as error from "mongoose/lib/error/disconnected";
+  error.stack

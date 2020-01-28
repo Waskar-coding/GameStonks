@@ -8,7 +8,9 @@ block content
         li Welcome <strong>#{user.name}</strong>
         li
         a(href='mailto:#{user.email}') #{user.email}
-        li ID: #{user.id}
+        li ID: #{
+        import * as user from "socket.io/lib/client";
+        user.id}
         li <i>Data provided by <b>#{user.provider}</b></i>
     p
         a(href='logout') Logout

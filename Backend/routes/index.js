@@ -1,20 +1,22 @@
 //Imports
 ////Packages
-var express = require('express');
-var bodyParser = require( 'body-parser' );
-var request = require('request');
-var mongoose = require('mongoose');
-var cors = require('cors');
+const express = require('express');
+const session = require ('express-session');
+const bodyParser = require('body-parser');
+const request = require('request');
+const mongoose = require('mongoose');
+const cors = require('cors');
+const passport = require('passport');
+const SteamStrategy = require('passport-steam').Strategy;
 
 ////Local
-var game = require('./object_db/game_db');
-var gameGet = require('./getter_db/game_get')
-
-
+const game = require('./object_db/game_db');
+const gameGet = require('./getter_db/game_get');
+const authRoutes = require('./auth/auth');
 
 //Initializing stuff
 ////Express
-var app = express();
+const app = express();
 app.use(express.static('public'));
 app.use(bodyParser.json());
 app.use(cors());
@@ -26,7 +28,6 @@ app.use(function (req, res, next) {
     next();
 });
 
-
 ////MongoDB
 mongoose.connect("mongodb://localhost:27017/SteamDB", function (err) {
     if (!err) {
@@ -34,9 +35,68 @@ mongoose.connect("mongodb://localhost:27017/SteamDB", function (err) {
     }
 });
 
+////Express Session
+app.use(session({
+    secret: 'your secret',
+    name: 'name of session id',
+    resave: true,
+    saveUninitialized: true}));
+
+// Initialize Passport!  Also use passport.session() middleware, to support
+// persistent login sessions (recommended).
+app.use(passport.initialize());
+app.use(passport.session());
+app.use(express.static(__dirname + '/../../public'));
+
+app.get('/', function(req, res){
+    res.render('index', { user: req.user });
+});
+
+app.get('/account', ensureAuthenticated, function(req, res){
+    res.render('account', { user: req.user });
+});
+
+app.get('/logout', function(req, res){
+    req.logout();
+    res.redirect('/');
+});
+
+passport.serializeUser(function(user, done) {
+    done(null, user);
+});
+
+passport.deserializeUser(function(obj, done) {
+    done(null, obj);
+});
+
+//// Steam Passport
+passport.use(new SteamStrategy({
+        returnURL: 'http://localhost/auth/steam/return',
+        realm: 'http://localhost/',
+        apiKey: '24E7A4CB6C2041D4C08EC325A5F4FFC3'
+    },
+    function(identifier, profile, done) {
+        // asynchronous verification, for effect...
+        process.nextTick(function () {
+
+            // To keep the example simple, the user's Steam profile is returned to
+            // represent the logged-in user.  In a typical application, you would want
+            // to associate the Steam account with a user record in your database,
+            // and return that user instead.
+            console.log(profile);
+            profile.identifier = identifier;
+        });
+    }
+));
+
+function ensureAuthenticated(req, res, next) {
+    if (req.isAuthenticated()) { return next(); }
+    res.redirect('/');
+}
 
 ////Game API
 app.use("/games",gameGet);
+app.use('/auth', authRoutes);
 app.listen(80, function () {
     console.log('App listening on port 80!!')
 });
