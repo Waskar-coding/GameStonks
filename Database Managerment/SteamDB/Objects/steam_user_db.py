@@ -317,19 +317,16 @@ class SteamUser(mongoengine.Document):
 	 |		Information on the object's position within the database.    
 	"""
 	
-	##Userid
-	userid=mongoengine.StringField(required=True)
-	
-	##Games information
-	app_list=mongoengine.ListField(required=True)
+	##Public information
+	userid = mongoengine.StringField(required=True)
+	name = mongoengine.StringField(required=True)
+	thumbnail=mongoengine.StringField(required=True)
+	joined=mongoengine.DateTimeField(default=datetime.datetime.now())
+	last_visibility=mongoengine.StringField(default='public')
 	
 	##Score information
 	score=mongoengine.FloatField(default=0)
 	probabilty=mongoengine.FloatField(default=0)
-
-	##Subcription information
-	joined=mongoengine.DateTimeField(default=datetime.datetime.now())
-	last_visibility=mongoengine.StringField(default='public')
 
 	##Monitorews registers
 	monitored=mongoengine.EmbeddedDocumentListField(GameplayRegister)
@@ -363,7 +360,7 @@ class SteamUser(mongoengine.Document):
 	##Class metadata
 	meta={
 			'db_alias': 'SteamDB',
-			'collection':'SteamUsers',
+			'collection':'steamusers',
 			'indexes':[
 				'userid'
 			]
