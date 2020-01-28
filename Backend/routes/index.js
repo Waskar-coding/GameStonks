@@ -83,8 +83,31 @@ passport.use(new SteamStrategy({
             // represent the logged-in user.  In a typical application, you would want
             // to associate the Steam account with a user record in your database,
             // and return that user instead.
-            console.log(profile);
             profile.identifier = identifier;
+            const timeCreated = profile._json.timecreated;
+            if (timeCreated !== undefined) {
+                const currentTime = Math.round((new Date()).getTime() / 1000);
+                const difference = currentTime - timeCreated;
+                 if( difference < 31556952)
+                 {
+                     console.log("This account is too recent")
+                 }
+                else {
+                    request('https://dog.steamcalculator.com/v1/id/'+ profile._json.steamid +'/apps', { json: true }, (err, res) => {
+                        if (err) { return console.log(err); }
+                        const accountValue = res.body.total_value.amount/100;
+                        if (accountValue >= 20){
+                            console.log("This account is valid")
+                     }
+                        else {
+                            console.log("This account is not valuable enough")
+                        }
+                    });
+                }
+            }
+            else (
+                console.log("This account is private")
+            );
         });
     }
 ));
