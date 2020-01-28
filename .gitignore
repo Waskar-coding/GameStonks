@@ -1,2 +1,4 @@
 
 .idea
+Backend/node_modules
+Backend/package-lock.json
