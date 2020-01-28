@@ -84,6 +84,7 @@ def getStandbyCSV() -> list:
 	"""
 	
 	##Retrieving appid list from standby.csv
+	os.chdir(STANDBY_PATH)
 	with open('standby.csv','r',newline='') as standby_doc:
 		reader = csv.reader(standby_doc,delimiter=';')
 		standby_list = [row[0] for row in reader]
@@ -101,6 +102,7 @@ def getStandbyDB() -> list:
 
 	#Retriving games with priority set to true from SteamDB
 	game_list = gamedb.SteamGame.objects(priority=True).all()
+	game_list = [game.appid for game in game_list]
 
 	return game_list
 
@@ -289,6 +291,8 @@ def assignOld(appid: str) -> None:
 
 #Main
 def main():
+	connectdb.register_connection('SteamDB','SteamDB')
+
 	standby_list = getStandbyCSV()
 	db_list = getStandbyDB()
 
@@ -298,8 +302,8 @@ def main():
 
 	[assignNewIn(appid) for appid in new_in]
 	[assignNewOut(appid) for appid in new_out]
-	[assignStagnant(appid) for appid in stagnant_list]
 	[assignOld(appid) for appid in old_list]
+	[assignStagnant(appid) for appid in stagnant_list]
 
 
 
