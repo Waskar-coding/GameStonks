@@ -51,7 +51,6 @@ class GameplayRegister(mongoengine.EmbeddedDocument):
 
 	###Register information
 	register_date=mongoengine.DateTimeField(default=datetime.datetime.now())
-	register_gameplay=mongoengine.FloatField(default=0)
 
 
 
@@ -76,8 +75,8 @@ class RecomendationRegister(mongoengine.EmbeddedDocument):
 	"""
 	
 	##Recomendation data
-	rec_date=mongoengine.DateTimeField(required=True)
-	rec_userid=mongoengine.StringField(required=True)
+	rec_date = mongoengine.DateTimeField(required=True)
+	rec_userid = mongoengine.StringField(required=True)
 
 
 
@@ -330,13 +329,9 @@ class SteamUser(mongoengine.Document):
 
 	##Monitorews registers
 	monitored=mongoengine.EmbeddedDocumentListField(GameplayRegister)
-	current_monitored=mongoengine.IntField(default=0)
-	total_monitored=mongoengine.IntField(default=0)
 
 	##Recomendations registers
 	recomendations=mongoengine.EmbeddedDocumentListField(RecomendationRegister)
-	current_recomendations=mongoengine.FloatField(default=0)
-	total_recomendations=mongoengine.FloatField(default=0)
 
 	##Prizes registers
 	prizes=mongoengine.EmbeddedDocumentListField(PrizeRegister)
