@@ -11,8 +11,12 @@ const SteamStrategy = require('passport-steam').Strategy;
 
 ////Local
 const game = require('./object_db/game_db');
+const user = require('./object_db/user_db');
 const gameGet = require('./getter_db/game_get');
+const userGet = require('./getter_db/user_get');
 const authRoutes = require('./auth/auth');
+
+
 
 //Initializing stuff
 ////Express
@@ -119,6 +123,7 @@ function ensureAuthenticated(req, res, next) {
 
 ////Game API
 app.use("/games",gameGet);
+app.use("/users",userGet);
 app.use('/auth', authRoutes);
 app.listen(80, function () {
     console.log('App listening on port 80!!')

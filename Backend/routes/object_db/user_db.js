@@ -4,6 +4,17 @@ var Schema = mongoose.Schema;
 
 
 
+//Jackpot register schema
+var JackpotRegister = mongoose.Schema({
+    jackpot_id: String,
+    date: Date,
+    score: String,
+    probability: String,
+    multipliers: Array
+});
+
+
+
 //Gameplay register schema
 var GameplayRegister = mongoose.Schema({
     appid: String,
@@ -53,7 +64,8 @@ var BanRegister = mongoose.Schema({
 var AdditionalRegister = mongoose.Schema({
     event_id: String,
     user_event_start: Date,
-    user_event_end: Date
+    user_event_end: Date,
+    user_multiplier: Boolean
 });
 
 
@@ -64,11 +76,9 @@ var user = mongoose.Schema({
     name : String,
     joined : Date,
     thumbnail: String,
-    last_visibility: String,
 
-    ////Score
-    score: String,
-    probability: String,
+    ////Jackpots
+    jackpots: [JackpotRegister],
 
     ////Monitored games
     monitored: [GameplayRegister],
@@ -81,6 +91,7 @@ var user = mongoose.Schema({
 
     ////Strikes
     strikes: [StrikeRegister],
+    current_strikes: String,
 
     ////Bans
     bans: [BanRegister],

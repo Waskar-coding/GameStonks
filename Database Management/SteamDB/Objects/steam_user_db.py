@@ -207,6 +207,9 @@ class AdditionalRegister(mongoengine.EmbeddedDocument):
 	 |	user_event_end (datetime.datetime):
 	 |		Day in which the user ended his/her partipication in the event.
 	 |
+	 |	user_multiplier (bool):
+	 |		Indicates if the user has used the multiplier awarded in this event.
+	 |
 	 |
 	 |	Optional Arguments
 	 |	------------------
@@ -218,7 +221,52 @@ class AdditionalRegister(mongoengine.EmbeddedDocument):
 	event_id=mongoengine.StringField(required=True)
 	user_event_start=mongoengine.DateTimeField(required=True)
 	user_event_end=mongoengine.DateTimeField(required=True)
+	user_multiplier=mongoengine.BooleanField(default=False)
 	user_event_dict=mongoengine.DictField()
+
+
+
+
+#Jackpot register
+class JackpotRegister(mongoengine.EmbeddedDocument):
+	##Documentation
+	"""
+	class JackpotRegister(mongoengine.EmbeddedDocument):
+	 |	Inherits from mongoengine.EmbeddedDocument, collects information
+	 |	about an user's participation in a jackpot. Includes the
+	 |	id of the jackpot, the day the user started his/her participation
+	 |	and a dictionary with additional data if necessary.
+	 |
+	 |
+	 |	Required Arguments
+	 |	------------------
+	 |	jackpot_id (str):
+	 |		Jackpot identifier.
+	 |
+	 |	date (datetime.datetime):
+	 |		Day in which the user started his/her participation in the jackpot.
+	 | 
+	 |	score (float):
+	 |		How much is the user's information worth.
+	 |
+	 |	probability (float):
+	 |		Indicates the probability of recieving a prize.
+	 |
+	 |
+	 |	Optional Arguments
+	 |	------------------
+	 |	multipliers (list):
+	 |		Indicates the event_id of the multipliers the user has commited to
+	 |		this jackpot.
+	"""
+
+	##Jackpot data
+	jackpot_id=mongoengine.StringField(required=True)
+	date=mongoengine.DateTimeField(requied=True)
+	score=mongoengine.FloatField(default=0)
+	probabilty=mongoengine.FloatField(default=0)
+	multipliers=mongoengine.ListField(default=[])
+
 
 
 
@@ -238,66 +286,35 @@ class SteamUser(mongoengine.Document):
 	 |	userid (int):
 	 |		Steam community id number of the user.
 	 |
-	 |	game_list (list):
+	 |	name (list):
 	 |		List of games owned by the user.
 	 |
-	 |	dlc_list (list):
-	 |		List of dlc's owned by the user.
-	 |
-	 |	score (float):
-	 |		Player's current score (expected value in $)
-	 |
-	 |	probabilty (float):
-	 |		Player's current probability of winning a prize.
+	 |	thumbnail (str):
+	 |		User's avatar.
 	 |
 	 |	joined (datetime.datetime):
 	 |		The day in which the user's made his/her first gameplay
 	 |		register.
 	 |
-	 |	last_visibility (str):
-	 |		Steam user visibility last time it was checked, if the profile
-	 |		is not public strikes might be issued.
+	 |	jackpots (JackpotRegister):
+	 |		Jackpots entered by the user.
 	 |
 	 |	monitored (GamePlayRegister):
 	 |		Collection of gameplay time series of all active
 	 |		games that the user has.
 	 |
-	 |	current_monitored (int):
-	 |		Number of games being monitored at the time.
-	 |
-	 |	total_monitored (int):
-	 |		Total number of games monitored since the user registered.
-	 |
 	 |	recomendations (RecomendationRegister):
 	 |		Information about friends that came into the platform due to the
 	 |		user's recommendation.
 	 |
-	 |	current_recomendations (int):
-	 |		Total yearly recomendations.
-	 |
-	 |	total_recomendations (int):
-	 |		Recomendations since registration.
-	 |
 	 |	prizes (PrizeRegister):
 	 |		Information about all prizes awarded to the user.
-	 |
-	 |	current_prizes (int):
-	 |		Yearly prizes awarded.
-	 |
-	 |	total_prizes (int):
-	 |		Prizes awarded since registration.
-	 |
-	 |	total_cash (float):
-	 |		Total user revenue since registration.
 	 |
 	 |	strikes (StrikeRegister):
 	 |		Information about all strikes that where issued to the user.
 	 |
 	 |	current_strikes (int):
 	 |		Number of strikes since last ban.
-	 |
-	 |	total_strikes (int):
-	 |		Total strikes issued since registration.
 	 |
 	 |	bans (BanRegister):
 	 |		Information on all the bans applied to the user.
@@ -321,11 +338,9 @@ class SteamUser(mongoengine.Document):
 	name = mongoengine.StringField(required=True)
 	thumbnail=mongoengine.StringField(required=True)
 	joined=mongoengine.DateTimeField(default=datetime.datetime.now())
-	last_visibility=mongoengine.StringField(default='public')
 	
 	##Score information
-	score=mongoengine.FloatField(default=0)
-	probabilty=mongoengine.FloatField(default=0)
+	jackpots = mongoengine.EmbeddedDocumentListField(JackpotRegister)
 
 	##Monitorews registers
 	monitored=mongoengine.EmbeddedDocumentListField(GameplayRegister)
@@ -341,8 +356,7 @@ class SteamUser(mongoengine.Document):
 
 	##Strikes registers
 	strikes=mongoengine.EmbeddedDocumentListField(StrikeRegister)
-	current_strikes=mongoengine.IntField(default=0)
-	total_strikes=mongoengine.IntField(default=0)
+	current_strikes=mongoengine.FloatField(default=0)
 
 	##Bans registers
 	bans=mongoengine.EmbeddedDocumentListField(BanRegister)

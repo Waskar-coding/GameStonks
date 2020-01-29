@@ -4,7 +4,10 @@ const express = require('express');
 const router = express.Router();
 const request = require('request');
 const path = require('path');
+
+////Local
 const Game = require('../object_db/game_db.js');
+
 
 
 //Getting game data
@@ -25,6 +28,10 @@ router.get('/GetGameData/:appid',function(req, res){
         }
     })
 });
+
+
+
+//Getting priority games data
 router.get('/GetPrioritary',function(req, res){
     const prioritary = [];
     Game.find({priority:true},function (err,games) {
