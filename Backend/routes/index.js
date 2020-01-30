@@ -88,6 +88,8 @@ passport.use(new SteamStrategy({
             // and return that user instead.
             profile.identifier = identifier;
             const userID = profile._json.steamid;
+            const today = new Date(0);
+            const now = Date.now();
             User.findOne({ 'userid'  : userID }, function(err, user) {
                 if (user === null)
                 {
@@ -97,7 +99,25 @@ passport.use(new SteamStrategy({
                         const difference = currentTime - timeCreated;
                         if( difference < 31556952)
                         {
-                            console.log("This account is too recent")
+                            console.log("This account is too recent");
+                            const ageStrike = ({
+                                strike_date: today.setUTCSeconds(now),
+                                strike_total: 1,
+                                strike_reason: "Invalid login petition (the account is too recent)"
+                            });
+                            const newUser = new User ({
+                                userid : userID,
+                                name : profile._json.personaname,
+                                joined : today.setUTCSeconds(timeCreated),
+                                thumbnail: profile._json.avatarfull,
+                                current_strikes: 1,
+                                banned: false,
+                                permanent_ban: false,
+                            });
+                            newUser.strikes.push(ageStrike);
+                            newUser.save().then(function () {
+                                console.log("User successfully registered with a strike")
+                            });
                         }
                         else {
                             request('https://dog.steamcalculator.com/v1/id/'+ userID +'/apps', { json: true }, (err, res) => {
@@ -105,11 +125,10 @@ passport.use(new SteamStrategy({
                                 const accountValue = res.body.total_value.amount/100;
                                 if (accountValue >= 20){
                                     console.log("This account is valid");
-                                    const joined = new Date(0);
                                     const newUser = new User ({
                                         userid : userID,
                                         name : profile._json.personaname,
-                                        joined : joined.setUTCSeconds(timeCreated),
+                                        joined : today.setUTCSeconds(timeCreated),
                                         thumbnail: profile._json.avatarfull,
                                         current_strikes: 0,
                                         banned: false,
@@ -121,16 +140,32 @@ passport.use(new SteamStrategy({
                                     });
                                 }
                                 else {
-                                    console.log("This account is not valuable enough")
+                                    console.log("This account is not valuable enough");
+                                    const valueStrike = ({
+                                        strike_date: today.setUTCSeconds(now),
+                                        strike_total: 1,
+                                        strike_reason: "Invalid login petition (the account is not valuable enough)"
+                                    });
+                                    const newUser = new User ({
+                                        userid : userID,
+                                        name : profile._json.personaname,
+                                        joined : today.setUTCSeconds(timeCreated),
+                                        thumbnail: profile._json.avatarfull,
+                                        current_strikes: 1,
+                                        banned: false,
+                                        permanent_ban: false,
+                                    });
+                                    newUser.strikes.push(valueStrike);
+                                    newUser.save().then(function () {
+                                        console.log("User successfully registered with a strike")
+                                    });
                                 }
                             });
                         }
                     }
                     else {
                         console.log("This account is private");
-                        const today = new Date(0);
-                        const now = Date.now();
-                        const privateBan = new BanRegister({
+                        const privateBan = ({
                             ban_start: today.setUTCSeconds(now),
                             ban_type: "TOS Break",
                             ban_reason: "Your profile is private",
@@ -144,7 +179,7 @@ passport.use(new SteamStrategy({
                             banned: true,
                             permanent_ban: false,
                         });
-                        newUser.BanRegister.push(privateBan);
+                        newUser.bans.push(privateBan);
                         newUser.save().then(function () {
                             console.log("User successfully registered and banned")
                         });
