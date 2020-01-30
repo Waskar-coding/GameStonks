@@ -15,6 +15,7 @@ const gameGet = require('./getter_db/game_get');
 const userGet = require('./getter_db/user_get');
 const steamAuth = require('./steam_auth/auth');
 const config = require('./local_auth/config');
+const User = require('./object_db/user_db');
 
 //Initializing stuff
 ////Express
@@ -88,7 +89,7 @@ passport.use(new SteamStrategy({
             profile.identifier = identifier;
             const userID = profile._json.steamid;
             User.findOne({ 'userid'  : userID }, function(err, user) {
-                if (user === undefined)
+                if (user === null)
                 {
                     const timeCreated = profile._json.timecreated;
                     if (timeCreated !== undefined) {
