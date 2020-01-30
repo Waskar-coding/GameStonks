@@ -176,6 +176,7 @@ passport.use(new SteamStrategy({
                             userid : userID,
                             name : profile._json.personaname,
                             thumbnail: profile._json.avatarfull,
+                            current_strikes: 0,
                             banned: true,
                             permanent_ban: false,
                         });
