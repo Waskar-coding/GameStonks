@@ -88,30 +88,74 @@ passport.use(new SteamStrategy({
             // to associate the Steam account with a user record in your database,
             // and return that user instead.
             profile.identifier = identifier;
-            const timeCreated = profile._json.timecreated;
-            if (timeCreated !== undefined) {
-                const currentTime = Math.round((new Date()).getTime() / 1000);
-                const difference = currentTime - timeCreated;
-                 if( difference < 31556952)
-                 {
-                     console.log("This account is too recent")
-                 }
-                else {
-                    request('https://dog.steamcalculator.com/v1/id/'+ profile._json.steamid +'/apps', { json: true }, (err, res) => {
-                        if (err) { return console.log(err); }
-                        const accountValue = res.body.total_value.amount/100;
-                        if (accountValue >= 20){
-                            console.log("This account is valid")
-                     }
-                        else {
-                            console.log("This account is not valuable enough")
+            const userID = profile._json.steamid;
+            User.findOne({ 'userid'  : userID }, function(err, user) {
+                if (user === undefined)
+                {
+                    const timeCreated = profile._json.timecreated;
+                    if (timeCreated !== undefined) {
+                        const currentTime = Math.round((new Date()).getTime() / 1000);
+                        const difference = currentTime - timeCreated;
+                        if( difference < 31556952)
+                        {
+                            console.log("This account is too recent")
                         }
-                    });
+                        else {
+                            request('https://dog.steamcalculator.com/v1/id/'+ userID +'/apps', { json: true }, (err, res) => {
+                                if (err) { return console.log(err); }
+                                const accountValue = res.body.total_value.amount/100;
+                                if (accountValue >= 20){
+                                    console.log("This account is valid");
+                                    const joined = new Date(0);
+                                    const newUser = new User ({
+                                        userid : userID,
+                                        name : profile._json.personaname,
+                                        joined : joined.setUTCSeconds(timeCreated),
+                                        thumbnail: profile._json.avatarfull,
+                                        current_strikes: 0,
+                                        banned: false,
+                                        permanent_ban: false,
+                                    });
+                                    newUser.save().then(function () {
+                                        console.log("User successfully registered")
+                                    });
+                                }
+                                else {
+                                    console.log("This account is not valuable enough")
+                                }
+                            });
+                        }
+                    }
+                    else {
+                        console.log("This account is private");
+                        const today = new Date(0);
+                        const now = Date.now();
+                        const privateBan = new BanRegister({
+                            ban_start: today.setUTCSeconds(now),
+                            ban_type: "TOS Break",
+                            ban_reason: "Your profile is private",
+                            ban_end: today.setUTCSeconds(now + 604800),
+                            ban_condition: "Private profile"
+                        });
+                        const newUser = new User ({
+                            userid : userID,
+                            name : profile._json.personaname,
+                            thumbnail: profile._json.avatarfull,
+                            banned: true,
+                            permanent_ban: false,
+                        });
+                        newUser.BanRegister.push(privateBan);
+                        newUser.save().then(function () {
+                            console.log("User successfully registered and banned")
+                        });
+                    }
                 }
-            }
-            else (
-                console.log("This account is private")
-            );
+                else {
+                    console.log(user);
+                }
+
+            });
+
         });
     }
 ));
