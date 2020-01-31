@@ -12,11 +12,11 @@ const User = require('../object_db/user_db.js');
 
 //Getting getting user account data
 router.get('/GetUserPrivate/:userid',function(req, res){
-    User.findOne({userid: req.params.userid},function (err,user) {
+    User.findOne({steamid: req.params.steamid},function (err, user) {
         if(!err){
             const userJSON = {
                 steamuser: {
-                    userid: user.userid,
+                    steamid: user.steamid,
                     name: user.name,
                     joined: user.joined.toISOString().substring(0, 10),
                     thumbnail: user.thumbnail.split("'")[1],
@@ -42,11 +42,11 @@ router.get('/GetUserPrivate/:userid',function(req, res){
 
 //Getting other users data
 router.get('/GetUserPublic/:userid',function(req, res){
-    User.findOne({userid: req.params.userid},function (err,user) {
+    User.findOne({steamid: req.params.steamid},function (err, user) {
         if(!err){
             const userJSON = {
                 steamuser: {
-                    userid: user.userid,
+                    steamid: user.steamid,
                     name: user.name,
                     joined: user.joined.toISOString().substring(0, 10),
                     thumbnail: user.thumbnail.split("'")[1],

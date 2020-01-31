@@ -369,7 +369,7 @@ class ManualSession:
 			self.menu_game(appid)
 
 
-	def print_user(self,userid):
+	def print_user(self,steamid):
 		print(
 			"""
 			############################
@@ -381,29 +381,29 @@ class ManualSession:
 				[2] Back
 
 			############################
-			""".format(userid)
+			""".format(steamid)
 			)
 
 
 	def print_json_user(self,logger):
-		print('User {} json document'.format(self.item.userid))
+		print('User {} json document'.format(self.item.steamid))
 		print(self.item.to_json())
-		self.menu_user(self.item.userid)
+		self.menu_user(self.item.steamid)
 
 
 	def select_user(self):
-		userid=input('Select userid: ')
-		steamuser=getterdb.steam_user_getter(userid,logger)
+		steamid=input('Select steamid: ')
+		steamuser=getterdb.steam_user_getter(steamid,logger)
 		if steamuser!=None:
 			self.item=steamuser
-			self.menu_user(userid)
+			self.menu_user(steamid)
 		else:
-			print('User {} not found'.format(userid))
+			print('User {} not found'.format(steamid))
 			self.menu_main()
 
 
-	def menu_user(self,userid):
-		self.print_user(userid)
+	def menu_user(self,steamid):
+		self.print_user(steamid)
 		option=int(input('Select an option: '))
 		option_list=(
 			self.print_json_user,
@@ -423,7 +423,7 @@ class ManualSession:
 				)
 			print(e)
 			print('\n')
-			self.menu_user(userid)
+			self.menu_user(steamid)
 
 		
 	def print_app(self,appid):

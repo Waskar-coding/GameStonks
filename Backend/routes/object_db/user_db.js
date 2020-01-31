@@ -1,11 +1,8 @@
 //Importing packages
-var mongoose = require('mongoose');
-var Schema = mongoose.Schema;
-
-
+const mongoose = require('mongoose');
 
 //Jackpot register schema
-var JackpotRegister = mongoose.Schema({
+const JackpotRegister = mongoose.Schema({
     jackpot_id: String,
     date: Date,
     score: String,
@@ -13,10 +10,8 @@ var JackpotRegister = mongoose.Schema({
     multipliers: Array
 });
 
-
-
 //Gameplay register schema
-var GameplayRegister = mongoose.Schema({
+const GameplayRegister = mongoose.Schema({
     appid: String,
     total_gameplay: Array,
     win_gameplay: Array,
@@ -25,33 +20,29 @@ var GameplayRegister = mongoose.Schema({
     register_date: Date
 });
 
-
 //Recomendation register schema
-var RecomendationRegister = mongoose.Schema({
+const RecomendationRegister = mongoose.Schema({
     rec_date: Date,
     rec_userid: String
 });
 
-
 //Prize register schema
-var PrizeRegister = mongoose.Schema({
+const PrizeRegister = mongoose.Schema({
     prize_id: String,
     prize_date: Date,
     prize_cash: String,
     prize_category: String
 });
 
-
 //Strike register schema
-var StrikeRegister = mongoose.Schema({
-   strike_date: Date,
-   strike_total: String,
-   strike_reason: String
+const StrikeRegister = mongoose.Schema({
+    strike_date: Date,
+    strike_total: String,
+    strike_reason: String
 });
 
-
 //Ban register schema
-var BanRegister = mongoose.Schema({
+const BanRegister = mongoose.Schema({
     ban_start: Date,
     ban_type: String,
     ban_reason: String,
@@ -59,22 +50,20 @@ var BanRegister = mongoose.Schema({
     ban_condition: String
 });
 
-
 //Additional register schema
-var AdditionalRegister = mongoose.Schema({
+const AdditionalRegister = mongoose.Schema({
     event_id: String,
     user_event_start: Date,
     user_event_end: Date,
     user_multiplier: Boolean
 });
 
-
 //Basic user schema
-var user = mongoose.Schema({
+const user = mongoose.Schema({
     ////Basic data
-    userid : String,
-    name : String,
-    joined : Date,
+    steamid: String,
+    name: String,
+    joined: Date,
     thumbnail: String,
 
     ////Jackpots
@@ -97,10 +86,11 @@ var user = mongoose.Schema({
     bans: [BanRegister],
     banned: Boolean,
     permanent_ban: Boolean,
+    blacklisted: Boolean,
 
     ////Additional
     additional: [AdditionalRegister]
 
 });
-var User = mongoose.model('SteamUser',user);
+const User = mongoose.model('SteamUser', user);
 module.exports = User;

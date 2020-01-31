@@ -68,12 +68,12 @@ class TestGetters(unittest.TestCase):
 		GMax=0
 		GMin=10000
 
-		for userid in UseridList:
+		for steamid in UseridList:
 			choice=rd.randint(0,1)
 			game_list=game_choice[choice]
-			UserChoice[userid]=choice
+			UserChoice[steamid]=choice
 			setterdb.steam_user_setter(
-										userid,
+										steamid,
 										game_count,
 										game_list,
 										friend_number,
@@ -82,15 +82,15 @@ class TestGetters(unittest.TestCase):
 
 			if not choice:
 				Gameplay=0
-				UserGameplay[userid]=[]
+				UserGameplay[steamid]=[]
 				for i in range(3):
 					Gameplay+=rd.randint(0,100)
 					if Gameplay<GMin:
 						GMin=Gameplay
 					Today=datetime.date.today()+datetime.timedelta(days=i)
-					UserGameplay[userid].append((Today,Gameplay))
+					UserGameplay[steamid].append((Today,Gameplay))
 					setterdb.steam_user_addgameplay(
-													userid,
+													steamid,
 													'69lmao',
 													Gameplay,
 													Gameplay,

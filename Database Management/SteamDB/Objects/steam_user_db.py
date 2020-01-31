@@ -70,7 +70,7 @@ class RecomendationRegister(mongoengine.EmbeddedDocument):
 	 |		gameplay register.
 	 |
 	 |	rec_userid (str):
-	 |		Steam userid of the user's friend.
+	 |		Steam steamid of the user's friend.
 
 	"""
 	
@@ -283,7 +283,7 @@ class SteamUser(mongoengine.Document):
 	 |
 	 |	Attributes
 	 |	----------
-	 |	userid (int):
+	 |	steamid (int):
 	 |		Steam community id number of the user.
 	 |
 	 |	name (list):
@@ -334,7 +334,7 @@ class SteamUser(mongoengine.Document):
 	"""
 	
 	##Public information
-	userid = mongoengine.StringField(required=True)
+	steamid = mongoengine.StringField(required=True)
 	name = mongoengine.StringField(required=True)
 	thumbnail=mongoengine.StringField(required=True)
 	joined=mongoengine.DateTimeField(default=datetime.datetime.now())
@@ -371,6 +371,6 @@ class SteamUser(mongoengine.Document):
 			'db_alias': 'SteamDB',
 			'collection':'steamusers',
 			'indexes':[
-				'userid'
+				'steamid'
 			]
 	}

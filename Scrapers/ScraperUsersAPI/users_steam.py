@@ -45,7 +45,7 @@ logger.addHandler(file_handler)
 
 
 #Getting player resume
-def getResume(userid: str) -> dict:
+def getResume(steamid: str) -> dict:
 	##Documentation
 	"""
 	"""
@@ -56,7 +56,7 @@ def getResume(userid: str) -> dict:
 	FUNCTION = '/GetPlayerSummaries'
 	VERSION = '/v0002'
 	KEY = '/?key=' + os.environ.get('STEAM_PERSONAL_APIKEY')
-	args = ['steamids=' + userid]
+	args = ['steamids=' + steamid]
 
 	##Building url
 	url = BASE_API + ENVIROMENT + FUNCTION + VERSION + KEY
@@ -77,7 +77,7 @@ def getResume(userid: str) -> dict:
 	if response.status_code == 200:
 		return response.json()
 	else:
-		logger.error('Request failed for user {}'.format(userid))
+		logger.error('Request failed for user {}'.format(steamid))
 		return None
 
 print(getResume('76561198032250208'))

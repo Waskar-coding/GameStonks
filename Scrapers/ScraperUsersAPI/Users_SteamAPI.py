@@ -65,7 +65,7 @@ def retrieve_monitored():
 	with open('monitored_users.json','r') as monitored_json:
 		monitored_dict=json.load(monitored_json)
 		monitored_list=list(monitored_dict['profiles'].keys())
-		monitored_dict={userid:monitored_dict['profiles'][userid]['game_list'] for userid in monitored_list}
+		monitored_dict={steamid:monitored_dict['profiles'][steamid]['game_list'] for steamid in monitored_list}
 	return monitored_dict
 
 
@@ -91,12 +91,12 @@ def retrieve_new():
 	os.chdir(USER_API_PATH)
 	with open('monitored_users.json','r') as monitored_json:
 		monitored_dict=json.load(monitored_json)['profiles']
-	for userid in monitored_dict.keys():
+	for steamid in monitored_dict.keys():
 		try:
-			monitored_href=monitored_dict[userid]['href']
+			monitored_href=monitored_dict[steamid]['href']
 		except KeyError:
 			monitoref_href='NaN'
-			monitored_dict[userid]['href']='NaN'
+			monitored_dict[steamid]['href']='NaN'
 		if monitored_href in new_dict.keys():
 			del new_dict[monitored_href]
 
@@ -146,16 +146,16 @@ def resolve_url(new_dict):
 		
 ##Scoring profiles and sorting
 def score_profiles(profile_dict,gamedata_dict):
-	for userid in profile_dict.keys():
+	for steamid in profile_dict.keys():
 		user_score=0
-		user_games=profile_dict[userid]
+		user_games=profile_dict[steamid]
 		for appid in gamedata_dict.keys():
 			if user_games==[]:
 				break
 			elif appid in user_games:
 				user_score+=gamedata_dict[appid]
 				user_games.remove(appid)
-		new_dict[userid]=user_score
+		new_dict[steamid]=user_score
 	profile_list=sorted(profile_dict.items(),key=lambda kv: kv[1])
 	profile_list=[value[0] for value in profile_list]
 	return profile_list
@@ -206,23 +206,23 @@ def filter_checked(monitored_list):
 	with open('monitored_users.json','r') as monitored_json:
 		monitored_dict=json.load(monitored_json)
 		copy_monitored_list=monitored_list[:]
-		for userid in monitored_list:
+		for steamid in monitored_list:
 			try:
-				checked_flag=monitored_dict['profiles'][userid]['friends_checked']
+				checked_flag=monitored_dict['profiles'][steamid]['friends_checked']
 			except KeyError:
 				checked_flag=False
 			if checked_flag:
-				copy_monitored_list.remove(userid)
+				copy_monitored_list.remove(steamid)
 	monitored_list=copy_monitored_list
 	return monitored_list
 
 
 ##Friends requestfunc
-def request_friends(userid,**kwargs):
+def request_friends(steamid,**kwargs):
 	#proxies=kwargs['proxies']
 	#headers=kwargs['real_headers']
 	timeout=kwargs['timeout']
-	url='http://api.steampowered.com/ISteamUser/GetFriendList/v0001/?key=24E7A4CB6C2041D4C08EC325A5F4FFC3&steamid='+userid+'&relationship=all'
+	url='http://api.steampowered.com/ISteamUser/GetFriendList/v0001/?key=24E7A4CB6C2041D4C08EC325A5F4FFC3&steamid='+steamid+'&relationship=all'
 	response=requests.get(url,timeout=timeout)
 	app_json=response.json()
 	return app_json
@@ -252,8 +252,8 @@ def friends_main(profile_list,residual_queries):
 		FriendsManager.multithread_request()
 		residual_queries-=len(chunk)
 
-		for userid in FriendsManager.passed_cache.keys():
-			data_dict={userid:FriendsManager.passed_cache[userid]}
+		for steamid in FriendsManager.passed_cache.keys():
+			data_dict={steamid:FriendsManager.passed_cache[steamid]}
 			friend_list.extend(GetFriends.main(data_dict))
 
 		if len(friend_list)>=residual_queries:
@@ -267,11 +267,11 @@ def friends_main(profile_list,residual_queries):
 
 #Owned games
 ##Owned requestfunc
-def owned_request(userid,**kwargs):
+def owned_request(steamid,**kwargs):
 	#proxies=kwargs['proxies']
 	#headers=kwargs['real_headers']
 	timeout=kwargs['timeout']
-	url='http://api.steampowered.com/IPlayerService/GetOwnedGames/v0001/?key=24E7A4CB6C2041D4C08EC325A5F4FFC3&steamid='+userid+'&include_played_free_games=true&format=json'
+	url='http://api.steampowered.com/IPlayerService/GetOwnedGames/v0001/?key=24E7A4CB6C2041D4C08EC325A5F4FFC3&steamid='+steamid+'&include_played_free_games=true&format=json'
 	response=requests.get(url,timeout=timeout)
 	app_json=response.json()
 	return app_json
@@ -324,9 +324,9 @@ def owned_main(profile_list,url_dict,gamedata_dict):
 			games_dict['games'][appid]=0
 	with open('monitored_users.json','r') as monitored_json:
 		monitored_dict=json.load(monitored_json)['profiles']
-		for userid in monitored_dict.keys():
+		for steamid in monitored_dict.keys():
 			for appid in games_dict['games'].keys():
-				if appid in monitored_dict[userid].keys():
+				if appid in monitored_dict[steamid].keys():
 					games_dict['games'][appid]+=1
 	with open('monitored_games.json','w') as monitored_json:
 		json.dump(games_dict,monitored_json,indent=2)

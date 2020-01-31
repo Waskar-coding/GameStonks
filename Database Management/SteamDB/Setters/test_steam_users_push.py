@@ -77,7 +77,7 @@ class TestUserPush(unittest.TestCase):
 		##Creating users in db
 		###1st User (1 standby game 1 non stanby game, in json)
 		user_1=userdb.SteamUser()
-		user_1.userid='01'
+		user_1.steamid='01'
 		user_1.game_count=3
 		user_1.game_list=[
 			'69lmao',
@@ -101,7 +101,7 @@ class TestUserPush(unittest.TestCase):
 
 		###2nd User (2 standby games, in json)
 		user_2=userdb.SteamUser()
-		user_2.userid='02'
+		user_2.steamid='02'
 		user_2.game_count=4
 		user_2.game_list=[
 			'69lmao',
@@ -126,7 +126,7 @@ class TestUserPush(unittest.TestCase):
 
 		###3rd User (no standby games, in json)
 		user_3=userdb.SteamUser()
-		user_3.userid='03'
+		user_3.steamid='03'
 		user_3.game_count=3
 		user_3.game_list=[
 			'BruhOne',
@@ -144,7 +144,7 @@ class TestUserPush(unittest.TestCase):
 
 		###4rt User (not in json)
 		user_4=userdb.SteamUser()
-		user_4.userid='04'
+		user_4.steamid='04'
 		user_4.game_count=3
 		user_4.game_list=[
 			'BruhOne',
@@ -332,8 +332,8 @@ class TestUserPush(unittest.TestCase):
 		new_users=userdb.SteamUser.objects(userid__in=real_new).all()
 		self.assertTrue(len(new_users)==2)
 
-		user_5=userdb.SteamUser.objects(userid='05').first()
-		self.assertEqual(user_5.userid,'05')
+		user_5=userdb.SteamUser.objects(steamid='05').first()
+		self.assertEqual(user_5.steamid,'05')
 		self.assertEqual(user_5.game_count,3)
 		self.assertEqual(user_5.game_list,['420','1488','MoonDoom'])
 		self.assertTrue(len(user_5.monitored)==1)
@@ -344,8 +344,8 @@ class TestUserPush(unittest.TestCase):
 		self.assertEqual(user_5_0.mac_gameplay[0][1],0)
 		self.assertEqual(user_5_0.lin_gameplay[0][1],100)
 
-		user_6=userdb.SteamUser.objects(userid='06').first()
-		self.assertEqual(user_6.userid,'06')
+		user_6=userdb.SteamUser.objects(steamid='06').first()
+		self.assertEqual(user_6.steamid,'06')
 		self.assertEqual(user_6.game_count,3)
 		self.assertEqual(user_6.game_list,['420','1488','BruhOne'])
 		self.assertTrue(len(user_6.monitored)==0)
