@@ -7,7 +7,7 @@ const passport = require('passport');
 //   request.  The first step in Steam authentication will involve redirecting
 //   the user to steamcommunity.com.  After authenticating, Steam will redirect the
 //   user back to this application at /auth/steam/return
-router.get('/steam',
+router.get('/auth',
     passport.authenticate('steam', { failureRedirect: '/' }),
     function(req, res) {
         res.redirect('/');
@@ -18,7 +18,7 @@ router.get('/steam',
 //   request.  If authentication fails, the user will be redirected back to the
 //   login page.  Otherwise, the primary route function function will be called,
 //   which, in this example, will redirect the user to the home page.
-router.get('/steam/return',
+router.get('/auth/return',
     // Issue #37 - Workaround for Express router module stripping the full url, causing assertion to fail
     function(req, res, next) {
         req.url = req.originalUrl;

@@ -32,7 +32,7 @@ router.get('/GetGameData/:appid',function(req, res){
 
 
 //Getting priority games data
-router.get('/GetPrioritary',function(req, res){
+router.get('/GetPrioritary', function(req, res){
     const prioritary = [];
     Game.find({priority:true},function (err,games) {
         if(!err){
