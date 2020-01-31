@@ -182,7 +182,6 @@ def main():
     
     ##All products: DB path
     name_doc='SteamAPI_product.csv'
-    chdir(r'C:\Users\mcnon\OneDrive\Escritorio\Proyecto Owners\Scrapers\ScraperGamesAPI')
 
     ##All prdocuts: URL genetarion and request processing
     url=url_api(env,func,version,**all_keywords)
@@ -245,7 +244,6 @@ def main():
     for chunk in divided_request_arglist:
         store_manager.request_arglist=chunk
         store_manager.multithread_request()
-        chdir(r'C:\Users\mcnon\OneDrive\Escritorio\Proyecto Owners\Scrapers\ScraperGamesAPI')
         store_manager.crunch()
 
     ##Deleting launched products from steam_soon.json

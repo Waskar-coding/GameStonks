@@ -667,6 +667,7 @@ def pool_spyone(*args,**kwargs):
     all ready to pass as a kwarg in python's requests library
         
     """
+    CURRENT_PATH = os.getcwd()
     driver=activate_driver(args[0])
     is_new=True
     for country in args[1:]:
@@ -686,4 +687,5 @@ def pool_spyone(*args,**kwargs):
     df.loc[df[col_B]=='HTTP',col_A]='http://'+df[col_A]
     df.loc[df[col_B]=='HTTPS',col_A]='https://'+df[col_A]
     pool=list(df[col_A])
+    os.chdir(CURRENT_PATH)
     return pool

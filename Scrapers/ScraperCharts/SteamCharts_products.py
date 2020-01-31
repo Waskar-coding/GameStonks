@@ -1,14 +1,22 @@
 #Libraries
-import requests
+##Standard
 import os
+import sys
 import csv
 import json
 import logging
-import Charts_Ingestion_Engine
-import proxypy
-from bs4 import BeautifulSoup
 from time import sleep
 from datetime import datetime, timedelta
+
+##Packages
+import requests
+from bs4 import BeautifulSoup
+
+##Local
+PROXY_PATH = r'../'
+sys.path.append(PROXY_PATH)
+import proxypy
+import Charts_Ingestion_Engine
 
 
 
@@ -27,12 +35,7 @@ logger.addHandler(file_handler)
 #File management
 ##Retrieving games on standby
 def retrieve_standby():
-	###Path constants
-	STANDBY_STR=r'C:\Users\mcnon\OneDrive\Escritorio\Proyecto Owners\Scrapers\ScraperCharts'
-	STANDBY_PATH=os.path.normpath(STANDBY_STR)
-
 	###Checking standby.csv
-	os.chdir(STANDBY_PATH)
 	review_list=[]
 	with open('standby.csv','r',newline='') as standby_csv:
 		reader=csv.reader(standby_csv,delimiter=';')
@@ -50,10 +53,9 @@ def retrieve_standby():
 ##Refreshing standby games with new games
 def refresh_standby():
 	###Path constants
-	PRODUCTS_STR=r'C:\Users\mcnon\OneDrive\Escritorio\Proyecto Owners\Scrapers\ScraperGamesAPI'
-	STANDBY_STR=r'C:\Users\mcnon\OneDrive\Escritorio\Proyecto Owners\Scrapers\ScraperCharts'
+	PRODUCTS_STR=r'../ScraperGamesAPI'
+	STANDBY_STR=os.getcwd()
 	PRODUCTS_PATH=os.path.normpath(PRODUCTS_STR)
-	STANBY_PATH=os.path.normpath(STANDBY_STR)
 
 	###Retrieving new games from steam_products.json
 	os.chdir(PRODUCTS_PATH)
@@ -91,10 +93,6 @@ def refresh_standby():
 
 ##Retrieving games to check
 def retrieve_check():
-	###Path constants
-	STANDBY_STR=r'C:\Users\mcnon\OneDrive\Escritorio\Proyecto Owners\Scrapers\ScraperCharts'
-	STANDBY_PATH=os.path.normpath(STANDBY_STR)
-
 	###Retrieving games to check
 	check_list=[]
 	os.chdir(STANDBY_PATH)
@@ -113,7 +111,6 @@ def retrieve_check():
 
 #Request func
 def request_charts(appid,**kwargs):
-	print(appid)
 	proxies=kwargs['proxies']
 	headers=kwargs['headers']
 	timeout=kwargs['timeout']
@@ -178,15 +175,17 @@ def main():
 	proxy_list=proxypy.pool_spyone(*refresh_arglist,**refresh_kwargdict)
 
 	##Starting ProxyRotationManager
-	store_manager=proxypy.ProxyRotationManager(proxy_list,
-                                               request_func,
-                                               request_arglist_1,
-                                               header_os=header_os,
-                                               timeout=timeout,
-                                               refresh_func=refresh_func,
-                                               refresh_func_args=refresh_arglist,
-                                               refresh_func_kwargdict=refresh_kwargdict,
-                                               refresh_time=refresh_time)
+	store_manager=proxypy.ProxyRotationManager(
+		proxy_list,
+        request_func,
+        request_arglist_1,
+        header_os=header_os,
+        timeout=timeout,
+        refresh_func=refresh_func,
+        refresh_func_args=refresh_arglist,
+        refresh_func_kwargdict=refresh_kwargdict,
+        refresh_time=refresh_time
+        )
 	
 	##The manager does its work for every chunk
 	def steamcharts_main(store_manager,divided_request_arglist,crunch_func):
@@ -194,7 +193,6 @@ def main():
 			store_manager.request_arglist=chunk
 			store_manager.crunch_func=crunch_func
 			store_manager.multithread_request()
-			os.chdir(r'C:\Users\mcnon\OneDrive\Escritorio\Proyecto Owners\Scrapers\ScraperCharts')
 			store_manager.crunch()
 	if request_arglist_1!=[]:
 		steamcharts_main(store_manager,divided_request_arglist_1,crunch_func_1)
