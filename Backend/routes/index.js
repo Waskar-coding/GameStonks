@@ -26,13 +26,14 @@ app.use(cors());
 app.use(function (req, res, next) {
     res.header("Access-Control-Allow-Origin",  "*");
     res.header('Access-Control-Allow-Methods', "GET,PUT,POST,DELETE,OPTIONS");
-    res.header('Access-Control-Allow-Headers', "Content-Type, Authorization, Content-Length, X-Requested-With,X-Custom-Header,Origin");
+    res.header('Access-Control-Allow-Headers', "Content-Type, Authorization, Content-Length, " +
+        "X-Requested-With,X-Custom-Header,X-Access-Token,Origin");
     res.header('Access-Control-Allow-Credentials',"true");
     next();
 });
 
 ////MongoDB
-mongoose.connect("mongodb://localhost:27017/SteamDB", function (err) {
+mongoose.connect("mongodb://192.168.1.40:27017/SteamDB", function (err) {
     if (!err) {
         console.log("We are connected")
     }
@@ -101,7 +102,7 @@ passport.use(new SteamStrategy({
                         {
                             console.log("This account is too recent");
                             const ageStrike = ({
-                                strike_date: today.setUTCSeconds(now),
+                                strike_date: today.setUTCSeconds(now/1000),
                                 strike_total: 1,
                                 strike_reason: "Invalid login petition (the account is too recent)"
                             });
@@ -142,7 +143,7 @@ passport.use(new SteamStrategy({
                                 else {
                                     console.log("This account is not valuable enough");
                                     const valueStrike = ({
-                                        strike_date: today.setUTCSeconds(now),
+                                        strike_date: today.setUTCSeconds(now/1000),
                                         strike_total: 1,
                                         strike_reason: "Invalid login petition (the account is not valuable enough)"
                                     });
@@ -166,10 +167,10 @@ passport.use(new SteamStrategy({
                     else {
                         console.log("This account is private");
                         const privateBan = ({
-                            ban_start: today.setUTCSeconds(now),
+                            ban_start: today.setUTCSeconds(now/1000),
                             ban_type: "TOS Break",
                             ban_reason: "Your profile is private",
-                            ban_end: today.setUTCSeconds(now + 604800),
+                            ban_end: today.setUTCSeconds(now/1000 + 604800),
                             ban_condition: "Private profile"
                         });
                         const newUser = new User ({
@@ -187,7 +188,7 @@ passport.use(new SteamStrategy({
                     }
                 }
                 else {
-                    if(user.banned!== false){
+                    if(user.banned!== true){
                         console.log(user);
                     }
                     else {
