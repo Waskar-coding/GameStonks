@@ -272,9 +272,7 @@ def critic_format(REGISTERED_KEYS,appid,app_json,key):
 
 @keyerror_decorator
 def tags_format(REGISTERED_KEYS,appid,app_json,key):
-	INDEX_PATH=r'C:\Users\mcnon\OneDrive\Escritorio\Proyecto Owners\Scrapers\ScraperGamesAPI'
 	REGISTERED_TAGINFO=('id','description')
-	os.chdir(INDEX_PATH)
 	tag_json=app_json[key]
 	tag_dict={}
 	for pair in tag_json:

@@ -33,9 +33,12 @@ app.use(function (req, res, next) {
 });
 
 ////MongoDB
-mongoose.connect("mongodb://localhost:27017/SteamDB", function (err) {
+mongoose.connect("mongodb://192.168.1.40:27017/SteamDB", function (err) {
     if (!err) {
         console.log("We are connected")
+    }
+    else{
+        console.log(err)
     }
 });
 

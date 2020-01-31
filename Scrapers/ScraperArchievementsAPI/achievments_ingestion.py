@@ -10,7 +10,8 @@ import logging
 #Initializing logger
 logger=logging.getLogger('AchievmenetsCrunchFunc')
 logger.setLevel(logging.INFO)
-formatter=logging.Formatter('%(name)s %(asctime)s %(levelname)s %(message)s')
+st_format='%(name)s %(asctime)s %(levelname)s %(message)s'
+formatter=logging.Formatter(st_format)
 file_handler=logging.FileHandler('Achievments.log')
 file_handler.setLevel(logging.INFO)
 file_handler.setFormatter(formatter)
@@ -20,11 +21,9 @@ logger.addHandler(file_handler)
 
 #File management
 def set_achievements(
-					path: os.path,
-					appid: str,
-					achievements: dict,
-					) -> None:
-	os.chdir(path)
+	appid: str,
+	achievements: dict,
+	) -> None:
 	with open('achievements.json','r') as AchievementDoc:
 		AchievementDict=json.load(AchievementDoc)
 	AchievementDict['games'][appid]=achievements
@@ -49,8 +48,6 @@ def modify_percents(achievements: dict) -> dict:
 def main(data_dict: dict) -> None:
 	appid=list(data_dict.keys())[0]
 	achievements=list(data_dict.values())[0]
-	ACHIEVEMENT_PATH=r'C:\Users\mcnon\OneDrive\Escritorio\Proyecto Owners\Scrapers\ScraperArchievementsAPI'
-	ACHIEVEMENT_DOCNAME='achievments.json'
 
 	if achievements!={}:
 		achievements=modify_percents(achievements)
@@ -58,11 +55,7 @@ def main(data_dict: dict) -> None:
 	else:
 		logger.warning('A problem ocurred with {}'.format(appid))
 	
-	set_achievements(
-					ACHIEVEMENT_PATH,
-					appid,
-					achievements
-					)
+	set_achievements(appid, achievements)
 
 
 
