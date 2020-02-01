@@ -325,6 +325,10 @@ class SteamUser(mongoengine.Document):
 	 |	permanent_ban (bool):
 	 |		The user is or is not permanently banned.
 	 |
+	 |	blacklisted (bool):
+	 |		A special ban state for user's who try to enter the page without
+	 |		a valid account.
+	 |
 	 |	additional (AdditionalRegister):
 	 |		Information about the user's participation in platform events
 	 |		or client events.
@@ -362,6 +366,7 @@ class SteamUser(mongoengine.Document):
 	bans=mongoengine.EmbeddedDocumentListField(BanRegister)
 	banned=mongoengine.BooleanField(default=False)
 	permanent_ban=mongoengine.BooleanField(default=False)
+	blacklisted=mongoengine.BooleanField(default=False)
 
 	##Additional registers
 	additional=mongoengine.EmbeddedDocumentListField(AdditionalRegister)
