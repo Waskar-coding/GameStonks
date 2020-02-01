@@ -10,6 +10,7 @@ from datetime import datetime, timedelta
 
 ##Packages
 import requests
+from requests.exceptions import ProxyError
 from bs4 import BeautifulSoup
 
 ##Local
@@ -54,7 +55,7 @@ def retrieve_standby():
 def refresh_standby():
 	###Path constants
 	PRODUCTS_STR=r'../ScraperGamesAPI'
-	STANDBY_STR=os.getcwd()
+	STANDBY_PATH=os.getcwd()
 	PRODUCTS_PATH=os.path.normpath(PRODUCTS_STR)
 
 	###Retrieving new games from steam_products.json
@@ -75,7 +76,7 @@ def refresh_standby():
 	logger.debug(game_dict)
 
 	###Retrieving games from standby.csv
-	os.chdir(STANBY_PATH)
+	os.chdir(STANDBY_PATH)
 	standby_list=[]
 	with open('standby.csv','r',newline='') as standby_csv:
 		reader=csv.reader(standby_csv,delimiter=';')
@@ -95,7 +96,6 @@ def refresh_standby():
 def retrieve_check():
 	###Retrieving games to check
 	check_list=[]
-	os.chdir(STANDBY_PATH)
 	with open('check.csv','r',newline='') as check_csv:
 		reader=csv.reader(check_csv,delimiter=';')
 		try:
@@ -120,12 +120,15 @@ def request_charts(appid,**kwargs):
         	                  headers=headers,timeout=timeout)
 	except:
 		response=requests.get(url)
+		if response.status_code==200:
+			pass
+		else: 
+			raise ProxyError
 	finally:
-		try:
-			sleep(2)
-			html_soup=BeautifulSoup(response.text,'lxml')
-		except UnboundLocalError:
-			html_soup=None
+		html_soup=BeautifulSoup(response.content,'lxml')
+		if html_soup==None:
+			print(appid)
+			print('Bruh')
 	return html_soup
 
 
@@ -189,9 +192,9 @@ def main():
 	
 	##The manager does its work for every chunk
 	def steamcharts_main(store_manager,divided_request_arglist,crunch_func):
+		store_manager.crunch_func=crunch_func
 		for chunk in divided_request_arglist:
 			store_manager.request_arglist=chunk
-			store_manager.crunch_func=crunch_func
 			store_manager.multithread_request()
 			store_manager.crunch()
 	if request_arglist_1!=[]:

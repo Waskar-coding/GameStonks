@@ -32,8 +32,7 @@ from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 from selenium.webdriver.common.proxy import Proxy,ProxyType
 
 ##Local
-PROXY_PATH=r'C:\Users\mcnon\OneDrive\Escritorio'\
-    r'\Proyecto Owners\Scrapers'
+PROXY_PATH=r'../'
 sys.path.append(PROXY_PATH)
 import proxypy
 
@@ -310,7 +309,10 @@ def players_pattern(filename: str) -> bool:
 def download_product(
         appid: str,
         is_free: bool,
-        proxy: str
+        proxy: str,
+        DRIVER_PATH: str,
+        PRICE_PATH: os.path,
+        PLAYER_PATH: os.path
         ):
     ##Documentation
     """
@@ -329,15 +331,6 @@ def download_product(
     proxy: str
         IP direction of the proxy followed by port
     """
-
-    ##Paths for driver and players & prizes destination dirs 
-    DRIVER_PATH=r'C:\Users\mcnon\OneDrive\Escritorio'\
-        r'\chromedriver_win32\chromedriver'
-    PRICE_PATH=r'C:\Users\mcnon\OneDrive\Escritorio'\
-        r'\Proyecto Owners\Scrapers\ScraperDB\Prices'
-    PLAYER_PATH=r'C:\Users\mcnon\OneDrive\Escritorio'\
-        r'\Proyecto Owners\Scrapers\ScraperDB\Players'
-
     ##Assigning parameters to the driver
     os_list=['win','mac','linux']
     device_list=['desktop']
@@ -355,13 +348,13 @@ def download_product(
     chrome_options = webdriver.ChromeOptions()
     chrome_options.add_argument("--incognito")
     chrome_options.add_argument("user-agent="+str(user_agent))
-    chrome_options.add_argument("--proxy-server="+proxy)
+    #chrome_options.add_argument("--proxy-server="+proxy)
     chrome_options.add_argument("--ignore-certificate-errors")
     chrome_options.add_argument("--ignore-ssl-errors")
     driver=webdriver.Chrome(
         DRIVER_PATH,
         options=chrome_options,
-        desired_capabilities=capabilities
+        #desired_capabilities=capabilities
         )
     
     ##Appliying download function to the driver
@@ -399,6 +392,8 @@ def main():
     ##Driver path
     DRIVER_PATH=r'C:\Users\mcnon\OneDrive\Escritorio'\
         r'\chromedriver_win32\chromedriver'
+    PRICE_PATH=os.path.abspath(r'.\Prices')
+    PLAYER_PATH=os.path.abspath(r'.\Players')
     os.environ['chromedriver']=DRIVER_PATH
 
     ##Getting steam apps to download
@@ -426,7 +421,7 @@ def main():
                 Unsupported command {}
                 """.format(product_dict[key]))
         proxy=random.choice(proxy_list)
-        download_product(appid,is_free,proxy)
+        download_product(appid,is_free,proxy,DRIVER_PATH,PRICE_PATH,PLAYER_PATH)
 
 
 

@@ -100,3 +100,191 @@ Traceback (most recent call last):
   File "C:\Users\mcnon\OneDrive\Escritorio\Proyecto Owners\Scrapers\ScraperDB\Products_SteamDB.py", line 207, in get_rating
     good_ratings=driver\
 AttributeError: 'str' object has no attribute 'find_elements_by_class_name'
+DBmainfunc 2020-01-31 21:17:41,917 ERROR 
+            Exception while downloading 440 
+            while using socks5://188.166.83.13:1080
+            
+Traceback (most recent call last):
+  File "Products_SteamDB.py", line 368, in download_product
+    download_players(appid,driver,'js-chart-year')
+  File "Products_SteamDB.py", line 149, in download_players
+    .until(EC.presence_of_element_located((By.ID, period)))
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+DBmainfunc 2020-01-31 21:21:22,898 ERROR 
+            Exception while downloading 440 
+            while using socks5://178.62.193.19:1080
+            
+Traceback (most recent call last):
+  File "Products_SteamDB.py", line 368, in download_product
+    download_players(appid,driver,'js-chart-year')
+  File "Products_SteamDB.py", line 149, in download_players
+    .until(EC.presence_of_element_located((By.ID, period)))
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\support\wait.py", line 71, in until
+    value = method(self._driver)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 64, in __call__
+    return _find_element(driver, self.locator)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 415, in _find_element
+    raise e
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 411, in _find_element
+    return driver.find_element(*by)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: chrome not reachable
+  (Session info: chrome=79.0.3945.130)
+
+DBmainfunc 2020-01-31 21:25:01,200 ERROR 
+            Exception while downloading 440 
+            while using socks5://95.85.36.236:1080
+            
+Traceback (most recent call last):
+  File "Products_SteamDB.py", line 368, in download_product
+    download_players(appid,driver,'js-chart-year')
+  File "Products_SteamDB.py", line 149, in download_players
+    .until(EC.presence_of_element_located((By.ID, period)))
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+DBmainfunc 2020-01-31 21:30:07,725 ERROR 
+            Exception while downloading 440 
+            while using http://51.15.11.2:80
+            
+Traceback (most recent call last):
+  File "Products_SteamDB.py", line 368, in download_product
+    download_players(appid,driver,'js-chart-year')
+  File "Products_SteamDB.py", line 149, in download_players
+    .until(EC.presence_of_element_located((By.ID, period)))
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\support\wait.py", line 71, in until
+    value = method(self._driver)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 64, in __call__
+    return _find_element(driver, self.locator)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 415, in _find_element
+    raise e
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 411, in _find_element
+    return driver.find_element(*by)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: chrome not reachable
+  (Session info: chrome=79.0.3945.130)
+
+DBmainfunc 2020-01-31 21:31:49,941 ERROR 
+            Exception while downloading 440 
+            while using socks5://184.178.172.13:15311
+            
+Traceback (most recent call last):
+  File "Products_SteamDB.py", line 369, in download_product
+    get_rating(driver,appid)
+  File "Products_SteamDB.py", line 206, in get_rating
+    good_ratings=driver\
+AttributeError: 'str' object has no attribute 'find_elements_by_class_name'
+DBmainfunc 2020-01-31 21:33:37,218 ERROR 
+            Exception while downloading 440 
+            while using socks5://192.169.215.124:3050
+            
+Traceback (most recent call last):
+  File "Products_SteamDB.py", line 369, in download_product
+    get_rating(driver,appid)
+  File "Products_SteamDB.py", line 206, in get_rating
+    good_ratings=driver\
+AttributeError: 'str' object has no attribute 'find_elements_by_class_name'
+DBmainfunc 2020-01-31 21:45:37,764 ERROR 
+            Exception while downloading 440 
+            while using socks5://184.178.172.13:15311
+            
+Traceback (most recent call last):
+  File "Products_SteamDB.py", line 370, in download_product
+    get_rating(driver,appid)
+  File "Products_SteamDB.py", line 206, in get_rating
+    good_ratings=driver\
+AttributeError: 'str' object has no attribute 'find_elements_by_class_name'
+DBmainfunc 2020-01-31 21:47:56,668 ERROR 
+            Exception while downloading 440 
+            while using http://51.15.11.2:80
+            
+Traceback (most recent call last):
+  File "Products_SteamDB.py", line 372, in download_product
+    get_rating(driver,appid)
+  File "Products_SteamDB.py", line 206, in get_rating
+    good_ratings=driver\
+AttributeError: 'str' object has no attribute 'find_elements_by_class_name'
+DBmainfunc 2020-01-31 21:52:53,879 ERROR 
+            Exception while downloading 440 
+            while using http://136.244.110.225:80
+            
+Traceback (most recent call last):
+  File "Products_SteamDB.py", line 369, in download_product
+    get_rating(driver,appid)
+  File "Products_SteamDB.py", line 206, in get_rating
+    good_ratings=driver\
+AttributeError: 'str' object has no attribute 'find_elements_by_class_name'
+DBmainfunc 2020-01-31 23:19:00,945 ERROR 
+            Exception while downloading 440 
+            while using socks5://162.243.115.217:7832
+            
+Traceback (most recent call last):
+  File "Products_SteamDB.py", line 369, in download_product
+    get_rating(driver,appid)
+  File "Products_SteamDB.py", line 206, in get_rating
+    good_ratings=driver\
+AttributeError: 'str' object has no attribute 'find_elements_by_class_name'
+DBmainfunc 2020-01-31 23:19:30,596 ERROR 
+            Exception while downloading 271590 
+            while using socks5://173.245.239.177:16964
+            
+Traceback (most recent call last):
+  File "Products_SteamDB.py", line 369, in download_product
+    get_rating(driver,appid)
+  File "Products_SteamDB.py", line 206, in get_rating
+    good_ratings=driver\
+AttributeError: 'str' object has no attribute 'find_elements_by_class_name'
+DBmainfunc 2020-01-31 23:23:27,523 ERROR 
+            Exception while downloading 440 
+            while using socks5://173.245.239.177:16964
+            
+Traceback (most recent call last):
+  File "Products_SteamDB.py", line 371, in download_product
+    get_rating(driver,appid)
+  File "Products_SteamDB.py", line 206, in get_rating
+    good_ratings=driver\
+AttributeError: 'str' object has no attribute 'find_elements_by_class_name'
+DBmainfunc 2020-01-31 23:23:49,788 ERROR 
+            Exception while downloading 271590 
+            while using socks5://166.62.43.174:44889
+            
+Traceback (most recent call last):
+  File "Products_SteamDB.py", line 371, in download_product
+    get_rating(driver,appid)
+  File "Products_SteamDB.py", line 206, in get_rating
+    good_ratings=driver\
+AttributeError: 'str' object has no attribute 'find_elements_by_class_name'
+DBmainfunc 2020-01-31 23:33:44,564 ERROR 
+            Exception while downloading 440 
+            while using http://136.244.110.225:80
+            
+Traceback (most recent call last):
+  File "Products_SteamDB.py", line 365, in download_product
+    get_rating(driver,appid)
+  File "Products_SteamDB.py", line 206, in get_rating
+    good_ratings=driver\
+AttributeError: 'str' object has no attribute 'find_elements_by_class_name'
+DBmainfunc 2020-01-31 23:34:16,877 ERROR 
+            Exception while downloading 271590 
+            while using socks5://95.85.36.236:1080
+            
+Traceback (most recent call last):
+  File "Products_SteamDB.py", line 365, in download_product
+    get_rating(driver,appid)
+  File "Products_SteamDB.py", line 206, in get_rating
+    good_ratings=driver\
+AttributeError: 'str' object has no attribute 'find_elements_by_class_name'

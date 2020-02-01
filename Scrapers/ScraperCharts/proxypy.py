@@ -570,7 +570,7 @@ def spyone_page(driver,Country,Page,is_new,**kwargs):
     useless_columns=[
             'Country (city/region)',
             'Hostname/ORG',
-            'Check date (GMT+04)'
+            'Check date (GMT+03)'
             ]
     df=df.drop(columns=useless_columns)
     ###Saving csv

@@ -36,7 +36,8 @@ def get_avplayers_web(html_soup):
 
 ##Getting Steamcharts all metadata
 def get_metadata(html_soup):
-	df=pd.read_html(str(html_soup))[0]
+	print(html_soup)
+	df=pd.read_html(html_soup)[0]
 	return df
 
 
@@ -107,9 +108,9 @@ def trending_trigger(appid,avplayers_web,avplayers_db,devplayers_db):
 #File management
 ##Creating and accessing dir for stagnation or upturn checks
 def create_checkdir(appid,event):
-	CHECK_STR=r'C:\Users\mcnon\OneDrive\Escritorio\Proyecto Owners\Calculations'
-	CHECK_PATH=os.path.normpath(CHECK_STR)
-	event_path=os.path.join(CHECK_PATH,event+' check')
+	CHECK_PATH='../../Calculations'
+	os.chdir(CHECK_PATH)
+	event_path=os.path.join(os.getcwd(),event+' Check')
 	os.chdir(event_path)
 	os.mkdir(appid)
 	app_path=os.path.join(event_path,appid)
@@ -118,8 +119,6 @@ def create_checkdir(appid,event):
 
 ##Retrieving metadata from check file
 def retrieve_metadata(appid):
-	SCRAPER_PATH=r'C:\Users\mcnon\OneDrive\Escritorio\Proyecto Owners\Scrapers\ScraperCharts'
-	os.chdir(SCRAPER_PATH)
 	with open('check.csv','r',newline='') as check_csv:
 		reader=csv.reader(check_csv,delimiter=';')
 		for row in reader:
@@ -140,11 +139,10 @@ def lockfunc_decorator(resfresh_func):
 	return lock_it
 
 
+
 ##Deleting instance from check or standby files
 @lockfunc_decorator
 def delete_appid(appid,file):
-	SCRAPER_PATH=r'C:\Users\mcnon\OneDrive\Escritorio\Proyecto Owners\Scrapers\ScraperCharts'
-	os.chdir(SCRAPER_PATH)
 	appid_list=[]
 	att_1_list=[]
 	att_2_list=[]
@@ -160,26 +158,11 @@ def delete_appid(appid,file):
 		writer.writerows(zip(appid_list,att_1_list,att_2_list))
 
 
-##Insert app into last_profiles json
-@lockfunc_decorator
-def trending_appid(appid):
-	USERS_PATH=r'C:\Users\mcnon\OneDrive\Escritorio\Proyecto Owners\Scrapers\ScraperUsers'
-	os.chdir(USERS_PATH)
-	with open('last_profiles.json','r') as profiles_json:
-		profiles_dict=json.load(profiles_json)
-	profiles_dict['products']['appid']={
-										'profiles':[],
-										'static_count':0,
-										'popularity':2
-										}
-	with open('last_profiles.json','w') as profiles_json:
-		json.dump(profiles_dict,profiles_json,indent=2)
-
-
 
 #Main functions
 ##Main check
 def main_check(data_dict):
+	STANDBY_PATH = os.getcwd()
 	appid=list(data_dict.keys())[0]
 	html_soup=list(data_dict.values())[0]
 	avplayers_web=get_avplayers(html_soup)
@@ -193,21 +176,31 @@ def main_check(data_dict):
 		create_checkdir(appid,'Upturn')
 		csv_metadata(appid,df)
 		plot_metadata(appid,df)
-		trending_appid(appid,trending_flag)
+		os.chdir(STANDBY_PATH)
 		delete_appid(appid,'check.csv')
 		logger.info('{} saved for upturn check'.format(appid))
 
 
 ##Main standby
 def main_standby(data_dict):
+	STANDBY_PATH = os.getcwd()
 	appid=list(data_dict.keys())[0]
 	html_soup=list(data_dict.values())[0]
-	df=get_metadata(html_soup)
-	create_checkdir(appid,'Stagnantion')
-	csv_metadata(appid,df)
-	plot_metadata(appid,df)
-	delete_appid(appid,'standby.csv')
-	logger.info('{} saved for stagnation check'.format(appid))
+	try:
+		df=get_metadata(html_soup)
+	except TypeError:
+		logger.warning(
+			"""
+			Steamcharts does not have information on {}
+			""".format(appid)
+			)
+	else:
+		create_checkdir(appid,'Stagnantion')
+		csv_metadata(appid,df)
+		plot_metadata(appid,df)
+		os.chdir(STANDBY_PATH)
+		delete_appid(appid,'standby.csv')
+		logger.info('{} saved for stagnation check'.format(appid))
 
 
 
