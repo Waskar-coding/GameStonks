@@ -37,11 +37,11 @@ def main(profile_url,key,**kwargs):
 		profile_num=profile_url.split('/')[4]
 	else:
 		vanity_flag=True
-		userid=profile_url.split('/')[4]
-		logger.debug(userid)
+		steamid=profile_url.split('/')[4]
+		logger.debug(steamid)
 		base_url='https://api.steampowered.com/ISteamUser/ResolveVanityURL/v1/'
 		key_url='key='+key
-		id_url='vanityurl='+userid
+		id_url='vanityurl='+steamid
 		url=base_url+'?'+key_url+'&'+id_url
 		logger.debug(url)
 		try:
@@ -54,12 +54,12 @@ def main(profile_url,key,**kwargs):
 			else:
 				response=requests.get(url,proxies=proxies,headers=headers,timeout=timeout)
 		except:
-			logger.exception('An exception ocured during request for {}'.format(userid))
+			logger.exception('An exception ocured during request for {}'.format(steamid))
 			profile_num=None
 		else:
 			success=response.json()['response']['success']
 			if success!=1:
-				logger.error('Unsuccessful request for {}'.format(userid))
+				logger.error('Unsuccessful request for {}'.format(steamid))
 				profile_num=None
 			else:
 				profile_num=response.json()['response']['steamid']

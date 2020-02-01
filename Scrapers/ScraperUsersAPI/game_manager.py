@@ -114,12 +114,12 @@ def delete_users(game_list : list, user_dict : dict) -> dict:
 
 	##Adding to delete list users without monitored games
 	to_delete=[]
-	for userid in user_dict['profiles'].keys():
-		user_set = set(user_dict['profiles'][userid].keys())
+	for steamid in user_dict['profiles'].keys():
+		user_set = set(user_dict['profiles'][steamid].keys())
 		game_set = set(game_list)
 		user_games = game_set.intersection(user_set)
 		if len(user_games) == 0:
-			to_delete.append(userid)
+			to_delete.append(steamid)
 	
 	##Deleting users in delete list from json
 	logger.info(
@@ -128,8 +128,8 @@ def delete_users(game_list : list, user_dict : dict) -> dict:
 		""".format(to_delete)
 		)
 
-	for userid in to_delete:
-		del user_dict['profiles'][userid]
+	for steamid in to_delete:
+		del user_dict['profiles'][steamid]
 	
 	return user_dict
 

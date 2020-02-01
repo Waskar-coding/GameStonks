@@ -56,7 +56,7 @@ userlogger.addHandler(file_handler)
 
 
 
-#Getting userid list from monitored_users.json
+#Getting steamid list from monitored_users.json
 def get_userlist(monitored_path : os.path) -> list:
 	##Documentation
 	"""
@@ -92,7 +92,7 @@ def check_userlist(user_list : list) -> list:
 	##Getting list of registered users
 	old_user_list=userdb.SteamUser\
 		.objects(userid__in=user_list).all()
-	old_user_list=[profile.userid for profile in old_user_list]
+	old_user_list=[profile.steamid for profile in old_user_list]
 
 	##Getting list of new users
 	new_user_list=list(set(user_list)\
@@ -133,7 +133,7 @@ def register_new(
 	"""
 	Registers all new users in SteamDB, including all their gameplay
 	registers if the users have a register for any of the standy
-	games their userid is added to the monitored attribute of the 
+	games their steamid is added to the monitored attribute of the
 	game's SteamGame object monitored attribute.
 
 	Parameters
@@ -150,11 +150,11 @@ def register_new(
 		user_json=json.load(user_doc)['profiles']
 
 	##Registering new users
-	for userid in new_user_list:
+	for steamid in new_user_list:
 		###Unpacking user attributes
-		user_dict=user_json[userid]
+		user_dict=user_json[steamid]
 		new_user=userdb.SteamUser()
-		new_user.userid=userid
+		new_user.steamid=steamid
 		new_user.game_count=user_dict['game_count']
 		new_user.game_list=user_dict['game_list']
 
@@ -184,7 +184,7 @@ def register_new(
 			####Introducing register in user
 			new_user.monitored.append(register)
 
-			####Adding userid to monitored list
+			####Adding steamid to monitored list
 			steamgame=gamedb.SteamGame.objects(appid=appid).first()
 			steamgame.monitored.append(appid)
 			steamgame.save()
@@ -218,9 +218,9 @@ def register_old(
 		user_json=json.load(user_doc)['profiles']
 
 	##Registering new gameplays for every user
-	for userid in old_user_list:
-		steamuser=userdb.SteamUser.objects(userid=userid)
-		user_dict=user_json[userid]
+	for steamid in old_user_list:
+		steamuser=userdb.SteamUser.objects(steamid=steamid)
+		user_dict=user_json[steamid]
 		user_gamelist=set(game_list)\
 			.intersection(set(user_dict.keys()))
 		
@@ -230,7 +230,7 @@ def register_old(
 			mac_g=user_dict[appid]['playtime_mac_forever']
 			lin_g=user_dict[appid]['playtime_linux_forever']
 			setterdb.steam_user_addgameplay(
-				userid,
+				steamid,
 				appid,
 				total_g,
 				win_g,

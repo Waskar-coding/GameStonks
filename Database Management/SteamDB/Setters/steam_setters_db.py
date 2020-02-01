@@ -80,32 +80,32 @@ def steam_app_setter(
 
 #SteamUser basic setter
 def steam_user_setter(
-	userid: str,
+	steamid: str,
 	game_count: int,
 	game_list: list,
 	friend_number: int,
 	logger: logging.Logger
 	)-> None:
 	##Checking for the user in DB
-	if len(steam_user_db.SteamUser.objects(userid=userid))!=0:
+	if len(steam_user_db.SteamUser.objects(steamid=steamid))!=0:
 		logger.warning(
 			"""
 			Steam user {} already registered, updating fields
-			""".format(userid)
+			""".format(steamid)
 			)
-		SteamUser=steam_user_db.SteamUser.objects(userid=userid).first()
+		SteamUser=steam_user_db.SteamUser.objects(steamid=steamid).first()
 	else:
 		SteamUser=steam_user_db.SteamUser()
 
 	##Setting all non-timerelated fields
-	SteamUser.userid=userid
+	SteamUser.steamid=steamid
 	SteamUser.game_count=game_count
 	SteamUser.game_list=game_list
 	friend_number=friend_number
 
 	##Saving document object into DB
 	SteamUser.save()
-	logger.info('Steam user {} correctly stored'.format(userid))
+	logger.info('Steam user {} correctly stored'.format(steamid))
 
 
 
@@ -134,7 +134,7 @@ def steam_game_setter(
 
 #SteamUser gameplay setter
 def steam_user_addgameplay(
-	userid: str,
+	steamid: str,
 	appid: str,
 	total_gameplay: int,
 	win_gameplay: int,
@@ -144,7 +144,7 @@ def steam_user_addgameplay(
 	userlogger: logging.Logger
 	)-> None:
 	##Accessing SteamUser
-	SteamUser=steam_user_db.SteamUser.objects(userid=userid).first()
+	SteamUser=steam_user_db.SteamUser.objects(steamid=steamid).first()
 
 	##Checking for the gameplay register in embedded documents
 	GameFlag=False
@@ -162,13 +162,13 @@ def steam_user_addgameplay(
 		GameplayRegister=steam_user_db.GameplayRegister()
 		GameplayRegister.appid=appid
 		SteamGame=steam_game_db.SteamGame.objects(appid=appid).first()
-		SteamGame.monitored.append(userid)
+		SteamGame.monitored.append(steamid)
 		SteamGame.save()
 		gamelogger.info(
 			"""
 			Steam User {} has been registered 
 			as monitored for the game {}
-			""".format(userid,appid)
+			""".format(steamid,appid)
 			)
 	
 	##Appending points to all lists
@@ -186,7 +186,7 @@ def steam_user_addgameplay(
 	userlogger.info(
 		"""
 		User {} gameplay of {} correctly saved
-		""".format(userid,appid)
+		""".format(steamid,appid)
 		)
 
 
@@ -213,7 +213,7 @@ def steam_user_delgameplay(
 		logger.info(
 			"""
 			{} gameplay successfully deleted for user {}
-			""".format(appid,SteamUser.userid)
+			""".format(appid,SteamUser.steamid)
 			)
 
 
@@ -487,7 +487,7 @@ def steam_game_save(steamgame: steam_game_db.SteamGame) -> None:
 
 #Execution
 if __name__=='__main__':
-	userid=str(input('Select userid: '))
+	steamid=str(input('Select steamid: '))
 	session=mongoengine.register_connection(alias='SteamDB',db='SteamDB')
 	
 	appid='110'
@@ -497,7 +497,7 @@ if __name__=='__main__':
 	lin_gameplay=0
 
 	steamuser_addgameplay(
-		userid=userid,
+		steamid=steamid,
 		appid=appid,
 		total_gameplay=total_gameplay,
 		win_gameplay=win_gameplay,

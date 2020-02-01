@@ -1,5 +1,4 @@
 const mongoose = require('mongoose');
-const Schema = mongoose.Schema;
 const game = mongoose.Schema({
     appid: String,
     name: String,

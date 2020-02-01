@@ -22,8 +22,8 @@ def main(data_dict):
 	users_dir=r'C:\Users\mcnon\OneDrive\Escritorio\Proyecto Owners\Scrapers\ScraperUsersAPI'
 	os.chdir(users_dir)
 	##Unpacking data_dict
-	userid=list(data_dict.keys())[0]
-	logger.info(userid)
+	steamid=list(data_dict.keys())[0]
+	logger.info(steamid)
 	friends_json=list(data_dict.values())[0]
 
 	##Extracting friends
@@ -35,7 +35,7 @@ def main(data_dict):
 		else:
 			with open('friends_blacklist.csv','a',newline='') as blacklist_csv:
 				writer=csv.writer(blacklist_csv,delimiter=';')
-				writer.writerow([userid])
+				writer.writerow([steamid])
 		friend_num=len(profiles_list)
 	except:
 		logger.exception('Unsupported format for friends_json: {}'.format(friends_json))
@@ -48,9 +48,9 @@ def main(data_dict):
 	with open('monitored_users.json','r') as monitored_json:
 		user_json=json.load(monitored_json)
 	monitored_list=user_json['profiles'].keys()
-	if userid in monitored_list:	
-		user_json['profiles'][userid]['friend_num']=friend_num
-		user_json['profiles'][userid]['friends_checked']=True
+	if steamid in monitored_list:
+		user_json['profiles'][steamid]['friend_num']=friend_num
+		user_json['profiles'][steamid]['friends_checked']=True
 	profiles_list=list(set(profiles_list).difference(set(monitored_list)))
 	with open('monitored_users.json','w') as monitored_json:
 		json.dump(user_json,monitored_json,indent=2)
@@ -63,9 +63,9 @@ def main(data_dict):
 
 #Execution
 if __name__=='__main__':
-	userid=input('Insert userid: ')
-	url='http://api.steampowered.com/ISteamUser/GetFriendList/v0001/?key=24E7A4CB6C2041D4C08EC325A5F4FFC3&steamid='+userid+'&relationship=all'
+	steamid=input('Insert steamid: ')
+	url='http://api.steampowered.com/ISteamUser/GetFriendList/v0001/?key=24E7A4CB6C2041D4C08EC325A5F4FFC3&steamid='+steamid+'&relationship=all'
 	response=requests.get(url)
 	data_json=response.json()
-	data_dict={userid:data_json}
+	data_dict={steamid:data_json}
 	main(data_dict)

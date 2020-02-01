@@ -82,7 +82,7 @@ passport.use(new SteamStrategy({
         realm: 'http://localhost/',
         apiKey: '24E7A4CB6C2041D4C08EC325A5F4FFC3'
     },
-    function(identifier, profile, done) {
+    function(identifier, profile) {
         // asynchronous verification, for effect...
         process.nextTick(function () {
 
@@ -91,128 +91,118 @@ passport.use(new SteamStrategy({
             // to associate the Steam account with a user record in your database,
             // and return that user instead.
             profile.identifier = identifier;
-            const userID = profile._json.steamid;
-            const today = new Date(0);
-            const now = Date.now();
-            User.findOne({ 'userid'  : userID }, function(err, user) {
+            User.findOne({steamid: profile._json.steamid}, function(err, user) {
                 if (user === null)
                 {
-                    const timeCreated = profile._json.timecreated;
-                    if (timeCreated !== undefined) {
-                        const currentTime = Math.round((new Date()).getTime() / 1000);
-                        const difference = currentTime - timeCreated;
-                        if( difference < 31556952)
-                        {
-                            console.log("This account is too recent");
-                            const ageStrike = ({
-                                strike_date: today.setUTCSeconds(now/1000),
-                                strike_total: 1,
-                                strike_reason: "Invalid login petition (the account is too recent)"
-                            });
-                            const newUser = new User ({
-                                userid : userID,
-                                name : profile._json.personaname,
-                                joined : today.setUTCSeconds(timeCreated),
-                                thumbnail: profile._json.avatarfull,
-                                current_strikes: 1,
-                                banned: false,
-                                permanent_ban: false,
-                            });
-                            newUser.strikes.push(ageStrike);
-                            newUser.save().then(function () {
-                                console.log("User successfully registered with a strike")
-                            });
-                        }
-                        else {
-                            request('https://dog.steamcalculator.com/v1/id/'+ userID +'/apps', { json: true }, (err, res) => {
-                                if (err) { return console.log(err); }
-                                const accountValue = res.body.total_value.amount/100;
-                                if (accountValue >= 20){
-                                    console.log("This account is valid");
-                                    const newUser = new User ({
-                                        userid : userID,
-                                        name : profile._json.personaname,
-                                        joined : today.setUTCSeconds(timeCreated),
-                                        thumbnail: profile._json.avatarfull,
-                                        current_strikes: 0,
-                                        banned: false,
-                                        permanent_ban: false,
-                                    });
-                                    newUser.save().then(function () {
-                                        console.log("User successfully registered");
-                                        createToken(userID);
-                                    });
-                                }
-                                else {
-                                    console.log("This account is not valuable enough");
-                                    const valueStrike = ({
-                                        strike_date: today.setUTCSeconds(now/1000),
-                                        strike_total: 1,
-                                        strike_reason: "Invalid login petition (the account is not valuable enough)"
-                                    });
-                                    const newUser = new User ({
-                                        userid : userID,
-                                        name : profile._json.personaname,
-                                        joined : today.setUTCSeconds(timeCreated),
-                                        thumbnail: profile._json.avatarfull,
-                                        current_strikes: 1,
-                                        banned: false,
-                                        permanent_ban: false,
-                                    });
-                                    newUser.strikes.push(valueStrike);
-                                    newUser.save().then(function () {
-                                        console.log("User successfully registered with a strike")
-                                    });
-                                }
-                            });
-                        }
+                    if(verifyUser(profile._json)) {
+                        registerNewUser(profile._json)
                     }
                     else {
-                        console.log("This account is private");
-                        const privateBan = ({
-                            ban_start: today.setUTCSeconds(now/1000),
-                            ban_type: "TOS Break",
-                            ban_reason: "Your profile is private",
-                            ban_end: today.setUTCSeconds(now/1000 + 604800),
-                            ban_condition: "Private profile"
-                        });
-                        const newUser = new User ({
-                            userid : userID,
-                            name : profile._json.personaname,
-                            thumbnail: profile._json.avatarfull,
-                            current_strikes: 0,
-                            banned: true,
-                            permanent_ban: false,
-                        });
-                        newUser.bans.push(privateBan);
-                        newUser.save().then(function () {
-                            console.log("User successfully registered and banned")
-                        });
+                        blacklistNewUser(profile._json)
                     }
                 }
                 else {
-                    if(user.banned!== true){
-                        console.log(user);
+                    if (user.permanent_ban || user.banned){
+                        console.log("Banned account");
+                        return false
                     }
-                    else {
-                        console.log("The user is banned");
+                    const valid = verifyUser(profile._json);
+                    if(valid &&(user.blacklisted)){
+                        const today = new Date(0);
+                        User.findOneAndUpdate({steamid: user.steamid}, {joined: today.setUTCSeconds(profile._json.timecreated),
+                            blacklisted: false}).then(function (response) {
+                                console.log("This account is now valid");
+                                createToken(user.steamid);
+                                return(response);
+                        });
                     }
-                }
+                    else if (!valid &&(user.blacklisted)){
+                        User.findOneAndUpdate({steamid: user.steamid}, {blacklisted: false,
+                            permanent_ban: true}).then(function (response) {
+                            console.log("This account is still invalid");
+                            return(response);
+                        });
+                    }
+                    else if (!user.banned && !user.permanent_ban){
+                        console.log("Valid account");
+                        createToken(user.steamid);
+                        return true
+                    }
 
+                }
             });
 
         });
     }
 ));
 
+function verifyUser(user) {
+    const timeCreated = user.timecreated;
+    const currentTime = Math.round((new Date()).getTime() / 1000);
+    const difference = currentTime - timeCreated;
+    if(timeCreated === undefined){
+        console.log("This account is private");
+        return false
+    }
+    if( difference < 31556952)
+    {
+        console.log("This account is too recent");
+        return  false
+    }
+    request('https://dog.steamcalculator.com/v1/id/'+ user.steamid +'/apps', { json: true }, (err, res) => {
+        if (err) { return console.log(err); }
+        const accountValue = res.body.total_value.amount/100;
+        if (accountValue < 20) {
+        console.log("This account is not valuable enough");
+        return false
+        }});
+        console.log("This account is valid");
+        return true
+}
+
+function registerNewUser(user) {
+    const today = new Date(0);
+    const newUser = new User ({
+        steamid : user.steamid,
+        name : user.personaname,
+        joined : today.setUTCSeconds(user.timecreated),
+        thumbnail: user.avatarfull,
+        current_strikes: 0,
+        banned: false,
+        blacklisted: false,
+        permanent_ban: false,
+    });
+    newUser.save().then(function () {
+        console.log("User successfully registered");
+        createToken(user.steamid);
+    });
+}
+
+function blacklistNewUser(user){
+    today = new Date(0);
+    const newUser = new User ({
+        steamid : user.steamid,
+        name : user.personaname,
+        joined : today.setUTCSeconds(user.timecreated),
+        thumbnail: user.avatarfull,
+        current_strikes: 0,
+        banned: false,
+        blacklisted:true,
+        permanent_ban: false,
+    });
+    newUser.save().then(function () {
+        console.log("User successfully registered and blacklisted")
+    });
+}
+
 function ensureAuthenticated(req, res, next) {
     if (req.isAuthenticated()) { return next(); }
     res.redirect('/');
 }
 
-function createToken (userid) {
+function createToken (steamid) {
     // create a token
-    return jwt.sign({id: userid}, config.secret, {
+    return jwt.sign({id: steamid}, config.secret, {
         expiresIn: 86400 // expires in 24 hours
     })
 }

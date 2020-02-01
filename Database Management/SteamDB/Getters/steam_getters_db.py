@@ -57,7 +57,7 @@ def steam_app_getter(
 
 #Steam User basic getter
 def steam_user_getter(
-	userid: str,
+	steamid: str,
 	logger: logging.Logger
 	) -> steam_user_db.SteamUser:
 	##Documentation
@@ -67,7 +67,7 @@ def steam_user_getter(
 
 	Parameteres
 	-----------
-	userid: str
+	steamid: str
 		Steam community id for the user.
 
 	logger: logging.Logger
@@ -75,8 +75,8 @@ def steam_user_getter(
 	"""
 
 	##Getting User from db
-	SteamUser=steam_user_db.SteamUser.objects(userid=userid).first()
-	logger.info('Retrieving user {} from db'.format(userid))
+	SteamUser=steam_user_db.SteamUser.objects(steamid=steamid).first()
+	logger.info('Retrieving user {} from db'.format(steamid))
 	return SteamUser
 
 

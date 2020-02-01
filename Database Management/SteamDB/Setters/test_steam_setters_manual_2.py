@@ -82,9 +82,9 @@ class TestMenu(unittest.TestCase):
 		G_LIST=['69lmao','1488']
 		F_NUMBER=10
 
-		for userid in userid_list:
+		for steamid in userid_list:
 			setterdb.steam_user_setter(
-				userid,
+				steamid,
 				G_COUNT,
 				G_LIST,
 				F_NUMBER,
@@ -95,7 +95,7 @@ class TestMenu(unittest.TestCase):
 				gameplay+=rd.randint(0,100)
 				today=datetime.date.today()+datetime.timedelta(days=i)
 				setterdb.steam_user_addgameplay(
-					userid,
+					steamid,
 					'69lmao',
 					gameplay,
 					gameplay,
@@ -122,7 +122,7 @@ class TestMenu(unittest.TestCase):
 		gamedb.SteamGame.objects(appid='69lmao').all().delete()
 
 		###Deleting steam user
-		userdb.SteamUser.objects(userid='69lmao').all().delete()
+		userdb.SteamUser.objects(steamid='69lmao').all().delete()
 
 		###Deleting steam app
 		appdb.SteamApp.objects(appid='69lmao').all().delete()
