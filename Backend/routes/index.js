@@ -161,12 +161,11 @@ function verifyUser(user) {
 }
 
 function registerNewUser(user) {
-    const timeCreated = user.timecreated;
     const today = new Date(0);
     const newUser = new User ({
         steamid : user.steamid,
         name : user.personaname,
-        joined : today.setUTCSeconds(timeCreated),
+        joined : today.setUTCSeconds(user.timecreated),
         thumbnail: user.avatarfull,
         current_strikes: 0,
         banned: false,
@@ -180,12 +179,11 @@ function registerNewUser(user) {
 }
 
 function blacklistNewUser(user){
-    const timeCreated = user.timecreated;
     today = new Date(0);
     const newUser = new User ({
         steamid : user.steamid,
         name : user.personaname,
-        joined : today.setUTCSeconds(timeCreated),
+        joined : today.setUTCSeconds(user.timecreated),
         thumbnail: user.avatarfull,
         current_strikes: 0,
         banned: false,
