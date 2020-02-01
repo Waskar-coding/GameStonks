@@ -175,13 +175,15 @@ class BanRegister(mongoengine.EmbeddedDocument):
 	"""
 
 	##Required data
+	_id=mongoengine.StringField(required=True)
 	ban_start=mongoengine.DateTimeField(required=True)
 	ban_type=mongoengine.StringField(required=True)
-	ban_reason=mongoengine.StringField(required=True)
+	ban_active=mongoengine.BooleanField(required=True)
+
 	
 	##Optional data
 	ban_end=mongoengine.DateTimeField()
-	ban_condition=mongoengine.StringField()
+	ban_doc=mongoengine.StringField()
 
 
 
@@ -342,6 +344,7 @@ class SteamUser(mongoengine.Document):
 	name = mongoengine.StringField(required=True)
 	thumbnail=mongoengine.StringField(required=True)
 	joined=mongoengine.DateTimeField(default=datetime.datetime.now())
+	timecreated=mongoengine.StringField(default=datetime.datetime.now())
 	
 	##Score information
 	jackpots = mongoengine.EmbeddedDocumentListField(JackpotRegister)
@@ -365,11 +368,12 @@ class SteamUser(mongoengine.Document):
 	##Bans registers
 	bans=mongoengine.EmbeddedDocumentListField(BanRegister)
 	banned=mongoengine.BooleanField(default=False)
-	permanent_ban=mongoengine.BooleanField(default=False)
-	blacklisted=mongoengine.BooleanField(default=False)
 
 	##Additional registers
 	additional=mongoengine.EmbeddedDocumentListField(AdditionalRegister)
+
+	##Version key
+	__v=mongoengine.StringField(required=True)
 
 	##Class metadata
 	meta={

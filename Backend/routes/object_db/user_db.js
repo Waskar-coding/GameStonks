@@ -45,9 +45,9 @@ const StrikeRegister = mongoose.Schema({
 const BanRegister = mongoose.Schema({
     ban_start: Date,
     ban_type: String,
-    ban_reason: String,
+    ban_active: Boolean,
     ban_end: Date,
-    ban_condition: String
+    ban_doc: String
 });
 
 //Additional register schema
@@ -64,6 +64,7 @@ const user = mongoose.Schema({
     steamid: String,
     name: String,
     joined: Date,
+    timecreated: String,
     thumbnail: String,
 
     ////Jackpots
@@ -85,12 +86,10 @@ const user = mongoose.Schema({
     ////Bans
     bans: [BanRegister],
     banned: Boolean,
-    permanent_ban: Boolean,
-    blacklisted: Boolean,
 
     ////Additional
     additional: [AdditionalRegister]
 
-});
+},{versionKey: false});
 const User = mongoose.model('SteamUser', user);
 module.exports = User;

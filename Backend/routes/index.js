@@ -92,106 +92,135 @@ passport.use(new SteamStrategy({
             // and return that user instead.
             profile.identifier = identifier;
             User.findOne({steamid: profile._json.steamid}, function(err, user) {
+                ////New Users
                 if (user === null)
                 {
-                    if(verifyUser(profile._json)) {
+                    if(!verifyUser(profile._json)) {
                         registerNewUser(profile._json)
                     }
                     else {
-                        blacklistNewUser(profile._json)
+                        banNewUser(profile._json)
                     }
                 }
-                else {
-                    if (user.permanent_ban || user.banned){
-                        console.log("Banned account");
-                        return false
-                    }
-                    const valid = verifyUser(profile._json);
-                    if(valid &&(user.blacklisted)){
-                        const today = new Date(0);
-                        User.findOneAndUpdate({steamid: user.steamid}, {joined: today.setUTCSeconds(profile._json.timecreated),
-                            blacklisted: false}).then(function (response) {
-                                console.log("This account is now valid");
-                                createToken(user.steamid);
-                                return(response);
-                        });
-                    }
-                    else if (!valid &&(user.blacklisted)){
-                        User.findOneAndUpdate({steamid: user.steamid}, {blacklisted: false,
-                            permanent_ban: true}).then(function (response) {
-                            console.log("This account is still invalid");
-                            return(response);
-                        });
-                    }
-                    else if (!user.banned && !user.permanent_ban){
-                        console.log("Valid account");
-                        createToken(user.steamid);
-                        return true
-                    }
 
+                ////Banned users
+                else if (user.banned) {
+                    const currentBan = findBan(user);
+                    const today = new Date();
+                    const dictBan = {
+                        B01: verifyUser(user),
+                        B02: true
+                    };
+                    user.banned = dictBan[currentBan.ban_type];
+                    currentBan.ban_active = dictBan[currentBan.ban_type];
+                    currentBan.ban_end = today;
+                    user.save().then(function () {
+                        if (!currentBan.ban_active){
+                            console.log("User successfully unbanned");
+                            createToken(user.steamid);
+                        }
+                        else {
+                            console.log("User is still banned")
+                        }
+                    });
+                }
+
+                ////Regular users
+                else {
+                    console.log("Valid account");
+                    createToken(user.steamid);
                 }
             });
-
         });
     }
 ));
 
+
+//Finding the active ban
+function findBan(user){
+    for (let ban of user.bans){
+        if (ban.ban_active===true){
+            return ban
+        }
+    }
+}
+
+
+//Verifying user validity
 function verifyUser(user) {
+    ////Checking if the account is private and old enough
     const timeCreated = user.timecreated;
     const currentTime = Math.round((new Date()).getTime() / 1000);
     const difference = currentTime - timeCreated;
     if(timeCreated === undefined){
         console.log("This account is private");
-        return false
+        return true
     }
-    if( difference < 31556952)
+    if( difference < -31556952)
     {
         console.log("This account is too recent");
-        return  false
+        return true
     }
+
+    ////Using steamcalculator to check the value of the account
     request('https://dog.steamcalculator.com/v1/id/'+ user.steamid +'/apps', { json: true }, (err, res) => {
         if (err) { return console.log(err); }
         const accountValue = res.body.total_value.amount/100;
-        if (accountValue < 20) {
+        if (accountValue < -20) {
         console.log("This account is not valuable enough");
-        return false
+        return true
         }});
         console.log("This account is valid");
-        return true
+        return false
 }
 
+//Registering users with valid accounts
 function registerNewUser(user) {
-    const today = new Date(0);
+    ////Creating user account
+    const today = new Date();
     const newUser = new User ({
         steamid : user.steamid,
         name : user.personaname,
-        joined : today.setUTCSeconds(user.timecreated),
+        joined : today,
+        timecreated: user.timecreated,
         thumbnail: user.avatarfull,
         current_strikes: 0,
-        banned: false,
-        blacklisted: false,
-        permanent_ban: false,
+        banned: false
     });
+
+    ////Saving new user
     newUser.save().then(function () {
         console.log("User successfully registered");
         createToken(user.steamid);
     });
 }
 
-function blacklistNewUser(user){
-    today = new Date(0);
+
+//Registering and banning user with non-valid accounts
+function banNewUser(user){
+    ////Creating user account
+    const today = new Date();
     const newUser = new User ({
         steamid : user.steamid,
         name : user.personaname,
-        joined : today.setUTCSeconds(user.timecreated),
+        joined : today,
+        timecreated: user.timecreated,
         thumbnail: user.avatarfull,
         current_strikes: 0,
-        banned: false,
-        blacklisted:true,
-        permanent_ban: false,
+        banned: true
     });
+
+    ////Creating a ban register
+    const newBan = newUser.bans.push({
+        ban_start: today,
+        ban_type: "B01",
+        ban_doc: "B01_1",
+        ban_active: true
+    });
+
+    ////Saving new user
     newUser.save().then(function () {
-        console.log("User successfully registered and blacklisted")
+        console.log("User successfully registered and banned")
     });
 }
 
