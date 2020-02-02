@@ -63,11 +63,11 @@ class SteamJackpot(mongoengine.Document):
 	##Jackpot class and associated documentation
 	jackpot_class = mongoengine.StringField(required=True)
 	jackpot_title = mongoengine.StringField(required=True)
-	jackpot_doc_intro = mongoengine.FileField(required=True)
-	jackpot_doc_participate = mongoengine.FileField(required=True)
-	jackpot_doc_score = mongoengine.FileField(required=True)
-	jackpot_doc_rights = mongoengine.FileField(required=True)
-	jackpot_doc_kick = mongoengine.FileField(required=True)
+	jackpot_doc_intro = mongoengine.StringField(required=True)
+	jackpot_doc_participate = mongoengine.StringField(required=True)
+	jackpot_doc_score = mongoengine.StringField(required=True)
+	jackpot_doc_rights = mongoengine.StringField(required=True)
+	jackpot_doc_kick = mongoengine.StringField(required=True)
 	
 	##Jackpot timeperiod
 	start = mongoengine.DateTimeField(required=True)

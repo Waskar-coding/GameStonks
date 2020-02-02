@@ -50,3 +50,11 @@ class SteamEvent(mongoengine.Document):
 
 	##Event data
 	event_dict = mongoengine.DictField()
+
+	meta={
+			'db_alias': 'SteamDB',
+			'collection':'steamjevents',
+			'indexes':[
+				'event_id'
+			]
+	}
