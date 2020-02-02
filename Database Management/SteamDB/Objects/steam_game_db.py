@@ -235,9 +235,8 @@ class SteamGame(mongoengine.Document):
 
 	##Auto Assign Score
 	def auto_assign_score(self):
-		dt=datetime.timedelta(datetime.datetime.now()-self.release_date).days
 		n=len(self.monitored)
-		self.score=1/(dt**2*n+1)*100
+		self.score=1/(n**0.25+1)*100
 
 
 	##Manually Assign Score

@@ -17,16 +17,75 @@ import mongoengine
 
 
 #Jackpot class
-class Jackpot(mongoengine.Document):
+class SteamJackpot(mongoengine.Document):
 	##Documentation
 	"""
+	class SteamJackpot(mongoengine.Document):
+	 |	Inherits from mongoengine.Document. Describes a jackpot.
+	 |
+	 |	Attributes
+	 |	----------
+	 |	jackpot_id (str):
+	 |		Jackpot identification
+	 |
+	 |	jackpot_class (str):
+	 |		Type of jackpot. Depending on the type different
+	 |		features and documentation might appear.
+	 |
+	 |	jackpot_doc (str):
+	 |		Name of the document that contains the rules associated
+	 |		with the jackpot.
+	 |
+	 |	jackpot_start (datetime.datetime):
+	 |		Starting date.
+	 |
+	 |	jackpot_end (datetime.datetime):
+	 |		Ending date.
+	 |
+	 |	total_value (float):
+	 |		Monetary value ($) associated with the jackpot.
+	 |
+	 |	users (dict):
+	 |		Dictionary containing all the user and their state
+	 |		within the jackpot.
+	 |
+	 |	winners (list):
+	 |		All designated winners and their associate prize ids.
+	 |
+	 |	featured (dict):
+	 |		Additional information about the jackpot (featured games,
+	 |		for example).
 	"""
 
-	##
+	##Jackpot id
 	jackpot_id = mongoengine.StringField(required=True)
+	
+	##Jackpot class and associated documentation
 	jackpot_class = mongoengine.StringField(required=True)
+	jackpot_title = mongoengine.StringField(required=True)
+	jackpot_doc_intro = mongoengine.FileField(required=True)
+	jackpot_doc_participate = mongoengine.FileField(required=True)
+	jackpot_doc_score = mongoengine.FileField(required=True)
+	jackpot_doc_rights = mongoengine.FileField(required=True)
+	jackpot_doc_kick = mongoengine.FileField(required=True)
+	
+	##Jackpot timeperiod
 	start = mongoengine.DateTimeField(required=True)
 	end = mongoengine.DateTimeField(required=True)
+	
+	##Jackpot participants and winners
 	total_value = mongoengine.FloatField(required=True)
-	users = mongoengine.ListField(required=True)
-	prize_ids = mongoengine.ListField(required=True)
+	users = mongoengine.DictField(required=True)
+	winners = mongoengine.DictField(required=True)
+
+	##Additional information
+	featured = mongoengine.DictField()
+
+	##Class metadata
+	meta={
+			'db_alias': 'SteamDB',
+			'collection':'steamjackpots',
+			'indexes':[
+				'jackpot_id'
+			]
+	}
