@@ -1,34 +1,35 @@
 #Description
 """
 Compares all games from standby.csv and the games in SteamDB with
-priority = True and separates them in three groups.
+an active current_state and separates them in three groups.
 
 
 The new standby games
 -------------
 The games that are present in standby.csv but do not exist in
-the steamgaemes collection from SteamDB or their prority is set
-to false. For this games the following actions will be taken.
+the steamgaemes collection from SteamDB or their current_state 
+is set to inactive (i). For this games the following actions will 
+be taken.
 
 1. Check if the game exist in SteamDB, if so jump to 4rt step.
 2. Create a SteamGame assigning the basic info from steampps.
 3. Download a the thumbnail and assign it to the game.
-4. Set the priority in the SteamGame object to true.
+4. Set the current_state in the SteamGame object to active.
 5. Save the SteamGame object.
 
 
 The stagnant games
 ------------------
-The games that no longer appear in standby.csv but their priority
-field keeps assigned to true. With this type of objects the course
-of action is simple. Their priority field is set to false, and
-they are again saved into SteamDB.
+The games that no longer appear in standby.csv but their 
+current_state field keeps assigned to active. With this type 
+of objects the course of action is simple. Their current_state 
+field is set to inactive, and they are again saved into SteamDB.
 
 
 The old standby games
 ---------------------
-The games that appear in standby.csv and have their priority set
-to true. This games only need to have their score field refreshed.
+The games that appear in standby.csv and have their current_state set
+to inactive. This games only need to have their score field refreshed.
 """
 __author__ = 'Óscar Gómez Nonnato'
 __date__ = '26/01/2020'
@@ -97,11 +98,12 @@ def getStandbyDB() -> list:
 	##Documentation
 	"""
 	Retrives all Steamgame objects from steamgames collection
-	with priority set to true.
+	with an active current_state.
 	"""
 
 	#Retriving games with priority set to true from SteamDB
-	game_list = gamedb.SteamGame.objects(priority=True).all()
+	STATES = ['al','as','aw','a']
+	game_list = gamedb.SteamGame.objects(current_state__in=STATES).all()
 	game_list = [game.appid for game in game_list]
 
 	return game_list
@@ -186,7 +188,7 @@ def assignNewOut(appid: str) -> None:
 	4.	Downloading the thumbnail for the game. Using the main
 		function from steam_header.
 
-	5.	Setting the SteamGame's priority field to True.
+	5.	Setting the SteamGame's current state field to al.
 
 	6.	Saving the SteamGame object.
 
@@ -210,8 +212,8 @@ def assignNewOut(appid: str) -> None:
 	###Downloading and assigning thumbnail
 	steamgame.image = steam_header.main(appid)
 	
-	###Changing priority to true
-	steamgame.priority = True
+	###Changing current state to active launch
+	steamgame.current_state = 'a'
 
 	steamgame.save()
 
@@ -223,7 +225,8 @@ def assignNewIn(appid: str) -> None:
 	"""
 	Assigns information to new standby games (see this
 	module's description) which are not found in SteamDB.
-	Finds the game in SteamDB and changes its priority to True.
+	Finds the game in SteamDB and changes its current_state 
+	to active.
 
 	Arguments
 	---------
@@ -233,7 +236,7 @@ def assignNewIn(appid: str) -> None:
 
 	###Retrieving game from db and changing priority
 	steamgame = gamedb.SteamGame.objects(appid=appid).first()
-	steamgame.priority = True
+	steamgame.current_state='al'
 	steamgame.save()
 
 
@@ -255,8 +258,8 @@ def assignStagnant(appid: str) -> None:
 	###Retrieving game
 	steamgame = gamedb.SteamGame.objects(appid=appid).first()
 
-	##Changing priority
-	steamgame.priority = False
+	##Changing current state
+	steamgame.current_state = 'i'
 
 	steamgame.save()
 
@@ -281,9 +284,7 @@ def assignOld(appid: str) -> None:
 
 	###Refreshing score
 	N = len(steamgame.monitored)
-	T = datetime.datetime.now() - steamgame.release
-	T = T.days
-	steamgame.score = ((T*N)**(1/3)+1)**(-1)
+	steamgame.score = (N**(1/4)+1)**(-1)
 
 	steamgame.save()
 

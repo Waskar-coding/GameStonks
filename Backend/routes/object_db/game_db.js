@@ -5,7 +5,7 @@ const game = mongoose.Schema({
     release: Date,
     score: String,
     image: String,
-    priority: Boolean
+    current_state: String
 });
 const Game = mongoose.model('SteamGame', game);
 module.exports = Game;

@@ -32,9 +32,9 @@ router.get('/GetGameData/:appid',function(req, res){
 
 
 //Getting priority games data
-router.get('/GetPrioritary', function(req, res){
-    const prioritary = [];
-    Game.find({priority:true},function (err,games) {
+router.get('/GetLaunched', function(req, res){
+    const launched = [];
+    Game.find({current_state:"al"},function (err,games) {
         if(!err){
             for (let i=0; i<games.length; i++) {
                 const gameJSON = {
@@ -46,9 +46,9 @@ router.get('/GetPrioritary', function(req, res){
                         thumbnail: games[i].image.split("'")[1]
                     }
                 };
-                prioritary.push(gameJSON);
+                launched.push(gameJSON);
             }
-            res.send(prioritary)
+            res.send(launched)
         }
     })
 });
