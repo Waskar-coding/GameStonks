@@ -8,9 +8,9 @@ const passport = require('passport');
 //   the user to steamcommunity.com.  After authenticating, Steam will redirect the
 //   user back to this application at /auth/steam/return
 router.get('/auth',
-    passport.authenticate('steam', { failureRedirect: '/' }),
+    passport.authenticate('steam', { failureRedirect: '/wrong' }),
     function(req, res) {
-        res.redirect('/');
+        res.redirect('/account');
     });
 
 // GET /auth/steam/return
@@ -24,9 +24,17 @@ router.get('/auth/return',
         req.url = req.originalUrl;
         next();
     },
-    passport.authenticate('steam', { failureRedirect: '/' }),
+    passport.authenticate('steam', { failureRedirect: '/wrong' }),
     function(req, res) {
-        res.redirect('/');
+        res.redirect('/account');
     });
 
-module.exports = router;
+function ensureAuthenticated(req, res, next) {
+    if (req.isAuthenticated()) { return next(); }
+    res.redirect('/');
+}
+
+module.exports = {
+    router,
+    ensureAuthenticated
+};

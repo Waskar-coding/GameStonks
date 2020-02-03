@@ -57,17 +57,23 @@ app.use(passport.initialize());
 app.use(passport.session());
 app.use(express.static(__dirname + '/../../public'));
 
-app.get('/', function(req, res){
-    res.render('index', { user: req.user });
+app.get('/wrong', function(req, res){
+    res. redirect('/games/getprioritary');
+    //res.render('index', { user: req.user });
 });
 
-app.get('/account', ensureAuthenticated, function(req, res){
-    res.render('account', { user: req.user });
+app.get('/account', steamAuth.ensureAuthenticated, function(req, res){
+    res. redirect('/users/finduser/'+ req.user.user.name);
+    //res.render('index', { user: req.user });
 });
 
 app.get('/logout', function(req, res){
     req.logout();
     res.redirect('/');
+});
+
+app.get('/', function (req, res) {
+    res.send("Bruh")
 });
 
 passport.serializeUser(function(user, done) {
@@ -84,7 +90,7 @@ passport.use(new SteamStrategy({
         realm: 'http://localhost/',
         apiKey: '24E7A4CB6C2041D4C08EC325A5F4FFC3'
     },
-    function(identifier, profile) {
+    function(identifier, profile, done) {
         // asynchronous verification, for effect...
         process.nextTick(function () {
 
@@ -98,10 +104,10 @@ passport.use(new SteamStrategy({
                 if (user === null)
                 {
                     if(!verifyUser(profile._json)) {
-                        registerNewUser(profile._json)
+                        return done(null,({user: registerNewUser(profile._json),token:createToken(profile._json.steamid)}));
                     }
                     else {
-                        banNewUser(profile._json)
+                        return done(null,({user: banNewUser(profile._json)}));
                     }
                 }
 
@@ -116,13 +122,14 @@ passport.use(new SteamStrategy({
                     user.banned = dictBan[currentBan.ban_type];
                     currentBan.ban_active = dictBan[currentBan.ban_type];
                     currentBan.ban_end = today;
-                    user.save().then(function () {
+                    user.save().then(function (user) {
                         if (!currentBan.ban_active){
                             console.log("User successfully unbanned");
-                            createToken(user.steamid);
+                            return done(null, ({user: user,token:createToken(user.steamid) }));
                         }
                         else {
-                            console.log("User is still banned")
+                            console.log("User is still banned");
+                            return done(null, ({user: user}));
                         }
                     });
                 }
@@ -130,13 +137,13 @@ passport.use(new SteamStrategy({
                 ////Regular users
                 else {
                     console.log("Valid account");
-                    createToken(user.steamid);
+
+                    return done(null, ({user: user,token:createToken(user.steamid) }));
                 }
             });
         });
     }
 ));
-
 
 //Finding the active ban
 function findBan(user){
@@ -146,8 +153,6 @@ function findBan(user){
         }
     }
 }
-
-
 //Verifying user validity
 function verifyUser(user) {
     ////Checking if the account is private and old enough
@@ -163,7 +168,6 @@ function verifyUser(user) {
         console.log("This account is too recent");
         return true
     }
-
     ////Using steamcalculator to check the value of the account
     request('https://dog.steamcalculator.com/v1/id/'+ user.steamid +'/apps', { json: true }, (err, res) => {
         if (err) { return console.log(err); }
@@ -175,7 +179,6 @@ function verifyUser(user) {
         console.log("This account is valid");
         return false
 }
-
 //Registering users with valid accounts
 function registerNewUser(user) {
     ////Creating user account
@@ -189,15 +192,13 @@ function registerNewUser(user) {
         current_strikes: 0,
         banned: false
     });
-
     ////Saving new user
-    newUser.save().then(function () {
+    newUser.save().then(function (user) {
         console.log("User successfully registered");
-        createToken(user.steamid);
+        return user;
     });
+
 }
-
-
 //Registering and banning user with non-valid accounts
 function banNewUser(user){
     ////Creating user account
@@ -211,26 +212,19 @@ function banNewUser(user){
         current_strikes: 0,
         banned: true
     });
-
     ////Creating a ban register
-    const newBan = newUser.bans.push({
+    newUser.bans.push({
         ban_start: today,
         ban_type: "B01",
         ban_doc: "B01_1",
         ban_active: true
     });
-
     ////Saving new user
-    newUser.save().then(function () {
-        console.log("User successfully registered and banned")
+    newUser.save().then(function (user) {
+        console.log("User successfully registered and banned");
+        return user;
     });
 }
-
-function ensureAuthenticated(req, res, next) {
-    if (req.isAuthenticated()) { return next(); }
-    res.redirect('/');
-}
-
 function createToken (steamid) {
     // create a token
     return jwt.sign({id: steamid}, config.secret, {
@@ -238,7 +232,7 @@ function createToken (steamid) {
     })
 }
 
-//Game API
+////Game API
 app.use("/games",gameGet);
 
 //User API
@@ -253,6 +247,7 @@ app.use('/jackpots',jackGet);
 //Event API
 app.use('/events',eventGet);
 
+app.use('/steam_auth', steamAuth.router);
 app.listen(80, function () {
     console.log('App listening on port 80!!')
 });
