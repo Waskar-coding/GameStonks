@@ -278,6 +278,7 @@ class JackpotRegister(mongoengine.EmbeddedDocument):
 	"""
 
 	##Jackpot data
+	id_ = mongoengine.StringField(required=True)
 	jackpot_id = mongoengine.StringField(required=True)
 	date = mongoengine.DateTimeField(requied=True)
 	score = mongoengine.FloatField(default=0)

@@ -57,8 +57,9 @@ class SteamJackpot(mongoengine.Document):
 	 |		for example).
 	"""
 
-	##Jackpot id
+	##Jackpot id and entity
 	jackpot_id = mongoengine.StringField(required=True)
+	entity = mongoengine.StringField(default='GameStonks')
 	
 	##Jackpot class and associated documentation
 	jackpot_class = mongoengine.StringField(required=True)
@@ -72,11 +73,12 @@ class SteamJackpot(mongoengine.Document):
 	##Jackpot timeperiod
 	start = mongoengine.DateTimeField(required=True)
 	end = mongoengine.DateTimeField(required=True)
+	active = mongoengine.BooleanField(required=True)
 	
 	##Jackpot participants and winners
 	total_value = mongoengine.FloatField(required=True)
-	users = mongoengine.DictField(required=True)
-	winners = mongoengine.DictField(required=True)
+	users = mongoengine.DictField(default={})
+	winners = mongoengine.ListField(default=[])
 
 	##Additional information
 	featured = mongoengine.DictField()

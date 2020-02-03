@@ -13,6 +13,8 @@ const jwt = require('jsonwebtoken');
 ////Local
 const gameGet = require('./getter_db/game_get');
 const userGet = require('./getter_db/user_get');
+const jackGet = require('./getter_db/jackpot_get');
+const eventGet = require('./getter_db/event_get');
 const steamAuth = require('./steam_auth/auth');
 const config = require('./local_auth/config');
 const User = require('./object_db/user_db');
@@ -236,10 +238,21 @@ function createToken (steamid) {
     })
 }
 
-////Game API
+//Game API
 app.use("/games",gameGet);
+
+//User API
 app.use("/users",userGet);
+
+//Auth API
 app.use('/steam_auth', steamAuth);
+
+//Jackpot API
+app.use('/jackpots',jackGet);
+
+//Event API
+app.use('/events',eventGet);
+
 app.listen(80, function () {
     console.log('App listening on port 80!!')
 });

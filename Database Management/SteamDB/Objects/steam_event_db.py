@@ -42,11 +42,14 @@ class SteamEvent(mongoengine.Document):
 
 	##Identification and instructions
 	event_id = mongoengine.StringField(required=True)
+	event_title = mongoengine.StringField(required=True)
+	event_entity = mongoengine.StringField(default='GameStonks')
 	event_doc = mongoengine.FileField(requried=True)
 
 	##Relevants dates
 	event_start = mongoengine.DateTimeFiled(required=True)
-	event_end = mongoengine.DateTimeFiled()
+	event_end = mongoengine.DateTimeFiled(required=True)
+	active = mongoengine.BooleanField(required=True)
 
 	##Event data
 	event_dict = mongoengine.DictField()
