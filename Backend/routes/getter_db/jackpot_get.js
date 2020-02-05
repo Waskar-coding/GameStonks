@@ -3,6 +3,7 @@
 const express = require('express');
 const router = express.Router();
 const path = require('path');
+const fs  = require('fs');
 
 ////Local
 const Jackpot = require('../object_db/jackpot_db.js');
@@ -13,42 +14,27 @@ const localAuth = require('../local_auth/verify');
 
 
 
-//Getting jackpot list
+
+
+//Current jackpots
+////Current jackpots: main
 router.get('/current',steamAuth.ensureAuthenticated, localAuth,function(req,res){
     ////Returning current jackpots
-    const active = [];
-    const participate = [];
     const registers = [];
-    const current = Jackpot.find({active: true},function(err,jackpots){
+    Jackpot.find({active: true},function(err,jackpots){
        if(!err){
-           for(let jackpot of jackpots){
-               const jackpotJSON = {
-                   jackpot: {
-                       jackpot_id: jackpot.jackpot_id,
-                       jackpot_title: jackpot.jackpot_title,
-                       entity: jackpot.entity,
-                       jackpot_class: jackpot.jackpot_class,
-                       start: jackpot.start,
-                       end: jackpot.end,
-                       total_value: jackpot.total_value
-                   }
-               };
-               active.push(jackpotJSON);
-               if (jackpot.users.includes(req.user.user.steamid)){
-                   participate.push(jackpot.jackpot_id);
-               }
-           }
+           const userJackpots = getJackpots(req,jackpots);
 
            ////Checking user participation
            for (register of req.user.user.jackpots){
-               if (participate.includes(register.jackpot_id)){
+               if (userJackpots[1].includes(register.jackpot_id)){
                    registers.push(register);
                }
            }
 
            ////Creating response json
            const userjackpotsJSON = {
-               available:  active,
+               available:  userJackpots[0],
                registers: registers
            };
            res.send(userjackpotsJSON);
@@ -57,58 +43,51 @@ router.get('/current',steamAuth.ensureAuthenticated, localAuth,function(req,res)
 });
 
 
+////Current jackpots: Active jackpots & user jackpots
+function getJackpots(req,jackpots){
+    const active = [];
+    const participate = [];
+    for(let jackpot of jackpots){
+        const jackpotJSON = {
+            jackpot: {
+                jackpot_id: jackpot.jackpot_id,
+                jackpot_title: jackpot.jackpot_title,
+                entity: jackpot.entity,
+                jackpot_class: jackpot.jackpot_class,
+                start: jackpot.start,
+                end: jackpot.end,
+                total_value: jackpot.total_value
+            }
+        };
+        active.push(jackpotJSON);
+        if (jackpot.users.includes(req.user.user.steamid)){
+            participate.push(jackpot.jackpot_id);
+        }
+    }
+    return [active,participate]
+}
 
-//Getting a jackpot
+
+
+//Get a Jackpot
+////Get a Jackpot: main
 router.get('/:jackpot_id',steamAuth.ensureAuthenticated, localAuth,function(req,res){
     ////Retrieving jackpot information
     Jackpot.findOne({jackpot_id: req.params.jackpot_id},function(err,jackpot){
-        if (err){
-            console.log('error');
-            res.redirect('./current');
-        }
-        else if(jackpot === null){
-            console.log('error');
-            res.redirect('./current');
-        }
-        else if(jackpot.active ===false){
+        if ((err) || (jackpot === null) || (jackpot.active === false)){
             console.log('error');
             res.redirect('./current');
         }
         else{
             ////Retrieving jackpot features
             loadFeatures(jackpot.jackpot_class,function(features){
-                ////Consulting player registers
-                let player = 'NaN';
-                for (register of req.user.user.jackpots){
-                    if (register.jackpot_id === jackpot.jackpot_id){
-                        player = register;
-                        break;
-                    }
-                }
-
-                ////Creating a new register if necessary
-                if (player === 'NaN'){
-                    player = {
-                        jackpot_id: jackpot.jackpot_id,
-                        date: today,
-                        score: 0,
-                        multipliers: [],
-                        recommendations: 0,
-                        status: 'i'
-                    };
-                    req.user.user.jackpots.push(player);
-                    User.findOne({steamid: req.user.user.steamid},function(err,user){
-                        const today = new Date();
-                        user.jackpots.push(player);
-                        user.save()
-                    })
-                }
 
                 ////Response JSON
                 const userjackpotJSON = {
                     jackpot: jackpot,
+                    documentation: readDocs(jackpot),
                     features: features,
-                    register: player
+                    register: getRegister(req,jackpot)
                 };
                 res.send(userjackpotJSON);
             });
@@ -117,8 +96,7 @@ router.get('/:jackpot_id',steamAuth.ensureAuthenticated, localAuth,function(req,
 });
 
 
-
-//Features first class function
+////Get a Jackpot: Features first class function
 function loadFeatures(jclass,callback){
     const jfunctions = {
         'J01': loadJ01
@@ -129,8 +107,7 @@ function loadFeatures(jclass,callback){
 }
 
 
-
-//Class J01 loading function
+////Get a Jackpot: Class J01 loading function
 function loadJ01(callback){
     ////Retrieving lauched g
     const launched = [];
@@ -148,6 +125,61 @@ function loadJ01(callback){
             callback(launched);
         }
     });
+}
+
+
+////Get a Jackpot: Finding user jackpot register
+function findRegister(req,jackpot){
+    ////Consulting player registers
+    let player = 'NaN';
+    for (register of req.user.user.jackpots){
+        if (register.jackpot_id === jackpot.jackpot_id){
+            player = register;
+            break;
+        }
+    }
+    return player
+}
+
+
+////Get a Jackpot: Creating new jackpot register if no previous register is found
+function newRegister(req,player,jackpot){
+    if (player === 'NaN'){
+        player = {
+            jackpot_id: jackpot.jackpot_id,
+            date: new Date(),
+            score: 0,
+            multipliers: [],
+            recommendations: 0,
+            status: 'i'
+        };
+        req.user.user.jackpots.push(player);
+        User.findOne({steamid: req.user.user.steamid},function(err,user){
+            user.jackpots.push(player);
+            user.save();
+            return player
+        })
+    }
+    else { return player }
+}
+
+
+////Get a Jackpot: Getting jackpot register
+function getRegister(req,jackpot){
+    return newRegister(req,findRegister(req,jackpot),jackpot)
+}
+
+
+////Get a Jackpot: Read jackpot docs
+function readDocs(jackpot){
+    const jdocsJSON = {
+        intro: fs.readFileSync( path.join(__dirname, '/Jackpot files/', jackpot.jackpot_doc_intro)).toString(),
+        participate: fs.readFileSync(path.join(__dirname, '/Jackpot files/', jackpot.jackpot_doc_participate)).toString(),
+        score: fs.readFileSync(path.join(__dirname, '/Jackpot files/', jackpot.jackpot_doc_score)).toString(),
+        rights: fs.readFileSync( path.join(__dirname, '/Jackpot files/', jackpot.jackpot_doc_rights)).toString(),
+        kick: fs.readFileSync(path.join(__dirname, '/Jackpot files/',jackpot.jackpot_doc_kick)).toString()
+    };
+    return jdocsJSON;
 }
 
 
