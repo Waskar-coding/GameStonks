@@ -2624,7 +2624,7 @@
     },
     "1196680": {
       "type": "game",
-      "name": "Swiper",
+      "name": "Swiper Begins",
       "required_age": 0,
       "is_free": true,
       "dlc": "NaN",
@@ -2652,7 +2652,7 @@
         "Memory": "2 GB RAM",
         "Graphics": "DX9 (shader model 3.0)",
         "DirectX": "Version 9.0",
-        "Storage": "250 MB available space",
+        "Storage": "400 MB available space",
         "Sound Card": "Any",
         "Needs 64-bit": false
       },
@@ -2662,7 +2662,7 @@
         "Memory": "4 GB RAM",
         "Graphics": "DX11 with feature level 9.3 capabilities",
         "DirectX": "Version 11",
-        "Storage": "250 MB available space",
+        "Storage": "400 MB available space",
         "Sound Card": "Any",
         "Needs 64-bit": false
       },
@@ -3860,6 +3860,7 @@
       "audio_support": [],
       "pc_requirements_minreqs": {
         "OS": "Windows 10",
+        "Processor": "SSE2 instruction set support",
         "Memory": "1 GB RAM",
         "Storage": "200 MB available space",
         "Needs 64-bit": false
@@ -3874,20 +3875,26 @@
         "Needs 64-bit": false
       },
       "linux_requirements_minreqs": {
+        "OS": "Ubuntu 18.04+",
+        "Processor": "SSE2 instruction set support",
+        "Memory": "1 GB RAM",
+        "Storage": "200 MB available space",
         "Needs 64-bit": false
       },
       "linux_requirements_recreqs": {
         "Needs 64-bit": false
       },
       "platforms": [
-        "windows"
+        "windows",
+        "linux"
       ],
       "critic_score": "NaN",
       "critic_source": "NaN",
       "categories": [
         "2",
         "22",
-        "28"
+        "28",
+        "23"
       ],
       "genres": [
         "23"
@@ -4117,7 +4124,9 @@
       "name": "Ballistic Craft",
       "required_age": 0,
       "is_free": false,
-      "dlc": "NaN",
+      "dlc": [
+        1232320
+      ],
       "website": "https://www.gametomo.co.jp/ballistic-craft-en",
       "developers": [
         "Palladium Soft"
@@ -4182,9 +4191,7 @@
         "37",
         "24",
         "22",
-        "30",
-        "18",
-        "44"
+        "30"
       ],
       "genres": [
         "1",
@@ -4477,10 +4484,10 @@
       "dlc": "NaN",
       "website": null,
       "developers": [
-        "PT"
+        "CHILL & PLAY"
       ],
       "publishers": [
-        "PT"
+        "CHILL & PLAY"
       ],
       "packages": "NaN",
       "controller_support": "NaN",
@@ -4907,7 +4914,7 @@
         "Simplified Chinese"
       ],
       "pc_requirements_minreqs": {
-        "Storage": "104 MB available space",
+        "Storage": "115 MB available space",
         "Needs 64-bit": false
       },
       "pc_requirements_recreqs": {
@@ -5105,7 +5112,7 @@
         "Glowfish Interactive"
       ],
       "publishers": [
-        "Cronos Interactive"
+        "Glowfish Interactive"
       ],
       "packages": "NaN",
       "controller_support": "full",
@@ -5241,6 +5248,7 @@
         "1",
         "25",
         "4",
+        "23",
         "28"
       ]
     },
@@ -5403,46 +5411,57 @@
       ],
       "audio_support": [],
       "pc_requirements_minreqs": {
+        "Needs 64-bit": true,
         "OS": "Windows 7",
         "Processor": "Dual Core 2.0GHZ",
         "Memory": "2 GB RAM",
         "Graphics": "Intel HD Graphics 5000",
-        "Storage": "500 MB available space",
-        "Needs 64-bit": false
+        "Storage": "500 MB available space"
       },
       "pc_requirements_recreqs": {
+        "Needs 64-bit": true,
         "OS": "Windows 10",
         "Processor": "Quad Core 2.6GHZ",
         "Memory": "4 GB RAM",
         "Graphics": "Intel Iris Plus Graphics 655 / Dedicated Graphics Card",
-        "Storage": "1000 MB available space",
-        "Needs 64-bit": false
+        "Storage": "1000 MB available space"
       },
       "mac_requirements_minreqs": {
+        "Needs 64-bit": true,
         "OS": "10.10.5",
         "Processor": "Dual Core 2.0GHZ",
         "Memory": "2 GB RAM",
         "Graphics": "Intel HD Graphics 5000",
-        "Storage": "500 MB available space",
-        "Needs 64-bit": false
+        "Storage": "500 MB available space"
       },
       "mac_requirements_recreqs": {
+        "Needs 64-bit": true,
         "OS": "10.14.5 or above",
         "Processor": "Quad Core 2.6GHZ",
         "Memory": "4 GB RAM",
         "Graphics": "Intel Iris Plus Graphics 655 / Dedicated Graphics Card",
-        "Storage": "1000 MB available space",
-        "Needs 64-bit": false
+        "Storage": "1000 MB available space"
       },
       "linux_requirements_minreqs": {
-        "Needs 64-bit": false
+        "Needs 64-bit": true,
+        "OS": "Ubuntu 18.04 (64bit)",
+        "Processor": "Dual Core 2.0GHZ",
+        "Memory": "2 GB RAM",
+        "Graphics": "Intel HD Graphics 5000",
+        "Storage": "500 MB available space"
       },
       "linux_requirements_recreqs": {
-        "Needs 64-bit": false
+        "Needs 64-bit": true,
+        "OS": "Ubuntu 18.04 (64bit)",
+        "Processor": "Quad Core 2.6GHZ",
+        "Memory": "4 GB RAM",
+        "Graphics": "Intel Iris Plus Graphics 655 / Dedicated Graphics Card",
+        "Storage": "1000 MB available space"
       },
       "platforms": [
         "windows",
-        "mac"
+        "mac",
+        "linux"
       ],
       "critic_score": "NaN",
       "critic_source": "NaN",
@@ -5513,7 +5532,9 @@
       "critic_score": "NaN",
       "critic_source": "NaN",
       "categories": [
-        "2"
+        "2",
+        "22",
+        "23"
       ],
       "genres": [
         "1",
@@ -5876,7 +5897,8 @@
       "critic_score": "NaN",
       "critic_source": "NaN",
       "categories": [
-        "2"
+        "2",
+        "22"
       ],
       "genres": [
         "1",
@@ -6034,66 +6056,10 @@
       ],
       "release_date": "Soon",
       "text_support": [
-        "English",
-        "Polish",
-        "Russian",
-        "Simplified Chinese",
-        "Ukrainian",
-        "French",
-        "Italian",
-        "German",
-        "Spanish - Spain",
-        "Arabic",
-        "Bulgarian",
-        "Czech",
-        "Danish",
-        "Dutch",
-        "Finnish",
-        "Greek",
-        "Hungarian",
-        "Japanese",
-        "Korean",
-        "Norwegian",
-        "Portuguese",
-        "Portuguese - Brazil",
-        "Romanian",
-        "Spanish - Latin America",
-        "Swedish",
-        "Thai",
-        "Traditional Chinese",
-        "Turkish",
-        "Vietnamese"
+        "English"
       ],
       "audio_support": [
-        "English",
-        "Polish",
-        "Russian",
-        "Simplified Chinese",
-        "Ukrainian",
-        "French",
-        "Italian",
-        "German",
-        "Spanish - Spain",
-        "Arabic",
-        "Bulgarian",
-        "Czech",
-        "Danish",
-        "Dutch",
-        "Finnish",
-        "Greek",
-        "Hungarian",
-        "Japanese",
-        "Korean",
-        "Norwegian",
-        "Portuguese",
-        "Portuguese - Brazil",
-        "Romanian",
-        "Spanish - Latin America",
-        "Swedish",
-        "Thai",
-        "Traditional Chinese",
-        "Turkish",
-        "Vietnamese"
+        "English"
       ],
       "pc_requirements_minreqs": {
         "OS": "OS 64-bit Windows 7",
@@ -6145,7 +6111,6 @@
         "2",
         "1",
         "49",
-        "36",
         "37",
         "24",
         "22",
@@ -6396,7 +6361,7 @@
         "Chaos Cute Soft"
       ],
       "packages": "NaN",
-      "controller_support": "full",
+      "controller_support": "NaN",
       "fullgame": "NaN",
       "demos": [
         "NaN"
@@ -6443,14 +6408,12 @@
       },
       "platforms": [
         "windows",
-        "mac",
-        "linux"
+        "mac"
       ],
       "critic_score": "NaN",
       "critic_source": "NaN",
       "categories": [
-        "2",
-        "28"
+        "2"
       ],
       "genres": [
         "25",
@@ -6520,10 +6483,11 @@
         "1",
         "9",
         "38",
-        "48"
+        "48",
+        "18"
       ],
       "genres": [
-        "25"
+        "1"
       ]
     },
     "1156300": {
@@ -7843,7 +7807,7 @@
         "Ravesta Games"
       ],
       "packages": "NaN",
-      "controller_support": "NaN",
+      "controller_support": "full",
       "fullgame": "NaN",
       "demos": [
         "NaN"
@@ -7889,10 +7853,8 @@
       "critic_source": "NaN",
       "categories": [
         "2",
-        "1",
-        "9",
-        "38",
-        "18"
+        "22",
+        "28"
       ],
       "genres": [
         "1",
@@ -8482,7 +8444,15 @@
       ],
       "release_date": "Soon",
       "text_support": [
-        "English"
+        "English",
+        "Spanish - Spain",
+        "French",
+        "German",
+        "Simplified Chinese",
+        "Traditional Chinese",
+        "Korean",
+        "Spanish - Latin America",
+        "Japanese"
       ],
       "audio_support": [],
       "pc_requirements_minreqs": {
@@ -8536,10 +8506,10 @@
       "dlc": "NaN",
       "website": null,
       "developers": [
-        "President Studio"
+        "Ultimate Games S.A."
       ],
       "publishers": [
-        "PlayWay S.A."
+        "Ultimate Games S.A."
       ],
       "packages": "NaN",
       "controller_support": "NaN",
@@ -8894,17 +8864,34 @@
         "German",
         "Spanish - Spain",
         "Arabic",
-        "Japanese"
+        "Japanese",
+        "Dutch",
+        "Korean",
+        "Portuguese",
+        "Simplified Chinese",
+        "Traditional Chinese",
+        "Turkish"
       ],
       "audio_support": [
         "English"
       ],
       "pc_requirements_minreqs": {
         "Needs 64-bit": true,
-        "OS": "Windows 7"
+        "OS": "Windows 7 64-bit",
+        "Processor": "Intel Core i3",
+        "Memory": "4 GB RAM",
+        "Graphics": "Intel HD Graphics 520",
+        "DirectX": "Version 11",
+        "Storage": "2 GB available space"
       },
       "pc_requirements_recreqs": {
-        "Needs 64-bit": true
+        "Needs 64-bit": true,
+        "OS": "Windows 10 64-bit",
+        "Processor": "Intel Core i5",
+        "Memory": "8 GB RAM",
+        "Graphics": "Intel HD Graphics  630",
+        "DirectX": "Version 11",
+        "Storage": "2 GB available space"
       },
       "mac_requirements_minreqs": {
         "Needs 64-bit": true
@@ -8925,7 +8912,8 @@
       "critic_source": "NaN",
       "categories": [
         "2",
-        "22"
+        "22",
+        "23"
       ],
       "genres": [
         "4",
@@ -9204,7 +9192,7 @@
       "required_age": 0,
       "is_free": false,
       "dlc": "NaN",
-      "website": "https://www.patreon.com/freedomsoftware",
+      "website": "https://freedomsoftware.co.za/games/",
       "developers": [
         "Freedom Software"
       ],
@@ -9256,8 +9244,7 @@
       "critic_score": "NaN",
       "critic_source": "NaN",
       "categories": [
-        "2",
-        "22"
+        "2"
       ],
       "genres": [
         "25",
@@ -11613,79 +11600,6 @@
         "3"
       ]
     },
-    "1204470": {
-      "type": "game",
-      "name": "Space Elite Force II",
-      "required_age": 0,
-      "is_free": false,
-      "dlc": "NaN",
-      "website": null,
-      "developers": [
-        "Moraes Studio"
-      ],
-      "publishers": [
-        "Moraes Studio"
-      ],
-      "packages": "NaN",
-      "controller_support": "full",
-      "fullgame": "NaN",
-      "demos": [
-        "NaN"
-      ],
-      "release_date": "Soon",
-      "text_support": [
-        "English",
-        "Portuguese - Brazil"
-      ],
-      "audio_support": [],
-      "pc_requirements_minreqs": {
-        "OS": "Windows 7/8/10",
-        "Processor": "DualCore 2.6 Ghz+",
-        "Memory": "4 GB RAM",
-        "DirectX": "Version 10",
-        "Storage": "300 MB available space",
-        "Additional Notes": "64-bits system",
-        "Needs 64-bit": false
-      },
-      "pc_requirements_recreqs": {
-        "Needs 64-bit": false
-      },
-      "mac_requirements_minreqs": {
-        "Needs 64-bit": false
-      },
-      "mac_requirements_recreqs": {
-        "Needs 64-bit": false
-      },
-      "linux_requirements_minreqs": {
-        "Needs 64-bit": false
-      },
-      "linux_requirements_recreqs": {
-        "Needs 64-bit": false
-      },
-      "platforms": [
-        "windows"
-      ],
-      "critic_score": "NaN",
-      "critic_source": "NaN",
-      "categories": [
-        "2",
-        "1",
-        "9",
-        "39",
-        "24",
-        "22",
-        "28",
-        "23",
-        "25",
-        "44"
-      ],
-      "genres": [
-        "1",
-        "25",
-        "4",
-        "23"
-      ]
-    },
     "1126120": {
       "type": "game",
       "name": "Lucd Enterprise AI Client",
@@ -12035,80 +11949,6 @@
         "4",
         "23",
         "28"
-      ]
-    },
-    "1131370": {
-      "type": "dlc",
-      "name": "Playable Character: Vast Shadows",
-      "required_age": 0,
-      "is_free": false,
-      "dlc": "NaN",
-      "website": null,
-      "developers": [
-        "ZaxtorGameS"
-      ],
-      "publishers": [],
-      "packages": "NaN",
-      "controller_support": "NaN",
-      "fullgame": "1109080",
-      "demos": [
-        "NaN"
-      ],
-      "release_date": "Soon",
-      "text_support": [
-        "English"
-      ],
-      "audio_support": [
-        "English"
-      ],
-      "pc_requirements_minreqs": {
-        "OS": "Windows 7 or higher",
-        "Processor": "1 Ghz CPU",
-        "Memory": "1 GB RAM",
-        "Graphics": "256 MB graphics card minimum",
-        "DirectX": "Version 11",
-        "Storage": "150 MB available space",
-        "Needs 64-bit": false
-      },
-      "pc_requirements_recreqs": {
-        "OS": "Windows 7 or higher",
-        "Processor": "Intel i5 or equivalent",
-        "Memory": "4 GB RAM",
-        "Graphics": "Nvidia GT 650 or AMD HD 6870 or above",
-        "DirectX": "Version 12",
-        "Storage": "150 MB available space",
-        "Needs 64-bit": false
-      },
-      "mac_requirements_minreqs": {
-        "Needs 64-bit": false
-      },
-      "mac_requirements_recreqs": {
-        "Needs 64-bit": false
-      },
-      "linux_requirements_minreqs": {
-        "Needs 64-bit": false
-      },
-      "linux_requirements_recreqs": {
-        "Needs 64-bit": false
-      },
-      "platforms": [
-        "windows"
-      ],
-      "critic_score": "NaN",
-      "critic_source": "NaN",
-      "categories": [
-        "2",
-        "1",
-        "49",
-        "37",
-        "24",
-        "21",
-        "18"
-      ],
-      "genres": [
-        "1",
-        "4",
-        "23"
       ]
     },
     "1211830": {
@@ -12658,66 +12498,6 @@
         "29"
       ]
     },
-    "1158410": {
-      "type": "game",
-      "name": "Mole Game",
-      "required_age": 0,
-      "is_free": false,
-      "dlc": "NaN",
-      "website": null,
-      "developers": [
-        "Joel D."
-      ],
-      "publishers": [
-        "..."
-      ],
-      "packages": "NaN",
-      "controller_support": "NaN",
-      "fullgame": "NaN",
-      "demos": [
-        "NaN"
-      ],
-      "release_date": "Soon",
-      "text_support": [
-        "English"
-      ],
-      "audio_support": [],
-      "pc_requirements_minreqs": {
-        "OS": "Microsoft\u00ae Windows Server 2008, Windows 7, Windows 8.1 Classic or Windows 10.",
-        "Processor": "2.33GHz or faster x86-compatible processor",
-        "Memory": "1000 MB RAM",
-        "Storage": "100 MB available space",
-        "Needs 64-bit": false
-      },
-      "pc_requirements_recreqs": {
-        "Needs 64-bit": false
-      },
-      "mac_requirements_minreqs": {
-        "Needs 64-bit": false
-      },
-      "mac_requirements_recreqs": {
-        "Needs 64-bit": false
-      },
-      "linux_requirements_minreqs": {
-        "Needs 64-bit": false
-      },
-      "linux_requirements_recreqs": {
-        "Needs 64-bit": false
-      },
-      "platforms": [
-        "windows"
-      ],
-      "critic_score": "NaN",
-      "critic_source": "NaN",
-      "categories": [
-        "2"
-      ],
-      "genres": [
-        "4",
-        "23",
-        "2"
-      ]
-    },
     "1223850": {
       "type": "game",
       "name": "\u957f\u6b4c\u884c",
@@ -12867,97 +12647,6 @@
       "genres": [
         "23",
         "70"
-      ]
-    },
-    "1224000": {
-      "type": "dlc",
-      "name": "Game Dev Studio Developer Commentary Narration",
-      "required_age": 0,
-      "is_free": false,
-      "dlc": "NaN",
-      "website": "http://www.gamedevstudiogame.com/press/index.php",
-      "developers": [
-        "Roman Glebenkov"
-      ],
-      "publishers": [
-        "Roman Glebenkov"
-      ],
-      "packages": "NaN",
-      "controller_support": "NaN",
-      "fullgame": "773580",
-      "demos": [
-        "NaN"
-      ],
-      "release_date": "Soon",
-      "text_support": [
-        "English",
-        "German",
-        "French",
-        "Russian"
-      ],
-      "audio_support": [
-        "English"
-      ],
-      "pc_requirements_minreqs": {
-        "OS": "Windows XP SP3",
-        "Processor": "Dual core @ 2GHz",
-        "Memory": "1 GB RAM",
-        "Graphics": "128 MB VRAM",
-        "DirectX": "Version 9.0",
-        "Storage": "100 MB available space",
-        "Needs 64-bit": false
-      },
-      "pc_requirements_recreqs": {
-        "OS": "WIndows 7 and above",
-        "Processor": "Quad core @ 2GHz",
-        "Memory": "2 GB RAM",
-        "Graphics": "256 MB VRAM",
-        "DirectX": "Version 9.0",
-        "Storage": "100 MB available space",
-        "Needs 64-bit": false
-      },
-      "mac_requirements_minreqs": {
-        "Needs 64-bit": false
-      },
-      "mac_requirements_recreqs": {
-        "Needs 64-bit": false
-      },
-      "linux_requirements_minreqs": {
-        "OS": "Ubuntu 18.04",
-        "Processor": "Dual core @ 2GHz",
-        "Memory": "1 GB RAM",
-        "Graphics": "128 MB VRAM",
-        "Storage": "100 MB available space",
-        "Needs 64-bit": false
-      },
-      "linux_requirements_recreqs": {
-        "OS": "Ubuntu 18.04",
-        "Processor": "Quad core @ 2GHz",
-        "Memory": "2 GB RAM",
-        "Graphics": "256 MB VRAM",
-        "Storage": "100 MB available space",
-        "Needs 64-bit": false
-      },
-      "platforms": [
-        "windows",
-        "linux"
-      ],
-      "critic_score": "NaN",
-      "critic_source": "NaN",
-      "categories": [
-        "2",
-        "21",
-        "22",
-        "30",
-        "23",
-        "17",
-        "14"
-      ],
-      "genres": [
-        "4",
-        "23",
-        "28",
-        "2"
       ]
     },
     "1144400": {
@@ -13231,78 +12920,6 @@
         "2"
       ]
     },
-    "1209330": {
-      "type": "game",
-      "name": "Sakura Knight",
-      "required_age": 0,
-      "is_free": false,
-      "dlc": "NaN",
-      "website": null,
-      "developers": [
-        "Winged Cloud"
-      ],
-      "publishers": [
-        "Winged Cloud"
-      ],
-      "packages": "NaN",
-      "controller_support": "NaN",
-      "fullgame": "NaN",
-      "demos": [
-        "NaN"
-      ],
-      "release_date": "Soon",
-      "text_support": [
-        "English",
-        "Simplified Chinese"
-      ],
-      "audio_support": [],
-      "pc_requirements_minreqs": {
-        "OS": "Windows XP+",
-        "Processor": "1.2 GHz Pentium 4",
-        "Memory": "400 MB RAM",
-        "Storage": "280 MB available space",
-        "Needs 64-bit": false
-      },
-      "pc_requirements_recreqs": {
-        "Needs 64-bit": false
-      },
-      "mac_requirements_minreqs": {
-        "OS": "OS X 10.6",
-        "Processor": "Any 64 bit processor",
-        "Memory": "400 MB RAM",
-        "Storage": "280 MB available space",
-        "Needs 64-bit": false
-      },
-      "mac_requirements_recreqs": {
-        "Needs 64-bit": false
-      },
-      "linux_requirements_minreqs": {
-        "OS": "Ubuntu 12.04 or higher; SteamOS",
-        "Processor": "1.2 GHz Pentium 4",
-        "Memory": "400 MB RAM",
-        "Graphics": "OpenGL compatible card",
-        "Storage": "280 MB available space",
-        "Needs 64-bit": false
-      },
-      "linux_requirements_recreqs": {
-        "Needs 64-bit": false
-      },
-      "platforms": [
-        "windows",
-        "mac",
-        "linux"
-      ],
-      "critic_score": "NaN",
-      "critic_source": "NaN",
-      "categories": [
-        "2",
-        "22",
-        "18"
-      ],
-      "genres": [
-        "28"
-      ]
-    },
     "1212370": {
       "type": "game",
       "name": "Boolean",
@@ -13495,65 +13112,6 @@
       "genres": [
         "1",
         "23"
-      ]
-    },
-    "1225320": {
-      "type": "game",
-      "name": "HENTAI SEEK",
-      "required_age": 0,
-      "is_free": false,
-      "dlc": "NaN",
-      "website": null,
-      "developers": [
-        "ADOOM"
-      ],
-      "publishers": [
-        "ADOOM"
-      ],
-      "packages": "NaN",
-      "controller_support": "NaN",
-      "fullgame": "NaN",
-      "demos": [
-        "NaN"
-      ],
-      "release_date": "Soon",
-      "text_support": [
-        "Japanese"
-      ],
-      "audio_support": [],
-      "pc_requirements_minreqs": {
-        "OS": "Windows\u00ae 7/8/8.1/10",
-        "Processor": "Intel Core2 Duo or better",
-        "Memory": "4 GB RAM",
-        "Graphics": "DirectX 9/OpenGL 4.1 capable GPU",
-        "Storage": "1 GB available space",
-        "Needs 64-bit": false
-      },
-      "pc_requirements_recreqs": {
-        "Needs 64-bit": false
-      },
-      "mac_requirements_minreqs": {
-        "Needs 64-bit": false
-      },
-      "mac_requirements_recreqs": {
-        "Needs 64-bit": false
-      },
-      "linux_requirements_minreqs": {
-        "Needs 64-bit": false
-      },
-      "linux_requirements_recreqs": {
-        "Needs 64-bit": false
-      },
-      "platforms": [
-        "windows"
-      ],
-      "critic_score": "NaN",
-      "critic_source": "NaN",
-      "categories": [
-        "2"
-      ],
-      "genres": [
-        "25"
       ]
     },
     "1202430": {
@@ -13961,99 +13519,6 @@
         "37",
         "23",
         "3"
-      ]
-    },
-    "1192920": {
-      "type": "dlc",
-      "name": "OctoFurry - Lewder",
-      "required_age": 0,
-      "is_free": true,
-      "dlc": "NaN",
-      "website": null,
-      "developers": [
-        "ArenaDev"
-      ],
-      "publishers": [
-        "ArenaDev"
-      ],
-      "packages": "NaN",
-      "controller_support": "full",
-      "fullgame": "1186880",
-      "demos": [
-        "NaN"
-      ],
-      "release_date": "Soon",
-      "text_support": [
-        "English",
-        "Japanese",
-        "Portuguese - Brazil"
-      ],
-      "audio_support": [],
-      "pc_requirements_minreqs": {
-        "OS": "Widows Xp",
-        "Processor": "1.5 Ghz (Intel Celeron / AMD Athlon 64 x2)",
-        "Memory": "1 GB RAM",
-        "Graphics": "Intel HD Graphics or AMD Radeon",
-        "DirectX": "Version 9.0",
-        "Storage": "1 GB available space",
-        "Sound Card": "Direct x Compatible",
-        "Needs 64-bit": false
-      },
-      "pc_requirements_recreqs": {
-        "OS": "Windows 10",
-        "Processor": "2.4 Ghz (Intel Core i5 / AMD Phenom II)",
-        "Memory": "4 GB RAM",
-        "Graphics": "GeForce 8000+ / Radeon HD 5000+",
-        "DirectX": "Version 11",
-        "Storage": "4 GB available space",
-        "Sound Card": "Direct x Compatible",
-        "Needs 64-bit": false
-      },
-      "mac_requirements_minreqs": {
-        "OS": "Mac OS X 10.6 or Later",
-        "Processor": "1.2 GHz",
-        "Memory": "2 GB RAM",
-        "Graphics": "DirectX 9 compatible graphics card",
-        "Storage": "1 GB available space",
-        "Sound Card": "Direct x Compatible",
-        "Needs 64-bit": false
-      },
-      "mac_requirements_recreqs": {
-        "OS": "Mac OS X 10.6 or Later",
-        "Processor": "1.2 GHz",
-        "Memory": "4 GB RAM",
-        "Graphics": "DirectX 9 compatible graphics card",
-        "Storage": "2 GB available space",
-        "Sound Card": "Direct x Compatible",
-        "Needs 64-bit": false
-      },
-      "linux_requirements_minreqs": {
-        "Needs 64-bit": false
-      },
-      "linux_requirements_recreqs": {
-        "Needs 64-bit": false
-      },
-      "platforms": [
-        "windows",
-        "mac"
-      ],
-      "critic_score": "NaN",
-      "critic_source": "NaN",
-      "categories": [
-        "2",
-        "1",
-        "9",
-        "39",
-        "24",
-        "21",
-        "22",
-        "28",
-        "44"
-      ],
-      "genres": [
-        "25",
-        "4",
-        "23"
       ]
     },
     "1226200": {

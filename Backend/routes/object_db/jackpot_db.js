@@ -25,7 +25,8 @@ const jackpot = mongoose.Schema({
 
     ////Jackpot participants and winners
     total_value: String,
-    winners: Array
+    winners: Array,
+    users: Array
 
 },{versionKey: false});
 const Jackpot = mongoose.model('SteamJackpot', jackpot);

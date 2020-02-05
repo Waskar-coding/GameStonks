@@ -176,7 +176,7 @@ class SteamGame(mongoengine.Document):
 	name = mongoengine.StringField(required=True)
 	release = mongoengine.DateTimeField(required=True)
 	image = mongoengine.StringField(required=True)
-	priority = mongoengine.BooleanField(required=True)
+	image_url = mongoengine.StringField(required=True)
 	score = mongoengine.FloatField(default=0)
 
 	##Timetables

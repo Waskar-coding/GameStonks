@@ -77,7 +77,7 @@ class SteamJackpot(mongoengine.Document):
 	
 	##Jackpot participants and winners
 	total_value = mongoengine.FloatField(required=True)
-	users = mongoengine.DictField(default={})
+	users = mongoengine.ListField(default=[])
 	winners = mongoengine.ListField(default=[])
 
 	##Additional information

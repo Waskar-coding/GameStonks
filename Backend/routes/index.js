@@ -58,12 +58,12 @@ app.use(passport.session());
 app.use(express.static(__dirname + '/../../public'));
 
 app.get('/wrong', function(req, res){
-    res. redirect('/games/getprioritary');
+    res.redirect('/games/getprioritary');
     //res.render('index', { user: req.user });
 });
 
 app.get('/account', steamAuth.ensureAuthenticated, function(req, res){
-    res. redirect('/users/finduser/'+ req.user.user.name);
+    res.redirect('/users/my_profile/');
     //res.render('index', { user: req.user });
 });
 
@@ -102,7 +102,8 @@ passport.use(new SteamStrategy({
             User.findOne({steamid: profile._json.steamid}, function(err, user) {
                 ////New Users
                 if (user === null){
-                    createNewUser(profile._json,verifyUser(profile._json));
+                    const verified = verifyUser(profile._json);
+                    createNewUser(profile._json,verified);
                     const today = new Date();
                     const steamUser = {
                         steamid : profile._json.steamid,
@@ -111,7 +112,7 @@ passport.use(new SteamStrategy({
                         timecreated: profile._json.timecreated,
                         thumbnail: profile._json.avatarfull,
                         current_strikes: 0,
-                        banned: false
+                        banned: verified
                     };
                     const newUser ={
                         user: steamUser,

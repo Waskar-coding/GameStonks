@@ -268,4 +268,289 @@ Traceback (most recent call last):
     self.validate(clean=clean)
   File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\base\document.py", line 413, in validate
     raise ValidationError(message, errors=errors)
+mongoengine.errors.ValidationError: ValidationError (SteamApp:None) (BooleanField only accepts boolean values: ['is_free'] cannot parse date "NaN": ['release_date'])DBAppPush 2020-02-05 00:17:36,161 INFO Steam App 1092640 correctly stored
+DBAppPush 2020-02-05 00:17:36,174 INFO Steam App 1118280 correctly stored
+DBAppPush 2020-02-05 00:17:36,184 INFO Steam App 1118285 correctly stored
+DBAppPush 2020-02-05 00:17:36,193 INFO Steam App 1234470 correctly stored
+DBAppPush 2020-02-05 00:17:36,205 INFO Steam App 1118288 correctly stored
+DBAppPush 2020-02-05 00:17:36,213 INFO Steam App 1234510 correctly stored
+DBAppPush 2020-02-05 00:17:36,221 INFO Steam App 1233490 correctly stored
+DBAppPush 2020-02-05 00:17:36,230 INFO Steam App 1230440 correctly stored
+DBAppPush 2020-02-05 00:17:36,239 INFO Steam App 1230441 correctly stored
+DBAppPush 2020-02-05 00:17:36,248 INFO Steam App 1230442 correctly stored
+DBAppPush 2020-02-05 00:17:36,256 INFO Steam App 1235580 correctly stored
+DBAppPush 2020-02-05 00:17:36,266 INFO Steam App 1211530 correctly stored
+DBAppPush 2020-02-05 00:17:36,277 INFO Steam App 1230970 correctly stored
+DBAppPush 2020-02-05 00:17:36,285 INFO Steam App 1233520 correctly stored
+DBAppPush 2020-02-05 00:17:36,294 INFO Steam App 967279 correctly stored
+DBAppPush 2020-02-05 00:17:36,304 INFO Steam App 1230451 correctly stored
+DBAppPush 2020-02-05 00:17:36,314 INFO Steam App 1225350 correctly stored
+DBAppPush 2020-02-05 00:17:36,323 INFO Steam App 1230450 correctly stored
+DBAppPush 2020-02-05 00:17:36,331 INFO Steam App 1225360 correctly stored
+DBAppPush 2020-02-05 00:17:36,341 INFO Steam App 1223340 correctly stored
+DBAppPush 2020-02-05 00:17:36,350 INFO Steam App 1212080 correctly stored
+DBAppPush 2020-02-05 00:17:36,358 INFO Steam App 1217200 correctly stored
+DBAppPush 2020-02-05 00:17:36,367 INFO Steam App 1212090 correctly stored
+DBAppPush 2020-02-05 00:17:36,376 INFO Steam App 1233090 correctly stored
+DBAppPush 2020-02-05 00:17:36,384 INFO Steam App 1221851 correctly stored
+DBAppPush 2020-02-05 00:17:36,395 INFO Steam App 1221852 correctly stored
+DBAppPush 2020-02-05 00:17:36,407 INFO Steam App 1226980 correctly stored
+DBAppPush 2020-02-05 00:17:36,421 INFO Steam App 1226460 correctly stored
+DBAppPush 2020-02-05 00:17:36,433 INFO Steam App 1221853 correctly stored
+DBAppPush 2020-02-05 00:17:36,441 INFO Steam App 1221850 correctly stored
+DBAppPush 2020-02-05 00:17:36,453 INFO Steam App 1200341 correctly stored
+DBAppPush 2020-02-05 00:17:36,456 ERROR Error while parsing App 1075950
+Traceback (most recent call last):
+  File "C:\Users\mcnon\OneDrive\Escritorio\Proyecto Owners\Git\GameStonks\Database Management\SteamDB\Setters\steam_setters_db.py", line 74, in steam_app_setter
+    SteamApp.save()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\document.py", line 369, in save
+    self.validate(clean=clean)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\base\document.py", line 413, in validate
+    raise ValidationError(message, errors=errors)
 mongoengine.errors.ValidationError: ValidationError (SteamApp:None) (BooleanField only accepts boolean values: ['is_free'] cannot parse date "NaN": ['release_date'])
+DBAppPush 2020-02-05 00:17:36,469 INFO Steam App 1222920 correctly stored
+DBAppPush 2020-02-05 00:17:36,481 INFO Steam App 1232140 correctly stored
+DBAppPush 2020-02-05 00:17:36,516 INFO Steam App 1207070 correctly stored
+DBAppPush 2020-02-05 00:17:36,525 INFO Steam App 1183520 correctly stored
+DBAppPush 2020-02-05 00:17:36,535 INFO Steam App 1218860 correctly stored
+DBAppPush 2020-02-05 00:17:36,548 INFO Steam App 1122627 correctly stored
+DBAppPush 2020-02-05 00:17:36,557 INFO Steam App 1122626 correctly stored
+DBAppPush 2020-02-05 00:17:36,572 INFO Steam App 1122628 correctly stored
+DBAppPush 2020-02-05 00:17:36,594 INFO Steam App 1122625 correctly stored
+DBAppPush 2020-02-05 00:17:36,618 INFO Steam App 1230690 correctly stored
+DBAppPush 2020-02-05 00:17:36,638 INFO Steam App 1234270 correctly stored
+DBAppPush 2020-02-05 00:17:36,650 INFO Steam App 1231200 correctly stored
+DBAppPush 2020-02-05 00:17:36,658 INFO Steam App 774011 correctly stored
+DBAppPush 2020-02-05 00:17:36,667 INFO Steam App 1227640 correctly stored
+DBAppPush 2020-02-05 00:17:36,678 INFO Steam App 1221500 correctly stored
+DBAppPush 2020-02-05 00:17:36,691 INFO Steam App 1228680 correctly stored
+DBAppPush 2020-02-05 00:17:36,699 INFO Steam App 1230750 correctly stored
+DBAppPush 2020-02-05 00:17:36,709 INFO Steam App 1233310 correctly stored
+DBAppPush 2020-02-05 00:17:36,846 INFO Steam App 1206681 correctly stored
+DBAppPush 2020-02-05 00:17:36,859 INFO Steam App 1231770 correctly stored
+DBAppPush 2020-02-05 00:17:36,938 INFO Steam App 1233320 correctly stored
+DBAppPush 2020-02-05 00:17:37,045 INFO Steam App 1230770 correctly stored
+DBAppPush 2020-02-05 00:17:37,089 INFO Steam App 1200550 correctly stored
+DBAppPush 2020-02-05 00:17:37,341 INFO Steam App 1200552 correctly stored
+DBAppPush 2020-02-05 00:17:37,381 ERROR Error while parsing App 847780
+Traceback (most recent call last):
+  File "C:\Users\mcnon\OneDrive\Escritorio\Proyecto Owners\Git\GameStonks\Database Management\SteamDB\Setters\steam_setters_db.py", line 74, in steam_app_setter
+    SteamApp.save()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\document.py", line 369, in save
+    self.validate(clean=clean)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\base\document.py", line 413, in validate
+    raise ValidationError(message, errors=errors)
+mongoengine.errors.ValidationError: ValidationError (SteamApp:None) (BooleanField only accepts boolean values: ['is_free'] cannot parse date "NaN": ['release_date'])
+DBAppPush 2020-02-05 00:17:37,478 INFO Steam App 1228720 correctly stored
+DBAppPush 2020-02-05 00:17:37,514 ERROR Error while parsing App 1200551
+Traceback (most recent call last):
+  File "C:\Users\mcnon\OneDrive\Escritorio\Proyecto Owners\Git\GameStonks\Database Management\SteamDB\Setters\steam_setters_db.py", line 74, in steam_app_setter
+    SteamApp.save()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\document.py", line 369, in save
+    self.validate(clean=clean)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\base\document.py", line 413, in validate
+    raise ValidationError(message, errors=errors)
+mongoengine.errors.ValidationError: ValidationError (SteamApp:None) (BooleanField only accepts boolean values: ['is_free'] cannot parse date "NaN": ['release_date'])
+DBAppPush 2020-02-05 00:17:37,551 INFO Steam App 1229770 correctly stored
+DBAppPush 2020-02-05 00:17:37,597 INFO Steam App 1235410 correctly stored
+DBAppPush 2020-02-05 00:17:37,649 INFO Steam App 1052620 correctly stored
+DBAppPush 2020-02-05 00:17:37,663 INFO Steam App 1215463 correctly stored
+DBAppPush 2020-02-05 00:17:37,687 INFO Steam App 1215462 correctly stored
+DBAppPush 2020-02-05 00:17:37,703 INFO Steam App 1215460 correctly stored
+DBAppPush 2020-02-05 00:17:37,721 INFO Steam App 1215461 correctly stored
+DBAppPush 2020-02-05 00:17:37,735 INFO Steam App 1234390 correctly stored
+DBAppPush 2020-02-05 00:17:37,761 INFO Steam App 1233390 correctly stored
+DBAppPush 2020-02-05 00:17:37,776 INFO Steam App 1202220 correctly stored
+DBAppPush 2020-02-05 00:17:37,796 INFO Steam App 1206900 correctly stored
+DBAppPush 2020-02-05 00:17:37,825 INFO Steam App 1122510 correctly stored
+DBAppPush 2020-02-05 00:17:37,846 INFO Steam App 985650 correctly stored
+DBAppPush 2020-02-05 00:17:37,869 INFO Steam App 1206920 correctly stored
+DBAppPush 2020-02-05 00:17:37,888 INFO Steam App 926420 correctly stored
+DBAppPush 2020-02-05 00:17:37,911 INFO Steam App 1211420 correctly stored
+DBAppPush 2020-02-05 00:17:37,934 INFO Steam App 1209430 correctly stored
+DBAppPush 2020-02-05 00:17:37,952 INFO Steam App 1199270 correctly stored
+DBAppPush 2020-02-05 00:17:37,981 INFO Steam App 1209740 correctly stored
+DBAppPush 2020-02-05 00:17:37,998 INFO Steam App 1144480 correctly stored
+DBAppPush 2020-02-05 00:17:38,028 INFO Steam App 1213310 correctly stored
+DBAppPush 2020-02-05 00:17:38,054 INFO Steam App 1179910 correctly stored
+DBAppPush 2020-02-05 00:17:38,081 INFO Steam App 1170210 correctly stored
+DBAppPush 2020-02-05 00:17:38,095 INFO Steam App 1215860 correctly stored
+DBAppPush 2020-02-05 00:17:38,111 INFO Steam App 1215640 correctly stored
+DBAppPush 2020-02-05 00:17:38,132 INFO Steam App 1180360 correctly stored
+DBAppPush 2020-02-05 00:17:38,178 INFO Steam App 1225240 correctly stored
+DBAppPush 2020-02-05 00:17:38,192 INFO Steam App 1217440 correctly stored
+DBAppPush 2020-02-05 00:17:38,226 INFO Steam App 1232350 correctly stored
+DBAppPush 2020-02-05 00:17:38,257 INFO Steam App 1220830 correctly stored
+DBAppPush 2020-02-05 00:17:38,275 INFO Steam App 1214480 correctly stored
+DBAppPush 2020-02-05 00:17:38,298 INFO Steam App 1226270 correctly stored
+DBAppPush 2020-02-05 00:17:38,322 INFO Steam App 1226280 correctly stored
+DBAppPush 2020-02-05 00:17:38,347 INFO Steam App 1236520 correctly stored
+DBAppPush 2020-02-05 00:17:38,377 INFO Steam App 1218080 correctly stored
+DBAppPush 2020-02-05 00:17:38,403 INFO Steam App 1226300 correctly stored
+DBAppPush 2020-02-05 00:17:38,432 INFO Steam App 1226310 correctly stored
+DBAppPush 2020-02-05 00:17:38,453 INFO Steam App 1226290 correctly stored
+DBAppPush 2020-02-05 00:17:38,466 INFO Steam App 1225300 correctly stored
+DBAppPush 2020-02-05 00:17:38,478 INFO Steam App 1235530 correctly stored
+DBAppPush 2020-02-05 00:17:38,505 INFO Steam App 1226320 correctly stored
+DBAppPush 2020-02-05 00:17:38,517 ERROR Error while parsing App 1190490
+Traceback (most recent call last):
+  File "C:\Users\mcnon\OneDrive\Escritorio\Proyecto Owners\Git\GameStonks\Database Management\SteamDB\Setters\steam_setters_db.py", line 74, in steam_app_setter
+    SteamApp.save()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\document.py", line 369, in save
+    self.validate(clean=clean)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\base\document.py", line 413, in validate
+    raise ValidationError(message, errors=errors)
+mongoengine.errors.ValidationError: ValidationError (SteamApp:None) (BooleanField only accepts boolean values: ['is_free'] cannot parse date "NaN": ['release_date'])
+DBAppPush 2020-02-05 00:17:38,527 INFO Steam App 1238120 correctly stored
+DBAppPush 2020-02-05 00:17:38,536 INFO Steam App 1226350 correctly stored
+DBAppPush 2020-02-05 00:17:38,552 INFO Steam App 1226340 correctly stored
+DBAppPush 2020-02-05 00:17:38,556 ERROR Error while parsing App 1190510
+Traceback (most recent call last):
+  File "C:\Users\mcnon\OneDrive\Escritorio\Proyecto Owners\Git\GameStonks\Database Management\SteamDB\Setters\steam_setters_db.py", line 74, in steam_app_setter
+    SteamApp.save()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\document.py", line 369, in save
+    self.validate(clean=clean)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\base\document.py", line 413, in validate
+    raise ValidationError(message, errors=errors)
+mongoengine.errors.ValidationError: ValidationError (SteamApp:None) (BooleanField only accepts boolean values: ['is_free'] cannot parse date "NaN": ['release_date'])
+DBAppPush 2020-02-05 00:17:38,567 INFO Steam App 1226330 correctly stored
+DBAppPush 2020-02-05 00:17:38,570 ERROR Error while parsing App 1190500
+Traceback (most recent call last):
+  File "C:\Users\mcnon\OneDrive\Escritorio\Proyecto Owners\Git\GameStonks\Database Management\SteamDB\Setters\steam_setters_db.py", line 74, in steam_app_setter
+    SteamApp.save()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\document.py", line 369, in save
+    self.validate(clean=clean)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\base\document.py", line 413, in validate
+    raise ValidationError(message, errors=errors)
+mongoengine.errors.ValidationError: ValidationError (SteamApp:None) (BooleanField only accepts boolean values: ['is_free'] cannot parse date "NaN": ['release_date'])
+DBAppPush 2020-02-05 00:17:38,586 INFO Steam App 1235070 correctly stored
+DBAppPush 2020-02-05 00:17:38,595 INFO Steam App 1230460 correctly stored
+DBAppPush 2020-02-05 00:17:38,606 INFO Steam App 1226360 correctly stored
+DBAppPush 2020-02-05 00:17:38,616 INFO Steam App 1235060 correctly stored
+DBAppPush 2020-02-05 00:17:38,625 INFO Steam App 1214094 correctly stored
+DBAppPush 2020-02-05 00:17:38,633 INFO Steam App 1235080 correctly stored
+DBAppPush 2020-02-05 00:17:38,640 INFO Steam App 1230481 correctly stored
+DBAppPush 2020-02-05 00:17:38,648 INFO Steam App 1230480 correctly stored
+DBAppPush 2020-02-05 00:17:38,656 INFO Steam App 1222280 correctly stored
+DBAppPush 2020-02-05 00:17:38,664 INFO Steam App 1230482 correctly stored
+DBAppPush 2020-02-05 00:17:38,672 INFO Steam App 980620 correctly stored
+DBAppPush 2020-02-05 00:17:38,680 INFO Steam App 1230483 correctly stored
+DBAppPush 2020-02-05 00:17:38,688 INFO Steam App 1213613 correctly stored
+DBAppPush 2020-02-05 00:17:38,697 INFO Steam App 1214114 correctly stored
+DBAppPush 2020-02-05 00:17:38,704 INFO Steam App 1216681 correctly stored
+DBAppPush 2020-02-05 00:17:38,713 INFO Steam App 1232040 correctly stored
+DBAppPush 2020-02-05 00:17:38,722 INFO Steam App 1232041 correctly stored
+DBAppPush 2020-02-05 00:17:38,730 INFO Steam App 1216680 correctly stored
+DBAppPush 2020-02-05 00:17:38,739 INFO Steam App 1205470 correctly stored
+DBAppPush 2020-02-05 00:17:38,747 INFO Steam App 1238750 correctly stored
+DBAppPush 2020-02-05 00:17:38,755 INFO Steam App 1147157 correctly stored
+DBAppPush 2020-02-05 00:17:38,764 INFO Steam App 1213200 correctly stored
+DBAppPush 2020-02-05 00:17:38,771 INFO Steam App 1207074 correctly stored
+DBAppPush 2020-02-05 00:17:38,779 INFO Steam App 1207071 correctly stored
+DBAppPush 2020-02-05 00:17:38,787 INFO Steam App 1207076 correctly stored
+DBAppPush 2020-02-05 00:17:38,795 INFO Steam App 1207073 correctly stored
+DBAppPush 2020-02-05 00:17:38,803 INFO Steam App 1207075 correctly stored
+DBAppPush 2020-02-05 00:17:38,811 INFO Steam App 1207072 correctly stored
+DBAppPush 2020-02-05 00:17:38,819 INFO Steam App 1207077 correctly stored
+DBAppPush 2020-02-05 00:17:38,830 INFO Steam App 1207080 correctly stored
+DBAppPush 2020-02-05 00:17:38,838 INFO Steam App 1234740 correctly stored
+DBAppPush 2020-02-05 00:17:38,845 INFO Steam App 1207081 correctly stored
+DBAppPush 2020-02-05 00:17:38,853 INFO Steam App 1207078 correctly stored
+DBAppPush 2020-02-05 00:17:38,860 INFO Steam App 1207082 correctly stored
+DBAppPush 2020-02-05 00:17:38,867 INFO Steam App 1207079 correctly stored
+DBAppPush 2020-02-05 00:17:38,869 ERROR Error while parsing App 1223510
+Traceback (most recent call last):
+  File "C:\Users\mcnon\OneDrive\Escritorio\Proyecto Owners\Git\GameStonks\Database Management\SteamDB\Setters\steam_setters_db.py", line 74, in steam_app_setter
+    SteamApp.save()
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\document.py", line 369, in save
+    self.validate(clean=clean)
+  File "C:\Users\mcnon\AppData\Local\Programs\Python\Python37\lib\site-packages\mongoengine\base\document.py", line 413, in validate
+    raise ValidationError(message, errors=errors)
+mongoengine.errors.ValidationError: ValidationError (SteamApp:None) (BooleanField only accepts boolean values: ['is_free'] cannot parse date "NaN": ['release_date'])
+DBAppPush 2020-02-05 00:17:38,878 INFO Steam App 1107814 correctly stored
+DBAppPush 2020-02-05 00:17:38,885 INFO Steam App 1237860 correctly stored
+DBAppPush 2020-02-05 00:17:38,892 INFO Steam App 1239420 correctly stored
+DBAppPush 2020-02-05 00:17:38,899 INFO Steam App 1087426 correctly stored
+DBAppPush 2020-02-05 00:17:38,906 INFO Steam App 1234890 correctly stored
+DBAppPush 2020-02-05 00:17:38,913 INFO Steam App 1213382 correctly stored
+DBAppPush 2020-02-05 00:17:38,921 INFO Steam App 1222101 correctly stored
+DBAppPush 2020-02-05 00:17:38,929 INFO Steam App 1222100 correctly stored
+DBAppPush 2020-02-05 00:17:38,936 INFO Steam App 1232340 correctly stored
+DBAppPush 2020-02-05 00:17:38,943 INFO Steam App 1233373 correctly stored
+DBAppPush 2020-02-05 00:17:38,951 INFO Steam App 1233371 correctly stored
+DBAppPush 2020-02-05 00:17:38,959 INFO Steam App 1233372 correctly stored
+DBAppPush 2020-02-05 00:17:38,967 INFO Steam App 1234393 correctly stored
+DBAppPush 2020-02-05 00:17:38,974 INFO Steam App 1223130 correctly stored
+DBAppPush 2020-02-05 00:17:38,982 INFO Steam App 1233370 correctly stored
+DBAppPush 2020-02-05 00:17:38,990 INFO Steam App 1234391 correctly stored
+DBAppPush 2020-02-05 00:17:38,997 INFO Steam App 1234392 correctly stored
+DBAppPush 2020-02-05 00:17:39,003 INFO Steam App 1236460 correctly stored
+DBAppPush 2020-02-05 00:17:39,011 INFO Steam App 1130710 correctly stored
+DBAppPush 2020-02-05 00:17:39,019 INFO Steam App 1185820 correctly stored
+DBAppPush 2020-02-05 00:17:39,026 INFO Steam App 1114710 correctly stored
+DBAppPush 2020-02-05 00:17:39,034 INFO Steam App 1213370 correctly stored
+DBAppPush 2020-02-05 00:17:39,040 INFO Steam App 1204330 correctly stored
+DBAppPush 2020-02-05 00:17:39,048 INFO Steam App 1208380 correctly stored
+DBAppPush 2020-02-05 00:17:39,055 INFO Steam App 1217350 correctly stored
+DBAppPush 2020-02-05 00:17:39,065 INFO Steam App 1240580 correctly stored
+DBAppPush 2020-02-05 00:17:39,072 INFO Steam App 1237020 correctly stored
+DBAppPush 2020-02-05 00:17:39,080 INFO Steam App 1236550 correctly stored
+DBAppPush 2020-02-05 00:17:39,087 INFO Steam App 1083980 correctly stored
+DBAppPush 2020-02-05 00:17:39,094 INFO Steam App 1182330 correctly stored
+DBAppPush 2020-02-05 00:17:39,103 INFO Steam App 1236660 correctly stored
+DBAppPush 2020-02-05 00:17:39,110 INFO Steam App 1228480 correctly stored
+DBAppPush 2020-02-05 00:17:39,117 INFO Steam App 1235650 correctly stored
+DBAppPush 2020-02-05 00:17:39,124 INFO Steam App 1225440 correctly stored
+DBAppPush 2020-02-05 00:17:39,131 INFO Steam App 1201360 correctly stored
+DBAppPush 2020-02-05 00:17:39,138 INFO Steam App 1239830 correctly stored
+DBAppPush 2020-02-05 00:17:39,145 INFO Steam App 1197890 correctly stored
+DBAppPush 2020-02-05 00:17:39,152 INFO Steam App 1197900 correctly stored
+DBAppPush 2020-02-05 00:17:39,160 INFO Steam App 1197894 correctly stored
+DBAppPush 2020-02-05 00:17:39,167 INFO Steam App 1122629 correctly stored
+DBAppPush 2020-02-05 00:17:39,174 INFO Steam App 1197893 correctly stored
+DBAppPush 2020-02-05 00:17:39,181 INFO Steam App 1197892 correctly stored
+DBAppPush 2020-02-05 00:17:39,188 INFO Steam App 1197891 correctly stored
+DBAppPush 2020-02-05 00:17:39,196 INFO Steam App 1122632 correctly stored
+DBAppPush 2020-02-05 00:17:39,203 INFO Steam App 1122630 correctly stored
+DBAppPush 2020-02-05 00:17:39,211 INFO Steam App 1122631 correctly stored
+DBAppPush 2020-02-05 00:17:39,218 INFO Steam App 1197895 correctly stored
+DBAppPush 2020-02-05 00:17:39,224 INFO Steam App 1197910 correctly stored
+DBAppPush 2020-02-05 00:17:39,232 INFO Steam App 1197906 correctly stored
+DBAppPush 2020-02-05 00:17:39,239 INFO Steam App 1197904 correctly stored
+DBAppPush 2020-02-05 00:17:39,246 INFO Steam App 1197902 correctly stored
+DBAppPush 2020-02-05 00:17:39,253 INFO Steam App 1197901 correctly stored
+DBAppPush 2020-02-05 00:17:39,260 INFO Steam App 1214800 correctly stored
+DBAppPush 2020-02-05 00:17:39,269 INFO Steam App 1197905 correctly stored
+DBAppPush 2020-02-05 00:17:39,276 INFO Steam App 1197907 correctly stored
+DBAppPush 2020-02-05 00:17:39,284 INFO Steam App 1197903 correctly stored
+DBAppPush 2020-02-05 00:17:39,291 INFO Steam App 1197912 correctly stored
+DBAppPush 2020-02-05 00:17:39,298 INFO Steam App 1197914 correctly stored
+DBAppPush 2020-02-05 00:17:39,305 INFO Steam App 1197911 correctly stored
+DBAppPush 2020-02-05 00:17:39,311 INFO Steam App 1197915 correctly stored
+DBAppPush 2020-02-05 00:17:39,318 INFO Steam App 1197913 correctly stored
+DBAppPush 2020-02-05 00:17:39,326 INFO Steam App 1237340 correctly stored
+DBAppPush 2020-02-05 00:17:39,333 INFO Steam App 1237830 correctly stored
+DBAppPush 2020-02-05 00:17:39,340 INFO Steam App 1235320 correctly stored
+DBAppPush 2020-02-05 00:17:39,347 INFO Steam App 1217890 correctly stored
+DBAppPush 2020-02-05 00:17:39,355 INFO Steam App 1216380 correctly stored
+DBAppPush 2020-02-05 00:17:39,364 INFO Steam App 1226130 correctly stored
+DBAppPush 2020-02-05 00:17:39,372 INFO Steam App 1237940 correctly stored
+DBAppPush 2020-02-05 00:17:39,380 INFO Steam App 1226680 correctly stored
+DBAppPush 2020-02-05 00:17:39,388 INFO Steam App 1235380 correctly stored
+DBAppPush 2020-02-05 00:17:39,396 INFO Steam App 1241000 correctly stored
+DBAppPush 2020-02-05 00:17:39,404 INFO Steam App 1241010 correctly stored
+DBAppPush 2020-02-05 00:17:39,412 INFO Steam App 1240540 correctly stored
+DBAppPush 2020-02-05 00:17:39,421 INFO Steam App 1226730 correctly stored
+DBAppPush 2020-02-05 00:17:39,432 INFO Steam App 1236960 correctly stored
+DBAppPush 2020-02-05 00:17:39,441 INFO Steam App 1226710 correctly stored
+DBAppPush 2020-02-05 00:17:39,449 INFO Steam App 1226740 correctly stored
+DBAppPush 2020-02-05 00:17:39,458 INFO Steam App 650740 correctly stored
+DBAppPush 2020-02-05 00:17:39,467 INFO Steam App 1204470 correctly stored
+DBAppPush 2020-02-05 00:17:39,476 INFO Steam App 1131370 correctly stored
+DBAppPush 2020-02-05 00:17:39,485 INFO Steam App 1209330 correctly stored
+DBAppPush 2020-02-05 00:17:39,493 INFO Steam App 1158410 correctly stored
+DBAppPush 2020-02-05 00:17:39,505 INFO Steam App 1224000 correctly stored
+DBAppPush 2020-02-05 00:17:39,514 INFO Steam App 1225320 correctly stored
+DBAppPush 2020-02-05 00:17:39,522 INFO Steam App 1192920 correctly stored
+DBAppPush 2020-02-05 00:17:39,530 INFO Steam App 1184960 correctly stored
+DBAppPush 2020-02-05 00:17:39,538 INFO Steam App 1140400 correctly stored

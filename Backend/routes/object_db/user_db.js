@@ -6,8 +6,9 @@ const JackpotRegister = mongoose.Schema({
     jackpot_id: String,
     date: Date,
     score: String,
-    probability: String,
-    multipliers: Array
+    multipliers: Array,
+    recommendations: String,
+    status: String
 });
 
 //Gameplay register schema

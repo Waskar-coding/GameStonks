@@ -210,10 +210,14 @@ def assignNewOut(appid: str) -> None:
 	steamgame.score = 1
 	
 	###Downloading and assigning thumbnail
+	BASE_URL ="https://steamcdn-a.akamaihd.net/steam/apps/"
+	HEADER_URL = "/header.jpg"
+	url= BASE_URL+appid+HEADER_URL
 	steamgame.image = steam_header.main(appid)
+	steamgame.image_url = url
 	
 	###Changing current state to active launch
-	steamgame.current_state = 'a'
+	steamgame.current_state = 'al'
 
 	steamgame.save()
 
@@ -236,7 +240,7 @@ def assignNewIn(appid: str) -> None:
 
 	###Retrieving game from db and changing priority
 	steamgame = gamedb.SteamGame.objects(appid=appid).first()
-	steamgame.current_state='al'
+	steamgame.current_state='a'
 	steamgame.save()
 
 
