@@ -16,9 +16,8 @@ import json
 import logging
 
 ##Local
-CONNECT_PATH=r'C:\Users\mcnon\OneDrive\Escritorio'\
-	r'\Proyecto Owners\Database Managerment\SteamDB'
-GETTER_PATH=CONNECT_PATH+r'\Getters'
+CONNECT_PATH = '../'
+GETTER_PATH = '../Getters'
 sys.path.extend([CONNECT_PATH,GETTER_PATH])
 import steam_connection_db as connectdb
 import steam_setters_db as setterdb
@@ -38,7 +37,7 @@ logger.addHandler(file_handler)
 
 
 #Getting achievement dictionary
-def get_achievements(path: os.path) -> dict:
+def get_achievements(path: str) -> dict:
 	##Documentation
 	"""
 	When called opens the document achievements.json
@@ -105,11 +104,10 @@ def main():
 	"""
 
 	##Achievement path constant
-	ACHIEVEMENT_PATH=r'C:\Users\mcnon\OneDrive\Escritorio'\
-		r'\Proyecto Owners\Scrapers\ScraperArchievementsAPI'
+	ACHIEVEMENT_PATH='../../../Scrapers/ScraperAchievementsAPI'
 	
 	##Getting Achievements dictionary
-	a_dict=get_achievements(os.path.normpath(ACHIEVEMENT_PATH))
+	a_dict=get_achievements(ACHIEVEMENT_PATH)
 
 	##Pushing contents into db
 	push_achievements(a_dict)
