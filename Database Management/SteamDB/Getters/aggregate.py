@@ -17,11 +17,9 @@ import datetime
 import statistics
 
 ##Local
-OBJECT_PATH=r'C:\Users\mcnon\OneDrive\Escritorio'\
-	r'\Proyecto Owners\Database Managerment\SteamDB\Objects'
-SETTER_PATH=r'C:\Users\mcnon\OneDrive\Escritorio'\
-	r'\Proyecto Owners\Database Managerment\SteamDB\Setters'
-sys.path.append(SETTER_PATH)
+OBJECT_PATH = '../Objects'
+SETTER_PATH = '../Setters'
+sys.path.extend([SETTER_PATH, OBJECT_PATH])
 import steam_game_db as gamedb
 import steam_getters_db
 import steam_setters_db

@@ -19,10 +19,9 @@ import platform
 import datetime as dt
 
 ##Local
-CONNECT_PATH=r'C:\Users\mcnon\OneDrive\Escritorio'\
-	r'\Proyecto Owners\Database Managerment\SteamDB'
-GETTER_PATH=CONNECT_PATH+r'\Getters'
-OBJECT_PATH=CONNECT_PATH+r'\Objects'
+CONNECT_PATH='../'
+GETTER_PATH='../Getters'
+OBJECT_PATH='../Objects'
 sys.path.extend([CONNECT_PATH,GETTER_PATH,OBJECT_PATH])
 import steam_setters_db as setterdb
 import steam_getters_db as getterdb
@@ -45,7 +44,7 @@ logger.addHandler(file_handler)
 
 #Finding pattern in dir
 def find_pattern(
-	path: os.path,
+	path: str,
 	appid: str,
 	pattern: 'function',
 	) -> str:
@@ -57,7 +56,7 @@ def find_pattern(
 
 	Parameters
 	----------
-	path: os.path
+	path (str):
 		Directory to search
 
 	appid: str
@@ -236,13 +235,9 @@ def main():
 	connectdb.register_connection('SteamDB','SteamDB')
 
 	##Steam db scraper dirs
-	DOWNLOAD_PATH=r'C:\Users\mcnon\OneDrive\Escritorio'\
-		r'\Proyecto Owners\Scrapers\ScraperDB'
-	PRICE_PATH=DOWNLOAD_PATH+r'\Prices'
-	PLAYER_PATH=DOWNLOAD_PATH+r'\Players'
-	DOWNLOAD_PATH=os.path.normpath(DOWNLOAD_PATH)
-	PRICE_PATH=os.path.normpath(PRICE_PATH)
-	PLAYER_PATH=os.path.normpath(PLAYER_PATH)
+	DOWNLOAD_PATH='../../../Scrapers/ScraperDB'
+	PRICE_PATH='./Prices'
+	PLAYER_PATH='./Players'
 
 	##Getting ratings
 	os.chdir(DOWNLOAD_PATH)
@@ -262,6 +257,7 @@ def main():
 				timetable,
 				'prices',
 				logger)
+		os.chdir('../')
 
 		###Searching, getting and setting players timetable
 		player_doc=find_pattern(PLAYER_PATH,appid,player_pattern)
@@ -274,7 +270,7 @@ def main():
 				logger)
 		else:
 			logger.warning('{} has not players timetable'.format(appid))
-
+		os.chdir('../')
 
 		###Setting game ratings
 		timeseries=(
