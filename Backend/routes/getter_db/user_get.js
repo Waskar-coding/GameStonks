@@ -2,7 +2,6 @@
 ////Packages
 const express = require('express');
 const router = express.Router();
-const request = require('request');
 const path = require('path');
 
 ////Local
@@ -13,7 +12,7 @@ const localAuth = require('../local_auth/verify');
 
 
 //Getting getting user account data
-router.get('/my_profile/',steamAuth.ensureAuthenticated, localAuth,function(req, res){
+router.get('/my_profile/',steamAuth.ensureAuthenticated, localAuth.verifyToken,function(req, res){
     res.send(req.user.user);
 });
 
