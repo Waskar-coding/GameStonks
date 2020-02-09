@@ -60,6 +60,7 @@ sys.path.extend(
 import steam_header
 import steam_connection_db as connectdb
 import steam_game_db as gamedb
+import steam_user_db as userdb
 import steam_app_db as appdb
 
 

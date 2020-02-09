@@ -41,16 +41,17 @@ class GameplayRegister(mongoengine.EmbeddedDocument):
 	"""
 
 	###Game id
-	appid=mongoengine.StringField(required=True)
+	appid = mongoengine.StringField(required=True)
+	active = mongoengine.BooleanField(required=True)
 
 	###Gameplay in every plataform
-	total_gameplay=mongoengine.ListField(default=[])
-	win_gameplay=mongoengine.ListField(default=[])
-	mac_gameplay=mongoengine.ListField(default=[])
-	lin_gameplay=mongoengine.ListField(default=[])
+	total_gameplay = mongoengine.ListField(default=[])
+	win_gameplay = mongoengine.ListField(default=[])
+	mac_gameplay = mongoengine.ListField(default=[])
+	lin_gameplay = mongoengine.ListField(default=[])
 
 	###Register information
-	register_date=mongoengine.DateTimeField(default=datetime.datetime.now())
+	register_date = mongoengine.DateTimeField(default=datetime.datetime.now())
 
 
 
@@ -145,9 +146,9 @@ class StrikeRegister(mongoengine.EmbeddedDocument):
 	"""
 
 	##Strike data
-	strike_date=mongoengine.DateTimeField(required=True)
-	strike_total=mongoengine.IntField(required=True)
-	strike_reason=mongoengine.StringField(required=True)
+	strike_date = mongoengine.DateTimeField(required=True)
+	strike_total = mongoengine.IntField(required=True)
+	strike_reason = mongoengine.StringField(required=True)
 
 
 
@@ -178,7 +179,7 @@ class BanRegister(mongoengine.EmbeddedDocument):
 	 |	ban_end (datetime.datetime):
 	 |		Ban's endint date, only appliable if it is temporal.
 	 |
-	 |	ban_condition (str):
+	 |	ban_doc (str):
 	 |		Condition that must be met to cancel the ban
 	"""
 

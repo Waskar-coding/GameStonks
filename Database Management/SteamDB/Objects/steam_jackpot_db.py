@@ -81,7 +81,7 @@ class SteamJackpot(mongoengine.Document):
 	winners = mongoengine.ListField(default=[])
 
 	##Additional information
-	featured = mongoengine.DictField()
+	features = mongoengine.DictField()
 
 	##Class metadata
 	meta={
