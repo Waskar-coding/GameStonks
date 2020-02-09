@@ -1,5 +1,6 @@
 const jwt = require('jsonwebtoken');
 const config = require('./config');
+const User = require('../object_db/user_db.js');
 
 function verifyToken(req, res, next) {
     const token = req.user.token;
@@ -16,4 +17,22 @@ function verifyToken(req, res, next) {
     });
 }
 
-module.exports = verifyToken;
+function verifyJackpot(req, res, next) {
+    User.findOne({steamid: req.user.user.steamid, jackpots: req.params.jackpot_id},'jackpots',function(err,jackpot) {
+        if(!err) {
+            if (jackpot.status === 'k') {
+                return res.status(403).send({auth: false, message: 'You were kicked from this jackpot'});
+            } else {
+                next();
+            }
+        }
+        else{
+            return res.status(403).send({auth: false, message: 'Bruh'});
+        }
+    })
+}
+
+module.exports = {
+    verifyToken,
+    verifyJackpot
+};

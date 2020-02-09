@@ -18,7 +18,7 @@ const localAuth = require('../local_auth/verify');
 
 //Current jackpots
 ////Current jackpots: main
-router.get('/current',steamAuth.ensureAuthenticated, localAuth,function(req,res){
+router.get('/current',steamAuth.ensureAuthenticated, localAuth.verifyToken,function(req,res){
     ////Returning current jackpots
     const registers = [];
     Jackpot.find({active: true},function(err,jackpots){
@@ -71,12 +71,12 @@ function getJackpots(req,jackpots){
 
 //Get a Jackpot
 ////Get a Jackpot: main
-router.get('/:jackpot_id',steamAuth.ensureAuthenticated, localAuth,function(req,res){
+router.get('/:jackpot_id',steamAuth.ensureAuthenticated, localAuth.verifyToken,localAuth.verifyJackpot, function(req,res){
     ////Retrieving jackpot information
     Jackpot.findOne({jackpot_id: req.params.jackpot_id},function(err,jackpot){
         if ((err) || (jackpot === null) || (jackpot.active === false)){
             console.log('error');
-            res.redirect('./current');
+            res.redirect('./current')
         }
         else{
             ////Retrieving jackpot features
@@ -89,7 +89,9 @@ router.get('/:jackpot_id',steamAuth.ensureAuthenticated, localAuth,function(req,
                     features: features,
                     register: getRegister(req,jackpot)
                 };
+
                 res.send(userjackpotJSON);
+
             });
         }
     });
@@ -172,16 +174,15 @@ function getRegister(req,jackpot){
 
 ////Get a Jackpot: Read jackpot docs
 function readDocs(jackpot){
-    const jdocsJSON = {
+
+    return {
         intro: fs.readFileSync( path.join(__dirname, '/Jackpot files/', jackpot.jackpot_doc_intro)).toString(),
         participate: fs.readFileSync(path.join(__dirname, '/Jackpot files/', jackpot.jackpot_doc_participate)).toString(),
         score: fs.readFileSync(path.join(__dirname, '/Jackpot files/', jackpot.jackpot_doc_score)).toString(),
         rights: fs.readFileSync( path.join(__dirname, '/Jackpot files/', jackpot.jackpot_doc_rights)).toString(),
         kick: fs.readFileSync(path.join(__dirname, '/Jackpot files/',jackpot.jackpot_doc_kick)).toString()
     };
-    return jdocsJSON;
 }
-
 
 
 //Errors
