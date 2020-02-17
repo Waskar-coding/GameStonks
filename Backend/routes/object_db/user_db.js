@@ -14,6 +14,7 @@ const JackpotRegister = mongoose.Schema({
 //Gameplay register schema
 const GameplayRegister = mongoose.Schema({
     appid: String,
+    active: Boolean,
     total_gameplay: Array,
     win_gameplay: Array,
     mac_gameplay: Array,

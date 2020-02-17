@@ -78,8 +78,7 @@ def getUsers(game_list: list) -> userdb.SteamUser:
 
 	##Retrieving user from DB
 	USER_LIST = userdb.SteamUser.objects\
-		.filter(monitored__appid__in = game_list)\
-		.filter(monitored__active = True)
+		.filter(monitored__appid__in = game_list)
 	USER_LIST = [user.steamid for user in USER_LIST]
 	return USER_LIST
 

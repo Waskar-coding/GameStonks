@@ -18,18 +18,26 @@ function verifyToken(req, res, next) {
 }
 
 function verifyJackpot(req, res, next) {
-    User.findOne({steamid: req.user.user.steamid, jackpots: req.params.jackpot_id},'jackpots',function(err,jackpot) {
-        if(!err) {
-            if (jackpot.status === 'k') {
-                return res.status(403).send({auth: false, message: 'You were kicked from this jackpot'});
-            } else {
+    User.findOne({steamid: req.user.user.steamid},function(err,user){
+        if(!err){
+            if(user.jackpots.length !== 0){
+                for (let jackpot of user.jackpots){
+                    if ((jackpot.jackpot_id === req.params.jackpot_id) && (jackpot.status === 'k')){
+                        return res.status(403).send({auth: false, message: 'You were kicked from this jackpot'});
+                    }
+                    else if (jackpot.jackpot_id === req.params.jackpot_id){
+                        next();
+                    }
+                }
+            }
+            else{
                 next();
             }
         }
         else{
-            return res.status(403).send({auth: false, message: 'Bruh'});
+            console.log(err)
         }
-    })
+    });
 }
 
 module.exports = {

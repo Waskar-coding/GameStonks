@@ -35,3 +35,576 @@ StoreMainFunc 2020-01-31 17:03:31,844 INFO Launched products : ['1213370', '1217
 StoreMainFunc 2020-02-04 23:06:21,874 INFO 
                 New products: [1169920, 1240910, 969220, 1240580, 1226250, 1143820, 1164300, 1060880, 1201680, 1221140, 811030, 1240600, 1237020, 1239580, 1239590, 1228840, 1239080, 1225260, 1232430, 1239600, 1120305, 1215030, 1146430, 1216070, 1223750, 1236550, 1179210, 1209420, 1083980, 1218640, 1202770, 1122900, 1237590, 1157720, 1226840, 1167450, 1237080, 1223260, 1241180, 1238620, 1223270, 1107050, 948850, 1238130, 1213560, 1182330, 1238650, 666240, 1230980, 1234570, 1230990, 1237650, 1228950, 1240730, 1235100, 1113760, 1112230, 1062060, 1226930, 1236660, 1062070, 1151160, 1062080, 1228480, 1235650, 1238720, 1033410, 1157830, 1237190, 1212620, 1201360, 1236180, 1237210, 1113821, 1215200, 1225440, 1219810, 1234150, 1237230, 1144560, 1162480, 1231090, 1236210, 1231610, 1215750, 1234190, 1231120, 1227030, 1239830, 1021210, 1220900, 1073450, 1239340, 1230640, 1091890, 1102130, 1226550, 1236280, 1237310, 1197890, 1197891, 1197892, 1122629, 1122630, 1122631, 1122632, 1197893, 1197894, 1197895, 1197900, 1197901, 1197902, 1197903, 1197904, 1197905, 1197906, 1197907, 1214800, 1229140, 1197910, 1197911, 1205080, 1197912, 1197913, 1197915, 1197914, 1231190, 1237340, 1238360, 1190240, 1235790, 1217890, 1111910, 1151850, 1215340, 873840, 1235320, 1237830, 1224570, 1216380, 1171840, 883590, 1123210, 1219980, 1235340, 1226130, 1173910, 1234840, 1231260, 1231270, 1241000, 1239980, 1029550, 1238450, 1241010, 1222580, 1235380, 1237940, 1226680, 1220540, 1238460, 1224130, 1224650, 1232330, 1203660, 1236940, 1237450, 1240900, 1220560, 1241040, 1171410, 1226710, 1240540, 1219550, 1221600, 1236960, 1233380, 1168870, 1226730, 1235950, 1227760, 650740, 1226740, 1228790, 1239890, 1227770, 1104380]
 StoreMainFunc 2020-02-04 23:13:56,312 INFO Launched products : ['1209330', '1158410', '1224000', '1192920', '1204470', '1131370', '1225320']
+StoreMainFunc 2020-02-10 15:07:50,316 INFO 
+                New products: [1201152, 1244160, 474220, 1242630, 1203720, 1173010, 1244690, 936980, 1242650, 1187360, 1194021, 1237030, 1244710, 1238570, 1242670, 1224240, 1237040, 1239090, 1241650, 1200180, 1244210, 1235510, 1219130, 1237050, 1239100, 1082430, 892990, 1243710, 1232450, 1240130, 1242690, 1239110, 1240650, 1211470, 1219150, 1241680, 432210, 1243730, 1242710, 1240151, 1234520, 1239640, 1200730, 1240670, 1224800, 1245280, 1237090, 1244770, 1128550, 1243750, 1243240, 1152620, 1234540, 1139310, 1205870, 1218160, 1238640, 1239150, 1245810, 1119860, 1232500, 1245300, 1229950, 1229951, 1229952, 1245310, 1236100, 1202310, 600200, 1241740, 829581, 1220750, 1214095, 1243790, 1227410, 1234580, 1200790, 1241750, 1223320, 1228440, 1146522, 1238170, 1227420, 1241760, 1241250, 1214115, 1194660, 1194661, 1240230, 1242790, 1221800, 1239720, 1200300, 1233580, 1243310, 573620, 1241780, 1243320, 1222330, 1226940, 1229500, 1234620, 824000, 1223360, 1231040, 1243330, 897220, 1240260, 1242820, 1136330, 1228490, 1232590, 1142480, 1241810, 1200342, 1222870, 1237720, 1240790, 1242840, 1244890, 1113820, 1231580, 1228510, 1236700, 1089760, 1241830, 1238310, 1234160, 1158900, 1236990, 1240310, 1239290, 1240830, 1243390, 1244930, 1085700, 1234180, 1243400, 1186570, 1227530, 1232650, 1240330, 1070350, 1239310, 1215760, 1147153, 1244940, 1160980, 679700, 1221630, 1237270, 1233690, 1238300, 1201950, 1242910, 1211170, 1211171, 1211172, 1211173, 1211174, 1211175, 1211176, 1211177, 1211178, 1211179, 1228580, 1236260, 1233710, 1236270, 1238320, 1244970, 1230130, 1230131, 1088820, 1240370, 1234230, 1010990, 1233720, 1240870, 1240890, 1243450, 1243960, 1198910, 1179456, 1211200, 1211201, 1211202, 1211203, 1211204, 1186630, 1211205, 1216320, 1223490, 1226570, 1234760, 1118029, 1107790, 1242960, 1236820, 1123670, 929111, 1227610, 1231710, 1241950, 1204580, 1245030, 1234280, 1180010, 1240940, 1225070, 1239920, 1244020, 1243000, 1214330, 1231740, 1234820, 1201030, 1144200, 1225610, 1131410, 1210770, 1230230, 1160600, 1241500, 1234850, 1237410, 842660, 1234340, 1239970, 1241510, 1245090, 1237930, 944050, 1243060, 1239990, 1224120, 1241020, 1056190, 1245630, 1227200, 1213381, 1161670, 1235910, 944080, 1237460, 1016790, 1239000, 1241920, 807900, 1237470, 1231840, 1085410, 1194980, 1202660, 858600, 1241580, 1189870, 1189871, 1240560, 1241590, 1242620, 1201150, 1201151]
+                
+StoreMainFunc 2020-02-10 15:17:08,653 INFO Launched products : ['1140400', '1175080', '1226200', '632590', '1185480', '1209610', '1212380', '1184960', '1221070', '955182']
+StoreMainFunc 2020-02-12 23:13:17,669 INFO 
+                New products: [1246210, 1234950, 1057800, 1229320, 1247240, 1233280, 1243150, 1239060, 1246740, 1235990, 1231900, 1223710, 1245730, 1229350, 1247270, 1227820, 1222190, 1245230, 1247280, 1136690, 1240120, 1206330, 1229370, 1246780, 889921, 1237060, 1241670, 1216590, 1244750, 1236560, 1213010, 1222230, 1244040, 1244760, 1246810, 1142880, 1226850, 1239650, 1247330, 1228390, 1246310, 449920, 931950, 1246830, 1085040, 1015920, 1235570, 1237110, 1210490, 1246330, 1237120, 1239170, 1238660, 1240200, 1247370, 848530, 1245330, 1244820, 1236630, 1246200, 1226910, 449930, 1246370, 1244840, 1247400, 1239210, 1240240, 1234610, 1244850, 1238200, 1245380, 1246920, 1225420, 1232080, 1215700, 1235160, 1245400, 1246430, 1219300, 1216230, 1226470, 1247980, 1233650, 1243380, 1214710, 1218810, 1105160, 1237780, 1239320, 1247000, 1236250, 1245980, 1229090, 1135910, 1201960, 1240360, 1152810, 1206570, 865590, 1218360, 1241400, 1179450, 1179451, 1179452, 1179453, 1179454, 1179455, 1245500, 1179457, 1179458, 1246530, 426820, 1233220, 1247040, 1245000, 1122633, 1122634, 1122635, 1122636, 1235280, 1221460, 1231700, 1215830, 1246550, 1212760, 1246040, 1242970, 1239390, 1244510, 1247080, 449900, 1246060, 1245550, 1224050, 1230710, 1233270, 1235830, 449910, 1236860, 1244540, 1212800, 1212801, 1212802, 1212803, 1155460, 1212804, 1212805, 1212806, 1212807, 1212808, 1212809, 1212810, 1212811, 1212812, 1212813, 1212814, 1212815, 1212816, 1212817, 971150, 1246610, 1246100, 1243030, 1247640, 1160602, 1160603, 1243040, 1245600, 1204130, 1224100, 1108390, 1246120, 1121710, 1243570, 1189820, 1233340, 1246140, 1247170, 1228740, 1158600, 1235400, 1240020, 1239510, 1239511, 1195480, 1239512, 1239513, 1239514, 460760, 1224160, 1236450, 446950, 1240040, 1212400, 1235440, 1245680, 1243640, 1222650, 1224190]
+                
+StoreMainFunc 2020-02-12 23:14:34,621 INFO Successful request of 1229320
+StoreMainFunc 2020-02-12 23:14:34,641 INFO Successful request of 1057800
+StoreMainFunc 2020-02-12 23:14:34,641 INFO Successful request of 1246210
+StoreMainFunc 2020-02-12 23:14:35,479 INFO Successful request of 1234950
+StoreMainFunc 2020-02-12 23:14:35,818 INFO Successful request of 1246740
+StoreMainFunc 2020-02-12 23:14:35,858 INFO Successful request of 1239060
+StoreMainFunc 2020-02-12 23:14:38,744 INFO Successful request of 1247240
+StoreMainFunc 2020-02-12 23:14:38,760 INFO Successful request of 1243150
+StoreMainFunc 2020-02-12 23:14:38,844 INFO Successful request of 1235990
+StoreMainFunc 2020-02-12 23:14:39,586 INFO Successful request of 1233280
+StoreCrunchFunc 2020-02-12 23:14:40,370 WARNING 
+										Found non registered req in 1233280 
+										while parsing pc_requirements at level minimum : Storage (high-quality audio)
+						  				
+StoreCrunchFunc 2020-02-12 23:14:44,086 WARNING 
+										Found non registered req in 1234950 
+										while parsing pc_requirements at level minimum : Storage (high-quality audio)
+						  				
+StoreCrunchFunc 2020-02-12 23:14:45,235 WARNING 
+										Found non registered req in 1229320 
+										while parsing pc_requirements at level minimum : Storage (high-quality audio)
+						  				
+StoreMainFunc 2020-02-12 23:14:48,252 INFO Successful request of 1231900
+StoreMainFunc 2020-02-12 23:14:52,248 INFO Successful request of 1223710
+StoreMainFunc 2020-02-12 23:14:52,252 INFO Successful request of 1227820
+StoreMainFunc 2020-02-12 23:14:52,280 INFO Successful request of 1229350
+StoreMainFunc 2020-02-12 23:14:52,344 INFO Successful request of 1136690
+StoreMainFunc 2020-02-12 23:14:52,992 INFO Successful request of 1247280
+StoreMainFunc 2020-02-12 23:14:52,992 INFO Successful request of 1245230
+StoreMainFunc 2020-02-12 23:14:54,031 INFO Successful request of 1247270
+StoreMainFunc 2020-02-12 23:14:55,458 INFO Successful request of 1222190
+StoreMainFunc 2020-02-12 23:15:05,713 INFO Successful request of 1245730
+StoreCrunchFunc 2020-02-12 23:15:06,487 WARNING Unsupported format for release date in 1247270
+StoreMainFunc 2020-02-12 23:15:11,503 INFO Successful request of 1246780
+StoreMainFunc 2020-02-12 23:15:13,590 INFO Successful request of 1241670
+StoreMainFunc 2020-02-12 23:15:14,199 INFO Successful request of 1216590
+StoreMainFunc 2020-02-12 23:15:14,199 INFO Successful request of 1236560
+StoreMainFunc 2020-02-12 23:15:14,475 INFO Successful request of 889921
+StoreMainFunc 2020-02-12 23:15:15,635 INFO Successful request of 1229370
+StoreMainFunc 2020-02-12 23:15:17,486 INFO Successful request of 1240120
+StoreMainFunc 2020-02-12 23:15:17,486 INFO Successful request of 1206330
+StoreMainFunc 2020-02-12 23:15:17,510 INFO Successful request of 1237060
+StoreMainFunc 2020-02-12 23:15:19,260 INFO Successful request of 1244750
+StoreMainFunc 2020-02-12 23:15:26,512 INFO Successful request of 1247330
+StoreMainFunc 2020-02-12 23:15:26,876 INFO Successful request of 1228390
+StoreMainFunc 2020-02-12 23:15:27,016 INFO Successful request of 1239650
+StoreMainFunc 2020-02-12 23:15:27,108 INFO Successful request of 1246810
+StoreMainFunc 2020-02-12 23:15:27,256 INFO Successful request of 1244760
+StoreMainFunc 2020-02-12 23:15:28,075 INFO Successful request of 1213010
+StoreMainFunc 2020-02-12 23:15:28,101 INFO Successful request of 1244040
+StoreMainFunc 2020-02-12 23:15:28,113 INFO Successful request of 1222230
+StoreMainFunc 2020-02-12 23:15:28,222 INFO Successful request of 1142880
+StoreMainFunc 2020-02-12 23:15:42,892 INFO Successful request of 1226850
+StoreMainFunc 2020-02-12 23:15:47,260 INFO Successful request of 1237110
+StoreMainFunc 2020-02-12 23:15:47,608 INFO Successful request of 1015920
+StoreMainFunc 2020-02-12 23:15:51,193 INFO Successful request of 1246310
+StoreMainFunc 2020-02-12 23:15:51,225 INFO Successful request of 1085040
+StoreMainFunc 2020-02-12 23:15:51,233 INFO Successful request of 1246830
+StoreMainFunc 2020-02-12 23:15:51,237 INFO Successful request of 1235570
+StoreMainFunc 2020-02-12 23:15:51,249 INFO Successful request of 1210490
+StoreMainFunc 2020-02-12 23:15:51,277 INFO Successful request of 449920
+StoreMainFunc 2020-02-12 23:15:53,779 INFO Successful request of 1246330
+StoreMainFunc 2020-02-12 23:15:54,543 INFO Successful request of 931950
+StoreMainFunc 2020-02-12 23:15:58,930 INFO Successful request of 1237120
+StoreMainFunc 2020-02-12 23:15:59,210 INFO Successful request of 1246200
+StoreMainFunc 2020-02-12 23:16:00,179 INFO Successful request of 1236630
+StoreMainFunc 2020-02-12 23:16:02,862 INFO Successful request of 1240200
+StoreMainFunc 2020-02-12 23:16:04,058 INFO Successful request of 1238660
+StoreMainFunc 2020-02-12 23:16:04,058 INFO Successful request of 1239170
+StoreMainFunc 2020-02-12 23:16:04,174 WARNING Unsuccessful request of 1247370
+StoreMainFunc 2020-02-12 23:16:04,238 INFO Successful request of 848530
+StoreMainFunc 2020-02-12 23:16:10,010 INFO Successful request of 1245330
+StoreMainFunc 2020-02-12 23:16:19,236 INFO Successful request of 1244820
+StoreCrunchFunc 2020-02-12 23:16:19,963 WARNING 
+							Found non registered key in 1247370 : 1247370
+							
+StoreCrunchFunc 2020-02-12 23:16:19,963 ERROR Necessary key type not found for 1247370
+StoreCrunchFunc 2020-02-12 23:16:19,963 ERROR Necessary key name not found for 1247370
+StoreCrunchFunc 2020-02-12 23:16:19,963 ERROR Necessary key is_free not found for 1247370
+StoreCrunchFunc 2020-02-12 23:16:19,967 ERROR Necessary key release_date not found for 1247370
+StoreCrunchFunc 2020-02-12 23:16:19,967 WARNING KeyError for pc_requirements in 1247370
+StoreCrunchFunc 2020-02-12 23:16:19,967 WARNING KeyError for mac_requirements in 1247370
+StoreCrunchFunc 2020-02-12 23:16:19,967 WARNING KeyError for linux_requirements in 1247370
+StoreCrunchFunc 2020-02-12 23:16:20,155 WARNING 
+										Found non registered req in 1239170 
+										while parsing pc_requirements at level minimum : Storage (high-quality audio)
+						  				
+StoreMainFunc 2020-02-12 23:16:23,726 INFO Successful request of 1234610
+StoreMainFunc 2020-02-12 23:16:23,742 INFO Successful request of 1247400
+StoreMainFunc 2020-02-12 23:16:24,406 INFO Successful request of 1244840
+StoreMainFunc 2020-02-12 23:16:25,206 INFO Successful request of 1239210
+StoreMainFunc 2020-02-12 23:16:25,374 INFO Successful request of 1226910
+StoreMainFunc 2020-02-12 23:16:28,041 INFO Successful request of 449930
+StoreMainFunc 2020-02-12 23:16:28,049 INFO Successful request of 1244850
+StoreMainFunc 2020-02-12 23:16:28,057 INFO Successful request of 1238200
+StoreMainFunc 2020-02-12 23:16:28,057 INFO Successful request of 1246370
+StoreMainFunc 2020-02-12 23:16:43,899 INFO Successful request of 1240240
+StoreCrunchFunc 2020-02-12 23:16:44,266 WARNING 
+										Found non registered req in 1238200 
+										while parsing pc_requirements at level minimum : Storage (high-quality audio)
+						  				
+StoreCrunchFunc 2020-02-12 23:16:45,098 WARNING 
+										Found non registered req in 1239210 
+										while parsing pc_requirements at level minimum : Storage (high-quality audio)
+						  				
+StoreCrunchFunc 2020-02-12 23:16:45,186 WARNING 
+										Found non registered req in 1244840 
+										while parsing pc_requirements at level minimum : Storage (high-quality audio)
+						  				
+StoreMainFunc 2020-02-12 23:16:48,896 INFO Successful request of 1235160
+StoreMainFunc 2020-02-12 23:16:49,323 INFO Successful request of 1245380
+StoreMainFunc 2020-02-12 23:16:49,399 INFO Successful request of 1245400
+StoreMainFunc 2020-02-12 23:16:50,227 INFO Successful request of 1246920
+StoreMainFunc 2020-02-12 23:16:53,332 INFO Successful request of 1246430
+StoreMainFunc 2020-02-12 23:16:53,342 INFO Successful request of 1232080
+StoreMainFunc 2020-02-12 23:16:53,346 INFO Successful request of 1225420
+StoreMainFunc 2020-02-12 23:16:53,346 INFO Successful request of 1215700
+StoreMainFunc 2020-02-12 23:16:53,434 INFO Successful request of 1219300
+StoreMainFunc 2020-02-12 23:16:53,731 INFO Successful request of 1216230
+StoreCrunchFunc 2020-02-12 23:16:54,697 WARNING 
+										Found non registered req in 1232080 
+										while parsing pc_requirements at level minimum : Storage (high-quality audio)
+						  				
+StoreCrunchFunc 2020-02-12 23:16:55,077 WARNING 
+										Found non registered req in 1245400 
+										while parsing pc_requirements at level minimum : Storage (high-quality audio)
+						  				
+StoreMainFunc 2020-02-12 23:16:58,282 INFO Successful request of 1218810
+StoreMainFunc 2020-02-12 23:16:58,568 INFO Successful request of 1226470
+StoreMainFunc 2020-02-12 23:16:59,317 INFO Successful request of 1243380
+StoreMainFunc 2020-02-12 23:17:02,410 INFO Successful request of 1105160
+StoreMainFunc 2020-02-12 23:17:02,438 INFO Successful request of 1247980
+StoreMainFunc 2020-02-12 23:17:02,458 INFO Successful request of 1239320
+StoreMainFunc 2020-02-12 23:17:02,490 INFO Successful request of 1247000
+StoreMainFunc 2020-02-12 23:17:02,513 INFO Successful request of 1233650
+StoreMainFunc 2020-02-12 23:17:04,692 INFO Successful request of 1214710
+StoreMainFunc 2020-02-12 23:17:17,593 INFO Successful request of 1237780
+StoreMainFunc 2020-02-12 23:17:23,527 INFO Successful request of 1245980
+StoreMainFunc 2020-02-12 23:17:23,637 INFO Successful request of 1236250
+StoreMainFunc 2020-02-12 23:17:23,652 INFO Successful request of 1201960
+StoreMainFunc 2020-02-12 23:17:24,132 INFO Successful request of 1229090
+StoreMainFunc 2020-02-12 23:17:24,132 INFO Successful request of 865590
+StoreMainFunc 2020-02-12 23:17:24,222 INFO Successful request of 1206570
+StoreMainFunc 2020-02-12 23:17:26,906 INFO Successful request of 1240360
+StoreMainFunc 2020-02-12 23:17:26,950 INFO Successful request of 1218360
+StoreMainFunc 2020-02-12 23:17:31,454 INFO Successful request of 1152810
+StoreMainFunc 2020-02-12 23:17:42,167 INFO Successful request of 1135910
+StoreMainFunc 2020-02-12 23:17:47,453 INFO Successful request of 1179451
+StoreMainFunc 2020-02-12 23:17:47,897 INFO Successful request of 1241400
+StoreMainFunc 2020-02-12 23:17:48,009 INFO Successful request of 1179452
+StoreMainFunc 2020-02-12 23:17:48,941 INFO Successful request of 1179457
+StoreMainFunc 2020-02-12 23:17:51,545 INFO Successful request of 1179455
+StoreMainFunc 2020-02-12 23:17:51,545 INFO Successful request of 1179453
+StoreMainFunc 2020-02-12 23:17:51,549 INFO Successful request of 1245500
+StoreMainFunc 2020-02-12 23:17:51,549 INFO Successful request of 1179458
+StoreMainFunc 2020-02-12 23:17:51,549 INFO Successful request of 1179454
+StoreMainFunc 2020-02-12 23:17:51,549 INFO Successful request of 1179450
+StoreMainFunc 2020-02-12 23:17:58,310 INFO Successful request of 426820
+StoreMainFunc 2020-02-12 23:17:58,478 INFO Successful request of 1122635
+StoreMainFunc 2020-02-12 23:17:59,055 INFO Successful request of 1246530
+StoreMainFunc 2020-02-12 23:17:59,295 INFO Successful request of 1122633
+StoreMainFunc 2020-02-12 23:18:02,017 INFO Successful request of 1122636
+StoreMainFunc 2020-02-12 23:18:02,049 INFO Successful request of 1122634
+StoreMainFunc 2020-02-12 23:18:02,127 INFO Successful request of 1235280
+StoreMainFunc 2020-02-12 23:18:02,135 INFO Successful request of 1233220
+StoreMainFunc 2020-02-12 23:18:02,139 INFO Successful request of 1247040
+StoreMainFunc 2020-02-12 23:18:02,155 INFO Successful request of 1245000
+StoreCrunchFunc 2020-02-12 23:18:02,763 WARNING 
+										Found non registered req in 1233220 
+										while parsing pc_requirements at level minimum : Storage (high-quality audio)
+						  				
+StoreMainFunc 2020-02-12 23:18:05,904 INFO Successful request of 1246550
+StoreMainFunc 2020-02-12 23:18:05,952 INFO Successful request of 1244510
+StoreMainFunc 2020-02-12 23:18:06,145 INFO Successful request of 1215830
+StoreMainFunc 2020-02-12 23:18:06,665 INFO Successful request of 1239390
+StoreMainFunc 2020-02-12 23:18:07,384 INFO Successful request of 1221460
+StoreMainFunc 2020-02-12 23:18:08,176 INFO Successful request of 1231700
+StoreMainFunc 2020-02-12 23:18:10,648 WARNING Unsuccessful request of 1247080
+StoreMainFunc 2020-02-12 23:18:10,664 INFO Successful request of 1212760
+StoreMainFunc 2020-02-12 23:18:10,668 INFO Successful request of 1242970
+StoreMainFunc 2020-02-12 23:18:10,672 INFO Successful request of 1246040
+StoreCrunchFunc 2020-02-12 23:18:10,680 INFO 
+						The following unregistered tags in 1246040 
+						were added to genres_index.csv : ['Accounting', 'Utilities']
+						
+StoreCrunchFunc 2020-02-12 23:18:11,568 WARNING 
+										Found non registered req in 1242970 
+										while parsing pc_requirements at level minimum : Storage (high-quality audio)
+						  				
+StoreCrunchFunc 2020-02-12 23:18:13,585 WARNING 
+							Found non registered key in 1247080 : 1247080
+							
+StoreCrunchFunc 2020-02-12 23:18:13,585 ERROR Necessary key type not found for 1247080
+StoreCrunchFunc 2020-02-12 23:18:13,589 ERROR Necessary key name not found for 1247080
+StoreCrunchFunc 2020-02-12 23:18:13,589 ERROR Necessary key is_free not found for 1247080
+StoreCrunchFunc 2020-02-12 23:18:13,589 ERROR Necessary key release_date not found for 1247080
+StoreCrunchFunc 2020-02-12 23:18:13,589 WARNING KeyError for pc_requirements in 1247080
+StoreCrunchFunc 2020-02-12 23:18:13,589 WARNING KeyError for mac_requirements in 1247080
+StoreCrunchFunc 2020-02-12 23:18:13,589 WARNING KeyError for linux_requirements in 1247080
+StoreCrunchFunc 2020-02-12 23:18:14,492 WARNING 
+										Found non registered req in 1239390 
+										while parsing pc_requirements at level minimum : Storage (high-quality audio)
+						  				
+StoreMainFunc 2020-02-12 23:18:17,986 INFO Successful request of 1236860
+StoreMainFunc 2020-02-12 23:18:18,238 INFO Successful request of 1233270
+StoreMainFunc 2020-02-12 23:18:18,622 INFO Successful request of 1230710
+StoreMainFunc 2020-02-12 23:18:20,667 INFO Successful request of 1244540
+StoreMainFunc 2020-02-12 23:18:21,378 INFO Successful request of 1245550
+StoreMainFunc 2020-02-12 23:18:22,325 INFO Successful request of 449910
+StoreMainFunc 2020-02-12 23:18:22,329 INFO Successful request of 1246060
+StoreMainFunc 2020-02-12 23:18:22,365 INFO Successful request of 449900
+StoreMainFunc 2020-02-12 23:18:23,549 INFO Successful request of 1224050
+StoreMainFunc 2020-02-12 23:18:34,498 INFO Successful request of 1235830
+StoreMainFunc 2020-02-12 23:18:39,225 INFO Successful request of 1212807
+StoreMainFunc 2020-02-12 23:18:40,367 INFO Successful request of 1212804
+StoreMainFunc 2020-02-12 23:18:41,096 INFO Successful request of 1212808
+StoreMainFunc 2020-02-12 23:18:41,168 INFO Successful request of 1212800
+StoreMainFunc 2020-02-12 23:18:43,589 INFO Successful request of 1155460
+StoreMainFunc 2020-02-12 23:18:43,624 INFO Successful request of 1212801
+StoreMainFunc 2020-02-12 23:18:43,699 INFO Successful request of 1212806
+StoreMainFunc 2020-02-12 23:18:43,723 INFO Successful request of 1212805
+StoreMainFunc 2020-02-12 23:18:43,727 INFO Successful request of 1212802
+StoreMainFunc 2020-02-12 23:18:43,727 INFO Successful request of 1212803
+StoreMainFunc 2020-02-12 23:18:48,135 INFO Successful request of 1212817
+StoreMainFunc 2020-02-12 23:18:49,334 INFO Successful request of 1212809
+StoreMainFunc 2020-02-12 23:18:49,746 INFO Successful request of 1212811
+StoreMainFunc 2020-02-12 23:18:49,867 INFO Successful request of 971150
+StoreMainFunc 2020-02-12 23:18:52,326 INFO Successful request of 1212810
+StoreMainFunc 2020-02-12 23:18:52,334 INFO Successful request of 1212812
+StoreMainFunc 2020-02-12 23:18:52,350 INFO Successful request of 1212816
+StoreMainFunc 2020-02-12 23:18:52,350 INFO Successful request of 1212815
+StoreMainFunc 2020-02-12 23:19:02,466 INFO Successful request of 1212814
+StoreMainFunc 2020-02-12 23:19:07,318 INFO Successful request of 1212813
+StoreMainFunc 2020-02-12 23:19:12,310 INFO Successful request of 1246100
+StoreMainFunc 2020-02-12 23:19:13,857 INFO Successful request of 1160603
+StoreMainFunc 2020-02-12 23:19:14,225 INFO Successful request of 1247640
+StoreMainFunc 2020-02-12 23:19:14,288 INFO Successful request of 1243040
+StoreMainFunc 2020-02-12 23:19:15,867 INFO Successful request of 1245600
+StoreMainFunc 2020-02-12 23:19:16,916 INFO Successful request of 1160602
+StoreMainFunc 2020-02-12 23:19:16,916 INFO Successful request of 1243030
+StoreMainFunc 2020-02-12 23:19:16,928 INFO Successful request of 1224100
+StoreMainFunc 2020-02-12 23:19:16,928 INFO Successful request of 1204130
+StoreMainFunc 2020-02-12 23:19:19,874 INFO Successful request of 1246610
+StoreCrunchFunc 2020-02-12 23:19:20,706 WARNING 
+										Found non registered req in 1224100 
+										while parsing pc_requirements at level minimum : Storage (high-quality audio)
+						  				
+StoreMainFunc 2020-02-12 23:19:26,336 INFO Successful request of 1228740
+StoreMainFunc 2020-02-12 23:19:26,956 INFO Successful request of 1247170
+StoreMainFunc 2020-02-12 23:19:27,080 INFO Successful request of 1233340
+StoreMainFunc 2020-02-12 23:19:28,248 INFO Successful request of 1246120
+StoreMainFunc 2020-02-12 23:19:30,735 INFO Successful request of 1158600
+StoreMainFunc 2020-02-12 23:19:30,819 INFO Successful request of 1246140
+StoreMainFunc 2020-02-12 23:19:30,831 INFO Successful request of 1243570
+StoreMainFunc 2020-02-12 23:19:31,949 INFO Successful request of 1108390
+StoreMainFunc 2020-02-12 23:19:42,566 INFO Successful request of 1121710
+StoreMainFunc 2020-02-12 23:19:45,771 INFO Successful request of 1189820
+StoreCrunchFunc 2020-02-12 23:19:47,499 WARNING 
+										Found non registered req in 1243570 
+										while parsing pc_requirements at level minimum : Storage (high-quality audio)
+						  				
+StoreCrunchFunc 2020-02-12 23:19:49,616 WARNING 
+										Found non registered req in 1233340 
+										while parsing pc_requirements at level minimum : Storage (high-quality audio)
+						  				
+StoreCrunchFunc 2020-02-12 23:19:50,380 WARNING 
+										Found non registered req in 1228740 
+										while parsing pc_requirements at level minimum : Storage (high-quality audio)
+						  				
+StoreMainFunc 2020-02-12 23:19:53,749 INFO Successful request of 1224160
+StoreMainFunc 2020-02-12 23:19:54,492 INFO Successful request of 1239510
+StoreMainFunc 2020-02-12 23:19:57,195 INFO Successful request of 1235400
+StoreMainFunc 2020-02-12 23:19:57,229 INFO Successful request of 1239511
+StoreMainFunc 2020-02-12 23:19:57,309 INFO Successful request of 1239512
+StoreMainFunc 2020-02-12 23:19:57,337 INFO Successful request of 1239514
+StoreMainFunc 2020-02-12 23:19:57,341 INFO Successful request of 1239513
+StoreMainFunc 2020-02-12 23:19:57,357 INFO Successful request of 460760
+StoreMainFunc 2020-02-12 23:19:59,305 INFO Successful request of 1240020
+StoreMainFunc 2020-02-12 23:20:03,626 INFO Successful request of 1195480
+StoreCrunchFunc 2020-02-12 23:20:04,022 WARNING 
+										Found non registered req in 1239513 
+										while parsing pc_requirements at level minimum : Storage (high-quality audio)
+						  				
+StoreCrunchFunc 2020-02-12 23:20:04,322 WARNING 
+										Found non registered req in 1239512 
+										while parsing pc_requirements at level minimum : Storage (high-quality audio)
+						  				
+StoreCrunchFunc 2020-02-12 23:20:04,448 WARNING 
+										Found non registered req in 1239511 
+										while parsing pc_requirements at level minimum : Storage (high-quality audio)
+						  				
+StoreCrunchFunc 2020-02-12 23:20:04,887 WARNING 
+										Found non registered req in 1239510 
+										while parsing pc_requirements at level minimum : Storage (high-quality audio)
+						  				
+StoreMainFunc 2020-02-12 23:20:08,502 WARNING Unsuccessful request of 1222650
+StoreMainFunc 2020-02-12 23:20:09,585 INFO Successful request of 1245680
+StoreMainFunc 2020-02-12 23:20:09,667 INFO Successful request of 1240040
+StoreMainFunc 2020-02-12 23:20:10,200 INFO Successful request of 1224190
+StoreMainFunc 2020-02-12 23:20:10,222 INFO Successful request of 1235440
+StoreMainFunc 2020-02-12 23:20:11,905 INFO Successful request of 1212400
+StoreMainFunc 2020-02-12 23:20:12,105 INFO Successful request of 446950
+StoreMainFunc 2020-02-12 23:20:12,105 INFO Successful request of 1243640
+StoreMainFunc 2020-02-12 23:20:12,105 INFO Successful request of 1116260
+StoreMainFunc 2020-02-12 23:20:16,382 INFO Successful request of 1236450
+StoreCrunchFunc 2020-02-12 23:20:17,749 WARNING 
+										Found non registered req in 1224190 
+										while parsing pc_requirements at level minimum : Storage (high-quality audio)
+						  				
+StoreCrunchFunc 2020-02-12 23:20:18,521 WARNING 
+							Found non registered key in 1222650 : 1222650
+							
+StoreCrunchFunc 2020-02-12 23:20:18,521 ERROR Necessary key type not found for 1222650
+StoreCrunchFunc 2020-02-12 23:20:18,521 ERROR Necessary key name not found for 1222650
+StoreCrunchFunc 2020-02-12 23:20:18,521 ERROR Necessary key is_free not found for 1222650
+StoreCrunchFunc 2020-02-12 23:20:18,521 ERROR Necessary key release_date not found for 1222650
+StoreCrunchFunc 2020-02-12 23:20:18,521 WARNING KeyError for pc_requirements in 1222650
+StoreCrunchFunc 2020-02-12 23:20:18,521 WARNING KeyError for mac_requirements in 1222650
+StoreCrunchFunc 2020-02-12 23:20:18,521 WARNING KeyError for linux_requirements in 1222650
+StoreMainFunc 2020-02-12 23:20:21,842 INFO Successful request of 1189800
+StoreMainFunc 2020-02-12 23:20:21,862 INFO Successful request of 1186200
+StoreMainFunc 2020-02-12 23:20:25,390 INFO Successful request of 1149500
+StoreMainFunc 2020-02-12 23:20:25,390 INFO Successful request of 852890
+StoreMainFunc 2020-02-12 23:20:25,430 INFO Successful request of 1188870
+StoreMainFunc 2020-02-12 23:20:25,434 INFO Successful request of 1183350
+StoreMainFunc 2020-02-12 23:20:25,494 INFO Successful request of 1177110
+StoreMainFunc 2020-02-12 23:20:25,498 INFO Successful request of 1189060
+StoreMainFunc 2020-02-12 23:20:29,397 INFO Successful request of 1192960
+StoreMainFunc 2020-02-12 23:20:30,667 INFO Successful request of 1188850
+StoreMainFunc 2020-02-12 23:20:37,026 INFO Successful request of 1162650
+StoreMainFunc 2020-02-12 23:20:38,364 INFO Successful request of 1194290
+StoreMainFunc 2020-02-12 23:20:41,011 INFO Successful request of 1194190
+StoreMainFunc 2020-02-12 23:20:41,074 INFO Successful request of 1170910
+StoreMainFunc 2020-02-12 23:20:41,082 INFO Successful request of 1178250
+StoreMainFunc 2020-02-12 23:20:41,119 INFO Successful request of 1163040
+StoreMainFunc 2020-02-12 23:20:41,123 INFO Successful request of 1160770
+StoreMainFunc 2020-02-12 23:20:41,143 INFO Successful request of 1185810
+StoreMainFunc 2020-02-12 23:20:42,191 INFO Successful request of 1182280
+StoreMainFunc 2020-02-12 23:20:43,217 INFO Successful request of 1035950
+StoreMainFunc 2020-02-12 23:20:49,340 INFO Successful request of 1195910
+StoreMainFunc 2020-02-12 23:20:50,504 INFO Successful request of 495420
+StoreMainFunc 2020-02-12 23:20:50,504 INFO Successful request of 1203780
+StoreMainFunc 2020-02-12 23:20:50,890 INFO Successful request of 1074190
+StoreMainFunc 2020-02-12 23:20:52,331 INFO Successful request of 1206280
+StoreMainFunc 2020-02-12 23:20:53,475 INFO Successful request of 1199170
+StoreMainFunc 2020-02-12 23:20:53,769 INFO Successful request of 1180210
+StoreMainFunc 2020-02-12 23:20:53,781 INFO Successful request of 395830
+StoreMainFunc 2020-02-12 23:20:53,781 INFO Successful request of 1177650
+StoreMainFunc 2020-02-12 23:20:53,781 INFO Successful request of 1177170
+StoreMainFunc 2020-02-12 23:20:59,724 INFO Successful request of 1132220
+StoreMainFunc 2020-02-12 23:21:04,319 INFO Successful request of 1199200
+StoreMainFunc 2020-02-12 23:21:04,351 INFO Successful request of 1195090
+StoreMainFunc 2020-02-12 23:21:04,355 INFO Successful request of 1196680
+StoreMainFunc 2020-02-12 23:21:04,355 INFO Successful request of 1202790
+StoreMainFunc 2020-02-12 23:21:04,363 INFO Successful request of 1196230
+StoreMainFunc 2020-02-12 23:21:04,377 INFO Successful request of 1147110
+StoreMainFunc 2020-02-12 23:21:05,755 INFO Successful request of 1132230
+StoreMainFunc 2020-02-12 23:21:08,304 INFO Successful request of 1187940
+StoreMainFunc 2020-02-12 23:21:10,813 INFO Successful request of 979640
+StoreMainFunc 2020-02-12 23:21:17,329 INFO Successful request of 1212510
+StoreMainFunc 2020-02-12 23:21:18,315 INFO Successful request of 1202410
+StoreMainFunc 2020-02-12 23:21:19,102 INFO Successful request of 1212630
+StoreMainFunc 2020-02-12 23:21:19,389 INFO Successful request of 1177640
+StoreMainFunc 2020-02-12 23:21:20,186 INFO Successful request of 1212430
+StoreMainFunc 2020-02-12 23:21:21,816 INFO Successful request of 1118240
+StoreMainFunc 2020-02-12 23:21:21,923 INFO Successful request of 1208510
+StoreMainFunc 2020-02-12 23:21:22,139 INFO Successful request of 1179790
+StoreMainFunc 2020-02-12 23:21:22,155 INFO Successful request of 1204440
+StoreMainFunc 2020-02-12 23:21:23,158 INFO Successful request of 1210620
+StoreMainFunc 2020-02-12 23:21:31,605 INFO Successful request of 1210800
+StoreMainFunc 2020-02-12 23:21:33,254 INFO Successful request of 1212850
+StoreMainFunc 2020-02-12 23:21:35,274 INFO Successful request of 1050880
+StoreMainFunc 2020-02-12 23:21:35,321 INFO Successful request of 1212960
+StoreMainFunc 2020-02-12 23:21:35,482 INFO Successful request of 1024460
+StoreMainFunc 2020-02-12 23:21:35,482 INFO Successful request of 973230
+StoreMainFunc 2020-02-12 23:21:35,614 INFO Successful request of 1212840
+StoreMainFunc 2020-02-12 23:21:37,347 INFO Successful request of 1214850
+StoreMainFunc 2020-02-12 23:21:43,059 INFO Successful request of 1208590
+StoreMainFunc 2020-02-12 23:21:52,671 INFO Successful request of 1137110
+StoreMainFunc 2020-02-12 23:21:59,614 INFO Successful request of 1213020
+StoreMainFunc 2020-02-12 23:22:00,118 INFO Successful request of 1209190
+StoreMainFunc 2020-02-12 23:22:03,657 INFO Successful request of 1213220
+StoreMainFunc 2020-02-12 23:22:03,657 INFO Successful request of 1204740
+StoreMainFunc 2020-02-12 23:22:03,665 INFO Successful request of 1184480
+StoreMainFunc 2020-02-12 23:22:03,669 INFO Successful request of 1188760
+StoreMainFunc 2020-02-12 23:22:03,669 INFO Successful request of 1211240
+StoreMainFunc 2020-02-12 23:22:03,677 INFO Successful request of 1124990
+StoreMainFunc 2020-02-12 23:22:03,689 INFO Successful request of 867150
+StoreMainFunc 2020-02-12 23:22:04,455 INFO Successful request of 995880
+StoreMainFunc 2020-02-12 23:22:10,548 INFO Successful request of 1209470
+StoreMainFunc 2020-02-12 23:22:10,816 INFO Successful request of 1195020
+StoreMainFunc 2020-02-12 23:22:10,957 INFO Successful request of 1199180
+StoreMainFunc 2020-02-12 23:22:12,152 INFO Successful request of 961450
+StoreMainFunc 2020-02-12 23:22:12,513 INFO Successful request of 1209460
+StoreMainFunc 2020-02-12 23:22:12,528 INFO Successful request of 1190990
+StoreMainFunc 2020-02-12 23:22:14,627 INFO Successful request of 1213450
+StoreMainFunc 2020-02-12 23:22:14,707 INFO Successful request of 1205270
+StoreMainFunc 2020-02-12 23:22:14,846 INFO Successful request of 1135810
+StoreMainFunc 2020-02-12 23:22:20,438 INFO Successful request of 1205390
+StoreMainFunc 2020-02-12 23:22:26,973 INFO Successful request of 1211650
+StoreMainFunc 2020-02-12 23:22:27,622 INFO Successful request of 1211640
+StoreMainFunc 2020-02-12 23:22:28,473 INFO Successful request of 1156490
+StoreMainFunc 2020-02-12 23:22:29,308 INFO Successful request of 1205680
+StoreMainFunc 2020-02-12 23:22:30,505 INFO Successful request of 1197390
+StoreMainFunc 2020-02-12 23:22:31,740 INFO Successful request of 1199324
+StoreMainFunc 2020-02-12 23:22:31,810 INFO Successful request of 1199360
+StoreMainFunc 2020-02-12 23:22:31,844 INFO Successful request of 1156300
+StoreMainFunc 2020-02-12 23:22:32,090 INFO Successful request of 1176990
+StoreMainFunc 2020-02-12 23:22:36,758 INFO Successful request of 1178830
+StoreMainFunc 2020-02-12 23:22:45,424 INFO Successful request of 1152710
+StoreMainFunc 2020-02-12 23:22:45,492 INFO Successful request of 1193470
+StoreMainFunc 2020-02-12 23:22:45,600 INFO Successful request of 1212030
+StoreMainFunc 2020-02-12 23:22:46,356 INFO Successful request of 1203930
+StoreMainFunc 2020-02-12 23:22:46,524 INFO Successful request of 1199830
+StoreMainFunc 2020-02-12 23:22:48,633 INFO Successful request of 1203900
+StoreMainFunc 2020-02-12 23:22:48,641 INFO Successful request of 1191840
+StoreMainFunc 2020-02-12 23:22:48,645 INFO Successful request of 1191550
+StoreMainFunc 2020-02-12 23:22:48,717 INFO Successful request of 964150
+StoreMainFunc 2020-02-12 23:23:04,700 INFO Successful request of 1212180
+StoreMainFunc 2020-02-12 23:23:11,379 INFO Successful request of 1193871
+StoreMainFunc 2020-02-12 23:23:12,315 INFO Successful request of 1207320
+StoreMainFunc 2020-02-12 23:23:12,319 INFO Successful request of 1163140
+StoreMainFunc 2020-02-12 23:23:13,270 INFO Successful request of 1210300
+StoreMainFunc 2020-02-12 23:23:13,274 INFO Successful request of 1214320
+StoreMainFunc 2020-02-12 23:23:15,960 INFO Successful request of 1199690
+StoreMainFunc 2020-02-12 23:23:15,980 INFO Successful request of 1202780
+StoreMainFunc 2020-02-12 23:23:15,980 INFO Successful request of 1210340
+StoreMainFunc 2020-02-12 23:23:16,016 INFO Successful request of 1185340
+StoreMainFunc 2020-02-12 23:23:17,744 INFO Successful request of 1212410
+StoreMainFunc 2020-02-12 23:23:24,465 INFO Successful request of 1213110
+StoreMainFunc 2020-02-12 23:23:26,553 INFO Successful request of 1066180
+StoreMainFunc 2020-02-12 23:23:27,003 INFO Successful request of 1127170
+StoreMainFunc 2020-02-12 23:23:29,112 INFO Successful request of 1209580
+StoreMainFunc 2020-02-12 23:23:29,116 INFO Successful request of 1212580
+StoreMainFunc 2020-02-12 23:23:29,132 INFO Successful request of 1215580
+StoreMainFunc 2020-02-12 23:23:29,144 INFO Successful request of 1202900
+StoreMainFunc 2020-02-12 23:23:30,127 INFO Successful request of 1212660
+StoreMainFunc 2020-02-12 23:23:30,230 INFO Successful request of 1212020
+StoreMainFunc 2020-02-12 23:23:37,952 INFO Successful request of 1140460
+StoreMainFunc 2020-02-12 23:23:42,650 INFO Successful request of 1149690
+StoreMainFunc 2020-02-12 23:23:43,339 INFO Successful request of 1214470
+StoreMainFunc 2020-02-12 23:23:43,535 INFO Successful request of 1212330
+StoreMainFunc 2020-02-12 23:23:44,746 INFO Successful request of 1110930
+StoreMainFunc 2020-02-12 23:23:44,750 INFO Successful request of 1213390
+StoreMainFunc 2020-02-12 23:23:47,558 INFO Successful request of 1215390
+StoreMainFunc 2020-02-12 23:23:47,571 INFO Successful request of 1200060
+StoreMainFunc 2020-02-12 23:23:47,575 INFO Successful request of 789920
+StoreMainFunc 2020-02-12 23:23:47,575 INFO Successful request of 1205130
+StoreMainFunc 2020-02-12 23:23:50,408 INFO Successful request of 1214520
+StoreMainFunc 2020-02-12 23:23:55,555 INFO Successful request of 1209080
+StoreMainFunc 2020-02-12 23:23:55,667 INFO Successful request of 1078500
+StoreMainFunc 2020-02-12 23:23:57,512 INFO Successful request of 1202540
+StoreMainFunc 2020-02-12 23:23:57,801 INFO Successful request of 1199110
+StoreMainFunc 2020-02-12 23:24:00,427 INFO Successful request of 1215020
+StoreMainFunc 2020-02-12 23:24:00,437 INFO Successful request of 1197620
+StoreMainFunc 2020-02-12 23:24:00,451 INFO Successful request of 1153060
+StoreMainFunc 2020-02-12 23:24:00,463 INFO Successful request of 1150500
+StoreMainFunc 2020-02-12 23:24:00,475 INFO Successful request of 1156990
+StoreMainFunc 2020-02-12 23:24:06,480 INFO Successful request of 1207850
+StoreMainFunc 2020-02-12 23:24:10,928 INFO Successful request of 1050170
+StoreMainFunc 2020-02-12 23:24:11,184 INFO Successful request of 1206910
+StoreMainFunc 2020-02-12 23:24:12,236 INFO Successful request of 1171540
+StoreMainFunc 2020-02-12 23:24:13,220 INFO Successful request of 1095760
+StoreMainFunc 2020-02-12 23:24:15,658 INFO Successful request of 1146010
+StoreMainFunc 2020-02-12 23:24:15,698 INFO Successful request of 1167110
+StoreMainFunc 2020-02-12 23:24:15,711 INFO Successful request of 1212040
+StoreMainFunc 2020-02-12 23:24:15,727 INFO Successful request of 817840
+StoreMainFunc 2020-02-12 23:24:15,735 INFO Successful request of 1209000
+StoreMainFunc 2020-02-12 23:24:23,689 INFO Successful request of 1123030
+StoreMainFunc 2020-02-12 23:24:28,088 INFO Successful request of 1216990
+StoreMainFunc 2020-02-12 23:24:29,558 INFO Successful request of 1216490
+StoreMainFunc 2020-02-12 23:24:32,889 INFO Successful request of 1031650
+StoreMainFunc 2020-02-12 23:24:32,897 INFO Successful request of 1126120
+StoreMainFunc 2020-02-12 23:24:32,897 INFO Successful request of 951570
+StoreMainFunc 2020-02-12 23:24:32,934 INFO Successful request of 1215770
+StoreMainFunc 2020-02-12 23:24:32,958 INFO Successful request of 1211830
+StoreMainFunc 2020-02-12 23:24:32,962 INFO Successful request of 1209650
+StoreMainFunc 2020-02-12 23:24:33,869 INFO Successful request of 1068830
+StoreMainFunc 2020-02-12 23:24:49,563 INFO Successful request of 1215870
+StoreMainFunc 2020-02-12 23:24:54,808 INFO Successful request of 1223530
+StoreMainFunc 2020-02-12 23:24:55,931 INFO Successful request of 1178300
+StoreMainFunc 2020-02-12 23:24:55,979 INFO Successful request of 1212370
+StoreMainFunc 2020-02-12 23:24:56,553 INFO Successful request of 1216270
+StoreMainFunc 2020-02-12 23:24:59,087 INFO Successful request of 1149450
+StoreMainFunc 2020-02-12 23:24:59,104 INFO Successful request of 1223440
+StoreMainFunc 2020-02-12 23:24:59,271 INFO Successful request of 1223350
+StoreMainFunc 2020-02-12 23:24:59,271 INFO Successful request of 1144400
+StoreMainFunc 2020-02-12 23:25:09,323 INFO Successful request of 1223850
+StoreMainFunc 2020-02-12 23:25:15,500 INFO Successful request of 1175360
+StoreMainFunc 2020-02-12 23:25:21,003 INFO Successful request of 1229260
+StoreMainFunc 2020-02-12 23:25:21,619 INFO Successful request of 1212500
+StoreMainFunc 2020-02-12 23:25:21,679 INFO Successful request of 1172950
+StoreMainFunc 2020-02-12 23:25:22,708 INFO Successful request of 1227250
+StoreMainFunc 2020-02-12 23:25:22,736 INFO Successful request of 1168850
+StoreMainFunc 2020-02-12 23:25:22,764 INFO Successful request of 1177580
+StoreMainFunc 2020-02-12 23:25:25,207 INFO Successful request of 1230790
+StoreMainFunc 2020-02-12 23:25:25,336 INFO Successful request of 1218400
+StoreMainFunc 2020-02-12 23:25:25,370 INFO Successful request of 1202430
+StoreMainFunc 2020-02-12 23:25:32,294 INFO Successful request of 1235430
+StoreMainFunc 2020-02-12 23:25:36,591 INFO Successful request of 1241950
+StoreMainFunc 2020-02-12 23:25:37,145 INFO Successful request of 1225070
+StoreMainFunc 2020-02-12 23:25:37,320 INFO Successful request of 1183220
+StoreMainFunc 2020-02-12 23:25:38,563 INFO Successful request of 1225210
+StoreMainFunc 2020-02-12 23:25:41,212 INFO Successful request of 1231710
+StoreMainFunc 2020-02-12 23:25:41,220 INFO Successful request of 993770
+StoreMainFunc 2020-02-12 23:25:41,224 INFO Successful request of 1194480
+StoreMainFunc 2020-02-12 23:25:41,236 INFO Successful request of 1175540
+StoreMainFunc 2020-02-12 23:25:47,146 INFO Successful request of 1204580
+StoreMainFunc 2020-02-12 23:25:51,342 INFO Successful request of 1227260
+StoreMainFunc 2020-02-12 23:25:55,884 INFO Successful request of 1201030
+StoreMainFunc 2020-02-12 23:25:55,920 INFO Successful request of 1231740
+StoreMainFunc 2020-02-12 23:25:57,385 INFO Successful request of 1243000
+StoreMainFunc 2020-02-12 23:25:57,413 INFO Successful request of 1214330
+StoreMainFunc 2020-02-12 23:25:57,846 INFO Successful request of 1225610
+StoreMainFunc 2020-02-12 23:26:00,448 INFO Successful request of 1239920
+StoreMainFunc 2020-02-12 23:26:00,580 INFO Successful request of 1234820
+StoreMainFunc 2020-02-12 23:26:01,492 INFO Successful request of 1234280
+StoreMainFunc 2020-02-12 23:26:06,602 INFO Successful request of 1131410
+StoreMainFunc 2020-02-12 23:26:11,005 INFO Successful request of 1144200
+StoreCrunchFunc 2020-02-12 23:26:12,669 WARNING 
+										Found non registered req in 1243000 
+										while parsing pc_requirements at level minimum : Storage (high-quality audio)
+						  				
+StoreCrunchFunc 2020-02-12 23:26:13,033 WARNING 
+										Found non registered req in 1201030 
+										while parsing pc_requirements at level minimum : Storage (high-quality audio)
+						  				
+StoreMainFunc 2020-02-12 23:26:15,193 INFO Successful request of 1234850
+StoreMainFunc 2020-02-12 23:26:15,193 INFO Successful request of 1210770
+StoreMainFunc 2020-02-12 23:26:16,844 INFO Successful request of 1237410
+StoreMainFunc 2020-02-12 23:26:20,050 INFO Successful request of 842660
+StoreMainFunc 2020-02-12 23:26:20,097 INFO Successful request of 1241510
+StoreMainFunc 2020-02-12 23:26:20,105 INFO Successful request of 1239970
+StoreMainFunc 2020-02-12 23:26:20,109 INFO Successful request of 1160600
+StoreMainFunc 2020-02-12 23:26:20,109 INFO Successful request of 1241500
+StoreMainFunc 2020-02-12 23:26:21,555 INFO Successful request of 1234340
+StoreMainFunc 2020-02-12 23:26:23,189 INFO Successful request of 1243060
+StoreMainFunc 2020-02-12 23:26:27,664 INFO Successful request of 807900
+StoreMainFunc 2020-02-12 23:26:28,409 INFO Successful request of 944080
+StoreMainFunc 2020-02-12 23:26:30,387 INFO Successful request of 1235910
+StoreMainFunc 2020-02-12 23:26:30,387 INFO Successful request of 1245090
+StoreMainFunc 2020-02-12 23:26:34,162 INFO Successful request of 1245630
+StoreMainFunc 2020-02-12 23:26:34,166 INFO Successful request of 1227200
+StoreMainFunc 2020-02-12 23:26:34,174 INFO Successful request of 1239990
+StoreMainFunc 2020-02-12 23:26:34,174 INFO Successful request of 1241020
+StoreMainFunc 2020-02-12 23:26:34,174 INFO Successful request of 1224120
+StoreMainFunc 2020-02-12 23:26:40,302 INFO Successful request of 944050
+StoreMainFunc 2020-02-12 23:26:44,937 INFO Successful request of 1189870
+StoreMainFunc 2020-02-12 23:26:45,210 INFO Successful request of 1240560
+StoreMainFunc 2020-02-12 23:26:45,760 INFO Successful request of 1231840
+StoreMainFunc 2020-02-12 23:26:45,782 INFO Successful request of 1016790
+StoreMainFunc 2020-02-12 23:26:46,907 INFO Successful request of 1202660
+StoreMainFunc 2020-02-12 23:26:46,971 INFO Successful request of 1189871
+StoreMainFunc 2020-02-12 23:26:47,032 INFO Successful request of 1237460
+StoreMainFunc 2020-02-12 23:26:49,532 INFO Successful request of 1239000
+StoreMainFunc 2020-02-12 23:26:49,544 INFO Successful request of 1241920
+StoreMainFunc 2020-02-12 23:27:07,981 INFO Successful request of 1161670
+StoreMainFunc 2020-02-12 23:27:12,577 INFO Successful request of 1242620
+StoreMainFunc 2020-02-12 23:27:13,773 INFO Successful request of 1241580
+StoreMainFunc 2020-02-12 23:27:16,809 INFO Successful request of 858600
+StoreMainFunc 2020-02-12 23:27:16,976 INFO Successful request of 1241590
+StoreCrunchFunc 2020-02-12 23:27:17,375 WARNING 
+										Found non registered req in 1241580 
+										while parsing pc_requirements at level minimum : Storage (high-quality audio)
+						  				
+StoreMainFunc 2020-02-12 23:27:17,757 INFO Launched products : ['1170910', '1211650', '1195910', '1196680', '1227260', '1229260', '1235430', '1035950', '1177640', '1123030', '1201030', '1243000']

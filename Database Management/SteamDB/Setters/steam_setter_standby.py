@@ -286,11 +286,6 @@ def assignOld(appid: str) -> None:
 
 	###Retrieving game
 	steamgame = gamedb.SteamGame.objects(appid=appid).first()
-
-	###Refreshing score
-	N = len(steamgame.monitored)
-	steamgame.score = (N**(1/4)+1)**(-1)
-
 	steamgame.save()
 
 

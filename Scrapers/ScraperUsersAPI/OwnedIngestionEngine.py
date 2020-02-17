@@ -182,7 +182,7 @@ def updateUser(
 	for register in user.monitored:
 		if register.appid in games_db:
 			today = datetime.datetime.now()
-			i = games_db.index(register.appid)
+			i = games_steam.index(register.appid)
 			allplay = data_json[i]['playtime_forever']
 			winplay = data_json[i]['playtime_windows_forever']
 			macplay = data_json[i]['playtime_mac_forever']
@@ -207,19 +207,12 @@ def main(data_dict: dict) -> None:
 	else:
 		user = updateUser(user, data_json['response'])
 
-	user.save()
+	user.save(validate=False)
 	
 
 #Execution
 if __name__=='__main__':
+	mongoengine.register_connection('SteamDB','SteamDB')
 	user = userdb.SteamUser.objects(name='CHADVS MAXIMVS').first()
-	url='http://api.steampowered.com/IPlayerService/GetOwnedGames/v0001/?key=24E7A4CB6C2041D4C08EC325A5F4FFC3&steamid='+steamid+'&include_played_free_games=true&format=json'
-	response=requests.get(url)
-	try:
-		print(response.json()['response']['game_count'])
-	except:
-		print('Private profile')
-	else:
-		data_dict={steamid:response.json()}
-		settings={'game_list':[440]}
-		main(data_dict,**settings)
+	user = banUser(user)
+	user.save(validate=False)

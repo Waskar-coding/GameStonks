@@ -41,8 +41,8 @@ class GameplayRegister(mongoengine.EmbeddedDocument):
 	"""
 
 	###Game id
+	_id = mongoengine.ObjectIdField(required = True)
 	appid = mongoengine.StringField(required=True)
-	active = mongoengine.BooleanField(required=True)
 
 	###Gameplay in every plataform
 	total_gameplay = mongoengine.ListField(default=[])
@@ -52,6 +52,7 @@ class GameplayRegister(mongoengine.EmbeddedDocument):
 
 	###Register information
 	register_date = mongoengine.DateTimeField(default=datetime.datetime.now())
+	active = mongoengine.BooleanField(required=True)
 
 
 
@@ -82,7 +83,7 @@ class RecomendationRegister(mongoengine.EmbeddedDocument):
 	"""
 	
 	##Recomendation data
-	id_=mongoengine.StringField(required=True)
+	id_= mongoengine.StringField(required=True)
 	jackpot_id=mongoengine.StringField(required=True)
 	rec_date = mongoengine.DateTimeField(required=True)
 	rec_userid = mongoengine.StringField(required=True)
@@ -146,6 +147,7 @@ class StrikeRegister(mongoengine.EmbeddedDocument):
 	"""
 
 	##Strike data
+	_id = mongoengine.StringField()
 	strike_date = mongoengine.DateTimeField(required=True)
 	strike_total = mongoengine.IntField(required=True)
 	strike_reason = mongoengine.StringField(required=True)
@@ -184,7 +186,7 @@ class BanRegister(mongoengine.EmbeddedDocument):
 	"""
 
 	##Required data
-	_id=mongoengine.StringField(required=True)
+	_id=mongoengine.StringField()
 	ban_start=mongoengine.DateTimeField(required=True)
 	ban_type=mongoengine.StringField(required=True)
 	ban_active=mongoengine.BooleanField(required=True)
@@ -279,7 +281,7 @@ class JackpotRegister(mongoengine.EmbeddedDocument):
 	"""
 
 	##Jackpot data
-	id_ = mongoengine.StringField(required=True)
+	_id = mongoengine.ObjectIdField(required=True)
 	jackpot_id = mongoengine.StringField(required=True)
 	date = mongoengine.DateTimeField(requied=True)
 	score = mongoengine.FloatField(default=0)

@@ -18,6 +18,7 @@ const eventGet = require('./getter_db/event_get');
 const steamAuth = require('./steam_auth/auth');
 const config = require('./local_auth/config');
 const User = require('./object_db/user_db');
+const APIKEY = process.env.STEAM_PERSONAL_APIKEY;
 
 //Initializing stuff
 ////Express
@@ -55,6 +56,8 @@ app.use(session({
 // persistent login sessions (recommended).
 app.use(passport.initialize());
 app.use(passport.session());
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }))
 app.use(express.static(__dirname + '/../../public'));
 
 app.get('/wrong', function(req, res){
@@ -63,8 +66,16 @@ app.get('/wrong', function(req, res){
 });
 
 app.get('/account', steamAuth.ensureAuthenticated, function(req, res){
-    res.redirect('/users/my_profile/');
-    //res.render('index', { user: req.user });
+    User.findOne({steamid: req.user.user.steamid},function(err,user){
+       if(!err){
+           if (user.banned){
+               res.redirect('/logout')
+           }
+           else{
+               res.redirect('/users/my_profile/');
+           }
+       }
+    });
 });
 
 app.get('/logout', function(req, res){
@@ -88,7 +99,7 @@ passport.deserializeUser(function(obj, done) {
 passport.use(new SteamStrategy({
         returnURL: 'http://localhost/steam_auth/auth/return',
         realm: 'http://localhost/',
-        apiKey: '24E7A4CB6C2041D4C08EC325A5F4FFC3'
+        apiKey: APIKEY
     },
     function(identifier, profile, done) {
         // asynchronous verification, for effect...
@@ -124,17 +135,21 @@ passport.use(new SteamStrategy({
                 ////Banned users
                 else if (user.banned) {
                     const currentBan = findBan(user);
+                    const currentIndex = user.bans.indexOf(currentBan);
                     const today = new Date();
                     const dictBan = {
-                        B01: verifyUser(user),
-                        B02: true
+                        B01: verifyUser,
+                        B02: verifyTime
                     };
-                    user.banned = dictBan[currentBan.ban_type];
-                    currentBan.ban_active = dictBan[currentBan.ban_type];
+                    const banFlag = dictBan[currentBan.ban_type](user,currentBan);
+                    user.banned = banFlag;
+                    currentBan.ban_active = banFlag;
                     currentBan.ban_end = today;
+                    user.bans[currentIndex] = currentBan;
                     user.save().then(function (user) {
                         if (!currentBan.ban_active){
                             console.log("User successfully unbanned");
+                            user = updateUser(user,profile._json);
                             return done(null, ({user: user,token:createToken(user.steamid) }));
                         }
                         else {
@@ -147,6 +162,7 @@ passport.use(new SteamStrategy({
                 ////Regular users
                 else {
                     console.log("Valid account");
+                    user = updateUser(user,profile._json);
                     return done(null, ({user: user,token:createToken(user.steamid) }));
                 }
             });
@@ -166,9 +182,22 @@ function findBan(user){
 }
 
 
+//Updating user name and thumbnail
+function updateUser(user,profile){
+    User.findOneAndUpdate({steamid: profile.steamid},{name: profile.personaname, thumbnail: profile.avatarfull},function(err,value){
+        if (err){
+            console.log(err)
+        }
+    });
+    user.name = profile.personaname;
+    user.thumbnail = profile.avatarfull;
+    return user
+}
+
+
 
 //Verifying user validity
-function verifyUser(user) {
+function verifyUser(user,ban) {
     ////Checking if the account is private and old enough
     const timeCreated = user.timecreated;
     const currentTime = Math.round((new Date()).getTime() / 1000);
@@ -192,6 +221,14 @@ function verifyUser(user) {
         }});
         console.log("This account is valid");
         return false
+}
+
+
+
+//Verify user ban time has passed
+function verifyTime(user,ban){
+    const today = new Date();
+    return today < ban.ban_end
 }
 
 
