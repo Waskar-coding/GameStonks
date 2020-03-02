@@ -57,7 +57,7 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }))
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(__dirname + '/../../public'));
 
 app.get('/wrong', function(req, res){
@@ -72,7 +72,7 @@ app.get('/account', steamAuth.ensureAuthenticated, function(req, res){
                res.redirect('/logout')
            }
            else{
-               res.redirect('/users/my_profile/');
+               res.redirect('/users/my_profile');
            }
        }
     });

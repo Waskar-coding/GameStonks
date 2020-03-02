@@ -288,7 +288,7 @@ class JackpotRegister(mongoengine.EmbeddedDocument):
 	status = mongoengine.StringField(default='i')
 	probabilty = mongoengine.FloatField(default=0)
 	multipliers = mongoengine.ListField(default=[])
-	recommendations = mongoengine.IntField(default=0)
+	recommendations = mongoengine.ListField(default=[])
 
 
 
@@ -374,6 +374,7 @@ class SteamUser(mongoengine.Document):
 	monitored=mongoengine.EmbeddedDocumentListField(GameplayRegister)
 
 	##Recomendations registers
+	recommended = mongoengine.BooleanField(default = False)
 	recomendations=mongoengine.EmbeddedDocumentListField(RecomendationRegister)
 
 	##Prizes registers
@@ -391,7 +392,7 @@ class SteamUser(mongoengine.Document):
 	banned=mongoengine.BooleanField(default=False)
 
 	##Additional registers
-	additional=mongoengine.EmbeddedDocumentListField(AdditionalRegister)
+	multipliers = mongoengine.ListField(default = [])
 
 	##Version key
 	__v=mongoengine.StringField(required=True)

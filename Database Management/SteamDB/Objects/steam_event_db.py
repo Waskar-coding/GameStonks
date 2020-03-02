@@ -14,6 +14,41 @@ import mongoengine
 
 
 
+#Question class
+class QuestionRegister(mongoengine.EmbeddedDocument):
+	##Documentation
+	"""
+	class QuestionRegister(mongoengine.EmbeddedDocument):
+	 |	Inherits from mongoengine.EmbeddedDocument, represents
+	 |	a question within the event, all the avaiable options and
+	 |	the answers, it also registers the users that have answered
+	 |	in order to avoid repetitions.
+	 |
+	 |	Attributes
+	 |	----------
+	 |	question (str):
+	 |		A sort sentence expressing a question we're trying to solve
+	 |
+	 |	options (list):
+	 |		An array with all possible answers, expressed in a sort
+	 |		sentence.
+	 |
+	 |	answers (list):
+	 |		An array with all the user answers, the answers are represented
+	 |		as the index of the selected options in the "options" array.
+	 |
+	 |	users (list):
+	 |		Temporal register of user ids to avoid repetition
+	"""
+
+	##Question fields
+	question = mongoengine.StringField(required = True)
+	options = mongoengine.ListField(required = True)
+	answers = mongoengine.ListField(default = [])
+	users = mongoengine.ListField(default = [])
+
+
+
 #Event class
 class SteamEvent(mongoengine.Document):
 	##Documentation
@@ -43,20 +78,21 @@ class SteamEvent(mongoengine.Document):
 	##Identification and instructions
 	event_id = mongoengine.StringField(required=True)
 	event_title = mongoengine.StringField(required=True)
+	event_class = mongoengine.StringField(required=True)
 	event_entity = mongoengine.StringField(default='GameStonks')
-	event_doc = mongoengine.FileField(requried=True)
+	event_doc = mongoengine.StringField(required=True)
 
 	##Relevants dates
-	event_start = mongoengine.DateTimeFiled(required=True)
-	event_end = mongoengine.DateTimeFiled(required=True)
+	event_start = mongoengine.DateTimeField(required=True)
+	event_end = mongoengine.DateTimeField(required=True)
 	active = mongoengine.BooleanField(required=True)
 
-	##Event data
-	event_dict = mongoengine.DictField()
+	##Event questions
+	questions = mongoengine.EmbeddedDocumentListField(QuestionRegister)
 
 	meta={
 			'db_alias': 'SteamDB',
-			'collection':'steamjevents',
+			'collection':'steamevents',
 			'indexes':[
 				'event_id'
 			]

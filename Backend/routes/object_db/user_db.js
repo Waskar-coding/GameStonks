@@ -7,7 +7,7 @@ const JackpotRegister = mongoose.Schema({
     date: Date,
     score: String,
     multipliers: Array,
-    recommendations: String,
+    recommendations: Array,
     status: String
 });
 
@@ -76,6 +76,7 @@ const user = mongoose.Schema({
     monitored: [GameplayRegister],
 
     ////Recomendations
+    recommended: Boolean,
     recomendations: [RecomendationRegister],
 
     ////Prizes
@@ -90,7 +91,7 @@ const user = mongoose.Schema({
     banned: Boolean,
 
     ////Additional
-    additional: [AdditionalRegister]
+    multipliers: Array
 
 },{versionKey: false});
 const User = mongoose.model('SteamUser', user);

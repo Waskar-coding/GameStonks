@@ -13,6 +13,7 @@ function verifyToken(req, res, next) {
 
         // if everything's good, save to request for use in other routes
         req.userId = decoded.id;
+        console.log('Bruh two');
         next();
     });
 }

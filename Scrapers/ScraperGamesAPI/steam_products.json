@@ -13895,6 +13895,7700 @@
         "28",
         "2"
       ]
+    },
+    "1245710": {
+      "type": "demo",
+      "name": "PING REDUX Demo",
+      "required_age": 0,
+      "is_free": true,
+      "dlc": "NaN",
+      "website": null,
+      "developers": [
+        "Nami Tentou"
+      ],
+      "publishers": [
+        "Nami Tentou"
+      ],
+      "packages": "NaN",
+      "controller_support": "full",
+      "fullgame": "1085900",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "13/02/2020",
+      "text_support": [
+        "English",
+        "French",
+        "Italian",
+        "German",
+        "Spanish - Spain",
+        "Japanese",
+        "Korean",
+        "Portuguese",
+        "Portuguese - Brazil",
+        "Simplified Chinese",
+        "Spanish - Latin America"
+      ],
+      "audio_support": [],
+      "pc_requirements_minreqs": {
+        "OS": "Windows XP",
+        "Processor": "2.0 GHz",
+        "Memory": "2 GB RAM",
+        "Storage": "500 MB available space",
+        "Needs 64-bit": false
+      },
+      "pc_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_minreqs": {
+        "OS": "OS X 10.6 Snow Leopard",
+        "Processor": "2.0 GHz",
+        "Memory": "2 GB RAM",
+        "Storage": "500 MB available space",
+        "Needs 64-bit": false
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_minreqs": {
+        "OS": "Ubuntu",
+        "Memory": "2 GB RAM",
+        "Storage": "500 MB available space",
+        "Needs 64-bit": false
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "platforms": [
+        "windows",
+        "mac",
+        "linux"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "2",
+        "10",
+        "22",
+        "28"
+      ],
+      "genres": [
+        "4",
+        "23",
+        "2"
+      ]
+    },
+    "1112591": {
+      "type": "dlc",
+      "name": "VR Paradise - Strippers Pack : Angie, Stacy and Alexa",
+      "required_age": 0,
+      "is_free": false,
+      "dlc": "NaN",
+      "website": "https://www.vrparadise.com",
+      "developers": [
+        "Totem Entertainment"
+      ],
+      "publishers": [],
+      "packages": [
+        376543
+      ],
+      "controller_support": "NaN",
+      "fullgame": "896890",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "14/02/2020",
+      "text_support": [
+        "English"
+      ],
+      "audio_support": [
+        "English"
+      ],
+      "pc_requirements_minreqs": {
+        "OS": "Windows 10",
+        "Processor": "Intel i5-4590 / AMD Ryzen 5 1500X or greater",
+        "Memory": "4 GB RAM",
+        "Graphics": "NVIDIA GTX 1060 / AMD Radeon RX 480 or greater",
+        "Storage": "1 GB available space",
+        "Needs 64-bit": false
+      },
+      "pc_requirements_recreqs": {
+        "OS": "Windows 10",
+        "Processor": "Intel Core i7\u20137700 / AMD Ryzen 7 2700X or greater",
+        "Memory": "16 GB RAM",
+        "Graphics": "NVIDIA GTX 1080 / AMD Radeon RX 580 or greater",
+        "Storage": "1 GB available space",
+        "Needs 64-bit": false
+      },
+      "mac_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "platforms": [
+        "windows"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "2",
+        "21"
+      ],
+      "genres": [
+        "23",
+        "28"
+      ]
+    },
+    "1247760": {
+      "type": "music",
+      "name": "Caves of Qud Soundtrack",
+      "required_age": 0,
+      "is_free": false,
+      "dlc": "NaN",
+      "website": null,
+      "developers": [
+        "Freehold Games"
+      ],
+      "publishers": [
+        "Freehold Games"
+      ],
+      "packages": [
+        432985
+      ],
+      "controller_support": "NaN",
+      "fullgame": "333640",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "14/02/2020",
+      "text_support": "NaN",
+      "audio_support": "NaN",
+      "pc_requirements_minreqs": {
+        "Storage": "96 MB available space",
+        "Needs 64-bit": false
+      },
+      "pc_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "platforms": [
+        "windows",
+        "mac",
+        "linux"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": "NaN",
+      "genres": "NaN"
+    },
+    "1226770": {
+      "type": "dlc",
+      "name": "LUNA The Shadow Dust - The Art Book",
+      "required_age": 0,
+      "is_free": false,
+      "dlc": "NaN",
+      "website": "https://www.lantern-studio.com/",
+      "developers": [
+        "Lantern Studio"
+      ],
+      "publishers": [
+        "Coconut Island Games",
+        "Application Systems Heidelberg"
+      ],
+      "packages": [
+        425184
+      ],
+      "controller_support": "NaN",
+      "fullgame": "465100",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "13/02/2020",
+      "text_support": [
+        "English",
+        "Simplified Chinese",
+        "German",
+        "Spanish - Spain",
+        "Russian",
+        "Portuguese - Brazil",
+        "French",
+        "Korean",
+        "Polish",
+        "Italian",
+        "Czech",
+        "Japanese",
+        "Dutch",
+        "Greek",
+        "Portuguese",
+        "Spanish - Latin America",
+        "Vietnamese",
+        "Danish",
+        "Arabic",
+        "Bulgarian",
+        "Hungarian",
+        "Norwegian",
+        "Romanian",
+        "Thai",
+        "Ukrainian",
+        "Finnish",
+        "Swedish",
+        "Turkish",
+        "Traditional Chinese"
+      ],
+      "audio_support": [],
+      "pc_requirements_minreqs": {
+        "Storage": "170 MB available space",
+        "Needs 64-bit": false
+      },
+      "pc_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_minreqs": {
+        "Storage": "170 MB available space",
+        "Needs 64-bit": false
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_minreqs": {
+        "Storage": "170 MB available space",
+        "Needs 64-bit": false
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "platforms": [
+        "windows",
+        "mac",
+        "linux"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "2",
+        "21",
+        "22",
+        "23"
+      ],
+      "genres": [
+        "25",
+        "4",
+        "23"
+      ]
+    },
+    "1176614": {
+      "type": "dlc",
+      "name": "WARRIORS OROCHI 4 Ultimate - Special Costume for Hades",
+      "required_age": 0,
+      "is_free": false,
+      "dlc": "NaN",
+      "website": "http://www.koeitecmoamerica.com/wo4/",
+      "developers": [
+        "KOEI TECMO GAMES CO., LTD."
+      ],
+      "publishers": [
+        "KOEI TECMO GAMES CO., LTD."
+      ],
+      "packages": [
+        403567,
+        426470
+      ],
+      "controller_support": "full",
+      "fullgame": "831560",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "13/02/2020",
+      "text_support": [
+        "English",
+        "Traditional Chinese",
+        "Japanese",
+        "Korean",
+        "Simplified Chinese"
+      ],
+      "audio_support": [
+        "Japanese"
+      ],
+      "pc_requirements_minreqs": {
+        "Needs 64-bit": true,
+        "OS": "Win 8.1/10(64bit required)",
+        "Processor": "Intel Core I5 2400 or over",
+        "Memory": "6 GB RAM",
+        "Graphics": "NVIDIA GeForce GTX 660 or over",
+        "DirectX": "Version 11",
+        "Network": "Broadband Internet connection",
+        "Storage": "25 GB available space",
+        "Sound Card": "DirectX 11 or over",
+        "Additional Notes": "640\u00d7480 pixel over, High Color"
+      },
+      "pc_requirements_recreqs": {
+        "Needs 64-bit": true,
+        "OS": "Win 8.1/10(64bit required)",
+        "Processor": "Intel Core i7 3770 or over",
+        "Memory": "8 GB RAM",
+        "Graphics": "NVIDIA GeForce GTX 960 or over",
+        "DirectX": "Version 11",
+        "Network": "Broadband Internet connection",
+        "Storage": "25 GB available space",
+        "Sound Card": "DirectX 11 or over",
+        "Additional Notes": "1920\u00d71080 pixel, True Color"
+      },
+      "mac_requirements_minreqs": {
+        "Needs 64-bit": true
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": true
+      },
+      "linux_requirements_minreqs": {
+        "Needs 64-bit": true
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": true
+      },
+      "platforms": [
+        "windows"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "2",
+        "1",
+        "49",
+        "36",
+        "9",
+        "38",
+        "39",
+        "24",
+        "21",
+        "22",
+        "28",
+        "29",
+        "23",
+        "25",
+        "44"
+      ],
+      "genres": [
+        "1"
+      ]
+    },
+    "1176615": {
+      "type": "dlc",
+      "name": "WARRIORS OROCHI 4 Ultimate - Special Costume for Yang Jian",
+      "required_age": 0,
+      "is_free": false,
+      "dlc": "NaN",
+      "website": "http://www.koeitecmoamerica.com/wo4/",
+      "developers": [
+        "KOEI TECMO GAMES CO., LTD."
+      ],
+      "publishers": [
+        "KOEI TECMO GAMES CO., LTD."
+      ],
+      "packages": [
+        403570,
+        426470
+      ],
+      "controller_support": "full",
+      "fullgame": "831560",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "13/02/2020",
+      "text_support": [
+        "English",
+        "Traditional Chinese",
+        "Japanese",
+        "Korean",
+        "Simplified Chinese"
+      ],
+      "audio_support": [
+        "Japanese"
+      ],
+      "pc_requirements_minreqs": {
+        "Needs 64-bit": true,
+        "OS": "Win 8.1/10(64bit required)",
+        "Processor": "Intel Core I5 2400 or over",
+        "Memory": "6 GB RAM",
+        "Graphics": "NVIDIA GeForce GTX 660 or over",
+        "DirectX": "Version 11",
+        "Network": "Broadband Internet connection",
+        "Storage": "25 GB available space",
+        "Sound Card": "DirectX 11 or over",
+        "Additional Notes": "640\u00d7480 pixel over, High Color"
+      },
+      "pc_requirements_recreqs": {
+        "Needs 64-bit": true,
+        "OS": "Win 8.1/10(64bit required)",
+        "Processor": "Intel Core i7 3770 or over",
+        "Memory": "8 GB RAM",
+        "Graphics": "NVIDIA GeForce GTX 960 or over",
+        "DirectX": "Version 11",
+        "Network": "Broadband Internet connection",
+        "Storage": "25 GB available space",
+        "Sound Card": "DirectX 11 or over",
+        "Additional Notes": "1920\u00d71080 pixel, True Color"
+      },
+      "mac_requirements_minreqs": {
+        "Needs 64-bit": true
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": true
+      },
+      "linux_requirements_minreqs": {
+        "Needs 64-bit": true
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": true
+      },
+      "platforms": [
+        "windows"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "2",
+        "1",
+        "49",
+        "36",
+        "9",
+        "38",
+        "39",
+        "24",
+        "21",
+        "22",
+        "28",
+        "29",
+        "23",
+        "25",
+        "44"
+      ],
+      "genres": [
+        "1"
+      ]
+    },
+    "1249810": {
+      "type": "dlc",
+      "name": "Seek Girl 2 - Nuded Sexy Patch 18+",
+      "required_age": 0,
+      "is_free": false,
+      "dlc": "NaN",
+      "website": null,
+      "developers": [
+        "EscapeGame"
+      ],
+      "publishers": [],
+      "packages": [
+        433719
+      ],
+      "controller_support": "NaN",
+      "fullgame": "1240890",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "18/02/2020",
+      "text_support": [
+        "English",
+        "Japanese"
+      ],
+      "audio_support": [
+        "Japanese"
+      ],
+      "pc_requirements_minreqs": {
+        "OS": "7/8/8.1/10",
+        "Processor": "Intel Core2 Duo or better",
+        "Memory": "4 GB RAM",
+        "Graphics": "DirectX 9/OpenGL 4.1 capable GPU",
+        "Storage": "1 GB available space",
+        "Needs 64-bit": false
+      },
+      "pc_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "platforms": [
+        "windows"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "2",
+        "21"
+      ],
+      "genres": [
+        "25"
+      ]
+    },
+    "1176611": {
+      "type": "dlc",
+      "name": "WARRIORS OROCHI 4 Ultimate - Bonus Costume for Gaia",
+      "required_age": 0,
+      "is_free": true,
+      "dlc": "NaN",
+      "website": "http://www.koeitecmoamerica.com/wo4/",
+      "developers": [
+        "KOEI TECMO GAMES CO., LTD."
+      ],
+      "publishers": [
+        "KOEI TECMO GAMES CO., LTD."
+      ],
+      "packages": [
+        426468,
+        426470
+      ],
+      "controller_support": "full",
+      "fullgame": "831560",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "13/02/2020",
+      "text_support": [
+        "English",
+        "Traditional Chinese",
+        "Japanese",
+        "Korean",
+        "Simplified Chinese"
+      ],
+      "audio_support": [
+        "Japanese"
+      ],
+      "pc_requirements_minreqs": {
+        "Needs 64-bit": true,
+        "OS": "Win 8.1/10(64bit required)",
+        "Processor": "Intel Core I5 2400 or over",
+        "Memory": "6 GB RAM",
+        "Graphics": "NVIDIA GeForce GTX 660 or over",
+        "DirectX": "Version 11",
+        "Network": "Broadband Internet connection",
+        "Storage": "25 GB available space",
+        "Sound Card": "DirectX 11 or over",
+        "Additional Notes": "640\u00d7480 pixel over, High Color"
+      },
+      "pc_requirements_recreqs": {
+        "Needs 64-bit": true,
+        "OS": "Win 8.1/10(64bit required)",
+        "Processor": "Intel Core i7 3770 or over",
+        "Memory": "8 GB RAM",
+        "Graphics": "NVIDIA GeForce GTX 960 or over",
+        "DirectX": "Version 11",
+        "Network": "Broadband Internet connection",
+        "Storage": "25 GB available space",
+        "Sound Card": "DirectX 11 or over",
+        "Additional Notes": "1920\u00d71080 pixel, True Color"
+      },
+      "mac_requirements_minreqs": {
+        "Needs 64-bit": true
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": true
+      },
+      "linux_requirements_minreqs": {
+        "Needs 64-bit": true
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": true
+      },
+      "platforms": [
+        "windows"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "2",
+        "1",
+        "49",
+        "36",
+        "9",
+        "38",
+        "39",
+        "24",
+        "21",
+        "22",
+        "28",
+        "29",
+        "23",
+        "25",
+        "44"
+      ],
+      "genres": [
+        "1"
+      ]
+    },
+    "1176612": {
+      "type": "dlc",
+      "name": "WARRIORS OROCHI 4 Ultimate - Bonus Costume for Ryu Hayabusa",
+      "required_age": 0,
+      "is_free": true,
+      "dlc": "NaN",
+      "website": "http://www.koeitecmoamerica.com/wo4/",
+      "developers": [
+        "KOEI TECMO GAMES CO., LTD."
+      ],
+      "publishers": [
+        "KOEI TECMO GAMES CO., LTD."
+      ],
+      "packages": "NaN",
+      "controller_support": "full",
+      "fullgame": "831560",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "13/02/2020",
+      "text_support": [
+        "English",
+        "Traditional Chinese",
+        "Japanese",
+        "Korean",
+        "Simplified Chinese"
+      ],
+      "audio_support": [
+        "Japanese"
+      ],
+      "pc_requirements_minreqs": {
+        "Needs 64-bit": true,
+        "OS": "Win 8.1/10(64bit required)",
+        "Processor": "Intel Core I5 2400 or over",
+        "Memory": "6 GB RAM",
+        "Graphics": "NVIDIA GeForce GTX 660 or over",
+        "DirectX": "Version 11",
+        "Network": "Broadband Internet connection",
+        "Storage": "25 GB available space",
+        "Sound Card": "DirectX 11 or over",
+        "Additional Notes": "640\u00d7480 pixel over, High Color"
+      },
+      "pc_requirements_recreqs": {
+        "Needs 64-bit": true,
+        "OS": "Win 8.1/10(64bit required)",
+        "Processor": "Intel Core i7 3770 or over",
+        "Memory": "8 GB RAM",
+        "Graphics": "NVIDIA GeForce GTX 960 or over",
+        "DirectX": "Version 11",
+        "Network": "Broadband Internet connection",
+        "Storage": "25 GB available space",
+        "Sound Card": "DirectX 11 or over",
+        "Additional Notes": "1920\u00d71080 pixel, True Color"
+      },
+      "mac_requirements_minreqs": {
+        "Needs 64-bit": true
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": true
+      },
+      "linux_requirements_minreqs": {
+        "Needs 64-bit": true
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": true
+      },
+      "platforms": [
+        "windows"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "2",
+        "1",
+        "49",
+        "36",
+        "9",
+        "38",
+        "39",
+        "24",
+        "21",
+        "22",
+        "28",
+        "29",
+        "23",
+        "25",
+        "44"
+      ],
+      "genres": [
+        "1"
+      ]
+    },
+    "1176613": {
+      "type": "dlc",
+      "name": "WARRIORS OROCHI 4 Ultimate - Legendary Costumes OROCHI Pack 4",
+      "required_age": 0,
+      "is_free": false,
+      "dlc": "NaN",
+      "website": "http://www.koeitecmoamerica.com/wo4/",
+      "developers": [
+        "KOEI TECMO GAMES CO., LTD."
+      ],
+      "publishers": [
+        "KOEI TECMO GAMES CO., LTD."
+      ],
+      "packages": [
+        403564,
+        426470
+      ],
+      "controller_support": "full",
+      "fullgame": "831560",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "13/02/2020",
+      "text_support": [
+        "English",
+        "Traditional Chinese",
+        "Japanese",
+        "Korean",
+        "Simplified Chinese"
+      ],
+      "audio_support": [
+        "Japanese"
+      ],
+      "pc_requirements_minreqs": {
+        "Needs 64-bit": true,
+        "OS": "Win 8.1/10(64bit required)",
+        "Processor": "Intel Core I5 2400 or over",
+        "Memory": "6 GB RAM",
+        "Graphics": "NVIDIA GeForce GTX 660 or over",
+        "DirectX": "Version 11",
+        "Network": "Broadband Internet connection",
+        "Storage": "25 GB available space",
+        "Sound Card": "DirectX 11 or over",
+        "Additional Notes": "640\u00d7480 pixel over, High Color"
+      },
+      "pc_requirements_recreqs": {
+        "Needs 64-bit": true,
+        "OS": "Win 8.1/10(64bit required)",
+        "Processor": "Intel Core i7 3770 or over",
+        "Memory": "8 GB RAM",
+        "Graphics": "NVIDIA GeForce GTX 960 or over",
+        "DirectX": "Version 11",
+        "Network": "Broadband Internet connection",
+        "Storage": "25 GB available space",
+        "Sound Card": "DirectX 11 or over",
+        "Additional Notes": "1920\u00d71080 pixel, True Color"
+      },
+      "mac_requirements_minreqs": {
+        "Needs 64-bit": true
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": true
+      },
+      "linux_requirements_minreqs": {
+        "Needs 64-bit": true
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": true
+      },
+      "platforms": [
+        "windows"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "2",
+        "1",
+        "49",
+        "36",
+        "9",
+        "38",
+        "39",
+        "24",
+        "21",
+        "22",
+        "28",
+        "29",
+        "23",
+        "25",
+        "44"
+      ],
+      "genres": [
+        "1"
+      ]
+    },
+    "1176616": {
+      "type": "dlc",
+      "name": "WARRIORS OROCHI 4 Ultimate - Sacred Treasure `Garm`",
+      "required_age": 0,
+      "is_free": false,
+      "dlc": "NaN",
+      "website": "http://www.koeitecmoamerica.com/wo4/",
+      "developers": [
+        "KOEI TECMO GAMES CO., LTD."
+      ],
+      "publishers": [
+        "KOEI TECMO GAMES CO., LTD."
+      ],
+      "packages": [
+        403573,
+        426470
+      ],
+      "controller_support": "full",
+      "fullgame": "831560",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "13/02/2020",
+      "text_support": [
+        "English",
+        "Traditional Chinese",
+        "Japanese",
+        "Korean",
+        "Simplified Chinese"
+      ],
+      "audio_support": [
+        "Japanese"
+      ],
+      "pc_requirements_minreqs": {
+        "Needs 64-bit": true,
+        "OS": "Win 8.1/10(64bit required)",
+        "Processor": "Intel Core I5 2400 or over",
+        "Memory": "6 GB RAM",
+        "Graphics": "NVIDIA GeForce GTX 660 or over",
+        "DirectX": "Version 11",
+        "Network": "Broadband Internet connection",
+        "Storage": "25 GB available space",
+        "Sound Card": "DirectX 11 or over",
+        "Additional Notes": "640\u00d7480 pixel over, High Color"
+      },
+      "pc_requirements_recreqs": {
+        "Needs 64-bit": true,
+        "OS": "Win 8.1/10(64bit required)",
+        "Processor": "Intel Core i7 3770 or over",
+        "Memory": "8 GB RAM",
+        "Graphics": "NVIDIA GeForce GTX 960 or over",
+        "DirectX": "Version 11",
+        "Network": "Broadband Internet connection",
+        "Storage": "25 GB available space",
+        "Sound Card": "DirectX 11 or over",
+        "Additional Notes": "1920\u00d71080 pixel, True Color"
+      },
+      "mac_requirements_minreqs": {
+        "Needs 64-bit": true
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": true
+      },
+      "linux_requirements_minreqs": {
+        "Needs 64-bit": true
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": true
+      },
+      "platforms": [
+        "windows"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "2",
+        "1",
+        "49",
+        "36",
+        "9",
+        "38",
+        "39",
+        "24",
+        "21",
+        "22",
+        "28",
+        "29",
+        "23",
+        "25",
+        "44"
+      ],
+      "genres": [
+        "1"
+      ]
+    },
+    "1176617": {
+      "type": "dlc",
+      "name": "WARRIORS OROCHI 4 Ultimate - Sacred Treasure `World Tree Bident`",
+      "required_age": 0,
+      "is_free": false,
+      "dlc": "NaN",
+      "website": "http://www.koeitecmoamerica.com/wo4/",
+      "developers": [
+        "KOEI TECMO GAMES CO., LTD."
+      ],
+      "publishers": [
+        "KOEI TECMO GAMES CO., LTD."
+      ],
+      "packages": [
+        403576,
+        426470
+      ],
+      "controller_support": "full",
+      "fullgame": "831560",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "13/02/2020",
+      "text_support": [
+        "English",
+        "Traditional Chinese",
+        "Japanese",
+        "Korean",
+        "Simplified Chinese"
+      ],
+      "audio_support": [
+        "Japanese"
+      ],
+      "pc_requirements_minreqs": {
+        "Needs 64-bit": true,
+        "OS": "Win 8.1/10(64bit required)",
+        "Processor": "Intel Core I5 2400 or over",
+        "Memory": "6 GB RAM",
+        "Graphics": "NVIDIA GeForce GTX 660 or over",
+        "DirectX": "Version 11",
+        "Network": "Broadband Internet connection",
+        "Storage": "25 GB available space",
+        "Sound Card": "DirectX 11 or over",
+        "Additional Notes": "640\u00d7480 pixel over, High Color"
+      },
+      "pc_requirements_recreqs": {
+        "Needs 64-bit": true,
+        "OS": "Win 8.1/10(64bit required)",
+        "Processor": "Intel Core i7 3770 or over",
+        "Memory": "8 GB RAM",
+        "Graphics": "NVIDIA GeForce GTX 960 or over",
+        "DirectX": "Version 11",
+        "Network": "Broadband Internet connection",
+        "Storage": "25 GB available space",
+        "Sound Card": "DirectX 11 or over",
+        "Additional Notes": "1920\u00d71080 pixel, True Color"
+      },
+      "mac_requirements_minreqs": {
+        "Needs 64-bit": true
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": true
+      },
+      "linux_requirements_minreqs": {
+        "Needs 64-bit": true
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": true
+      },
+      "platforms": [
+        "windows"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "2",
+        "1",
+        "49",
+        "36",
+        "9",
+        "38",
+        "39",
+        "24",
+        "21",
+        "22",
+        "28",
+        "29",
+        "23",
+        "25",
+        "44"
+      ],
+      "genres": [
+        "1"
+      ]
+    },
+    "1176610": {
+      "type": "dlc",
+      "name": "WARRIORS OROCHI 4 Ultimate - Bonus Mount `Infernal Black`",
+      "required_age": 0,
+      "is_free": true,
+      "dlc": "NaN",
+      "website": "http://www.koeitecmoamerica.com/wo4/",
+      "developers": [
+        "KOEI TECMO GAMES CO., LTD."
+      ],
+      "publishers": [
+        "KOEI TECMO GAMES CO., LTD."
+      ],
+      "packages": [
+        426468,
+        426470
+      ],
+      "controller_support": "full",
+      "fullgame": "831560",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "13/02/2020",
+      "text_support": [
+        "English",
+        "Traditional Chinese",
+        "Japanese",
+        "Korean",
+        "Simplified Chinese"
+      ],
+      "audio_support": [
+        "Japanese"
+      ],
+      "pc_requirements_minreqs": {
+        "Needs 64-bit": true,
+        "OS": "Win 8.1/10(64bit required)",
+        "Processor": "Intel Core I5 2400 or over",
+        "Memory": "6 GB RAM",
+        "Graphics": "NVIDIA GeForce GTX 660 or over",
+        "DirectX": "Version 11",
+        "Network": "Broadband Internet connection",
+        "Storage": "25 GB available space",
+        "Sound Card": "DirectX 11 or over",
+        "Additional Notes": "640\u00d7480 pixel over, High Color"
+      },
+      "pc_requirements_recreqs": {
+        "Needs 64-bit": true,
+        "OS": "Win 8.1/10(64bit required)",
+        "Processor": "Intel Core i7 3770 or over",
+        "Memory": "8 GB RAM",
+        "Graphics": "NVIDIA GeForce GTX 960 or over",
+        "DirectX": "Version 11",
+        "Network": "Broadband Internet connection",
+        "Storage": "25 GB available space",
+        "Sound Card": "DirectX 11 or over",
+        "Additional Notes": "1920\u00d71080 pixel, True Color"
+      },
+      "mac_requirements_minreqs": {
+        "Needs 64-bit": true
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": true
+      },
+      "linux_requirements_minreqs": {
+        "Needs 64-bit": true
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": true
+      },
+      "platforms": [
+        "windows"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "2",
+        "1",
+        "49",
+        "36",
+        "9",
+        "38",
+        "39",
+        "24",
+        "21",
+        "22",
+        "28",
+        "29",
+        "23",
+        "25",
+        "44"
+      ],
+      "genres": [
+        "1"
+      ]
+    },
+    "1176618": {
+      "type": "dlc",
+      "name": "WARRIORS OROCHI 4 Ultimate - Legendary Weapons OROCHI Pack 4",
+      "required_age": 0,
+      "is_free": false,
+      "dlc": "NaN",
+      "website": "http://www.koeitecmoamerica.com/wo4/",
+      "developers": [
+        "KOEI TECMO GAMES CO., LTD."
+      ],
+      "publishers": [
+        "KOEI TECMO GAMES CO., LTD."
+      ],
+      "packages": [
+        403579,
+        426470
+      ],
+      "controller_support": "full",
+      "fullgame": "831560",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "13/02/2020",
+      "text_support": [
+        "English",
+        "Traditional Chinese",
+        "Japanese",
+        "Korean",
+        "Simplified Chinese"
+      ],
+      "audio_support": [
+        "Japanese"
+      ],
+      "pc_requirements_minreqs": {
+        "Needs 64-bit": true,
+        "OS": "Win 8.1/10(64bit required)",
+        "Processor": "Intel Core I5 2400 or over",
+        "Memory": "6 GB RAM",
+        "Graphics": "NVIDIA GeForce GTX 660 or over",
+        "DirectX": "Version 11",
+        "Network": "Broadband Internet connection",
+        "Storage": "25 GB available space",
+        "Sound Card": "DirectX 11 or over",
+        "Additional Notes": "640\u00d7480 pixel over, High Color"
+      },
+      "pc_requirements_recreqs": {
+        "Needs 64-bit": true,
+        "OS": "Win 8.1/10(64bit required)",
+        "Processor": "Intel Core i7 3770 or over",
+        "Memory": "8 GB RAM",
+        "Graphics": "NVIDIA GeForce GTX 960 or over",
+        "DirectX": "Version 11",
+        "Network": "Broadband Internet connection",
+        "Storage": "25 GB available space",
+        "Sound Card": "DirectX 11 or over",
+        "Additional Notes": "1920\u00d71080 pixel, True Color"
+      },
+      "mac_requirements_minreqs": {
+        "Needs 64-bit": true
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": true
+      },
+      "linux_requirements_minreqs": {
+        "Needs 64-bit": true
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": true
+      },
+      "platforms": [
+        "windows"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "2",
+        "1",
+        "49",
+        "36",
+        "9",
+        "38",
+        "39",
+        "24",
+        "21",
+        "22",
+        "28",
+        "29",
+        "23",
+        "25",
+        "44"
+      ],
+      "genres": [
+        "1"
+      ]
+    },
+    "1176619": {
+      "type": "dlc",
+      "name": "WARRIORS OROCHI 4 Ultimate - Series BGM Pack",
+      "required_age": 0,
+      "is_free": false,
+      "dlc": "NaN",
+      "website": "http://www.koeitecmoamerica.com/wo4/",
+      "developers": [
+        "KOEI TECMO GAMES CO., LTD."
+      ],
+      "publishers": [
+        "KOEI TECMO GAMES CO., LTD."
+      ],
+      "packages": [
+        403582,
+        426470
+      ],
+      "controller_support": "full",
+      "fullgame": "831560",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "13/02/2020",
+      "text_support": [
+        "English",
+        "Traditional Chinese",
+        "Japanese",
+        "Korean",
+        "Simplified Chinese"
+      ],
+      "audio_support": [
+        "Japanese"
+      ],
+      "pc_requirements_minreqs": {
+        "Needs 64-bit": true,
+        "OS": "Win 8.1/10(64bit required)",
+        "Processor": "Intel Core I5 2400 or over",
+        "Memory": "6 GB RAM",
+        "Graphics": "NVIDIA GeForce GTX 660 or over",
+        "DirectX": "Version 11",
+        "Network": "Broadband Internet connection",
+        "Storage": "25 GB available space",
+        "Sound Card": "DirectX 11 or over",
+        "Additional Notes": "640\u00d7480 pixel over, High Color"
+      },
+      "pc_requirements_recreqs": {
+        "Needs 64-bit": true,
+        "OS": "Win 8.1/10(64bit required)",
+        "Processor": "Intel Core i7 3770 or over",
+        "Memory": "8 GB RAM",
+        "Graphics": "NVIDIA GeForce GTX 960 or over",
+        "DirectX": "Version 11",
+        "Network": "Broadband Internet connection",
+        "Storage": "25 GB available space",
+        "Sound Card": "DirectX 11 or over",
+        "Additional Notes": "1920\u00d71080 pixel, True Color"
+      },
+      "mac_requirements_minreqs": {
+        "Needs 64-bit": true
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": true
+      },
+      "linux_requirements_minreqs": {
+        "Needs 64-bit": true
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": true
+      },
+      "platforms": [
+        "windows"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "2",
+        "1",
+        "49",
+        "36",
+        "9",
+        "38",
+        "39",
+        "24",
+        "21",
+        "22",
+        "28",
+        "29",
+        "23",
+        "25",
+        "44"
+      ],
+      "genres": [
+        "1"
+      ]
+    },
+    "1205290": {
+      "type": "dlc",
+      "name": "Tentacle Girl - DLC R18 Patch(Free)",
+      "required_age": 0,
+      "is_free": true,
+      "dlc": "NaN",
+      "website": null,
+      "developers": [
+        "Inverse Game"
+      ],
+      "publishers": [
+        "Inverse Game"
+      ],
+      "packages": "NaN",
+      "controller_support": "NaN",
+      "fullgame": "1205240",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "14/02/2020",
+      "text_support": [
+        "English"
+      ],
+      "audio_support": [],
+      "pc_requirements_minreqs": {
+        "OS": "Windows7, Windows8, Windows10, XP",
+        "Processor": "Core i3,i5,i7,E3",
+        "Memory": "2 GB RAM",
+        "Graphics": "GT 820M",
+        "Storage": "2 GB available space",
+        "Needs 64-bit": false
+      },
+      "pc_requirements_recreqs": {
+        "OS": "Windows7, Windows8, Windows10, XP",
+        "Processor": "Core i3,i5,i7,E3",
+        "Memory": "2 GB RAM",
+        "Graphics": "GT 820M",
+        "Storage": "2 GB available space",
+        "Needs 64-bit": false
+      },
+      "mac_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "platforms": [
+        "windows"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "2",
+        "21",
+        "22",
+        "23"
+      ],
+      "genres": [
+        "25",
+        "4",
+        "3"
+      ]
+    },
+    "1176620": {
+      "type": "NaN",
+      "name": "NaN",
+      "required_age": "NaN",
+      "is_free": "NaN",
+      "dlc": "NaN",
+      "website": "NaN",
+      "developers": "NaN",
+      "publishers": "NaN",
+      "packages": "NaN",
+      "controller_support": "NaN",
+      "fullgame": "NaN",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "NaN",
+      "text_support": "NaN",
+      "audio_support": "NaN",
+      "platforms": "NaN",
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": "NaN",
+      "genres": "NaN"
+    },
+    "1244230": {
+      "type": "dlc",
+      "name": "Rustissimo PRO",
+      "required_age": 0,
+      "is_free": false,
+      "dlc": "NaN",
+      "website": "http://www.rustissimo.com",
+      "developers": [
+        "JaviteSoft"
+      ],
+      "publishers": [],
+      "packages": [
+        431790
+      ],
+      "controller_support": "NaN",
+      "fullgame": "1222580",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "13/02/2020",
+      "text_support": [
+        "English"
+      ],
+      "audio_support": [],
+      "pc_requirements_minreqs": {
+        "Needs 64-bit": true,
+        "OS": "Windows 10 64bit",
+        "Processor": "2 GHz",
+        "Memory": "2 GB RAM",
+        "Storage": "20 MB available space"
+      },
+      "pc_requirements_recreqs": {
+        "Needs 64-bit": true
+      },
+      "mac_requirements_minreqs": {
+        "Needs 64-bit": true
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": true
+      },
+      "linux_requirements_minreqs": {
+        "Needs 64-bit": true
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": true
+      },
+      "platforms": [
+        "windows"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "2",
+        "1",
+        "21",
+        "23"
+      ],
+      "genres": [
+        "37",
+        "23",
+        "57"
+      ]
+    },
+    "432220": {
+      "type": "demo",
+      "name": "The Revenant Prince - Demo",
+      "required_age": "12",
+      "is_free": true,
+      "dlc": "NaN",
+      "website": "http://therevenantprince.com",
+      "developers": [
+        "Nomina Games"
+      ],
+      "publishers": [
+        "Nomina Games"
+      ],
+      "packages": "NaN",
+      "controller_support": "NaN",
+      "fullgame": "432210",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "04/01/2016",
+      "text_support": [
+        "English"
+      ],
+      "audio_support": [
+        "English"
+      ],
+      "pc_requirements_minreqs": {
+        "OS": "7",
+        "Processor": "Core 2 Duo",
+        "Memory": "3 GB RAM",
+        "Graphics": "Discreet Video Card",
+        "DirectX": "Version 9.0b",
+        "Storage": "2 GB available space",
+        "Sound Card": "Direct X 9.0 Compatible Soundcard",
+        "Additional Notes": "This game can run on anything.",
+        "Needs 64-bit": false
+      },
+      "pc_requirements_recreqs": {
+        "OS": "Windows 8.1",
+        "Processor": "Intel(R) Core(TM) i7-4200HQ CPU  @ 2.4 GHz 2.40 GHz",
+        "Memory": "8 GB RAM",
+        "Graphics": "Nvidia GEFORCE GTX",
+        "DirectX": "Version 9.0",
+        "Storage": "2 GB available space",
+        "Sound Card": "Direct X 9.0 Compatible Soundcard",
+        "Additional Notes": "This game can run on anything.",
+        "Needs 64-bit": false
+      },
+      "mac_requirements_minreqs": {
+        "OS": "El Capitan",
+        "Processor": "Core 2 Duo",
+        "Graphics": "Discreet Video Card",
+        "Storage": "1 GB available space",
+        "Sound Card": "Direct X 9.0 Compatible Soundcard",
+        "Additional Notes": "Runs on El Capitan Prety well.",
+        "Needs 64-bit": false
+      },
+      "mac_requirements_recreqs": {
+        "OS": "El Capitan",
+        "Processor": "Core 2 Duo",
+        "Graphics": "Discreet Video Card",
+        "Storage": "1 GB available space",
+        "Sound Card": "Direct X 9.0 Compatible Soundcard",
+        "Additional Notes": "Runs on El Capitan Prety well.",
+        "Needs 64-bit": false
+      },
+      "linux_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "platforms": [
+        "windows"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "2",
+        "10",
+        "22"
+      ],
+      "genres": [
+        "1",
+        "25",
+        "4",
+        "23",
+        "3",
+        "2"
+      ]
+    },
+    "1247320": {
+      "type": "dlc",
+      "name": "talesshop puzzle \ud14c\uc77c\uc988\uc0f5\ud37c\uc990 - \uc8fd\uc5b4\ubc84\ub9b0 \ubcc4\uc758 \ub10b\ub450\ub9ac \ub4dc\uc528",
+      "required_age": 0,
+      "is_free": false,
+      "dlc": "NaN",
+      "website": "http://www.talesshop.com",
+      "developers": [
+        "TALESSHOP Co., Ltd."
+      ],
+      "publishers": [],
+      "packages": [
+        432836
+      ],
+      "controller_support": "NaN",
+      "fullgame": "1161160",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "13/02/2020",
+      "text_support": [
+        "Korean"
+      ],
+      "audio_support": [],
+      "pc_requirements_minreqs": {
+        "OS": "Windows\u00ae XP or higher",
+        "Processor": "Intel Pentium 3 or higher",
+        "Memory": "256 MB RAM",
+        "Graphics": "32MB or greater graphics card",
+        "Storage": "800 MB available space",
+        "Sound Card": "Direct Sound",
+        "Needs 64-bit": false
+      },
+      "pc_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "platforms": [
+        "windows"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "2",
+        "21",
+        "22",
+        "23"
+      ],
+      "genres": [
+        "4",
+        "37",
+        "23"
+      ]
+    },
+    "1162342": {
+      "type": "dlc",
+      "name": "Azur Lane Crosswave - Neptune",
+      "required_age": 0,
+      "is_free": true,
+      "dlc": "NaN",
+      "website": null,
+      "developers": [
+        "IDEA FACTORY",
+        "COMPILE HEART",
+        "FELISTELLA"
+      ],
+      "publishers": [
+        "Idea Factory International"
+      ],
+      "packages": [
+        396806,
+        427599
+      ],
+      "controller_support": "full",
+      "fullgame": "1150080",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "13/02/2020",
+      "text_support": [
+        "English",
+        "Japanese",
+        "Traditional Chinese"
+      ],
+      "audio_support": [
+        "Japanese"
+      ],
+      "pc_requirements_minreqs": {
+        "OS": "Windows 7 64bit (DirectX 11 equivalent)",
+        "Processor": "Intel CPU Core-I5 3.2GHz or above",
+        "Memory": "8 GB RAM",
+        "Graphics": "NVIDIA GeForce GTX 750Ti or above",
+        "DirectX": "Version 11",
+        "Storage": "4 GB available space",
+        "Sound Card": "DirectSound (DirectX) compatible sound card",
+        "Additional Notes": "4k performance will require Recommended System Requirements",
+        "Needs 64-bit": false
+      },
+      "pc_requirements_recreqs": {
+        "OS": "Windows 10 64bit (DirectX 11 equivalent)",
+        "Processor": "Intel CPU Core i7 3770 or above",
+        "Memory": "8 GB RAM",
+        "Graphics": "GeForce GTX 970 or above",
+        "DirectX": "Version 12",
+        "Storage": "4 GB available space",
+        "Sound Card": "DirectSound (DirectX) compatible sound card",
+        "Additional Notes": "4k performance will require Recommended System Requirements",
+        "Needs 64-bit": false
+      },
+      "mac_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "platforms": [
+        "windows"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "2",
+        "21",
+        "22",
+        "28",
+        "29",
+        "23"
+      ],
+      "genres": [
+        "1",
+        "25",
+        "3"
+      ]
+    },
+    "1162340": {
+      "type": "dlc",
+      "name": "Azur Lane Crosswave - Shiranui's Prized Goods Release Sale",
+      "required_age": 0,
+      "is_free": false,
+      "dlc": "NaN",
+      "website": null,
+      "developers": [
+        "IDEA FACTORY",
+        "COMPILE HEART",
+        "FELISTELLA"
+      ],
+      "publishers": [
+        "Idea Factory International"
+      ],
+      "packages": [
+        396800
+      ],
+      "controller_support": "full",
+      "fullgame": "1150080",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "13/02/2020",
+      "text_support": [
+        "English",
+        "Japanese",
+        "Traditional Chinese"
+      ],
+      "audio_support": [
+        "Japanese"
+      ],
+      "pc_requirements_minreqs": {
+        "OS": "Windows 7 64bit (DirectX 11 equivalent)",
+        "Processor": "Intel CPU Core-I5 3.2GHz or above",
+        "Memory": "8 GB RAM",
+        "Graphics": "NVIDIA GeForce GTX 750Ti or above",
+        "DirectX": "Version 11",
+        "Storage": "4 GB available space",
+        "Sound Card": "DirectSound (DirectX) compatible sound card",
+        "Additional Notes": "Optimal 4k performance may require better than Recommended System Requirements",
+        "Needs 64-bit": false
+      },
+      "pc_requirements_recreqs": {
+        "OS": "Windows 10 64bit (DirectX 11 equivalent)",
+        "Processor": "Intel CPU Core i7 3770 or above",
+        "Memory": "8 GB RAM",
+        "Graphics": "GeForce GTX 970 or above",
+        "DirectX": "Version 12",
+        "Storage": "4 GB available space",
+        "Sound Card": "DirectSound (DirectX) compatible sound card",
+        "Additional Notes": "Optimal 4k performance may require better than Recommended System Requirements",
+        "Needs 64-bit": false
+      },
+      "mac_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "platforms": [
+        "windows"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "2",
+        "21",
+        "22",
+        "28",
+        "29",
+        "23"
+      ],
+      "genres": [
+        "1",
+        "25",
+        "3"
+      ]
+    },
+    "1162341": {
+      "type": "dlc",
+      "name": "Azur Lane Crosswave - Operation EXP Boost",
+      "required_age": 0,
+      "is_free": false,
+      "dlc": "NaN",
+      "website": null,
+      "developers": [
+        "IDEA FACTORY",
+        "COMPILE HEART",
+        "FELISTELLA"
+      ],
+      "publishers": [
+        "Idea Factory International"
+      ],
+      "packages": [
+        396803
+      ],
+      "controller_support": "full",
+      "fullgame": "1150080",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "13/02/2020",
+      "text_support": [
+        "English",
+        "Japanese",
+        "Traditional Chinese"
+      ],
+      "audio_support": [
+        "Japanese"
+      ],
+      "pc_requirements_minreqs": {
+        "OS": "Windows 7 64bit (DirectX 11 equivalent)",
+        "Processor": "Intel CPU Core-I5 3.2GHz or above",
+        "Memory": "8 GB RAM",
+        "Graphics": "NVIDIA GeForce GTX 750Ti or above",
+        "DirectX": "Version 11",
+        "Storage": "4 GB available space",
+        "Sound Card": "DirectSound (DirectX) compatible sound card",
+        "Additional Notes": "Optimal 4k performance may require better than Recommended System Requirements",
+        "Needs 64-bit": false
+      },
+      "pc_requirements_recreqs": {
+        "OS": "Windows 10 64bit (DirectX 11 equivalent)",
+        "Processor": "Intel CPU Core i7 3770 or above",
+        "Memory": "8 GB RAM",
+        "Graphics": "GeForce GTX 970 or above",
+        "DirectX": "Version 12",
+        "Storage": "4 GB available space",
+        "Sound Card": "DirectSound (DirectX) compatible sound card",
+        "Additional Notes": "Optimal 4k performance may require better than Recommended System Requirements",
+        "Needs 64-bit": false
+      },
+      "mac_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "platforms": [
+        "windows"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "2",
+        "21",
+        "22",
+        "28",
+        "29",
+        "23"
+      ],
+      "genres": [
+        "1",
+        "25",
+        "3"
+      ]
+    },
+    "1215110": {
+      "type": "dlc",
+      "name": "Azur Lane Crosswave - Deluxe Pack",
+      "required_age": 0,
+      "is_free": false,
+      "dlc": "NaN",
+      "website": null,
+      "developers": [
+        "IDEA FACTORY",
+        "COMPILE HEART",
+        "FELISTELLA"
+      ],
+      "publishers": [
+        "Idea Factory International"
+      ],
+      "packages": [
+        420505
+      ],
+      "controller_support": "full",
+      "fullgame": "1150080",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "13/02/2020",
+      "text_support": [
+        "English",
+        "Japanese",
+        "Traditional Chinese"
+      ],
+      "audio_support": [
+        "Japanese"
+      ],
+      "pc_requirements_minreqs": {
+        "OS": "Windows 7 64bit (DirectX 11 equivalent)",
+        "Processor": "Intel CPU Core-I5 3.2GHz or above",
+        "Memory": "8 GB RAM",
+        "Graphics": "NVIDIA GeForce GTX 750Ti or above",
+        "Storage": "4 GB available space",
+        "Sound Card": "DirectSound (DirectX) compatible sound card",
+        "Additional Notes": "Optimal 4k performance may require better than Recommended System Requirements",
+        "Needs 64-bit": false
+      },
+      "pc_requirements_recreqs": {
+        "OS": "Windows 10 64bit (DirectX 11 equivalent)",
+        "Processor": "Intel CPU Core i7 3770 or above",
+        "Memory": "8 GB RAM",
+        "Graphics": "GeForce GTX 970 or above",
+        "Storage": "4 GB available space",
+        "Sound Card": "DirectSound (DirectX) compatible sound card",
+        "Additional Notes": "Optimal 4k performance may require better than Recommended System Requirements",
+        "Needs 64-bit": false
+      },
+      "mac_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "platforms": [
+        "windows"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "2",
+        "21",
+        "22",
+        "28",
+        "29",
+        "23"
+      ],
+      "genres": [
+        "1",
+        "25",
+        "3"
+      ]
+    },
+    "1212540": {
+      "type": "dlc",
+      "name": "Earthshine: Moonbeam (ost, minigame etc).",
+      "required_age": 0,
+      "is_free": false,
+      "dlc": "NaN",
+      "website": null,
+      "developers": [
+        "Elleiv"
+      ],
+      "publishers": [
+        "Phoenix_co"
+      ],
+      "packages": [
+        419332
+      ],
+      "controller_support": "NaN",
+      "fullgame": "1174170",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "17/02/2020",
+      "text_support": [
+        "English",
+        "Simplified Chinese",
+        "Russian"
+      ],
+      "audio_support": [
+        "Russian"
+      ],
+      "pc_requirements_minreqs": {
+        "OS": "Windows 7,8",
+        "Processor": "Intel atom Z3xx (Silvermont)",
+        "Graphics": "Intel HD Graphics Series. 1280x720 or better required",
+        "Sound Card": "Sound Devices compartible Direct Sound",
+        "Needs 64-bit": false
+      },
+      "pc_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_minreqs": {
+        "OS": "Mac OS X 10.6+",
+        "Processor": "Intel Core 2 Duo",
+        "Memory": "512 MB RAM",
+        "Graphics": "Open GL compatible",
+        "Storage": "100 MB available space",
+        "Needs 64-bit": false
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_minreqs": {
+        "OS": "Linux x86/x86_64",
+        "Processor": "Pentium 4",
+        "Graphics": "Open GL compatible",
+        "Storage": "100 MB available space",
+        "Needs 64-bit": false
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "platforms": [
+        "windows",
+        "mac",
+        "linux"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "2",
+        "21",
+        "22",
+        "23"
+      ],
+      "genres": [
+        "25",
+        "4",
+        "23"
+      ]
+    },
+    "1015950": {
+      "type": "dlc",
+      "name": "Crossout - No to War",
+      "required_age": 0,
+      "is_free": false,
+      "dlc": "NaN",
+      "website": "http://crossout.net/",
+      "developers": [
+        "Targem Games"
+      ],
+      "publishers": [],
+      "packages": [
+        336692
+      ],
+      "controller_support": "full",
+      "fullgame": "386180",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "13/02/2020",
+      "text_support": [
+        "English",
+        "Russian",
+        "German",
+        "Spanish - Spain",
+        "Japanese",
+        "Thai",
+        "French"
+      ],
+      "audio_support": [],
+      "pc_requirements_minreqs": {
+        "OS": "Windows\u00ae 7 / Windows\u00ae 8 / Windows\u00ae 10",
+        "Processor": "Intel\u00ae Core\u2122 2 Duo E8500 or AMD Phenom\u2122 II X3 720",
+        "Memory": "4 MB RAM",
+        "Graphics": "NVIDIA\u00ae GeForce\u00ae GT 440 or AMD\u2122 Radeon\u2122 HD 5670 or Intel\u00ae HD Graphics 4000",
+        "Storage": "5 MB available space",
+        "Needs 64-bit": false
+      },
+      "pc_requirements_recreqs": {
+        "OS": "Windows\u00ae 7 / Windows\u00ae 8 / Windows\u00ae 10 64-bit",
+        "Processor": "Intel\u00ae Core\u2122 i5-3330, AMD\u2122 FX-6300, or better",
+        "Memory": "6 MB RAM",
+        "Graphics": "NVIDIA\u00ae GeForce\u00ae GTX 750 Ti or AMD\u2122 Radeon\u2122 R7 260X or better",
+        "Storage": "5 MB available space",
+        "Needs 64-bit": false
+      },
+      "mac_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "platforms": [
+        "windows"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "1",
+        "20",
+        "49",
+        "36",
+        "9",
+        "38",
+        "21",
+        "22",
+        "28",
+        "29",
+        "35"
+      ],
+      "genres": [
+        "1",
+        "37",
+        "29",
+        "9"
+      ]
+    },
+    "1248900": {
+      "type": "dlc",
+      "name": "Just Chatting - Premium Style",
+      "required_age": 0,
+      "is_free": false,
+      "dlc": "NaN",
+      "website": null,
+      "developers": [
+        "SunshineOvercast"
+      ],
+      "publishers": [
+        "SunshineOvercast"
+      ],
+      "packages": [
+        433416
+      ],
+      "controller_support": "NaN",
+      "fullgame": "1221560",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "13/02/2020",
+      "text_support": [
+        "English"
+      ],
+      "audio_support": [],
+      "pc_requirements_minreqs": {
+        "OS": "Windows Vista/7/8/10",
+        "Processor": "i7-9700 or equivalent",
+        "Memory": "2 GB RAM",
+        "Graphics": "1280x720 fullscreen or any resolution windowed",
+        "DirectX": "Version 9.0c",
+        "Storage": "512 MB available space",
+        "Additional Notes": "Keyboard required",
+        "Needs 64-bit": false
+      },
+      "pc_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "platforms": [
+        "windows"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "2",
+        "21",
+        "23"
+      ],
+      "genres": [
+        "1",
+        "4",
+        "23",
+        "28"
+      ]
+    },
+    "1241210": {
+      "type": "music",
+      "name": "Giraffe and Annika Original Sound Track",
+      "required_age": 0,
+      "is_free": false,
+      "dlc": "NaN",
+      "website": "https://www.giraffeandannika.com/",
+      "developers": [
+        "atelier mimina"
+      ],
+      "publishers": [],
+      "packages": [
+        430771
+      ],
+      "controller_support": "NaN",
+      "fullgame": "1122100",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "17/02/2020",
+      "text_support": [
+        "English",
+        "Simplified Chinese",
+        "Traditional Chinese",
+        "Japanese"
+      ],
+      "audio_support": [],
+      "pc_requirements_minreqs": {
+        "Storage": "164 MB available space",
+        "Needs 64-bit": false
+      },
+      "pc_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "platforms": [
+        "windows",
+        "mac",
+        "linux"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": "NaN",
+      "genres": [
+        "1",
+        "25",
+        "23"
+      ]
+    },
+    "1214116": {
+      "type": "dlc",
+      "name": "Visual Novel Maker - Japanese Anime Voices\uff1aMale Character Series Vol.4",
+      "required_age": 0,
+      "is_free": false,
+      "dlc": "NaN",
+      "website": "http://visualnovelmaker.com/",
+      "developers": [
+        "TK.Projects"
+      ],
+      "publishers": [
+        "Degica"
+      ],
+      "packages": [
+        420076
+      ],
+      "controller_support": "NaN",
+      "fullgame": "495480",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "13/02/2020",
+      "text_support": [
+        "English",
+        "Japanese"
+      ],
+      "audio_support": [],
+      "pc_requirements_minreqs": {
+        "Additional Notes": "System supporting VN Maker",
+        "Needs 64-bit": false
+      },
+      "pc_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_minreqs": {
+        "Additional Notes": "System supporting VN Maker",
+        "Needs 64-bit": false
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_minreqs": {
+        "Additional Notes": "System supporting VN Maker",
+        "Needs 64-bit": false
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "platforms": [
+        "windows",
+        "mac",
+        "linux"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "21"
+      ],
+      "genres": [
+        "59"
+      ]
+    },
+    "1214096": {
+      "type": "dlc",
+      "name": "RPG Maker VX Ace - Japanese Anime Voices\uff1aMale Character Series Vol.4",
+      "required_age": 0,
+      "is_free": false,
+      "dlc": "NaN",
+      "website": "http://www.rpgmakerweb.com/",
+      "developers": [
+        "TK.Projects"
+      ],
+      "publishers": [
+        "Degica"
+      ],
+      "packages": [
+        420052
+      ],
+      "controller_support": "NaN",
+      "fullgame": "220700",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "13/02/2020",
+      "text_support": [
+        "English",
+        "French",
+        "German",
+        "Spanish - Spain",
+        "Italian",
+        "Portuguese - Brazil",
+        "Japanese"
+      ],
+      "audio_support": [],
+      "pc_requirements_minreqs": {
+        "OS": "Microsoft\u00ae Windows\u00ae XP / Vista / 7 (32-bit/64-bit) ",
+        "Processor": "Intel\u00ae Pentium\u00ae 4 2.0 GHz equivalent or faster processor ",
+        "Memory": "512 MB RAM ",
+        "Graphics": "1024 x 768 pixels or higher desktop resolution ",
+        "Hard Drive": "400 MB HD space",
+        "Needs 64-bit": false
+      },
+      "pc_requirements_recreqs": {
+        "Processor": "Intel\u00ae Pentium\u00ae 4 2.0 GHz equivalent or faster processor ",
+        "Memory": "512 MB RAM",
+        "Needs 64-bit": false
+      },
+      "mac_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "platforms": [
+        "windows"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "21",
+        "29",
+        "30"
+      ],
+      "genres": [
+        "53",
+        "59"
+      ]
+    },
+    "1232540": {
+      "type": "dlc",
+      "name": "X-Plane 11 - Add-on: JustAsia - CYYT - St. John's International Airport",
+      "required_age": 0,
+      "is_free": false,
+      "dlc": "NaN",
+      "website": null,
+      "developers": [
+        "JustAsia"
+      ],
+      "publishers": [
+        "JustAsia"
+      ],
+      "packages": [
+        427412
+      ],
+      "controller_support": "NaN",
+      "fullgame": "269950",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "18/02/2020",
+      "text_support": [
+        "English",
+        "German"
+      ],
+      "audio_support": [
+        "English"
+      ],
+      "pc_requirements_minreqs": {
+        "OS": "Windows 8 / 10 (64 bit)",
+        "Graphics": "4 GB VRAM minimum",
+        "Storage": "790 MB available space",
+        "Needs 64-bit": false
+      },
+      "pc_requirements_recreqs": {
+        "Graphics": "8 GB+ VRAM recommended",
+        "Needs 64-bit": false
+      },
+      "mac_requirements_minreqs": {
+        "OS": "Mac (64 bit)",
+        "Graphics": "4 GB VRAM minimum",
+        "Storage": "790 MB available space",
+        "Needs 64-bit": false
+      },
+      "mac_requirements_recreqs": {
+        "Graphics": "8 GB+ VRAM recommended",
+        "Needs 64-bit": false
+      },
+      "linux_requirements_minreqs": {
+        "OS": "Linux (64 bit)",
+        "Graphics": "4 GB VRAM minimum",
+        "Storage": "790 MB available space",
+        "Needs 64-bit": false
+      },
+      "linux_requirements_recreqs": {
+        "Graphics": "8 GB+ VRAM recommended",
+        "Needs 64-bit": false
+      },
+      "platforms": [
+        "windows",
+        "mac",
+        "linux"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "2",
+        "1",
+        "49",
+        "37",
+        "21",
+        "18",
+        "17"
+      ],
+      "genres": [
+        "28"
+      ]
+    },
+    "1232050": {
+      "type": "dlc",
+      "name": "X-Plane 11 - Add-on: Aerosoft - Seychelles XP",
+      "required_age": 0,
+      "is_free": false,
+      "dlc": "NaN",
+      "website": "https://www.aerosoft.com/en",
+      "developers": [
+        "Albert R\u00e0fols",
+        "Matthias Seewald (Maps2XPlane)"
+      ],
+      "publishers": [
+        "Aerosoft GmbH"
+      ],
+      "packages": [
+        427217
+      ],
+      "controller_support": "NaN",
+      "fullgame": "269950",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "13/02/2020",
+      "text_support": [
+        "English",
+        "French",
+        "Italian",
+        "German",
+        "Spanish - Spain",
+        "Portuguese",
+        "Russian"
+      ],
+      "audio_support": [
+        "English"
+      ],
+      "pc_requirements_minreqs": {
+        "OS": "Windows 8  / 10 (64bit)",
+        "Processor": "Multi Core processor with 3.2 GHz or better",
+        "Memory": "8 GB RAM",
+        "Graphics": "4 GB VRAM (6 GB recommended)",
+        "Storage": "9 GB available space",
+        "Additional Notes": "Scenery Animation Manager (SAM) version 2 (optionally)",
+        "Needs 64-bit": false
+      },
+      "pc_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_minreqs": {
+        "OS": "macOS 10.10+",
+        "Processor": "Multi Core processor with 3.2 GHz or better",
+        "Memory": "8 GB RAM",
+        "Graphics": "4 GB VRAM (6 GB recommended)",
+        "Storage": "9 GB available space",
+        "Additional Notes": "Scenery Animation Manager (SAM) version 2 (optionally)",
+        "Needs 64-bit": false
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_minreqs": {
+        "OS": "Linux (64bit)",
+        "Processor": "Multi Core processor with 3.2 GHz or better",
+        "Memory": "8 GB RAM",
+        "Graphics": "4 GB VRAM (6 GB recommended)",
+        "Storage": "9 GB available space",
+        "Additional Notes": "Scenery Animation Manager (SAM) version 2 (optionally)",
+        "Needs 64-bit": false
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "platforms": [
+        "windows",
+        "mac",
+        "linux"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "2",
+        "1",
+        "49",
+        "37",
+        "21",
+        "18",
+        "17"
+      ],
+      "genres": [
+        "28"
+      ]
+    },
+    "1250000": {
+      "type": "demo",
+      "name": "Animal Revolt Battle Simulator Demo",
+      "required_age": 0,
+      "is_free": true,
+      "dlc": "NaN",
+      "website": "https://www.vdimension-games.com/",
+      "developers": [
+        "VDimension"
+      ],
+      "publishers": [
+        "VDimension"
+      ],
+      "packages": "NaN",
+      "controller_support": "NaN",
+      "fullgame": "1215390",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "17/02/2020",
+      "text_support": [
+        "English",
+        "French",
+        "Italian",
+        "German",
+        "Spanish - Spain",
+        "Japanese",
+        "Korean",
+        "Portuguese",
+        "Russian",
+        "Simplified Chinese"
+      ],
+      "audio_support": [],
+      "pc_requirements_minreqs": {
+        "OS": "Windows 7",
+        "Processor": "Intel Core i5-2300 or equivalent",
+        "Graphics": "NVIDIA GeForce GTX 650 or equivalent",
+        "Needs 64-bit": false
+      },
+      "pc_requirements_recreqs": {
+        "OS": "Windows 10",
+        "Processor": "Intel Core i7-4770 or equivalent",
+        "Graphics": "NVIDIA GeForce GTX 970 or equivalent",
+        "Needs 64-bit": false
+      },
+      "mac_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "platforms": [
+        "windows"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "2",
+        "10",
+        "22"
+      ],
+      "genres": [
+        "1",
+        "23",
+        "28"
+      ]
+    },
+    "1139930": {
+      "type": "dlc",
+      "name": "Banner of the Maid - The Oriental Pirate",
+      "required_age": 0,
+      "is_free": false,
+      "dlc": "NaN",
+      "website": "https://www.ceasia.cn/snzq/index.html",
+      "developers": [
+        "Azure Flame Studio"
+      ],
+      "publishers": [
+        "CE-Asia"
+      ],
+      "packages": [
+        387821
+      ],
+      "controller_support": "NaN",
+      "fullgame": "994730",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "14/02/2020",
+      "text_support": [
+        "Simplified Chinese",
+        "Traditional Chinese",
+        "English"
+      ],
+      "audio_support": [
+        "Simplified Chinese"
+      ],
+      "pc_requirements_minreqs": {
+        "OS": "64-bit Windows 7/8/10",
+        "Processor": "1.0 GHz or above",
+        "Memory": "4 GB RAM",
+        "Graphics": "Support 1280 x 720 or higher resolution, 512MB or above",
+        "DirectX": "Version 11",
+        "Storage": "2 GB available space",
+        "Sound Card": "DirectX compatible sound card",
+        "Needs 64-bit": false
+      },
+      "pc_requirements_recreqs": {
+        "OS": "64-bit Windows 7/8/10",
+        "Processor": "2.0 GHz or above",
+        "Memory": "8 GB RAM",
+        "Graphics": "Support 1280 x 720 or higher resolution, 512MB or above",
+        "DirectX": "Version 11",
+        "Storage": "2 GB available space",
+        "Sound Card": "DirectX compatible sound card",
+        "Needs 64-bit": false
+      },
+      "mac_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "platforms": [
+        "windows"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "2",
+        "21",
+        "22",
+        "18",
+        "23"
+      ],
+      "genres": [
+        "23",
+        "3",
+        "2"
+      ]
+    },
+    "1220810": {
+      "type": "demo",
+      "name": "Luna : The Dimemsion Watcher Demo",
+      "required_age": 0,
+      "is_free": true,
+      "dlc": "NaN",
+      "website": null,
+      "developers": [
+        "Dave Studio"
+      ],
+      "publishers": [
+        "Dave Studio"
+      ],
+      "packages": "NaN",
+      "controller_support": "NaN",
+      "fullgame": "1218360",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "17/02/2020",
+      "text_support": [
+        "English"
+      ],
+      "audio_support": [],
+      "pc_requirements_minreqs": {
+        "OS": "Window 7, 8, 10 (64-bits)",
+        "Processor": "2.4 Ghz",
+        "Memory": "4 GB RAM",
+        "Graphics": "512MB Video Ram",
+        "DirectX": "Version 10",
+        "Storage": "1 GB available space",
+        "Needs 64-bit": false
+      },
+      "pc_requirements_recreqs": {
+        "OS": "Window 10 (64-bits)",
+        "Processor": "3.2 Ghz",
+        "Memory": "8 GB RAM",
+        "Graphics": "1GB Video Ram",
+        "DirectX": "Version 11",
+        "Storage": "1 GB available space",
+        "Needs 64-bit": false
+      },
+      "mac_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "platforms": [
+        "windows"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "2",
+        "1",
+        "49",
+        "36",
+        "10"
+      ],
+      "genres": [
+        "4",
+        "37",
+        "23",
+        "3",
+        "2"
+      ]
+    },
+    "1150194": {
+      "type": "dlc",
+      "name": "Street Fighter V - Season 4 Character Pass",
+      "required_age": 0,
+      "is_free": false,
+      "dlc": "NaN",
+      "website": "http://www.streetfighter.com/",
+      "developers": [
+        "Capcom"
+      ],
+      "publishers": [
+        "Capcom"
+      ],
+      "packages": [
+        391986
+      ],
+      "controller_support": "full",
+      "fullgame": "310950",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "13/02/2020",
+      "text_support": [
+        "English",
+        "French",
+        "Italian",
+        "German",
+        "Spanish - Spain",
+        "Arabic",
+        "Japanese",
+        "Korean",
+        "Polish",
+        "Portuguese - Brazil",
+        "Russian",
+        "Simplified Chinese",
+        "Traditional Chinese"
+      ],
+      "audio_support": [
+        "English",
+        "Japanese"
+      ],
+      "pc_requirements_minreqs": {
+        "OS": "Windows 7 64-bit",
+        "Processor": "Intel Core i3-4160 @ 3.60GHz",
+        "Memory": "6 GB RAM",
+        "Graphics": "NVIDIA\u00ae GeForce\u00ae GTX 480, GTX 570, GTX 670, or better",
+        "DirectX": "Version 11",
+        "Network": "Broadband Internet connection",
+        "Sound Card": "DirectX compatible soundcard or onboard chipset",
+        "Additional Notes": "Compatible with XInput and DirectInput USB devices including gamepads and arcade sticks based on Xbox 360, Xbox One, and DualShock controllers. Steam Controller also supported.",
+        "Needs 64-bit": false
+      },
+      "pc_requirements_recreqs": {
+        "OS": "WINDOWS\u00ae 7, 8, 8.1, 10 (64-BIT Required)",
+        "Processor": "Intel Core i5-4690K @3.50GHz or AMD FX-9370",
+        "Memory": "8 GB RAM",
+        "Graphics": "NVIDIA\u00ae GeForce\u00ae GTX 960 or AMD Radeon R7 370",
+        "DirectX": "Version 11",
+        "Network": "Broadband Internet connection",
+        "Sound Card": "DirectX compatible soundcard or onboard chipset",
+        "Additional Notes": "Compatible with XInput and DirectInput USB devices including gamepads and arcade sticks based on Xbox 360, Xbox One, and DualShock controllers. Steam Controller also supported.",
+        "Needs 64-bit": false
+      },
+      "mac_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "platforms": [
+        "windows"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "2",
+        "1",
+        "27",
+        "21",
+        "22",
+        "28",
+        "29"
+      ],
+      "genres": [
+        "1"
+      ]
+    },
+    "1228530": {
+      "type": "dlc",
+      "name": "Hunt: Showdown - Fire Fight",
+      "required_age": "18",
+      "is_free": false,
+      "dlc": "NaN",
+      "website": "https://www.huntshowdown.com/",
+      "developers": [
+        "Crytek"
+      ],
+      "publishers": [
+        "Crytek"
+      ],
+      "packages": [
+        425962
+      ],
+      "controller_support": "full",
+      "fullgame": "594650",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "13/02/2020",
+      "text_support": [
+        "English",
+        "French",
+        "Italian",
+        "German",
+        "Spanish - Spain",
+        "Portuguese",
+        "Russian",
+        "Simplified Chinese",
+        "Polish",
+        "Turkish"
+      ],
+      "audio_support": [
+        "English"
+      ],
+      "pc_requirements_minreqs": {
+        "Needs 64-bit": true,
+        "OS": "Windows 7 64bit",
+        "Processor": "Intel i5-4590 @ 3.3GHz (4th Generation) or AMD Ryzen 3 1200",
+        "Memory": "8 GB RAM",
+        "Graphics": "NVIDIA GeForce GTX 660 TI or AMD Radeon R7 370",
+        "DirectX": "Version 11",
+        "Network": "Broadband Internet connection",
+        "Storage": "20 MB available space",
+        "Sound Card": "DirectX compatible audio card",
+        "Additional Notes": "Best experienced with headphones"
+      },
+      "pc_requirements_recreqs": {
+        "Needs 64-bit": true,
+        "OS": "Windows 10 64 bit",
+        "Processor": "Intel i5-6600 @ 3.3Ghz (6th Generation) or AMD Ryzen 5 1400",
+        "Memory": "12 GB RAM",
+        "Graphics": "NVIDIA GeForce GTX 970 4 GB or AMD Radeon R9 390X",
+        "DirectX": "Version 11",
+        "Network": "Broadband Internet connection",
+        "Storage": "20 MB available space",
+        "Sound Card": "DirectX compatible audio card",
+        "Additional Notes": "Best experienced with headphones"
+      },
+      "mac_requirements_minreqs": {
+        "Needs 64-bit": true
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": true
+      },
+      "linux_requirements_minreqs": {
+        "Needs 64-bit": true
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": true
+      },
+      "platforms": [
+        "windows"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "1",
+        "49",
+        "36",
+        "9",
+        "38",
+        "21",
+        "22",
+        "28",
+        "29",
+        "35",
+        "25",
+        "43"
+      ],
+      "genres": [
+        "1"
+      ]
+    },
+    "1238770": {
+      "type": "dlc",
+      "name": "RPG Maker MV - Sci-Fi Battlebacks",
+      "required_age": 0,
+      "is_free": false,
+      "dlc": "NaN",
+      "website": "http://www.rpgmakerweb.com/",
+      "developers": [
+        "Michael Galefire"
+      ],
+      "publishers": [
+        "Degica"
+      ],
+      "packages": [
+        429704
+      ],
+      "controller_support": "NaN",
+      "fullgame": "363890",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "13/02/2020",
+      "text_support": [
+        "English",
+        "French",
+        "Italian",
+        "German",
+        "Spanish - Spain",
+        "Portuguese - Brazil",
+        "Russian",
+        "Japanese",
+        "Korean",
+        "Traditional Chinese",
+        "Arabic",
+        "Simplified Chinese"
+      ],
+      "audio_support": [],
+      "pc_requirements_minreqs": {
+        "Additional Notes": "System supporting RPG Maker MV",
+        "Needs 64-bit": false
+      },
+      "pc_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_minreqs": {
+        "Additional Notes": "System supporting RPG Maker MV",
+        "Needs 64-bit": false
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_minreqs": {
+        "Additional Notes": "System supporting RPG Maker MV",
+        "Needs 64-bit": false
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "platforms": [
+        "windows",
+        "mac",
+        "linux"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "21",
+        "29",
+        "18"
+      ],
+      "genres": [
+        "53",
+        "59"
+      ]
+    },
+    "1247990": {
+      "type": "demo",
+      "name": "Dominatrix Simulator: Threshold Demo",
+      "required_age": 0,
+      "is_free": true,
+      "dlc": "NaN",
+      "website": null,
+      "developers": [
+        "deviant.tech"
+      ],
+      "publishers": [
+        "deviant.tech"
+      ],
+      "packages": "NaN",
+      "controller_support": "NaN",
+      "fullgame": "953270",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "15/02/2020",
+      "text_support": "NaN",
+      "audio_support": "NaN",
+      "pc_requirements_minreqs": {
+        "Needs 64-bit": true
+      },
+      "pc_requirements_recreqs": {
+        "Needs 64-bit": true
+      },
+      "mac_requirements_minreqs": {
+        "Needs 64-bit": true
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": true
+      },
+      "linux_requirements_minreqs": {
+        "Needs 64-bit": true
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": true
+      },
+      "platforms": [
+        "windows"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "10"
+      ],
+      "genres": "NaN"
+    },
+    "1211674": {
+      "type": "dlc",
+      "name": "DAEMON X MACHINA - Arsenal Patterns Bundle",
+      "required_age": 0,
+      "is_free": false,
+      "dlc": "NaN",
+      "website": "https://www.xseedgames.com/",
+      "developers": [
+        "Marvelous Inc."
+      ],
+      "publishers": [
+        "XSEED Games",
+        "Marvelous USA, Inc.",
+        "Marvelous"
+      ],
+      "packages": [
+        418924
+      ],
+      "controller_support": "NaN",
+      "fullgame": "1167450",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "13/02/2020",
+      "text_support": [
+        "English",
+        "French",
+        "Italian",
+        "German",
+        "Spanish - Spain",
+        "Japanese",
+        "Simplified Chinese",
+        "Traditional Chinese"
+      ],
+      "audio_support": [
+        "English",
+        "Japanese"
+      ],
+      "pc_requirements_minreqs": {
+        "OS": "Windows 8.1/10",
+        "Processor": "Intel i5-3470 / AMD FX-8300",
+        "Memory": "6 GB RAM",
+        "Graphics": "NVIDIA Geforce GTX 660 / Radeon HD7870",
+        "DirectX": "Version 11",
+        "Storage": "13 GB available space",
+        "Needs 64-bit": false
+      },
+      "pc_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "platforms": [
+        "windows"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "2",
+        "1",
+        "49",
+        "36",
+        "9",
+        "38",
+        "21",
+        "22",
+        "29",
+        "18",
+        "23",
+        "25"
+      ],
+      "genres": [
+        "1"
+      ]
+    },
+    "1211671": {
+      "type": "dlc",
+      "name": "DAEMON X MACHINA - Arsenal - \"Crusader\"",
+      "required_age": 0,
+      "is_free": false,
+      "dlc": "NaN",
+      "website": "https://www.xseedgames.com/",
+      "developers": [
+        "Marvelous Inc."
+      ],
+      "publishers": [
+        "XSEED Games",
+        "Marvelous USA, Inc.",
+        "Marvelous"
+      ],
+      "packages": [
+        418915
+      ],
+      "controller_support": "NaN",
+      "fullgame": "1167450",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "13/02/2020",
+      "text_support": [
+        "English",
+        "French",
+        "Italian",
+        "German",
+        "Spanish - Spain",
+        "Japanese",
+        "Simplified Chinese",
+        "Traditional Chinese"
+      ],
+      "audio_support": [
+        "English",
+        "Japanese"
+      ],
+      "pc_requirements_minreqs": {
+        "OS": "Windows 8.1/10",
+        "Processor": "Intel i5-3470 / AMD FX-8300",
+        "Memory": "6 GB RAM",
+        "Graphics": "NVIDIA Geforce GTX 660 / Radeon HD7870",
+        "DirectX": "Version 11",
+        "Storage": "13 GB available space",
+        "Needs 64-bit": false
+      },
+      "pc_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "platforms": [
+        "windows"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "2",
+        "1",
+        "49",
+        "36",
+        "9",
+        "38",
+        "21",
+        "22",
+        "29",
+        "18",
+        "23",
+        "25"
+      ],
+      "genres": [
+        "1"
+      ]
+    },
+    "1211672": {
+      "type": "dlc",
+      "name": "DAEMON X MACHINA - Arsenal - \"Muramasa\"",
+      "required_age": 0,
+      "is_free": false,
+      "dlc": "NaN",
+      "website": "https://www.xseedgames.com/",
+      "developers": [
+        "Marvelous Inc."
+      ],
+      "publishers": [
+        "XSEED Games",
+        "Marvelous USA, Inc.",
+        "Marvelous"
+      ],
+      "packages": [
+        418918
+      ],
+      "controller_support": "NaN",
+      "fullgame": "1167450",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "13/02/2020",
+      "text_support": [
+        "English",
+        "French",
+        "Italian",
+        "German",
+        "Spanish - Spain",
+        "Japanese",
+        "Simplified Chinese",
+        "Traditional Chinese"
+      ],
+      "audio_support": [
+        "English",
+        "Japanese"
+      ],
+      "pc_requirements_minreqs": {
+        "OS": "Windows 8.1/10",
+        "Processor": "Intel i5-3470 / AMD FX-8300",
+        "Memory": "6 GB RAM",
+        "Graphics": "NVIDIA Geforce GTX 660 / Radeon HD7870",
+        "DirectX": "Version 11",
+        "Storage": "13 GB available space",
+        "Needs 64-bit": false
+      },
+      "pc_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "platforms": [
+        "windows"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "2",
+        "1",
+        "49",
+        "36",
+        "9",
+        "38",
+        "21",
+        "22",
+        "29",
+        "18",
+        "23",
+        "25"
+      ],
+      "genres": [
+        "1"
+      ]
+    },
+    "1211675": {
+      "type": "dlc",
+      "name": "DAEMON X MACHINA - Outer Suit - \"Camouflage Plugsuit\"",
+      "required_age": 0,
+      "is_free": false,
+      "dlc": "NaN",
+      "website": "https://www.xseedgames.com/",
+      "developers": [
+        "Marvelous Inc."
+      ],
+      "publishers": [
+        "XSEED Games",
+        "Marvelous USA, Inc.",
+        "Marvelous"
+      ],
+      "packages": [
+        418927
+      ],
+      "controller_support": "NaN",
+      "fullgame": "1167450",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "13/02/2020",
+      "text_support": [
+        "English",
+        "French",
+        "Italian",
+        "German",
+        "Spanish - Spain",
+        "Japanese",
+        "Simplified Chinese",
+        "Traditional Chinese"
+      ],
+      "audio_support": [
+        "English",
+        "Japanese"
+      ],
+      "pc_requirements_minreqs": {
+        "OS": "Windows 8.1/10",
+        "Processor": "Intel i5-3470 / AMD FX-8300",
+        "Memory": "6 GB RAM",
+        "Graphics": "NVIDIA Geforce GTX 660 / Radeon HD7870",
+        "DirectX": "Version 11",
+        "Storage": "13 GB available space",
+        "Needs 64-bit": false
+      },
+      "pc_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "platforms": [
+        "windows"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "2",
+        "1",
+        "49",
+        "36",
+        "9",
+        "38",
+        "21",
+        "22",
+        "29",
+        "18",
+        "23",
+        "25"
+      ],
+      "genres": [
+        "1"
+      ]
+    },
+    "1211673": {
+      "type": "dlc",
+      "name": "DAEMON X MACHINA - Arsenal - \"Rabbit 11\"",
+      "required_age": 0,
+      "is_free": false,
+      "dlc": "NaN",
+      "website": "https://www.xseedgames.com/",
+      "developers": [
+        "Marvelous Inc."
+      ],
+      "publishers": [
+        "XSEED Games",
+        "Marvelous USA, Inc.",
+        "Marvelous"
+      ],
+      "packages": [
+        418921
+      ],
+      "controller_support": "NaN",
+      "fullgame": "1167450",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "13/02/2020",
+      "text_support": [
+        "English",
+        "French",
+        "Italian",
+        "German",
+        "Spanish - Spain",
+        "Japanese",
+        "Simplified Chinese",
+        "Traditional Chinese"
+      ],
+      "audio_support": [
+        "English",
+        "Japanese"
+      ],
+      "pc_requirements_minreqs": {
+        "OS": "Windows 8.1/10",
+        "Processor": "Intel i5-3470 / AMD FX-8300",
+        "Memory": "6 GB RAM",
+        "Graphics": "NVIDIA Geforce GTX 660 / Radeon HD7870",
+        "DirectX": "Version 11",
+        "Storage": "13 GB available space",
+        "Needs 64-bit": false
+      },
+      "pc_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "platforms": [
+        "windows"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "2",
+        "1",
+        "49",
+        "36",
+        "9",
+        "38",
+        "21",
+        "22",
+        "29",
+        "18",
+        "23",
+        "25"
+      ],
+      "genres": [
+        "1"
+      ]
+    },
+    "1211683": {
+      "type": "dlc",
+      "name": "DAEMON X MACHINA - Arsenal Decals Bundle - The Brushstrokes of Souun Takeda",
+      "required_age": 0,
+      "is_free": true,
+      "dlc": "NaN",
+      "website": "https://www.xseedgames.com/",
+      "developers": [
+        "Marvelous Inc."
+      ],
+      "publishers": [
+        "XSEED Games",
+        "Marvelous USA, Inc.",
+        "Marvelous"
+      ],
+      "packages": "NaN",
+      "controller_support": "NaN",
+      "fullgame": "1167450",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "13/02/2020",
+      "text_support": [
+        "English",
+        "French",
+        "Italian",
+        "German",
+        "Spanish - Spain",
+        "Japanese",
+        "Simplified Chinese",
+        "Traditional Chinese"
+      ],
+      "audio_support": [
+        "English",
+        "Japanese"
+      ],
+      "pc_requirements_minreqs": {
+        "OS": "Windows 8.1/10",
+        "Processor": "Intel i5-3470 / AMD FX-8300",
+        "Memory": "6 GB RAM",
+        "Graphics": "NVIDIA Geforce GTX 660 / Radeon HD7870",
+        "DirectX": "Version 11",
+        "Storage": "13 GB available space",
+        "Needs 64-bit": false
+      },
+      "pc_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "platforms": [
+        "windows"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "2",
+        "1",
+        "49",
+        "36",
+        "9",
+        "38",
+        "21",
+        "22",
+        "29",
+        "18",
+        "23",
+        "25"
+      ],
+      "genres": [
+        "1"
+      ]
+    },
+    "1211676": {
+      "type": "dlc",
+      "name": "DAEMON X MACHINA - Outer Suit - \"Formal Attire\"",
+      "required_age": 0,
+      "is_free": false,
+      "dlc": "NaN",
+      "website": "https://www.xseedgames.com/",
+      "developers": [
+        "Marvelous Inc."
+      ],
+      "publishers": [
+        "XSEED Games",
+        "Marvelous USA, Inc.",
+        "Marvelous"
+      ],
+      "packages": [
+        418930
+      ],
+      "controller_support": "NaN",
+      "fullgame": "1167450",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "13/02/2020",
+      "text_support": [
+        "English",
+        "French",
+        "Italian",
+        "German",
+        "Spanish - Spain",
+        "Japanese",
+        "Simplified Chinese",
+        "Traditional Chinese"
+      ],
+      "audio_support": [
+        "English",
+        "Japanese"
+      ],
+      "pc_requirements_minreqs": {
+        "OS": "Windows 8.1/10",
+        "Processor": "Intel i5-3470 / AMD FX-8300",
+        "Memory": "6 GB RAM",
+        "Graphics": "NVIDIA Geforce GTX 660 / Radeon HD7870",
+        "DirectX": "Version 11",
+        "Storage": "13 GB available space",
+        "Needs 64-bit": false
+      },
+      "pc_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "platforms": [
+        "windows"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "2",
+        "1",
+        "49",
+        "36",
+        "9",
+        "38",
+        "21",
+        "22",
+        "29",
+        "18",
+        "23",
+        "25"
+      ],
+      "genres": [
+        "1"
+      ]
+    },
+    "1246500": {
+      "type": "music",
+      "name": "Stone Story RPG Soundtrack",
+      "required_age": 0,
+      "is_free": false,
+      "dlc": "NaN",
+      "website": null,
+      "developers": [
+        "Rafael Langoni Smith",
+        "Arthur Cordeiro",
+        "standardcombo"
+      ],
+      "publishers": [
+        "Martian Rex"
+      ],
+      "packages": [
+        432558
+      ],
+      "controller_support": "NaN",
+      "fullgame": "603390",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "14/02/2020",
+      "text_support": "NaN",
+      "audio_support": "NaN",
+      "pc_requirements_minreqs": {
+        "Storage": "203 MB available space",
+        "Needs 64-bit": false
+      },
+      "pc_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "platforms": [
+        "windows",
+        "mac",
+        "linux"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": "NaN",
+      "genres": "NaN"
+    },
+    "1211680": {
+      "type": "dlc",
+      "name": "DAEMON X MACHINA - Outer Facial Features Bundle 2",
+      "required_age": 0,
+      "is_free": false,
+      "dlc": "NaN",
+      "website": "https://www.xseedgames.com/",
+      "developers": [
+        "Marvelous Inc."
+      ],
+      "publishers": [
+        "XSEED Games",
+        "Marvelous USA, Inc.",
+        "Marvelous"
+      ],
+      "packages": [
+        418942
+      ],
+      "controller_support": "NaN",
+      "fullgame": "1167450",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "13/02/2020",
+      "text_support": [
+        "English",
+        "French",
+        "Italian",
+        "German",
+        "Spanish - Spain",
+        "Japanese",
+        "Simplified Chinese",
+        "Traditional Chinese"
+      ],
+      "audio_support": [
+        "English",
+        "Japanese"
+      ],
+      "pc_requirements_minreqs": {
+        "OS": "Windows 8.1/10",
+        "Processor": "Intel i5-3470 / AMD FX-8300",
+        "Memory": "6 GB RAM",
+        "Graphics": "NVIDIA Geforce GTX 660 / Radeon HD7870",
+        "DirectX": "Version 11",
+        "Storage": "13 GB available space",
+        "Needs 64-bit": false
+      },
+      "pc_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "platforms": [
+        "windows"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "2",
+        "1",
+        "49",
+        "36",
+        "9",
+        "38",
+        "21",
+        "22",
+        "29",
+        "18",
+        "23",
+        "25"
+      ],
+      "genres": [
+        "1"
+      ]
+    },
+    "1211679": {
+      "type": "dlc",
+      "name": "DAEMON X MACHINA - Outer Facial Features Bundle 1",
+      "required_age": 0,
+      "is_free": false,
+      "dlc": "NaN",
+      "website": "https://www.xseedgames.com/",
+      "developers": [
+        "Marvelous Inc."
+      ],
+      "publishers": [
+        "XSEED Games",
+        "Marvelous USA, Inc.",
+        "Marvelous"
+      ],
+      "packages": [
+        418939
+      ],
+      "controller_support": "NaN",
+      "fullgame": "1167450",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "13/02/2020",
+      "text_support": [
+        "English",
+        "French",
+        "Italian",
+        "German",
+        "Spanish - Spain",
+        "Japanese",
+        "Simplified Chinese",
+        "Traditional Chinese"
+      ],
+      "audio_support": [
+        "English",
+        "Japanese"
+      ],
+      "pc_requirements_minreqs": {
+        "OS": "Windows 8.1/10",
+        "Processor": "Intel i5-3470 / AMD FX-8300",
+        "Memory": "6 GB RAM",
+        "Graphics": "NVIDIA Geforce GTX 660 / Radeon HD7870",
+        "DirectX": "Version 11",
+        "Storage": "13 GB available space",
+        "Needs 64-bit": false
+      },
+      "pc_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "platforms": [
+        "windows"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "2",
+        "1",
+        "49",
+        "36",
+        "9",
+        "38",
+        "21",
+        "22",
+        "29",
+        "18",
+        "23",
+        "25"
+      ],
+      "genres": [
+        "1"
+      ]
+    },
+    "1211678": {
+      "type": "dlc",
+      "name": "DAEMON X MACHINA - Outer Hairstyles Bundle 2",
+      "required_age": 0,
+      "is_free": false,
+      "dlc": "NaN",
+      "website": "https://www.xseedgames.com/",
+      "developers": [
+        "Marvelous Inc."
+      ],
+      "publishers": [
+        "XSEED Games",
+        "Marvelous USA, Inc.",
+        "Marvelous"
+      ],
+      "packages": [
+        418936
+      ],
+      "controller_support": "NaN",
+      "fullgame": "1167450",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "13/02/2020",
+      "text_support": [
+        "English",
+        "French",
+        "Italian",
+        "German",
+        "Spanish - Spain",
+        "Japanese",
+        "Simplified Chinese",
+        "Traditional Chinese"
+      ],
+      "audio_support": [
+        "English",
+        "Japanese"
+      ],
+      "pc_requirements_minreqs": {
+        "OS": "Windows 8.1/10",
+        "Processor": "Intel i5-3470 / AMD FX-8300",
+        "Memory": "6 GB RAM",
+        "Graphics": "NVIDIA Geforce GTX 660 / Radeon HD7870",
+        "DirectX": "Version 11",
+        "Storage": "13 GB available space",
+        "Needs 64-bit": false
+      },
+      "pc_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "platforms": [
+        "windows"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "2",
+        "1",
+        "49",
+        "36",
+        "9",
+        "38",
+        "21",
+        "22",
+        "29",
+        "18",
+        "23",
+        "25"
+      ],
+      "genres": [
+        "1"
+      ]
+    },
+    "1211677": {
+      "type": "dlc",
+      "name": "DAEMON X MACHINA - Outer Hairstyles Bundle 1",
+      "required_age": 0,
+      "is_free": false,
+      "dlc": "NaN",
+      "website": "https://www.xseedgames.com/",
+      "developers": [
+        "Marvelous Inc."
+      ],
+      "publishers": [
+        "XSEED Games",
+        "Marvelous USA, Inc.",
+        "Marvelous"
+      ],
+      "packages": [
+        418933
+      ],
+      "controller_support": "NaN",
+      "fullgame": "1167450",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "13/02/2020",
+      "text_support": [
+        "English",
+        "French",
+        "Italian",
+        "German",
+        "Spanish - Spain",
+        "Japanese",
+        "Simplified Chinese",
+        "Traditional Chinese"
+      ],
+      "audio_support": [
+        "English",
+        "Japanese"
+      ],
+      "pc_requirements_minreqs": {
+        "OS": "Windows 8.1/10",
+        "Processor": "Intel i5-3470 / AMD FX-8300",
+        "Memory": "6 GB RAM",
+        "Graphics": "NVIDIA Geforce GTX 660 / Radeon HD7870",
+        "DirectX": "Version 11",
+        "Storage": "13 GB available space",
+        "Needs 64-bit": false
+      },
+      "pc_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "platforms": [
+        "windows"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "2",
+        "1",
+        "49",
+        "36",
+        "9",
+        "38",
+        "21",
+        "22",
+        "29",
+        "18",
+        "23",
+        "25"
+      ],
+      "genres": [
+        "1"
+      ]
+    },
+    "1211682": {
+      "type": "dlc",
+      "name": "DAEMON X MACHINA - Outer Emotes Set",
+      "required_age": 0,
+      "is_free": false,
+      "dlc": "NaN",
+      "website": "https://www.xseedgames.com/",
+      "developers": [
+        "Marvelous Inc."
+      ],
+      "publishers": [
+        "XSEED Games",
+        "Marvelous USA, Inc.",
+        "Marvelous"
+      ],
+      "packages": [
+        418948
+      ],
+      "controller_support": "NaN",
+      "fullgame": "1167450",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "13/02/2020",
+      "text_support": [
+        "English",
+        "French",
+        "Italian",
+        "German",
+        "Spanish - Spain",
+        "Japanese",
+        "Simplified Chinese",
+        "Traditional Chinese"
+      ],
+      "audio_support": [
+        "English",
+        "Japanese"
+      ],
+      "pc_requirements_minreqs": {
+        "OS": "Windows 8.1/10",
+        "Processor": "Intel i5-3470 / AMD FX-8300",
+        "Memory": "6 GB RAM",
+        "Graphics": "NVIDIA Geforce GTX 660 / Radeon HD7870",
+        "DirectX": "Version 11",
+        "Storage": "13 GB available space",
+        "Needs 64-bit": false
+      },
+      "pc_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "platforms": [
+        "windows"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "2",
+        "1",
+        "49",
+        "36",
+        "9",
+        "38",
+        "21",
+        "22",
+        "29",
+        "18",
+        "23",
+        "25"
+      ],
+      "genres": [
+        "1"
+      ]
+    },
+    "1211681": {
+      "type": "dlc",
+      "name": "DAEMON X MACHINA - Arsenal Decals Bundle",
+      "required_age": 0,
+      "is_free": false,
+      "dlc": "NaN",
+      "website": "https://www.xseedgames.com/",
+      "developers": [
+        "Marvelous Inc."
+      ],
+      "publishers": [
+        "XSEED Games",
+        "Marvelous USA, Inc.",
+        "Marvelous"
+      ],
+      "packages": [
+        418945
+      ],
+      "controller_support": "NaN",
+      "fullgame": "1167450",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "13/02/2020",
+      "text_support": [
+        "English",
+        "French",
+        "Italian",
+        "German",
+        "Spanish - Spain",
+        "Japanese",
+        "Simplified Chinese",
+        "Traditional Chinese"
+      ],
+      "audio_support": [
+        "English",
+        "Japanese"
+      ],
+      "pc_requirements_minreqs": {
+        "OS": "Windows 8.1/10",
+        "Processor": "Intel i5-3470 / AMD FX-8300",
+        "Memory": "6 GB RAM",
+        "Graphics": "NVIDIA Geforce GTX 660 / Radeon HD7870",
+        "DirectX": "Version 11",
+        "Storage": "13 GB available space",
+        "Needs 64-bit": false
+      },
+      "pc_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "platforms": [
+        "windows"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "2",
+        "1",
+        "49",
+        "36",
+        "9",
+        "38",
+        "21",
+        "22",
+        "29",
+        "18",
+        "23",
+        "25"
+      ],
+      "genres": [
+        "1"
+      ]
+    },
+    "1249600": {
+      "type": "demo",
+      "name": "Runner Heroes Demo",
+      "required_age": 0,
+      "is_free": true,
+      "dlc": "NaN",
+      "website": "http://www.ikigaiplay.com",
+      "developers": [
+        "IKIGAI Play"
+      ],
+      "publishers": [
+        "IKIGAI Play"
+      ],
+      "packages": "NaN",
+      "controller_support": "full",
+      "fullgame": "1157820",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "15/02/2020",
+      "text_support": [
+        "English",
+        "French",
+        "Italian",
+        "German",
+        "Spanish - Spain",
+        "Portuguese - Brazil",
+        "Russian"
+      ],
+      "audio_support": [],
+      "pc_requirements_minreqs": {
+        "OS": "10",
+        "Processor": "Intel i5 / AMD X4, min. 2.8 GHz",
+        "Memory": "8 GB RAM",
+        "Graphics": "DirectX 11 compatible GPU, min. 2GB dedicated VRAM (AMD R9 300 series / NVIDIA GeForce GTX 900 series)",
+        "DirectX": "Version 11",
+        "Storage": "50 MB available space",
+        "Needs 64-bit": false
+      },
+      "pc_requirements_recreqs": {
+        "OS": "10",
+        "Processor": "Intel CPU Core i7 3770 3.4 GHz / AMD CPU AMD FX-8350 4 GHz",
+        "Memory": "16 GB RAM",
+        "Graphics": "DirectX 11 compatible GPU, min. 4GB dedicated VRAM (AMD RX 400 series / NVIDIA GeForce GTX 1000 series)",
+        "DirectX": "Version 11",
+        "Storage": "50 MB available space",
+        "Needs 64-bit": false
+      },
+      "mac_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "platforms": [
+        "windows"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "2",
+        "1",
+        "9",
+        "39",
+        "24",
+        "10",
+        "22",
+        "28",
+        "44"
+      ],
+      "genres": [
+        "1",
+        "25",
+        "23"
+      ]
+    },
+    "1198380": {
+      "type": "game",
+      "name": "COWBOY YAKUZA",
+      "required_age": 0,
+      "is_free": false,
+      "dlc": "NaN",
+      "website": null,
+      "developers": [
+        "Active Gaming Media Inc."
+      ],
+      "publishers": [
+        "Active Gaming Media Inc.",
+        "Maple Whispering Co.,Ltd."
+      ],
+      "packages": [
+        413177
+      ],
+      "controller_support": "full",
+      "fullgame": "NaN",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "17/02/2020",
+      "text_support": [
+        "English"
+      ],
+      "audio_support": [],
+      "pc_requirements_minreqs": {
+        "Needs 64-bit": true,
+        "OS": "Windows 8 (64-bit)",
+        "Processor": "Intel Core i3",
+        "Memory": "8 GB RAM",
+        "Graphics": "NVIDIA GeForce GTX 660",
+        "DirectX": "Version 11",
+        "Storage": "9 GB available space"
+      },
+      "pc_requirements_recreqs": {
+        "Needs 64-bit": true,
+        "OS": "Windows 10 (64-bit)",
+        "Processor": "Intel Core i7 or higher",
+        "Memory": "16 GB RAM",
+        "Graphics": "NVIDIA GeForce GTX 1060 or higher",
+        "DirectX": "Version 11",
+        "Storage": "9 GB available space"
+      },
+      "mac_requirements_minreqs": {
+        "Needs 64-bit": true
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": true
+      },
+      "linux_requirements_minreqs": {
+        "Needs 64-bit": true
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": true
+      },
+      "platforms": [
+        "windows"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "2",
+        "28"
+      ],
+      "genres": [
+        "1",
+        "4",
+        "70"
+      ]
+    },
+    "1245510": {
+      "type": "dlc",
+      "name": "'Moskva' Paintings Pack",
+      "required_age": 0,
+      "is_free": false,
+      "dlc": "NaN",
+      "website": "https://kishmish-games.com",
+      "developers": [
+        "KishMish Games"
+      ],
+      "publishers": [
+        "KishMish Games"
+      ],
+      "packages": [
+        432211
+      ],
+      "controller_support": "NaN",
+      "fullgame": "994890",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "15/02/2020",
+      "text_support": [
+        "English",
+        "Russian",
+        "French",
+        "German",
+        "Czech",
+        "Korean",
+        "Simplified Chinese",
+        "Italian",
+        "Spanish - Spain",
+        "Portuguese"
+      ],
+      "audio_support": [
+        "English",
+        "Russian",
+        "French",
+        "German",
+        "Czech",
+        "Korean",
+        "Simplified Chinese",
+        "Italian",
+        "Spanish - Spain",
+        "Portuguese"
+      ],
+      "pc_requirements_minreqs": {
+        "OS": "Microsoft\u00ae Windows\u00ae 7 or later 64-bit os required",
+        "Processor": "1.9ghz Intel i5-equivalent processor or higher",
+        "Memory": "4 GB RAM",
+        "Graphics": "Nvidia GeForce GTX 460 or similar AMD Radeon (no support for onboard cards)",
+        "DirectX": "Version 11",
+        "Storage": "1 MB available space",
+        "Sound Card": "DirectX\u00ae Compatible",
+        "Needs 64-bit": false
+      },
+      "pc_requirements_recreqs": {
+        "OS": "Microsoft\u00ae Windows\u00ae 7 or later 64-bit os required",
+        "Processor": "Intel Core i5 3470 @ 3.2 GHz, AMD FX 8120 @ 3.9 GHz",
+        "Memory": "8 GB RAM",
+        "Graphics": "Nvidia Geforce GTX 780 or AMD Radeon RX 480",
+        "DirectX": "Version 11",
+        "Storage": "1 MB available space",
+        "Sound Card": "DirectX\u00ae Compatible",
+        "Needs 64-bit": false
+      },
+      "mac_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "platforms": [
+        "windows"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "2",
+        "21",
+        "22",
+        "29"
+      ],
+      "genres": [
+        "23",
+        "28"
+      ]
+    },
+    "1135433": {
+      "type": "dlc",
+      "name": "Wreckfest - Rusty Rats Car Pack",
+      "required_age": 0,
+      "is_free": false,
+      "dlc": "NaN",
+      "website": "http://www.wreckfestgame.com",
+      "developers": [
+        "Bugbear"
+      ],
+      "publishers": [
+        "THQ Nordic"
+      ],
+      "packages": [
+        386084
+      ],
+      "controller_support": "NaN",
+      "fullgame": "228380",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "13/02/2020",
+      "text_support": [
+        "English",
+        "French",
+        "Italian",
+        "German",
+        "Spanish - Spain",
+        "Portuguese - Brazil",
+        "Simplified Chinese",
+        "Finnish",
+        "Japanese",
+        "Korean",
+        "Polish",
+        "Russian"
+      ],
+      "audio_support": [],
+      "pc_requirements_minreqs": {
+        "OS": "Windows Vista",
+        "Processor": "Intel\u00ae Core\u21222 Duo 2.7 GHz or AMD equivalent",
+        "Memory": "4 GB RAM",
+        "Graphics": "NVIDIA Geforce\u00ae GTX\u2122 460 or AMD Radeon\u2122 HD 6850",
+        "DirectX": "Version 11",
+        "Storage": "15 GB available space",
+        "Sound Card": "DirectX\u00ae-compatible",
+        "Needs 64-bit": false
+      },
+      "pc_requirements_recreqs": {
+        "OS": "Windows 7 (32 or 64bit), Windows 8, Windows 10",
+        "Processor": "Intel\u00ae Core\u2122 i5 3.0 GHz or AMD equivalent",
+        "Memory": "8 GB RAM",
+        "Graphics": "NVIDIA GeForce\u00ae GTX\u2122 970 or AMD Radeon\u2122 R9 380X",
+        "DirectX": "Version 11",
+        "Storage": "15 GB available space",
+        "Sound Card": "DirectX\u00ae-compatible",
+        "Needs 64-bit": false
+      },
+      "mac_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "platforms": [
+        "windows"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "2",
+        "1",
+        "49",
+        "36",
+        "21",
+        "30",
+        "18",
+        "15",
+        "25"
+      ],
+      "genres": [
+        "1",
+        "23",
+        "9",
+        "28",
+        "18"
+      ]
+    },
+    "1248110": {
+      "type": "demo",
+      "name": "Greyhat - A Digital Detective Adventure Demo",
+      "required_age": 0,
+      "is_free": true,
+      "dlc": "NaN",
+      "website": null,
+      "developers": [
+        "Limited Games"
+      ],
+      "publishers": [
+        "Limited Games"
+      ],
+      "packages": "NaN",
+      "controller_support": "NaN",
+      "fullgame": "1247940",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "14/02/2020",
+      "text_support": [
+        "English"
+      ],
+      "audio_support": [
+        "English"
+      ],
+      "pc_requirements_minreqs": {
+        "OS": "Windows 7",
+        "Processor": "Anything from the past 10 years",
+        "Memory": "4 GB RAM",
+        "Graphics": "Anything from the past 10 years",
+        "Storage": "200 MB available space",
+        "Needs 64-bit": false
+      },
+      "pc_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "platforms": [
+        "windows"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "2",
+        "10"
+      ],
+      "genres": [
+        "25",
+        "4",
+        "23",
+        "3",
+        "28"
+      ]
+    },
+    "1249630": {
+      "type": "dlc",
+      "name": "18+ Dreadworks for 3D Visual Novel Maker",
+      "required_age": 0,
+      "is_free": false,
+      "dlc": "NaN",
+      "website": null,
+      "developers": [
+        "Games For Pleasure"
+      ],
+      "publishers": [
+        "Games For Pleasure"
+      ],
+      "packages": [
+        433652
+      ],
+      "controller_support": "NaN",
+      "fullgame": "1153590",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "15/02/2020",
+      "text_support": [
+        "English",
+        "French",
+        "Italian",
+        "German",
+        "Spanish - Spain",
+        "Arabic",
+        "Bulgarian",
+        "Czech",
+        "Danish",
+        "Dutch",
+        "Finnish",
+        "Greek",
+        "Hungarian",
+        "Japanese",
+        "Korean",
+        "Norwegian",
+        "Polish",
+        "Portuguese",
+        "Romanian",
+        "Russian",
+        "Simplified Chinese",
+        "Swedish",
+        "Thai",
+        "Traditional Chinese",
+        "Turkish",
+        "Ukrainian",
+        "Vietnamese",
+        "Portuguese - Brazil"
+      ],
+      "audio_support": [],
+      "pc_requirements_minreqs": {
+        "Needs 64-bit": true,
+        "OS": "Windows 7 or later (64-BIT Required!!!) It is not working on 32-BIT systems!",
+        "Processor": "Intel 2 GHz processor like i5 or better",
+        "Memory": "8 GB RAM",
+        "Graphics": "DirectX compatible video card with at least 4GB VRAM like GTX 970",
+        "Storage": "1 GB available space"
+      },
+      "pc_requirements_recreqs": {
+        "Needs 64-bit": true
+      },
+      "mac_requirements_minreqs": {
+        "Needs 64-bit": true
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": true
+      },
+      "linux_requirements_minreqs": {
+        "Needs 64-bit": true
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": true
+      },
+      "platforms": [
+        "windows"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "2",
+        "21",
+        "30",
+        "17"
+      ],
+      "genres": [
+        "1",
+        "25",
+        "4",
+        "23",
+        "28"
+      ]
+    },
+    "1144180": {
+      "type": "music",
+      "name": "Them's Fightin' Herds Soundtrack - Best Of",
+      "required_age": 0,
+      "is_free": false,
+      "dlc": "NaN",
+      "website": "https://themsfightinherds.com",
+      "developers": [
+        "Mane6, Inc."
+      ],
+      "publishers": [
+        "Humble Bundle"
+      ],
+      "packages": [
+        389463
+      ],
+      "controller_support": "full",
+      "fullgame": "574980",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "13/02/2020",
+      "text_support": [
+        "English"
+      ],
+      "audio_support": [
+        "English"
+      ],
+      "pc_requirements_minreqs": {
+        "Storage": "170 MB available space",
+        "Needs 64-bit": false
+      },
+      "pc_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "platforms": [
+        "windows",
+        "mac",
+        "linux"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "2",
+        "1",
+        "50",
+        "49",
+        "36",
+        "37",
+        "28"
+      ],
+      "genres": [
+        "1",
+        "23"
+      ]
+    },
+    "1246590": {
+      "type": "dlc",
+      "name": "BEAR, VODKA, STALINGRAD! \ud83d\udc3b - BALALAIKA MODE",
+      "required_age": 0,
+      "is_free": false,
+      "dlc": "NaN",
+      "website": null,
+      "developers": [
+        "Rabotiagi games"
+      ],
+      "publishers": [
+        "Rabotiagi games"
+      ],
+      "packages": [
+        432590
+      ],
+      "controller_support": "NaN",
+      "fullgame": "1232130",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "12/02/2020",
+      "text_support": [
+        "English",
+        "German",
+        "Simplified Chinese",
+        "Polish",
+        "Portuguese",
+        "Russian",
+        "Thai",
+        "Turkish",
+        "Japanese",
+        "Spanish - Spain",
+        "Spanish - Latin America",
+        "Traditional Chinese"
+      ],
+      "audio_support": [],
+      "pc_requirements_minreqs": {
+        "OS": "Windows 7, 8, 10",
+        "Processor": "Dual-Core 2.4 GHz",
+        "Memory": "2 GB RAM",
+        "Graphics": "DirectX\u00ae 9.0 compatible",
+        "Storage": "400 MB available space",
+        "Sound Card": "DirectX\u00ae 9.0 compatible",
+        "Needs 64-bit": false
+      },
+      "pc_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "platforms": [
+        "windows"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "2",
+        "21",
+        "22"
+      ],
+      "genres": [
+        "1",
+        "25",
+        "23"
+      ]
+    },
+    "1170803": {
+      "type": "dlc",
+      "name": "SD GUNDAM G GENERATION CROSS RAYS Added Dispatch Mission Set 3",
+      "required_age": 0,
+      "is_free": false,
+      "dlc": "NaN",
+      "website": "https://www.bandainamcoent.com/games/sd-gundam-g-generation-cross-rays",
+      "developers": [
+        "TOM CREATE",
+        "\u682a\u5f0f\u4f1a\u793e\u30c8\u30e0\u30af\u30ea\u30a8\u30a4\u30c8"
+      ],
+      "publishers": [
+        "BANDAI NAMCO Entertainment",
+        "\u682a\u5f0f\u4f1a\u793e\u30d0\u30f3\u30c0\u30a4\u30ca\u30e0\u30b3\u30a8\u30f3\u30bf\u30fc\u30c6\u30a4\u30f3\u30e1\u30f3\u30c8"
+      ],
+      "packages": [
+        400430
+      ],
+      "controller_support": "NaN",
+      "fullgame": "728530",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "12/02/2020",
+      "text_support": [
+        "English",
+        "Japanese",
+        "Korean",
+        "Simplified Chinese",
+        "Traditional Chinese"
+      ],
+      "audio_support": [
+        "Japanese"
+      ],
+      "pc_requirements_minreqs": {
+        "OS": "Windows 7 64-bit",
+        "Processor": "Intel Core i5-650 or AMD Phenom II X4 965",
+        "Memory": "2 GB RAM",
+        "Graphics": "NVIDIA GeForce GT 730 or Radeon HD 7570",
+        "Needs 64-bit": false
+      },
+      "pc_requirements_recreqs": {
+        "OS": "Windows 10 64-bit",
+        "Processor": "Intel Core i5 3470 or AMD FX-6300",
+        "Memory": "4 GB RAM",
+        "Graphics": "NVIDIA GeForce GT 750 or Radeon HD 7790",
+        "Needs 64-bit": false
+      },
+      "mac_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "platforms": [
+        "windows"
+      ],
+      "critic_score": 71,
+      "critic_source": "https://www.metacritic.com/game/pc/sd-gundam-g-generation-cross-rays?ftag=MCD-06-10aaa1f",
+      "categories": [
+        "2",
+        "21",
+        "22",
+        "18",
+        "23",
+        "25"
+      ],
+      "genres": [
+        "3"
+      ]
+    },
+    "1229170": {
+      "type": "dlc",
+      "name": "X-Plane 11 - Add-on: Aerosoft - SCEL Intl. Airport & Santiago City 2020",
+      "required_age": 0,
+      "is_free": false,
+      "dlc": "NaN",
+      "website": null,
+      "developers": [
+        "VirtualDesign3D"
+      ],
+      "publishers": [
+        "Aerosoft"
+      ],
+      "packages": [
+        426165
+      ],
+      "controller_support": "NaN",
+      "fullgame": "269950",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "18/02/2020",
+      "text_support": [
+        "English"
+      ],
+      "audio_support": [
+        "English"
+      ],
+      "pc_requirements_minreqs": {
+        "OS": "Microsoft Windows 8 / 10 (64bit)",
+        "Processor": "Dual Core CPU with 3.0 GHz",
+        "Memory": "8 GB RAM",
+        "Graphics": "1 GB VRAM",
+        "DirectX": "Version 11",
+        "Storage": "5500 MB available space",
+        "Additional Notes": "SSD highly recommended",
+        "Needs 64-bit": false
+      },
+      "pc_requirements_recreqs": {
+        "Processor": "Quad Core CPU with 3.5 GHz",
+        "Memory": "16 GB RAM",
+        "Graphics": "16 GB RAM",
+        "Needs 64-bit": false
+      },
+      "mac_requirements_minreqs": {
+        "OS": "macOS 10.10+",
+        "Processor": "Dual Core CPU with 3.0 GHz",
+        "Memory": "8 GB RAM",
+        "Storage": "5500 MB available space",
+        "Sound Card": "1 GB VRAM",
+        "Additional Notes": "SSD highly recommended",
+        "Needs 64-bit": false
+      },
+      "mac_requirements_recreqs": {
+        "Processor": "Quad Core CPU with 3.5 GHz",
+        "Memory": "16 GB RAM",
+        "Graphics": "16 GB RAM",
+        "Needs 64-bit": false
+      },
+      "linux_requirements_minreqs": {
+        "OS": "Linux (64bit)",
+        "Processor": "Dual Core CPU with 3.0 GHz",
+        "Memory": "8 GB RAM",
+        "Graphics": "1 GB VRAM",
+        "Storage": "5500 MB available space",
+        "Additional Notes": "SSD highly recommended",
+        "Needs 64-bit": false
+      },
+      "linux_requirements_recreqs": {
+        "Processor": "Quad Core CPU with 3.5 GHz",
+        "Memory": "16 GB RAM",
+        "Needs 64-bit": false
+      },
+      "platforms": [
+        "windows",
+        "mac",
+        "linux"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "2",
+        "1",
+        "49",
+        "37",
+        "21",
+        "18",
+        "17"
+      ],
+      "genres": [
+        "28"
+      ]
+    },
+    "1247090": {
+      "type": "NaN",
+      "name": "NaN",
+      "required_age": "NaN",
+      "is_free": "NaN",
+      "dlc": "NaN",
+      "website": "NaN",
+      "developers": "NaN",
+      "publishers": "NaN",
+      "packages": "NaN",
+      "controller_support": "NaN",
+      "fullgame": "NaN",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "NaN",
+      "text_support": "NaN",
+      "audio_support": "NaN",
+      "platforms": "NaN",
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": "NaN",
+      "genres": "NaN"
+    },
+    "1012101": {
+      "type": "dlc",
+      "name": "Train Simulator: Worcester - Mossel Bay Railway Route Add-On",
+      "required_age": 0,
+      "is_free": false,
+      "dlc": "NaN",
+      "website": "https://live.dovetailgames.com/live/train-simulator",
+      "developers": [
+        "Johansteam"
+      ],
+      "publishers": [
+        "Dovetail Games - Trains"
+      ],
+      "packages": [
+        335207
+      ],
+      "controller_support": "full",
+      "fullgame": "24010",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "14/02/2020",
+      "text_support": [
+        "English"
+      ],
+      "audio_support": [],
+      "pc_requirements_minreqs": {
+        "OS": "32-bit Windows 7 Service Pack 1, 8.1 or 10 Required (Other OS versions and types are not supported)",
+        "Processor": "Intel Core-i3 4330 3.50 GHz Dual Core or AMD A8 6600K 3.90 GHz Quad Core or Better",
+        "Memory": "4 GB RAM",
+        "Graphics": "NVIDIA GeForce GTX 750 Ti or AMD Radeon R9 Graphics with 1 GB Dedicated VRAM or Better",
+        "DirectX": "9.0c",
+        "Network": "Broadband Connection (May incur additional costs for use)",
+        "Storage": "40 GB or more available space (Additional Add-Ons will require more)",
+        "Sound Card": "DirectX Compatible Audio Device",
+        "Additional Notes": "Requires mouse and keyboard or Xbox Controller",
+        "Needs 64-bit": false
+      },
+      "pc_requirements_recreqs": {
+        "OS": "32- or 64-bit Windows 7 Service Pack 1, 8.1 or 10 Required (Other OS versions and types are not supported)",
+        "Processor": "Intel Core-i5 4690 3.50 GHz Quad Core or AMD Ryzen 7 1700 3.80 GHz Quad Core or Better",
+        "Memory": "4 GB RAM (maximum possible under 32-bit Windows)/16 GB or Better (For 64-bit Windows)",
+        "Graphics": "NVIDIA GeForce GTX 970 or AMD Radeon RX 480 with 4 GB Dedicated VRAM or Better",
+        "DirectX": "9.0c",
+        "Network": "Broadband Connection (May incur additional costs for use)",
+        "Storage": "High Performance SSD Recommended with 40 GB or more available space (Additional Add-Ons will require more)",
+        "Sound Card": "DirectX Compatible Audio Device",
+        "Additional Notes": "Requires mouse and keyboard or Xbox Controller",
+        "Needs 64-bit": false
+      },
+      "mac_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "platforms": [
+        "windows"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "2",
+        "21",
+        "22",
+        "28",
+        "29",
+        "30",
+        "35",
+        "23",
+        "25"
+      ],
+      "genres": [
+        "28"
+      ]
+    },
+    "1249160": {
+      "type": "dlc",
+      "name": "TITAN HUNTER - Dungeon pack",
+      "required_age": 0,
+      "is_free": false,
+      "dlc": "NaN",
+      "website": null,
+      "developers": [
+        "Enoops"
+      ],
+      "publishers": [
+        "Enoops"
+      ],
+      "packages": [
+        433498
+      ],
+      "controller_support": "NaN",
+      "fullgame": "955700",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "17/02/2020",
+      "text_support": [
+        "English",
+        "Russian"
+      ],
+      "audio_support": [
+        "English",
+        "Russian"
+      ],
+      "pc_requirements_minreqs": {
+        "OS": "Windows 7/8/10",
+        "Processor": "Intel Core 2 Duo E6320 (2*1866) or equivalent",
+        "Memory": "2 MB RAM",
+        "Graphics": "GeForce 7600 GS (512 MB) or equivalent",
+        "Storage": "100 MB available space",
+        "Needs 64-bit": false
+      },
+      "pc_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "platforms": [
+        "windows"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "2",
+        "21",
+        "22"
+      ],
+      "genres": [
+        "1",
+        "25",
+        "4",
+        "23",
+        "3"
+      ]
+    },
+    "1246591": {
+      "type": "dlc",
+      "name": "BEAR, VODKA, STALINGRAD! \ud83d\udc3b - STALIN MODE",
+      "required_age": 0,
+      "is_free": false,
+      "dlc": "NaN",
+      "website": null,
+      "developers": [
+        "Rabotiagi games"
+      ],
+      "publishers": [
+        "Rabotiagi games"
+      ],
+      "packages": [
+        432593
+      ],
+      "controller_support": "NaN",
+      "fullgame": "1232130",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "12/02/2020",
+      "text_support": [
+        "English",
+        "German",
+        "Simplified Chinese",
+        "Polish",
+        "Portuguese",
+        "Russian",
+        "Thai",
+        "Turkish",
+        "Japanese",
+        "Spanish - Spain",
+        "Spanish - Latin America",
+        "Traditional Chinese"
+      ],
+      "audio_support": [],
+      "pc_requirements_minreqs": {
+        "OS": "Windows 7, 8, 10",
+        "Processor": "Dual-Core 2.4 GHz",
+        "Memory": "2 GB RAM",
+        "Graphics": "DirectX\u00ae 9.0 compatible",
+        "Storage": "400 MB available space",
+        "Sound Card": "DirectX\u00ae 9.0 compatible",
+        "Needs 64-bit": false
+      },
+      "pc_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "platforms": [
+        "windows"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "2",
+        "21",
+        "22"
+      ],
+      "genres": [
+        "1",
+        "25",
+        "23"
+      ]
+    },
+    "1247650": {
+      "type": "game",
+      "name": "Immortal Love: Stone Beauty Collector's Edition",
+      "required_age": 0,
+      "is_free": false,
+      "dlc": "NaN",
+      "website": null,
+      "developers": [
+        "Friendly Fox Studios"
+      ],
+      "publishers": [
+        "Big Fish Games"
+      ],
+      "packages": [
+        432950
+      ],
+      "controller_support": "NaN",
+      "fullgame": "NaN",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "14/02/2020",
+      "text_support": [
+        "English"
+      ],
+      "audio_support": [
+        "English"
+      ],
+      "pc_requirements_minreqs": {
+        "OS": "Windows 7/Windows 8/Windows 10",
+        "Processor": "1.8 GHz",
+        "Memory": "1024 MB RAM",
+        "DirectX": "Version 9.0",
+        "Storage": "912 MB available space",
+        "Needs 64-bit": false
+      },
+      "pc_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "platforms": [
+        "windows"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "2"
+      ],
+      "genres": [
+        "25",
+        "4"
+      ]
+    },
+    "1226650": {
+      "type": "music",
+      "name": "LUNA The Shadow Dust Soundtrack",
+      "required_age": 0,
+      "is_free": false,
+      "dlc": "NaN",
+      "website": "https://www.lantern-studio.com/",
+      "developers": [
+        "Lantern Studio"
+      ],
+      "publishers": [
+        "Coconut Island Games",
+        "Application Systems Heidelberg"
+      ],
+      "packages": [
+        425143
+      ],
+      "controller_support": "NaN",
+      "fullgame": "465100",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "13/02/2020",
+      "text_support": [
+        "English",
+        "Simplified Chinese",
+        "German",
+        "Spanish - Spain",
+        "Russian",
+        "Portuguese - Brazil",
+        "French",
+        "Korean",
+        "Polish",
+        "Italian",
+        "Czech",
+        "Japanese",
+        "Dutch",
+        "Greek",
+        "Portuguese",
+        "Spanish - Latin America",
+        "Vietnamese",
+        "Danish",
+        "Arabic",
+        "Bulgarian",
+        "Hungarian",
+        "Norwegian",
+        "Romanian",
+        "Thai",
+        "Ukrainian",
+        "Finnish",
+        "Swedish",
+        "Turkish",
+        "Traditional Chinese"
+      ],
+      "audio_support": [],
+      "pc_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "pc_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "platforms": [
+        "windows",
+        "mac",
+        "linux"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "2",
+        "22",
+        "23"
+      ],
+      "genres": [
+        "25",
+        "4",
+        "23"
+      ]
+    },
+    "1202780": {
+      "type": "game",
+      "name": "Theme Park Simulator",
+      "required_age": 0,
+      "is_free": false,
+      "dlc": "NaN",
+      "website": "http://bestridesimulators.com/",
+      "developers": [
+        "Best Ride Simulators"
+      ],
+      "publishers": [
+        "Best Ride Simulators"
+      ],
+      "packages": [
+        415241
+      ],
+      "controller_support": "NaN",
+      "fullgame": "NaN",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "12/02/2020",
+      "text_support": [
+        "English",
+        "Spanish - Spain",
+        "French",
+        "German",
+        "Simplified Chinese",
+        "Traditional Chinese",
+        "Korean",
+        "Spanish - Latin America",
+        "Japanese"
+      ],
+      "audio_support": [],
+      "pc_requirements_minreqs": {
+        "OS": "Windows 7 or newer",
+        "Processor": "2 GHz",
+        "Memory": "2 GB RAM",
+        "Graphics": "Compatible with Shader Model 3, 512MB VRAM",
+        "DirectX": "Version 10",
+        "Storage": "3 GB available space",
+        "Needs 64-bit": false
+      },
+      "pc_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_minreqs": {
+        "OS": "10.11 or newer",
+        "Processor": "2 GHz",
+        "Memory": "2 GB RAM",
+        "Graphics": "Compatible with Shader Model 3, 512MB VRAM",
+        "Storage": "3 GB available space",
+        "Needs 64-bit": false
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "platforms": [
+        "windows"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "2"
+      ],
+      "genres": [
+        "23",
+        "28"
+      ]
+    },
+    "1207850": {
+      "type": "game",
+      "name": "Project RTD: Random Tower Defense PvP",
+      "required_age": 0,
+      "is_free": false,
+      "dlc": "NaN",
+      "website": "https://www.projectrtd.com/",
+      "developers": [
+        "NGELGAMES"
+      ],
+      "publishers": [
+        "NGELGAMES"
+      ],
+      "packages": [
+        417307
+      ],
+      "controller_support": "NaN",
+      "fullgame": "NaN",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "17/02/2020",
+      "text_support": [
+        "Korean",
+        "English",
+        "Simplified Chinese"
+      ],
+      "audio_support": [
+        "Korean"
+      ],
+      "pc_requirements_minreqs": {
+        "OS": "Windows 7,8,10 (32 and 64 bits)",
+        "Processor": "Intel Core i3 or AMD Ryzen 3",
+        "Memory": "4 GB RAM",
+        "Graphics": "GeForce 6 Series",
+        "DirectX": "Version 9.0c",
+        "Network": "Broadband Internet connection",
+        "Storage": "1 GB available space",
+        "Needs 64-bit": false
+      },
+      "pc_requirements_recreqs": {
+        "OS": "Windows 7,8,10 (32 and 64 bits)",
+        "Processor": "Intel Core i5 or AMD Ryzen 5",
+        "Memory": "8 GB RAM",
+        "Graphics": "GeForce 9 Series",
+        "DirectX": "Version 11",
+        "Network": "Broadband Internet connection",
+        "Storage": "1 GB available space",
+        "Needs 64-bit": false
+      },
+      "mac_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "platforms": [
+        "windows"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "1",
+        "49",
+        "36"
+      ],
+      "genres": [
+        "28",
+        "2",
+        "70"
+      ]
+    },
+    "1144400": {
+      "type": "game",
+      "name": "Senren\uff0aBanka",
+      "required_age": 0,
+      "is_free": false,
+      "dlc": "NaN",
+      "website": "http://hikarifield.co.jp/senren/",
+      "developers": [
+        "Yuzusoft"
+      ],
+      "publishers": [
+        "HIKARI FIELD",
+        "NekoNyan Ltd."
+      ],
+      "packages": [
+        389543
+      ],
+      "controller_support": "NaN",
+      "fullgame": "NaN",
+      "demos": [
+        1221010
+      ],
+      "release_date": "14/02/2020",
+      "text_support": [
+        "Japanese",
+        "Simplified Chinese",
+        "Traditional Chinese",
+        "English"
+      ],
+      "audio_support": [
+        "Japanese"
+      ],
+      "pc_requirements_minreqs": {
+        "OS": "Windows10/8/7/Vista",
+        "Processor": "Core2Duo 2.4Ghz",
+        "Memory": "2 GB RAM",
+        "Graphics": "256M",
+        "DirectX": "Version 9.0c",
+        "Storage": "10 GB available space",
+        "Sound Card": "PCM",
+        "Needs 64-bit": false
+      },
+      "pc_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "platforms": [
+        "windows"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "2",
+        "22",
+        "29",
+        "18",
+        "23"
+      ],
+      "genres": [
+        "25",
+        "4"
+      ]
+    },
+    "1241950": {
+      "type": "game",
+      "name": "Warzone 2100",
+      "required_age": 0,
+      "is_free": true,
+      "dlc": "NaN",
+      "website": "http://wz2100.net/",
+      "developers": [
+        "Pumpkin Studios",
+        "Underdone Gaming",
+        "Warzone 2100 Project"
+      ],
+      "publishers": [
+        "Underdone Gaming"
+      ],
+      "packages": "NaN",
+      "controller_support": "NaN",
+      "fullgame": "NaN",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "18/02/2020",
+      "text_support": [
+        "English"
+      ],
+      "audio_support": [],
+      "pc_requirements_minreqs": {
+        "OS": "Windows 2000 or higher",
+        "Processor": "2 GHz CPU",
+        "Memory": "1 GB RAM",
+        "Graphics": "512 MB graphics card with OpenGL support",
+        "DirectX": "Version 9.0",
+        "Storage": "1 GB available space",
+        "Needs 64-bit": false
+      },
+      "pc_requirements_recreqs": {
+        "OS": "Windows 10",
+        "Processor": "2 GHz CPU",
+        "Memory": "8 GB RAM",
+        "Graphics": "1 GB graphics card with OpenGL support",
+        "DirectX": "Version 9.0",
+        "Storage": "2 GB available space",
+        "Needs 64-bit": false
+      },
+      "mac_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "platforms": [
+        "windows"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "2",
+        "1",
+        "49",
+        "47",
+        "9",
+        "48"
+      ],
+      "genres": [
+        "37",
+        "2"
+      ]
+    },
+    "1241500": {
+      "type": "game",
+      "name": "Dirty Harry's Thunder Drive",
+      "required_age": 0,
+      "is_free": true,
+      "dlc": [
+        1241580
+      ],
+      "website": null,
+      "developers": [
+        "Thunder Clap"
+      ],
+      "publishers": [
+        "Thunder Clap"
+      ],
+      "packages": "NaN",
+      "controller_support": "NaN",
+      "fullgame": "NaN",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "18/02/2020",
+      "text_support": [
+        "English"
+      ],
+      "audio_support": [],
+      "pc_requirements_minreqs": {
+        "OS": "Windows 10",
+        "Processor": "Intel Core i5-4590 (AMD FX 8350)",
+        "Graphics": "Nvidia GTX 670 or equivalent",
+        "Storage": "200 MB available space",
+        "Needs 64-bit": false
+      },
+      "pc_requirements_recreqs": {
+        "OS": "Windows 10",
+        "Processor": "Intel Core i5-4590 (AMD FX 8350)",
+        "Graphics": "Nvidia GTX 960 or equivalent",
+        "Storage": "200 MB available space",
+        "Needs 64-bit": false
+      },
+      "mac_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "platforms": [
+        "windows"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "2",
+        "18"
+      ],
+      "genres": [
+        "1",
+        "4",
+        "37",
+        "9",
+        "28",
+        "18"
+      ]
+    },
+    "1240560": {
+      "type": "NaN",
+      "name": "NaN",
+      "required_age": "NaN",
+      "is_free": "NaN",
+      "dlc": "NaN",
+      "website": "NaN",
+      "developers": "NaN",
+      "publishers": "NaN",
+      "packages": "NaN",
+      "controller_support": "NaN",
+      "fullgame": "NaN",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "NaN",
+      "text_support": "NaN",
+      "audio_support": "NaN",
+      "platforms": "NaN",
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": "NaN",
+      "genres": "NaN"
+    },
+    "1202790": {
+      "type": "game",
+      "name": "Lost Brothers",
+      "required_age": 0,
+      "is_free": false,
+      "dlc": "NaN",
+      "website": "http://bitlightgames.org/",
+      "developers": [
+        "BitLight"
+      ],
+      "publishers": [
+        "BitLight"
+      ],
+      "packages": [
+        415244
+      ],
+      "controller_support": "NaN",
+      "fullgame": "NaN",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "18/02/2020",
+      "text_support": [
+        "English",
+        "Russian"
+      ],
+      "audio_support": [],
+      "pc_requirements_minreqs": {
+        "OS": "Windows 7/8/10 (64 bits)",
+        "Processor": "Intel Core i3-2120 (3.3 GHz)/AMD FX-4100 X4 (3.6 GHz)",
+        "Memory": "4 GB RAM",
+        "Graphics": "1 GB, GeForce GTX 650TI/Radeon HD 7770",
+        "Storage": "4 GB available space",
+        "Additional Notes": "Requires a 64-bit processor and operating system",
+        "Needs 64-bit": false
+      },
+      "pc_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "platforms": [
+        "windows"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "2",
+        "22"
+      ],
+      "genres": [
+        "25",
+        "4",
+        "23"
+      ]
+    },
+    "1203780": {
+      "type": "game",
+      "name": "Tiamat's Drink",
+      "required_age": 0,
+      "is_free": false,
+      "dlc": "NaN",
+      "website": null,
+      "developers": [
+        "TriBug"
+      ],
+      "publishers": [
+        "TriBug"
+      ],
+      "packages": [
+        415634
+      ],
+      "controller_support": "NaN",
+      "fullgame": "NaN",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "17/02/2020",
+      "text_support": [
+        "English"
+      ],
+      "audio_support": [
+        "English"
+      ],
+      "pc_requirements_minreqs": {
+        "OS": "Windows 7 or higher",
+        "Processor": "2.5 GHz or higher",
+        "Memory": "2 GB RAM",
+        "Storage": "500 MB available space",
+        "Needs 64-bit": false
+      },
+      "pc_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_minreqs": {
+        "OS": "32/64",
+        "Processor": "2.5 GHz or higher",
+        "Memory": "2 GB RAM",
+        "Storage": "500 MB available space",
+        "Needs 64-bit": false
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "2",
+        "1",
+        "9",
+        "39",
+        "24",
+        "44"
+      ],
+      "genres": [
+        "1",
+        "23",
+        "70"
+      ]
+    },
+    "1210620": {
+      "type": "game",
+      "name": "lil' Sherman",
+      "required_age": 0,
+      "is_free": false,
+      "dlc": "NaN",
+      "website": "https://www.dabsterent.com",
+      "developers": [
+        "Dabster Entertainment"
+      ],
+      "publishers": [
+        "Dabster Entertainment"
+      ],
+      "packages": [
+        418416,
+        436008
+      ],
+      "controller_support": "NaN",
+      "fullgame": "NaN",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "19/02/2020",
+      "text_support": [
+        "English"
+      ],
+      "audio_support": [
+        "English"
+      ],
+      "pc_requirements_minreqs": {
+        "OS": "Windows 7 (SP1) 64-Bit",
+        "Processor": "2.0 Ghz Dual-Core CPU",
+        "Memory": "8 GB RAM",
+        "Graphics": "ATI Radeon HD 2600 or better / NVIDIA GeForce 8600 or better, 512 MB video memory, with Shader Model 3 support",
+        "Storage": "4 GB available space",
+        "Needs 64-bit": false
+      },
+      "pc_requirements_recreqs": {
+        "OS": "Windows 7 (SP1) / Windows 8.1 / Windows 10 64-Bit",
+        "Processor": "Intel Core i5 or AMD Quad-Core or better",
+        "Memory": "16 GB RAM",
+        "Graphics": "NVIDIA GeForce GTX 260 or AMD Radeon HD 4770 or better (1GB VRAM)",
+        "Storage": "4 GB available space",
+        "Needs 64-bit": false
+      },
+      "mac_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "platforms": [
+        "windows"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "2"
+      ],
+      "genres": [
+        "23"
+      ]
+    },
+    "1212630": {
+      "type": "dlc",
+      "name": "Soundtracks From Larth",
+      "required_age": 0,
+      "is_free": true,
+      "dlc": "NaN",
+      "website": "https://www.gamesbyzine.com/",
+      "developers": [
+        "Zine FALOUTI"
+      ],
+      "publishers": [
+        "Zine FALOUTI"
+      ],
+      "packages": "NaN",
+      "controller_support": "full",
+      "fullgame": "1137030",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "19/02/2020",
+      "text_support": [
+        "English"
+      ],
+      "audio_support": [
+        "English"
+      ],
+      "pc_requirements_minreqs": {
+        "Needs 64-bit": true,
+        "OS": "Any Operating System that supports MP3 Files",
+        "Processor": "Any Processor",
+        "Graphics": "Any GPU",
+        "Storage": "123 MB available space",
+        "Sound Card": "Any Sound Card"
+      },
+      "pc_requirements_recreqs": {
+        "Needs 64-bit": true,
+        "OS": "Any Operating System that supports MP3 Files",
+        "Processor": "Any Processor",
+        "Graphics": "Any GPU",
+        "Storage": "123 MB available space",
+        "Sound Card": "Any Sound Card"
+      },
+      "mac_requirements_minreqs": {
+        "Needs 64-bit": true
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": true
+      },
+      "linux_requirements_minreqs": {
+        "Needs 64-bit": true
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": true
+      },
+      "platforms": [
+        "windows"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "2",
+        "21",
+        "28"
+      ],
+      "genres": [
+        "1",
+        "25",
+        "23",
+        "3"
+      ]
+    },
+    "1137110": {
+      "type": "game",
+      "name": "Ballistic Craft",
+      "required_age": 0,
+      "is_free": false,
+      "dlc": [
+        1232320
+      ],
+      "website": "https://www.gametomo.co.jp/ballistic-craft-en",
+      "developers": [
+        "Palladium Soft"
+      ],
+      "publishers": [
+        "GameTomo"
+      ],
+      "packages": [
+        386765
+      ],
+      "controller_support": "NaN",
+      "fullgame": "NaN",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "13/02/2020",
+      "text_support": [
+        "English",
+        "Japanese"
+      ],
+      "audio_support": [],
+      "pc_requirements_minreqs": {
+        "Needs 64-bit": true,
+        "OS": "Windows 7/10 (64bit)",
+        "Processor": "2GHz Dual Core",
+        "Memory": "4 GB RAM",
+        "Graphics": "GTX550Ti 1GB VRAM",
+        "DirectX": "Version 11",
+        "Storage": "1 GB available space",
+        "Additional Notes": "Recommend gamepad for best experience."
+      },
+      "pc_requirements_recreqs": {
+        "Needs 64-bit": true,
+        "OS": "Windows 7/10 (64bit)",
+        "Processor": "2.5GHz Quad Core",
+        "Memory": "8 GB RAM",
+        "Graphics": "GTX760 1GB VRAM",
+        "DirectX": "Version 11",
+        "Storage": "1 GB available space",
+        "Additional Notes": "Recommend gamepad for best experience."
+      },
+      "mac_requirements_minreqs": {
+        "Needs 64-bit": true
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": true
+      },
+      "linux_requirements_minreqs": {
+        "Needs 64-bit": true
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": true
+      },
+      "platforms": [
+        "windows"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "2",
+        "1",
+        "49",
+        "36",
+        "37",
+        "24",
+        "22",
+        "30"
+      ],
+      "genres": [
+        "1",
+        "23"
+      ]
+    },
+    "1195020": {
+      "type": "game",
+      "name": "Guardians of the Ashes",
+      "required_age": 0,
+      "is_free": false,
+      "dlc": [
+        1251870
+      ],
+      "website": null,
+      "developers": [
+        "Mature Games"
+      ],
+      "publishers": [
+        "Mature Games"
+      ],
+      "packages": [
+        411591
+      ],
+      "controller_support": "NaN",
+      "fullgame": "NaN",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "21/02/2020",
+      "text_support": [
+        "English"
+      ],
+      "audio_support": [],
+      "pc_requirements_minreqs": {
+        "OS": "Windows 7",
+        "Processor": "Intel Core 2 Dual or AMD Equivalent",
+        "Memory": "4 GB RAM",
+        "Graphics": "NVIDIA GeForce GTX 1050 or AMD Equivalent",
+        "Storage": "5 GB available space",
+        "Needs 64-bit": false
+      },
+      "pc_requirements_recreqs": {
+        "OS": "Windows 7",
+        "Processor": "Intel Core i3 or AMD Equivalent",
+        "Memory": "8 GB RAM",
+        "Graphics": "NVIDIA GeForce GTX 1050 or AMD Equivalent",
+        "Storage": "10 GB available space",
+        "Needs 64-bit": false
+      },
+      "mac_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "platforms": [
+        "windows"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "2",
+        "22",
+        "23"
+      ],
+      "genres": [
+        "1",
+        "25",
+        "23",
+        "3",
+        "70"
+      ]
+    },
+    "1209190": {
+      "type": "game",
+      "name": "Steamliner",
+      "required_age": 0,
+      "is_free": false,
+      "dlc": "NaN",
+      "website": null,
+      "developers": [
+        "Diamond"
+      ],
+      "publishers": [
+        "Diamond"
+      ],
+      "packages": [
+        417866
+      ],
+      "controller_support": "NaN",
+      "fullgame": "NaN",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "19/02/2020",
+      "text_support": [
+        "English"
+      ],
+      "audio_support": [
+        "English"
+      ],
+      "pc_requirements_minreqs": {
+        "Needs 64-bit": true,
+        "OS": "Windows 10",
+        "Processor": "Intel Core i5-4590 / AMD FX 8350",
+        "Memory": "8 GB RAM",
+        "Graphics": "NVIDIA GTX 1050 Ti / AMD Radeon RX 470 or greater",
+        "Storage": "3 GB available space"
+      },
+      "pc_requirements_recreqs": {
+        "Needs 64-bit": true,
+        "OS": "Windows 10",
+        "Processor": "Intel i5-4590 / AMD Ryzen 5 1500X or greater",
+        "Memory": "8 GB RAM",
+        "Graphics": "NVIDIA GTX 1060 / AMD Radeon RX 480 or greater",
+        "Storage": "3 GB available space"
+      },
+      "mac_requirements_minreqs": {
+        "Needs 64-bit": true
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": true
+      },
+      "linux_requirements_minreqs": {
+        "Needs 64-bit": true
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": true
+      },
+      "platforms": [
+        "windows"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "2"
+      ],
+      "genres": [
+        "25"
+      ]
+    },
+    "1156300": {
+      "type": "game",
+      "name": "Furry Stories: Alpha-Male",
+      "required_age": 0,
+      "is_free": false,
+      "dlc": "NaN",
+      "website": null,
+      "developers": [
+        "Furrench Dogs"
+      ],
+      "publishers": [
+        "Furry Pleasure"
+      ],
+      "packages": [
+        394336
+      ],
+      "controller_support": "NaN",
+      "fullgame": "NaN",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "21/02/2020",
+      "text_support": [
+        "English",
+        "French",
+        "Italian",
+        "German",
+        "Spanish - Spain",
+        "Arabic",
+        "Bulgarian",
+        "Czech",
+        "Danish",
+        "Dutch",
+        "Finnish",
+        "Greek",
+        "Hungarian",
+        "Japanese",
+        "Korean",
+        "Norwegian",
+        "Polish",
+        "Portuguese",
+        "Portuguese - Brazil",
+        "Romanian",
+        "Russian",
+        "Simplified Chinese",
+        "Spanish - Latin America",
+        "Swedish",
+        "Thai",
+        "Traditional Chinese",
+        "Turkish",
+        "Ukrainian",
+        "Vietnamese"
+      ],
+      "audio_support": [
+        "English",
+        "French",
+        "Italian",
+        "German",
+        "Spanish - Spain",
+        "Arabic",
+        "Bulgarian",
+        "Czech",
+        "Danish",
+        "Dutch",
+        "Finnish",
+        "Greek",
+        "Hungarian",
+        "Japanese",
+        "Korean",
+        "Norwegian",
+        "Polish",
+        "Portuguese",
+        "Portuguese - Brazil",
+        "Romanian",
+        "Russian",
+        "Simplified Chinese",
+        "Spanish - Latin America",
+        "Swedish",
+        "Thai",
+        "Traditional Chinese",
+        "Turkish",
+        "Ukrainian",
+        "Vietnamese"
+      ],
+      "pc_requirements_minreqs": {
+        "OS": "Windows XP/Vista/7/8/10",
+        "Processor": "2 Ghz Dual Core",
+        "Memory": "1 GB RAM",
+        "Graphics": "512MB+",
+        "Storage": "200 MB available space",
+        "Sound Card": "Any",
+        "Needs 64-bit": false
+      },
+      "pc_requirements_recreqs": {
+        "OS": "Windows XP/Vista/7/8/10",
+        "Processor": "3 Ghz Dual Core",
+        "Memory": "2 GB RAM",
+        "Graphics": "512MB+",
+        "Storage": "200 MB available space",
+        "Sound Card": "Any",
+        "Needs 64-bit": false
+      },
+      "mac_requirements_minreqs": {
+        "OS": "Mac OS X 10.5+",
+        "Processor": "2 Ghz Dual Core",
+        "Memory": "1 GB RAM",
+        "Graphics": "512MB+",
+        "Storage": "200 MB available space",
+        "Sound Card": "Any",
+        "Needs 64-bit": false
+      },
+      "mac_requirements_recreqs": {
+        "OS": "Mac OS X 10.5+",
+        "Processor": "3 Ghz Dual Core",
+        "Memory": "2 GB RAM",
+        "Graphics": "512MB+",
+        "Storage": "200 MB available space",
+        "Sound Card": "Any",
+        "Needs 64-bit": false
+      },
+      "linux_requirements_minreqs": {
+        "OS": "Ubuntu 12.04+",
+        "Processor": "2 Ghz Dual Core",
+        "Graphics": "512MB+",
+        "Storage": "200 MB available space",
+        "Sound Card": "Any",
+        "Needs 64-bit": false
+      },
+      "linux_requirements_recreqs": {
+        "OS": "Ubuntu 14.10+",
+        "Processor": "3 Ghz Dual Core",
+        "Graphics": "512MB+",
+        "Storage": "200 MB available space",
+        "Sound Card": "Any",
+        "Needs 64-bit": false
+      },
+      "platforms": [
+        "windows",
+        "mac",
+        "linux"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "2",
+        "22"
+      ],
+      "genres": [
+        "1",
+        "25",
+        "4",
+        "23",
+        "28",
+        "2"
+      ]
+    },
+    "1185340": {
+      "type": "game",
+      "name": "Grace",
+      "required_age": 0,
+      "is_free": true,
+      "dlc": "NaN",
+      "website": null,
+      "developers": [
+        "Sarah Russell",
+        "Jonathan Dana"
+      ],
+      "publishers": [
+        "Jonathan Dana",
+        "Sarah Russell"
+      ],
+      "packages": "NaN",
+      "controller_support": "NaN",
+      "fullgame": "NaN",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "21/02/2020",
+      "text_support": [
+        "English"
+      ],
+      "audio_support": [],
+      "pc_requirements_minreqs": {
+        "OS": "Windows Vista, 7, 8 Pro+",
+        "Processor": "1.2GHZ CPU",
+        "Memory": "1 GB RAM",
+        "Graphics": "Direct X 9.0c Capable GPU",
+        "Storage": "2 GB available space",
+        "Needs 64-bit": false
+      },
+      "pc_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_minreqs": {
+        "OS": "Mac OSX 10.9 Mavericks",
+        "Storage": "2 GB available space",
+        "Needs 64-bit": false
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "platforms": [
+        "windows",
+        "mac"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "2",
+        "18"
+      ],
+      "genres": [
+        "25",
+        "4",
+        "23"
+      ]
+    },
+    "1227250": {
+      "type": "game",
+      "name": "\u5c0f\u9547\u653e\u7f6e\u4fee\u4ed9",
+      "required_age": 0,
+      "is_free": false,
+      "dlc": "NaN",
+      "website": null,
+      "developers": [
+        "\u541f\u8bd7"
+      ],
+      "publishers": [
+        "\u541f\u8bd7"
+      ],
+      "packages": [
+        425364
+      ],
+      "controller_support": "NaN",
+      "fullgame": "NaN",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "21/02/2020",
+      "text_support": [
+        "Simplified Chinese"
+      ],
+      "audio_support": [],
+      "pc_requirements_minreqs": {
+        "OS": "anything",
+        "Processor": "anything",
+        "Memory": "200 MB RAM",
+        "Graphics": "anything",
+        "Storage": "200 MB available space",
+        "Sound Card": "anything",
+        "Needs 64-bit": false
+      },
+      "pc_requirements_recreqs": {
+        "OS": "",
+        "Processor": "",
+        "Memory": "200 MB RAM",
+        "Graphics": "",
+        "Storage": "200 MB available space",
+        "Sound Card": "",
+        "Needs 64-bit": false
+      },
+      "mac_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "platforms": [
+        "windows"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "2"
+      ],
+      "genres": [
+        "25",
+        "4",
+        "23",
+        "3",
+        "2"
+      ]
+    },
+    "1204580": {
+      "type": "game",
+      "name": "First Contact",
+      "required_age": 0,
+      "is_free": false,
+      "dlc": "NaN",
+      "website": "https://eis-interactive.com/",
+      "developers": [
+        "Haguy Eis"
+      ],
+      "publishers": [
+        "Eis Interactive"
+      ],
+      "packages": [
+        415918
+      ],
+      "controller_support": "NaN",
+      "fullgame": "NaN",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "21/02/2020",
+      "text_support": [
+        "English"
+      ],
+      "audio_support": [],
+      "pc_requirements_minreqs": {
+        "OS": "Windows 7 or Higher",
+        "Processor": "Dual-Core 2.6 GHz",
+        "Memory": "2 GB RAM",
+        "Graphics": "Intel Q45/Q43 Chipset",
+        "DirectX": "Version 11",
+        "Storage": "600 MB available space",
+        "Additional Notes": "Minimum Resolution 1280 X 720",
+        "Needs 64-bit": false
+      },
+      "pc_requirements_recreqs": {
+        "OS": "Windows 10",
+        "Processor": "Intel Core i5 or Higher",
+        "Memory": "4 GB RAM",
+        "Graphics": "Nvidia GT710 or Higher ; AMD Radeon RX 550 or Higher",
+        "DirectX": "Version 11",
+        "Storage": "600 MB available space",
+        "Needs 64-bit": false
+      },
+      "mac_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "platforms": [
+        "windows"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "2",
+        "22"
+      ],
+      "genres": [
+        "25",
+        "23"
+      ]
+    },
+    "1231710": {
+      "type": "game",
+      "name": "Super Foosball",
+      "required_age": 0,
+      "is_free": true,
+      "dlc": "NaN",
+      "website": null,
+      "developers": [
+        "DenyingProduct"
+      ],
+      "publishers": [
+        "DenyingProduct"
+      ],
+      "packages": "NaN",
+      "controller_support": "NaN",
+      "fullgame": "NaN",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "20/02/2020",
+      "text_support": [
+        "English"
+      ],
+      "audio_support": [
+        "English"
+      ],
+      "pc_requirements_minreqs": {
+        "OS": "windows 7 SP1",
+        "Processor": "Dual Core",
+        "Memory": "1 GB RAM",
+        "Graphics": "DX9 (shader model 2.0) capabilities; generally everything made since 2004 should work.",
+        "DirectX": "Version 9.0",
+        "Storage": "400 MB available space",
+        "Needs 64-bit": false
+      },
+      "pc_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "platforms": [
+        "windows"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "2",
+        "1",
+        "49",
+        "36"
+      ],
+      "genres": [
+        "28",
+        "18"
+      ]
+    },
+    "1234340": {
+      "type": "game",
+      "name": "GlowyJump",
+      "required_age": 0,
+      "is_free": false,
+      "dlc": "NaN",
+      "website": null,
+      "developers": [
+        "Ayberk Duzova"
+      ],
+      "publishers": [
+        "Ayberk Duzova"
+      ],
+      "packages": [
+        428072
+      ],
+      "controller_support": "NaN",
+      "fullgame": "NaN",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "21/02/2020",
+      "text_support": [
+        "English"
+      ],
+      "audio_support": [],
+      "pc_requirements_minreqs": {
+        "Processor": "Intel Core i3-530",
+        "Memory": "2048 MB RAM",
+        "Graphics": "NVIDIA GeForce 510",
+        "Storage": "200 MB available space",
+        "Needs 64-bit": false
+      },
+      "pc_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "platforms": [
+        "windows"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "2"
+      ],
+      "genres": [
+        "4",
+        "23"
+      ]
+    },
+    "842660": {
+      "type": "game",
+      "name": "MiniState",
+      "required_age": 0,
+      "is_free": true,
+      "dlc": "NaN",
+      "website": null,
+      "developers": [
+        "Nalu Zou"
+      ],
+      "publishers": [
+        "Nalu Zou"
+      ],
+      "packages": "NaN",
+      "controller_support": "NaN",
+      "fullgame": "NaN",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "20/02/2020",
+      "text_support": [
+        "English"
+      ],
+      "audio_support": [],
+      "pc_requirements_minreqs": {
+        "OS": "1",
+        "Needs 64-bit": false
+      },
+      "pc_requirements_recreqs": {
+        "OS": "10",
+        "Needs 64-bit": false
+      },
+      "mac_requirements_minreqs": {
+        "OS": "1",
+        "Needs 64-bit": false
+      },
+      "mac_requirements_recreqs": {
+        "OS": "Any",
+        "Needs 64-bit": false
+      },
+      "linux_requirements_minreqs": {
+        "OS": "1",
+        "Needs 64-bit": false
+      },
+      "linux_requirements_recreqs": {
+        "OS": "Any",
+        "Needs 64-bit": false
+      },
+      "platforms": [
+        "windows",
+        "mac",
+        "linux"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "1",
+        "20",
+        "49",
+        "36"
+      ],
+      "genres": [
+        "23",
+        "29",
+        "2",
+        "70"
+      ]
+    },
+    "1160600": {
+      "type": "dlc",
+      "name": "Yuuki's Party Night - Wallpapers",
+      "required_age": 0,
+      "is_free": false,
+      "dlc": "NaN",
+      "website": "http://dharker.studio",
+      "developers": [
+        "Dharker Studio"
+      ],
+      "publishers": [
+        "Dharker Studio"
+      ],
+      "packages": [
+        396053
+      ],
+      "controller_support": "NaN",
+      "fullgame": "973550",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "21/02/2020",
+      "text_support": [
+        "English"
+      ],
+      "audio_support": [],
+      "pc_requirements_minreqs": {
+        "OS": "Windows 7 or Newer",
+        "Processor": "1.66 Ghz",
+        "Memory": "1 GB RAM",
+        "Graphics": "1920x1080",
+        "Storage": "100 MB available space",
+        "Needs 64-bit": false
+      },
+      "pc_requirements_recreqs": {
+        "OS": "Windows 10",
+        "Processor": "2.50 Ghz",
+        "Memory": "2 GB RAM",
+        "Graphics": "1920x1080",
+        "Storage": "100 MB available space",
+        "Needs 64-bit": false
+      },
+      "mac_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "platforms": [
+        "windows"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "2",
+        "21"
+      ],
+      "genres": [
+        "4",
+        "23"
+      ]
+    },
+    "1231740": {
+      "type": "game",
+      "name": "Sorbetta: Gravely in Debt",
+      "required_age": 0,
+      "is_free": false,
+      "dlc": [
+        1239100
+      ],
+      "website": null,
+      "developers": [
+        "Undead Avian Publishing"
+      ],
+      "publishers": [
+        "Undead Avian Publishing"
+      ],
+      "packages": [
+        427112
+      ],
+      "controller_support": "NaN",
+      "fullgame": "NaN",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "20/02/2020",
+      "text_support": [
+        "English"
+      ],
+      "audio_support": [
+        "English"
+      ],
+      "pc_requirements_minreqs": {
+        "OS": "Microsoft\u00ae Windows\u00ae 7/8/8.1/10 (32bit/64bit)",
+        "Processor": "Intel Core2 Duo or better",
+        "Memory": "4 GB RAM",
+        "Graphics": "DirectX 9/OpenGL 4.1 capable GPU",
+        "Additional Notes": "1280x720 or better display",
+        "Needs 64-bit": false
+      },
+      "pc_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "platforms": [
+        "windows"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "2",
+        "22",
+        "18"
+      ],
+      "genres": [
+        "3"
+      ]
+    },
+    "1239920": {
+      "type": "game",
+      "name": "Xyla and the 'Shrooms of Doom",
+      "required_age": 0,
+      "is_free": false,
+      "dlc": "NaN",
+      "website": "http://goodweathergames.net/",
+      "developers": [
+        "goodWeatherGames"
+      ],
+      "publishers": [
+        "goodWeatherGames"
+      ],
+      "packages": [
+        430304
+      ],
+      "controller_support": "NaN",
+      "fullgame": "NaN",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "21/02/2020",
+      "text_support": [
+        "English"
+      ],
+      "audio_support": [],
+      "pc_requirements_minreqs": {
+        "OS": "Windows 7 / 8 / 8.1 / 10",
+        "Processor": "Intel Pentium III 800 MHz or equivalent",
+        "Memory": "4 GB RAM",
+        "Graphics": "N/A",
+        "DirectX": "Version 6.1",
+        "Storage": "200 MB available space",
+        "Sound Card": "N/A",
+        "Needs 64-bit": false
+      },
+      "pc_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "platforms": [
+        "windows"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "2"
+      ],
+      "genres": [
+        "1",
+        "4",
+        "23"
+      ]
+    },
+    "1237410": {
+      "type": "game",
+      "name": "VE GSIM Overhead Crane Simulator",
+      "required_age": 0,
+      "is_free": false,
+      "dlc": "NaN",
+      "website": "https://visual-eng.com/",
+      "developers": [
+        "Visual Engineering"
+      ],
+      "publishers": [
+        "Visual Engineering"
+      ],
+      "packages": [
+        429209
+      ],
+      "controller_support": "NaN",
+      "fullgame": "NaN",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "24/02/2020",
+      "text_support": [
+        "English"
+      ],
+      "audio_support": [
+        "English"
+      ],
+      "pc_requirements_minreqs": {
+        "Needs 64-bit": true,
+        "OS": "Windows 10 64bit",
+        "Processor": "Intel Core i5-4590/AMD FX 8350 equivalent or better",
+        "Memory": "4 GB RAM",
+        "Graphics": "NVIDIA GTX 970 or AMD Radeon R9 290.",
+        "Storage": "4 GB available space"
+      },
+      "pc_requirements_recreqs": {
+        "Needs 64-bit": true,
+        "OS": "Windows 10 64bit",
+        "Processor": "Intel Core i5-4590/AMD FX 8350 equivalent or better",
+        "Memory": "4 GB RAM or more GB RAM",
+        "Graphics": "NVIDIA GeForce GTX 1060, AMD Radeon RX 480 equivalent or better",
+        "Storage": "8 GB available space"
+      },
+      "mac_requirements_minreqs": {
+        "Needs 64-bit": true
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": true
+      },
+      "linux_requirements_minreqs": {
+        "Needs 64-bit": true
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": true
+      },
+      "platforms": [
+        "windows"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "2"
+      ],
+      "genres": [
+        "28"
+      ]
+    },
+    "1245090": {
+      "type": "game",
+      "name": "Teacher Lady",
+      "required_age": 0,
+      "is_free": false,
+      "dlc": [
+        1245330,
+        1245340
+      ],
+      "website": null,
+      "developers": [
+        "IR Studio"
+      ],
+      "publishers": [
+        "IR Studio"
+      ],
+      "packages": [
+        432069
+      ],
+      "controller_support": "NaN",
+      "fullgame": "NaN",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "21/02/2020",
+      "text_support": [
+        "English"
+      ],
+      "audio_support": [],
+      "pc_requirements_minreqs": {
+        "OS": "Windows 10, Windows 8, Windows 7 32-bit",
+        "Processor": "Quad-core Intel or AMD processor, 2 GHz or faster",
+        "Memory": "2 GB RAM",
+        "Graphics": "1 Gb",
+        "DirectX": "Version 10",
+        "Storage": "1 GB available space",
+        "Needs 64-bit": false
+      },
+      "pc_requirements_recreqs": {
+        "OS": "Windows 10, Windows 8, Windows 7 32-bit",
+        "Processor": "Quad-core Intel or AMD processor, 2.5 GHz or faster",
+        "Memory": "4 GB RAM",
+        "Graphics": "2 Gb",
+        "DirectX": "Version 11",
+        "Storage": "1 GB available space",
+        "Needs 64-bit": false
+      },
+      "mac_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "platforms": [
+        "windows"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "2",
+        "22"
+      ],
+      "genres": [
+        "4",
+        "23"
+      ]
+    },
+    "1227200": {
+      "type": "game",
+      "name": "Magic Academy Estoria",
+      "required_age": 0,
+      "is_free": false,
+      "dlc": "NaN",
+      "website": null,
+      "developers": [
+        "HIROTO HINASE"
+      ],
+      "publishers": [
+        "HIROTO HINASE"
+      ],
+      "packages": [
+        425349
+      ],
+      "controller_support": "NaN",
+      "fullgame": "NaN",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "20/02/2020",
+      "text_support": [
+        "Japanese"
+      ],
+      "audio_support": [],
+      "pc_requirements_minreqs": {
+        "OS": "windows7,8,10",
+        "Memory": "4 GB RAM",
+        "Storage": "1 GB available space",
+        "Needs 64-bit": false
+      },
+      "pc_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "platforms": [
+        "windows"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "2"
+      ],
+      "genres": [
+        "3"
+      ]
+    },
+    "1239990": {
+      "type": "game",
+      "name": "Dantes Bullet Inferno",
+      "required_age": 0,
+      "is_free": false,
+      "dlc": "NaN",
+      "website": null,
+      "developers": [
+        "Red Pentagram Studios"
+      ],
+      "publishers": [
+        "Red Pentagram Studios"
+      ],
+      "packages": [
+        430325
+      ],
+      "controller_support": "full",
+      "fullgame": "NaN",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "19/02/2020",
+      "text_support": [
+        "English"
+      ],
+      "audio_support": [
+        "English"
+      ],
+      "pc_requirements_minreqs": {
+        "Needs 64-bit": true,
+        "OS": "Windows 7 and Windows 10, 64-bit versions only",
+        "Processor": "X64 architecture with SSE2 instruction set support",
+        "Memory": "2 GB RAM",
+        "Graphics": "DX10, DX11, and DX12-capable GPUs",
+        "Storage": "400 MB available space"
+      },
+      "pc_requirements_recreqs": {
+        "Needs 64-bit": true,
+        "OS": "Windows 10, 64-bit",
+        "Processor": "X64 architecture with SSE2 instruction set support",
+        "Memory": "8 GB RAM",
+        "Graphics": "DX10, DX11, and DX12-capable GPUs",
+        "Storage": "400 MB available space"
+      },
+      "mac_requirements_minreqs": {
+        "Needs 64-bit": true
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": true
+      },
+      "linux_requirements_minreqs": {
+        "Needs 64-bit": true
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": true
+      },
+      "platforms": [
+        "windows"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "2",
+        "28"
+      ],
+      "genres": [
+        "1",
+        "23"
+      ]
+    },
+    "1241020": {
+      "type": "game",
+      "name": "Idle Warrior",
+      "required_age": 0,
+      "is_free": false,
+      "dlc": [
+        1243390
+      ],
+      "website": null,
+      "developers": [
+        "BUG DUCK GAMES"
+      ],
+      "publishers": [
+        "HaDe Games"
+      ],
+      "packages": [
+        430709
+      ],
+      "controller_support": "NaN",
+      "fullgame": "NaN",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "21/02/2020",
+      "text_support": [
+        "English"
+      ],
+      "audio_support": [
+        "English"
+      ],
+      "pc_requirements_minreqs": {
+        "OS": "Windows Vista,7,8,8.1,10 (64BIT)",
+        "Processor": "Quadcore or higher",
+        "Memory": "2 GB RAM",
+        "Graphics": "Geforce GTX 750 or higher",
+        "Storage": "500 MB available space",
+        "Needs 64-bit": false
+      },
+      "pc_requirements_recreqs": {
+        "OS": "Windows Vista,7,8,8.1,10 (64BIT)",
+        "Processor": "Quadcore or higher",
+        "Memory": "2 GB RAM",
+        "Graphics": "Geforce GTX 750 or higher",
+        "Storage": "500 MB available space",
+        "Needs 64-bit": false
+      },
+      "mac_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "platforms": [
+        "windows"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "2",
+        "22",
+        "23"
+      ],
+      "genres": [
+        "4",
+        "2"
+      ]
+    },
+    "1243060": {
+      "type": "game",
+      "name": "Infiniball",
+      "required_age": 0,
+      "is_free": false,
+      "dlc": "NaN",
+      "website": null,
+      "developers": [
+        "Ammonite Design Studios Ltd"
+      ],
+      "publishers": [
+        "Ammonite Design Studios Ltd"
+      ],
+      "packages": [
+        431393
+      ],
+      "controller_support": "full",
+      "fullgame": "NaN",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "20/02/2020",
+      "text_support": [
+        "English"
+      ],
+      "audio_support": [],
+      "pc_requirements_minreqs": {
+        "OS": "Windows Vista SP1+ or higher",
+        "Processor": "Intel i5-4590, AMD FX 8350 equivalent or better",
+        "Memory": "1 GB RAM",
+        "DirectX": "Version 11",
+        "Storage": "200 MB available space",
+        "Needs 64-bit": false
+      },
+      "pc_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "platforms": [
+        "windows"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "2",
+        "28"
+      ],
+      "genres": [
+        "1",
+        "4",
+        "23"
+      ]
+    },
+    "1245630": {
+      "type": "game",
+      "name": "Virage Rally",
+      "required_age": 0,
+      "is_free": false,
+      "dlc": "NaN",
+      "website": "https://www.youtube.com/channel/UCpo8-6Iq8XwXcBcKV6sttpw",
+      "developers": [
+        "Eyraud Software"
+      ],
+      "publishers": [
+        "Eyraud Software"
+      ],
+      "packages": [
+        432250
+      ],
+      "controller_support": "NaN",
+      "fullgame": "NaN",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "24/02/2020",
+      "text_support": [
+        "English",
+        "French"
+      ],
+      "audio_support": [
+        "English",
+        "French"
+      ],
+      "pc_requirements_minreqs": {
+        "Needs 64-bit": true,
+        "OS": "Windows 10 64bit",
+        "Processor": "dual core 2.8Ghz",
+        "Memory": "4 GB RAM",
+        "Graphics": "Nvidia GeForce GTX 660 / AMD Radeon R7 250",
+        "Storage": "250 MB available space"
+      },
+      "pc_requirements_recreqs": {
+        "Needs 64-bit": true,
+        "OS": "Windows 10 64bit",
+        "Processor": "dual core 3.0Ghz",
+        "Memory": "4 GB RAM",
+        "Graphics": "NVIDIA GeForce GTX 970 / AMD R9 290X",
+        "Storage": "250 MB available space"
+      },
+      "mac_requirements_minreqs": {
+        "Needs 64-bit": true
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": true
+      },
+      "linux_requirements_minreqs": {
+        "Needs 64-bit": true,
+        "OS": "Ubuntu 18.04 64bit",
+        "Processor": "dual core 2.8Ghz",
+        "Memory": "4 GB RAM",
+        "Graphics": "Nvidia GeForce GTX 660 / AMD Radeon R7 250",
+        "Storage": "250 MB available space"
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": true,
+        "OS": "Ubuntu 18.04 64bit",
+        "Processor": "dual core 3.0Ghz",
+        "Memory": "4 GB RAM",
+        "Graphics": "NVIDIA GeForce GTX 970 / AMD R9 290X",
+        "Storage": "250 MB available space"
+      },
+      "platforms": [
+        "windows",
+        "linux"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "2",
+        "18"
+      ],
+      "genres": [
+        "9",
+        "18"
+      ]
+    },
+    "944050": {
+      "type": "game",
+      "name": "Sixth Night",
+      "required_age": 0,
+      "is_free": false,
+      "dlc": [
+        1246910
+      ],
+      "website": null,
+      "developers": [
+        "\u30cb\u30e9\u5de5\u623f"
+      ],
+      "publishers": [
+        "\u30cb\u30e9\u5de5\u623f"
+      ],
+      "packages": [
+        306874
+      ],
+      "controller_support": "NaN",
+      "fullgame": "NaN",
+      "demos": [
+        "NaN"
+      ],
+      "release_date": "19/02/2020",
+      "text_support": [
+        "Simplified Chinese"
+      ],
+      "audio_support": [],
+      "pc_requirements_minreqs": {
+        "OS": "WIN7 SP1/WIN8/WIN10",
+        "Processor": "1000MHz",
+        "Memory": "512 MB RAM",
+        "DirectX": "Version 11",
+        "Storage": "300 MB available space",
+        "Needs 64-bit": false
+      },
+      "pc_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "mac_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_minreqs": {
+        "Needs 64-bit": false
+      },
+      "linux_requirements_recreqs": {
+        "Needs 64-bit": false
+      },
+      "platforms": [
+        "windows"
+      ],
+      "critic_score": "NaN",
+      "critic_source": "NaN",
+      "categories": [
+        "2",
+        "23"
+      ],
+      "genres": [
+        "4",
+        "23"
+      ]
     }
   }
 }

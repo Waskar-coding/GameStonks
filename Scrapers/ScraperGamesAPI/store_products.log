@@ -608,3 +608,863 @@ StoreCrunchFunc 2020-02-12 23:27:17,375 WARNING
 										while parsing pc_requirements at level minimum : Storage (high-quality audio)
 						  				
 StoreMainFunc 2020-02-12 23:27:17,757 INFO Launched products : ['1170910', '1211650', '1195910', '1196680', '1227260', '1229260', '1235430', '1035950', '1177640', '1123030', '1201030', '1243000']
+StoreMainFunc 2020-02-18 16:31:29,602 INFO 
+                New products: [1238530, 1243140, 1004040, 1249290, 1241100, 1245710, 1112591, 1247760, 1206290, 1226770, 1249810, 1233950, 1176610, 1176611, 1176612, 1176613, 1176614, 1176615, 1176616, 1176617, 1176618, 1176619, 1176620, 1179690, 1186350, 1205290, 1212970, 1226800, 1031220, 1224740, 1249850, 1225790, 1238590, 1202240, 1222210, 1226820, 1244230, 1213000, 1058380, 1183820, 1239120, 1172050, 1227860, 1219670, 1247830, 1219160, 1247320, 1029210, 432220, 1225820, 1248350, 1227360, 1162340, 1162341, 1162342, 1239140, 1249380, 1209450, 1242730, 1213550, 1249390, 1246320, 1227890, 1241210, 1212540, 1248900, 1215110, 1243270, 814730, 1015950, 1214096, 1238680, 1248410, 1232540, 1232030, 1244320, 1214116, 1247910, 1249450, 1164460, 1217710, 1247920, 1068210, 1232050, 1202870, 1245370, 1239740, 1238210, 1248450, 1247940, 1205960, 1220810, 1238220, 1245900, 1240270, 1247950, 1248460, 1250000, 1228500, 1139930, 1239770, 1232610, 1240290, 1237220, 1246440, 1238250, 1245930, 1150194, 1228530, 1238770, 1247990, 1226490, 1246460, 1249020, 1250560, 1247490, 1213700, 1249030, 1248520, 1239820, 1210640, 1241360, 1238290, 1241880, 1227540, 1211671, 1211672, 1211673, 1211674, 1211675, 1211676, 1211677, 1211678, 1211679, 1211680, 1211681, 1211682, 1211683, 1246500, 1247010, 1215270, 1248030, 1222440, 1198380, 1234220, 1220920, 760120, 1158970, 1246010, 1249600, 1249090, 1238340, 1225030, 1245510, 853320, 1124680, 1135433, 1244490, 1217570, 1238350, 1237840, 993110, 1249630, 1236320, 1143140, 1209700, 1231720, 1233960, 1217900, 1248110, 1229170, 1170803, 1144180, 1247090, 1230200, 1226620, 1247100, 1195390, 1246590, 1202560, 1238400, 1243520, 1246591, 1012101, 1244550, 1213320, 1249160, 1222540, 1248140, 1234830, 1239440, 1189780, 1215380, 1191830, 1209750, 1226650, 1246110, 1232800, 1240480, 1247650, 1243560, 1240490, 1250220, 1246650, 1220030, 1239490, 1249730, 1213380, 1231130, 1224140, 1087440, 1230800, 1247700, 1221080, 1189850, 1161180, 1248220, 1183200, 1176550, 1248230, 1213420, 1231340, 670190, 1241080, 1249050]
+                
+StoreMainFunc 2020-02-18 16:32:58,298 INFO Successful request of 1249290
+StoreMainFunc 2020-02-18 16:32:58,564 INFO Successful request of 1226770
+StoreMainFunc 2020-02-18 16:32:58,700 INFO Successful request of 1247760
+StoreMainFunc 2020-02-18 16:32:58,752 INFO Successful request of 1112591
+StoreMainFunc 2020-02-18 16:32:58,828 INFO Successful request of 1238530
+StoreMainFunc 2020-02-18 16:32:58,840 INFO Successful request of 1245710
+StoreMainFunc 2020-02-18 16:33:01,455 INFO Successful request of 1206290
+StoreMainFunc 2020-02-18 16:33:01,455 INFO Successful request of 1004040
+StoreMainFunc 2020-02-18 16:33:01,467 INFO Successful request of 1241100
+StoreMainFunc 2020-02-18 16:33:01,471 INFO Successful request of 1243140
+StoreCrunchFunc 2020-02-18 16:33:03,017 WARNING 
+										Found non registered req in 1238530 
+										while parsing pc_requirements at level minimum : Storage (high-quality audio)
+						  				
+StoreMainFunc 2020-02-18 16:33:08,197 INFO Successful request of 1233950
+StoreMainFunc 2020-02-18 16:33:08,265 INFO Successful request of 1176610
+StoreMainFunc 2020-02-18 16:33:11,106 INFO Successful request of 1176617
+StoreMainFunc 2020-02-18 16:33:11,114 INFO Successful request of 1176616
+StoreMainFunc 2020-02-18 16:33:11,114 INFO Successful request of 1176613
+StoreMainFunc 2020-02-18 16:33:11,118 INFO Successful request of 1176612
+StoreMainFunc 2020-02-18 16:33:11,118 INFO Successful request of 1176611
+StoreMainFunc 2020-02-18 16:33:11,118 INFO Successful request of 1249810
+StoreMainFunc 2020-02-18 16:33:11,122 INFO Successful request of 1176615
+StoreMainFunc 2020-02-18 16:33:11,126 INFO Successful request of 1176614
+StoreMainFunc 2020-02-18 16:33:16,010 INFO Successful request of 1031220
+StoreMainFunc 2020-02-18 16:33:16,295 INFO Successful request of 1224740
+StoreMainFunc 2020-02-18 16:33:16,704 INFO Successful request of 1226800
+StoreMainFunc 2020-02-18 16:33:16,708 INFO Successful request of 1179690
+StoreMainFunc 2020-02-18 16:33:20,192 WARNING Unsuccessful request of 1176620
+StoreMainFunc 2020-02-18 16:33:20,200 INFO Successful request of 1186350
+StoreMainFunc 2020-02-18 16:33:20,200 INFO Successful request of 1205290
+StoreMainFunc 2020-02-18 16:33:20,208 INFO Successful request of 1212970
+StoreMainFunc 2020-02-18 16:33:20,247 INFO Successful request of 1176619
+StoreMainFunc 2020-02-18 16:33:20,999 INFO Successful request of 1176618
+StoreCrunchFunc 2020-02-18 16:33:22,039 WARNING 
+							Found non registered key in 1176620 : 1176620
+							
+StoreCrunchFunc 2020-02-18 16:33:22,039 ERROR Necessary key type not found for 1176620
+StoreCrunchFunc 2020-02-18 16:33:22,039 ERROR Necessary key name not found for 1176620
+StoreCrunchFunc 2020-02-18 16:33:22,039 ERROR Necessary key is_free not found for 1176620
+StoreCrunchFunc 2020-02-18 16:33:22,039 ERROR Necessary key release_date not found for 1176620
+StoreCrunchFunc 2020-02-18 16:33:22,043 WARNING KeyError for pc_requirements in 1176620
+StoreCrunchFunc 2020-02-18 16:33:22,043 WARNING KeyError for mac_requirements in 1176620
+StoreCrunchFunc 2020-02-18 16:33:22,043 WARNING KeyError for linux_requirements in 1176620
+StoreMainFunc 2020-02-18 16:33:26,836 INFO Successful request of 1238590
+StoreMainFunc 2020-02-18 16:33:27,655 INFO Successful request of 1222210
+StoreMainFunc 2020-02-18 16:33:31,058 INFO Successful request of 1249850
+StoreMainFunc 2020-02-18 16:33:31,099 INFO Successful request of 1244230
+StoreMainFunc 2020-02-18 16:33:31,113 INFO Successful request of 1202240
+StoreMainFunc 2020-02-18 16:33:31,170 INFO Successful request of 1058380
+StoreMainFunc 2020-02-18 16:33:31,182 INFO Successful request of 1213000
+StoreMainFunc 2020-02-18 16:33:31,207 INFO Successful request of 1183820
+StoreMainFunc 2020-02-18 16:33:34,149 INFO Successful request of 1225790
+StoreMainFunc 2020-02-18 16:33:34,415 INFO Successful request of 1226820
+StoreCrunchFunc 2020-02-18 16:33:36,242 WARNING 
+										Found non registered req in 1238590 
+										while parsing pc_requirements at level minimum : Storage (high-quality audio)
+						  				
+StoreMainFunc 2020-02-18 16:33:39,152 INFO Successful request of 1227860
+StoreMainFunc 2020-02-18 16:33:42,646 INFO Successful request of 1225820
+StoreMainFunc 2020-02-18 16:33:43,357 INFO Successful request of 1247320
+StoreMainFunc 2020-02-18 16:33:43,361 INFO Successful request of 1219160
+StoreMainFunc 2020-02-18 16:33:43,365 INFO Successful request of 1247830
+StoreMainFunc 2020-02-18 16:33:43,370 INFO Successful request of 1239120
+StoreMainFunc 2020-02-18 16:33:43,378 INFO Successful request of 1029210
+StoreMainFunc 2020-02-18 16:33:43,378 INFO Successful request of 1219670
+StoreMainFunc 2020-02-18 16:33:43,378 INFO Successful request of 1172050
+StoreMainFunc 2020-02-18 16:33:46,398 INFO Successful request of 432220
+StoreMainFunc 2020-02-18 16:33:55,820 INFO Successful request of 1162341
+StoreMainFunc 2020-02-18 16:33:56,143 INFO Successful request of 1209450
+StoreMainFunc 2020-02-18 16:33:58,111 INFO Successful request of 1249380
+StoreMainFunc 2020-02-18 16:33:58,800 INFO Successful request of 1239140
+StoreMainFunc 2020-02-18 16:33:58,804 INFO Successful request of 1242730
+StoreMainFunc 2020-02-18 16:33:58,824 INFO Successful request of 1162340
+StoreMainFunc 2020-02-18 16:33:58,824 INFO Successful request of 1213550
+StoreMainFunc 2020-02-18 16:33:58,836 INFO Successful request of 1248350
+StoreMainFunc 2020-02-18 16:33:58,836 INFO Successful request of 1227360
+StoreMainFunc 2020-02-18 16:33:58,840 INFO Successful request of 1162342
+StoreMainFunc 2020-02-18 16:34:03,512 INFO Successful request of 1243270
+StoreMainFunc 2020-02-18 16:34:04,633 INFO Successful request of 1241210
+StoreMainFunc 2020-02-18 16:34:05,563 INFO Successful request of 1248900
+StoreMainFunc 2020-02-18 16:34:05,567 INFO Successful request of 1015950
+StoreMainFunc 2020-02-18 16:34:08,200 INFO Successful request of 1227890
+StoreMainFunc 2020-02-18 16:34:08,276 INFO Successful request of 1212540
+StoreMainFunc 2020-02-18 16:34:08,288 INFO Successful request of 1249390
+StoreMainFunc 2020-02-18 16:34:08,328 INFO Successful request of 1246320
+StoreMainFunc 2020-02-18 16:34:08,380 INFO Successful request of 1215110
+StoreMainFunc 2020-02-18 16:34:08,404 INFO Successful request of 814730
+StoreMainFunc 2020-02-18 16:34:14,906 INFO Successful request of 1249450
+StoreMainFunc 2020-02-18 16:34:14,910 INFO Successful request of 1232540
+StoreMainFunc 2020-02-18 16:34:14,934 INFO Successful request of 1164460
+StoreMainFunc 2020-02-18 16:34:16,053 INFO Successful request of 1248410
+StoreMainFunc 2020-02-18 16:34:16,347 INFO Successful request of 1247910
+StoreMainFunc 2020-02-18 16:34:16,375 INFO Successful request of 1244320
+StoreMainFunc 2020-02-18 16:34:18,606 INFO Successful request of 1214096
+StoreMainFunc 2020-02-18 16:34:18,634 INFO Successful request of 1232030
+StoreMainFunc 2020-02-18 16:34:18,706 INFO Successful request of 1238680
+StoreMainFunc 2020-02-18 16:34:18,783 INFO Successful request of 1214116
+StoreCrunchFunc 2020-02-18 16:34:24,938 WARNING 
+										Found non registered req in 1249450 
+										while parsing pc_requirements at level minimum : Storage (high-quality audio)
+						  				
+StoreMainFunc 2020-02-18 16:34:27,317 INFO Successful request of 1247920
+StoreMainFunc 2020-02-18 16:34:27,933 INFO Successful request of 1232050
+StoreMainFunc 2020-02-18 16:34:29,925 INFO Successful request of 1239740
+StoreMainFunc 2020-02-18 16:34:30,657 INFO Successful request of 1238210
+StoreMainFunc 2020-02-18 16:34:32,115 INFO Successful request of 1217710
+StoreMainFunc 2020-02-18 16:34:32,143 INFO Successful request of 1202870
+StoreMainFunc 2020-02-18 16:34:32,203 INFO Successful request of 1245370
+StoreMainFunc 2020-02-18 16:34:32,224 INFO Successful request of 1247940
+StoreMainFunc 2020-02-18 16:34:32,253 INFO Successful request of 1248450
+StoreMainFunc 2020-02-18 16:34:32,285 INFO Successful request of 1068210
+StoreMainFunc 2020-02-18 16:34:36,917 INFO Successful request of 1220810
+StoreMainFunc 2020-02-18 16:34:36,980 INFO Successful request of 1248460
+StoreMainFunc 2020-02-18 16:34:38,688 INFO Successful request of 1205960
+StoreMainFunc 2020-02-18 16:34:41,394 INFO Successful request of 1238220
+StoreMainFunc 2020-02-18 16:34:41,414 INFO Successful request of 1247950
+StoreMainFunc 2020-02-18 16:34:41,416 INFO Successful request of 1139930
+StoreMainFunc 2020-02-18 16:34:41,425 INFO Successful request of 1240270
+StoreMainFunc 2020-02-18 16:34:41,434 INFO Successful request of 1228500
+StoreMainFunc 2020-02-18 16:34:41,438 INFO Successful request of 1245900
+StoreMainFunc 2020-02-18 16:34:41,452 INFO Successful request of 1250000
+StoreMainFunc 2020-02-18 16:34:48,532 INFO Successful request of 1237220
+StoreMainFunc 2020-02-18 16:34:48,745 INFO Successful request of 1232610
+StoreMainFunc 2020-02-18 16:34:48,824 INFO Successful request of 1238770
+StoreMainFunc 2020-02-18 16:34:51,345 INFO Successful request of 1238250
+StoreMainFunc 2020-02-18 16:34:51,357 INFO Successful request of 1239770
+StoreMainFunc 2020-02-18 16:34:51,369 INFO Successful request of 1246440
+StoreMainFunc 2020-02-18 16:34:51,400 INFO Successful request of 1245930
+StoreMainFunc 2020-02-18 16:34:51,434 INFO Successful request of 1228530
+StoreMainFunc 2020-02-18 16:34:51,478 INFO Successful request of 1240290
+StoreMainFunc 2020-02-18 16:34:54,448 INFO Successful request of 1150194
+StoreMainFunc 2020-02-18 16:34:59,714 INFO Successful request of 1213700
+StoreMainFunc 2020-02-18 16:35:01,232 INFO Successful request of 1248520
+StoreMainFunc 2020-02-18 16:35:02,520 INFO Successful request of 1239820
+StoreMainFunc 2020-02-18 16:35:04,387 INFO Successful request of 1246460
+StoreMainFunc 2020-02-18 16:35:04,388 INFO Successful request of 1247490
+StoreMainFunc 2020-02-18 16:35:04,389 INFO Successful request of 1249030
+StoreMainFunc 2020-02-18 16:35:04,397 INFO Successful request of 1249020
+StoreMainFunc 2020-02-18 16:35:04,429 INFO Successful request of 1250560
+StoreMainFunc 2020-02-18 16:35:04,455 INFO Successful request of 1226490
+StoreMainFunc 2020-02-18 16:35:04,535 INFO Successful request of 1247990
+StoreMainFunc 2020-02-18 16:35:08,760 INFO Successful request of 1241880
+StoreMainFunc 2020-02-18 16:35:09,568 INFO Successful request of 1211673
+StoreMainFunc 2020-02-18 16:35:09,630 INFO Successful request of 1211675
+StoreMainFunc 2020-02-18 16:35:09,704 INFO Successful request of 1227540
+StoreMainFunc 2020-02-18 16:35:10,654 INFO Successful request of 1238290
+StoreMainFunc 2020-02-18 16:35:10,842 INFO Successful request of 1211672
+StoreMainFunc 2020-02-18 16:35:10,850 INFO Successful request of 1241360
+StoreMainFunc 2020-02-18 16:35:13,849 INFO Successful request of 1211671
+StoreMainFunc 2020-02-18 16:35:13,879 INFO Successful request of 1210640
+StoreMainFunc 2020-02-18 16:35:15,233 INFO Successful request of 1211674
+StoreCrunchFunc 2020-02-18 16:35:16,579 WARNING 
+										Found non registered req in 1238290 
+										while parsing pc_requirements at level minimum : Storage (high-quality audio)
+						  				
+StoreMainFunc 2020-02-18 16:35:21,380 INFO Successful request of 1211681
+StoreMainFunc 2020-02-18 16:35:22,377 INFO Successful request of 1211682
+StoreMainFunc 2020-02-18 16:35:23,064 INFO Successful request of 1211677
+StoreMainFunc 2020-02-18 16:35:23,064 INFO Successful request of 1211678
+StoreMainFunc 2020-02-18 16:35:23,087 INFO Successful request of 1211679
+StoreMainFunc 2020-02-18 16:35:24,113 INFO Successful request of 1247010
+StoreMainFunc 2020-02-18 16:35:24,812 INFO Successful request of 1211680
+StoreMainFunc 2020-02-18 16:35:24,830 INFO Successful request of 1246500
+StoreMainFunc 2020-02-18 16:35:24,834 INFO Successful request of 1211676
+StoreMainFunc 2020-02-18 16:35:24,834 INFO Successful request of 1211683
+StoreMainFunc 2020-02-18 16:35:29,462 INFO Successful request of 1234220
+StoreMainFunc 2020-02-18 16:35:30,777 INFO Successful request of 760120
+StoreMainFunc 2020-02-18 16:35:30,834 INFO Successful request of 1198380
+StoreMainFunc 2020-02-18 16:35:33,396 INFO Successful request of 1215270
+StoreMainFunc 2020-02-18 16:35:33,406 INFO Successful request of 1246010
+StoreMainFunc 2020-02-18 16:35:33,417 INFO Successful request of 1249600
+StoreMainFunc 2020-02-18 16:35:33,435 INFO Successful request of 1222440
+StoreMainFunc 2020-02-18 16:35:33,446 INFO Successful request of 1248030
+StoreMainFunc 2020-02-18 16:35:33,457 INFO Successful request of 1158970
+StoreMainFunc 2020-02-18 16:35:33,660 INFO Successful request of 1220920
+StoreMainFunc 2020-02-18 16:35:39,349 INFO Successful request of 1244490
+StoreMainFunc 2020-02-18 16:35:40,245 INFO Successful request of 1225030
+StoreMainFunc 2020-02-18 16:35:40,255 INFO Successful request of 1249090
+StoreMainFunc 2020-02-18 16:35:40,778 INFO Successful request of 1124680
+StoreMainFunc 2020-02-18 16:35:43,042 INFO Successful request of 853320
+StoreMainFunc 2020-02-18 16:35:43,060 INFO Successful request of 1238350
+StoreMainFunc 2020-02-18 16:35:43,064 INFO Successful request of 1135433
+StoreMainFunc 2020-02-18 16:35:43,070 INFO Successful request of 1217570
+StoreMainFunc 2020-02-18 16:35:43,071 INFO Successful request of 1238340
+StoreMainFunc 2020-02-18 16:35:43,956 INFO Successful request of 1245510
+StoreCrunchFunc 2020-02-18 16:35:44,849 WARNING 
+										Found non registered req in 1238350 
+										while parsing pc_requirements at level minimum : Storage (high-quality audio)
+						  				
+StoreMainFunc 2020-02-18 16:35:53,024 INFO Successful request of 1233960
+StoreMainFunc 2020-02-18 16:35:53,095 INFO Successful request of 1236320
+StoreMainFunc 2020-02-18 16:35:53,126 INFO Successful request of 1231720
+StoreMainFunc 2020-02-18 16:35:53,127 INFO Successful request of 1209700
+StoreMainFunc 2020-02-18 16:35:53,141 INFO Successful request of 993110
+StoreMainFunc 2020-02-18 16:35:53,148 INFO Successful request of 1249630
+StoreMainFunc 2020-02-18 16:35:53,168 INFO Successful request of 1217900
+StoreMainFunc 2020-02-18 16:35:53,181 INFO Successful request of 1237840
+StoreMainFunc 2020-02-18 16:35:53,226 INFO Successful request of 1248110
+StoreMainFunc 2020-02-18 16:35:53,260 INFO Successful request of 1143140
+StoreMainFunc 2020-02-18 16:35:57,648 INFO Successful request of 1247100
+StoreMainFunc 2020-02-18 16:35:58,666 WARNING Unsuccessful request of 1247090
+StoreMainFunc 2020-02-18 16:35:58,835 INFO Successful request of 1226620
+StoreMainFunc 2020-02-18 16:35:59,655 INFO Successful request of 1229170
+StoreMainFunc 2020-02-18 16:35:59,730 INFO Successful request of 1170803
+StoreMainFunc 2020-02-18 16:35:59,823 INFO Successful request of 1202560
+StoreMainFunc 2020-02-18 16:36:02,813 INFO Successful request of 1230200
+StoreMainFunc 2020-02-18 16:36:02,814 INFO Successful request of 1246590
+StoreMainFunc 2020-02-18 16:36:02,823 INFO Successful request of 1195390
+StoreMainFunc 2020-02-18 16:36:02,825 INFO Successful request of 1144180
+StoreCrunchFunc 2020-02-18 16:36:02,838 WARNING 
+										Found non registered req in 1144180 
+										while parsing pc_requirements at level minimum : Storage (high-quality audio)
+						  				
+StoreCrunchFunc 2020-02-18 16:36:04,818 WARNING 
+							Found non registered key in 1247090 : 1247090
+							
+StoreCrunchFunc 2020-02-18 16:36:04,818 ERROR Necessary key type not found for 1247090
+StoreCrunchFunc 2020-02-18 16:36:04,818 ERROR Necessary key name not found for 1247090
+StoreCrunchFunc 2020-02-18 16:36:04,818 ERROR Necessary key is_free not found for 1247090
+StoreCrunchFunc 2020-02-18 16:36:04,819 ERROR Necessary key release_date not found for 1247090
+StoreCrunchFunc 2020-02-18 16:36:04,819 WARNING KeyError for pc_requirements in 1247090
+StoreCrunchFunc 2020-02-18 16:36:04,819 WARNING KeyError for mac_requirements in 1247090
+StoreCrunchFunc 2020-02-18 16:36:04,819 WARNING KeyError for linux_requirements in 1247090
+StoreMainFunc 2020-02-18 16:36:07,327 INFO Successful request of 1234830
+StoreMainFunc 2020-02-18 16:36:07,851 INFO Successful request of 1246591
+StoreMainFunc 2020-02-18 16:36:08,383 INFO Successful request of 1213320
+StoreMainFunc 2020-02-18 16:36:08,712 INFO Successful request of 1243520
+StoreMainFunc 2020-02-18 16:36:09,671 INFO Successful request of 1244550
+StoreMainFunc 2020-02-18 16:36:09,671 INFO Successful request of 1249160
+StoreMainFunc 2020-02-18 16:36:09,678 INFO Successful request of 1248140
+StoreMainFunc 2020-02-18 16:36:11,960 INFO Successful request of 1238400
+StoreMainFunc 2020-02-18 16:36:11,989 INFO Successful request of 1222540
+StoreMainFunc 2020-02-18 16:36:12,323 INFO Successful request of 1012101
+StoreMainFunc 2020-02-18 16:36:17,030 INFO Successful request of 1226650
+StoreMainFunc 2020-02-18 16:36:18,816 INFO Successful request of 1232800
+StoreMainFunc 2020-02-18 16:36:19,159 INFO Successful request of 1189780
+StoreMainFunc 2020-02-18 16:36:24,719 INFO Successful request of 1191830
+StoreMainFunc 2020-02-18 16:36:24,729 INFO Successful request of 1239440
+StoreMainFunc 2020-02-18 16:36:24,733 INFO Successful request of 1209750
+StoreMainFunc 2020-02-18 16:36:24,754 INFO Successful request of 1246110
+StoreMainFunc 2020-02-18 16:36:24,765 INFO Successful request of 1240480
+StoreMainFunc 2020-02-18 16:36:24,784 INFO Successful request of 1215380
+StoreMainFunc 2020-02-18 16:36:24,785 INFO Successful request of 1247650
+StoreMainFunc 2020-02-18 16:36:29,644 WARNING Unsuccessful request of 1220030
+StoreMainFunc 2020-02-18 16:36:30,389 WARNING Unsuccessful request of 1213380
+StoreMainFunc 2020-02-18 16:36:30,422 WARNING Unsuccessful request of 1246650
+StoreMainFunc 2020-02-18 16:36:33,437 WARNING Unsuccessful request of 1249730
+StoreMainFunc 2020-02-18 16:36:34,020 WARNING Unsuccessful request of 1231130
+StoreMainFunc 2020-02-18 16:36:34,086 WARNING Unsuccessful request of 1239490
+StoreMainFunc 2020-02-18 16:36:34,101 WARNING Unsuccessful request of 1240490
+StoreMainFunc 2020-02-18 16:36:34,101 WARNING Unsuccessful request of 1243560
+StoreMainFunc 2020-02-18 16:36:34,102 WARNING Unsuccessful request of 1250220
+StoreMainFunc 2020-02-18 16:36:34,103 WARNING Unsuccessful request of 1224140
+StoreCrunchFunc 2020-02-18 16:36:34,119 ERROR Unsupported type for 1224140 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:36:34,120 ERROR Unsupported type for 1250220 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:36:34,120 ERROR Unsupported type for 1243560 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:36:34,120 ERROR Unsupported type for 1240490 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:36:34,120 ERROR Unsupported type for 1239490 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:36:34,121 ERROR Unsupported type for 1231130 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:36:34,121 ERROR Unsupported type for 1249730 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:36:34,121 ERROR Unsupported type for 1246650 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:36:34,121 ERROR Unsupported type for 1213380 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:36:34,121 ERROR Unsupported type for 1220030 : <class 'NoneType'>
+StoreMainFunc 2020-02-18 16:36:35,952 WARNING Unsuccessful request of 1230800
+StoreMainFunc 2020-02-18 16:36:36,748 WARNING Unsuccessful request of 1176550
+StoreMainFunc 2020-02-18 16:36:37,156 WARNING Unsuccessful request of 1183200
+StoreMainFunc 2020-02-18 16:36:37,977 WARNING Unsuccessful request of 1087440
+StoreMainFunc 2020-02-18 16:36:39,661 WARNING Unsuccessful request of 1247700
+StoreMainFunc 2020-02-18 16:36:39,662 WARNING Unsuccessful request of 1221080
+StoreMainFunc 2020-02-18 16:36:40,755 WARNING Unsuccessful request of 1248220
+StoreMainFunc 2020-02-18 16:36:40,759 WARNING Unsuccessful request of 1161180
+StoreMainFunc 2020-02-18 16:36:40,771 WARNING Unsuccessful request of 1248230
+StoreMainFunc 2020-02-18 16:36:40,848 WARNING Unsuccessful request of 1189850
+StoreCrunchFunc 2020-02-18 16:36:40,849 ERROR Unsupported type for 1189850 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:36:40,849 ERROR Unsupported type for 1248230 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:36:40,850 ERROR Unsupported type for 1161180 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:36:40,850 ERROR Unsupported type for 1248220 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:36:40,850 ERROR Unsupported type for 1221080 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:36:40,850 ERROR Unsupported type for 1247700 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:36:40,850 ERROR Unsupported type for 1087440 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:36:40,850 ERROR Unsupported type for 1183200 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:36:40,851 ERROR Unsupported type for 1176550 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:36:40,851 ERROR Unsupported type for 1230800 : <class 'NoneType'>
+StoreMainFunc 2020-02-18 16:36:42,896 WARNING Unsuccessful request of 1241080
+StoreMainFunc 2020-02-18 16:36:43,664 WARNING Unsuccessful request of 670190
+StoreMainFunc 2020-02-18 16:36:44,750 WARNING Unsuccessful request of 1249050
+StoreMainFunc 2020-02-18 16:36:47,641 WARNING Unsuccessful request of 1213420
+StoreMainFunc 2020-02-18 16:36:47,658 WARNING Unsuccessful request of 1231340
+StoreMainFunc 2020-02-18 16:36:47,737 WARNING Unsuccessful request of 1186200
+StoreMainFunc 2020-02-18 16:36:47,742 WARNING Unsuccessful request of 1116260
+StoreMainFunc 2020-02-18 16:36:47,835 WARNING Unsuccessful request of 852890
+StoreMainFunc 2020-02-18 16:36:48,003 WARNING Unsuccessful request of 1188850
+StoreMainFunc 2020-02-18 16:36:48,069 WARNING Unsuccessful request of 1192960
+StoreCrunchFunc 2020-02-18 16:36:48,071 ERROR Unsupported type for 1192960 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:36:48,071 ERROR Unsupported type for 1188850 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:36:48,072 ERROR Unsupported type for 852890 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:36:48,072 ERROR Unsupported type for 1116260 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:36:48,072 ERROR Unsupported type for 1186200 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:36:48,072 ERROR Unsupported type for 1231340 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:36:48,073 ERROR Unsupported type for 1213420 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:36:48,073 ERROR Unsupported type for 1249050 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:36:48,073 ERROR Unsupported type for 670190 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:36:48,073 ERROR Unsupported type for 1241080 : <class 'NoneType'>
+StoreMainFunc 2020-02-18 16:36:50,585 WARNING Unsuccessful request of 1177110
+StoreMainFunc 2020-02-18 16:36:51,018 WARNING Unsuccessful request of 1178250
+StoreMainFunc 2020-02-18 16:36:52,150 WARNING Unsuccessful request of 1194290
+StoreMainFunc 2020-02-18 16:36:54,817 WARNING Unsuccessful request of 1189800
+StoreMainFunc 2020-02-18 16:36:54,831 WARNING Unsuccessful request of 1194190
+StoreMainFunc 2020-02-18 16:36:54,832 WARNING Unsuccessful request of 1188870
+StoreMainFunc 2020-02-18 16:36:54,842 WARNING Unsuccessful request of 1183350
+StoreMainFunc 2020-02-18 16:36:54,843 WARNING Unsuccessful request of 1189060
+StoreMainFunc 2020-02-18 16:36:54,845 WARNING Unsuccessful request of 1182280
+StoreMainFunc 2020-02-18 16:36:57,781 WARNING Unsuccessful request of 1149500
+StoreCrunchFunc 2020-02-18 16:36:57,784 ERROR Unsupported type for 1149500 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:36:57,785 ERROR Unsupported type for 1182280 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:36:57,785 ERROR Unsupported type for 1189060 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:36:57,786 ERROR Unsupported type for 1183350 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:36:57,787 ERROR Unsupported type for 1194190 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:36:57,788 ERROR Unsupported type for 1188870 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:36:57,788 ERROR Unsupported type for 1189800 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:36:57,789 ERROR Unsupported type for 1194290 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:36:57,789 ERROR Unsupported type for 1178250 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:36:57,789 ERROR Unsupported type for 1177110 : <class 'NoneType'>
+StoreMainFunc 2020-02-18 16:36:59,727 WARNING Unsuccessful request of 1162650
+StoreMainFunc 2020-02-18 16:37:01,593 WARNING Unsuccessful request of 1185810
+StoreMainFunc 2020-02-18 16:37:03,551 WARNING Unsuccessful request of 1206280
+StoreMainFunc 2020-02-18 16:37:04,481 WARNING Unsuccessful request of 1160770
+StoreMainFunc 2020-02-18 16:37:04,502 WARNING Unsuccessful request of 395830
+StoreMainFunc 2020-02-18 16:37:04,504 WARNING Unsuccessful request of 1180210
+StoreMainFunc 2020-02-18 16:37:04,507 WARNING Unsuccessful request of 1199170
+StoreMainFunc 2020-02-18 16:37:04,581 WARNING Unsuccessful request of 1074190
+StoreMainFunc 2020-02-18 16:37:05,153 WARNING Unsuccessful request of 495420
+StoreMainFunc 2020-02-18 16:37:07,337 WARNING Unsuccessful request of 1163040
+StoreCrunchFunc 2020-02-18 16:37:07,338 ERROR Unsupported type for 1163040 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:37:07,339 ERROR Unsupported type for 495420 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:37:07,339 ERROR Unsupported type for 1074190 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:37:07,339 ERROR Unsupported type for 1199170 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:37:07,339 ERROR Unsupported type for 1180210 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:37:07,339 ERROR Unsupported type for 395830 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:37:07,340 ERROR Unsupported type for 1160770 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:37:07,340 ERROR Unsupported type for 1206280 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:37:07,340 ERROR Unsupported type for 1185810 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:37:07,340 ERROR Unsupported type for 1162650 : <class 'NoneType'>
+StoreMainFunc 2020-02-18 16:37:09,752 WARNING Unsuccessful request of 1202790
+StoreMainFunc 2020-02-18 16:37:10,665 WARNING Unsuccessful request of 1199200
+StoreMainFunc 2020-02-18 16:37:11,332 WARNING Unsuccessful request of 1177170
+StoreMainFunc 2020-02-18 16:37:11,335 WARNING Unsuccessful request of 1177650
+StoreMainFunc 2020-02-18 16:37:11,377 WARNING Unsuccessful request of 1187940
+StoreMainFunc 2020-02-18 16:37:14,066 WARNING Unsuccessful request of 1195090
+StoreMainFunc 2020-02-18 16:37:14,083 WARNING Unsuccessful request of 979640
+StoreMainFunc 2020-02-18 16:37:14,083 WARNING Unsuccessful request of 1132220
+StoreMainFunc 2020-02-18 16:37:14,092 WARNING Unsuccessful request of 1203780
+StoreMainFunc 2020-02-18 16:37:14,146 WARNING Unsuccessful request of 1132230
+StoreCrunchFunc 2020-02-18 16:37:14,149 ERROR Unsupported type for 1132230 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:37:14,149 ERROR Unsupported type for 1203780 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:37:14,150 ERROR Unsupported type for 1132220 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:37:14,150 ERROR Unsupported type for 979640 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:37:14,150 ERROR Unsupported type for 1195090 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:37:14,150 ERROR Unsupported type for 1187940 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:37:14,151 ERROR Unsupported type for 1177650 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:37:14,151 ERROR Unsupported type for 1177170 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:37:14,151 ERROR Unsupported type for 1199200 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:37:14,151 ERROR Unsupported type for 1202790 : <class 'NoneType'>
+StoreMainFunc 2020-02-18 16:37:16,741 WARNING Unsuccessful request of 1147110
+StoreMainFunc 2020-02-18 16:37:18,169 WARNING Unsuccessful request of 1204440
+StoreMainFunc 2020-02-18 16:37:21,384 WARNING Unsuccessful request of 1208510
+StoreMainFunc 2020-02-18 16:37:21,390 WARNING Unsuccessful request of 1212430
+StoreMainFunc 2020-02-18 16:37:21,420 WARNING Unsuccessful request of 1212630
+StoreMainFunc 2020-02-18 16:37:21,427 WARNING Unsuccessful request of 1210620
+StoreMainFunc 2020-02-18 16:37:21,439 WARNING Unsuccessful request of 1179790
+StoreMainFunc 2020-02-18 16:37:21,440 WARNING Unsuccessful request of 1196230
+StoreMainFunc 2020-02-18 16:37:21,468 WARNING Unsuccessful request of 1118240
+StoreMainFunc 2020-02-18 16:37:21,469 WARNING Unsuccessful request of 1212510
+StoreCrunchFunc 2020-02-18 16:37:21,473 ERROR Unsupported type for 1212510 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:37:21,473 ERROR Unsupported type for 1118240 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:37:21,474 ERROR Unsupported type for 1196230 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:37:21,474 ERROR Unsupported type for 1179790 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:37:21,474 ERROR Unsupported type for 1210620 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:37:21,474 ERROR Unsupported type for 1212630 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:37:21,475 ERROR Unsupported type for 1212430 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:37:21,476 ERROR Unsupported type for 1208510 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:37:21,477 ERROR Unsupported type for 1204440 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:37:21,477 ERROR Unsupported type for 1147110 : <class 'NoneType'>
+StoreMainFunc 2020-02-18 16:37:23,265 WARNING Unsuccessful request of 1024460
+StoreMainFunc 2020-02-18 16:37:24,083 WARNING Unsuccessful request of 973230
+StoreMainFunc 2020-02-18 16:37:24,716 WARNING Unsuccessful request of 1208590
+StoreMainFunc 2020-02-18 16:37:25,022 WARNING Unsuccessful request of 1214850
+StoreMainFunc 2020-02-18 16:37:25,506 WARNING Unsuccessful request of 1137110
+StoreMainFunc 2020-02-18 16:37:28,068 WARNING Unsuccessful request of 1202410
+StoreMainFunc 2020-02-18 16:37:28,076 WARNING Unsuccessful request of 1050880
+StoreMainFunc 2020-02-18 16:37:28,094 WARNING Unsuccessful request of 1210800
+StoreMainFunc 2020-02-18 16:37:28,153 WARNING Unsuccessful request of 1212840
+StoreMainFunc 2020-02-18 16:37:28,283 WARNING Unsuccessful request of 1212850
+StoreCrunchFunc 2020-02-18 16:37:28,285 ERROR Unsupported type for 1212850 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:37:28,286 ERROR Unsupported type for 1212840 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:37:28,286 ERROR Unsupported type for 1210800 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:37:28,286 ERROR Unsupported type for 1050880 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:37:28,286 ERROR Unsupported type for 1202410 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:37:28,287 ERROR Unsupported type for 1137110 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:37:28,287 ERROR Unsupported type for 1214850 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:37:28,287 ERROR Unsupported type for 1208590 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:37:28,287 ERROR Unsupported type for 973230 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:37:28,288 ERROR Unsupported type for 1024460 : <class 'NoneType'>
+StoreMainFunc 2020-02-18 16:37:31,245 WARNING Unsuccessful request of 1213020
+StoreMainFunc 2020-02-18 16:37:31,283 WARNING Unsuccessful request of 1209190
+StoreMainFunc 2020-02-18 16:37:32,070 WARNING Unsuccessful request of 1211240
+StoreMainFunc 2020-02-18 16:37:32,402 WARNING Unsuccessful request of 1124990
+StoreMainFunc 2020-02-18 16:37:34,971 WARNING Unsuccessful request of 1204740
+StoreMainFunc 2020-02-18 16:37:34,976 WARNING Unsuccessful request of 1212960
+StoreMainFunc 2020-02-18 16:37:34,985 WARNING Unsuccessful request of 995880
+StoreMainFunc 2020-02-18 16:37:35,072 WARNING Unsuccessful request of 1184480
+StoreMainFunc 2020-02-18 16:37:35,259 WARNING Unsuccessful request of 867150
+StoreMainFunc 2020-02-18 16:37:38,400 WARNING Unsuccessful request of 1213220
+StoreCrunchFunc 2020-02-18 16:37:38,402 ERROR Unsupported type for 1213220 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:37:38,402 ERROR Unsupported type for 867150 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:37:38,402 ERROR Unsupported type for 1184480 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:37:38,402 ERROR Unsupported type for 995880 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:37:38,403 ERROR Unsupported type for 1212960 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:37:38,403 ERROR Unsupported type for 1204740 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:37:38,403 ERROR Unsupported type for 1124990 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:37:38,403 ERROR Unsupported type for 1211240 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:37:38,403 ERROR Unsupported type for 1209190 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:37:38,403 ERROR Unsupported type for 1213020 : <class 'NoneType'>
+StoreMainFunc 2020-02-18 16:37:40,427 WARNING Unsuccessful request of 1190990
+StoreMainFunc 2020-02-18 16:37:41,100 WARNING Unsuccessful request of 1205270
+StoreMainFunc 2020-02-18 16:37:42,285 WARNING Unsuccessful request of 1188760
+StoreMainFunc 2020-02-18 16:37:42,521 WARNING Unsuccessful request of 1195020
+StoreMainFunc 2020-02-18 16:37:44,372 WARNING Unsuccessful request of 1213450
+StoreMainFunc 2020-02-18 16:37:45,018 WARNING Unsuccessful request of 961450
+StoreMainFunc 2020-02-18 16:37:45,025 WARNING Unsuccessful request of 1209470
+StoreMainFunc 2020-02-18 16:37:45,031 WARNING Unsuccessful request of 1199180
+StoreMainFunc 2020-02-18 16:37:45,036 WARNING Unsuccessful request of 1209460
+StoreMainFunc 2020-02-18 16:37:45,056 WARNING Unsuccessful request of 1135810
+StoreCrunchFunc 2020-02-18 16:37:45,057 ERROR Unsupported type for 1135810 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:37:45,058 ERROR Unsupported type for 1209460 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:37:45,058 ERROR Unsupported type for 1199180 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:37:45,058 ERROR Unsupported type for 1209470 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:37:45,058 ERROR Unsupported type for 961450 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:37:45,059 ERROR Unsupported type for 1213450 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:37:45,059 ERROR Unsupported type for 1195020 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:37:45,060 ERROR Unsupported type for 1188760 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:37:45,060 ERROR Unsupported type for 1205270 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:37:45,060 ERROR Unsupported type for 1190990 : <class 'NoneType'>
+StoreMainFunc 2020-02-18 16:37:48,824 WARNING Unsuccessful request of 1211640
+StoreMainFunc 2020-02-18 16:37:51,107 WARNING Unsuccessful request of 1176990
+StoreMainFunc 2020-02-18 16:37:51,181 WARNING Unsuccessful request of 1205680
+StoreMainFunc 2020-02-18 16:37:51,830 WARNING Unsuccessful request of 1199324
+StoreMainFunc 2020-02-18 16:37:51,869 WARNING Unsuccessful request of 1156300
+StoreMainFunc 2020-02-18 16:37:51,887 WARNING Unsuccessful request of 1205390
+StoreMainFunc 2020-02-18 16:37:51,895 WARNING Unsuccessful request of 1178830
+StoreMainFunc 2020-02-18 16:37:51,897 WARNING Unsuccessful request of 1199360
+StoreMainFunc 2020-02-18 16:37:51,903 WARNING Unsuccessful request of 1156490
+StoreMainFunc 2020-02-18 16:37:51,904 WARNING Unsuccessful request of 1197390
+StoreCrunchFunc 2020-02-18 16:37:51,907 ERROR Unsupported type for 1197390 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:37:51,907 ERROR Unsupported type for 1156490 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:37:51,908 ERROR Unsupported type for 1199360 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:37:51,908 ERROR Unsupported type for 1178830 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:37:51,909 ERROR Unsupported type for 1205390 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:37:51,909 ERROR Unsupported type for 1156300 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:37:51,910 ERROR Unsupported type for 1199324 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:37:51,910 ERROR Unsupported type for 1205680 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:37:51,911 ERROR Unsupported type for 1176990 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:37:51,911 ERROR Unsupported type for 1211640 : <class 'NoneType'>
+StoreMainFunc 2020-02-18 16:37:55,941 WARNING Unsuccessful request of 964150
+StoreMainFunc 2020-02-18 16:37:56,459 WARNING Unsuccessful request of 1199830
+StoreMainFunc 2020-02-18 16:37:58,657 INFO Successful request of 1203900
+StoreMainFunc 2020-02-18 16:37:58,716 INFO Successful request of 1203930
+StoreMainFunc 2020-02-18 16:37:58,731 INFO Successful request of 1191550
+StoreMainFunc 2020-02-18 16:37:58,738 INFO Successful request of 1191840
+StoreMainFunc 2020-02-18 16:37:58,739 INFO Successful request of 1193470
+StoreMainFunc 2020-02-18 16:37:58,768 INFO Successful request of 1212030
+StoreMainFunc 2020-02-18 16:37:58,797 INFO Successful request of 1152710
+StoreMainFunc 2020-02-18 16:37:58,885 INFO Successful request of 1212180
+StoreCrunchFunc 2020-02-18 16:38:01,700 ERROR Unsupported type for 1199830 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-18 16:38:01,701 ERROR Unsupported type for 964150 : <class 'NoneType'>
+StoreMainFunc 2020-02-18 16:38:05,733 INFO Successful request of 1193871
+StoreMainFunc 2020-02-18 16:38:05,734 INFO Successful request of 1210340
+StoreMainFunc 2020-02-18 16:38:08,670 INFO Successful request of 1210300
+StoreMainFunc 2020-02-18 16:38:08,671 INFO Successful request of 1185340
+StoreMainFunc 2020-02-18 16:38:08,692 INFO Successful request of 1163140
+StoreMainFunc 2020-02-18 16:38:08,705 INFO Successful request of 1199690
+StoreMainFunc 2020-02-18 16:38:08,705 INFO Successful request of 1202780
+StoreMainFunc 2020-02-18 16:38:08,706 INFO Successful request of 1212410
+StoreMainFunc 2020-02-18 16:38:08,710 INFO Successful request of 1207320
+StoreMainFunc 2020-02-18 16:38:11,004 INFO Successful request of 1214320
+StoreMainFunc 2020-02-18 16:38:19,536 INFO Successful request of 1215580
+StoreMainFunc 2020-02-18 16:38:19,777 INFO Successful request of 1212660
+StoreMainFunc 2020-02-18 16:38:20,331 INFO Successful request of 1212580
+StoreMainFunc 2020-02-18 16:38:21,299 INFO Successful request of 1213110
+StoreMainFunc 2020-02-18 16:38:21,688 INFO Successful request of 1202900
+StoreMainFunc 2020-02-18 16:38:21,736 INFO Successful request of 1209580
+StoreMainFunc 2020-02-18 16:38:21,752 INFO Successful request of 1140460
+StoreMainFunc 2020-02-18 16:38:21,758 INFO Successful request of 1066180
+StoreMainFunc 2020-02-18 16:38:22,162 INFO Successful request of 1212020
+StoreMainFunc 2020-02-18 16:38:24,421 INFO Successful request of 1127170
+StoreMainFunc 2020-02-18 16:38:29,347 INFO Successful request of 1215390
+StoreMainFunc 2020-02-18 16:38:29,989 INFO Successful request of 1110930
+StoreMainFunc 2020-02-18 16:38:30,256 INFO Successful request of 1212330
+StoreMainFunc 2020-02-18 16:38:31,591 INFO Successful request of 1200060
+StoreMainFunc 2020-02-18 16:38:34,018 INFO Successful request of 1213390
+StoreMainFunc 2020-02-18 16:38:34,027 INFO Successful request of 1149690
+StoreMainFunc 2020-02-18 16:38:34,079 INFO Successful request of 1205130
+StoreMainFunc 2020-02-18 16:38:34,092 INFO Successful request of 1214520
+StoreMainFunc 2020-02-18 16:38:34,122 INFO Successful request of 1214470
+StoreMainFunc 2020-02-18 16:38:34,162 INFO Successful request of 789920
+StoreMainFunc 2020-02-18 16:38:39,174 INFO Successful request of 1150500
+StoreMainFunc 2020-02-18 16:38:43,507 INFO Successful request of 1207850
+StoreMainFunc 2020-02-18 16:38:43,840 INFO Successful request of 1202540
+StoreMainFunc 2020-02-18 16:38:43,850 INFO Successful request of 1209080
+StoreMainFunc 2020-02-18 16:38:43,855 INFO Successful request of 1078500
+StoreMainFunc 2020-02-18 16:38:45,106 INFO Successful request of 1197620
+StoreMainFunc 2020-02-18 16:38:45,126 INFO Successful request of 1199110
+StoreMainFunc 2020-02-18 16:38:45,159 INFO Successful request of 1215020
+StoreMainFunc 2020-02-18 16:38:45,264 INFO Successful request of 1153060
+StoreMainFunc 2020-02-18 16:38:47,150 INFO Successful request of 1156990
+StoreMainFunc 2020-02-18 16:38:53,674 INFO Successful request of 1167110
+StoreMainFunc 2020-02-18 16:38:54,841 INFO Successful request of 1206910
+StoreMainFunc 2020-02-18 16:38:54,873 INFO Successful request of 1095760
+StoreMainFunc 2020-02-18 16:38:57,391 INFO Successful request of 1146010
+StoreMainFunc 2020-02-18 16:38:57,392 INFO Successful request of 1050170
+StoreMainFunc 2020-02-18 16:38:57,396 INFO Successful request of 1126120
+StoreMainFunc 2020-02-18 16:38:57,404 INFO Successful request of 1171540
+StoreMainFunc 2020-02-18 16:38:57,436 INFO Successful request of 1209000
+StoreMainFunc 2020-02-18 16:38:57,446 INFO Successful request of 817840
+StoreMainFunc 2020-02-18 16:38:57,473 INFO Successful request of 1212040
+StoreMainFunc 2020-02-18 16:39:04,589 INFO Successful request of 1031650
+StoreMainFunc 2020-02-18 16:39:04,692 INFO Successful request of 1215870
+StoreMainFunc 2020-02-18 16:39:09,099 INFO Successful request of 1209650
+StoreMainFunc 2020-02-18 16:39:09,112 INFO Successful request of 1215770
+StoreMainFunc 2020-02-18 16:39:09,141 INFO Successful request of 1216270
+StoreMainFunc 2020-02-18 16:39:09,166 INFO Successful request of 1216990
+StoreMainFunc 2020-02-18 16:39:09,171 INFO Successful request of 951570
+StoreMainFunc 2020-02-18 16:39:09,278 INFO Successful request of 1211830
+StoreMainFunc 2020-02-18 16:39:09,279 INFO Successful request of 1216490
+StoreMainFunc 2020-02-18 16:39:09,290 INFO Successful request of 1068830
+StoreMainFunc 2020-02-18 16:39:15,138 INFO Successful request of 1218400
+StoreMainFunc 2020-02-18 16:39:15,414 INFO Successful request of 1223530
+StoreMainFunc 2020-02-18 16:39:16,351 INFO Successful request of 1178300
+StoreMainFunc 2020-02-18 16:39:19,002 INFO Successful request of 1223850
+StoreMainFunc 2020-02-18 16:39:19,010 INFO Successful request of 1175360
+StoreMainFunc 2020-02-18 16:39:19,017 INFO Successful request of 1212370
+StoreMainFunc 2020-02-18 16:39:19,025 INFO Successful request of 1223350
+StoreMainFunc 2020-02-18 16:39:19,035 INFO Successful request of 1144400
+StoreMainFunc 2020-02-18 16:39:19,046 INFO Successful request of 1223440
+StoreMainFunc 2020-02-18 16:39:19,088 INFO Successful request of 1149450
+StoreMainFunc 2020-02-18 16:39:24,547 INFO Successful request of 1230790
+StoreMainFunc 2020-02-18 16:39:24,658 INFO Successful request of 1168850
+StoreMainFunc 2020-02-18 16:39:25,462 INFO Successful request of 1177580
+StoreMainFunc 2020-02-18 16:39:26,040 INFO Successful request of 1183220
+StoreMainFunc 2020-02-18 16:39:26,060 INFO Successful request of 1225210
+StoreMainFunc 2020-02-18 16:39:28,595 INFO Successful request of 1212500
+StoreMainFunc 2020-02-18 16:39:28,696 INFO Successful request of 1172950
+StoreMainFunc 2020-02-18 16:39:28,700 INFO Successful request of 993770
+StoreMainFunc 2020-02-18 16:39:28,713 INFO Successful request of 1227250
+StoreMainFunc 2020-02-18 16:39:28,716 INFO Successful request of 1202430
+StoreMainFunc 2020-02-18 16:39:36,102 INFO Successful request of 1131410
+StoreMainFunc 2020-02-18 16:39:36,112 INFO Successful request of 1234280
+StoreMainFunc 2020-02-18 16:39:42,302 INFO Successful request of 1194480
+StoreMainFunc 2020-02-18 16:39:42,320 INFO Successful request of 1175540
+StoreMainFunc 2020-02-18 16:39:42,500 INFO Successful request of 1225070
+StoreMainFunc 2020-02-18 16:39:42,659 INFO Successful request of 1231710
+StoreMainFunc 2020-02-18 16:39:42,803 INFO Successful request of 1225610
+StoreMainFunc 2020-02-18 16:39:42,811 INFO Successful request of 1214330
+StoreMainFunc 2020-02-18 16:39:42,846 INFO Successful request of 1204580
+StoreMainFunc 2020-02-18 16:39:43,354 INFO Successful request of 1241950
+StoreMainFunc 2020-02-18 16:39:49,521 INFO Successful request of 1144200
+StoreMainFunc 2020-02-18 16:39:53,197 INFO Successful request of 1160600
+StoreMainFunc 2020-02-18 16:39:53,219 INFO Successful request of 1241510
+StoreMainFunc 2020-02-18 16:39:53,220 INFO Successful request of 842660
+StoreMainFunc 2020-02-18 16:39:53,222 INFO Successful request of 1234850
+StoreMainFunc 2020-02-18 16:39:53,227 INFO Successful request of 1234340
+StoreMainFunc 2020-02-18 16:39:53,233 INFO Successful request of 1237410
+StoreMainFunc 2020-02-18 16:39:53,237 INFO Successful request of 1231740
+StoreMainFunc 2020-02-18 16:39:53,257 INFO Successful request of 1234820
+StoreMainFunc 2020-02-18 16:39:54,121 INFO Successful request of 1239920
+StoreMainFunc 2020-02-18 16:39:59,753 INFO Successful request of 1239970
+StoreMainFunc 2020-02-18 16:40:00,523 INFO Successful request of 1241020
+StoreMainFunc 2020-02-18 16:40:01,550 INFO Successful request of 1245630
+StoreMainFunc 2020-02-18 16:40:01,941 INFO Successful request of 1239990
+StoreMainFunc 2020-02-18 16:40:04,556 INFO Successful request of 1241500
+StoreMainFunc 2020-02-18 16:40:04,568 INFO Successful request of 1227200
+StoreMainFunc 2020-02-18 16:40:04,570 INFO Successful request of 1243060
+StoreMainFunc 2020-02-18 16:40:04,579 INFO Successful request of 944050
+StoreMainFunc 2020-02-18 16:40:04,580 INFO Successful request of 1210770
+StoreMainFunc 2020-02-18 16:40:04,585 INFO Successful request of 1245090
+StoreMainFunc 2020-02-18 16:40:18,893 INFO Successful request of 807900
+StoreMainFunc 2020-02-18 16:40:19,119 INFO Successful request of 1235910
+StoreMainFunc 2020-02-18 16:40:19,246 INFO Successful request of 1016790
+StoreMainFunc 2020-02-18 16:40:19,406 INFO Successful request of 1161670
+StoreMainFunc 2020-02-18 16:40:19,443 INFO Successful request of 1239000
+StoreMainFunc 2020-02-18 16:40:19,457 INFO Successful request of 1224120
+StoreMainFunc 2020-02-18 16:40:19,463 INFO Successful request of 1237460
+StoreMainFunc 2020-02-18 16:40:19,478 INFO Successful request of 1202660
+StoreMainFunc 2020-02-18 16:40:21,222 INFO Successful request of 1241920
+StoreMainFunc 2020-02-18 16:40:22,744 INFO Successful request of 944080
+StoreMainFunc 2020-02-18 16:40:28,903 INFO Successful request of 1241590
+StoreMainFunc 2020-02-18 16:40:29,867 INFO Successful request of 1189871
+StoreMainFunc 2020-02-18 16:40:32,556 WARNING Unsuccessful request of 1240560
+StoreMainFunc 2020-02-18 16:40:32,731 INFO Successful request of 1241580
+StoreMainFunc 2020-02-18 16:40:32,743 INFO Successful request of 858600
+StoreMainFunc 2020-02-18 16:40:32,755 INFO Successful request of 1242620
+StoreMainFunc 2020-02-18 16:40:32,763 INFO Successful request of 1189870
+StoreMainFunc 2020-02-18 16:40:33,555 INFO Successful request of 1231840
+StoreCrunchFunc 2020-02-18 16:40:34,851 WARNING 
+										Found non registered req in 1241580 
+										while parsing pc_requirements at level minimum : Storage (high-quality audio)
+						  				
+StoreCrunchFunc 2020-02-18 16:40:35,120 WARNING 
+							Found non registered key in 1240560 : 1240560
+							
+StoreCrunchFunc 2020-02-18 16:40:35,120 ERROR Necessary key type not found for 1240560
+StoreCrunchFunc 2020-02-18 16:40:35,120 ERROR Necessary key name not found for 1240560
+StoreCrunchFunc 2020-02-18 16:40:35,120 ERROR Necessary key is_free not found for 1240560
+StoreCrunchFunc 2020-02-18 16:40:35,120 ERROR Necessary key release_date not found for 1240560
+StoreCrunchFunc 2020-02-18 16:40:35,120 WARNING KeyError for pc_requirements in 1240560
+StoreCrunchFunc 2020-02-18 16:40:35,121 WARNING KeyError for mac_requirements in 1240560
+StoreCrunchFunc 2020-02-18 16:40:35,121 WARNING KeyError for linux_requirements in 1240560
+StoreMainFunc 2020-02-18 16:40:35,848 INFO Launched products : ['1240560', '1241500', '1202780', '1241950', '1207850', '1144400']
+StoreMainFunc 2020-02-24 13:28:21,311 INFO 
+                New products: []
+                
+StoreMainFunc 2020-02-24 13:30:01,284 INFO Successful request of 1186200
+StoreMainFunc 2020-02-24 13:30:02,519 INFO Successful request of 1116260
+StoreMainFunc 2020-02-24 13:30:02,956 INFO Successful request of 1192960
+StoreMainFunc 2020-02-24 13:30:03,504 INFO Successful request of 1189800
+StoreMainFunc 2020-02-24 13:30:06,273 INFO Successful request of 1188870
+StoreMainFunc 2020-02-24 13:30:06,288 INFO Successful request of 852890
+StoreMainFunc 2020-02-24 13:30:06,288 INFO Successful request of 1149500
+StoreMainFunc 2020-02-24 13:30:06,320 INFO Successful request of 1188850
+StoreMainFunc 2020-02-24 13:30:06,320 INFO Successful request of 1183350
+StoreMainFunc 2020-02-24 13:30:09,183 INFO Successful request of 1177110
+StoreMainFunc 2020-02-24 13:30:13,013 INFO Successful request of 1182280
+StoreMainFunc 2020-02-24 13:30:15,530 INFO Successful request of 495420
+StoreMainFunc 2020-02-24 13:30:17,530 INFO Successful request of 1189060
+StoreMainFunc 2020-02-24 13:30:17,577 INFO Successful request of 1194190
+StoreMainFunc 2020-02-24 13:30:17,640 INFO Successful request of 1160770
+StoreMainFunc 2020-02-24 13:30:17,640 INFO Successful request of 1194290
+StoreMainFunc 2020-02-24 13:30:17,687 INFO Successful request of 1162650
+StoreMainFunc 2020-02-24 13:30:17,718 INFO Successful request of 1163040
+StoreMainFunc 2020-02-24 13:30:17,733 INFO Successful request of 1185810
+StoreMainFunc 2020-02-24 13:30:18,703 INFO Successful request of 1178250
+StoreMainFunc 2020-02-24 13:30:22,098 INFO Successful request of 1199170
+StoreMainFunc 2020-02-24 13:30:24,854 INFO Successful request of 395830
+StoreMainFunc 2020-02-24 13:30:24,900 INFO Successful request of 1180210
+StoreMainFunc 2020-02-24 13:30:25,275 INFO Successful request of 1074190
+StoreMainFunc 2020-02-24 13:30:27,215 INFO Successful request of 1203780
+StoreMainFunc 2020-02-24 13:30:27,230 INFO Successful request of 1202790
+StoreMainFunc 2020-02-24 13:30:27,261 INFO Successful request of 1177170
+StoreMainFunc 2020-02-24 13:30:27,261 INFO Successful request of 1195090
+StoreMainFunc 2020-02-24 13:30:27,261 INFO Successful request of 1177650
+StoreMainFunc 2020-02-24 13:30:27,261 INFO Successful request of 1206280
+StoreMainFunc 2020-02-24 13:30:31,078 INFO Successful request of 1196230
+StoreMainFunc 2020-02-24 13:30:33,125 INFO Successful request of 1187940
+StoreMainFunc 2020-02-24 13:30:35,926 INFO Successful request of 1118240
+StoreMainFunc 2020-02-24 13:30:35,926 INFO Successful request of 1132230
+StoreMainFunc 2020-02-24 13:30:35,942 INFO Successful request of 979640
+StoreMainFunc 2020-02-24 13:30:35,957 INFO Successful request of 1199200
+StoreMainFunc 2020-02-24 13:30:35,973 INFO Successful request of 1179790
+StoreMainFunc 2020-02-24 13:30:35,973 INFO Successful request of 1147110
+StoreMainFunc 2020-02-24 13:30:35,973 INFO Successful request of 1212430
+StoreMainFunc 2020-02-24 13:30:35,989 INFO Successful request of 1132220
+StoreMainFunc 2020-02-24 13:30:40,022 INFO Successful request of 1204440
+StoreMainFunc 2020-02-24 13:30:40,426 INFO Successful request of 1212510
+StoreMainFunc 2020-02-24 13:30:45,155 INFO Successful request of 1202410
+StoreMainFunc 2020-02-24 13:30:45,155 INFO Successful request of 1212630
+StoreMainFunc 2020-02-24 13:30:45,171 INFO Successful request of 1050880
+StoreMainFunc 2020-02-24 13:30:45,171 INFO Successful request of 1208590
+StoreMainFunc 2020-02-24 13:30:45,186 INFO Successful request of 1208510
+StoreMainFunc 2020-02-24 13:30:45,186 INFO Successful request of 1210620
+StoreMainFunc 2020-02-24 13:30:45,202 INFO Successful request of 1212840
+StoreMainFunc 2020-02-24 13:30:45,202 INFO Successful request of 1214850
+StoreMainFunc 2020-02-24 13:30:51,902 INFO Successful request of 1204740
+StoreMainFunc 2020-02-24 13:30:52,355 INFO Successful request of 1137110
+StoreMainFunc 2020-02-24 13:30:55,795 INFO Successful request of 1124990
+StoreMainFunc 2020-02-24 13:30:56,717 INFO Successful request of 995880
+StoreMainFunc 2020-02-24 13:30:56,717 INFO Successful request of 973230
+StoreMainFunc 2020-02-24 13:30:56,732 INFO Successful request of 1024460
+StoreMainFunc 2020-02-24 13:30:56,732 INFO Successful request of 1210800
+StoreMainFunc 2020-02-24 13:30:56,732 INFO Successful request of 1213020
+StoreMainFunc 2020-02-24 13:30:56,748 INFO Successful request of 1212960
+StoreMainFunc 2020-02-24 13:30:56,748 INFO Successful request of 1212850
+StoreMainFunc 2020-02-24 13:31:01,085 INFO Successful request of 1184480
+StoreMainFunc 2020-02-24 13:31:01,085 INFO Successful request of 1209190
+StoreMainFunc 2020-02-24 13:31:01,726 INFO Successful request of 1211240
+StoreMainFunc 2020-02-24 13:31:05,527 INFO Successful request of 1188760
+StoreMainFunc 2020-02-24 13:31:05,558 INFO Successful request of 867150
+StoreMainFunc 2020-02-24 13:31:05,574 INFO Successful request of 1213220
+StoreMainFunc 2020-02-24 13:31:05,709 INFO Successful request of 1213450
+StoreMainFunc 2020-02-24 13:31:05,740 INFO Successful request of 1205270
+StoreMainFunc 2020-02-24 13:31:05,740 INFO Successful request of 961450
+StoreMainFunc 2020-02-24 13:31:05,740 INFO Successful request of 1195020
+StoreMainFunc 2020-02-24 13:31:10,078 INFO Successful request of 1135810
+StoreMainFunc 2020-02-24 13:31:11,778 INFO Successful request of 1211640
+StoreMainFunc 2020-02-24 13:31:11,825 INFO Successful request of 1205390
+StoreMainFunc 2020-02-24 13:31:14,359 INFO Successful request of 1199324
+StoreMainFunc 2020-02-24 13:31:14,391 INFO Successful request of 1199360
+StoreMainFunc 2020-02-24 13:31:14,391 INFO Successful request of 1190990
+StoreMainFunc 2020-02-24 13:31:14,391 INFO Successful request of 1178830
+StoreMainFunc 2020-02-24 13:31:14,406 INFO Successful request of 1199180
+StoreMainFunc 2020-02-24 13:31:14,422 INFO Successful request of 1209470
+StoreMainFunc 2020-02-24 13:31:17,397 INFO Successful request of 1209460
+StoreMainFunc 2020-02-24 13:31:20,872 INFO Successful request of 1156300
+StoreMainFunc 2020-02-24 13:31:21,247 INFO Successful request of 1197390
+StoreMainFunc 2020-02-24 13:31:21,278 INFO Successful request of 964150
+StoreMainFunc 2020-02-24 13:31:24,765 INFO Successful request of 1205680
+StoreMainFunc 2020-02-24 13:31:25,657 INFO Successful request of 1176990
+StoreMainFunc 2020-02-24 13:31:25,766 INFO Successful request of 1191550
+StoreMainFunc 2020-02-24 13:31:25,813 INFO Successful request of 1193470
+StoreMainFunc 2020-02-24 13:31:25,829 INFO Successful request of 1152710
+StoreMainFunc 2020-02-24 13:31:25,829 INFO Successful request of 1212030
+StoreMainFunc 2020-02-24 13:31:26,907 INFO Successful request of 1156490
+StoreMainFunc 2020-02-24 13:31:31,057 INFO Successful request of 1203900
+StoreMainFunc 2020-02-24 13:31:32,150 INFO Successful request of 1210300
+StoreMainFunc 2020-02-24 13:31:32,744 INFO Successful request of 1193871
+StoreMainFunc 2020-02-24 13:31:33,025 INFO Successful request of 1203930
+StoreMainFunc 2020-02-24 13:31:33,479 INFO Successful request of 1210340
+StoreMainFunc 2020-02-24 13:31:35,733 INFO Successful request of 1214320
+StoreMainFunc 2020-02-24 13:31:35,733 INFO Successful request of 1163140
+StoreMainFunc 2020-02-24 13:31:35,749 INFO Successful request of 1199830
+StoreMainFunc 2020-02-24 13:31:35,749 INFO Successful request of 1191840
+StoreMainFunc 2020-02-24 13:31:35,749 INFO Successful request of 1212180
+StoreMainFunc 2020-02-24 13:31:39,933 INFO Successful request of 1209580
+StoreMainFunc 2020-02-24 13:31:44,727 INFO Successful request of 1199690
+StoreMainFunc 2020-02-24 13:31:44,727 INFO Successful request of 1212410
+StoreMainFunc 2020-02-24 13:31:44,774 INFO Successful request of 1215580
+StoreMainFunc 2020-02-24 13:31:44,774 INFO Successful request of 1185340
+StoreMainFunc 2020-02-24 13:31:44,805 INFO Successful request of 1207320
+StoreMainFunc 2020-02-24 13:31:44,852 INFO Successful request of 1202900
+StoreMainFunc 2020-02-24 13:31:44,867 INFO Successful request of 1213110
+StoreMainFunc 2020-02-24 13:31:44,930 INFO Successful request of 1212020
+StoreMainFunc 2020-02-24 13:31:44,977 INFO Successful request of 1212580
+StoreMainFunc 2020-02-24 13:31:48,757 INFO Successful request of 1066180
+StoreMainFunc 2020-02-24 13:31:48,944 INFO Successful request of 1140460
+StoreMainFunc 2020-02-24 13:31:48,960 INFO Successful request of 1212660
+StoreMainFunc 2020-02-24 13:31:52,216 INFO Successful request of 1215390
+StoreMainFunc 2020-02-24 13:31:52,278 INFO Successful request of 1149690
+StoreMainFunc 2020-02-24 13:31:52,341 INFO Successful request of 1127170
+StoreMainFunc 2020-02-24 13:31:53,497 INFO Successful request of 1212330
+StoreMainFunc 2020-02-24 13:31:53,528 INFO Successful request of 1200060
+StoreMainFunc 2020-02-24 13:31:53,544 INFO Successful request of 1213390
+StoreMainFunc 2020-02-24 13:31:53,544 INFO Successful request of 789920
+StoreMainFunc 2020-02-24 13:32:02,702 INFO Successful request of 1156990
+StoreMainFunc 2020-02-24 13:32:02,718 INFO Successful request of 1110930
+StoreMainFunc 2020-02-24 13:32:02,718 INFO Successful request of 1153060
+StoreMainFunc 2020-02-24 13:32:02,718 INFO Successful request of 1209080
+StoreMainFunc 2020-02-24 13:32:02,718 INFO Successful request of 1197620
+StoreMainFunc 2020-02-24 13:32:02,718 INFO Successful request of 1205130
+StoreMainFunc 2020-02-24 13:32:02,827 INFO Successful request of 1214520
+StoreMainFunc 2020-02-24 13:32:02,843 INFO Successful request of 1078500
+StoreMainFunc 2020-02-24 13:32:02,843 INFO Successful request of 1214470
+StoreMainFunc 2020-02-24 13:32:03,108 INFO Successful request of 1202540
+StoreMainFunc 2020-02-24 13:32:10,180 INFO Successful request of 1150500
+StoreMainFunc 2020-02-24 13:32:10,273 INFO Successful request of 817840
+StoreMainFunc 2020-02-24 13:32:10,743 INFO Successful request of 1212040
+StoreMainFunc 2020-02-24 13:32:12,384 INFO Successful request of 1199110
+StoreMainFunc 2020-02-24 13:32:12,525 INFO Successful request of 1215020
+StoreMainFunc 2020-02-24 13:32:12,634 INFO Successful request of 1171540
+StoreMainFunc 2020-02-24 13:32:12,728 INFO Successful request of 1050170
+StoreMainFunc 2020-02-24 13:32:12,743 INFO Successful request of 1146010
+StoreMainFunc 2020-02-24 13:32:12,822 INFO Successful request of 1206910
+StoreMainFunc 2020-02-24 13:32:15,967 INFO Successful request of 1095760
+StoreMainFunc 2020-02-24 13:32:20,817 INFO Successful request of 1209650
+StoreMainFunc 2020-02-24 13:32:20,849 INFO Successful request of 1068830
+StoreMainFunc 2020-02-24 13:32:22,656 INFO Successful request of 951570
+StoreMainFunc 2020-02-24 13:32:22,787 INFO Successful request of 1126120
+StoreMainFunc 2020-02-24 13:32:22,826 INFO Successful request of 1215770
+StoreMainFunc 2020-02-24 13:32:25,300 INFO Successful request of 1209000
+StoreMainFunc 2020-02-24 13:32:25,346 INFO Successful request of 1167110
+StoreMainFunc 2020-02-24 13:32:25,362 INFO Successful request of 1215870
+StoreMainFunc 2020-02-24 13:32:25,362 INFO Successful request of 1216490
+StoreMainFunc 2020-02-24 13:32:25,378 INFO Successful request of 1211830
+StoreMainFunc 2020-02-24 13:32:28,788 INFO Successful request of 1223530
+StoreMainFunc 2020-02-24 13:32:28,960 INFO Successful request of 1223350
+StoreMainFunc 2020-02-24 13:32:28,991 INFO Successful request of 1149450
+StoreMainFunc 2020-02-24 13:32:29,053 INFO Successful request of 1216270
+StoreMainFunc 2020-02-24 13:32:33,799 INFO Successful request of 1178300
+StoreMainFunc 2020-02-24 13:32:33,799 INFO Successful request of 1175360
+StoreMainFunc 2020-02-24 13:32:33,815 INFO Successful request of 1031650
+StoreMainFunc 2020-02-24 13:32:33,815 INFO Successful request of 1223850
+StoreMainFunc 2020-02-24 13:32:33,815 INFO Successful request of 1216990
+StoreMainFunc 2020-02-24 13:32:33,846 INFO Successful request of 1223440
+StoreMainFunc 2020-02-24 13:32:48,589 INFO Successful request of 1225210
+StoreMainFunc 2020-02-24 13:32:48,652 INFO Successful request of 1202430
+StoreMainFunc 2020-02-24 13:32:48,683 INFO Successful request of 1230790
+StoreMainFunc 2020-02-24 13:32:48,698 INFO Successful request of 1218400
+StoreMainFunc 2020-02-24 13:32:48,730 INFO Successful request of 1177580
+StoreMainFunc 2020-02-24 13:32:48,730 INFO Successful request of 1212370
+StoreMainFunc 2020-02-24 13:32:48,761 INFO Successful request of 1168850
+StoreMainFunc 2020-02-24 13:32:48,778 INFO Successful request of 1212500
+StoreMainFunc 2020-02-24 13:32:48,778 INFO Successful request of 1172950
+StoreMainFunc 2020-02-24 13:32:48,794 INFO Successful request of 1227250
+StoreMainFunc 2020-02-24 13:33:01,125 INFO Successful request of 1183220
+StoreMainFunc 2020-02-24 13:33:02,713 INFO Successful request of 1225610
+StoreMainFunc 2020-02-24 13:33:03,013 INFO Successful request of 1194480
+StoreMainFunc 2020-02-24 13:33:03,029 INFO Successful request of 1231710
+StoreMainFunc 2020-02-24 13:33:05,616 INFO Successful request of 993770
+StoreMainFunc 2020-02-24 13:33:05,632 INFO Successful request of 1175540
+StoreMainFunc 2020-02-24 13:33:05,663 INFO Successful request of 1204580
+StoreMainFunc 2020-02-24 13:33:05,684 INFO Successful request of 1225070
+StoreMainFunc 2020-02-24 13:33:05,731 INFO Successful request of 1234280
+StoreMainFunc 2020-02-24 13:33:05,816 INFO Successful request of 1214330
+StoreMainFunc 2020-02-24 13:33:09,487 INFO Successful request of 1237410
+StoreMainFunc 2020-02-24 13:33:09,674 INFO Successful request of 1241510
+StoreMainFunc 2020-02-24 13:33:11,661 INFO Successful request of 1144200
+StoreMainFunc 2020-02-24 13:33:14,134 INFO Successful request of 1131410
+StoreMainFunc 2020-02-24 13:33:14,181 INFO Successful request of 1239920
+StoreMainFunc 2020-02-24 13:33:14,212 INFO Successful request of 1231740
+StoreMainFunc 2020-02-24 13:33:14,306 INFO Successful request of 1234820
+StoreMainFunc 2020-02-24 13:33:14,337 INFO Successful request of 1160600
+StoreMainFunc 2020-02-24 13:33:14,353 INFO Successful request of 842660
+StoreMainFunc 2020-02-24 13:33:14,431 INFO Successful request of 1234340
+StoreMainFunc 2020-02-24 13:33:19,121 INFO Successful request of 1239970
+StoreMainFunc 2020-02-24 13:33:20,780 INFO Successful request of 1234850
+StoreMainFunc 2020-02-24 13:33:21,655 INFO Successful request of 944050
+StoreMainFunc 2020-02-24 13:33:23,639 INFO Successful request of 1245630
+StoreMainFunc 2020-02-24 13:33:23,655 INFO Successful request of 1243060
+StoreMainFunc 2020-02-24 13:33:23,671 INFO Successful request of 1241020
+StoreMainFunc 2020-02-24 13:33:23,671 INFO Successful request of 1239990
+StoreMainFunc 2020-02-24 13:33:23,686 INFO Successful request of 1210770
+StoreMainFunc 2020-02-24 13:33:23,686 INFO Successful request of 1227200
+StoreMainFunc 2020-02-24 13:33:23,702 INFO Successful request of 1245090
+StoreMainFunc 2020-02-24 13:33:32,707 WARNING Unsuccessful request of 1161670
+StoreMainFunc 2020-02-24 13:33:32,722 WARNING Unsuccessful request of 1202660
+StoreMainFunc 2020-02-24 13:33:32,738 WARNING Unsuccessful request of 1235910
+StoreMainFunc 2020-02-24 13:33:32,753 WARNING Unsuccessful request of 1241920
+StoreMainFunc 2020-02-24 13:33:32,753 WARNING Unsuccessful request of 1239000
+StoreMainFunc 2020-02-24 13:33:32,753 WARNING Unsuccessful request of 807900
+StoreMainFunc 2020-02-24 13:33:32,769 WARNING Unsuccessful request of 1224120
+StoreMainFunc 2020-02-24 13:33:32,769 WARNING Unsuccessful request of 944080
+StoreMainFunc 2020-02-24 13:33:32,769 WARNING Unsuccessful request of 1237460
+StoreMainFunc 2020-02-24 13:33:32,769 WARNING Unsuccessful request of 1016790
+StoreCrunchFunc 2020-02-24 13:33:32,769 ERROR Unsupported type for 1016790 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-24 13:33:32,769 ERROR Unsupported type for 1237460 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-24 13:33:32,769 ERROR Unsupported type for 944080 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-24 13:33:32,769 ERROR Unsupported type for 1224120 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-24 13:33:32,769 ERROR Unsupported type for 807900 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-24 13:33:32,769 ERROR Unsupported type for 1239000 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-24 13:33:32,769 ERROR Unsupported type for 1241920 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-24 13:33:32,769 ERROR Unsupported type for 1235910 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-24 13:33:32,769 ERROR Unsupported type for 1202660 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-24 13:33:32,769 ERROR Unsupported type for 1161670 : <class 'NoneType'>
+StoreMainFunc 2020-02-24 13:33:34,506 WARNING Unsuccessful request of 1231840
+StoreMainFunc 2020-02-24 13:33:36,776 WARNING Unsuccessful request of 1241580
+StoreMainFunc 2020-02-24 13:33:36,776 WARNING Unsuccessful request of 858600
+StoreMainFunc 2020-02-24 13:33:39,374 WARNING Unsuccessful request of 1242620
+StoreMainFunc 2020-02-24 13:33:39,405 WARNING Unsuccessful request of 1189871
+StoreMainFunc 2020-02-24 13:33:39,452 WARNING Unsuccessful request of 1189870
+StoreMainFunc 2020-02-24 13:33:39,452 WARNING Unsuccessful request of 1241590
+StoreCrunchFunc 2020-02-24 13:33:39,452 ERROR Unsupported type for 1241590 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-24 13:33:39,452 ERROR Unsupported type for 1189870 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-24 13:33:39,452 ERROR Unsupported type for 1189871 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-24 13:33:39,452 ERROR Unsupported type for 1242620 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-24 13:33:39,452 ERROR Unsupported type for 858600 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-24 13:33:39,452 ERROR Unsupported type for 1241580 : <class 'NoneType'>
+StoreCrunchFunc 2020-02-24 13:33:39,452 ERROR Unsupported type for 1231840 : <class 'NoneType'>
+StoreMainFunc 2020-02-24 13:33:39,467 INFO Launched products : ['1202790', '1195020', '1227200', '1185340', '1212630', '1160600', '1210620', '1156300', '1231710', '1227250', '1237410', '1245090', '944050', '842660', '1243060', '1239990', '1137110', '1234340', '1239920', '1245630', '1231740', '1209190', '1203780', '1204580', '1241020']

@@ -16,9 +16,66 @@ const APIKEY = process.env.STEAM_PERSONAL_APIKEY;
 
 
 
+//Multipliers
+router.post('/multiply',function(req,res){
+    User.findOne({steamid: req.body.steamid}, function(err, user){
+        if(err){
+            res.send({message: 'There was an error and your multiplier was not applied'})
+        }
+        else if(user.multipliers.length === 0){
+            res.send({message: "Multiplier not found"})
+        }
+        else{
+            for(let i = 0; i<user.multipliers.length; i++){
+                console.log(user.multipliers[i]);
+               if(user.multipliers[i] === req.body.multiplier){
+                   user.multipliers.splice(i,1);
+                   if(user.jackpots.length === 0){
+                       res.send({message: `Jackpot not found, could not use multiplier`})
+                   }
+                   for(let j = 0; j<user.jackpots.length; j++){
+                       if(user.jackpots[j].jackpot_id === req.body.jackpot_id){
+                           user.jackpots[j].multipliers.push(req.body.multiplier);
+                           user.jackpots[j].score = firstClassEvents(req.body.multiplier, user.jackpots[j].score);
+                           user.markModified('multipliers');
+                           user.markModified('jackpots');
+                           user.save().then(() => {
+                               res.send(
+                                   {message: `A ${req.body.multiplier} multiplier has been applied to the jackpot ${req.body.jackpot_id}`}
+                                   )
+                           });
+                           break;
+                       }
+                       else if((j === user.jackpots.length - 1)
+                           && (user.jackpots[j].jackpot_id !== req.body.jackpod_id)){
+                           res.send({message: `Jackpot not found, could not use multiplier`});
+                       }
+                   }
+                   break;
+               }
+               else if((i === user.multipliers.length - 1) && (user.multipliers[i] !== req.body.multiplier)){
+                   res.send({message: `Multiplier not found`});
+               }
+            }
+        }
+    })
+});
+
+function firstClassEvents(event_class, score){
+    event_dict = {
+        'E01': modifyE01
+    };
+    return event_dict[event_class](score);
+}
+
+function modifyE01(score){
+    return 1.5*score;
+}
+
+
+
 //Game call
-router.post('/callGame', function(req,res){
-    console.log(req.user.user.steamid);
+router.post('/call_game', function(req,res){
     const features_dict = {
         J01: ["al", "s"]
     };
@@ -32,7 +89,7 @@ router.post('/callGame', function(req,res){
                        createGameplay(req,steam_response[1],res);
                    }
                    else if(steam_response[0] === 1){
-                       strikeUser(req,res);
+                       strikeUser(req,generateStrikeCall,handleStrikeCall,res);
                    }
                    else{
                        banUser(req,res);
@@ -71,7 +128,7 @@ function buildURL(steamid){
 function requestOwned(req,callback){
     let status = 1;
     let playtime = 0;
-    request(buildURL(req.user.user.steamid),{json: true}, (err,steam_res) => {
+    request(buildURL(req.body.steamid),{json: true}, (err,steam_res) => {
         if((steam_res.statusCode === 200) && (steam_res.body.response.games !== undefined)){
             for(game of steam_res.body.response.games){
                 if(game.appid == req.body.appid){
@@ -101,11 +158,11 @@ function createGameplay(req,playtime,res){
         lin_gameplay: [],
         register_date: new Date()
     };
-    User.findOne({steamid: req.user.user.steamid},function(err,user){
+    User.findOne({steamid: req.body.steamid},function(err,user){
         if(!err){
             checkRepeated(req,user,function(rep_flag){
                 if(!rep_flag){
-                    User.findOneAndUpdate({"steamid": req.user.user.steamid},{$push: {monitored: register}},function(err,user){
+                    User.findOneAndUpdate({"steamid": req.body.steamid},{$push: {monitored: register}},function(err,user){
                         if(err){
                             console.log(err);
                         }
@@ -113,14 +170,14 @@ function createGameplay(req,playtime,res){
                             console.log("Game registered for user")
                         }
                     });
-                    Game.findOneAndUpdate({appid: req.body.appid},{$push: {players: req.user.user.steamid}},function(err,game){
+                    Game.findOneAndUpdate({appid: req.body.appid},{$push: {players: req.body.steamid}},function(err,game){
                         if(!err){
                             for(let jackpot of user.jackpots){
                                 if((jackpot.jackpot_id === req.body.jackpot_id) && (jackpot.status !== 'k')){
-                                    console.log(game.score);
-                                    const new_score = jackpot.score + getScore(req,game,user,jackpot,playtime);
+                                    const new_score = Number(jackpot.score) + getScore(req,game,user,jackpot,playtime);
+                                    console.log(new_score);
                                     User.findOneAndUpdate(
-                                        {"steamid": req.user.user.steamid,"jackpots.jackpot_id": jackpot.jackpot_id},
+                                        {"steamid": req.body.steamid,"jackpots.jackpot_id": jackpot.jackpot_id},
                                         {"$set": {"jackpots.$.status":  "a", "jackpots.$.score": new_score.toString()}},
                                         function(err,user){
                                             if(err){
@@ -178,7 +235,7 @@ function getScore(req,game,user,jackpot,playtime){
 
 //Game call: Score J01 class function
 function scoreJ01(game,user,jackpot,playtime){
-    return game.score * Math.pow(game.players.length,-0.25) * Math.pow(Math.E,-playtime/120);
+    return Number(game.score) * Math.pow(game.players.length+1,-0.25) * Math.pow(Math.E,-playtime/120);
 }
 
 
@@ -194,7 +251,7 @@ function banUser(req,res){
         ban_doc: 'B02.txt'
     };
     User.findOneAndUpdate(
-        {"steamid": req.user.user.steamid, "jackpots.jackpot_id": req.body.jackpot_id},
+        {"steamid": req.body.steamid, "jackpots.jackpot_id": req.body.jackpot_id},
         {$set: {"current_strikes": 0, "banned": true, "jackpots.$.status": 'k'}, $push: {"bans": register}},
         function(err,user){
             if(err){
@@ -207,36 +264,39 @@ function banUser(req,res){
 
 
 ////Game call: Striking user
-function strikeUser(req,res){
+function strikeUser(req,generateStrike,handleStrike,res){
     console.log("Striking user");
-    genStrike(req,function(strike_tuple){
+    generateStrike(req,function(strike_tuple){
         User.findOneAndUpdate(
-            {"steamid": req.user.user.steamid, "jackpots.jackpot_id": req.body.jackpot_id},
+            {"steamid": req.body.steamid, "jackpots.jackpot_id": req.body.jackpot_id},
             {$push: {"strikes": strike_tuple[0]}, $set: {current_strikes: strike_tuple[1],"jackpots.$.status": 'k'}},
             function(err,user){
                 if(err) {
                     console.log(err);
                     res.redirect('./current');
                 }
+                else if(user.current_strikes >= 2) {
+                    banUser(req, res);
+                }
                 else{
-                    if(user.current_strikes >= 3){
-                        banUser(req,res);
-                    }
-                    else{
-                        console.log('Returning to current');
-                        res.redirect('./current')
-                    }
+                    console.log('Returning to current');
+                    handleStrike(req,res);
                 }
             })
     });
+}
 
+
+////Game call: Handle strike
+function handleStrikeCall(req,res){
+    res.redirect('./current');
 }
 
 
 ////Game call: Generate strike resgister
-function genStrike(req,callback){
+function generateStrikeCall(req,callback){
     console.log('Generating strike');
-    User.findOne({"steamid": req.user.user.steamid},function(err,user){
+    User.findOne({"steamid": req.body.steamid},function(err,user){
         const register = {
             strike_date: new Date(),
             strike_total: Number(user.current_strikes) + 1,
@@ -317,16 +377,15 @@ router.get('/:jackpot_id',steamAuth.ensureAuthenticated, localAuth.verifyToken,l
         else{
             ////Retrieving jackpot features
             loadFeatures(jackpot.jackpot_class,function(features){
-                getRegister(req,jackpot,function(register,games){
-                    console.log('Register obtained');
+                getRegister(req,jackpot,function(reg_list){
                     readDocs(jackpot,function(docs){
                         console.log('Docs obtained');
                         res.send({
                             jackpot: jackpot,
                             documentation: docs,
                             features: features,
-                            register: register,
-                            games: games
+                            register: reg_list[0],
+                            games: reg_list[1]
                         });
                     })
                 });
@@ -392,13 +451,15 @@ function findRegister(req, jackpot,callback){
 
 ////Get a Jackpot: Creating new jackpot register if no previous register is found
 function newRegister(req,player,jackpot,callback){
+    console.log(player);
     if (player === 'NaN'){
+        console.log('Creating new register');
         player = {
             jackpot_id: jackpot.jackpot_id,
             date: new Date(),
             score: 0,
             multipliers: [],
-            recommendations: 0,
+            recommendations: [],
             status: 'i'
         };
         Jackpot.findOneAndUpdate({jackpot_id: jackpot.jackpot_id}, {$push: {users: req.user.user.steamid}},function(err,update){
@@ -427,9 +488,10 @@ function newRegister(req,player,jackpot,callback){
 
 ////Get a Jackpot: Getting jackpot register
 function getRegister(req,jackpot,callback) {
-    findRegister(req, jackpot, function (player,games) {
-        newRegister(req, player, jackpot, function (player) {
-            callback( [player,games] )
+    findRegister(req, jackpot, function (reg_list) {
+        newRegister(req, reg_list[0], jackpot, function (player){
+            reg_list[0] = player;
+            callback( reg_list )
         });
     });
 }
@@ -452,5 +514,3 @@ router.get('*', function(req, res){
     res.sendFile(path.join(__dirname, '../public/tpls/', 'error.html'));
 });
 module.exports = router;
-exports.banUser = banUser;
-exports.strikeUser = strikeUser;
