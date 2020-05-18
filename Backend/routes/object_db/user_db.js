@@ -5,7 +5,8 @@ const mongoose = require('mongoose');
 const JackpotRegister = mongoose.Schema({
     jackpot_id: String,
     date: Date,
-    score: String,
+    score: {type: Number},
+    share_timetable: Array,
     multipliers: Array,
     recommendations: Array,
     status: String
@@ -14,11 +15,8 @@ const JackpotRegister = mongoose.Schema({
 //Gameplay register schema
 const GameplayRegister = mongoose.Schema({
     appid: String,
-    active: Boolean,
+    name: String,
     total_gameplay: Array,
-    win_gameplay: Array,
-    mac_gameplay: Array,
-    lin_gameplay: Array,
     register_date: Date
 });
 
@@ -84,14 +82,15 @@ const user = mongoose.Schema({
 
     ////Strikes
     strikes: [StrikeRegister],
-    current_strikes: String,
+    current_strikes: {type: Number},
 
     ////Bans
     bans: [BanRegister],
     banned: Boolean,
 
     ////Additional
-    multipliers: Array
+    multipliers: Array,
+    loyalty: {type: Number}
 
 },{versionKey: false});
 const User = mongoose.model('SteamUser', user);

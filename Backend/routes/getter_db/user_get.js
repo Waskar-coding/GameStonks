@@ -279,7 +279,7 @@ function dropGame(req,callback){
 
 //Getting getting user account data
 router.get('/my_profile',steamAuth.ensureAuthenticated, localAuth.verifyToken,function(req, res){
-    User.findOne({steamid: req.user.user.steamid}).lean().exec(function(err,user){
+    User.findOne({steamid: req.user.user.steamid},function(err,user){
         if (!err){
             getActiveJackpots(user.jackpots,function(jackpots){
                 getActiveGames(user.monitored,function(monitored){
@@ -294,10 +294,12 @@ router.get('/my_profile',steamAuth.ensureAuthenticated, localAuth.verifyToken,fu
                         jackpots:  jackpots,
                         monitored: monitored,
                         recommendations: user.recommendations,
+                        multipliers: user.multipliers,
                         strikes: user.strikes,
                         bans: user.bans,
                         events: user.additional
                     };
+                    console.log('Getting profile');
                     res.send(userJSON);
                 })
             });
@@ -316,7 +318,6 @@ function getActiveGames(monitored,callback){
                 }
                 else{
                     monitored[i] = Object.assign(monitored[i], {status:'a'});
-                    console.log(monitored);
                 }
             }
             else{
@@ -337,7 +338,6 @@ function getActiveGames(monitored,callback){
 ////My profile: Searching for active jackpots
 function getActiveJackpots(jackpots,callback){
     for(let i = 0; i<jackpots.length; i++){
-        console.log(jackpots[i].jackpot_id);
         Jackpot.findOne({jackpot_id: jackpots[i].jackpot_id}, function(err,jackpot){
             if(!err){
                 console.log(jackpot.active);
@@ -367,15 +367,14 @@ function getActiveJackpots(jackpots,callback){
 router.get('/:steamid',function(req, res){
     User.findOne({steamid: req.params.steamid},function (err, user) {
         if((!err) && (user != null)){
+            console.log(`Getting user ${user.steamid}`);
             const userJSON = {
-                steamuser: {
-                    steamid: user.steamid,
-                    name: user.name,
-                    joined: user.joined.toISOString().substring(0, 10),
-                    thumbnail: user.thumbnail,
-                    prizes: user.prizes,
-                    banned: user.banned
-                }
+                steamid: user.steamid,
+                name: user.name,
+                joined: user.joined.toISOString().substring(0, 10),
+                thumbnail: user.thumbnail,
+                prizes: user.prizes,
+                banned: user.banned
             };
             res.send(userJSON)
         }

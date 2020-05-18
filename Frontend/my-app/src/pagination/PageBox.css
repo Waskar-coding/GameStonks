@@ -1,0 +1,20 @@
+.page_box{
+    padding: 5px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+}
+.page_box:hover{
+    border-width: 2px;
+    border-color: red;
+    border-style: solid;
+    color: red;
+}
+.page_box:active, .selected_page_box{
+    background-color: black;
+    border-width: 2px;
+    border-color: yellow;
+    border-style: solid;
+    color: white;
+}

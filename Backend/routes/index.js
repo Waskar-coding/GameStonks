@@ -84,7 +84,7 @@ app.get('/logout', function(req, res){
 });
 
 app.get('/', function (req, res) {
-    res.send("Bruh")
+    res.send({message: 'User is not authenticated'})
 });
 
 passport.serializeUser(function(user, done) {

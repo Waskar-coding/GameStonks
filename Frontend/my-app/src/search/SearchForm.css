@@ -1,0 +1,24 @@
+.searchform{
+    background-color: darkslategray;
+    border-radius: 5px;
+    display: flex;
+    width: 75%;
+    align-items: center;
+    margin-left: 5px;
+    padding: 4px;
+}
+.params_case{
+    position: absolute;
+    left: 22rem;
+}
+.message_case{
+    position: relative;
+    color: white;
+    margin-left: 10px
+}
+.param{
+    display: inline-block;
+    margin: 5px;
+    margin-right: 10px;
+    color: white;
+}

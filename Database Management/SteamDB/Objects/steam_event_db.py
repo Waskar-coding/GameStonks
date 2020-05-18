@@ -90,6 +90,9 @@ class SteamEvent(mongoengine.Document):
 	##Event questions
 	questions = mongoengine.EmbeddedDocumentListField(QuestionRegister)
 
+	##Users that recieved the multiplier
+	awarded = mongoengine.ListField(default = [])
+
 	meta={
 			'db_alias': 'SteamDB',
 			'collection':'steamevents',

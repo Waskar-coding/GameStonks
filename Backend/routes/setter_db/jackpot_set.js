@@ -25,7 +25,15 @@ router.post('/callGame', function(req,res) {
 });
 
 
+async function firstFilter(req,){
+    const isAuth = req.user.user !== null;
+    let isKicked = false;
+    let isListed = await checkGame(appid)
+    if(isAuth === true){
 
+    }
+
+}
 //Building steam API url
 function buildURL(steamid){
     const STEAMAPI_BASE =  "http://api.steampowered.com";
@@ -41,14 +49,15 @@ function buildURL(steamid){
     for (const [key,value] in Object.entries(steam_params)){
         url = url + key + '=' + value + '&'
     }
-    return url.slice(0,-1)
+    return new Promise(resolve => {resolve(url.slice(0,-1))});
 }
 
 
 //Making request to steam API
-function requestOwners(req,steamid,callback){
+async function requestOwners(req,steamid){
     let status = 1;
     let playtime = 0;
+    const steamUrl = await buildUrl()
     request(buildURL(steamid),{json: true}, (err,steam_res) => {
         if(response.statusCode === 200){
             for(game of steam_res.body.response.games){

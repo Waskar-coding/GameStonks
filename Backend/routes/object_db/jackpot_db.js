@@ -3,30 +3,35 @@ const mongoose = require('mongoose');
 
 //Jackpot register schema
 const jackpot = mongoose.Schema({
-    ////Jackpot id
+
+    ////Id
     jackpot_id: String,
-
-    ////Jackpot entity
-    jackpot_entity: String,
-
-    ////Jackpot documentation
     jackpot_class: String,
     jackpot_title: String,
-    jackpot_doc_intro: String,
-    jackpot_doc_participate: String,
-    jackpot_doc_score: String,
-    jackpot_doc_rights: String,
-    jackpot_doc_kick: String,
 
-    ////Jackpot dates
+    ////Who is running the jackpot
+    jackpot_entity: String,
+
+    ////Resume
     start: Date,
     end: Date,
-    active: Boolean,
+    total_value: {type: Number},
+    total_score: {type: Number},
+    users: Array,
+    has_multipliers: String,
+    max_multipliers: {type: Number},
 
-    ////Jackpot participants and winners
-    total_value: String,
+    ////Status
+    active: Boolean,
     winners: Array,
-    users: Array
+
+    ////Plots
+    users_timetable: Array,
+    price_timetable: Array,
+    wealth_distribution: Array,
+
+    ////Top 10
+    top_users: Array
 
 },{versionKey: false});
 const Jackpot = mongoose.model('SteamJackpot', jackpot);

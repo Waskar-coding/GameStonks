@@ -161,7 +161,9 @@ def requirements_format(REGISTERED_KEYS,appid,app_json,key):
 					 	'Graphics','Sound Card','Additional Notes',
 					 	'Other','Sound','Hard Drive','Video',
 					 	'Internet','Video Card','Hard Disk Space',
-					 	'Additional')
+					 	'Additional', 'Other Requirements', 'Storage (high-quality audio)',
+					 	'Peripherals', 'RAM'
+					 	)
 	EQUIVALENTS={'DirectX®':'DirectX'}
 	REQ_KEY_MATCH=re.compile(r'<strong>.+</strong>')
 	REQ_VALUE_MATCH=re.compile(r'</strong>[^\n]+(<br/>|</li>)')

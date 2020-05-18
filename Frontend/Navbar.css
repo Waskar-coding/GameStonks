@@ -1,0 +1,34 @@
+#NavBar{
+    background-color: darkgray;
+    border-radius: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+}
+
+.NavBox{
+    border-radius: 10px;
+    width: calc(100%/6);
+    text-align: center;
+    color: white;
+}
+
+.NavBox:hover{
+    background-color: black;
+}
+.CurrentNavBox{
+    border-radius: 10px;
+    width: calc(100%/6);
+    text-align: center;
+    color: white;
+    background-color: darkslategrey;
+}
+
+.CurrentNavBox:hover{
+    background-color: black;
+}
+.CurrentNavBox:active{
+    background-color: black;
+}

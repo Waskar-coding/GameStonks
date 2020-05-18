@@ -6,7 +6,8 @@ const game = mongoose.Schema({
     score: String,
     image_url: String,
     current_state: String,
-    players: Array
+    players: Array,
+    base_value: {type: Number}
 });
 const Game = mongoose.model('SteamGame', game);
 module.exports = Game;
