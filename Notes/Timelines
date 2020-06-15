@@ -1,0 +1,70 @@
+ON TIMELINES:
+They require a lot of thought, very complicated to implement efficiently, alongside with annotated plots.
+
+
+The main problems:
+|    Timelines merge many mongo subdocuments and order them by their date as events,
+|   classification and sorting is necessary at runtime, this is obviously a waste of
+|   resources.
+|
+|   It is necessary to split timelines by date, this will not be necessary for events
+|   personal registers, however in the users's own profile, after a certain time has
+|   passed the number of events will make responses heavier and heavier. It is not
+|   necessary to send the entire timeline if not requested.
+
+
+The solution:
+|   DB must be modified to include a general timeline field, in addition every jackpot
+|   register must include a specific timeline. This at the same time means many other
+|   DB fields have to be modified:
+|   |   The strikes fields will only hold current strikes, since previous strikes are
+|   |   already into the general timeline, and currently never displayed. This will
+|   |   simplify a great deal acquiring the current strikes when the user's profile is
+|   |   loaded.
+|   |
+|   |   The current_strikes field can be eliminated for obvious reasons.
+|   |
+|   |   The bans field will only hold the document with the current ban, when the ban
+|   |   is uplifted it can be replaced by an empty document.
+|   |
+|   |   The banned field can be eliminated for obvious reasons (But I might keep it
+|   |   since it is not very heavy and simplifies code).
+|   |
+|   |   Transaction fields can be eliminated all together, since it was not very
+|   |   efficient and required a lot of classification at runtime, all transaction
+|   |   events will be divided into subcategories such as: donation, present, reward,
+|   |   funds added ... . All pending transitions were collected on the Claims field,
+|   |   which will remain as it is.
+|   |
+|   |   The monitored games will include the currently monitored games, upon ceasing
+|   |   to monitor a game all its users registers will be deleted.
+|   |
+|   |   The questions field can be modified, since there is a timeline field to record
+|   |   the event it should be replaced by a simpler field indicating the number of
+|   |   surveys taken.
+|
+|   Both annotated graphics and timelines wil be from now on displayed according to a
+|   two dates, which delimit the points in the graphic and the annotations as well as
+|   the events displayed in the timeline.
+|
+|   The timeline events will be presented in the following format:
+|   [date, class, subclass, id, first parameter, second parameter ...]
+|   This format was chosen over a document for the imposibilty to nest subdocuments
+|   within mongoDB.
+
+
+Modifications
+|   Backend
+|   -------
+|   X user_db: Apply solution modifications to schema, add new general and specific timelines.
+|   O index: The ways bans are checked could need modfications, when the ban is uplifted it should be registered.
+|   O J01 post: Bans, strikes, and rewards must be changed.
+|   O Multipliers post: Events must be introduced in both general and jackpot timeline.
+|   O Specific timeline APIs must be created for jackpot personal registers, user registers and friend resgisters
+|
+|   Frontend
+|   --------
+|   O sorting and classifying logic is to be removed and replaced in all components that used it
+|   O frontend script must adapt to all new APIs.
+|   O annotated-chart: Must adapt to timeline format
+|   O timeline: Must adapt to timeline format

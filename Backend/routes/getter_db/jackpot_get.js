@@ -245,7 +245,6 @@ router.post(
                         res.send({message: `Jackpot ${req.params.jackpot_id} does not allow multipliers`})
                     }
                     else{
-                        console.log('Clicked');
                         User.findOne({steamid: req.user.user.steamid})
                             .then(user => {
                                 if(user.multipliers.includes(req.body.multiplier)){
@@ -259,7 +258,7 @@ router.post(
                                         res.send({message: `User ${req.user.user.steamid} was kicked from jackpot ${req.params.jackpot_id}`})
                                     }
                                     else if(currentJackpot.multipliers.length >= jackpot.max_multipliers){
-                                        res.send({message: `Max multipliers for jackpot already reached`)
+                                        res.send({message: `Max multipliers for jackpot already reached`})
                                     }
                                     else{
                                         const loadPath = `./Multiplier files/${req.body.multiplier_class}.js`;

@@ -10,6 +10,7 @@ import queryString from "query-string";
 import JackpotBox from "./JackpotBox";
 import PageList from "../pagination/PageList";
 import SearchForm from "../search/SearchForm";
+import findMaxPage from "../pagination/MaxPage";
 
 const JackpotListOptions = {
     start: 'Starting date',
@@ -31,7 +32,6 @@ class Jackpots extends React.Component{
             ) {
                 this.state = {
                     error: null,
-                    items: [],
                     sort: query.sort,
                     order: query.order,
                     search: query.search,
@@ -41,7 +41,6 @@ class Jackpots extends React.Component{
             } else {
                 this.state = {
                     error: null,
-                    items: [],
                     sort: 'start',
                     order: '1',
                     search: "",
@@ -53,7 +52,6 @@ class Jackpots extends React.Component{
         else{
             this.state={
                 error: null,
-                items: [],
                 sort: 'start',
                 order: '1',
                 search: "",
@@ -175,18 +173,6 @@ class JackpotList extends React.Component{
                 {jackpotList}
             </div>
         )
-    }
-}
-
-function findMaxPage(current, display){
-    if((current===0) || (current==undefined)){
-        return 1;
-    }
-    else if(current%display!==0){
-        return Math.floor(current/display) + 1;
-    }
-    else{
-        return current/display;
     }
 }
 

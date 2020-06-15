@@ -187,8 +187,6 @@ class GameList extends React.Component{
                   displayInfoModal: true,
                   submitData: null,
               });
-              console.log(res);
-              console.log(res.data.outcome);
               if(res.data.outcome === 'rewarded'){
                   this.setState({
                       infoData: `The game was successfully submitted, your current share is ${res.data.info} $`

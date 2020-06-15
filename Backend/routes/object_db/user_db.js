@@ -20,77 +20,57 @@ const GameplayRegister = mongoose.Schema({
     register_date: Date
 });
 
-//Recomendation register schema
-const RecomendationRegister = mongoose.Schema({
-    rec_date: Date,
-    rec_userid: String
-});
-
-//Prize register schema
-const PrizeRegister = mongoose.Schema({
-    prize_id: String,
-    prize_date: Date,
-    prize_cash: String,
-    prize_category: String
-});
 
 //Strike register schema
 const StrikeRegister = mongoose.Schema({
     strike_date: Date,
-    strike_total: String,
-    strike_reason: String
+    strike_type: String
 });
 
 //Ban register schema
 const BanRegister = mongoose.Schema({
     ban_start: Date,
     ban_type: String,
-    ban_active: Boolean,
-    ban_end: Date,
-    ban_doc: String
+    ban_end: Date
 });
 
-//Additional register schema
-const AdditionalRegister = mongoose.Schema({
-    event_id: String,
-    user_event_start: Date,
-    user_event_end: Date,
-    user_multiplier: Boolean
+//Claim register schema
+const ClaimRegister = mongoose.Schema({
+   claim_date: Date,
+   claim_type: String,
+   claim_cash: {type: Number}
 });
+
 
 //Basic user schema
 const user = mongoose.Schema({
-    ////Basic data
+    ////Steam data
     steamid: String,
     name: String,
-    joined: Date,
     timecreated: String,
     thumbnail: String,
+    profile_url: String,
+
+    ////GameStonks basic data
+    joined: Date,
+    wealth: {type: Number},
+    wealth_timetable: Array,
+    banned: Boolean,
+    multipliers: Array,
+    loyalty: {type: Number},
+    questions: {type: Number},
+
+    ////Timeline
+    general_timeline: Array,
 
     ////Jackpots
     jackpots: [JackpotRegister],
 
-    ////Monitored games
+    ////Register of current data
     monitored: [GameplayRegister],
-
-    ////Recomendations
-    recommended: Boolean,
-    recomendations: [RecomendationRegister],
-
-    ////Prizes
-    prizes: [PrizeRegister],
-
-    ////Strikes
+    claims: [ClaimRegister],
     strikes: [StrikeRegister],
-    current_strikes: {type: Number},
-
-    ////Bans
-    bans: [BanRegister],
-    banned: Boolean,
-
-    ////Additional
-    multipliers: Array,
-    loyalty: {type: Number}
+    ban: BanRegister
 
 },{versionKey: false});
 const User = mongoose.model('SteamUser', user);

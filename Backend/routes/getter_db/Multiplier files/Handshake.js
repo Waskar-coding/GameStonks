@@ -6,7 +6,11 @@ function handshake(currentJackpot, req, res) {
         .then(friend => {
             if (friend === null) {
                 res.send({message: `User ${req.body.friendName} not found`})
-            } else {
+            }
+            else if(friend.banned === true){
+                res.send({message: `User ${req.body.friendName} is currently banned`})
+            }
+            else {
                 const friendJackpot = friend.jackpots.filter(jackpot => {
                     return jackpot.jackpot_id === req.params.jackpot_id;
                 }).pop();

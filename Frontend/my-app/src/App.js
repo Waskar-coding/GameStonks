@@ -1,13 +1,27 @@
 import React from 'react';
-import Jackpots from './jackpots/JackpotListCopy';
-import DocList from './docs_navigation/DocList';
-import J01Router from './jackpots/J01/J01.main';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+} from "react-router-dom";
 import AllJackpots from './jackpots/JackpotRouter';
-
+import MyProfile from './users/my-profile';
+import Profiles from './users/profile-search';
+import UserProfile from "./users/user-profile";
 
 class App extends React.Component{
     render(){
-        return(<AllJackpots />)
+        return(
+            <Router>
+                <Switch>
+                    <Route path={'/users/profiles/my_profile'} component={MyProfile} />
+                    <Route path={'/users/profiles/:name'} component={UserProfile} />
+                    <Route path={'/users/find'} component={Profiles} displayPerPage="2" />
+                    <Route path={'/jackpots'}><AllJackpots /></Route>
+                </Switch>
+            </Router>
+        )
     }
 }
 

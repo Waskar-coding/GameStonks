@@ -72,7 +72,7 @@ app.get('/account', steamAuth.ensureAuthenticated, function(req, res){
                res.redirect('/logout')
            }
            else{
-               res.redirect('/users/my_profile');
+               res.redirect('http://localhost/users/profiles/my_profile');
            }
        }
     });
@@ -110,116 +110,95 @@ passport.use(new SteamStrategy({
             // to associate the Steam account with a user record in your database,
             // and return that user instead.
             profile.identifier = identifier;
-            User.findOne({steamid: profile._json.steamid}, function(err, user) {
-                ////New Users
-                if (user === null){
-                    const verified = verifyUser(profile._json);
-                    createNewUser(profile._json,verified);
-                    const today = new Date();
-                    const steamUser = {
-                        steamid : profile._json.steamid,
-                        name : profile._json.personaname,
-                        joined : today,
-                        timecreated: profile._json.timecreated,
-                        thumbnail: profile._json.avatarfull,
-                        current_strikes: 0,
-                        banned: verified
-                    };
-                    const newUser ={
-                        user: steamUser,
-                        token: createToken(profile._json.steamid)
-                    };
-                    return done(null,newUser);
-                }
-
-                ////Banned users
-                else if (user.banned) {
-                    const currentBan = findBan(user);
-                    const currentIndex = user.bans.indexOf(currentBan);
-                    const today = new Date();
-                    const dictBan = {
-                        B01: verifyUser,
-                        B02: verifyTime
-                    };
-                    const banFlag = dictBan[currentBan.ban_type](user,currentBan);
-                    user.banned = banFlag;
-                    currentBan.ban_active = banFlag;
-                    currentBan.ban_end = today;
-                    user.bans[currentIndex] = currentBan;
-                    user.save().then(function (user) {
-                        if (!currentBan.ban_active){
-                            console.log("User successfully unbanned");
-                            user = updateUser(user,profile._json);
-                            return done(null, ({user: user,token:createToken(user.steamid) }));
+            User.findOne({steamid: profile._json.steamid})
+                .then(user => {
+                    ////New users
+                    if (user === null){
+                        createNewUser(profile._json,verifyUser(profile._json))
+                            .then(user => {
+                                if(user.banned === true){
+                                    return done(null, ({user: user}));
+                                }
+                                else{
+                                    return done(null, ({user: user, token:createToken(user.steamid)}))
+                                }
+                            });
+                    }
+                    ////Banned users
+                    else if (user.banned) {
+                        const currentBan = user.ban;
+                        const today = new Date();
+                        const dictBan = {
+                            B01: verifyUser,
+                            B02: verifyTime
+                        };
+                        if(dictBan[currentBan.ban_type](user,currentBan) === false){
+                            User.findOneAndUpdate({steamid: user.steamid},{
+                                $set: {
+                                    banned: false,
+                                    ban: {},
+                                    name: profile._json.personaname,
+                                    thumbnail: profile._json.avatarfull,
+                                    profile_url: profile._json.profileurl
+                                },
+                                $push: {
+                                    general_timeline: [
+                                        new Date(),
+                                        'U',
+                                        currentBan.ban_type,
+                                        null
+                                    ]
+                                }
+                            })
+                                .then(user => {done(null, ({user: user,token:createToken(user.steamid) }))})
                         }
-                        else {
-                            console.log("User is still banned");
+                        else{
                             return done(null, ({user: user}));
                         }
-                    });
-                }
+                    }
 
-                ////Regular users
-                else {
-                    console.log("Valid account");
-                    user = updateUser(user,profile._json);
-                    return done(null, ({user: user,token:createToken(user.steamid) }));
-                }
-            });
+                    ////Regular users
+                    else {
+                        User.findOneAndUpdate({steamid: user.steamid},{
+                           $set: {
+                               name: profile._json.personaname,
+                               thumbnail: profile._json.avatarfull,
+                               profile_url: profile._json.profileurl
+                           }
+                        })
+                            .then(user => {return done(null, ({user: user,token:createToken(user.steamid) }))})
+                    }
+                })
+                .catch(err => {
+                    return done(null, ({user: null}));
+                })
         });
     }
 ));
 
 
 
-//Finding the active ban
-function findBan(user){
-    for (let ban of user.bans){
-        if (ban.ban_active===true){
-            return ban
-        }
-    }
-}
-
-
-//Updating user name and thumbnail
-function updateUser(user,profile){
-    User.findOneAndUpdate({steamid: profile.steamid},{name: profile.personaname, thumbnail: profile.avatarfull},function(err,value){
-        if (err){
-            console.log(err)
-        }
-    });
-    user.name = profile.personaname;
-    user.thumbnail = profile.avatarfull;
-    return user
-}
-
-
-
 //Verifying user validity
-function verifyUser(user,ban) {
+function verifyUser(user) {
     ////Checking if the account is private and old enough
     const timeCreated = user.timecreated;
     const currentTime = Math.round((new Date()).getTime() / 1000);
     const difference = currentTime - timeCreated;
     if(timeCreated === undefined){
-        console.log("This account is private");
         return true
     }
-    if( difference < 31556952)
+    //
+    if( difference < -31556952)
     {
-        console.log("This account is too recent");
         return true
     }
     ////Using steamcalculator to check the value of the account
     request('https://dog.steamcalculator.com/v1/id/'+ user.steamid +'/apps', { json: true }, (err, res) => {
         if (err) { return console.log(err); }
         const accountValue = res.body.total_value.amount/100;
-        if (accountValue < 20) {
-        console.log("This account is not valuable enough");
+        if (accountValue < -20) {
         return true
         }});
-        console.log("This account is valid");
         return false
 }
 
@@ -235,31 +214,32 @@ function verifyTime(user,ban){
 
 //Creating user mongo model
 function createNewUser(user,banned){
-    ////Creating user account
-    const today = new Date();
-    const newUser = new User ({
-        steamid : user.steamid,
-        name : user.personaname,
-        joined : today,
-        timecreated: user.timecreated,
-        thumbnail: user.avatarfull,
-        current_strikes: 0,
-        banned: banned
-    });
-
-    if (banned){
-        ////Creating a ban register
-        newUser.bans.push({
-            ban_start: today,
-            ban_type: "B01",
-            ban_doc: "B01_1",
-            ban_active: true
+    return new Promise(resolve => {
+        ////Creating user account
+        const today = new Date();
+        const newUser = new User ({
+            steamid : user.steamid,
+            name : user.personaname,
+            joined : today,
+            timecreated: user.timecreated,
+            thumbnail: user.avatarfull,
+            profile_url: user.profileurl,
+            banned: banned
         });
-    }
-
-    newUser.save().then(function () {
-        console.log("User successfully registered, banned: " + banned);
-        return newUser.toJSON();
+        if (banned){
+            ////Creating a ban register
+            newUser.ban = ({
+                ban_start: today,
+                ban_type: "B01",
+                ban_active: true
+            });
+        }
+        else{
+            newUser.ban = {};
+        }
+        newUser.save().then(user => {
+            resolve(user);
+        });
     });
 }
 

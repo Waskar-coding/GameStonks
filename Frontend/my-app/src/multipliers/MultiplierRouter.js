@@ -1,6 +1,7 @@
 import React from "react";
 import { Suspense } from "react";
 import axios from "axios";
+import SimpleList from "../display_components/simplelist";
 
 class MultiplierRouter extends React.Component{
     constructor(props){
@@ -43,55 +44,68 @@ class MultiplierRouter extends React.Component{
         this.setState({userMultipliers: user.multipliers, jackpotMultipliers: currentJackpot.multipliers})
     }
     render(){
-        let renderContent;
         if(this.state.isLoaded === false){
-            renderContent = <div></div>
+            return(<div></div>)
         }
         else if(this.state.userMultipliers.length === 0){
             const availableMultipliers = sortByClass(getClassArrayUser(this.state.userMultipliers));
-            const usedMultipliers = sortByClass(getClassArrayJackpot(this.state.jackpotMultipliers));
+            const usedMultipliers = createList(sortByClass(getClassArrayJackpot(this.state.jackpotMultipliers)));
             const CurrentMultiplier = this.state.currentMultiplierScript;
-            renderContent = <div>
+            return(
+                <div>
                     <div>
-                        <h2>Available Multipliers</h2>
-                        <p>None currently</p>
+                        <SimpleList
+                            title="Available multipliers"
+                            list={['None currently ...']}
+                            useLinks={false}
+                        />
                     </div>
                     <div>
-                        <h2>Used multipliers</h2>
-                        <MultiplierList multipliers={usedMultipliers} />
+                        <SimpleList
+                            title="Used multipliers"
+                            list={usedMultipliers}
+                            useLinks={false}
+                        />
                     </div>
                 </div>
+            )
         }
         else{
-            const availableMultipliers = sortByClass(getClassArrayUser(this.state.userMultipliers));
-            const usedMultipliers = sortByClass(getClassArrayJackpot(this.state.jackpotMultipliers));
+            const multiplierCount = sortByClass(getClassArrayUser(this.state.userMultipliers));
+            const availableMultipliers = createList(multiplierCount);
+            const usedMultipliers = createList(sortByClass(getClassArrayJackpot(this.state.jackpotMultipliers)));
             const CurrentMultiplier = this.state.currentMultiplierScript;
             const multiplierStatus = <div>
                                 <form onSubmit={this.handleSubmit}>
                                     <label for="currentMultiplier">Select a Multiplier </label>
                                     <select id="currentMultiplier" value={this.state.current} onChange={this.handleCurrentChange}>
-                                        {Object.keys(availableMultipliers).map(multiplier => {
+                                        {Object.keys(multiplierCount).map(multiplier => {
                                             return <option value={multiplier}>{multiplier}</option>
                                         })}
                                     </select>
                                     <input type="submit" value="Submit" />
                                 </form>
                                 <div>
-                                    <h2>Available Multipliers</h2>
-                                    <MultiplierList multipliers={availableMultipliers} />
+                                    <SimpleList
+                                        title="Available multipliers"
+                                        list={availableMultipliers}
+                                        useLinks={false}
+                                    />
                                 </div>
                                 <div>
-                                    <h2>Used multipliers</h2>
-                                    <MultiplierList multipliers={usedMultipliers} />
+                                    <SimpleList
+                                        title="Used multipliers"
+                                        list={usedMultipliers}
+                                        useLinks={false}
+                                    />
                                 </div>
                             </div>
             if(this.state.currentMultiplierScript !== null){
                 const multiplierPopUp = <Suspense fallback={<div>Loading...</div>}><CurrentMultiplier multiplierClass={this.state.current} multiplierId = {this.state.currentMultiplierId} toParent={this.handleCallback}/></Suspense>
-                renderContent = <div>{multiplierStatus}{multiplierPopUp}</div>;
+                return(<div>{multiplierStatus}{multiplierPopUp}</div>)
             }
-            else{ renderContent = <div>{multiplierStatus}</div>}
+            else{ return(<div>{multiplierStatus}</div>)}
         }
-        return(<div>{renderContent}</div>)
 
     }
 }
@@ -117,7 +131,6 @@ const getClassArrayUser = (multipliers) => {
 const sortByClass = (multipliers) => {
     const multiplierClassCount = {};
     for(let multiplier of multipliers){
-        console.log(multiplier);
         if(Object.keys(multiplierClassCount).includes(multiplier)){
             multiplierClassCount[multiplier.split('_')[0]]++;
         }
@@ -126,6 +139,11 @@ const sortByClass = (multipliers) => {
         }
     }
     return multiplierClassCount;
+};
+const createList = (multiplierClassCount) => {
+    return Object.keys(multiplierClassCount).map(multiplierClass => {
+        return <div><div>{multiplierClass}</div><div>x{multiplierClassCount[multiplierClass]}</div></div>
+    });
 };
 const popMultiplier = (multiplierList, multiplierClass) => {
     for(let multiplier of multiplierList){
