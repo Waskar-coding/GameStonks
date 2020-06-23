@@ -57,14 +57,15 @@ Modifications
 |   Backend
 |   -------
 |   X user_db: Apply solution modifications to schema, add new general and specific timelines.
-|   O index: The ways bans are checked could need modfications, when the ban is uplifted it should be registered.
-|   O J01 post: Bans, strikes, and rewards must be changed.
-|   O Multipliers post: Events must be introduced in both general and jackpot timeline.
-|   O Specific timeline APIs must be created for jackpot personal registers, user registers and friend resgisters
+|   X index: The ways bans are checked could need modfications, when the ban is uplifted it should be registered.
+|   X J01 post: Bans, strikes, and rewards must be changed.
+|   X Multipliers post: Events must be introduced in both general and jackpot timeline.
+|   X Specific timeline APIs must be created for jackpot personal registers, user registers and friend resgisters
 |
 |   Frontend
 |   --------
 |   O sorting and classifying logic is to be removed and replaced in all components that used it
-|   O frontend script must adapt to all new APIs.
-|   O annotated-chart: Must adapt to timeline format
-|   O timeline: Must adapt to timeline format
+|   O adapt frontend forms to new formats
+|   O frontend displays must adapt to the new APIs
+|   X annotated-chart: Must adapt to timeline format
+|   X timeline: Must adapt to timeline format

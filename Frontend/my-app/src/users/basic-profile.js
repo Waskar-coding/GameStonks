@@ -1,32 +1,22 @@
 import React from 'react';
-import DescriptionBox from "../display_components/descriptionbox";
-import SimpleList from "../display_components/simplelist";
+import DescriptionBox from "../display_components/description-box";
+import SimpleList from "../display_components/simple-list";
 
 class BasicProfile extends React.PureComponent{
     render(){
-        let strikeCount = 0;
         const user = this.props.user;
-        let lastBanDate = new Date("2020-01-01");
-        for(let ban of user.bans){
-            if(new Date(ban.ban_end) >= lastBanDate){
-                lastBanDate = ban.ban_end;
-            }
-        }
-        const activeJackpots = user.jackpots.filter(jackpot => {
-            return jackpot.status === 'a';
-        })
-            .map(
-                jackpot => {return [jackpot.jackpot_id, `../../jackpots/${jackpot.jackpot_id}`]}
-            );
-        const currentStrikes = user.strikes.filter(strike => {return strike.strike_date >= lastBanDate})
-            .map(filteredStrike => {
-                strikeCount++;
-                return <div>
-                <span>{filteredStrike.strike_date.slice(0,10)}</span>
-                <span>{` ${filteredStrike.strike_date.slice(11,19)}`}</span>
-                <span>{` Strike ${strikeCount}`}</span>
-                </div>
-            });
+        const activeJackpots = user.jackpots.map(jackpot => {
+            return [jackpot, `../../jackpots/${jackpot}`]
+        });
+        let strikeCount = 0;
+        const strikesDisplay = user.strikes.map(strike => {
+            strikeCount++;
+            return <div>
+            <span>{strike.strike_date.slice(0,10)}</span>
+            <span>{` ${strike.strike_date.slice(11,19)}`}</span>
+            <span>{` Strike ${strikeCount}`}</span>
+            </div>
+        });
         const availableMultipliers = createList(sortByClass(getClassArrayUser(user.multipliers)));
         return(
             <div>
@@ -38,13 +28,13 @@ class BasicProfile extends React.PureComponent{
                         table = {[
                             [
                                 ['Steamid', user.steamid],
-                                ['Joined', user.joined],
-                                ['Wealth', user.wealth_timetable[user.wealth_timetable.length-1]]
+                                ['Strikes', user.strikes.length],
+                                ['Wealth', user.wealth + '$']
                             ],
                             [
-                                ['Strikes', user.current_strikes],
-                                ['Events played', user.jackpots.length],
-                                ['Surveys answered', user.questions.length]
+                                ['Joined', user.joined],
+                                ['Events played', user.jackpot_number],
+                                ['Surveys answered', user.question_number]
                             ]
                         ]}
                     />
@@ -62,22 +52,9 @@ class BasicProfile extends React.PureComponent{
                     />
                     <SimpleList
                         title="Strikes"
-                        list={currentStrikes}
+                        list={strikesDisplay}
                         useLinks={false}
                     />
-                </div></section>
-                <section><div>
-                    <a
-                        target="_blank"
-                        href={user.profile_url}
-                        title="Check steam profile"
-                    >
-                        <img
-                            width='50'
-                            src="https://w7.pngwing.com/pngs/407/234/png-transparent-steam-mervils-a-vr-adventure-computer-icons-personal-computer-valve-corporation-steam-engine-game-logo-windows.png"
-                            alt='Steam_logo_small'
-                        />
-                    </a>
                 </div></section>
             </div>
         )

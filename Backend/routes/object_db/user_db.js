@@ -7,6 +7,7 @@ const JackpotRegister = mongoose.Schema({
     date: Date,
     score: {type: Number},
     share_timetable: Array,
+    jackpot_timeline: Array,
     multipliers: Array,
     recommendations: Array,
     status: String
@@ -24,14 +25,18 @@ const GameplayRegister = mongoose.Schema({
 //Strike register schema
 const StrikeRegister = mongoose.Schema({
     strike_date: Date,
-    strike_type: String
+    strike_type: String,
+    ////Optional
+    strike_data: Array
 });
 
 //Ban register schema
 const BanRegister = mongoose.Schema({
     ban_start: Date,
     ban_type: String,
-    ban_end: Date
+    ////Optional
+    ban_end: Date,
+    ban_data: Array
 });
 
 //Claim register schema

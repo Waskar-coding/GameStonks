@@ -7,10 +7,16 @@ class TimeLine extends React.PureComponent{
                 <div><h1>{this.props.title}</h1></div>
                 <div>
                     {this.props.events.map(event => {
-                        return <div>
-                                    <div style={{display: "inline-block", marginRight: "5px"}}>{event[0].split('T')[0]}</div>
-                                    <div style={{display: "inline-block", marginRight: "5px"}}>{event[0].split('T')[1].split('.')[0]}</div>
-                                    <div style={{display: "inline-block"}}>{event[1]}</div>
+                        return <div style={{backgroundColor: event[2]}}>
+                                    <div style={{display: "inline-block", marginRight: "5px"}}>
+                                        {event[0].split('T')[0]}
+                                    </div>
+                                    <div style={{display: "inline-block", marginRight: "5px"}}>
+                                        {event[0].split('T')[1].split('.')[0]}
+                                    </div>
+                                    <div style={{display: "inline-block"}}>
+                                        {event[3]}
+                                    </div>
                                 </div>
                     })}
                 </div>

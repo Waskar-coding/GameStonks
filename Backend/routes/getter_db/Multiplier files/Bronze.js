@@ -21,14 +21,38 @@ function Bronze(currentJackpot, req, res){
             {
                 $set: {"jackpots.$.score": newScore},
                 $push: {
-                    "jackpots.$.multipliers": [new Date(), req.body.multiplier_class],
-                    "jackpots.$.share_timetable": [new Date(), newScore/jackpot.total_score*jackpot.total_value]
+                    general_timeline: [
+                        new Date(),
+                        'M',
+                        'Bronze',
+                        req.body.multiplier,
+                        req.params.jackpot_id
+                    ],
+                    "jackpots.$.jackpot_timeline": [
+                        new Date(),
+                        'MJ',
+                        'Bronze',
+                        req.body.multiplier
+                    ],
+                    "jackpots.$.multipliers": [
+                        new Date(),
+                        req.body.multiplier_class
+                    ],
+                    "jackpots.$.share_timetable": [
+                        new Date(),
+                        newScore/jackpot.total_score*jackpot.total_value
+                    ]
                 },
                 $pull: {multipliers: req.body.multiplier}
             }, {new: true}
         )
             .then(user => {
-                res.send({user: user, new_share: newScore/jackpot.total_score*jackpot.total_value})
+                res.send({
+                    newMultipliers: user.multipliers,
+                    newRegister: user.jackpots.filter(jackpot => {
+                        return jackpot.jackpot_id === req.params.jackpot_id
+                    }).pop()
+                })
             })
         })
 }

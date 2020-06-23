@@ -1,9 +1,9 @@
 import React from "react";
-import SimpleList from "../../display_components/simplelist";
-import AnnotatedChart from "../../display_components/annotatedchart";
+import SimpleList from "../../display_components/simple-list";
+import AnnotatedChart from "../../display_components/annotated-chart";
 import TimeLine from "../../display_components/timeline";
 import MultiplierRouter from "../../multipliers/MultiplierRouter";
-import DescriptionBox from "../../display_components/descriptionbox";
+import DescriptionBox from "../../display_components/description-box";
 import mergeEvents from "../../useful_functions/event-sort";
 import axios from "axios";
 

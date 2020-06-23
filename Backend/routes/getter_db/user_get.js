@@ -11,107 +11,376 @@ const Jackpot = require('../object_db/jackpot_db.js');
 const steamAuth = require('../steam_auth/auth');
 const localAuth = require('../local_auth/verify');
 
-//Getting getting user account data
-router.get('/profiles/my_profile',steamAuth.ensureAuthenticated, localAuth.verifyToken,function(req, res){
-    User.findOne({steamid: req.user.user.steamid})
-        .then(user => {
-            res.send({
-                steamid: user.steamid,
-                name: user.name,
-                joined: user.joined.toISOString().substring(0, 10),
-                thumbnail: user.thumbnail,
-                profile_url: user.profile_url,
-                wealth: user.wealth,
-                claims: user.claims,
-                jackpots:  user.jackpots.filter(jackpot => {return jackpot.status === 'a'})
-                    .map(jackpot => {return jackpot.jackpot_id}),
-                jackpot_number: user.jackpots.length,
-                question_number: user.questions,
-                multipliers: user.multipliers,
-                strikes: user.strikes
-            });
-        })
-        .catch(err => {
-            res.send({Error: "Internal server error"})
-        })
-});
 
+//User's account data
+router.get(
+    '/my_profile',
+    steamAuth.ensureAuthenticated,
+    localAuth.verifyToken,
+    function(req, res){
+        User.findOne({steamid: req.user.user.steamid})
+            .then(user => {
 
-//Getting other users data
-router.get('/top/:steamid',function(req,res){
-   User.findOne({steamid: req.params.steamid})
-       .then(user => {res.send({name: user.name, thumbnail: user.thumbnail})})
-       .catch(err => {res.status(500).send({Error: "Internal server error"})})
-});
-
-router.get('/profiles/:name',function(req,res){
-   User.findOne({name: req.params.name})
-       .then(user => {
-           res.send({
-               steamid: user.steamid,
-               thumbnail: user.thumbnail,
-               profile_url: user.profile_url,
-               name: user.name,
-               joined: user.joined,
-               wealth: user.wealth,
-               current_strikes: user.current_strikes,
-               jackpots: user.jackpots.filter(jackpot => {return jackpot.jackpot_id}),
-               questions: user.questions.length,
-               multipliers: user.multipliers,
-               strikes: user.strikes,
-               bans: user.bans
-           })
-       })
-       .catch(err => res.send({Error: "Internal server error"}))
-});
-
-//Getting handshakes
-router.post('/handshakes',function(req, res){
-    User.find({name: {$in: req.body.recommendations}})
-        .then(users => {
-            const handshakes = new Promise(resolve => {
-                const handshakeList = users.map(user => {
-                    return {thumbnail: user.thumbnail, name: user.name}
+                res.send({
+                    steamid: user.steamid,
+                    name: user.name,
+                    joined: user.joined.toISOString().substring(0, 10),
+                    thumbnail: user.thumbnail,
+                    profile_url: user.profile_url,
+                    wealth: user.wealth,
+                    claims: user.claims,
+                    jackpots:  user.jackpots.filter(jackpot => {return jackpot.status === 'a'})
+                        .map(jackpot => {return jackpot.jackpot_id}),
+                    jackpot_number: user.jackpots.length,
+                    question_number: user.questions,
+                    multipliers: user.multipliers,
+                    strikes: user.strikes
                 });
-                resolve(handshakeList)
-            });
-            handshakes.then(handshakeList => {
-                res.send({recommendations: handshakeList})
             })
-        })
-        .catch(err => {
-            res.status(500).send({Error: "Internal server error"})
-        })
+            .catch(err => {
+                res.send({Error: "Internal server error"})
+            })
 });
 
 
-
-//Finding user by name
-router.get('/find', function(req, res){
-    const usersPerPage = 2;
-    User.find({name: {"$regex": req.query.search, $options: 'i'}})
-        .collation({locale: "en"})
-        .sort({[req.query.sort]: req.query.order})
-        .limit(usersPerPage)
-        .skip((req.query.page-1)*usersPerPage)
-        .then(users => {
-            User.count({name: {"$regex": req.query.search, $options: 'i'}})
-                .then(count => {
-                    const userList = users.map(user => {
-                        return {name: user.name, thumbnail: user.thumbnail, joined: user.joined}
+//User's timeline
+router.get(
+    '/my_timeline',
+    steamAuth.ensureAuthenticated,
+    localAuth.verifyToken,
+    function(req, res){
+        User.findOne({steamid: req.user.user.steamid})
+            .then(user => {
+                const timeline = user.general_timeline.filter(event => {
+                    const eventDate = new Date(event[0]);
+                    const startDate = new Date(req.query.start);
+                    const finalDate = new Date(req.query.end);
+                    return (eventDate > startDate) && (eventDate < finalDate);
+                });
+                if(req.query.type === 'graph'){
+                    res.send({
+                        timeline: timeline,
+                        wealth_timetable: user.wealth_timetable.filter(point => {
+                            const pointDate = new Date(point[0]);
+                            const startDate = new Date(req.query.start);
+                            const finalDate = new Date(req.query.end);
+                            return (pointDate > startDate) && (pointDate < finalDate);
+                        })
                     });
-                    if(req.user){
-                        res.send({count: count, profiles: userList, my_name: req.user.user.name});
-                    }
-                    else{
-                        res.send({count: count, profiles: userList, my_name: undefined})
-                    }
+                }
+                else{
+                    res.send({
+                        timeline: timeline
+                    })
+                }
+            })
+            .catch(err => {
+                res.send({
+                    Error: 'Internal server error'
                 })
-        })
-        .catch(err => {
-            res.status(500).send({Error: "Internal server error"})
-        })
+            })
+});
 
+
+//Donate money to a friend
+router.post(
+    '/donate',
+    function(req,res){
+        checkDonation(
+            req.body.userId,
+            req.body.friendId,
+            req.body.transferredWealth,
+            new Date(req.body.timeline1Start),
+            new Date(req.body.timeline1Final),
+            new Date(req.body.timeline2Start),
+            new Date(req.body.timeline2Final),
+            res
+        )
+    }
+);
+
+async function checkDonation(
+    userId,
+    friendId,
+    transferredWealth,
+    timeline1Start,
+    timeline1Final,
+    timeline2Start,
+    timeline2Final,
+    res
+){
+    const [serverError1, hasWealth, userName, currentUserWealth] = await checkUserWealth(userId, transferredWealth);
+    const [serverError2, isRegistered, friendName, currentFriendWealth] = await checkFriendWealth(friendId);
+    if(userId === friendId){
+        res.send(
+            {
+                status: 'rejected',
+                sameId: true,
+                hasWealth: hasWealth,
+                isRegistered: isRegistered
+            }
+        )
+    }
+    else if((serverError1 !== false) || (serverError2 !== false)){
+        res.send(
+            {
+                status: 'error'
+            }
+        )
+    }
+    else if((hasWealth === true) && (isRegistered === true)){
+        transferWealth(
+            userId,
+            friendId,
+            userName,
+            friendName,
+            transferredWealth,
+            currentUserWealth,
+            currentFriendWealth,
+            timeline1Start,
+            timeline1Final,
+            timeline2Start,
+            timeline2Final,
+            res
+        )
+    }
+    else{
+        res.send(
+            {
+                status: 'rejected',
+                sameId: false,
+                hasWealth: hasWealth,
+                isRegistered: isRegistered
+            }
+        )
+    }
+}
+
+function checkUserWealth(
+    userId,
+    transferredWealth
+){
+    return new Promise((resolve, reject) => {
+        User.findOne({steamid: userId})
+            .then(user => {
+                resolve([
+                    false,
+                    user.wealth >= transferredWealth,
+                    user.name,
+                    user.wealth
+                ])
+            })
+            .catch(err => {
+                resolve([
+                    err,
+                    null,
+                    null,
+                    null
+
+                ])
+            })
+    })
+}
+
+function checkFriendWealth(
+    friendId
+){
+    return new Promise((resolve, reject) => {
+        User.findOne({steamid: friendId})
+            .then(friend => {
+                if(friend === null){
+                    resolve([
+                        false,
+                        false,
+                        null,
+                        null
+                    ])
+                }
+                else{
+                    resolve([
+                        false,
+                        true,
+                        friend.name,
+                        friend.wealth
+                    ])
+                }
+            })
+            .catch(err => {
+                resolve([
+                    err,
+                    false,
+                    null,
+                    null
+                ])
+            })
+    })
+}
+
+async function transferWealth(
+    userId,
+    friendId,
+    userName,
+    friendName,
+    transferredWealth,
+    currentUserWealth,
+    currentFriendWealth,
+    timeline1Start,
+    timeline1Final,
+    timeline2Start,
+    timeline2Final,
+    res
+    ){
+    const [wealth, donationRegister] = await subtractFromUser(
+        userId,
+        friendName,
+        transferredWealth,
+        currentUserWealth
+    );
+    const receivedRegister = await addToFriend(
+        friendId,
+        userName,
+        transferredWealth,
+        currentFriendWealth
+    );
+    res.send(
+        {
+            status: 'success',
+            userWealth: wealth,
+            updateTimeline1: (
+                (donationRegister[0] >= timeline1Start)
+                &&
+                (donationRegister[0] <= timeline1Final)
+            )? [[donationRegister[0], wealth], donationRegister] : null,
+            updateTimeline2: (
+                (donationRegister[0] >= timeline2Start)
+                &&
+                (donationRegister[0] <= timeline2Final)
+            )? donationRegister : null,
+            friendRegister: receivedRegister
+        }
+    );
+}
+
+function subtractFromUser(
+    userId,
+    friendName,
+    transferredWealth,
+    currentUserWealth
+){
+    return new Promise((resolve,reject) => {
+        const donationRegister = [
+            new Date(),
+            'G',
+            'D',
+            transferredWealth,
+            friendName
+        ];
+        User.findOneAndUpdate(
+            {steamid: userId},
+            {
+                $inc: {
+                    wealth: -transferredWealth
+                },
+                $push: {
+                    wealth_timetable: [
+                        new Date(),
+                        Number(currentUserWealth) - Number(transferredWealth)
+                    ],
+                    general_timeline: donationRegister
+                }
+            },
+            {new: true}
+        )
+            .then(user => {resolve([user.wealth, donationRegister])})
+            .catch(err => reject(err))
+    })
+}
+
+function addToFriend(
+    friendId,
+    userName,
+    transferredWealth,
+    currentFriendWealth
+){
+    return new Promise((resolve, reject) => {
+        const receivedRegister = [
+            new Date(),
+            'G',
+            'R',
+            transferredWealth,
+            userName
+        ];
+        User.findOneAndUpdate(
+            {steamid: friendId},
+            {
+                $inc: {
+                    wealth: transferredWealth
+                },
+                $push: {
+                    wealth_timetable: [new Date(), Number(currentFriendWealth) + Number(transferredWealth)],
+                    general_timeline: receivedRegister
+                }
+            }
+        )
+            .then(user => {
+                resolve(receivedRegister)
+            })
+            .catch(err => reject(err))
+    })
+}
+
+
+//Friend's account datta
+router.get(
+    '/profiles/:name',
+    function(req,res){
+       User.findOne({name: req.params.name})
+           .then(user => {
+               res.send({
+                   steamid: user.steamid,
+                   thumbnail: user.thumbnail,
+                   profile_url: user.profile_url,
+                   name: user.name,
+                   joined: user.joined,
+                   wealth: user.wealth,
+                   current_strikes: user.current_strikes,
+                   jackpots: user.jackpots.filter(jackpot => {return jackpot.jackpot_id}),
+                   questions: user.questions.length,
+                   multipliers: user.multipliers,
+                   strikes: user.strikes
+               })
+           })
+           .catch(err => res.send({Error: "Internal server error"}))
+});
+
+
+//Finding friends by name
+router.get(
+    '/find',
+    function(req, res){
+        const usersPerPage = 2;
+        User.find({name: {"$regex": req.query.search, $options: 'i'}})
+            .collation({locale: "en"})
+            .sort({[req.query.sort]: req.query.order})
+            .limit(usersPerPage)
+            .skip((req.query.page-1)*usersPerPage)
+            .then(users => {
+                User.count({name: {"$regex": req.query.search, $options: 'i'}})
+                    .then(count => {
+                        const userList = users.map(user => {
+                            return {name: user.name, thumbnail: user.thumbnail, joined: user.joined}
+                        });
+                        if(req.user){
+                            res.send({count: count, profiles: userList, my_name: req.user.user.name});
+                        }
+                        else{
+                            res.send({count: count, profiles: userList, my_name: undefined})
+                        }
+                    })
+            })
+            .catch(err => {
+                res.status(500).send({Error: "Internal server error"})
+            })
 });
 
 

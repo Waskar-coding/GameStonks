@@ -1,59 +1,46 @@
 import React from "react";
 import { Line } from "react-chartjs-2";
 import 'chartjs-plugin-annotation';
-const lineChartInst = {};
+import Math from 'math';
 
 class AnnotatedChart extends React.PureComponent{
     render(){
         const events = this.props.events;
-        const backgroundColors = {
-            arrival: 'green',
-            monitored: 'purple',
-            recommendation: 'blue',
-            multiplier: 'orange',
-            reward: 'green',
-            donation: 'purple',
-            present: 'blue',
-            fund: 'orange'
-        };
         const legend = this.props.tags.map(tag => {
             return <div style={{display: "inline-block", margin: "8px"}}>
                 <div
                     style={{
                         display: "inline-block",
-                        backgroundColor: backgroundColors[tag],
+                        backgroundColor: tag[1],
                         height: "5px",
                         width: "5px",
                         marginBottom: "2px",
                         marginRight: "3px"
                     }}>
                 </div>
-                <div style={{display: "inline-block"}}>{tag}</div>
+                <div style={{display: "inline-block"}}>{tag[0]}</div>
             </div>
         });
         const annotations = events.map(event => {
             return {
                 type: 'line',
-                id: `${event[0]}_${event[2]}`,
+                id: `${event[0]}_${event[1]}`,
                 mode: 'vertical',
                 scaleID: 'x-axis-0',
-                value: event[0],
-                borderColor: backgroundColors[event[2]],
+                value: new Date(event[0]).getTime(),
+                borderColor: event[2],
                 borderWidth: 2
             }
         });
-        const xData = this.props.points.map(point => {
-            return point[0];
-        });
-        const yData = this.props.points.map(point => {
-            return point[1];
+        const wealthDataset = this.props.points.map(point => {
+            return {x: new Date(point[0]).getTime(), y: point[1]}
         });
         const data = {
-            labels: xData,
             datasets: [
                 {
                     label: this.props.title,
-                    data: yData,
+                    data: wealthDataset,
+                    lineTension: 0,
                     borderColor: "rgba(0,0,0,1)",
                     backgroundColor: "rgba(0,0,0,1)",
                     pointBorderColor: "rgba(0,0,0,1)",
@@ -77,15 +64,11 @@ class AnnotatedChart extends React.PureComponent{
                 mode: 'label',
                 displayColors: false,
                 callbacks: {
+                    title: function(){},
                     label: function(tooltipItem, data) {
-                        const multistringText = [tooltipItem.yLabel];
-                        for(let event of events){
-                            if(data.labels[tooltipItem.index] === event[0]){
-                                multistringText.push(event[1]);
-                                return multistringText;
-                            }
-                        }
-                        return multistringText;
+                        const date = new Date(tooltipItem.xLabel).toISOString().slice(0,10);
+                        const hour = new Date(tooltipItem.xLabel).toISOString().slice(11,16);
+                        return [date + ' ' + hour, tooltipItem.value.slice(0,5) + '$'];
                     }
                 }
             },
@@ -95,6 +78,16 @@ class AnnotatedChart extends React.PureComponent{
             scales: {
                 xAxes: [
                     {
+                        type: 'linear',
+                        ticks: {
+                            mix: this.props.start.getTime(),
+                            max: this.props.end.getTime(),
+                            stepSize: (this.props.end.getTime()-this.props.start.getTime())/10,
+                            callback: value => {
+                                const date = new Date(value).toISOString();
+                                return date.slice(0,10) + ' ' + date.slice(11,16);
+                            }
+                        },
                         scaleLabel: {
                             display: true,
                             labelString: 'Date'
@@ -117,7 +110,7 @@ class AnnotatedChart extends React.PureComponent{
         };
         return(
             <div>
-                <Line data={data} options={options} ref={lineChartInst}/>
+                <Line data={data} options={options} />
                 <div style={{textAlign: "center"}}>{legend}</div>
             </div>
         )

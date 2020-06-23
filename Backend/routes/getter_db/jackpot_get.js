@@ -208,6 +208,8 @@ router.get(
             })
     }
 );
+
+
 ////Get a Jackpot: Features
 router.get(
     '/:jackpot_id/features',
@@ -228,11 +230,12 @@ router.post(
     isActive,
     function(req,res){
         const jackpotClass = (req.body.jackpot_class !== 'special')? req.body.jackpot_class : req.body.jackpot_id;
-        const loadPath = `./Jackpot files/${jackpotClass}/${jackpotClass}.post.js`;
-        const classFunction = require(loadPath);
+        const classFunction = require(`./Jackpot files/${jackpotClass}/${jackpotClass}.post.js`);
         classFunction(req,res)
     });
 
+
+////Use a multiplier
 router.post(
     '/:jackpot_id/multiplier',
     steamAuth.ensureAuthenticated,
@@ -252,10 +255,16 @@ router.post(
                                         return jackpot.jackpot_id === req.params.jackpot_id;
                                     }).pop();
                                     if(currentJackpot === undefined){
-                                        res.send({message: `User ${req.user.user.steamid} is not participating in the jackpot ${req.params.jackpot_id}`})
+                                        res.send(
+                                            {message: `User ${req.user.user.steamid} is not participating` +
+                                                    `in the jackpot ${req.params.jackpot_id}`
+                                        })
                                     }
                                     else if(currentJackpot.status === 'k') {
-                                        res.send({message: `User ${req.user.user.steamid} was kicked from jackpot ${req.params.jackpot_id}`})
+                                        res.send(
+                                            {message: `User ${req.user.user.steamid} was kicked` +
+                                                    `from jackpot ${req.params.jackpot_id}`
+                                        })
                                     }
                                     else if(currentJackpot.multipliers.length >= jackpot.max_multipliers){
                                         res.send({message: `Max multipliers for jackpot already reached`})
@@ -267,13 +276,21 @@ router.post(
                                     }
                                 }
                                 else{
-                                    res.send({message: `User ${req.user.user.steamid} does not have a ${req.body.multiplier_class} multiplier`})
+                                    res.send({message: `User ${req.user.user.steamid} does not have` +
+                                            `a ${req.body.multiplier_class} multiplier`})
                                 }
+                            })
+                            .catch(err => {
+                                console.log('Could not find User');
+                                res.status(500).send({Error: "Internal server error"})
                             })
                     }
                 }
             )
-            .catch(err => {res.status(500).send({Error: "Internal server error"})})
+            .catch(err => {
+                console.log('Could not find jackpot');
+                res.status(500).send({Error: "Internal server error"})
+            })
     }
 );
 //Errors

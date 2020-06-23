@@ -9,7 +9,7 @@ import {
 import queryString from "query-string";
 import JackpotBox from "./JackpotBox";
 import PageList from "../pagination/PageList";
-import SearchForm from "../search/SearchForm";
+import SearchForm from "../search/search-form";
 import findMaxPage from "../pagination/MaxPage";
 
 const JackpotListOptions = {

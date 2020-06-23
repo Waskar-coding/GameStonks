@@ -1,6 +1,6 @@
 import React from "react";
 import PageList from "../pagination/PageList";
-import SearchForm from "../search/SearchForm";
+import SearchForm from "../search/search-form";
 import queryString from "query-string";
 import findMaxPage from "../pagination/MaxPage";
 import axios from "axios";

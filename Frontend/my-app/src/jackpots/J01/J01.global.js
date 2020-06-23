@@ -1,8 +1,8 @@
 import React from "react";
-import DescriptionBox from "../../display_components/descriptionbox";
-import SimpleChart from "../../display_components/simplechart";
-import BarChart from "../../display_components/barchart";
-import GlobalTop from "../../display_components/globaltop";
+import DescriptionBox from "../../display_components/description-box";
+import SimpleChart from "../../display_components/simple-chart";
+import BarChart from "../../display_components/bar-chart";
+import GlobalTop from "../../display_components/global-top";
 import jackpotThumbnail from "../jackpot_icons/J01.jpg";
 
 class J01Global extends React.Component{

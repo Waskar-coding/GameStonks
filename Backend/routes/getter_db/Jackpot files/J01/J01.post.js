@@ -14,26 +14,48 @@ function postJ01(req,res){
     const ContentFunctions = {
         'call': firstFilter
     };
-    ContentFunctions[req.query.action](req.user.user.steamid, req.body.jackpot_id, req.body.data, res)
+    ContentFunctions[req.query.action](req,req.user.user.steamid, req.params.jackpot_id, req.body.data, res)
 }
 
 //Call game
 ////First filter
 //////Main function
-async function firstFilter(steamid, jackpotId, appId, res){
+async function firstFilter(req,steamid, jackpotId, appId, res){
     const userArray = await checkUser(steamid, jackpotId, appId);
     const isActive = await checkActive(appId);
     const isKicked = userArray[0];
     const isSharer = userArray[1];
     const isShared = userArray[2];
-    if((isSharer === true) && (isKicked === false) && (isActive === true) && (isShared === false)){
-        return secondFilter(steamid, jackpotId, appId, res);
+    if(
+        (isSharer === true)
+        &&
+        (isKicked === false)
+        &&
+        (isActive === true)
+        &&
+        (isShared === false)
+    ){
+        return secondFilter(req,steamid, jackpotId, appId, res);
     }
-    else if(!isSharer && !isKicked && (isActive === true) && (isShared === false)){
-        return createJackpotRegister(steamid, jackpotId, appId,res);
+    else if(
+        !isSharer
+        &&
+        !isKicked
+        &&
+        (isActive === true)
+        &&
+        (isShared === false)
+    ){
+        return createJackpotRegister(req,steamid, jackpotId, appId, res);
     }
     else{
-        res.send({Error: 'Could not pass first filter'})
+        res.send({
+            status: 'Error',
+            isActive: isActive,
+            isKicked: isKicked,
+            isSharer: isSharer,
+            isShared: isShared
+        })
     }
 }
 
@@ -111,7 +133,7 @@ function checkMonitored(user, appId){
 ////Create a jackpot register
 async function createJackpotRegister(steamid, jackpotId, appId,res){
     if((await addUserToJackpot(steamid, jackpotId))&&(await addJackpotToUser(steamid,jackpotId))){
-        return secondFilter(steamid, jackpotId, appId,res);
+        return secondFilter(req, steamid, jackpotId, appId,res);
     }
     else{
         console.log(`Internal server error at ${new Date()}`)
@@ -128,9 +150,26 @@ function addJackpotToUser(steamid, jackpotId, res){
             share_timetable: [],
             date: new Date(),
             recommendations: [],
-            multipliers: []
+            multipliers: [],
+            jackpot_timeline: [
+                [
+                    new Date(),
+                    'P',
+                    'J01',
+                    jackpotId
+                ]
+            ]
         };
-        User.findOneAndUpdate({steamid: steamid},{$push: {jackpots: newRegister}})
+        User.findOneAndUpdate({steamid: steamid},{
+            $push: {
+                jackpots: newRegister,
+                general_timeline: [
+                    new Date(),
+                    'PJ',
+                    'J01'
+                ]
+            }
+        })
             .then(resolve(true))
             .catch(reject(res.status(500).send({Error: 'Internal server error'})));
     });
@@ -148,7 +187,7 @@ function addUserToJackpot(steamid, jackpotId, res){
 
 ////Second filter
 //////Main function
-async function secondFilter(steamid, jackpotId, appId, res){
+async function secondFilter(req, steamid, jackpotId, appId, res){
     const steamResponse = await requestOwned(steamid, appId);
     if(steamResponse !== null){
         const ownerArray = await checkOwnership(appId, steamResponse);
@@ -156,11 +195,11 @@ async function secondFilter(steamid, jackpotId, appId, res){
             return rewardUser(steamid, jackpotId, appId, ownerArray[1], res);
         }
         else{
-            return strikeUser(steamid,jackpotId, appId, res);
+            return strikeUser(req, steamid, jackpotId, appId, res);
         }
     }
     else{
-        return banUser(steamid, jackpotId, res);
+        return banUser(req, steamid, jackpotId, res);
     }
 }
 
@@ -241,10 +280,9 @@ async function rewardUser(steamid, jackpotId, appId, playtime, res){
         total_gameplay: playtime,
         register_date: new Date()
     };
-    console.log(gameRegister);
+    let currentRegister = user.jackpots.filter(jackpot => {return jackpot.jackpot_id === jackpotId}).pop();
     for(let jackpot of user.jackpots){
         if(jackpot.jackpot_id === jackpotId){
-            const prevScore = jackpot.score;
             User.findOneAndUpdate(
                 {steamid: steamid, "jackpots.jackpot_id": jackpotId},
                 {
@@ -252,13 +290,34 @@ async function rewardUser(steamid, jackpotId, appId, playtime, res){
                     $set: {"jackpots.$.status": "a"},
                     $push: {
                         monitored: gameRegister,
-                        "jackpots.$.share_timetable": [new Date() , currentJackpot.total_value * (prevScore + scoreIncrement) / currentJackpot.total_score]
+                        general_timeline: [
+                            new Date(),
+                            'D',
+                            'J01',
+                            game.name,
+                            appId,
+                            jackpotId
+                        ],
+                        "jackpots.$.share_timetable": [
+                            new Date(),
+                            currentJackpot.total_value*(currentRegister.score+scoreIncrement)/currentJackpot.total_score
+                        ],
+                        "jackpots.$.jackpot_timeline": [
+                            new Date(),
+                            'DJ',
+                            'J01',
+                            game.name,
+                            appId
+                        ]
                     }
                 },{new: true})
                 .then(user => {
-                    const currentJackpot = user.jackpots.filter(jackpot => {return jackpot.jackpot_id === jackpotId}).pop();
-                    const currentScore = currentJackpot.share_timetable[currentJackpot.share_timetable.length-1][1];
-                    res.send({outcome: 'rewarded', info: currentScore})
+                    res.send({
+                        status: 'rewarded',
+                        newRegister: user.jackpots.filter(jackpot => {
+                            return jackpot.jackpot_id === jackpotId
+                        }).pop()
+                    })
                 })
                 .catch(err => {
                     console.log(err);
@@ -269,24 +328,54 @@ async function rewardUser(steamid, jackpotId, appId, playtime, res){
 }
 
 //////Striking User
-function strikeUser(steamid,jackpotId, appId, res){
+async function strikeUser(req,steamid,jackpotId, appId, res){
     const register = {
-        strike_reason: `You did not own a game (steam appid: ${appId}) but called it in  ${jackpotId}`,
-        strike_date: new Date()
+        strike_type: `S01`,
+        strike_date: new Date(),
+        strike_data: [jackpotId,appId]
     };
+    const game = await new Promise((resolve, reject) => {
+        Game.findOne({appid: appId})
+            .then(game => {
+                resolve(game)
+            })
+            .catch(err => reject(res.status(500).send({Error: 'Internal server error'})))
+    });
     User.findOneAndUpdate(
         {steamid: steamid, "jackpots.jackpot_id": jackpotId},
         {
-            $inc:{current_strikes: 1},
-            $push: {strikes: register},
-            $set: {"jackpots.$.status": 'k', "jackpots.$.score": 0}
-        })
+            $push: {
+                strikes: register,
+                general_timeline: [
+                    new Date(),
+                    'S',
+                    'S01',
+                    jackpotId,
+                    game.name,
+                    appId
+                ],
+                "jackpots.$.jackpot_timeline": [
+                    new Date(),
+                    'SJ',
+                    'S01',
+                    game.name,
+                    appId
+                ]
+            },
+            $set: {
+                "jackpots.$.status": 'k',
+                "jackpots.$.score": 0
+            }
+        },{new: true})
         .then(user => {
-            if(user.current_strikes > 2){
-                banUser(steamid, jackpotId, res)
+            if(user.strikes.length > 2){
+                banUser(req, steamid, jackpotId, res)
             }
             else{
-                res.send({outcome: 'kicked', info: user.current_strikes})
+                res.send({
+                    status: 'kicked',
+                    info: user.strikes.length
+                })
             }
         })
         .catch(err => {
@@ -296,24 +385,31 @@ function strikeUser(steamid,jackpotId, appId, res){
 }
 
 //////Banning user
-function banUser(steamid, jackpotId, res){
+function banUser(req, steamid, jackpotId, res){
     const date = new Date();
-
     const register = {
         ban_start: date,
         ban_type: 'B02',
-        ban_active: true,
-        ban_end: date.setTime( date.getTime() + 60 * 86400000 ),
-        ban_doc: `You used a private profile in event ${jackpotId} and forced us to loose time, that is against the rules of our page.`
+        ban_end: date.setTime( date.getTime() + 60 * 86400000 )
     };
     User.findOneAndUpdate(
         {steamid: steamid, "jackpots.status": {$in: ["a","i"]}},
         {
-            $set: {banned: true, current_strikes: 0, "jackpots.$.status": 'k', "jackpots.$.score": 0},
-            $push: {bans: register}
+            $set: {
+                banned: true,
+                strikes: {},
+                ban: register
+            },
+            $push: {
+                general_timeline: [
+                    new Date(),
+                    'B',
+                    'B02'
+                ]
+            }
         })
         .then( user => {
-                console.log(`User ${user.steamid} banned`);
+                req.user.banType = 'B02';
                 res.redirect('/logout')
             }
         )

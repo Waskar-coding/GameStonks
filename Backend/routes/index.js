@@ -72,19 +72,22 @@ app.get('/account', steamAuth.ensureAuthenticated, function(req, res){
                res.redirect('/logout')
            }
            else{
-               res.redirect('http://localhost/users/profiles/my_profile');
+               res.redirect('http://localhost:3000/users/profiles/my_profile');
            }
        }
     });
 });
 
 app.get('/logout', function(req, res){
-    req.logout();
-    res.redirect('/');
-});
-
-app.get('/', function (req, res) {
-    res.send({message: 'User is not authenticated'})
+    if(req.user.banType){
+        const banType = req.user.banType;
+        req.logout();
+        res.send({Banned: banType})
+    }
+    else{
+        req.logout();
+        res.send({message: 'User logged out'})
+    }
 });
 
 passport.serializeUser(function(user, done) {
@@ -117,7 +120,7 @@ passport.use(new SteamStrategy({
                         createNewUser(profile._json,verifyUser(profile._json))
                             .then(user => {
                                 if(user.banned === true){
-                                    return done(null, ({user: user}));
+                                    return done(null, ({user: user, banType: 'B01'}));
                                 }
                                 else{
                                     return done(null, ({user: user, token:createToken(user.steamid)}))
@@ -150,10 +153,10 @@ passport.use(new SteamStrategy({
                                     ]
                                 }
                             })
-                                .then(user => {done(null, ({user: user,token:createToken(user.steamid) }))})
+                                .then(user => {done(null, ({user: user,token:createToken(user.steamid)}))})
                         }
                         else{
-                            return done(null, ({user: user}));
+                            return done(null, ({user: user, banType: 'B01'}));
                         }
                     }
 
@@ -188,7 +191,7 @@ function verifyUser(user) {
         return true
     }
     //
-    if( difference < -31556952)
+    if( difference < 31556952)
     {
         return true
     }
@@ -196,7 +199,7 @@ function verifyUser(user) {
     request('https://dog.steamcalculator.com/v1/id/'+ user.steamid +'/apps', { json: true }, (err, res) => {
         if (err) { return console.log(err); }
         const accountValue = res.body.total_value.amount/100;
-        if (accountValue < -20) {
+        if (accountValue < 20) {
         return true
         }});
         return false
@@ -230,8 +233,7 @@ function createNewUser(user,banned){
             ////Creating a ban register
             newUser.ban = ({
                 ban_start: today,
-                ban_type: "B01",
-                ban_active: true
+                ban_type: "B01"
             });
         }
         else{

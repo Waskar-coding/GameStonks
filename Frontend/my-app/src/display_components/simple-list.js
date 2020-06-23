@@ -4,7 +4,6 @@ import AllJackpots from '../jackpots/JackpotRouter';
 class SimpleList extends React.PureComponent{
     render(){
         let listComponents;
-        console.log(this.props.list);
         if(this.props.useLinks === false){
             listComponents = <ul style={{listStyleType:"none"}}>{this.props.list.map(component => {
                 return <li>{component}</li>;

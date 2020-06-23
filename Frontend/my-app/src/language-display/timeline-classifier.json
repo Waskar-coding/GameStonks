@@ -1,0 +1,266 @@
+{
+  "P": {
+    "annotation-color": "green",
+    "timeline-color": "green",
+    "legend-tags": {
+      "ES": "Ingreso",
+      "EN": "Entry"
+    },
+    "J01": {
+      "ES": [
+        "Fuiste registrado en el evento ",
+        "."
+      ],
+      "EN": [
+        "You were registered in event ",
+        "."
+      ]
+    }
+  },
+  "PJ": {
+    "annotation-color": "green",
+    "timeline-color": "green",
+    "legend-tags": {
+      "ES": "Ingreso",
+      "EN": "Entry"
+    },
+    "J01": {
+      "ES": [
+        "Fuiste registrado en el evento."
+      ],
+      "EN": [
+        "You were registered in event."
+      ]
+    }
+  },
+  "D": {
+    "annotation-color": "purple",
+    "timeline-color": "purple",
+    "legend-tags": {
+      "ES": "Registro",
+      "EN": "Register"
+    },
+    "J01": {
+      "ES": [
+        "En el evento ",
+        " diste permiso a GameStonks para registrar tu actividad en ",
+        " (appid: ",
+        ")."
+      ],
+      "EN": {
+        "b1": "In event ",
+        "m12": "you gave GameStonks permision to register your activity in ",
+        "m23": " (appid: ",
+        "a3": ")."
+      }
+    }
+  },
+  "DJ": {
+    "annotation-color": "purple",
+    "timeline-color": "purple",
+    "legend-tags": {
+      "ES": "Registro",
+      "EN": "Register"
+    },
+    "J01": {
+      "ES": [
+        "Diste permiso a GameStonks para registrar tu actividad en ",
+        " (appid: ",
+        ")."
+      ],
+      "EN": [
+        "You gave GameStonks permision to register your activity in ",
+        " (appid: ",
+        ")."
+      ]
+    }
+  },
+  "M": {
+    "annotation-color": "blue",
+    "timeline-color": "blue",
+    "legend-tags": {
+      "ES": "Multiplicador",
+      "EN": "Multiplier"
+    },
+    "Bronze": {
+      "ES": [
+        "Usaste un multiplicador de Bronze (multiplier_id: ",
+        ") en el evento ",
+        "."
+      ],
+      "EN": [
+        "You used a Bronze multiplier (multiplier_id: ",
+        ") in event ",
+        "."
+      ]
+    },
+    "Handshaker": {
+      "ES": [
+        "",
+        " (steamid: ",
+        ") ha recibido tu apretón de manos (multiplier_id: ",
+        ") en el evento ",
+        "."
+      ],
+      "EN": [
+        "",
+        " (steamid: ",
+        ") has received your handshake (multiplier_id: ",
+        ") in event ",
+        "."
+      ]
+    },
+    "Handshaked": {
+      "ES": [
+        "",
+        " (steamid: ",
+        ") te ha dado un apretón de manos (multiplier_id: ",
+        ") en el evento ",
+        "."
+      ],
+      "EN": [
+        "",
+        " (steamid: ",
+        ") gave you a handshake (multiplier_id: ",
+        ") in event ",
+        "."
+      ]
+    }
+  },
+  "MJ": {
+    "annotation-color": "blue",
+    "timeline-color": "blue",
+    "legend-tags": {
+      "ES": "Multiplicador",
+      "EN": "Multiplier"
+    },
+    "Bronze": {
+      "ES": [
+        "Usaste un multiplicador de Bronze (multiplier_id: ",
+        ")."
+      ],
+      "EN": [
+        "You used a Bronze multiplier (multiplier_id: ",
+        ")."
+      ]
+    },
+    "Handshaker": {
+      "ES": [
+        "",
+        " (steamid: ",
+        ") ha recibido tu apretón de manos (multiplier_id: ",
+        ")."
+      ],
+      "EN": [
+        "",
+        " (steamid: ",
+        ") has received your handshake (multiplier_id: ",
+        ")."
+      ]
+    },
+    "Handshaked": {
+      "ES": [
+        "",
+        " (steamid: ",
+        ") te ha dado un apretón de manos (multiplier_id: ",
+        ")."
+      ],
+      "EN": [
+        "",
+        " (steamid: ",
+        ") gave you a handshake (multiplier_id: ",
+        ")"
+      ]
+    }
+  },
+  "S": {
+    "annotation-color": "orange",
+    "timeline-color": "orange",
+    "legend-tags": {
+      "ES": "Strike",
+      "EN": "Strike"
+    },
+    "S01": {
+      "ES": [
+        "En el evento ",
+        " diste permiso a GameStonks para registrar tu actividad en ",
+        " (appid: ",
+        ") pero no lo tenías en tu librería en ese momento."
+      ],
+      "EN": [
+        "In event ",
+        "you gave GameStonks permission to register your activity in ",
+        " (appid: ",
+        "), but you did not have it in your library at the moment."
+      ]
+    }
+  },
+  "SJ": {
+    "annotation-color": "orange",
+    "timeline-color": "orange",
+    "legend-tags": {
+      "ES": "Strike",
+      "EN": "Strike"
+    },
+    "J01": {
+      "ES": [
+        "Diste permiso a GameStonks para registrar tu actividad en ",
+        " (appid: ",
+        ") pero no lo tenías en tu librería en ese momento."
+      ],
+      "EN": [
+        "You gave GameStonks permission to register your activity in ",
+        " (appid: ",
+        "), but you did not have it in your library at the moment."
+      ]
+    }
+  },
+  "B": {
+    "annotation-color": "red",
+    "timeline-color": "red",
+    "legend-tags": {
+      "ES": "Bloqueo",
+      "EN": "Ban"
+    },
+    "B02": {
+      "ES": [
+        "Al acumular tres strikes, tu cuenta en GameStonks se ha bloqueado por 2 meses."
+      ],
+      "EN": [
+        "After accumulating three strikes your account has been banned for 2 months."
+      ]
+    }
+  },
+  "G": {
+    "annotation-color": "yellow",
+    "timeline-color": "yellow",
+    "legend-tags": {
+      "ES": "Donación",
+      "EN": "Donation"
+    },
+    "D": {
+      "ES": [
+        "Donaste ",
+        "$ a ",
+        "."
+      ],
+      "EN": [
+        "You donated ",
+        "$ to ",
+        "."
+      ],
+      "R": {
+        "ES": [
+          "Recibiste ",
+          "$ de ",
+          "."
+        ],
+        "EN": [
+          "You recieved ",
+          "$ from ",
+          "."
+        ]
+      }
+    }
+  }
+}
