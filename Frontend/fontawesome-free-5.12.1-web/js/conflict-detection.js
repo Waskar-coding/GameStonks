@@ -639,7 +639,7 @@
             if (nextCumulativeDuration <= maxDuration) {
               poll(nextDuration, nextCumulativeDuration);
             } else {
-              reject('timeout'); // eslint-disable-line prefer-promise-reject-errors
+              reject('timeout'); // eslint-disable-line prefer-promise-reject-message-classifier.json
             }
           }
         }, duration);
@@ -681,7 +681,7 @@
       diagScript.setAttribute('id', diagScriptId); // WARNING: this function will be toString()'d and assigned to innerText of the diag script
       // element that we'll be putting into a diagnostic iframe.
       // That means that this code won't compile until after the outer script has run and injected
-      // this code into the iframe. There are some compile time errors that might occur there.
+      // this code into the iframe. There are some compile time message-classifier.json that might occur there.
       // For example, using single line (double-slash) comments like this one inside that function
       // will probably cause it to choke. Chrome will show an error like this:
       // Uncaught SyntaxError: Unexpected end of input

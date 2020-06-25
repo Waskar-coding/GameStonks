@@ -48,7 +48,7 @@ class DateForm extends React.Component{
                     onChange={date => {this.handleFinalChange(date)}}
                     dateFormat='yyyy/MM/dd'
                     minDate={this.state.startDate}
-                    maxDate={new Date()}
+                    maxDate={new Date(this.props.maxDate)}
                     showYearDropDown
                     scrollableMonthYearDropdown
                 />

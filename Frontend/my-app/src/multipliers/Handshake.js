@@ -52,36 +52,37 @@ class Handshake extends React.Component{
             })
     }
     render(){
-        let renderContent;
         if(this.state.isLoaded === false){
-            console.log('Loading...');
-            renderContent = <div></div>
+            return(
+                <div></div>
+            )
         }
         else if(this.state.display === true){
-            console.log('Friend form');
-            renderContent = <Modal isOpen={this.state.display}>
-                                <form onSubmit={this.handleSubmit}>
-                                    <label for id="search">Write the name friend you want to invite into the event </label>
-                                    <input
-                                        type="text"
-                                        id="search"
-                                        value={this.state.friendName}
-                                        onChange={this.handleParamChange}
-                                        placeholder={"Type the name of your friend"}
-                                        />
-                                        <input type="submit" value="Submit" />
-                                </form>
-                                <button onClick={() => {this.closeModal()}} >Close</button>
-                            </Modal>
+            return(
+                <Modal isOpen={this.state.display}>
+                    <form onSubmit={this.handleSubmit}>
+                        <label for id="search">Write the name friend you want to invite into the event </label>
+                        <input
+                            type="text"
+                            id="search"
+                            value={this.state.friendName}
+                            onChange={this.handleParamChange}
+                            placeholder={"Type the name of your friend"}
+                        />
+                        <input type="submit" value="Submit" />
+                    </form>
+                    <button onClick={() => {this.closeModal()}} >Close</button>
+                </Modal>
+            )
         }
         else{
-            console.log('Displaying error');
-            renderContent = <Modal isOpen={this.state.displayError}>
-                                <p>{this.state.errorMessage}</p>
-                                <button onClick={() => {this.closeModal()}} >Close</button>
-                            </Modal>
+            return(
+                <Modal isOpen={this.state.displayError}>
+                    <p>{this.state.errorMessage}</p>
+                    <button onClick={() => {this.closeModal()}} >Close</button>
+                </Modal>
+            )
         }
-        return(<div>{renderContent}</div>)
     }
 }
 

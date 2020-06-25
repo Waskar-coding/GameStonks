@@ -40,10 +40,10 @@ const BanRegister = mongoose.Schema({
 });
 
 //Claim register schema
-const ClaimRegister = mongoose.Schema({
-   claim_date: Date,
-   claim_type: String,
-   claim_cash: {type: Number}
+const RequestRegister = mongoose.Schema({
+   request_date: Date,
+   request_type: String,
+   request_cash: {type: Number}
 });
 
 
@@ -73,7 +73,7 @@ const user = mongoose.Schema({
 
     ////Register of current data
     monitored: [GameplayRegister],
-    claims: [ClaimRegister],
+    requests: [RequestRegister],
     strikes: [StrikeRegister],
     ban: BanRegister
 

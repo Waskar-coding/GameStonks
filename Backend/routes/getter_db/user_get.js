@@ -28,7 +28,7 @@ router.get(
                     thumbnail: user.thumbnail,
                     profile_url: user.profile_url,
                     wealth: user.wealth,
-                    claims: user.claims,
+                    requests: user.requests,
                     jackpots:  user.jackpots.filter(jackpot => {return jackpot.status === 'a'})
                         .map(jackpot => {return jackpot.jackpot_id}),
                     jackpot_number: user.jackpots.length,
@@ -85,9 +85,11 @@ router.get(
 //Donate money to a friend
 router.post(
     '/donate',
+    steamAuth.ensureAuthenticated,
+    localAuth.verifyToken,
     function(req,res){
         checkDonation(
-            req.body.userId,
+            req.user.user.steamid,
             req.body.friendId,
             req.body.transferredWealth,
             new Date(req.body.timeline1Start),
@@ -115,7 +117,7 @@ async function checkDonation(
         res.send(
             {
                 status: 'rejected',
-                sameId: true,
+                sameId: false,
                 hasWealth: hasWealth,
                 isRegistered: isRegistered
             }
@@ -148,7 +150,7 @@ async function checkDonation(
         res.send(
             {
                 status: 'rejected',
-                sameId: false,
+                sameId: true,
                 hasWealth: hasWealth,
                 isRegistered: isRegistered
             }
@@ -329,6 +331,69 @@ function addToFriend(
     })
 }
 
+
+router.post(
+    'request',
+    function(req,res){
+        const userId = req.body.userId;
+        const request = req.body.request;
+        const timeline1Start = req.body.timeline1Start;
+        const timeline1Final = req.body.timeline1Final;
+        const timeline2Start = req.body.timeline2Start;
+        const timeline2Final = req.body.timeline2Final;
+        User.findOne({steamid: userId})
+            .then(user => {
+                if(user.wealth < request){
+                    res.send({
+                        status: 'rejected'
+                    })
+                }
+                else{
+                    const requestRegister = [
+                        new Date(),
+                        'R',
+                        'Steam',
+                        request
+                    ];
+                    User.findOneAndUpdate(
+                        {steamid: userId},
+                        {
+                            $inc: {
+                                wealth: -request
+                            },
+                            $push: {
+                                general_timeline: requestRegister,
+                                wealth_timetable: [new Date(), user.wealth - request]
+                            }
+                        },
+                        {new: true}
+                    )
+                        .then(newUser => {
+                            res.send({
+                                status: 'success',
+                                userWealth: newUser.wealth,
+                                updateTimeline1: (
+                                    (requestRegister[0] >= timeline1Start)
+                                    &&
+                                    (requestRegister[0] <= timeline1Final)
+                                )? [[requestRegister[0], wealth], requestRegister] : null,
+                                updateTimeline2: (
+                                    (requestRegister[0] >= timeline2Start)
+                                    &&
+                                    (requestRegister[0] <= timeline2Final)
+                                )? requestRegister : null
+                            })
+                        })
+                        .catch(err => {
+                            res.send({Error: 'Internal server error'})
+                        })
+                }
+            })
+            .catch(err => {
+                res.send({Error: 'Internal server error'})
+            })
+    }
+);
 
 //Friend's account datta
 router.get(

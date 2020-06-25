@@ -29,7 +29,7 @@ class BasicProfile extends React.PureComponent{
                             [
                                 ['Steamid', user.steamid],
                                 ['Strikes', user.strikes.length],
-                                ['Wealth', user.wealth + '$']
+                                ['Wealth', this.props.wealth + '$']
                             ],
                             [
                                 ['Joined', user.joined],
