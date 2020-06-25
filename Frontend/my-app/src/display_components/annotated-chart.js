@@ -6,21 +6,6 @@ import Math from 'math';
 class AnnotatedChart extends React.PureComponent{
     render(){
         const events = this.props.events;
-        const legend = this.props.tags.map(tag => {
-            return <div style={{display: "inline-block", margin: "8px"}}>
-                <div
-                    style={{
-                        display: "inline-block",
-                        backgroundColor: tag[1],
-                        height: "5px",
-                        width: "5px",
-                        marginBottom: "2px",
-                        marginRight: "3px"
-                    }}>
-                </div>
-                <div style={{display: "inline-block"}}>{tag[0]}</div>
-            </div>
-        });
         const annotations = events.map(event => {
             return {
                 type: 'line',
@@ -111,7 +96,32 @@ class AnnotatedChart extends React.PureComponent{
         return(
             <div>
                 <Line data={data} options={options} />
-                <div style={{textAlign: "center"}}>{legend}</div>
+                <div style={{textAlign: "center"}}>
+                    <ul style={{listStyleType:"none"}}>
+                        {this.props.tags.map(tag => {
+                            return(
+                                <li key={tag[0]}>
+                                    <div style={{display: "inline-block", margin: "8px"}}>
+                                        <div
+                                            style={{
+                                                display: "inline-block",
+                                                    backgroundColor: tag[1],
+                                                    height: "5px",
+                                                    width: "5px",
+                                                    marginBottom: "2px",
+                                                    marginRight: "3px"
+                                            }}
+                                        >
+                                        </div>
+                                        <div style={{display: "inline-block"}}>
+                                            {tag[0]}
+                                        </div>
+                                    </div>
+                                </li>
+                            )
+                        })}
+                    </ul>
+                </div>
             </div>
         )
     }

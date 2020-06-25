@@ -1,4 +1,22 @@
 {
+  "R": {
+    "annotation-color": "pink",
+    "timeline-color": "pink",
+    "legend-tags": {
+      "ES": "Reclamación",
+      "EN": "Request"
+    },
+    "Steam": {
+      "ES": [
+        "Reclamaste que GameStonks cargara ",
+        "$ a tu cuenta de Steam"
+      ],
+      "EN": [
+        "You requested GameStonks to charge ",
+        "$ into your Steam account"
+      ]
+    }
+  },
   "P": {
     "annotation-color": "green",
     "timeline-color": "green",

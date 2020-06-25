@@ -54,18 +54,17 @@ class Bronze extends React.Component{
             })
     }
     render(){
-        let renderContent;
-        console.log('Rendering');
-        if(this.state.isLoaded === false){renderContent = <div></div>}
-        else{
-            renderContent = <Modal isOpen={this.state.displayError}>
-                                <div>{this.state.errorMessage}}</div>
-                                <button onClick={() => {this.closeModal()}} >Close</button>
-                            </Modal>
+        if(this.state.isLoaded === false){
+            return(<div></div>)
         }
-        return(
-            <div>{renderContent}</div>
-        )
+        else{
+            return(
+                <Modal isOpen={this.state.displayError}>
+                    <div>{this.state.errorMessage}}</div>
+                    <button onClick={() => {this.closeModal()}} >Close</button>
+                </Modal>
+            )
+        }
     }
 }
 

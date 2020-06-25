@@ -8,6 +8,9 @@ import AllJackpots from './jackpots/JackpotRouter';
 import MyProfile from './users/my-profile';
 import Profiles from './users/profile-search';
 import UserProfile from "./users/user-profile";
+import Modal from "react-modal";
+
+Modal.setAppElement('#root');
 
 class App extends React.Component{
     render(){

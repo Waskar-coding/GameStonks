@@ -1,0 +1,44 @@
+{
+  "Donation":{
+    "main": {
+      "ES": [
+        "Tu donación no se realizó con éxito por las siguientes razones:"
+      ],
+      "EN": [
+        "Your donation was not succesful due to the following reasons:"
+      ]
+    },
+    "isNaN": {
+      "ES": [
+        "La cantidad a donar no es un número válido"
+      ],
+      "EN": [
+        "The donated amount is not a valid number"
+      ]
+    },
+    "sameId": {
+      "ES": [
+        "Has introducido tu propio steamid (no puedes donarte dinero a tí mismo)"
+      ],
+      "EN": [
+        "You introduced your own steamid (you cannot donate to yourself)"
+      ]
+    },
+    "hasWealth": {
+      "ES": [
+        "Estás donando más del que tienes en GameStonks"
+      ],
+      "EN": [
+        "You are donating more than you have in GameStonks"
+      ]
+    },
+    "isRegistered": {
+      "ES": [
+        "El usuario seleccionado no se registró en GameStonks"
+      ],
+      "EN": [
+        "The selected user is not registered in GameStonks"
+      ]
+    }
+  }
+}

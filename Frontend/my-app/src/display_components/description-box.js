@@ -2,19 +2,41 @@ import React from "react";
 
 class DescriptionBox extends React.PureComponent{
     render(){
-        const thumbnail = <div><img src={this.props.thumbnail} alt={this.props.alt} /></div>;
-        const title = <div><h1>{this.props.title}</h1></div>;
-        const table = this.props.table.map(tableRow => {
-                return <tr>{tableRow.map(tablePair => {
-                    return <td><span>{`${tablePair[0]}: `}</span><span>{tablePair[1]}</span></td>
-                })}</tr>
-            })
+        let rowNum = 0;
+        let colNum = 0;
         return(
             <div>
-                {thumbnail}
                 <div>
-                    {title}
-                    {table}
+                    <img src={this.props.thumbnail} alt={this.props.alt} />
+                </div>
+                <div>
+                    <div>
+                        <h1>{this.props.title}</h1>
+                    </div>
+                    <div>
+                        <table>
+                            <tbody>
+                                {this.props.table.map(tableRow => {
+                                    rowNum++;
+                                    colNum = 0;
+                                    return(
+                                        <tr key={rowNum-1}>
+                                            {tableRow.map(tablePair => {
+                                                colNum++;
+                                                return(
+                                                    <td key={colNum-1}>
+                                                        <span>
+                                                            {`${tablePair[0]}: `}</span><span>{tablePair[1]}
+                                                        </span>
+                                                    </td>
+                                                )
+                                            })}
+                                        </tr>
+                                    )
+                                })}
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         )
