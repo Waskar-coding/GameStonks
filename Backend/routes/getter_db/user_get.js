@@ -382,12 +382,12 @@ router.post(
                                 )? requestRegister : null
                             })
                         })
-                        .catch(err => {
+                        .catch(() => {
                             res.send({Error: 'Internal server error'})
                         })
                 }
             })
-            .catch(err => {
+            .catch(() => {
                 res.send({Error: 'Internal server error'})
             })
     }
