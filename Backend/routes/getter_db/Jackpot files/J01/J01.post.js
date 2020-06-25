@@ -264,7 +264,7 @@ async function rewardUser(steamid, jackpotId, appId, playtime, res){
            .then(game => {
                resolve(game)
            })
-           .catch(err => reject(res.status(500).send({Error: 'Internal server error'})))
+           .catch(() => reject(res.status(500).send({Error: 'Internal server error'})))
     });
     const scoreIncrement = (1 + user.loyalty) * game.base_value * (Math.exp(-playtime/120) / (Math.pow(game.players.length+1,1/lambda) * Math.pow(user.monitored.length+1,1/mi)));
     const currentJackpot = await new Promise((resolve, reject) => {
@@ -272,7 +272,7 @@ async function rewardUser(steamid, jackpotId, appId, playtime, res){
             $inc: {total_score: scoreIncrement}
         })
             .then(jackpot => {resolve(jackpot)})
-            .catch(err => reject(res.status(500).send({Error: 'Internal server error'})))
+            .catch(() => reject(res.status(500).send({Error: 'Internal server error'})))
     });
     const gameRegister = {
         appid: appId,
@@ -339,7 +339,7 @@ async function strikeUser(req,steamid,jackpotId, appId, res){
             .then(game => {
                 resolve(game)
             })
-            .catch(err => reject(res.status(500).send({Error: 'Internal server error'})))
+            .catch(() => reject(res.status(500).send({Error: 'Internal server error'})))
     });
     User.findOneAndUpdate(
         {steamid: steamid, "jackpots.jackpot_id": jackpotId},
@@ -408,7 +408,7 @@ function banUser(req, steamid, jackpotId, res){
                 ]
             }
         })
-        .then( user => {
+        .then( () => {
                 req.user.banType = 'B02';
                 res.redirect('/logout')
             }

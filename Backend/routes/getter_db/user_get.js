@@ -6,8 +6,6 @@ const path = require('path');
 
 ////Local
 const User = require('../object_db/user_db.js');
-const Game = require('../object_db/game_db.js');
-const Jackpot = require('../object_db/jackpot_db.js');
 const steamAuth = require('../steam_auth/auth');
 const localAuth = require('../local_auth/verify');
 
@@ -37,7 +35,7 @@ router.get(
                     strikes: user.strikes
                 });
             })
-            .catch(err => {
+            .catch(() => {
                 res.send({Error: "Internal server error"})
             })
 });
@@ -74,7 +72,7 @@ router.get(
                     })
                 }
             })
-            .catch(err => {
+            .catch(() => {
                 res.send({
                     Error: 'Internal server error'
                 })
@@ -95,7 +93,7 @@ router.post(
             new Date(req.body.timeline2Start),
             new Date(req.body.timeline2Final),
             res
-        )
+        ).then(console.log("Successful donation"))
     }
 );
 
@@ -142,7 +140,7 @@ async function checkDonation(
             timeline2Start,
             timeline2Final,
             res
-        )
+        ).then(console.log("Successful transfer"))
     }
     else{
         res.send(
@@ -160,7 +158,7 @@ function checkUserWealth(
     userId,
     transferredWealth
 ){
-    return new Promise((resolve, reject) => {
+    return new Promise((resolve) => {
         User.findOne({steamid: userId})
             .then(user => {
                 resolve([
@@ -185,7 +183,7 @@ function checkUserWealth(
 function checkFriendWealth(
     friendId
 ){
-    return new Promise((resolve, reject) => {
+    return new Promise((resolve) => {
         User.findOne({steamid: friendId})
             .then(friend => {
                 if(friend === null){
@@ -322,7 +320,7 @@ function addToFriend(
                 }
             }
         )
-            .then(user => {
+            .then(() => {
                 resolve(receivedRegister)
             })
             .catch(err => reject(err))
@@ -350,7 +348,7 @@ router.get(
                    strikes: user.strikes
                })
            })
-           .catch(err => res.send({Error: "Internal server error"}))
+           .catch(() => res.send({Error: "Internal server error"}))
 });
 
 
@@ -378,7 +376,7 @@ router.get(
                         }
                     })
             })
-            .catch(err => {
+            .catch(() => {
                 res.status(500).send({Error: "Internal server error"})
             })
 });

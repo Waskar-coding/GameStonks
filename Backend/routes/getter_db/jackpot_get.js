@@ -3,16 +3,12 @@
 const express = require('express');
 const router = express.Router();
 const path = require('path');
-const fs  = require('fs');
-const request = require('request');
 
 ////Local
 const Jackpot = require('../object_db/jackpot_db.js');
-const Game = require('../object_db/game_db.js');
 const User = require('../object_db/user_db.js');
 const steamAuth = require('../steam_auth/auth');
 const localAuth = require('../local_auth/verify');
-const APIKEY = process.env.STEAM_PERSONAL_APIKEY;
 
 
 
@@ -60,7 +56,6 @@ const getCurrentNum = (req) => {
 const getCurrent = (req) => {
     const sortCriteria = req.query.sort;
     const orderCriteria = req.query.order;
-    const searchCriteria = req.query.search;
     const offset = req.query.page;
     console.log(sortCriteria);
     const display = 2;
@@ -85,7 +80,7 @@ const getCurrent = (req) => {
 };
 ////Getting user jackpot register
 const getUserRegister = (req) => {
-    return new Promise((resolve, reject) => {
+    return new Promise((resolve) => {
         if(req.user){
             User.findOne({steamid: req.user.user.steamid})
                 .then(user => resolve(user.jackpots))
@@ -102,7 +97,6 @@ async function assignJackpotStatus(req){
     const registers = await getUserRegister(req);
     return new Promise((resolve,reject) => {
         const jackpots = [];
-        const checkedJackpots = [];
         let currentJackpot = {};
         if(current.length === 0){
             reject()
@@ -120,7 +114,7 @@ async function assignJackpotStatus(req){
                     active_users: current[i].active_users,
                     user_status: 'new'
                 };
-                let isRegistered;
+
                 for(let j = 0; j<registers.length; j++){
                     if(current[i].jackpot_id === registers[j].jackpot_id){
                         currentJackpot.user_status = registers[j].status;
@@ -158,7 +152,9 @@ async function getJackpotData(req, res){
 ////Get Method
 router.get('/current',function(req,res){
     console.log('Getting current');
-    getJackpotData(req, res)
+    getJackpotData(req, res).then(
+        console.log("Data recovered")
+    )
 });
 
 
@@ -177,7 +173,7 @@ function isActive(req, res, next){
                 next()
             }
         })
-        .catch(err => {
+        .catch(() => {
             res.status(500).send({Error: 'Error 500: Internal server error'})
         })
 }
@@ -280,14 +276,14 @@ router.post(
                                             `a ${req.body.multiplier_class} multiplier`})
                                 }
                             })
-                            .catch(err => {
+                            .catch(() => {
                                 console.log('Could not find User');
                                 res.status(500).send({Error: "Internal server error"})
                             })
                     }
                 }
             )
-            .catch(err => {
+            .catch(() => {
                 console.log('Could not find jackpot');
                 res.status(500).send({Error: "Internal server error"})
             })

@@ -130,7 +130,6 @@ passport.use(new SteamStrategy({
                     ////Banned users
                     else if (user.banned) {
                         const currentBan = user.ban;
-                        const today = new Date();
                         const dictBan = {
                             B01: verifyUser,
                             B02: verifyTime
@@ -172,7 +171,7 @@ passport.use(new SteamStrategy({
                             .then(user => {return done(null, ({user: user,token:createToken(user.steamid) }))})
                     }
                 })
-                .catch(err => {
+                .catch(() => {
                     return done(null, ({user: null}));
                 })
         });
