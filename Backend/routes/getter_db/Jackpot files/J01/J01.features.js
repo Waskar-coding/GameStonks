@@ -62,7 +62,7 @@ function getJ01Games(req){
 
 //Inputs: Checking user registers to determine game status
 function getJ01GameRegisters(req, gameArray){
-    return new Promise((resolve, reject) => {
+    return new Promise((resolve) => {
         if(req.user){
             User.findOne({steamid: req.user.user.steamid})
                 .then(user => {

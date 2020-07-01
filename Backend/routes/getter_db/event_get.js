@@ -163,7 +163,7 @@ router.post('/get_multiplier', function(req,res) {
                 })
             }
         })
-        .then((message) => {
+        .then(() => {
             console.log('Done');
         });
 });

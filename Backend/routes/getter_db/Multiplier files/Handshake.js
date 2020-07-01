@@ -18,7 +18,9 @@ function handshake(currentJackpot, req, res) {
                 if(currentJackpot.status === 'k') {
                     res.send({message: 'Your friend was kicked from this jackpot'})
                 } else {
-                    applyHandshake(friendName,friendJackpot,currentJackpot, req, res)
+                    applyHandshake(friendName,friendJackpot,currentJackpot, req, res).then(
+                        res.send({message: 'Successful handshake'})
+                    )
                 }
             }
         })
@@ -27,7 +29,7 @@ function handshake(currentJackpot, req, res) {
 async function applyHandshake(friendName,friendJackpot,currentJackpot,req,res){
     if(friendJackpot === undefined){
         await createRegister(req)
-            .then(async isCreated => {
+            .then(async () => {
                 const [newUser, jackpot] = await modifyUser(req, friendName, currentJackpot);
                 const isFriendUpdated = await modifyFriend(req, currentJackpot, friendJackpot, jackpot);
                 if(isFriendUpdated){
@@ -72,7 +74,7 @@ function createRegister(req){
                     {jackpot_id: req.params.jackpot_id},
                     {$push: {users: user.steamid}}
                     )
-                    .then(jackpot => {resolve(true)})
+                    .then(() => {resolve(true)})
             })
     })
 }
@@ -175,7 +177,7 @@ function modifyFriend(req, currentJackpot, friendJackpot, jackpot){
                     },
                     $set: {"jackpots.$.status": 'a'}
                 })
-                .then(user => {
+                .then(() => {
                     resolve(true)}
                 )
     });
