@@ -12,6 +12,18 @@ const steamAuth = require('../steam_auth/auth');
 const localAuth = require('../local_auth/verify');
 
 
+
+//Verify user is autenticted
+router.get(
+    '/verify',
+    steamAuth.ensureAuthenticated,
+    localAuth.verifyToken,
+    function(req,res){
+        res.send({
+            auth: true
+        })
+    }
+);
 //User's account data
 router.get(
     '/my_profile',
@@ -20,7 +32,6 @@ router.get(
     function(req, res){
         User.findOne({steamid: req.user.user.steamid})
             .then(user => {
-
                 res.send({
                     steamid: user.steamid,
                     name: user.name,
@@ -41,6 +52,7 @@ router.get(
                 res.send({Error: "Internal server error"})
             })
 });
+
 
 
 //User's timeline
@@ -65,12 +77,14 @@ router.get(
                             const startDate = new Date(req.query.start);
                             const finalDate = new Date(req.query.end);
                             return (pointDate > startDate) && (pointDate < finalDate);
-                        })
+                        }),
+                        joined: user.joined
                     });
                 }
                 else{
                     res.send({
-                        timeline: timeline
+                        timeline: timeline,
+                        joined: user.joined
                     })
                 }
             })
@@ -80,6 +94,7 @@ router.get(
                 })
             })
 });
+
 
 
 //Donate money to a friend
@@ -274,7 +289,7 @@ function subtractFromUser(
             new Date(),
             'G',
             'D',
-            transferredWealth,
+            Number(transferredWealth),
             friendName
         ];
         User.findOneAndUpdate(
@@ -309,7 +324,7 @@ function addToFriend(
             new Date(),
             'G',
             'R',
-            transferredWealth,
+            Number(transferredWealth),
             userName
         ];
         User.findOneAndUpdate(
@@ -332,24 +347,39 @@ function addToFriend(
 }
 
 
+
+//Charge Steam account
 router.post(
-    'request',
+    '/request',
+    steamAuth.ensureAuthenticated,
+    localAuth.verifyToken,
     function(req,res){
-        const userId = req.body.userId;
-        const request = req.body.request;
-        const timeline1Start = req.body.timeline1Start;
-        const timeline1Final = req.body.timeline1Final;
-        const timeline2Start = req.body.timeline2Start;
-        const timeline2Final = req.body.timeline2Final;
+        const userId = req.user.user.steamid;
+        const request = Number(req.body.request);
+        const timeline1Start = new Date(req.body.timeline1Start);
+        const timeline1Final = new Date(req.body.timeline1Final);
+        const timeline2Start = new Date(req.body.timeline2Start);
+        const timeline2Final = new Date(req.body.timeline2Final);
         User.findOne({steamid: userId})
             .then(user => {
-                if(user.wealth < request){
+                if(
+                    (user.wealth < request)
+                    ||
+                    ([5,10,20,25,50,100].includes(request) === false)
+                    ||
+                    (user.requests.length > 2)
+                ){
                     res.send({
                         status: 'rejected'
                     })
                 }
                 else{
-                    const requestRegister = [
+                    const requestRegister = {
+                        request_date: new Date(),
+                        request_type: 'Steam',
+                        request_cash: request
+                    };
+                    const requestEvent = [
                         new Date(),
                         'R',
                         'Steam',
@@ -362,8 +392,9 @@ router.post(
                                 wealth: -request
                             },
                             $push: {
-                                general_timeline: requestRegister,
-                                wealth_timetable: [new Date(), user.wealth - request]
+                                general_timeline: requestEvent,
+                                wealth_timetable: [new Date(), user.wealth - request],
+                                requests: requestRegister
                             }
                         },
                         {new: true}
@@ -373,18 +404,20 @@ router.post(
                                 status: 'success',
                                 userWealth: newUser.wealth,
                                 updateTimeline1: (
-                                    (requestRegister[0] >= timeline1Start)
+                                    (requestEvent[0] >= timeline1Start)
                                     &&
-                                    (requestRegister[0] <= timeline1Final)
-                                )? [[requestRegister[0], wealth], requestRegister] : null,
+                                    (requestEvent[0] <= timeline1Final)
+                                )? [[requestEvent[0], newUser.wealth], requestEvent] : null,
                                 updateTimeline2: (
-                                    (requestRegister[0] >= timeline2Start)
+                                    (requestEvent[0] >= timeline2Start)
                                     &&
-                                    (requestRegister[0] <= timeline2Final)
-                                )? requestRegister : null
+                                    (requestEvent[0] <= timeline2Final)
+                                )? requestEvent : null,
+                                request: requestRegister
                             })
                         })
                         .catch(err => {
+                            console.log(err);
                             res.send({Error: 'Internal server error'})
                         })
                 }
@@ -395,30 +428,97 @@ router.post(
     }
 );
 
+
+//Finding if user exists
+router.get(
+    '/profiles/:steamid/exists',
+    function(req,res){
+        User.findOne({steamid: req.params.steamid})
+            .then(user => {
+                if(user === null){
+                    console.log('No');
+                    res.status(404).send({})
+                }
+                else{
+                    console.log('Found');
+                    res.status(200).send({})
+                }
+            })
+            .catch(() => {
+                res.send({Error: "Internal server error"})
+            })
+});
 //Friend's account datta
 router.get(
-    '/profiles/:name',
+    '/profiles/:steamid/profile',
     function(req,res){
-       User.findOne({name: req.params.name})
+       User.findOne({steamid: req.params.steamid})
            .then(user => {
-               res.send({
-                   steamid: user.steamid,
-                   thumbnail: user.thumbnail,
-                   profile_url: user.profile_url,
-                   name: user.name,
-                   joined: user.joined,
-                   wealth: user.wealth,
-                   current_strikes: user.current_strikes,
-                   jackpots: user.jackpots.filter(jackpot => {return jackpot.jackpot_id}),
-                   questions: user.questions.length,
-                   multipliers: user.multipliers,
-                   strikes: user.strikes
-               })
+               if(user === null){
+                   res.status(404).send({})
+               }
+               else{
+                    res.status(200).send({
+                        steamid: user.steamid,
+                        thumbnail: user.thumbnail,
+                        profile_url: user.profile_url,
+                        name: user.name,
+                        joined: user.joined,
+                        wealth: user.wealth,
+                        jackpots:  user.jackpots.filter(jackpot => {
+                            return jackpot.status === 'a'}
+                        )
+                            .map(jackpot => {
+                                return jackpot.jackpot_id}
+                            ),
+                        multipliers: user.multipliers,
+                        strikes: user.strikes,
+                        jackpot_number: user.jackpots.length,
+                        question_number: user.questions
+                    })
+               }
            })
            .catch(err => res.send({Error: "Internal server error"}))
 });
 
 
+
+//Friend's filtered timeline
+router.get(
+    '/profiles/:steamid/timeline',
+    function(req,res){
+        const allowedEvents = [
+            'P',
+            'M',
+            'S',
+            'B',
+            'G'
+        ];
+        User.findOne({steamid: req.params.steamid})
+            .then(user => {
+                res.send({
+                    timeline: user.general_timeline.filter(event => {
+                        const eventDate = new Date(event[0]);
+                        const startDate = new Date(req.query.start);
+                        const finalDate = new Date(req.query.end);
+                        const isAllowed = allowedEvents.includes(event[1]);
+                        return (
+                            (eventDate > startDate)
+                            &&
+                            (eventDate < finalDate)
+                            &&
+                            (isAllowed === true)
+                        );
+                    }),
+                    joined: user.joined
+                })
+            })
+            .catch(err => {
+                res.send({
+                    Error: 'Internal server error'
+                })
+            })
+});
 //Finding friends by name
 router.get(
     '/find',
@@ -433,18 +533,51 @@ router.get(
                 User.count({name: {"$regex": req.query.search, $options: 'i'}})
                     .then(count => {
                         const userList = users.map(user => {
-                            return {name: user.name, thumbnail: user.thumbnail, joined: user.joined}
+                            return {
+                                steamid: user.steamid,
+                                name: user.name,
+                                thumbnail: user.thumbnail,
+                                joined: user.joined
+                            }
                         });
                         if(req.user){
-                            res.send({count: count, profiles: userList, my_name: req.user.user.name});
+                            res.send({
+                                count: count,
+                                profiles: userList,
+                                my_name: req.user.user.name
+                            });
                         }
                         else{
-                            res.send({count: count, profiles: userList, my_name: undefined})
+                            res.send({
+                                count: count,
+                                profiles: userList,
+                                my_name: undefined
+                            })
                         }
                     })
             })
             .catch(err => {
                 res.status(500).send({Error: "Internal server error"})
+            })
+});
+//User's simple profile
+router.get(
+    '/simple/:steamid',
+    function(req,res){
+        User.findOne({steamid: req.params.steamid})
+            .then(user => {
+                if(user === null){
+                    res.status(404).send({
+                        status: 'Not found'
+                    })
+                }
+                else{
+                    res.status(200).send({
+                        status: 'Success',
+                        name: user.name,
+                        thumbnail: user.thumbnail
+                    })
+                }
             })
 });
 

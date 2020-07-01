@@ -120,7 +120,7 @@ class J01Personal extends React.Component{
                             table={[
                                 [["Active since",jackpot.date.slice(0,10)],["Monitored",this.state.user.monitored.length]],
                                 [["Share","99.64 $"],["Invited",jackpot.recommendations.length]],
-                                [["Updated","2020-05-17"],["Multipliers",jackpot.multipliers.length]]
+                                [["Updated","2020-05-17"],["multipliers",jackpot.multipliers.length]]
                             ]}
                         />
                         <MultiplierRouter

@@ -1,6 +1,110 @@
 {
+  "Search": {
+    "user-message": {
+      "ES": "Usuarios encontrados: ",
+      "EN": "Found users: "
+    },
+    "user-placeholder":{
+      "ES": "Busca un usuario",
+      "EN": "Search for a user"
+    },
+    "user-404": {
+      "ES": "No se encontró el usuario",
+      "EN": "User not found"
+    },
+    "users-404": {
+      "ES": "No se encontraron usuarios",
+      "EN": "No users were found"
+    },
+    "user-exists": {
+      "ES": "Comprobando usuario",
+      "EN": "Checking user"
+    },
+    "jackpot-message": {
+      "ES": "Eventos encontrados: ",
+      "EN": "Events found: "
+    },
+    "jackpot-placeholder": {
+      "ES": "Busca un evento",
+      "EN": "Search for an event"
+    },
+    "jackpot-404": {
+      "ES": "No se encontraron eventos",
+      "EN": "No events were found"
+    }
+  },
+  "Request": {
+    "success": {
+      "ES": [
+        "Has solicitado una transferencia de ",
+        "$ a tu cuenta de Steam. Te enviaremos una tarjeta de regalo los más pronto posible."
+      ],
+      "EN": [
+        "You requested a transference of ",
+        "$ to your Steam account. We will send you a gift card as soon as possible."
+      ]
+    },
+    "limit": {
+      "ES": [
+        "No puedes hacer nuevas reclamaciones hasta que se procese una de las tres que ya has hecho."
+      ],
+      "EN": [
+        "You cannot make further requests until one of the three you have already made is processed."
+      ]
+    },
+    "cash": {
+      "ES": [
+        "Fondos insuficientes para transferencias."
+      ],
+      "EN": [
+        "Not enough cash for transfers"
+      ]
+    },
+    "confirm": {
+      "ES": [
+        "¿Estás seguro que quieres hacer esta reclamación? Recuerda que puedes tener un máximo de 3 reclamaciones pendientes"
+      ],
+      "EN": [
+        "Are you sure you want to make this request? Keep in mind you can have a maximum of three pending requests."
+      ]
+    }
+  },
+  "Timeline": {
+    "no-graph": {
+      "ES": ["No hay información disponible entre las fechas seleccionadas"],
+      "EN": ["No available information between the selected dates"]
+    },
+    "no-list": {
+      "ES": ["No existe ningún evento entre las fechas seleccionadas"],
+      "EN": ["No events exist between the selected dates"]
+    }
+  },
   "Donation":{
-    "main": {
+    "confirm": {
+      "ES": [
+        "¿Estás seguro de que quieres donar ",
+        "$ a ",
+        "?"
+      ],
+      "EN": [
+        "Are you sure you want to donate ",
+        "$ to ",
+        "?"
+      ]
+    },
+    "success": {
+      "ES": [
+        "Has donado ",
+        "$ a ",
+        "."
+      ],
+      "EN": [
+        "You donated ",
+        "$ to ",
+        "."
+      ]
+    },
+    "main-error": {
       "ES": [
         "Tu donación no se realizó con éxito por las siguientes razones:"
       ],

@@ -1,6 +1,5 @@
 import React from "react";
 import { Suspense } from "react";
-import axios from "axios";
 import SimpleList from "../display_components/simple-list";
 
 class MultiplierRouter extends React.Component{
@@ -40,17 +39,19 @@ class MultiplierRouter extends React.Component{
     }
     handleCallback(user){
         this.props.toParent(user);
-        const currentJackpot = user.jackpots.filter(jackpot => {return jackpot.jackpot_id === this.props.jackpotId}).pop()
-        this.setState({userMultipliers: user.multipliers, jackpotMultipliers: currentJackpot.multipliers})
+        const currentJackpot = user.jackpots.filter(
+            jackpot => {return jackpot.jackpot_id === this.props.jackpotId}
+        ).pop();
+        this.setState({
+            userMultipliers: user.multipliers,
+            jackpotMultipliers: currentJackpot.multipliers
+        })
     }
     render(){
         if(this.state.isLoaded === false){
             return(<div></div>)
         }
         else if(this.state.userMultipliers.length === 0){
-            const availableMultipliers = sortByClass(getClassArrayUser(this.state.userMultipliers));
-            const usedMultipliers = createList(sortByClass(getClassArrayJackpot(this.state.jackpotMultipliers)));
-            const CurrentMultiplier = this.state.currentMultiplierScript;
             return(
                 <div>
                     <div>
@@ -63,7 +64,11 @@ class MultiplierRouter extends React.Component{
                     <div>
                         <SimpleList
                             title="Used multipliers"
-                            list={usedMultipliers}
+                            list={createList(
+                                sortByClass(
+                                    getClassArrayJackpot(this.state.jackpotMultipliers)
+                                )
+                            )}
                             useLinks={false}
                         />
                     </div>
@@ -110,18 +115,6 @@ class MultiplierRouter extends React.Component{
     }
 }
 
-class MultiplierList extends React.PureComponent{
-    render(){
-        const multiplierList = Object.keys(this.props.multipliers).map(multiplier => {
-            return <div><span>x{this.props.multipliers[multiplier]} </span>{multiplier}<span></span></div>
-        });
-        return(
-            <div>
-                {multiplierList}
-            </div>
-        )
-    }
-}
 const getClassArrayJackpot = (multipliers) => {
     return (multipliers.length !== 0)? multipliers.map(multiplier => {return multiplier[1]}): multipliers
 };
@@ -142,7 +135,16 @@ const sortByClass = (multipliers) => {
 };
 const createList = (multiplierClassCount) => {
     return Object.keys(multiplierClassCount).map(multiplierClass => {
-        return <div><div>{multiplierClass}</div><div>x{multiplierClassCount[multiplierClass]}</div></div>
+        return(
+            <div>
+                <div>
+                    {multiplierClass}
+                </div>
+                <div>
+                    x{multiplierClassCount[multiplierClass]}
+                </div>
+            </div>
+        )
     });
 };
 const popMultiplier = (multiplierList, multiplierClass) => {

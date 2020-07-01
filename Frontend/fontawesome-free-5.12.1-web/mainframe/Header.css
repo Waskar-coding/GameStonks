@@ -1,9 +1,9 @@
 body{
-    background-image: url('./test_background.jpg');
+    background-image: url('../../test_background.jpg');
     background-size: cover;
     text-align: center;
 }
-#PageHead{
+#head{
     background-color: darkslategrey;
     width: 97%;
     display: flex;
@@ -12,23 +12,23 @@ body{
     border-radius: 10px;
 }
 
-#Icon{
+#icon{
     position: relative;
     color: white;
     margin: 0.5VW;
 }
 
-#Title{
+#title{
     color: white;
 }
 
-#Company{
+#company{
     font-size: 10px;
     position: relative;
     top: -14px
 }
 
-#Lema{
+#motto{
     font-size: 12px;
     color: white;
     position: absolute;

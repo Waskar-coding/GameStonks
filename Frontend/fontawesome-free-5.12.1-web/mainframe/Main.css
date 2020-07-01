@@ -1,0 +1,32 @@
+.column-layout{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.side-column{
+    width: 12.5%;
+    background-color: grey;
+}
+
+#news-board{
+    background-color: darkgray;
+    border-radius: 10px;
+    padding: 2px;
+    width: 75%;
+    margin: 1px;
+}
+
+#bottom-adds{
+    display: flex;
+    align-items: center;
+}
+
+#footer{
+    background-color: darkslategrey;
+    display: flex;
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px;
+
+}

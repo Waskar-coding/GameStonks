@@ -1,0 +1,100 @@
+{
+  "profile": {
+    "joined": {
+      "ES": "Ingreso",
+      "EN": "Sign in"
+    },
+    "events-total": {
+      "ES": "Eventos",
+      "EN": "Events"
+    },
+    "wealth": {
+      "ES": "Fortuna",
+      "EN": "Wealth"
+    },
+    "surveys": {
+      "ES": "Encuestas",
+      "EN": "Surveys"
+    },
+    "multiplier": {
+      "ES": "Multiplicadores",
+      "EN": "Multipliers"
+    },
+    "events-active": {
+      "ES": "Eventos activos",
+      "EN": "Active events"
+    },
+    "timeline-list-title-my": {
+      "ES": "Tu Timeline",
+      "EN": "Your Timeline"
+    },
+    "timeline-list-title-user": {
+      "ES": "Timeline del usuario",
+      "EN": "User's Timeline"
+    },
+    "donation-title": {
+      "ES": "Dona a otros usuarios",
+      "EN": "Donate to other users"
+    },
+    "timeline-graph-title": {
+      "ES": "Evolución de tu fortuna",
+      "EN": "Your wealth's evolution"
+    },
+    "requests-title": {
+      "ES": "Transfiere dinero a tu cuenta de Steam",
+      "EN": "Transfer money to your Steam account"
+    },
+    "requests-list": {
+      "ES": "Pendientes",
+      "EN": "Pending"
+    },
+    "steamid-info-link": {
+      "ES": "¿Como puedo conseguir el steamid de un usuario?",
+      "EN": "How do I get a user's steamid?"
+    }
+  },
+  "annotated-chart": {
+    "x-label": {
+      "ES": "Fecha",
+      "EN": "Date"
+    },
+    "y-label-money": {
+      "ES": "Dinero ($)",
+      "EN": "Money ($)"
+    }
+  },
+  "jackpot": {
+    "jackpot-class": {
+      "ES": "Clase",
+      "EN": "Class"
+    },
+    "jackpot-sponsor": {
+      "ES": "Sponsor",
+      "EN": "Sponsor"
+    },
+    "jackpot-start": {
+      "ES": "Inicio",
+      "EN": "Start"
+    },
+    "jackpot-final": {
+      "ES": "Final",
+      "EN": "Final"
+    },
+    "new": {
+      "ES": "Nuevo",
+      "EN": "New"
+    },
+    "i": {
+      "ES": "Inactivo",
+      "EN": "Inactive"
+    },
+    "a": {
+      "ES": "Activo",
+      "EN": "Active"
+    },
+    "k": {
+      "ES": "Expulsado",
+      "EN": "Kicked"
+    }
+  }
+}

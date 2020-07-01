@@ -31,7 +31,7 @@ router.get('/auth/return',
 
 function ensureAuthenticated(req, res, next) {
     if (req.isAuthenticated()) { return next(); }
-    res.redirect('/');
+        res.status(403).send({ auth: false, message: 'Not authenticated through steam' });
 }
 
 module.exports = {

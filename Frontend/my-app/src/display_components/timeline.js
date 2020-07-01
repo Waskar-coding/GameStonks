@@ -1,26 +1,25 @@
 import React from "react";
+import getLocalDate from "../useful_functions/date-offset";
 
 class TimeLine extends React.PureComponent{
     render(){
         return(
             <div style={{display: "inline-block", marginLeft: "5px", marginRight: "5px"}}>
-                <div><h1>{this.props.title}</h1></div>
-                <div>
-                    <ul style={{listStyleType: "none"}}>
-                        {this.props.events.map(event => {
-                            return(
-                                <li key={event[0]}>
-                                    <TimeLineEvent
-                                        bgColor={event[2]}
-                                        day={event[0].split('T')[0]}
-                                        hour={event[0].split('T')[1].split('.')[0]}
-                                        message={event[3]}
-                                    />
-                                </li>
-                            )
-                        })}
-                    </ul>
-                </div>
+                <ul style={{listStyleType: "none"}}>
+                    {this.props.events.map(event => {
+                        const dateLocal = getLocalDate(new Date(event[0])).toISOString();
+                        return(
+                            <li key={event[0]}>
+                                <TimeLineEvent
+                                    bgColor={event[2]}
+                                    day={dateLocal.split('T')[0]}
+                                    hour={dateLocal.split('T')[1].split('.')[0]}
+                                    message={event[3]}
+                                />
+                            </li>
+                        )
+                    })}
+                </ul>
             </div>
         )
     }

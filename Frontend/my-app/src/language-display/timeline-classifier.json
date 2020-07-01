@@ -7,14 +7,33 @@
       "EN": "Request"
     },
     "Steam": {
-      "ES": [
-        "Reclamaste que GameStonks cargara ",
-        "$ a tu cuenta de Steam"
-      ],
-      "EN": [
-        "You requested GameStonks to charge ",
-        "$ into your Steam account"
-      ]
+      "ES": {
+        "1st": [
+          "Reclamaste que GameStonks cargara ",
+          "$ a tu cuenta de Steam"
+        ]
+      },
+      "EN": {
+        "1st": [
+          "You requested GameStonks to charge ",
+          "$ into your Steam account"
+        ]
+      }
+    },
+    "SteamSS": {
+      "ES": {
+        "1st": [
+          "Transferiremos ",
+          "$ a tu cuenta de Steam."
+        ]
+      },
+      "EN": {
+        "1st": [
+          "We will transfer ",
+          "$ into your Steam account."
+        ]
+      }
+
     }
   },
   "P": {
@@ -25,14 +44,26 @@
       "EN": "Entry"
     },
     "J01": {
-      "ES": [
-        "Fuiste registrado en el evento ",
-        "."
-      ],
-      "EN": [
-        "You were registered in event ",
-        "."
-      ]
+      "ES": {
+        "1st": [
+          "Fuiste registrado en el evento ",
+          "."
+        ],
+        "3rd": [
+          "Se registró en el evento",
+          "."
+        ]
+      },
+      "EN": {
+        "1st": [
+          "You were registered in event ",
+          "."
+        ],
+        "3rd": [
+          "Registered in event",
+          "."
+        ]
+      }
     }
   },
   "PJ": {
@@ -43,12 +74,16 @@
       "EN": "Entry"
     },
     "J01": {
-      "ES": [
-        "Fuiste registrado en el evento."
-      ],
-      "EN": [
-        "You were registered in event."
-      ]
+      "ES": {
+        "1st": [
+          "Fuiste registrado en el evento."
+        ]
+      },
+      "EN": {
+        "1st":[
+          "You were registered in event."
+        ]
+      }
     }
   },
   "D": {
@@ -58,18 +93,32 @@
       "ES": "Registro",
       "EN": "Register"
     },
-    "J01": {
-      "ES": [
-        "En el evento ",
-        " diste permiso a GameStonks para registrar tu actividad en ",
-        " (appid: ",
-        ")."
-      ],
+    "E": {
+      "ES": {
+        "1st": ["Te uniste a GameStonks"],
+        "3rd": ["Se unió a GameStonks"]
+      },
       "EN": {
-        "b1": "In event ",
-        "m12": "you gave GameStonks permision to register your activity in ",
-        "m23": " (appid: ",
-        "a3": ")."
+        "1st": ["You joined GameStonks"],
+        "3rd": ["User joined GameStonks"]
+      }
+    },
+    "J01": {
+      "ES": {
+        "1st": [
+          "En el evento ",
+          " diste permiso a GameStonks para registrar tu actividad en ",
+          " (appid: ",
+          ")."
+        ]
+      },
+      "EN": {
+        "1st": [
+          "In event ",
+          "you gave GameStonks permision to register your activity in ",
+          " (appid: ",
+          ")."
+        ]
       }
     }
   },
@@ -81,16 +130,20 @@
       "EN": "Register"
     },
     "J01": {
-      "ES": [
-        "Diste permiso a GameStonks para registrar tu actividad en ",
-        " (appid: ",
-        ")."
-      ],
-      "EN": [
-        "You gave GameStonks permision to register your activity in ",
-        " (appid: ",
-        ")."
-      ]
+      "ES": {
+        "1st": [
+          "Diste permiso a GameStonks para registrar tu actividad en ",
+          " (appid: ",
+          ")."
+        ]
+      },
+      "EN": {
+        "1st": [
+          "You gave GameStonks permision to register your activity in ",
+          " (appid: ",
+          ")."
+        ]
+      }
     }
   },
   "M": {
@@ -101,48 +154,97 @@
       "EN": "Multiplier"
     },
     "Bronze": {
-      "ES": [
-        "Usaste un multiplicador de Bronze (multiplier_id: ",
-        ") en el evento ",
-        "."
-      ],
-      "EN": [
-        "You used a Bronze multiplier (multiplier_id: ",
-        ") in event ",
-        "."
-      ]
+      "ES": {
+        "1st": [
+          "Usaste un multiplicador de Bronze (multiplier_id: ",
+          ") en el evento ",
+          "."
+        ],
+        "3rd": [
+          "Usó un multiplicador de Bronze (multiplier_id: ",
+          ") en el evento ",
+          "."
+        ]
+      },
+      "EN": {
+        "1st": [
+          "You used a Bronze multiplier (multiplier_id: ",
+          ") in event ",
+          "."
+        ],
+        "3rd": [
+          "Used a Bronze multiplier (multiplier_id: ",
+          ") in event ",
+          "."
+        ]
+      }
     },
     "Handshaker": {
-      "ES": [
-        "",
-        " (steamid: ",
-        ") ha recibido tu apretón de manos (multiplier_id: ",
-        ") en el evento ",
-        "."
-      ],
-      "EN": [
-        "",
-        " (steamid: ",
-        ") has received your handshake (multiplier_id: ",
-        ") in event ",
-        "."
-      ]
+      "ES": {
+        "1st": [
+          "",
+          " (steamid: ",
+          ") ha recibido tu handshake (multiplier_id: ",
+          ") en el evento ",
+          "."
+        ],
+        "3rd": [
+          " (steamid: ",
+          ") recibió su handshake (multiplier_id: ",
+          ") en el evento ",
+          "."
+        ]
+      },
+      "EN": {
+        "1st": [
+          "",
+          " (steamid: ",
+          ") has received your handshake (multiplier_id: ",
+          ") in event ",
+          "."
+        ],
+        "3rd": [
+          "",
+          " (steamid: ",
+          ") has received the user's handshake (multiplier_id: ",
+          ") in event ",
+          "."
+        ]
+      }
     },
     "Handshaked": {
-      "ES": [
-        "",
-        " (steamid: ",
-        ") te ha dado un apretón de manos (multiplier_id: ",
-        ") en el evento ",
-        "."
-      ],
-      "EN": [
-        "",
-        " (steamid: ",
-        ") gave you a handshake (multiplier_id: ",
-        ") in event ",
-        "."
-      ]
+      "ES": {
+        "1st": [
+          "",
+          " (steamid: ",
+          ") te ha dado un handshake (multiplier_id: ",
+          ") en el evento ",
+          "."
+        ],
+        "3rd": [
+          "",
+          " (steamid: ",
+          ") le ha dado un handshake (multiplier_id: ",
+          ") en el evento ",
+          "."
+        ]
+      },
+      "EN": {
+        "1st": [
+          "",
+          " (steamid: ",
+          ") gave you a handshake (multiplier_id: ",
+          ") in event ",
+          "."
+        ],
+        "3rd": [
+          "",
+          " (steamid: ",
+          ") gave the user a handshake (multiplier_id: ",
+          ") in event ",
+          "."
+        ]
+      }
     }
   },
   "MJ": {
@@ -153,42 +255,54 @@
       "EN": "Multiplier"
     },
     "Bronze": {
-      "ES": [
-        "Usaste un multiplicador de Bronze (multiplier_id: ",
-        ")."
-      ],
-      "EN": [
-        "You used a Bronze multiplier (multiplier_id: ",
-        ")."
-      ]
+      "ES": {
+        "1st": [
+          "Usaste un multiplicador de Bronze (multiplier_id: ",
+          ")."
+        ]
+      },
+      "EN": {
+        "1st":[
+          "You used a Bronze multiplier (multiplier_id: ",
+          ")."
+        ]
+      }
     },
     "Handshaker": {
-      "ES": [
-        "",
-        " (steamid: ",
-        ") ha recibido tu apretón de manos (multiplier_id: ",
-        ")."
-      ],
-      "EN": [
-        "",
-        " (steamid: ",
-        ") has received your handshake (multiplier_id: ",
-        ")."
-      ]
+      "ES": {
+        "1st": [
+          "",
+          " (steamid: ",
+          ") ha recibido tu apretón de manos (multiplier_id: ",
+          ")."
+        ]
+      },
+      "EN": {
+        "1st": [
+          "",
+          " (steamid: ",
+          ") has received your handshake (multiplier_id: ",
+          ")."
+        ]
+      }
     },
     "Handshaked": {
-      "ES": [
-        "",
-        " (steamid: ",
-        ") te ha dado un apretón de manos (multiplier_id: ",
-        ")."
-      ],
-      "EN": [
-        "",
-        " (steamid: ",
-        ") gave you a handshake (multiplier_id: ",
-        ")"
-      ]
+      "ES": {
+        "1st": [
+          "",
+          " (steamid: ",
+          ") te ha dado un apretón de manos (multiplier_id: ",
+          ")."
+        ]
+      },
+      "EN": {
+        "1st": [
+          "",
+          " (steamid: ",
+          ") gave you a handshake (multiplier_id: ",
+          ")"
+        ]
+      }
     }
   },
   "S": {
@@ -199,18 +313,34 @@
       "EN": "Strike"
     },
     "S01": {
-      "ES": [
-        "En el evento ",
-        " diste permiso a GameStonks para registrar tu actividad en ",
-        " (appid: ",
-        ") pero no lo tenías en tu librería en ese momento."
-      ],
-      "EN": [
-        "In event ",
-        "you gave GameStonks permission to register your activity in ",
-        " (appid: ",
-        "), but you did not have it in your library at the moment."
-      ]
+      "ES": {
+        "1st": [
+          "En el evento ",
+          " diste permiso a GameStonks para registrar tu actividad en ",
+          " (appid: ",
+          ") pero no lo tenías en tu librería en ese momento."
+        ],
+        "3rd": [
+          "En el evento ",
+          " dió permiso a GameStonks para registrar tu actividad en ",
+          " (appid: ",
+          ") pero no lo tenía en su librería en ese momento."
+        ]
+      },
+      "EN": {
+        "1st": [
+          "In event ",
+          "you gave GameStonks permission to register your activity in ",
+          " (appid: ",
+          ") while not having it in your library at the moment."
+        ],
+        "3rd": [
+          "In event ",
+          "the user gave GameStonks permission to register their activity in ",
+          " (appid: ",
+          "), while not having it in their library at the moment."
+        ]
+      }
     }
   },
   "SJ": {
@@ -220,17 +350,21 @@
       "ES": "Strike",
       "EN": "Strike"
     },
-    "J01": {
-      "ES": [
-        "Diste permiso a GameStonks para registrar tu actividad en ",
-        " (appid: ",
-        ") pero no lo tenías en tu librería en ese momento."
-      ],
-      "EN": [
-        "You gave GameStonks permission to register your activity in ",
-        " (appid: ",
-        "), but you did not have it in your library at the moment."
-      ]
+    "S01": {
+      "ES": {
+        "1st": [
+          "Diste permiso a GameStonks para registrar tu actividad en ",
+          " (appid: ",
+          ") pero no lo tenías en tu librería en ese momento."
+        ]
+      },
+      "EN": {
+        "1st": [
+          "You gave GameStonks permission to register your activity in ",
+          " (appid: ",
+          "), but you did not have it in your library at the moment."
+        ]
+      }
     }
   },
   "B": {
@@ -241,12 +375,22 @@
       "EN": "Ban"
     },
     "B02": {
-      "ES": [
-        "Al acumular tres strikes, tu cuenta en GameStonks se ha bloqueado por 2 meses."
-      ],
-      "EN": [
-        "After accumulating three strikes your account has been banned for 2 months."
-      ]
+      "ES": {
+        "1st": [
+          "Al acumular tres strikes, tu cuenta en GameStonks se ha bloqueado por 2 meses."
+        ],
+        "3rd": [
+          "Al acumular tres strikes, su cuenta en GameStonks se ha bloqueado por 2 meses."
+        ]
+      },
+      "EN": {
+        "1st": [
+          "After accumulating three strikes, your account has been banned for 2 months."
+        ],
+        "3rd": [
+          "After accumulating three strikes, the user's account has been banned for 2 months."
+        ]
+      }
     }
   },
   "G": {
@@ -257,27 +401,55 @@
       "EN": "Donation"
     },
     "D": {
-      "ES": [
-        "Donaste ",
-        "$ a ",
-        "."
-      ],
-      "EN": [
-        "You donated ",
-        "$ to ",
-        "."
-      ],
-      "R": {
-        "ES": [
-          "Recibiste ",
-          "$ de ",
+      "ES": {
+        "1st": [
+          "Donaste ",
+          "$ a ",
           "."
         ],
-        "EN": [
-          "You recieved ",
-          "$ from ",
+        "3rd": [
+          "Donó ",
+          "$ a ",
           "."
         ]
+      },
+      "EN": {
+        "1st": [
+          "You donated ",
+          "$ to ",
+          "."
+        ],
+        "3rd": [
+          "Donated ",
+          "$ to ",
+          "."
+        ]
+      },
+      "R": {
+        "ES": {
+          "1st": [
+            "Recibiste ",
+            "$ de parte de ",
+            "."
+          ],
+          "3rd": [
+            "Recibió",
+            "$ de parte de",
+            "."
+          ]
+        },
+        "EN": {
+          "1st": [
+            "You recieved ",
+            "$ from ",
+            "."
+          ],
+          "3rd": [
+            "Recieved ",
+            "$ from ",
+            "."
+          ]
+        }
       }
     }
   }

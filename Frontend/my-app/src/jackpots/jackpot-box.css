@@ -51,6 +51,7 @@
 }
 .new{
     display: flex;
+    color: black;
     background-color: lightyellow;
     border-radius: 100%;
     border-style: solid;

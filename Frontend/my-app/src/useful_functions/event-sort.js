@@ -100,6 +100,17 @@ const mergeEvents = (timeEvents, eventItems) => {
                         ]
                     );
                 }
+                break;
+            default:
+                for(let item of eventItems[key]){
+                    timeEvents.push(
+                        [
+                            item[0],
+                            `${eventKeyWords[key].start} ${item[1]} ${eventKeyWords[key].end}`,
+                            key
+                        ]
+                    );
+                }
         }
     }
     return mergeSort(timeEvents);

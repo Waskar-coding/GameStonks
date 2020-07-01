@@ -1,4 +1,4 @@
-#NavBar{
+#nav-bar{
     background-color: darkgray;
     border-radius: 10px;
     padding-top: 2px;
@@ -8,17 +8,17 @@
     flex-direction: row;
 }
 
-.NavBox{
+.nav-box{
     border-radius: 10px;
     width: calc(100%/6);
     text-align: center;
     color: white;
 }
 
-.NavBox:hover{
+.nav-box:hover{
     background-color: black;
 }
-.CurrentNavBox{
+.nav-box-current{
     border-radius: 10px;
     width: calc(100%/6);
     text-align: center;
@@ -26,9 +26,9 @@
     background-color: darkslategrey;
 }
 
-.CurrentNavBox:hover{
+.nav-box-current:hover{
     background-color: black;
 }
-.CurrentNavBox:active{
+.nav-box-current:active{
     background-color: black;
 }

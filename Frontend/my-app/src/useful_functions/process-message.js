@@ -7,7 +7,7 @@ const processMessage = (language, event) => {
     }
     else{
         for(let i = 2; i < event.length; i++){
-            eventString = eventString + event[i]+ eventDict[i];
+            eventString = eventString + event[i]+ eventDict[i-1];
         }
         return eventString;
     }

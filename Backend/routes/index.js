@@ -224,6 +224,15 @@ function createNewUser(user,banned){
             steamid : user.steamid,
             name : user.personaname,
             joined : today,
+            wealth: 0,
+            wealth_timetable: [new Date(), 0],
+            general_timetable: [
+                [
+                   new Date(),
+                   "D",
+                   "E"
+                ]
+            ],
             timecreated: user.timecreated,
             thumbnail: user.avatarfull,
             profile_url: user.profileurl,

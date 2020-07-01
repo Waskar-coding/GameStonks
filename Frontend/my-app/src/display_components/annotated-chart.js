@@ -1,7 +1,15 @@
+//Standard
 import React from "react";
+
+//Packages
 import { Line } from "react-chartjs-2";
 import 'chartjs-plugin-annotation';
-import Math from 'math';
+
+//Useful functions
+import otherDict from "../language-display/other-classifier";
+
+//Context
+import LanguageContext from "../language-context";
 
 class AnnotatedChart extends React.PureComponent{
     render(){
@@ -41,7 +49,7 @@ class AnnotatedChart extends React.PureComponent{
                 display: false
             },
             title: {
-                display: true,
+                display: false,
                 text: this.props.title
             },
             tooltips: {
@@ -75,7 +83,7 @@ class AnnotatedChart extends React.PureComponent{
                         },
                         scaleLabel: {
                             display: true,
-                            labelString: 'Date'
+                            labelString: otherDict['annotated-chart']['x-label'][this.context]
                         }
                     }
                 ],
@@ -126,5 +134,6 @@ class AnnotatedChart extends React.PureComponent{
         )
     }
 }
+AnnotatedChart.contextType = LanguageContext;
 
 export default AnnotatedChart;

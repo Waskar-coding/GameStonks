@@ -3,10 +3,9 @@ import {Suspense} from "react";
 import {
     BrowserRouter as Router,
     Switch,
-    Route,
-    Link
+    Route
 } from "react-router-dom";
-import Jackpots from "./JackpotListCopy";
+import Jackpots from "./jackpot-list";
 
 
 class AllJackpots extends React.Component{
@@ -14,8 +13,8 @@ class AllJackpots extends React.Component{
         return(
             <Router>
                 <Switch>
-                    <Route path="/jackpots/current" component={Jackpots} displayPerPage="2"/>
-                    <Route path="/jackpots/:jackpotId" component={JackpotRouter} />
+                    <Route path="/events/find" component={Jackpots} displayPerPage="2"/>
+                    <Route path="/events/:jackpotId" component={JackpotRouter} />
                 </Switch>
             </Router>
     )

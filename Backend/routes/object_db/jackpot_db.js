@@ -1,13 +1,18 @@
 //Importing packages
 const mongoose = require('mongoose');
 
+const JackpotTitles = mongoose.Schema({
+   ES: String,
+   EN: String
+},{typeKey: "$type"});
+
 //Jackpot register schema
 const jackpot = mongoose.Schema({
 
     ////Id
     jackpot_id: String,
     jackpot_class: String,
-    jackpot_title: String,
+    jackpot_title: JackpotTitles,
 
     ////Who is running the jackpot
     jackpot_entity: String,

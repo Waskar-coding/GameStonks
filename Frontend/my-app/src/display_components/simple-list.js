@@ -29,7 +29,7 @@ class SimpleList extends React.PureComponent{
                                     counter++;
                                     return(
                                         <li key={counter-1}>
-                                            <a href={component[1]}>{component[0]}</a>
+                                            <a href={component[1]} target={this.props.target}>{component[0]}</a>
                                         </li>
                                     )
                                 })}

@@ -1,6 +1,79 @@
+//Standard
 import React from "react";
-import DatePicker from "react-datepicker";
+
+//Packages
+import Tippy from '@tippy.js/react';
+import 'tippy.js/dist/tippy.css';
+import DatePicker, {registerLocale} from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+
+//Language jsons
+import interactiveDict from '../language-display/interactive-classifier';
+
+//Context
+import LanguageContext from "../language-context";
+
+const monthsEN = [
+    'January',
+    'Februrary',
+    'March',
+    'April',
+    'May',
+    'June',
+    'July',
+    'August',
+    'September',
+    'October',
+    'November',
+    'December'
+];
+const daysEN = [
+    'Mo',
+    'Tu',
+    'We',
+    'Th',
+    'Fr',
+    'Sa',
+    'Su'
+];
+registerLocale('EN',{
+    localize: {
+        month: n => monthsEN[n],
+        day: n => daysEN[n]
+    },
+    formatLong:{}
+});
+
+const monthsES = [
+    'Enero',
+    'Febrero',
+    'Marzo',
+    'Abril',
+    'Mayo',
+    'Junio',
+    'Julio',
+    'Agosto',
+    'Setiembre',
+    'Octubre',
+    'Noviembre',
+    'Diciembre'
+];
+const daysES = [
+    'Lu',
+    'Ma',
+    'Mi',
+    'Ju',
+    'Vi',
+    'Sá',
+    'Do'
+];
+registerLocale('ES', {
+    localize: {
+        month: n => monthsES[n],
+        day: n => daysES[n]
+    },
+    formatLong:{}
+});
 
 class DateForm extends React.Component{
     constructor(props){
@@ -35,6 +108,7 @@ class DateForm extends React.Component{
         return(
             <form onSubmit={this.handleSubmit}>
                 <DatePicker
+                    locale={this.context}
                     selected={this.state.startDate}
                     onChange={date => {this.handleStartChange(date)}}
                     dateFormat='yyyy/MM/dd'
@@ -44,6 +118,7 @@ class DateForm extends React.Component{
                     scrollableMonthYearDropdown
                 />
                 <DatePicker
+                    locale={this.context}
                     selected={this.state.finalDate}
                     onChange={date => {this.handleFinalChange(date)}}
                     dateFormat='yyyy/MM/dd'
@@ -52,11 +127,15 @@ class DateForm extends React.Component{
                     showYearDropDown
                     scrollableMonthYearDropdown
                 />
-                <input type="submit" value="Submit" />
+                <Tippy content={interactiveDict['date-form']['tooltip'][this.context]}>
+                    <input type="submit" value="Ok" />
+                </Tippy>
             </form>
 
         )
     }
 }
+
+DateForm.contextType = LanguageContext;
 
 export default DateForm;

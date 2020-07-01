@@ -1,0 +1,152 @@
+{
+  "search-form": {
+    "sort": {
+      "ES": "Ordenar por:",
+      "EN": "Sort by:"
+    },
+    "order": {
+      "ES": "En sentido:",
+      "EN": "Order:"
+    },
+    "order-ascending": {
+      "ES": "Ascendiente",
+      "EN": "Ascending"
+    },
+    "order-descending": {
+      "ES": "Descendiente",
+      "EN": "Descending"
+    },
+    "search": {
+      "ES": "Busca:",
+      "EN": "Search:"
+    },
+    "user-name": {
+      "ES": "Nombre",
+      "EN": "Name"
+    },
+    "user-date": {
+      "ES": "Fecha de ingreso",
+      "EN": "Sign in date"
+    },
+    "user-tooltip": {
+      "ES": "Encuentra usuarios",
+      "EN": "Find users"
+    },
+    "jackpot-tooltip": {
+      "ES": "Encuentra eventos",
+      "EN": "Find events"
+    },
+    "jackpot-start": {
+      "ES": "Inicio",
+      "EN": "Starting"
+    },
+    "jackpot-end": {
+      "ES": "Final",
+      "EN": "Ending"
+    },
+    "jackpot-users": {
+      "ES": "Num. de usuarios",
+      "EN": "Num. of users"
+    },
+    "jackpot-value": {
+      "ES": "Valor",
+      "EN": "Value"
+    }
+  },
+  "pagination": {
+    "next": {
+      "ES": "Siguiente",
+      "EN": "Next"
+    },
+    "previous":{
+      "ES": "Anterior",
+      "EN": "Previous"
+    }
+  },
+  "date-form": {
+    "tooltip": {
+      "ES": "Busca eventos entre dos fechas",
+      "EN": "Search events between two dates"
+    }
+  },
+  "donation-form": {
+    "user-id": {
+      "ES": "Usuario",
+      "EN": "User"
+    },
+    "donation": {
+      "ES": "Donación",
+      "EN": "Donation"
+    },
+    "user-id-placeholder": {
+      "ES": "Steamid del usuario",
+      "EN": "User's steamid"
+    },
+    "donation-placeholder": {
+      "ES": "Cantidad a donar ($)",
+      "EN": "Amount to donate ($)"
+    },
+    "donation-confirm": {
+      "ES": "Donar",
+      "EN": "Donate"
+    },
+    "donation-cancel": {
+      "ES": "Cancelar",
+      "EN": "Cancel"
+    },
+    "donation-submit": {
+      "ES": "Donar",
+      "EN": "Donate"
+    },
+    "tooltip": {
+      "ES": "Dona dinero a un amigo",
+      "EN": "Donate money to a friend"
+    }
+  },
+  "request-form": {
+    "amount": {
+      "ES": "Cantidad",
+      "EN": "Amount"
+    },
+    "confirm": {
+      "ES": "Reclamar",
+      "EN": "Request"
+    },
+    "cancel": {
+      "ES": "Cancelar",
+      "EN": "Cancel"
+    },
+    "tooltip": {
+      "ES": "Solicita una transferencia a tu cuenta de Steam",
+      "EN": "Request a transfer to your Steam account"
+    }
+  },
+  "copy-steamid": {
+    "ES": "Copia Steamid",
+    "EN": "Copy Steamid"
+  },
+  "profile-tooltips": {
+    "event-link":{
+      "ES": "Accede al evento",
+      "EN": "Go to event"
+    },
+    "multiplier-link": {
+      "ES": "Como funciona este multiplicador?",
+      "EN": "How does this multiplier work?"
+    },
+    "steam-link": {
+      "ES": {
+        "1st": "Accede a tu perfil de Steam",
+        "3rd": "Visita el perfil de Steam del usuario"
+      },
+      "EN": {
+        "1st": "Visit your Steam profile",
+        "3rd": "Visit the user's Steam profile"
+      }
+    },
+    "copy-steamid": {
+      "ES": "Copiado",
+      "EN": "Copied"
+    }
+  }
+}

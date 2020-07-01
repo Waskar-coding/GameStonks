@@ -1,5 +1,18 @@
+//Standard
 import React from "react";
+
+//Packages
+import Tippy from '@tippy.js/react';
+import 'tippy.js/dist/tippy.css';
+
+//Local stylesheets
 import "./SearchForm.css";
+
+//Language jsons
+import interactiveDict from "../language-display/interactive-classifier";
+
+//Context
+import LanguageContext from "../language-context";
 
 class SearchForm extends React.Component{
     constructor(props){
@@ -29,28 +42,28 @@ class SearchForm extends React.Component{
     render(){
         const filterFields = Object.entries(JSON.parse(this.props.options));
         return(
-            <div class="searchform">
-                <div class="message_case">
+            <div className="searchform">
+                <div className="message_case">
                     {this.props.message}
                 </div>
-                <form class="params_case" onSubmit={this.handleSubmit} >
-                    <div class="param">
-                        <label for="sort">Sort by </label>
+                <form className="params_case" onSubmit={this.handleSubmit} >
+                    <div className="param">
+                        <label id="sort">{interactiveDict['search-form']['sort'][this.context]}</label>
                         <select id="sort" value={this.state.sort} onChange={this.handleParamChange}>
                             {filterFields.map(item => {
-                                return <option value={item[0]}>{item[1]}</option>
+                                return <option key={item[0]} value={item[0]}>{item[1]}</option>
                             })}
                         </select>
                     </div>
-                    <div class="param">
-                        <label for="order">Order </label>
+                    <div className="param">
+                        <label id="order">{interactiveDict['search-form']['order'][this.context]}</label>
                         <select id="order" value={this.state.order} onChange={this.handleParamChange}>
-                            <option value="1">Ascending</option>
-                            <option value="-1">Descending</option>
+                            <option value="1">{interactiveDict['search-form']['order-ascending'][this.context]}</option>
+                            <option value="-1">{interactiveDict['search-form']['order-descending'][this.context]}</option>
                         </select>
                     </div>
-                    <div class="param">
-                        <label for id="search">Search </label>
+                    <div className="param">
+                        <label id="search">{interactiveDict['search-form']['search'][this.context]}</label>
                         <input
                             type="text"
                             id="search"
@@ -59,11 +72,15 @@ class SearchForm extends React.Component{
                             placeholder={this.props.placeholder}
                             />
                     </div>
-                    <input type="submit" value="Submit" />
+                    <Tippy content={interactiveDict['search-form'][this.props.tooltip][this.context]}>
+                        <input type="submit" value="Ok" />
+                    </Tippy>
                 </form>
             </div>
         )
     }
 }
+
+SearchForm.contextType = LanguageContext;
 
 export default SearchForm;

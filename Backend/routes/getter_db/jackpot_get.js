@@ -17,39 +17,25 @@ const APIKEY = process.env.STEAM_PERSONAL_APIKEY;
 
 
 //Current jackpots
-////Getting total active jackpots
-const getTotalNum = () => {
-    return new Promise((resolve, reject) => {
-        Jackpot.count({active: true})
-            .then((result) => {
-                resolve(result);
-            })
-            .catch((err) => {
-                reject(err);
-            })
-    })
-};
 ////Getting number of current jackpots with the given criteria
-const getCurrentNum = (req) => {
+const getCurrentNum = (req, search) => {
     return new Promise((resolve,reject) => {
         setTimeout(() => {
             reject('Timeout')
         }, 3000);
-        Jackpot.count(
-            {
-                $and: [
-                    {active: true}, {
-                        $or: [
-                            {
-                                jackpot_title: {
-                                    "$regex": req.query.search,
-                                    $options: 'i'
-                                }
-                            }, {jackpot_entity: {"$regex": req.query.search, $options: 'i'}}]
-                    }]
-            })
-            .then(n => {
-                resolve(n)
+        Jackpot.find({active: true})
+            .then(jackpots => {
+                resolve(
+                    jackpots.filter(
+                        jackpot => {
+                            return(
+                                (search.test(jackpot['jackpot_title'][req.query.language]))
+                                ||
+                                (search.test(jackpot['jackpot_entity']))
+                            )
+                        }
+                    ).length
+                )
             })
             .catch(err => {
                 reject(err)
@@ -57,26 +43,25 @@ const getCurrentNum = (req) => {
     })
 };
 ////Getting current jackpots with the given criteria
-const getCurrent = (req) => {
-    const sortCriteria = req.query.sort;
-    const orderCriteria = req.query.order;
-    const searchCriteria = req.query.search;
-    const offset = req.query.page;
-    console.log(sortCriteria);
+const getCurrent = (req, search) => {
     const display = 2;
     return new Promise((resolve,reject) => {
         setTimeout(() => {reject('Timeout')},3000);
-        Jackpot.find(
-            {$and:[
-                    {active:true}, {$or:[
-                            {jackpot_title: {"$regex": req.query.search, $options: 'i'}},
-                            {jackpot_entity: {"$regex": req.query.search, $options: 'i'}}]
-                    }]})
-            .sort({[sortCriteria]: orderCriteria})
-            .skip((offset-1)*display)
-            .limit(display)
-            .then((current) => {
-                resolve(current)
+        Jackpot.find({active:true})
+            .sort({[req.query.sort]: req.query.order})
+            .then(current => {
+                const offset = display*(req.query.page-1);
+                resolve(
+                    current.filter(
+                        jackpot => {
+                            return(
+                                (search.test(jackpot['jackpot_title'][req.query.language]))
+                                ||
+                                (search.test(jackpot['jackpot_entity']))
+                            )
+                        }
+                    ).slice(offset, offset + display)
+                )
             })
             .catch((err) => {
                 reject(err)
@@ -91,74 +76,61 @@ const getUserRegister = (req) => {
                 .then(user => resolve(user.jackpots))
         }
         else{
-            console.log('We failed mem');
-            resolve([{}]);
+            resolve([]);
         }
     })
 };
 ////Assigning jackpot status to user
-async function assignJackpotStatus(req){
-    const current = await getCurrent(req);
+async function assignJackpotStatus(req,search){
+    const current = (await getCurrent(req,search)).map(jackpot => {
+        return ({
+            jackpot_id: jackpot.jackpot_id,
+            jackpot_title: jackpot.jackpot_title[req.query.language],
+            jackpot_class: jackpot.jackpot_class,
+            jackpot_entity: jackpot.jackpot_entity,
+            start: jackpot.start,
+            end: jackpot.end,
+            total_value: jackpot.total_value,
+            active_users: jackpot.active_users,
+            user_status: 'i'
+        })
+    });
     const registers = await getUserRegister(req);
-    return new Promise((resolve,reject) => {
-        const jackpots = [];
-        const checkedJackpots = [];
-        let currentJackpot = {};
-        if(current.length === 0){
-            reject()
-        }
-        else{
-            for(let i = 0; i<current.length; i++){
-                currentJackpot = {
-                    jackpot_id: current[i].jackpot_id,
-                    jackpot_title: current[i].jackpot_title,
-                    jackpot_class: current[i].jackpot_class,
-                    jackpot_entity: current[i].jackpot_entity,
-                    start: current[i].start,
-                    end: current[i].end,
-                    total_value: current[i].total_value,
-                    active_users: current[i].active_users,
-                    user_status: 'new'
-                };
-                let isRegistered;
-                for(let j = 0; j<registers.length; j++){
-                    if(current[i].jackpot_id === registers[j].jackpot_id){
-                        currentJackpot.user_status = registers[j].status;
-                        jackpots.push(currentJackpot);
-                        if(i === current.length-1){
-                            resolve(jackpots);
-                        }
-                        break;
+    const registerIds = registers.map(register => {return register.jackpot_id});
+    if(registers.length === 0){
+        return new Promise(resolve => {
+          resolve(current)
+        })
+    }
+    else{
+        return new Promise(resolve => {
+            resolve(
+                current.map(jackpot => {
+                    const jackpotIndex = registerIds.indexOf(jackpot.jackpot_id);
+                    if(jackpotIndex !== -1){
+                        jackpot.jackpot_status = registers[jackpotIndex].jackpot_status;
                     }
-                    else if(j === registers.length-1){
-                        jackpots.push(currentJackpot);
-                        if(i === current.length-1){
-                            resolve(jackpots);
-                        }
-                    }
-                }
-            }
-        }
-    })
+                    return jackpot
+                })
+            )
+        })
+    }
 }
-////Main function
-async function getJackpotData(req, res){
+
+////Get Method
+router.get('/current',async function(req,res){
+    const search = new RegExp(req.query.search,'i');
     try{
         res.send(
             {
-                total_n: await getTotalNum(),
-                current_n: await getCurrentNum(req),
-                current: await assignJackpotStatus(req)
+                current_n: await getCurrentNum(req,search),
+                current: await assignJackpotStatus(req,search)
             });
     }
     catch(err){
-        res.send({message: 'An error has ocurred'})
+        console.log(err);
+        res.send({Error: 'Internal server error'})
     }
-}
-////Get Method
-router.get('/current',function(req,res){
-    console.log('Getting current');
-    getJackpotData(req, res)
 });
 
 

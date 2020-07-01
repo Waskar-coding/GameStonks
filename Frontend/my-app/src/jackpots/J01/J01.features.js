@@ -1,7 +1,7 @@
 import React, {useCallback} from "react";
 import GameBox from "./J01_GameBox";
-import PageList from "../../pagination/PageList";
-import findMaxPage from "../../pagination/MaxPage";
+import PageList from "../../search/page-list";
+import findMaxPage from "../../search/max-page";
 import SearchForm from "../../search/search-form";
 import queryString from "query-string";
 import axios from "axios";

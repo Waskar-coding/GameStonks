@@ -329,11 +329,6 @@ async function rewardUser(steamid, jackpotId, appId, playtime, res){
 
 //////Striking User
 async function strikeUser(req,steamid,jackpotId, appId, res){
-    const register = {
-        strike_type: `S01`,
-        strike_date: new Date(),
-        strike_data: [jackpotId,appId]
-    };
     const game = await new Promise((resolve, reject) => {
         Game.findOne({appid: appId})
             .then(game => {
@@ -345,7 +340,11 @@ async function strikeUser(req,steamid,jackpotId, appId, res){
         {steamid: steamid, "jackpots.jackpot_id": jackpotId},
         {
             $push: {
-                strikes: register,
+                strikes: [
+                    strike_type: 'S01',
+                    strike_date: new Date(),
+                    strike_data: [jackpotId,game.name,appId]
+                ],
                 general_timeline: [
                     new Date(),
                     'S',
