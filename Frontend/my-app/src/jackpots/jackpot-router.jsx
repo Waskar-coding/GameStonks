@@ -31,7 +31,7 @@ class JackpotRouter extends React.Component{
     }
     componentDidMount(){
         const {jackpotId} = this.props.match.params;
-        if(jackpotId.toString().substring(0,2) === "J0"){
+        if(jackpotId.toString().substring(0,2) === "J"){
             const CurrentJackpotRouter = React.lazy(() => import(`./${jackpotId.toString().substring(0,3)}/${jackpotId.toString().substring(0,3)}.main`));
             this.setState({
                 current: CurrentJackpotRouter,
@@ -46,22 +46,20 @@ class JackpotRouter extends React.Component{
     }
     render(){
         let { jackpotId } = this.props.match.params;
-        let currentJackpot;
         if((this.state.isLoaded === true) && (this.state.current !== null)){
             const CurrentJackpotRouter = this.state.current;
-            currentJackpot = <Suspense fallback={<div>Loading...</div>}><CurrentJackpotRouter jackpotId={jackpotId.toString()} location={this.props.location}/></Suspense>;
+            return(
+                <Suspense fallback={<div>Loading...</div>}>
+                    <CurrentJackpotRouter jackpotId={jackpotId.toString()} location={this.props.location}/>
+                </Suspense>
+            )
         }
         else if((this.state.isLoaded === true) && (this.state.current === null)){
-            currentJackpot = <div><p>Wrong jackpot dumbass</p></div>;
+            return(<div><p>This event does not exist</p></div>)
         }
         else{
-            currentJackpot = <div><p>Loading</p></div>;
+            return(<div><p>Loading...</p></div>)
         }
-        return(
-            <div>
-            {currentJackpot}
-            </div>
-        )
     }
 }
 

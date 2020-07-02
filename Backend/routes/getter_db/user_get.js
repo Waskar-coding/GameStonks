@@ -6,8 +6,6 @@ const path = require('path');
 
 ////Local
 const User = require('../object_db/user_db.js');
-const Game = require('../object_db/game_db.js');
-const Jackpot = require('../object_db/jackpot_db.js');
 const steamAuth = require('../steam_auth/auth');
 const localAuth = require('../local_auth/verify');
 
@@ -48,7 +46,7 @@ router.get(
                     strikes: user.strikes
                 });
             })
-            .catch(err => {
+            .catch(() => {
                 res.send({Error: "Internal server error"})
             })
 });
@@ -88,7 +86,7 @@ router.get(
                     })
                 }
             })
-            .catch(err => {
+            .catch(() => {
                 res.send({
                     Error: 'Internal server error'
                 })
@@ -177,7 +175,7 @@ function checkUserWealth(
     userId,
     transferredWealth
 ){
-    return new Promise((resolve, reject) => {
+    return new Promise((resolve) => {
         User.findOne({steamid: userId})
             .then(user => {
                 resolve([
@@ -202,7 +200,7 @@ function checkUserWealth(
 function checkFriendWealth(
     friendId
 ){
-    return new Promise((resolve, reject) => {
+    return new Promise((resolve) => {
         User.findOne({steamid: friendId})
             .then(friend => {
                 if(friend === null){
@@ -339,7 +337,7 @@ function addToFriend(
                 }
             }
         )
-            .then(user => {
+            .then(() => {
                 resolve(receivedRegister)
             })
             .catch(err => reject(err))
@@ -369,6 +367,10 @@ router.post(
                     ||
                     (user.requests.length > 2)
                 ){
+                    console.log(request);
+                    console.log(user.wealth<request);
+                    console.log([5,10,20,25,50,100].includes(request) === false);
+                    console.log(user.requests.length);
                     res.send({
                         status: 'rejected'
                     })
@@ -416,13 +418,12 @@ router.post(
                                 request: requestRegister
                             })
                         })
-                        .catch(err => {
-                            console.log(err);
+                        .catch(() => {
                             res.send({Error: 'Internal server error'})
                         })
                 }
             })
-            .catch(err => {
+            .catch(() => {
                 res.send({Error: 'Internal server error'})
             })
     }
@@ -436,11 +437,9 @@ router.get(
         User.findOne({steamid: req.params.steamid})
             .then(user => {
                 if(user === null){
-                    console.log('No');
                     res.status(404).send({})
                 }
                 else{
-                    console.log('Found');
                     res.status(200).send({})
                 }
             })
@@ -478,7 +477,7 @@ router.get(
                     })
                }
            })
-           .catch(err => res.send({Error: "Internal server error"}))
+           .catch(() => res.send({Error: "Internal server error"}))
 });
 
 
@@ -513,7 +512,7 @@ router.get(
                     joined: user.joined
                 })
             })
-            .catch(err => {
+            .catch(() => {
                 res.send({
                     Error: 'Internal server error'
                 })
@@ -556,7 +555,7 @@ router.get(
                         }
                     })
             })
-            .catch(err => {
+            .catch(() => {
                 res.status(500).send({Error: "Internal server error"})
             })
 });

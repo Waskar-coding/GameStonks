@@ -8,6 +8,7 @@ import AllJackpots from './jackpots/jackpot-router';
 import MyProfile from './users/my-profile';
 import Profiles from './users/profile-search';
 import FriendProfile from "./users/user-profile";
+import NavigateEvent from "./jackpots/jackpot-navigation";
 import Modal from "react-modal";
 import LanguageContext from "./language-context";
 
@@ -23,6 +24,7 @@ class App extends React.Component{
                         <Route path={'/users/profiles/:steamid'} component={FriendProfile} />
                         <Route path={'/users/find'} component={Profiles} displayPerPage="2" />
                         <Route path={'/events'}><AllJackpots /></Route>
+                        <Route path={'/event_navigate'} component={NavigateEvent} />
                     </Switch>
                 </Router>
             </LanguageContext.Provider>

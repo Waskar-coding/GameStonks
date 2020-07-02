@@ -709,8 +709,7 @@ class RequestForm extends React.Component{
             this.setState({
                 allowedRequests: [5, 10, 20, 25, 50, 100].filter(price => {
                     return this.props.wealth/price >= 1;
-                }),
-                selectedRequest: 5
+                })
             });
             this.handleChange = this.handleChange.bind(this);
             this.handleSubmit = this.handleSubmit.bind(this);
@@ -726,7 +725,7 @@ class RequestForm extends React.Component{
         this.setState({
             isConfirmModalVisible: true,
             isConfirmModalClickable: true
-        })
+        });
     }
     closeModal(){
         this.setState({
@@ -736,6 +735,7 @@ class RequestForm extends React.Component{
         });
     }
     makeRequest(){
+        const initialRequest = this.state.selectedRequest;
         this.setState({
             isConfirmModalVisible: false,
             isConfirmModalClickable: false
@@ -752,7 +752,8 @@ class RequestForm extends React.Component{
         )
             .then(res => {
                 this.setState({
-                    isMessageModalVisible: true
+                    isMessageModalVisible: true,
+                    selectedRequests: initialRequest
                 });
                 this.props.toParent(res.data);
             })
@@ -810,7 +811,7 @@ class RequestForm extends React.Component{
                                 >
                                     {this.state.allowedRequests.map(request => {
                                         return(
-                                            <option key={request}>{request}$</option>
+                                            <option key={request} value={request}>{request}$</option>
                                         )
                                     })}
                                 </select>

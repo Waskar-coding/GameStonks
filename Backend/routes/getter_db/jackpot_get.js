@@ -3,16 +3,12 @@
 const express = require('express');
 const router = express.Router();
 const path = require('path');
-const fs  = require('fs');
-const request = require('request');
 
 ////Local
 const Jackpot = require('../object_db/jackpot_db.js');
-const Game = require('../object_db/game_db.js');
 const User = require('../object_db/user_db.js');
 const steamAuth = require('../steam_auth/auth');
 const localAuth = require('../local_auth/verify');
-const APIKEY = process.env.STEAM_PERSONAL_APIKEY;
 
 
 
@@ -43,7 +39,7 @@ const getCurrentNum = (req, search) => {
     })
 };
 ////Getting current jackpots with the given criteria
-const getCurrent = (req, search) => {
+const getCurrent = (req,search) => {
     const display = 2;
     return new Promise((resolve,reject) => {
         setTimeout(() => {reject('Timeout')},3000);
@@ -70,7 +66,7 @@ const getCurrent = (req, search) => {
 };
 ////Getting user jackpot register
 const getUserRegister = (req) => {
-    return new Promise((resolve, reject) => {
+    return new Promise((resolve) => {
         if(req.user){
             User.findOne({steamid: req.user.user.steamid})
                 .then(user => resolve(user.jackpots))
@@ -128,11 +124,9 @@ router.get('/current',async function(req,res){
             });
     }
     catch(err){
-        console.log(err);
         res.send({Error: 'Internal server error'})
     }
 });
-
 
 
 //Get a Jackpot
@@ -141,15 +135,18 @@ function isActive(req, res, next){
     Jackpot.findOne({jackpot_id: req.params.jackpot_id})
         .then(jackpot => {
             if((jackpot === null) || (jackpot.active === false)){
-                console.log(`User selected an invalid jackpot`);
-                res.redirect('/jackpots/current?sort=start&order=1&search=&page=1')
+                res.status(404).send({
+                    status: 'rejected',
+                    exists: jackpot===null,
+                    active: jackpot.active
+                });
             }
             else{
-                req.currentJackpot = jackpot;
+                req.currentJackpot = {jackpot_id: jackpot.jackpot_id, jackpot_class: jackpot.jackpot_class};
                 next()
             }
         })
-        .catch(err => {
+        .catch(() => {
             res.status(500).send({Error: 'Error 500: Internal server error'})
         })
 }
@@ -175,7 +172,6 @@ router.get(
                 })
             })
             .catch(err => {
-                console.log(err);
                 res.status(505).send({Error: 'Internal server error'})
             })
     }
@@ -252,14 +248,14 @@ router.post(
                                             `a ${req.body.multiplier_class} multiplier`})
                                 }
                             })
-                            .catch(err => {
+                            .catch(() => {
                                 console.log('Could not find User');
                                 res.status(500).send({Error: "Internal server error"})
                             })
                     }
                 }
             )
-            .catch(err => {
+            .catch(() => {
                 console.log('Could not find jackpot');
                 res.status(500).send({Error: "Internal server error"})
             })
