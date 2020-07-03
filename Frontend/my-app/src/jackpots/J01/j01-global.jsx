@@ -1,9 +1,15 @@
+//Standard
 import React from "react";
+
+//Local components
 import DescriptionBox from "../../display_components/description-box";
 import SimpleChart from "../../display_components/simple-chart";
 import BarChart from "../../display_components/bar-chart";
 import GlobalTop from "../../display_components/global-top";
+
+//Local images
 import jackpotThumbnail from "../jackpot_icons/J01.jpg";
+
 
 class J01Global extends React.Component{
     constructor(props){
@@ -65,7 +71,6 @@ class J01Global extends React.Component{
                     <SimpleChart points={this.state.users} title="Shareholders" yLabel="Shareholders"/>
                     <SimpleChart points={this.state.users} title="Price" yLabel="Price ($)"/>
                     <BarChart points={this.state.score} title="Wealth distribution" />
-                    <GlobalTop top={this.state.top} />
                 </div>
             )
         }

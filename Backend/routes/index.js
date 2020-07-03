@@ -3,6 +3,7 @@
 const express = require('express');
 const session = require ('express-session');
 const bodyParser = require('body-parser');
+const cookieParser = require('cookie-parser');
 const request = require('request');
 const mongoose = require('mongoose');
 const cors = require('cors');
@@ -25,6 +26,7 @@ const APIKEY = process.env.STEAM_PERSONAL_APIKEY;
 const app = express();
 app.use(express.static('public'));
 app.use(bodyParser.json());
+app.use(cookieParser());
 app.use(cors());
 app.use(function (req, res, next) {
     res.header("Access-Control-Allow-Origin",  "*");
@@ -36,13 +38,19 @@ app.use(function (req, res, next) {
 });
 
 ////MongoDB
-mongoose.connect("mongodb://localhost:27017/SteamDB", function (err) {
-    if (!err) {
-        console.log("We are connected")
-    }
-    else{
-        console.log(err)
-    }
+mongoose.connect(
+    "mongodb://localhost:27017/SteamDB",
+    {
+        useNewUrlParser: true,
+        useUnifiedTopology: true
+    },
+    function (err) {
+        if (!err) {
+            console.log("We are connected")
+        }
+        else{
+            console.log(err)
+        }
 });
 
 ////Express Session

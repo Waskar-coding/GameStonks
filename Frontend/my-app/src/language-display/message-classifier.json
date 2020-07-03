@@ -144,5 +144,31 @@
         "The selected user is not registered in GameStonks"
       ]
     }
+  },
+  "jackpot-router": {
+    "jackpot-not-found": {
+      "ES": "El evento seleccionado no existe",
+      "EN": "The event does not exist"
+    },
+    "jackpot-not-active": {
+      "ES": "El evento seleccionado ya no está activo",
+      "EN": "The selected event is no longer active"
+    },
+    "jackpot-505": {
+      "ES": "Error interno del servidor",
+      "EN": "Internal server error"
+    }
+  },
+  "jackpot-stats": {
+    "global-top": {
+      "empty": {
+        "ES": "Aún no se unió ningún usuario",
+        "EN": "No user has joined yet"
+      },
+      "incomplete": {
+        "ES": "Usuarios insuficientes para completar el top",
+        "EN": "Not enough users to complete the top"
+      }
+    }
   }
 }

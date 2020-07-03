@@ -48,17 +48,13 @@ class AnnotatedChart extends React.PureComponent{
             legend:{
                 display: false
             },
-            title: {
-                display: false,
-                text: this.props.title
-            },
             tooltips: {
                 enabled: true,
                 mode: 'label',
                 displayColors: false,
                 callbacks: {
                     title: function(){},
-                    label: function(tooltipItem, data) {
+                    label: function(tooltipItem) {
                         const date = new Date(tooltipItem.xLabel).toISOString().slice(0,10);
                         const hour = new Date(tooltipItem.xLabel).toISOString().slice(11,16);
                         return [date + ' ' + hour, tooltipItem.value.slice(0,5) + '$'];
@@ -83,7 +79,7 @@ class AnnotatedChart extends React.PureComponent{
                         },
                         scaleLabel: {
                             display: true,
-                            labelString: otherDict['annotated-chart']['x-label'][this.context]
+                            labelString: otherDict['chart']['x-label'][this.context]
                         }
                     }
                 ],

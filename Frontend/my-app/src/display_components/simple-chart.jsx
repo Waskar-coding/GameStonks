@@ -1,5 +1,14 @@
+//Standard
 import React from "react";
+
+//Packages
 import { Line } from "react-chartjs-2";
+
+//Useful functions
+import configDefaultXAxes from "../users/xaxes-default-config";
+
+//Context
+import LanguageContext from "../language-context";
 
 class SimpleChart extends React.PureComponent{
     render(){
@@ -29,10 +38,6 @@ class SimpleChart extends React.PureComponent{
             legend:{
                 display: false
             },
-            title: {
-                display: true,
-                text: this.props.title
-            },
             tooltips: {
                 mode: 'label'
             },
@@ -40,14 +45,7 @@ class SimpleChart extends React.PureComponent{
                 mode: 'dataset'
             },
             scales: {
-                xAxes: [
-                    {
-                        scaleLabel: {
-                            display: true,
-                            labelString: 'Date'
-                        }
-                    }
-                ],
+                xAxes: [this.props.xAxes],
                 yAxes: [
                     {
                         scaleLabel: {
@@ -63,5 +61,6 @@ class SimpleChart extends React.PureComponent{
         )
     }
 }
+SimpleChart.contextType = LanguageContext;
 
 export default SimpleChart;

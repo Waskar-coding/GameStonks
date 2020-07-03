@@ -131,29 +131,93 @@ router.get('/current',async function(req,res){
 
 //Get a Jackpot
 ////Get a Jackpot: Check if the jackpot exists and is active
-function isActive(req, res, next){
-    Jackpot.findOne({jackpot_id: req.params.jackpot_id})
-        .then(jackpot => {
-            if((jackpot === null) || (jackpot.active === false)){
-                res.status(404).send({
-                    status: 'rejected',
-                    exists: jackpot===null,
-                    active: jackpot.active
-                });
+router.get('/:jackpot_id/active',function(req,res){
+    /*
+        Firstly we check for the current jackpot cookie
+    */
+    const currentJackpot = req.cookies.currentJackpot;
+    console.log(currentJackpot);
+    if(currentJackpot !== undefined){
+        /*
+            If the cookie exists and coincides with the selected jackpot
+            the current jackpot we'll check whether the jackpot is finished
+            or has returned and error previously. In case the jackpot is
+            finished we'll check for changes in the end date with confirmJackpot
+        */
+        if(currentJackpot.jackpot_id === req.params.jackpot_id){
+            if(
+                (currentJackpot.error === null)
+                &&
+                (new Date(currentJackpot.jackpot_end) < new Date())
+            ){
+                confirmJackpot(req,res);
             }
             else{
-                req.currentJackpot = {jackpot_id: jackpot.jackpot_id, jackpot_class: jackpot.jackpot_class};
-                next()
+                res.send(currentJackpot);
+            }
+        }
+        else{
+            /*
+                If a new jackpot is selected it will be checked with
+                confirmJackpot and the cookie will be updated
+            */
+            confirmJackpot(req,res);
+        }
+    }
+    /*
+        If the cookie does not exist the jackpot well
+        be checked and a cookie will be created
+    */
+    else{
+        confirmJackpot(req,res);
+    }
+});
+function confirmJackpot(req,res){
+    Jackpot.findOne({jackpot_id: req.params.jackpot_id})
+        .then(jackpot => {
+            /*
+                If jackpot is not active or does not exist a a form with an error is sent
+            */
+            if((jackpot === null) || (jackpot.active === false)){
+                res.cookie(
+                    'currentJackpot',
+                    {
+                        jackpot_id: req.params.jackpot_id,
+                        jackpot_end: new Date(),
+                        error: (jackpot === null)? "jackpot-not-found" : "jackpot-not-active"
+                    }
+                );
+                res.send(req.cookies.currentJackpot);
+            }
+            /*
+                If the jackpot does exist it is registered as the current jackpot and sent
+            */
+            else{
+                res.cookie(
+                    'currentJackpot',
+                    {
+                        jackpot_id: jackpot.jackpot_id,
+                        jackpot_class: jackpot.jackpot_class,
+                        jackpot_end: jackpot.end,
+                        error: null
+                    }
+                );
+                res.send(req.cookies.currentJackpot);
             }
         })
-        .catch(() => {
-            res.status(500).send({Error: 'Error 500: Internal server error'})
+        .catch(err => {
+            console.log(err);
+            res.send({
+                jackpot_id: req.params.jackpot_id,
+                jackpot_end: new Date(),
+                error: "jackpot-505"
+            })
         })
 }
+
 ////Get a Jackpot: Jackpot data
 router.get(
     '/:jackpot_id/global',
-    isActive,
     function(req,res){
         Jackpot.findOne({jackpot_id: req.params.jackpot_id})
             .then(jackpot => {
@@ -181,7 +245,6 @@ router.get(
 ////Get a Jackpot: Features
 router.get(
     '/:jackpot_id/features',
-    isActive,
     function(req,res){
         const jackpotClass = (req.currentJackpot.jackpot_class !== 'special')? req.currentJackpot.jackpot_class : req.currentJackpot.jackpot_id;
         const loadPath = `./Jackpot files/${jackpotClass}/${jackpotClass}.features.js`;
@@ -195,7 +258,6 @@ router.post(
     '/:jackpot_id/post',
     steamAuth.ensureAuthenticated,
     localAuth.verifyToken,
-    isActive,
     function(req,res){
         const jackpotClass = (req.body.jackpot_class !== 'special')? req.body.jackpot_class : req.body.jackpot_id;
         const classFunction = require(`./Jackpot files/${jackpotClass}/${jackpotClass}.post.js`);
@@ -208,7 +270,6 @@ router.post(
     '/:jackpot_id/multiplier',
     steamAuth.ensureAuthenticated,
     localAuth.verifyToken,
-    isActive,
     function(req,res){
         Jackpot.findOne({jackpot_id: req.params.jackpot_id})
             .then(jackpot => {

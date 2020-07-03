@@ -3,7 +3,7 @@ import React from "react";
 import DocList from "../../docs_navigation/DocList";
 import './J01.docs.css';
 
-class J01Docs extends React.Component{
+class J01Doc extends React.Component{
     constructor() {
         super();
         this.state = {
@@ -141,4 +141,4 @@ class J01DocsRules extends React.Component{
     }
 }
 
-export default J01Docs;
+export default J01Doc;

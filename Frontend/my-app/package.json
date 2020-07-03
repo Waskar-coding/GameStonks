@@ -11,6 +11,8 @@
     "axios": "^0.19.2",
     "chart.js": "^2.9.3",
     "chartjs-plugin-annotation": "^0.5.7",
+    "fs": "0.0.1-security",
+    "list-react-files": "^0.2.0",
     "math": "0.0.3",
     "prop-types": "^15.7.2",
     "query-string": "^6.12.1",

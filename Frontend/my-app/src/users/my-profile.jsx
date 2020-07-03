@@ -394,7 +394,7 @@ class UserEvents extends React.Component{
                                         ]
                                     }
                                     title = "Your wealth's evolution"
-                                    yLabel = {otherDict['annotated-chart']['y-label-money'][this.context]}
+                                    yLabel = {otherDict['chart']['y-label-money'][this.context]}
                                     start = {new Date(this.state.start)}
                                     end = {new Date(this.state.final)}
                                     points = {this.state.wealth}
