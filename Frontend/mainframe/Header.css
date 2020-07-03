@@ -2,14 +2,16 @@ body{
     background-image: url('../test_background.jpg');
     background-size: cover;
     text-align: center;
+	width: 100%;
+	margin: 0;
 }
+
 #head{
     background-color: darkslategrey;
-    width: 97%;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    padding: 10px 20px 5px 20px;
-    border-radius: 10px;
+    padding: 10px 0 5px 0;
 }
 
 #icon{
@@ -20,6 +22,7 @@ body{
 
 #title{
     color: white;
+	margin-left: 20px;
 }
 
 #company{
