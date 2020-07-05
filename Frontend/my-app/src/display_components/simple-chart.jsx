@@ -5,7 +5,7 @@ import React from "react";
 import { Line } from "react-chartjs-2";
 
 //Useful functions
-import configDefaultXAxes from "../users/xaxes-default-config";
+import configDefaultXAxes from "../useful_functions/xaxes-default-config";
 
 //Context
 import LanguageContext from "../language-context";
