@@ -18,6 +18,7 @@ import linkDict from "../language-display/link-classifier";
 
 //Local components
 import Jackpots from "./jackpot-search";
+import EventTimer from "../display-components/event-timer";
 
 //Language jsons
 import messageDict from '../language-display/message-classifier';
@@ -46,7 +47,8 @@ class JackpotRouter extends React.Component{
             jackpotClass: null,
             files: [],
             isLoaded: false,
-            error: null
+            error: null,
+            final: null
         };
     }
     componentDidMount(){
@@ -65,13 +67,13 @@ class JackpotRouter extends React.Component{
                 else{
                     this.setState({
                         files: eventComponentDict[jClass].map(fileArray => {
-                            console.log(fileArray[0]);
                             return [
                                 fileArray[0],
                                 React.lazy(() => import(`./${jClass}/${fileArray[1]}.jsx`))
                             ]
                         }),
-                        isLoaded: true
+                        isLoaded: true,
+                        final: res.jackpot_final
                     });
                 }
             })
@@ -80,40 +82,47 @@ class JackpotRouter extends React.Component{
         let { jackpotId } = this.props.match.params;
         const jClass = this.state.jackpotClass;
         const DefaultComponent = (this.state.files.length > 0)? this.state.files[0][1] : null;
+        console.log(this.state.final);
         if((this.state.isLoaded === true) && (this.state.files.length !== 0)){
             return(
-                <Router>
-                    <div>
-                        <nav>
-                            <ul>
-                                {this.state.files.map(file => {
-                                    return(
-                                        <li key={file[0]}>
-                                            <Link to={`/events/${jackpotId}/${file[0]}`}>
-                                                {linkDict['jackpot-router'][jClass][file[0]][this.context]}
-                                            </Link>
-                                        </li>
-                                    )
-                                })}
-                            </ul>
-                        </nav>
-                    </div>
-                    <Switch>
-                        {this.state.files.map(file => {
-                            const CurrentComponent = file[1];
-                            return(
-                                <Route key={file[0]} path={`/events/${jackpotId}/${file[0]}`}>
-                                    <Suspense fallback={<div>Loading...</div>}>
-                                        <CurrentComponent jackpotId={jackpotId} />
-                                    </Suspense>
-                                </Route>
-                            )
-                        })}
-                        <Route key="default" path={`/events/${jackpotId}/${this.state.files[0][0]}`}>
-                            <DefaultComponent jackpotId={jackpotId} />
-                        </Route>
-                    </Switch>
-                </Router>
+                <div>
+                    <EventTimer
+                        limitDate={new Date(this.state.final).getTime()}
+                        language={this.context}
+                    />
+                    <Router>
+                        <div>
+                            <nav>
+                                <ul>
+                                    {this.state.files.map(file => {
+                                        return(
+                                            <li key={file[0]}>
+                                                <Link to={`/events/${jackpotId}/${file[0]}`}>
+                                                    {linkDict['jackpot-router'][jClass][file[0]][this.context]}
+                                                </Link>
+                                            </li>
+                                        )
+                                    })}
+                                </ul>
+                            </nav>
+                        </div>
+                        <Switch>
+                            {this.state.files.map(file => {
+                                const CurrentComponent = file[1];
+                                return(
+                                    <Route key={file[0]} path={`/events/${jackpotId}/${file[0]}`}>
+                                        <Suspense fallback={<div>Loading...</div>}>
+                                            <CurrentComponent jackpotId={jackpotId} />
+                                        </Suspense>
+                                    </Route>
+                                )
+                            })}
+                            <Route key="default" path={`/events/${jackpotId}/${this.state.files[0][0]}`}>
+                                <DefaultComponent jackpotId={jackpotId} />
+                            </Route>
+                        </Switch>
+                    </Router>
+                </div>
             )
         }
         else if(this.state.error !== null){

@@ -5,7 +5,7 @@ function configDefaultXAxes(start, final, context){
         {
             type: 'linear',
             ticks: {
-                mix: start.getTime(),
+                min: start.getTime(),
                 max: final.getTime(),
                 stepSize: (final.getTime()-start.getTime())/10,
                 callback: value => {
@@ -15,7 +15,7 @@ function configDefaultXAxes(start, final, context){
             },
             scaleLabel: {
                 display: true,
-                labelString: otherDict['chart']['x-label'][context]
+                labelString: otherDict['chart']['x-label-date'][context]
             }
         }
     )

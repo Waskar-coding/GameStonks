@@ -1,14 +1,31 @@
 //Standard
 import React from "react";
 
+//Packages
+import Tippy from '@tippy.js/react';
+import 'tippy.js/dist/tippy.css';
+
 //Local components
-import DescriptionBox from "../../display_components/description-box";
-import SimpleChart from "../../display_components/simple-chart";
-import BarChart from "../../display_components/bar-chart";
-import GlobalTop from "../../display_components/global-top";
+import DescriptionBox from "../../display-components/description-box";
+import SimpleChart from "../../display-components/simple-chart";
+import BarChart from "../../display-components/bar-chart";
+import GlobalTop from "../../display-components/global-top";
 
 //Local images
 import jackpotThumbnail from "../jackpot_icons/J01.jpg";
+
+//Useful functions
+import configDefaultXAxes from "../../useful-functions/xaxes-default-config";
+import configDefaultTooltips from "../../useful-functions/tooltips-default-config";
+import getLocalDate from "../../useful-functions/date-offset";
+
+//Language jsons
+import otherDict from "../../language-display/other-classifier";
+import messageDict from "../../language-display/message-classifier";
+import interactiveDict from "../../language-display/interactive-classifier";
+
+//Context
+import LanguageContext from "../../language-context";
 
 
 class J01Global extends React.Component{
@@ -20,12 +37,11 @@ class J01Global extends React.Component{
             price: null,
             score: null,
             top: null,
-            isLoaded: false,
-            error: null
+            isLoaded: false
         };
     }
     componentDidMount(){
-        fetch(``)
+        fetch(`/jackpots/${this.props.jackpotId}/global?language=${this.context}`)
             .then(res => res.json())
             .then(
                 (res) => {
@@ -34,28 +50,36 @@ class J01Global extends React.Component{
                         entity: res.entity,
                         current_value: res.current_value,
                         current_users: res.current_users,
-                        start: res.start.slice(0,10),
-                        end: res.end.slice(0,10),
-                        hasMultipliers: res.has_multipliers,
-                        users: res.users,
-                        price: res.price,
+                        start: getLocalDate(new Date(res.start)),
+                        final: getLocalDate(new Date(res.final)),
+                        multipliers: res.multipliers,
+                        users: res.users.map(point => {
+                            return {x: getLocalDate(new Date(point[0])).getTime(),y: point[1]}
+                        }),
+                        price: res.price.map(point => {
+                            return {x: getLocalDate(new Date(point[0])).getTime(),y: point[1]}
+                        }),
                         score: res.score,
                         top: res.top,
                         isLoaded: true,
                         error: false
                     });
-                },
-                (error) =>{
-                    this.setState({
-                        isLoaded: true,
-                        error: true
-                    })
+                }
+            )
+            .catch(() => {
+                this.setState({
+                    isLoaded: true,
+                    error: true
                 })
+            })
     }
     render(){
-        let loadContent;
-        const jackpotId = this.props.jackpotId;
-        if((this.state.isLoaded===true) || (this.state.error===false)){
+        if(
+            (this.state.isLoaded === true)
+            ||
+            (this.state.error === false)
+        ){
+            const xAxes = configDefaultXAxes(this.state.start, this.state.final, this.context);
             return(
                 <div>
                     <DescriptionBox
@@ -63,14 +87,124 @@ class J01Global extends React.Component{
                         alt='Event thumbnail'
                         title={this.state.title}
                         table={[
-                            [["Sponsor",this.state.entity],["Start",this.state.start]],
-                            [["Value",this.state.current_value],["End",this.state.end]],
-                            [["Users",this.state.current_users],["Allows multipliers",this.state.has_multipliers]]
+                            [
+                                [
+                                    otherDict['jackpot']['jackpot-sponsor'][this.context],
+                                    this.state.entity
+                                ],
+                                [
+                                    otherDict['jackpot']['jackpot-start'][this.context],
+                                    this.state.start.toISOString().slice(0,10)
+                                ]
+                            ],
+                            [
+                                [
+                                    otherDict['jackpot']['jackpot-value'][this.context],
+                                    this.state.current_value
+                                ],
+                                [
+                                    otherDict['jackpot']['jackpot-final'][this.context],
+                                    this.state.final.toISOString().slice(0,10)
+                                ]
+                            ],
+                            [
+                                [
+                                    otherDict['jackpot']['jackpot-users'][this.context],
+                                    this.state.current_users
+                                ],
+                                [
+                                    otherDict['jackpot']['jackpot-allowed-multipliers'][this.context],
+                                    this.state.multipliers
+                                ]
+                            ]
                         ]}
                     />
-                    <SimpleChart points={this.state.users} title="Shareholders" yLabel="Shareholders"/>
-                    <SimpleChart points={this.state.users} title="Price" yLabel="Price ($)"/>
-                    <BarChart points={this.state.score} title="Wealth distribution" />
+                    <div>
+                        <h2>{otherDict['jackpot']['jackpot-user-chart-title'][this.context]}</h2>
+                        <div>
+                            <Tippy content={interactiveDict['jackpot-tooltips']['global-user-chart'][this.context]}>
+                                <div>Info</div>
+                            </Tippy>
+                        </div>
+                        <SimpleChart
+                            title="Active users"
+                            points={this.state.users}
+                            yLabel={otherDict['chart']['y-label-users'][this.context]}
+                            xAxes={xAxes}
+                            tooltips={configDefaultTooltips(' users')}
+                        />
+                    </div>
+                    <div>
+                        <h2>{otherDict['jackpot']['jackpot-value-chart-title'][this.context]}</h2>
+                        <div>
+                            <Tippy content={interactiveDict['jackpot-tooltips']['global-value-chart'][this.context]}>
+                                <div>Info</div>
+                            </Tippy>
+                        </div>
+                        <SimpleChart
+                            title="Event value"
+                            points={this.state.price}
+                            yLabel={otherDict['chart']['y-label-money'][this.context]}
+                            xAxes={xAxes}
+                            tooltips={configDefaultTooltips('$')}
+                        />
+                    </div>
+                    <div>
+                        <h2>{otherDict['jackpot']['jackpot-user-chart-title'][this.context]}</h2>
+                        <div>
+                            <Tippy content={interactiveDict['jackpot-tooltips']['global-value-dist'][this.context]}>
+                                <div>Info</div>
+                            </Tippy>
+                        </div>
+                        {(this.state.score.length === 0)? (
+                            <div style={{backgroundColor: "rgba(0,0,0,0.5)", position:"relative"}}>
+                                <div style={{color: "white", position:"absolute", top: "50%", left: "50%"}}>
+                                    {otherDict['bars']['not-found'][this.context]}
+                                </div>
+                                <div>
+                                    <BarChart
+                                        points={[]}
+                                        title="Wealth distribution"
+                                        labels={[
+                                            otherDict['bars']['lowest'][this.context],
+                                            '', '','', '','','','',
+                                            otherDict['bars']['highest'][this.context]
+                                        ]}
+                                        yLabel={otherDict['bars']['y-label-wealth-percent'][this.context]}
+                                    />
+                                </div>
+                            </div>
+                        ) : (
+                            <BarChart
+                                points={this.state.score}
+                                title="Wealth distribution"
+                                labels={[
+                                    otherDict['bars']['lowest'][this.context],
+                                    '', '','', '','','','',
+                                    otherDict['bars']['highest'][this.context]
+                                ]}
+                                yLabel={otherDict['bars']['y-label-wealth-percent'][this.context]}
+                            />
+                        )}
+                        </div>
+                    <div>
+                        <h2>{otherDict['jackpot']['jackpot-top-title'][this.context]}</h2>
+                        <div>
+                            <Tippy content={interactiveDict['jackpot-tooltips']['global-user-top'][this.context]}>
+                                <div>Info</div>
+                            </Tippy>
+                        </div>
+                        {(this.state.top.length === 0)? (
+                            <div>{otherDict['bars']['y-label-wealth-percent'][this.context]}</div>
+                        ):(
+                            <GlobalTop
+                                players={this.state.top}
+                                incompleteMessage={messageDict['jackpot-stats']['global-top']['incomplete'][this.context]}
+                                completeLength={10}
+                            />
+                        )
+                        }
+                    </div>
                 </div>
             )
         }
@@ -82,5 +216,6 @@ class J01Global extends React.Component{
         }
     }
 }
+J01Global.contextType = LanguageContext;
 
 export default J01Global;

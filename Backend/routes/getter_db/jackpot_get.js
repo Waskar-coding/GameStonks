@@ -85,7 +85,7 @@ async function assignJackpotStatus(req,search){
             jackpot_class: jackpot.jackpot_class,
             jackpot_entity: jackpot.jackpot_entity,
             start: jackpot.start,
-            end: jackpot.end,
+            final: jackpot.final,
             total_value: jackpot.total_value,
             active_users: jackpot.active_users,
             user_status: 'i'
@@ -136,7 +136,6 @@ router.get('/:jackpot_id/active',function(req,res){
         Firstly we check for the current jackpot cookie
     */
     const currentJackpot = req.cookies.currentJackpot;
-    console.log(currentJackpot);
     if(currentJackpot !== undefined){
         /*
             If the cookie exists and coincides with the selected jackpot
@@ -183,7 +182,7 @@ function confirmJackpot(req,res){
                     'currentJackpot',
                     {
                         jackpot_id: req.params.jackpot_id,
-                        jackpot_end: new Date(),
+                        jackpot_final: new Date(),
                         error: (jackpot === null)? "jackpot-not-found" : "jackpot-not-active"
                     }
                 );
@@ -198,7 +197,7 @@ function confirmJackpot(req,res){
                     {
                         jackpot_id: jackpot.jackpot_id,
                         jackpot_class: jackpot.jackpot_class,
-                        jackpot_end: jackpot.end,
+                        jackpot_final: jackpot.final,
                         error: null
                     }
                 );
@@ -206,10 +205,9 @@ function confirmJackpot(req,res){
             }
         })
         .catch(err => {
-            console.log(err);
             res.send({
                 jackpot_id: req.params.jackpot_id,
-                jackpot_end: new Date(),
+                jackpot_final: new Date(),
                 error: "jackpot-505"
             })
         })
@@ -222,13 +220,13 @@ router.get(
         Jackpot.findOne({jackpot_id: req.params.jackpot_id})
             .then(jackpot => {
                 res.send({
-                    title: jackpot.jackpot_title,
+                    title: jackpot.jackpot_title[req.query.language],
                     entity: jackpot.jackpot_entity,
                     current_value: jackpot.total_value,
                     current_users: jackpot.users.length,
                     start: jackpot.start,
-                    end: jackpot.end,
-                    has_multipliers: jackpot.has_multipliers,
+                    final: jackpot.final,
+                    multipliers: jackpot.multipliers,
                     users: jackpot.users_timetable,
                     price: jackpot.price_timetable,
                     score: jackpot.wealth_distribution,

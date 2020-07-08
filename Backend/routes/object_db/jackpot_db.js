@@ -6,6 +6,13 @@ const JackpotTitles = mongoose.Schema({
    EN: String
 },{typeKey: "$type"});
 
+const TopUserRegister = mongoose.Schema({
+    userId: String,
+    name: String,
+    thumbnail: String,
+    share: {type: Number}
+});
+
 //Jackpot register schema
 const jackpot = mongoose.Schema({
 
@@ -19,12 +26,11 @@ const jackpot = mongoose.Schema({
 
     ////Resume
     start: Date,
-    end: Date,
+    final: Date,
     total_value: {type: Number},
     total_score: {type: Number},
     users: Array,
-    has_multipliers: String,
-    max_multipliers: {type: Number},
+    multipliers: {type: Number},
 
     ////Status
     active: Boolean,
@@ -36,7 +42,7 @@ const jackpot = mongoose.Schema({
     wealth_distribution: Array,
 
     ////Top 10
-    top_users: Array
+    top_users: [TopUserRegister]
 
 },{versionKey: false});
 const Jackpot = mongoose.model('SteamJackpot', jackpot);

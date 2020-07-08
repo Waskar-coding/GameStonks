@@ -1,10 +1,10 @@
 import React from "react";
-import SimpleList from "../../display_components/simple-list";
-import AnnotatedChart from "../../display_components/annotated-chart";
-import TimeLine from "../../display_components/timeline";
+import SimpleList from "../../display-components/simple-list";
+import AnnotatedChart from "../../display-components/annotated-chart";
+import TimeLine from "../../display-components/timeline";
 import MultiplierRouter from "../../multipliers/MultiplierRouter";
-import DescriptionBox from "../../display_components/description-box";
-import mergeEvents from "../../useful_functions/event-sort";
+import DescriptionBox from "../../display-components/description-box";
+import mergeEvents from "../../useful-functions/event-sort";
 import axios from "axios";
 
 class J01Personal extends React.Component{

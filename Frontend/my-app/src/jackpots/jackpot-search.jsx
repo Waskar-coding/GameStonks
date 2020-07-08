@@ -104,7 +104,7 @@ class JackpotSearch extends React.Component{
                                         title={item.jackpot_title}
                                         value={item.total_value}
                                         start={item.start.slice(0, 10)}
-                                        final={item.end.slice(0, 10)}
+                                        final={item.final.slice(0, 10)}
                                         status={item.user_status}
                                         sponsor={item.jackpot_entity}
                                     />

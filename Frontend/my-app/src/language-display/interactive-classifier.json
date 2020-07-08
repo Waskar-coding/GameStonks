@@ -148,5 +148,23 @@
       "ES": "Copiado",
       "EN": "Copied"
     }
+  },
+  "jackpot-tooltips": {
+    "global-user-chart": {
+      "ES": "Esta gráfica las subidas y bajadas de usuarios activos durante el evento, es decir aquellos que aportaron información útil o fueron invitados mediante un multiplicador handshake",
+      "EN": "This chart represents the increases and decreases of active users in the event (shareholders), you can become a shareholder by providing useful information or by being invited through a handshake multiplier"
+    },
+    "global-value-chart": {
+      "ES": "Esta gráfica representa las subidas y bajadas del valor del evento (en dólares), este valor está ligado al número de usuarios activos y el provecho que esperamos sacar de la información obtenida",
+      "EN": "This chart represents the increases and decreases of the value of the event (in dollars), this value is strongly related to the total number of shareholders and the profit we are projected to obtain from the information"
+    },
+    "global-value-dist": {
+      "ES": "Esta gráfica da una idea de la distribución del valor entre los usuarios con menor y mayor puntuación, cuanto más plana sea más equitatiba es la distribución, en cambio si la pendiente es pronunciada podemos saber que unos pocos poseen la mayoría del valor del evento",
+      "EN": "This bar chart gives us an idea of how the total value of the event is distributed the users with higher and lower score, the flatter it looks the more equitable the share of the users is, on the contrary high slopes indicate that a few posses the majority of the event's value"
+    },
+    "global-user-top": {
+      "ES": "En este top se recogen los 10 usuarios con mayor puntuación junto al valor de sus acciones en el evento, puedes consultar sus perfiles e intentar adivinar que estrategia usaron, pero puede que nuestra política de privacidad nos obligue a ocultar la información que aportaron",
+      "EN": "In this top the 10 greatest shareholders of the event are displayed along with their shares in the event, you can visit their profiles and try to figure out their strategies, however, our privacy policy might prevent us from showing the information they contributed"
+    }
   }
 }

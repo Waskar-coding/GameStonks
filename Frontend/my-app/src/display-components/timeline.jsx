@@ -1,5 +1,5 @@
 import React from "react";
-import getLocalDate from "../useful_functions/date-offset";
+import getLocalDate from "../useful-functions/date-offset";
 
 class TimeLine extends React.PureComponent{
     render(){
