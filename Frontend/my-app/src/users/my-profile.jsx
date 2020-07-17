@@ -8,15 +8,17 @@ import Tippy from '@tippy.js/react';
 import 'tippy.js/dist/tippy.css';
 
 //Useful functions
-import processEvent from "../useful_functions/process-event";
-import processMessage from "../useful_functions/process-message";
-import getLocalDate from "../useful_functions/date-offset";
+import processEvent from "../useful-functions/process-event";
+import processMessage from "../useful-functions/process-message";
+import getLocalDate from "../useful-functions/date-offset";
+import configDefaultXAxes from "../useful-functions/xaxes-default-config";
+import configDefaultTooltips from "../useful-functions/tooltips-default-config";
 
 //Local components
 import DateForm from "../search/date-form";
-import TimeLine from "../display_components/timeline";
-import SimpleList from "../display_components/simple-list";
-import AnnotatedChart from "../display_components/annotated-chart";
+import TimeLine from "../display-components/timeline";
+import SimpleList from "../display-components/simple-list";
+import AnnotatedChart from "../display-components/annotated-chart";
 import BasicProfile from "./basic-profile";
 
 //Language jsons
@@ -266,7 +268,7 @@ class UserEvents extends React.Component{
                             return processEvent(this.context, '1st', event)
                         }),
                         wealth: res.wealth_timetable.map(point => {
-                            return [getLocalDate(new Date(point[0])), point[1]]
+                            return {x: getLocalDate(new Date(point[0])).getTime(), y: point[1]}
                         }),
                         minDate: getLocalDate(new Date(res.joined)),
                         isLoad: true
@@ -369,6 +371,14 @@ class UserEvents extends React.Component{
                                 <div>{processMessage(this.context,["Timeline","no-graph"])}</div>
                             ) : (
                                 <AnnotatedChart
+                                    tooltips={configDefaultTooltips('$')}
+                                    xAxes={
+                                        configDefaultXAxes(
+                                            new Date(this.state.start),
+                                            new Date(this.state.final),
+                                            this.context
+                                        )
+                                    }
                                     tags = {
                                         [
                                             [
@@ -394,7 +404,7 @@ class UserEvents extends React.Component{
                                         ]
                                     }
                                     title = "Your wealth's evolution"
-                                    yLabel = {otherDict['annotated-chart']['y-label-money'][this.context]}
+                                    yLabel = {otherDict['chart']['y-label-money'][this.context]}
                                     start = {new Date(this.state.start)}
                                     end = {new Date(this.state.final)}
                                     points = {this.state.wealth}
@@ -417,7 +427,6 @@ class UserEvents extends React.Component{
         }
     }
 }
-
 UserEvents.contextType = LanguageContext;
 
 class DonateForm extends React.Component{

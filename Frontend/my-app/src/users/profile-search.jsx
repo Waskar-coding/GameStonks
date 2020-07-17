@@ -13,7 +13,7 @@ import interactiveDict from "../language-display/interactive-classifier";
 
 //Context
 import LanguageContext from "../language-context";
-import getLocalDate from "../useful_functions/date-offset";
+import getLocalDate from "../useful-functions/date-offset";
 
 class Profiles extends React.Component{
     render(){

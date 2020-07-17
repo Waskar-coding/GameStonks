@@ -7,11 +7,11 @@ import axios from "axios";
 //Local components
 import BasicProfile from "./basic-profile";
 import DateForm from "../search/date-form";
-import TimeLine from "../display_components/timeline";
+import TimeLine from "../display-components/timeline";
 
 //Useful functions
-import processEvent from "../useful_functions/process-event";
-import getLocalDate from "../useful_functions/date-offset";
+import processEvent from "../useful-functions/process-event";
+import getLocalDate from "../useful-functions/date-offset";
 
 //Language jsons
 import otherDict from "../language-display/other-classifier";
@@ -19,7 +19,7 @@ import messageDict from "../language-display/message-classifier";
 
 //Context
 import LanguageContext from "../language-context";
-import processMessage from "../useful_functions/process-message";
+import processMessage from "../useful-functions/process-message";
 
 
 class FriendProfile extends React.Component{
@@ -32,7 +32,7 @@ class FriendProfile extends React.Component{
     componentDidMount() {
         const { steamid } = this.props.match.params;
         axios.get(`/users/profiles/${steamid}/exists`)
-            .then(res => {
+            .then(() => {
                 this.setState({exists: true})
             })
             .catch(() => {
@@ -78,7 +78,7 @@ class FriendBasicProfile extends React.Component{
                 });
 
             })
-            .catch(err => {
+            .catch(() => {
                 this.setState({
                     error: true,
                     isLoaded: true

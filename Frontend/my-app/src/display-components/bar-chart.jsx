@@ -1,13 +1,18 @@
+//Standard
 import React from "react";
+
+//Packages
 import { Bar } from "react-chartjs-2";
+
+
 
 class BarChart extends React.PureComponent{
     render(){
         const data = {
-            labels: ['Lowest 10%', '', '','', '','','','','Richest 10%'],
+            labels: this.props.labels,
             datasets: [
                 {
-                    label: 'Wealth percentage',
+                    label: this.props.title,
                     backgroundColor: 'rgba(75,192,192,1)',
                     borderColor: 'rgba(0,0,0,1)',
                     borderWidth: 2,
@@ -17,7 +22,7 @@ class BarChart extends React.PureComponent{
         };
         const options={
             title:{
-                display:true,
+                display:false,
                 text: this.props.title,
                 fontSize:20
             },
@@ -29,18 +34,15 @@ class BarChart extends React.PureComponent{
                     {
                         scaleLabel: {
                             display: true,
-                            labelString: 'Wealth percentage'
+                            labelString: this.props.yLabel
                         }
                     }
                 ]
             }
         };
-        if(this.props.points.length === 0){
-            return(<div><div>Disabled, not enough players</div><Bar data={data} options={options} /></div>)
-        }
-        else{
-            return(<Bar data={data} options={options} />)
-        }
+        return(
+            <Bar data={data} options={options} />
+        )
     }
 }
 

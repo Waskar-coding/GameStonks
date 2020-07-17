@@ -53,17 +53,67 @@
       "EN": "How do I get a user's steamid?"
     }
   },
-  "annotated-chart": {
-    "x-label": {
+  "chart": {
+    "x-label-date": {
       "ES": "Fecha",
       "EN": "Date"
     },
     "y-label-money": {
       "ES": "Dinero ($)",
       "EN": "Money ($)"
+    },
+    "y-label-users": {
+      "ES": "Participantes",
+      "EN": "Shareholders"
+    }
+  },
+  "bars": {
+    "not-found": {
+      "ES": "Datos insuficientes",
+      "EN": "Insuficient data"
+    },
+    "lowest": {
+      "ES": "10% más bajo",
+      "EN": "Lowest 10%"
+    },
+    "highest": {
+      "ES": "10% más alto",
+      "EN": "Highest 10%"
+    },
+    "y-label-wealth-percent": {
+      "ES": "% de fortuna",
+      "EN": "wealth %"
     }
   },
   "jackpot": {
+    "jackpot-user-chart-title": {
+      "ES": "Evolución del número de usuarios",
+      "EN": "User numbers evolution"
+    },
+    "jackpot-value-chart-title": {
+      "ES": "Evolución del valor del evento",
+      "EN": "Event's value evolution"
+    },
+    "jackpot-dist-chart-title": {
+      "ES": "Distribución del valor del evento",
+      "EN": "Event's value distribution"
+    },
+    "jackpot-top-title": {
+      "ES": "Top 10 de Usuarios",
+      "EN": "Top 10 Shareholders"
+    },
+    "jackpot-allowed-multipliers": {
+      "ES": "Máx. multiplicadores",
+      "EN": "Allowed multipliers"
+    },
+    "jackpot-users": {
+      "ES": "Usuarios",
+      "EN": "Users"
+    },
+    "jackpot-value":{
+      "ES": "Valor",
+      "EN": "Value"
+    },
     "jackpot-class": {
       "ES": "Clase",
       "EN": "Class"
@@ -95,6 +145,12 @@
     "k": {
       "ES": "Expulsado",
       "EN": "Kicked"
+    }
+  },
+  "timer": {
+    "days": {
+      "ES": "Días",
+      "EN": "Days"
     }
   }
 }

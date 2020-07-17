@@ -35,7 +35,7 @@ class Jackpots extends React.Component{
                 })}
                 location={this.props.location}
             >
-                <JackpotList />
+                <JackpotSearch />
             </Search>
         )
     }
@@ -43,7 +43,7 @@ class Jackpots extends React.Component{
 Jackpots.contextType = LanguageContext;
 
 
-class JackpotList extends React.Component{
+class JackpotSearch extends React.Component{
     constructor(props) {
         super(props);
         this.state = {
@@ -104,7 +104,7 @@ class JackpotList extends React.Component{
                                         title={item.jackpot_title}
                                         value={item.total_value}
                                         start={item.start.slice(0, 10)}
-                                        final={item.end.slice(0, 10)}
+                                        final={item.final.slice(0, 10)}
                                         status={item.user_status}
                                         sponsor={item.jackpot_entity}
                                     />
@@ -117,7 +117,7 @@ class JackpotList extends React.Component{
         }
     }
 }
-JackpotList.contextType = LanguageContext;
+JackpotSearch.contextType = LanguageContext;
 
 class JackpotBox extends React.Component{
     iconPath = () => {

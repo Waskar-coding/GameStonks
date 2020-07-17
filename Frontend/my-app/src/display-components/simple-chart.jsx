@@ -1,20 +1,19 @@
+//Standard
 import React from "react";
+
+//Packages
 import { Line } from "react-chartjs-2";
+
+//Context
+import LanguageContext from "../language-context";
 
 class SimpleChart extends React.PureComponent{
     render(){
-        const xData = this.props.points.map(point => {
-            return point[0].slice(0,10);
-        });
-        const yData = this.props.points.map(point => {
-            return point[1];
-        });
         const data = {
-            labels: xData,
             datasets: [
                 {
                     label: this.props.title,
-                    data: yData,
+                    data: this.props.points,
                     borderColor: "rgba(0,0,0,1)",
                     backgroundColor: "rgba(0,0,0,1)",
                     pointBorderColor: "rgba(0,0,0,1)",
@@ -29,25 +28,12 @@ class SimpleChart extends React.PureComponent{
             legend:{
                 display: false
             },
-            title: {
-                display: true,
-                text: this.props.title
-            },
-            tooltips: {
-                mode: 'label'
-            },
+            tooltips: this.props.tooltips,
             hover: {
                 mode: 'dataset'
             },
             scales: {
-                xAxes: [
-                    {
-                        scaleLabel: {
-                            display: true,
-                            labelString: 'Date'
-                        }
-                    }
-                ],
+                xAxes: [this.props.xAxes],
                 yAxes: [
                     {
                         scaleLabel: {
@@ -63,5 +49,6 @@ class SimpleChart extends React.PureComponent{
         )
     }
 }
+SimpleChart.contextType = LanguageContext;
 
 export default SimpleChart;

@@ -7,13 +7,13 @@ import 'tippy.js/dist/tippy.css';
 import {CopyToClipboard} from 'react-copy-to-clipboard';
 
 //Useful functions
-import getLocalDate from "../useful_functions/date-offset";
-import processEvent from "../useful_functions/process-event";
-import sortMultipliers from "../useful_functions/sort-multiplier";
+import getLocalDate from "../useful-functions/date-offset";
+import processEvent from "../useful-functions/process-event";
+import sortMultipliers from "../useful-functions/sort-multiplier";
 
 //Local components
-import DescriptionBox from "../display_components/description-box";
-import SimpleList from "../display_components/simple-list";
+import DescriptionBox from "../display-components/description-box";
+import SimpleList from "../display-components/simple-list";
 
 //Language jsons
 import otherDict from "../language-display/other-classifier";
@@ -42,7 +42,7 @@ class BasicProfile extends React.PureComponent{
                     >
                         <div>{jackpot}</div>
                     </Tippy>,
-                    `../../jackpots/${jackpot}`
+                    `../../events/${jackpot}`
                 ]
             )
         });

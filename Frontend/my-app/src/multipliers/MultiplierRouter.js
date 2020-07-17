@@ -1,6 +1,6 @@
 import React from "react";
 import { Suspense } from "react";
-import SimpleList from "../display_components/simple-list";
+import SimpleList from "../display-components/simple-list";
 
 class MultiplierRouter extends React.Component{
     constructor(props){
