@@ -1,6 +1,10 @@
-html {
+html{
     position: relative;
     min-height: 100%;
+}
+
+body{
+	color: #d5d5d5;
 }
 
 .column-layout{
@@ -58,4 +62,105 @@ article{
 
 footer{
 	margin: 5px;
+}
+
+a{
+	color: #8DA8FF;
+	text-shadow: 0 0 5px rgba(101, 81, 255, 0.4);
+	text-decoration: none;
+}
+
+a:active{
+	color: #fff;
+	text-shadow: 0 0 5px rgba(255, 255, 255, 0.4);
+	text-decoration: none;
+}
+
+a:hover{
+	color: #afc2ff;
+	text-shadow: 0 0 5px rgba(101, 81, 255, 0.4);
+	text-decoration: none;
+}
+
+a{
+    -webkit-transition: color 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
+    -moz-transition: color 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
+    -o-transition: color 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
+    -ms-transition: color 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
+    transition: color 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
+}
+
+textarea{
+	min-width: 500px;
+	min-height: 150px;
+}
+
+input[type="submit"]{
+    color: #8DA8FF;
+    text-shadow: 0 0 5px rgba(101, 81, 255, 0.4);
+    border: 1px solid rgba(11, 16, 32, 1);
+    background-color: rgba(51, 67, 118, 0.2);
+    box-shadow: inset 0px 0px 10px rgba(81, 100, 163, 0.4);
+    padding: 3px 20px;
+}
+
+textarea,
+input[type="text"],
+input[type="password"]{
+    border: 1px solid #000;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    background: #131313;
+	color: #565658;
+	border: 1px solid #000;
+	box-shadow: 0 1px rgba(255, 255, 255, .1), inset 0 1px 2px rgba(0, 0, 0, .6);
+}
+
+input[type="submit"]:focus{
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus{
+    outline: none;
+    color: #797979;
+    border-color: #000;
+    border-color: rgba(0, 0, 0, 0.15);
+    background: #0f0f0f;
+	box-shadow: 0 1px rgba(255, 255, 255, .1), inset 0 1px 2px rgba(0, 0, 0, .6);
+}
+
+input[type="submit"]:hover{
+    color: #afc2ff;
+    text-shadow: 0 0 5px rgba(101, 81, 255, 0.4);
+    box-shadow: inset 0px 0px 20px rgba(102, 123, 193, 0.8);
+}
+
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="submit"],
+input[type="button"]{
+    -webkit-transition: border-color 0.25s ease-in-out, color 0.25s ease-in-out, background 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
+    -moz-transition: border-color 0.25s ease-in-out, color 0.25s ease-in-out, background 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
+    -o-transition: border-color 0.25s ease-in-out, color 0.25s ease-in-out, background 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
+    -ms-transition: border-color 0.25s ease-in-out, color 0.25s ease-in-out, background 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
+    transition: border-color 0.25s ease-in-out, color 0.25s ease-in-out, background 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
+}
+
+select{
+    background-color: #1c1c1c;
+    border: #5f5f5f 1px solid;
+    color: #919191;
+}
+
+select optgroup{
+    background-color: #1c1c1c;
+    border: #5f5f5f 0px solid;
+    color: #b7b7b7;
+}
+
+select optgroup option{
+    background-color: #1c1c1c;
+    border: #5f5f5f 0px solid;
+    color: #919191;
 }

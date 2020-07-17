@@ -1,37 +1,39 @@
 #nav-bar{
 	padding-left: 20px;
-    position: sticky;
     display: flex;
-    flex-direction: row;
+    position: sticky;
 	background-image: linear-gradient(to bottom, #333333, #1a1b1f);
-	box-shadow: 0 1px 3px rgba(0, 0, 0, .2), inset 0 1px 1px rgba(255, 255, 255, .15);
-	-webkit-box-shadow:  0 1px 3px rgba(0, 0, 0, .2), inset 0 1px 1px rgba(255, 255, 255, .15);
-	-moz-box-shadow:  0 1px 3px rgba(0, 0, 0, .2), inset 0 1px 1px rgba(255, 255, 255, .15);
-	border-top: 1px solid #000;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, .2);
+	-webkit-box-shadow:  0 1px 3px rgba(0, 0, 0, .2);
+	-moz-box-shadow:  0 1px 3px rgba(0, 0, 0, .2);
 	border-bottom: 1px solid #000;
 	height: 35px;
 	line-height: 35px;
+	text-align: left;
+	justify-content: center;
+}
+
+#nav-menu{
+    display: contents;
+	marin: 0 auto;
+	position: relative;
+}
+
+#nav-menu li{
+	margin: 0;
 }
 
 .nav-box{
     width: calc(100%/12);
     text-align: center;
     color: #d5d5d5;
-}
-
-.nav-box + .nav-box,
-.nav-box + .nav-box-current,
-.nav-box-current + .nav-box{
-	margin-left: 10px;
+	list-style: none;
 }
 
 .nav-box:hover,
 .nav-box-current:hover,
 .nav-box-current:active{
     background-image: linear-gradient(to bottom, #222, #08090b);
-	box-shadow: inset 0 1px 1px rgba(255, 255, 255, .15);
-	-webkit-box-shadow: inset 0 1px 1px rgba(255, 255, 255, .15);
-	-moz-box-shadow: inset 0 1px 1px rgba(255, 255, 255, .15);
 }
 
 .nav-box-current{
@@ -39,7 +41,13 @@
     text-align: center;
     color: #d5d5d5;
     background-image: linear-gradient(to bottom, #222, #08090b);
-	box-shadow: inset 0 1px 1px rgba(255, 255, 255, .15);
-	-webkit-box-shadow: inset 0 1px 1px rgba(255, 255, 255, .15);
-	-moz-box-shadow: inset 0 1px 1px rgba(255, 255, 255, .15);
+	list-style: none;
+}
+
+.nav-logo{
+	list-style: none;
+}
+
+.nav-login{
+	list-style: none;
 }
