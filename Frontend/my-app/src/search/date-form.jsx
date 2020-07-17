@@ -13,6 +13,7 @@ import interactiveDict from '../language-display/interactive-classifier';
 //Context
 import LanguageContext from "../language-context";
 
+//English date format
 const monthsEN = [
     'January',
     'Februrary',
@@ -44,6 +45,7 @@ registerLocale('EN',{
     formatLong:{}
 });
 
+//Spanish date format
 const monthsES = [
     'Enero',
     'Febrero',
@@ -75,6 +77,7 @@ registerLocale('ES', {
     formatLong:{}
 });
 
+//Main class
 class DateForm extends React.Component{
     constructor(props){
         super(props);
@@ -135,7 +138,5 @@ class DateForm extends React.Component{
         )
     }
 }
-
 DateForm.contextType = LanguageContext;
-
 export default DateForm;

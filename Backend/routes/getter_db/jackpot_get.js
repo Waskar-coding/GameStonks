@@ -12,82 +12,78 @@ const localAuth = require('../local_auth/verify');
 
 
 
-//Current jackpots
-////Getting number of current jackpots with the given criteria
-const getCurrentNum = (req, search) => {
-    return new Promise((resolve,reject) => {
-        setTimeout(() => {
-            reject('Timeout')
-        }, 3000);
-        Jackpot.find({active: true})
-            .then(jackpots => {
-                resolve(
-                    jackpots.filter(
-                        jackpot => {
-                            return(
-                                (search.test(jackpot['jackpot_title'][req.query.language]))
-                                ||
-                                (search.test(jackpot['jackpot_entity']))
-                            )
-                        }
-                    ).length
-                )
-            })
-            .catch(err => {
-                reject(err)
-            })
-    })
-};
-////Getting current jackpots with the given criteria
+//Current events
+router.get('/current',async function(req,res){
+    const search = new RegExp(req.query.search,'i');
+    try{
+        const currentEvents = await getCurrent(req,search);
+        res.send({
+            current_n: currentEvents.count,
+            current: await assignEventStatus(req,currentEvents.events)
+        });
+    }
+    catch(err){
+        res.send({Error: 'Internal server error'})
+    }
+});
+////Jackpots with the given criteria
 const getCurrent = (req,search) => {
-    const display = 2;
+    const displayPerPage = 2;
+    const offset = displayPerPage * (req.query.page-1);
     return new Promise((resolve,reject) => {
-        setTimeout(() => {reject('Timeout')},3000);
         Jackpot.find({active:true})
             .sort({[req.query.sort]: req.query.order})
             .then(current => {
-                const offset = display*(req.query.page-1);
-                resolve(
-                    current.filter(
-                        jackpot => {
-                            return(
-                                (search.test(jackpot['jackpot_title'][req.query.language]))
-                                ||
-                                (search.test(jackpot['jackpot_entity']))
-                            )
-                        }
-                    ).slice(offset, offset + display)
-                )
+                const filteredCurrent = current.filter(
+                    jackpot => {
+                        return(
+                            (search.test(jackpot['jackpot_title'][req.query.language]))
+                            ||
+                            (search.test(jackpot['jackpot_entity']))
+                        )
+                    }
+                );
+                const filteredCurrentCount = filteredCurrent.length;
+                const filteredCurrentPage = filteredCurrent.slice(offset, offset + displayPerPage);
+                resolve({
+                    count: filteredCurrentCount,
+                    events: filteredCurrentPage
+                })
             })
             .catch((err) => {
                 reject(err)
             })
     })
 };
-////Getting user jackpot register
+////User jackpot register
 const getUserRegister = (req) => {
     return new Promise((resolve) => {
         if(req.user){
             User.findOne({steamid: req.user.user.steamid})
-                .then(user => resolve(user.jackpots))
+                .then(user => resolve(
+                    user.jackpots.filter(jackpot =>{
+                        return ['a','k'].includes(jackpot.status);
+                    })
+                ))
         }
         else{
             resolve([]);
         }
     })
 };
-////Assigning jackpot status to user
-async function assignJackpotStatus(req,search){
-    const current = (await getCurrent(req,search)).map(jackpot => {
+////Assign jackpot status to user
+async function assignEventStatus(req,events){
+    const currentEvents = events.map(event => {
         return ({
-            jackpot_id: jackpot.jackpot_id,
-            jackpot_title: jackpot.jackpot_title[req.query.language],
-            jackpot_class: jackpot.jackpot_class,
-            jackpot_entity: jackpot.jackpot_entity,
-            start: jackpot.start,
-            final: jackpot.final,
-            total_value: jackpot.total_value,
-            active_users: jackpot.active_users,
+            jackpot_id: event.jackpot_id,
+            jackpot_title: event.jackpot_title[req.query.language],
+            jackpot_class: event.jackpot_class,
+            jackpot_thumbnail: event.jackpot_thumbnail,
+            jackpot_entity: event.jackpot_entity,
+            start: event.start,
+            final: event.final,
+            total_value: event.total_value,
+            active_users: event.active_users,
             user_status: 'i'
         })
     });
@@ -95,48 +91,34 @@ async function assignJackpotStatus(req,search){
     const registerIds = registers.map(register => {return register.jackpot_id});
     if(registers.length === 0){
         return new Promise(resolve => {
-          resolve(current)
+            resolve(currentEvents)
         })
     }
     else{
         return new Promise(resolve => {
             resolve(
-                current.map(jackpot => {
-                    const jackpotIndex = registerIds.indexOf(jackpot.jackpot_id);
-                    if(jackpotIndex !== -1){
-                        jackpot.jackpot_status = registers[jackpotIndex].jackpot_status;
+                currentEvents.map(event => {
+                    const eventIndex = registerIds.indexOf(event.jackpot_id);
+                    if(eventIndex !== -1){
+                        event.user_status = registers[eventIndex].status;
                     }
-                    return jackpot
+                    return event
                 })
             )
         })
     }
 }
 
-////Get Method
-router.get('/current',async function(req,res){
-    const search = new RegExp(req.query.search,'i');
-    try{
-        res.send(
-            {
-                current_n: await getCurrentNum(req,search),
-                current: await assignJackpotStatus(req,search)
-            });
-    }
-    catch(err){
-        res.send({Error: 'Internal server error'})
-    }
-});
 
 
-//Get a Jackpot
+//Event confirm
 ////Get a Jackpot: Check if the jackpot exists and is active
 router.get('/:jackpot_id/active',function(req,res){
     /*
         Firstly we check for the current jackpot cookie
     */
-    const currentJackpot = req.cookies.currentJackpot;
-    if(currentJackpot !== undefined){
+    if(Object.keys(req.cookies).includes('currentJackpot')){
+        const currentJackpot = req.cookies.currentJackpot;
         /*
             If the cookie exists and coincides with the selected jackpot
             the current jackpot we'll check whether the jackpot is finished
@@ -178,33 +160,36 @@ function confirmJackpot(req,res){
                 If jackpot is not active or does not exist a a form with an error is sent
             */
             if((jackpot === null) || (jackpot.active === false)){
-                res.cookie(
-                    'currentJackpot',
-                    {
-                        jackpot_id: req.params.jackpot_id,
-                        jackpot_final: new Date(),
-                        error: (jackpot === null)? "jackpot-not-found" : "jackpot-not-active"
-                    }
-                );
-                res.send(req.cookies.currentJackpot);
+                const currentJackpot = {
+                    jackpot_id: req.params.jackpot_id,
+                    jackpot_final: new Date(),
+                    error: (jackpot === null)? "jackpot-not-found" : "jackpot-not-active"
+                };
+                res.cookie('currentJackpot', currentJackpot);
+                if(jackpot === null){
+                    res.status(404).send(currentJackpot);
+                }
+                else{
+                    res.status(403).send(currentJackpot);
+                }
+
             }
             /*
                 If the jackpot does exist it is registered as the current jackpot and sent
             */
             else{
-                res.cookie(
-                    'currentJackpot',
-                    {
-                        jackpot_id: jackpot.jackpot_id,
-                        jackpot_class: jackpot.jackpot_class,
-                        jackpot_final: jackpot.final,
-                        error: null
-                    }
-                );
-                res.send(req.cookies.currentJackpot);
+                const currentJackpot = {
+                    jackpot_id: jackpot.jackpot_id,
+                    jackpot_title: jackpot.jackpot_title[req.query.language],
+                    jackpot_class: jackpot.jackpot_class,
+                    jackpot_final: jackpot.final,
+                    error: null
+                };
+                res.cookie('currentJackpot', currentJackpot);
+                res.send(currentJackpot);
             }
         })
-        .catch(err => {
+        .catch(() => {
             res.send({
                 jackpot_id: req.params.jackpot_id,
                 jackpot_final: new Date(),
@@ -213,63 +198,62 @@ function confirmJackpot(req,res){
         })
 }
 
-////Get a Jackpot: Jackpot data
+
+
+//Event's fetch methods
+////Event action factory
+function eventActionFactory(action, currentJackpot){
+    /*
+        Event APIs will be very diverse and it is not practical fetching a different
+        API at the time in the frontend. This method aims to establish an easy way
+        to import specific event APIs on demand using the parameters of the current
+        event and one of the established actions within a jackpot which by today are:
+            * global: Fetching global stats (public)
+            * features: Fetching event's features (public)
+            * post: Submitting data to the event (private)
+            * personal: Fetching users event register (private)
+        Private actions require auth middleware
+    */
+    const jackpotClass = (currentJackpot.jackpot_class !== 'special')?
+        currentJackpot.jackpot_class
+        :
+        currrentJackpot.jackpot_id;
+    return require(`./Jackpot files/${jackpotClass}/${jackpotClass}.${action}.js`);
+}
+////Public get
 router.get(
-    '/:jackpot_id/global',
+    '/:jackpot_id/public/:action',
     function(req,res){
-        Jackpot.findOne({jackpot_id: req.params.jackpot_id})
-            .then(jackpot => {
-                res.send({
-                    title: jackpot.jackpot_title[req.query.language],
-                    entity: jackpot.jackpot_entity,
-                    current_value: jackpot.total_value,
-                    current_users: jackpot.users.length,
-                    start: jackpot.start,
-                    final: jackpot.final,
-                    multipliers: jackpot.multipliers,
-                    users: jackpot.users_timetable,
-                    price: jackpot.price_timetable,
-                    score: jackpot.wealth_distribution,
-                    top: jackpot.top_users
-                })
-            })
-            .catch(err => {
-                res.status(505).send({Error: 'Internal server error'})
-            })
+        eventActionFactory(req.params.action, req.cookies.currentJackpot)(req,res);
+    }
+);
+////Private get
+router.get(
+    '/:jackpot_id/private/:action',
+    steamAuth.ensureAuthenticated,
+    localAuth.verifyToken,
+    function(req,res){
+        eventActionFactory(req.params.action,req.cookies.currentJackpot)(req,res);
+    }
+);
+////Private post
+router.post(
+    '/:jackpot_id/private/:action',
+    steamAuth.ensureAuthenticated,
+    localAuth.verifyToken,
+    function(req,res){
+        eventActionFactory(req.params.action,req.cookies.currentJackpot)(req,res);
     }
 );
 
 
-////Get a Jackpot: Features
-router.get(
-    '/:jackpot_id/features',
-    function(req,res){
-        const jackpotClass = (req.currentJackpot.jackpot_class !== 'special')? req.currentJackpot.jackpot_class : req.currentJackpot.jackpot_id;
-        const loadPath = `./Jackpot files/${jackpotClass}/${jackpotClass}.features.js`;
-        const classFunction = require(loadPath);
-        classFunction(req,res)
-});
-
-
-//Post in a jackpot
-router.post(
-    '/:jackpot_id/post',
-    steamAuth.ensureAuthenticated,
-    localAuth.verifyToken,
-    function(req,res){
-        const jackpotClass = (req.body.jackpot_class !== 'special')? req.body.jackpot_class : req.body.jackpot_id;
-        const classFunction = require(`./Jackpot files/${jackpotClass}/${jackpotClass}.post.js`);
-        classFunction(req,res)
-    });
-
-
-////Use a multiplier
+////Multipliers
 router.post(
     '/:jackpot_id/multiplier',
     steamAuth.ensureAuthenticated,
     localAuth.verifyToken,
     function(req,res){
-        Jackpot.findOne({jackpot_id: req.params.jackpot_id})
+        jackpot.findOne({jackpot_id: req.params.jackpot_id})
             .then(jackpot => {
                     if(jackpot.max_multipliers === 0){
                         res.send({message: `Jackpot ${req.params.jackpot_id} does not allow multipliers`})
@@ -308,20 +292,24 @@ router.post(
                                 }
                             })
                             .catch(() => {
-                                console.log('Could not find User');
                                 res.status(500).send({Error: "Internal server error"})
                             })
                     }
                 }
             )
             .catch(() => {
-                console.log('Could not find jackpot');
                 res.status(500).send({Error: "Internal server error"})
             })
     }
 );
+
+
+
 //Errors
 router.get('*', function(req, res){
     res.sendFile(path.join(__dirname, '../public/tpls/', 'error.html'));
 });
+
+
+
 module.exports = router;

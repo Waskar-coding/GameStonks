@@ -50,9 +50,6 @@ router.get(
                 res.send({Error: "Internal server error"})
             })
 });
-
-
-
 //User's timeline
 router.get(
     '/my_timeline',
@@ -94,7 +91,6 @@ router.get(
 });
 
 
-
 //Donate money to a friend
 router.post(
     '/donate',
@@ -113,7 +109,6 @@ router.post(
         )
     }
 );
-
 async function checkDonation(
     userId,
     friendId,
@@ -170,7 +165,6 @@ async function checkDonation(
         )
     }
 }
-
 function checkUserWealth(
     userId,
     transferredWealth
@@ -196,7 +190,6 @@ function checkUserWealth(
             })
     })
 }
-
 function checkFriendWealth(
     friendId
 ){
@@ -230,7 +223,6 @@ function checkFriendWealth(
             })
     })
 }
-
 async function transferWealth(
     userId,
     friendId,
@@ -275,7 +267,6 @@ async function transferWealth(
         }
     );
 }
-
 function subtractFromUser(
     userId,
     friendName,
@@ -298,10 +289,12 @@ function subtractFromUser(
                 },
                 $push: {
                     wealth_timetable: [
-                        new Date(),
-                        Number(currentUserWealth) - Number(transferredWealth)
+                        [
+                            new Date(),
+                            Number(currentUserWealth) - Number(transferredWealth)
+                        ]
                     ],
-                    general_timeline: donationRegister
+                    general_timeline: [donationRegister]
                 }
             },
             {new: true}
@@ -310,7 +303,6 @@ function subtractFromUser(
             .catch(err => reject(err))
     })
 }
-
 function addToFriend(
     friendId,
     userName,
@@ -332,13 +324,13 @@ function addToFriend(
                     wealth: transferredWealth
                 },
                 $push: {
-                    wealth_timetable: [new Date(), Number(currentFriendWealth) + Number(transferredWealth)],
-                    general_timeline: receivedRegister
+                    wealth_timetable: [[new Date(), Number(currentFriendWealth) + Number(transferredWealth)]],
+                    general_timeline: [receivedRegister]
                 }
             }
         )
             .then(() => {
-                resolve(receivedRegister)
+                resolve([receivedRegister])
             })
             .catch(err => reject(err))
     })
@@ -367,10 +359,6 @@ router.post(
                     ||
                     (user.requests.length > 2)
                 ){
-                    console.log(request);
-                    console.log(user.wealth<request);
-                    console.log([5,10,20,25,50,100].includes(request) === false);
-                    console.log(user.requests.length);
                     res.send({
                         status: 'rejected'
                     })
@@ -394,9 +382,9 @@ router.post(
                                 wealth: -request
                             },
                             $push: {
-                                general_timeline: requestEvent,
-                                wealth_timetable: [new Date(), user.wealth - request],
-                                requests: requestRegister
+                                general_timeline: [requestEvent],
+                                wealth_timetable: [[new Date(), user.wealth - request]],
+                                requests: [requestRegister]
                             }
                         },
                         {new: true}
@@ -447,7 +435,7 @@ router.get(
                 res.send({Error: "Internal server error"})
             })
 });
-//Friend's account datta
+//Friend's account data
 router.get(
     '/profiles/:steamid/profile',
     function(req,res){
@@ -479,9 +467,6 @@ router.get(
            })
            .catch(() => res.send({Error: "Internal server error"}))
 });
-
-
-
 //Friend's filtered timeline
 router.get(
     '/profiles/:steamid/timeline',
@@ -518,65 +503,46 @@ router.get(
                 })
             })
 });
+
+
+
 //Finding friends by name
 router.get(
     '/find',
     function(req, res){
-        const usersPerPage = 2;
+        const displayPerPage = 2;
+        const offset = displayPerPage * (req.query.page-1);
         User.find({name: {"$regex": req.query.search, $options: 'i'}})
             .collation({locale: "en"})
             .sort({[req.query.sort]: req.query.order})
-            .limit(usersPerPage)
-            .skip((req.query.page-1)*usersPerPage)
-            .then(users => {
-                User.count({name: {"$regex": req.query.search, $options: 'i'}})
-                    .then(count => {
-                        const userList = users.map(user => {
-                            return {
-                                steamid: user.steamid,
-                                name: user.name,
-                                thumbnail: user.thumbnail,
-                                joined: user.joined
-                            }
-                        });
-                        if(req.user){
-                            res.send({
-                                count: count,
-                                profiles: userList,
-                                my_name: req.user.user.name
-                            });
-                        }
-                        else{
-                            res.send({
-                                count: count,
-                                profiles: userList,
-                                my_name: undefined
-                            })
-                        }
+            .then(filteredUsers => {
+                const filteredUsersCount = filteredUsers.length;
+                const filteredUsersPage = filteredUsers.slice(offset, offset + displayPerPage);
+                const userList = filteredUsersPage.map(user => {
+                    return {
+                        steamid: user.steamid,
+                        name: user.name,
+                        thumbnail: user.thumbnail,
+                        joined: user.joined
+                    }
+                });
+                if(req.user){
+                    res.send({
+                        count: filteredUsersCount,
+                        profiles: userList,
+                        my_name: req.user.user.name
+                    });
+                }
+                else{
+                    res.send({
+                        count: filteredUsersCount,
+                        profiles: userList,
+                        my_name: ""
                     })
+                }
             })
             .catch(() => {
                 res.status(500).send({Error: "Internal server error"})
-            })
-});
-//User's simple profile
-router.get(
-    '/simple/:steamid',
-    function(req,res){
-        User.findOne({steamid: req.params.steamid})
-            .then(user => {
-                if(user === null){
-                    res.status(404).send({
-                        status: 'Not found'
-                    })
-                }
-                else{
-                    res.status(200).send({
-                        status: 'Success',
-                        name: user.name,
-                        thumbnail: user.thumbnail
-                    })
-                }
             })
 });
 

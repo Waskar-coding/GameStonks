@@ -51,6 +51,18 @@
     "jackpot-value": {
       "ES": "Valor",
       "EN": "Value"
+    },
+    "j01-name": {
+      "ES": "Nombre",
+      "EN": "Name"
+    },
+    "j01-release": {
+      "ES": "Lanzamiento",
+      "EN": "Release"
+    },
+    "j01-tooltip": {
+      "ES": "Encuentra juegos en este evento",
+      "EN": "Find games within this event"
     }
   },
   "pagination": {
@@ -61,6 +73,12 @@
     "previous":{
       "ES": "Anterior",
       "EN": "Previous"
+    }
+  },
+  "product-form": {
+    "product-field": {
+      "ES": "Producto",
+      "EN": "Product"
     }
   },
   "date-form": {
@@ -165,6 +183,24 @@
     "global-user-top": {
       "ES": "En este top se recogen los 10 usuarios con mayor puntuación junto al valor de sus acciones en el evento, puedes consultar sus perfiles e intentar adivinar que estrategia usaron, pero puede que nuestra política de privacidad nos obligue a ocultar la información que aportaron",
       "EN": "In this top the 10 greatest shareholders of the event are displayed along with their shares in the event, you can visit their profiles and try to figure out their strategies, however, our privacy policy might prevent us from showing the information they contributed"
+    }
+  },
+  "event-router":{
+    "doc": {
+      "ES": "Instrucciones",
+      "EN": "Instructions"
+    },
+    "global": {
+      "ES": "Estadística global",
+      "EN": "Global stats"
+    },
+    "features": {
+      "ES": "Contenidos",
+      "EN": "Features"
+    },
+    "personal": {
+      "ES": "Tu estadística",
+      "EN": "Your stats"
     }
   }
 }

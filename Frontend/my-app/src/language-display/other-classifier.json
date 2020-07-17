@@ -65,6 +65,10 @@
     "y-label-users": {
       "ES": "Participantes",
       "EN": "Shareholders"
+    },
+    "y-label-gameplay": {
+      "ES": "Tiempo de juego (horas)",
+      "EN": "Total Gameplay (hours)"
     }
   },
   "bars": {
@@ -151,6 +155,44 @@
     "days": {
       "ES": "Días",
       "EN": "Days"
+    }
+  },
+  "jackpot-personal": {
+    "active": {
+      "ES": "Activo desde",
+      "EN": "Active since"
+    },
+    "monitored": {
+      "ES": "Productos",
+      "EN": "Products"
+    },
+    "share": {
+      "ES": "Share",
+      "EN": "Parcitipación"
+    },
+    "handshakes": {
+      "ES": "Handshakes",
+      "EN": "Handshakes"
+    },
+    "update": {
+      "ES": "\u00daltima actualización",
+      "EN": "Last update"
+    },
+    "multipliers": {
+      "ES": "Multiplicadores",
+      "EN": "Multipliers"
+    },
+    "timeline-list-title":{
+      "ES": "Tu timeline en este evento",
+      "EN": "Your timeline in this event"
+    },
+    "timeline-graph-title": {
+      "ES": "Evolución de tu partcipación",
+      "EN": "Your share's evolution"
+    },
+    "visualize-title": {
+      "ES": "Visualiza tus datos",
+      "EN": "Visualize your data"
     }
   }
 }

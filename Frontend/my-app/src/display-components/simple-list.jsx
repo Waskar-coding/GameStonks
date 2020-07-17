@@ -1,45 +1,44 @@
+//Standard
 import React from "react";
 
-class SimpleList extends React.PureComponent{
-    render(){
-        let counter = 0;
-        if(this.props.useLinks === false){
-            return(
-                <div style={{display: "inline-block", marginLeft: "10px", marginRight: "10px"}}>
-                    <div><h1>{this.props.title}</h1></div>
-                    <div>
+//Main function
+const SimpleList = ({title, list, useLinks, target}) => {
+    let counter = 0;
+    if(useLinks === false){
+        return(
+            <div style={{display: "inline-block", marginLeft: "10px", marginRight: "10px"}}>
+                <div><h1>{title}</h1></div>
+                <div>
+                    <ul style={{listStyleType:"none"}}>
+                        {list.map(component => {
+                            counter++;
+                            return <li key={counter-1}>{component}</li>;
+                        })}
+                    </ul>
+                </div>
+            </div>
+        )
+    }
+    else{
+        return(
+            <div style={{display: "inline-block", marginLeft: "10px", marginRight: "10px"}}>
+                <div><h1>{title}</h1></div>
+                <div>
+                    <nav>
                         <ul style={{listStyleType:"none"}}>
-                            {this.props.list.map(component => {
+                            {list.map(component => {
                                 counter++;
-                                return <li key={counter-1}>{component}</li>;
+                                return(
+                                    <li key={counter-1}>
+                                        <a href={component[1]} target={target}>{component[0]}</a>
+                                    </li>
+                                )
                             })}
                         </ul>
-                    </div>
+                    </nav>
                 </div>
-            )
-        }
-        else{
-            return(
-                <div style={{display: "inline-block", marginLeft: "10px", marginRight: "10px"}}>
-                    <div><h1>{this.props.title}</h1></div>
-                    <div>
-                        <nav>
-                            <ul style={{listStyleType:"none"}}>
-                                {this.props.list.map(component => {
-                                    counter++;
-                                    return(
-                                        <li key={counter-1}>
-                                            <a href={component[1]} target={this.props.target}>{component[0]}</a>
-                                        </li>
-                                    )
-                                })}
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-            )
-        }
+            </div>
+        )
     }
 }
-
 export default SimpleList;

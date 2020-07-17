@@ -1,3 +1,4 @@
+import getLocalDate from "./date-offset";
 const processEvent = (language, person, event) => {
     const document = require('../language-display/timeline-classifier.json');
     const eventDict = document[event[1]][event[2]][language][person];
@@ -6,7 +7,7 @@ const processEvent = (language, person, event) => {
         eventString = eventString + event[i] + eventDict[i-2];
     }
     return [
-        event[0],
+        getLocalDate(new Date(event[0])),
         document[event[1]]["annotation-color"],
         document[event[1]]["timeline-color"],
         eventString

@@ -5,7 +5,7 @@ import React from "react";
 import axios from "axios";
 
 //Local Components
-import Search from "../search/search-main";
+import SearchList from "../search/search-list";
 
 //Language jsons
 import messageDict from "../language-display/message-classifier";
@@ -15,10 +15,10 @@ import interactiveDict from "../language-display/interactive-classifier";
 import LanguageContext from "../language-context";
 import getLocalDate from "../useful-functions/date-offset";
 
-class Profiles extends React.Component{
+class WrappedProfileSearch extends React.Component{
     render(){
         return(
-            <Search
+            <SearchList
                 defaultSort="name"
                 displayPerPage = "2"
                 message="user-message"
@@ -30,31 +30,35 @@ class Profiles extends React.Component{
                 })}
                 location={this.props.location}
             >
-                <ProfileList />
-            </Search>
+                <ProfileSearch />
+            </SearchList>
         )
     }
 }
-Profiles.contextType = LanguageContext;
+WrappedProfileSearch.contextType = LanguageContext;
 
 
-class ProfileList extends React.Component{
+class ProfileSearch extends React.Component{
     constructor(props){
         super(props);
         this.state = {
             error: null,
             isLoaded: false,
             items: [],
-            current_number: 0
+            currentNumber: 0
         };
+        this.updateSearch = this.updateSearch.bind(this);
     }
-    componentDidMount() {
+    updateSearch = () => {
+        this.setState({
+            isLoaded: false
+        });
         axios.get(`/users/find?sort=${this.props.sort}&order=${this.props.order}&search=${this.props.search}&page=${this.props.page}`)
             .then(res => {
                 this.setState({
                     isLoaded: true,
                     items: res.data.profiles,
-                    current_number: res.data.count,
+                    currentNumber: res.data.count,
                     my_name: res.data.my_name
                 });
                 this.props.toParent(res.data.count);
@@ -65,6 +69,35 @@ class ProfileList extends React.Component{
                     error: err
                 });
             })
+    }
+    componentDidMount() {
+        this.updateSearch()
+    }
+    shouldComponentUpdate(nextProps, nextState, nextContext) {
+        return(
+            (this.props.sort !== nextProps.sort)
+            ||
+            (this.props.order !== nextProps.order)
+            ||
+            (this.props.search !== nextProps.search)
+            ||
+            (this.props.page !== nextProps.page)
+            ||
+            (this.state.isLoaded !== nextState.isLoaded)
+        )
+    }
+    componentDidUpdate(prevProps, prevState, snapshot) {
+        if(
+            (this.props.sort !== prevProps.sort)
+            ||
+            (this.props.order !== prevProps.order)
+            ||
+            (this.props.page !== prevProps.page)
+            ||
+            (this.props.search !== prevProps.search)
+        ){
+            this.updateSearch();
+        }
     }
     render(){
         if(this.state.isLoaded === false){
@@ -130,7 +163,5 @@ class ProfileList extends React.Component{
         }
     }
 }
-
-ProfileList.contextType = LanguageContext;
-
-export default Profiles;
+ProfileSearch.contextType = LanguageContext;
+export default WrappedProfileSearch;

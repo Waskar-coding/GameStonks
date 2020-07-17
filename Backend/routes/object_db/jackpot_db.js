@@ -20,6 +20,7 @@ const jackpot = mongoose.Schema({
     jackpot_id: String,
     jackpot_class: String,
     jackpot_title: JackpotTitles,
+    jackpot_thumbnail: String,
 
     ////Who is running the jackpot
     jackpot_entity: String,
@@ -42,7 +43,10 @@ const jackpot = mongoose.Schema({
     wealth_distribution: Array,
 
     ////Top 10
-    top_users: [TopUserRegister]
+    top_users: [TopUserRegister],
+
+    ////Data
+    data: Array
 
 },{versionKey: false});
 const Jackpot = mongoose.model('SteamJackpot', jackpot);

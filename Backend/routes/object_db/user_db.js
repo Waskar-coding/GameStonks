@@ -9,16 +9,17 @@ const JackpotRegister = mongoose.Schema({
     share_timetable: Array,
     jackpot_timeline: Array,
     multipliers: Array,
-    recommendations: Array,
-    status: String
+    handshakes: Array,
+    status: String,
+    products: Array
 });
 
-//Gameplay register schema
-const GameplayRegister = mongoose.Schema({
-    appid: String,
-    name: String,
-    total_gameplay: Array,
-    register_date: Date
+//Product register schema
+const ProductRegister = mongoose.Schema({
+    product_id: String,
+    register_date: Date,
+    register_type: String,
+    register_data: Array
 });
 
 
@@ -72,7 +73,7 @@ const user = mongoose.Schema({
     jackpots: [JackpotRegister],
 
     ////Register of current data
-    monitored: [GameplayRegister],
+    monitored: [ProductRegister],
     requests: [RequestRegister],
     strikes: [StrikeRegister],
     ban: BanRegister

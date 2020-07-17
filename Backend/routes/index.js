@@ -19,7 +19,7 @@ const eventGet = require('./getter_db/event_get');
 const steamAuth = require('./steam_auth/auth');
 const config = require('./local_auth/config');
 const User = require('./object_db/user_db');
-const APIKEY = process.env.STEAM_PERSONAL_APIKEY;
+const APIKEY = process.env.STEAM_PERSONAL_APIKEY.toString();
 
 //Initializing stuff
 ////Express
@@ -52,6 +52,7 @@ mongoose.connect(
             console.log(err)
         }
 });
+mongoose.set('useFindAndModify', false);
 
 ////Express Session
 app.use(session({
@@ -108,8 +109,8 @@ passport.deserializeUser(function(obj, done) {
 
 //// Steam Passport
 passport.use(new SteamStrategy({
-        returnURL: 'http://localhost/steam_auth/auth/return',
-        realm: 'http://localhost/',
+        returnURL: 'http://localhost:8080/steam_auth/auth/return',
+        realm: 'http://localhost:8080/',
         apiKey: APIKEY
     },
     function(identifier, profile, done) {
@@ -286,6 +287,6 @@ app.use('/events',eventGet);
 app.use('/steam_auth', steamAuth.router);
 
 
-app.listen(80, function () {
-    console.log('App listening on port 80!!')
+app.listen(8080, function () {
+    console.log('App listening on port 8080!!')
 });

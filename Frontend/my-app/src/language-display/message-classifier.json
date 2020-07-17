@@ -31,6 +31,14 @@
     "jackpot-404": {
       "ES": "No se encontraron eventos",
       "EN": "No events were found"
+    },
+    "j01-message": {
+      "ES": "Juegos encontrados: ",
+      "EN": "Games found: "
+    },
+    "j01-placeholder": {
+      "ES": "Busca un juego",
+      "EN": "Search for a game"
     }
   },
   "Request": {
@@ -162,13 +170,71 @@
   "jackpot-stats": {
     "global-top": {
       "empty": {
-        "ES": "Aún no se unió ningún usuario",
+        "ES": "A\u00fan no se unió ningún usuario",
         "EN": "No user has joined yet"
       },
       "incomplete": {
         "ES": "Usuarios insuficientes para completar el top",
         "EN": "Not enough users to complete the top"
       }
+    }
+  },
+  "jackpot-personal": {
+    "kicked": {
+      "ES": "Fuiste expulsado de este evento",
+      "EN": "You were kicked from this event"
+    },
+    "no-auth": {
+      "ES": "Este campo requiere autentificaci\u00F3n, registrate a trav\u00e9s de Steam para ver tus estad\u00EDsticas",
+      "EN": "This field requires authentication, authenticate through Steam to see your statistics"
+    },
+    "no-register": {
+      "ES": "A\u00fan no est\u00e1s registrado en este evento",
+      "EN": "You are not registered in this event"
+    },
+    "no-products": {
+      "ES": "No has registrado ningún producto en este evento",
+      "EN": "You have not registered any products in this event"
+    }
+  },
+  "loading": {
+    "event-checking": {
+      "ES": "Comprobando evento ...",
+      "EN": "Checking event ..."
+    },
+    "event-global": {
+      "ES": "Cargando estadística global ...",
+      "EN": "Loading global stats ..."
+    },
+    "event-personal": {
+      "ES": "Cargando tu registro personal ...",
+      "EN": "Loading your personal register ..."
+    }
+  },
+  "error": {
+    "event-checking-500": {
+      "ES": "Error en el servidor, la comprobaci�n del evento fall�",
+      "EN": "Internal server error, could not check the event"
+    },
+    "event-checking-403": {
+      "ES": "El evento seleccionado ya ha acabado o tiene acceso restringido",
+      "EN": "The selected event has already ended or is restricted"
+    },
+    "event-checking-404": {
+      "ES": "El evento seleccionado no existe",
+      "EN": "The selected event does not exist"
+    },
+    "event-global": {
+      "ES": "Error en el servidor, no se pudo cargar la estadística global",
+      "EN": "Internal server error, could not load global stats"
+    },
+    "event-personal-500": {
+      "ES": "Error en el servidor, no se pudo cargar tu registro personal",
+      "EN": "Internal server error, could not load your personal register"
+    },
+    "event-personal-403": {
+      "ES": "Debes estar autentificado para acceder a tu registro personal",
+      "EN": "You must be autenticated to access your personal register"
     }
   }
 }

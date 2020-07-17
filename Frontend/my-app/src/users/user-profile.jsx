@@ -57,7 +57,6 @@ class FriendProfile extends React.Component{
         }
     }
 }
-
 FriendProfile.contextType = LanguageContext;
 
 class FriendBasicProfile extends React.Component{
@@ -211,7 +210,6 @@ class FriendEvents extends React.Component{
         }
     }
 }
-
 FriendEvents.contextType = LanguageContext;
 
 export default FriendProfile;

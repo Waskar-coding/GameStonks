@@ -14,7 +14,12 @@ import interactiveDict from "../language-display/interactive-classifier";
 //Context
 import LanguageContext from "../language-context";
 
+//Main class
 class SearchForm extends React.Component{
+    /*
+        Child component of SearchList (see documentation on
+        search-list.jsx)
+    */
     constructor(props){
         super(props);
         this.state = {
@@ -32,15 +37,27 @@ class SearchForm extends React.Component{
         this.setState({[event.target.id]: event.target.value})
     }
     handleSubmit(event){
+        /*
+            Passes data to parent component and changes location without
+            triggering a reload.
+        */
         event.preventDefault();
         const sort = this.state.sort;
         const order = this.state.order;
         const search = this.state.search;
+        window.history.pushState(
+            {page: `./find?sort=${sort}&order=${order}&search=${search}&page=1`},
+            'title',
+            `./find?sort=${sort}&order=${order}&search=${search}&page=1`
+        );
         this.props.toParent(sort,order,search)
 
     }
     render(){
         const filterFields = Object.entries(JSON.parse(this.props.options));
+        const sort = this.state.sort;
+        const order = this.state.order;
+        const search = this.state.search;
         return(
             <div className="searchform">
                 <div className="message_case">
@@ -49,7 +66,7 @@ class SearchForm extends React.Component{
                 <form className="params_case" onSubmit={this.handleSubmit} >
                     <div className="param">
                         <label id="sort">{interactiveDict['search-form']['sort'][this.context]}</label>
-                        <select id="sort" value={this.state.sort} onChange={this.handleParamChange}>
+                        <select id="sort" value={sort} onChange={this.handleParamChange}>
                             {filterFields.map(item => {
                                 return <option key={item[0]} value={item[0]}>{item[1]}</option>
                             })}
@@ -57,7 +74,7 @@ class SearchForm extends React.Component{
                     </div>
                     <div className="param">
                         <label id="order">{interactiveDict['search-form']['order'][this.context]}</label>
-                        <select id="order" value={this.state.order} onChange={this.handleParamChange}>
+                        <select id="order" value={order} onChange={this.handleParamChange}>
                             <option value="1">{interactiveDict['search-form']['order-ascending'][this.context]}</option>
                             <option value="-1">{interactiveDict['search-form']['order-descending'][this.context]}</option>
                         </select>
@@ -67,20 +84,18 @@ class SearchForm extends React.Component{
                         <input
                             type="text"
                             id="search"
-                            value={this.state.search}
+                            value={search}
                             onChange={this.handleParamChange}
                             placeholder={this.props.placeholder}
-                            />
+                        />
                     </div>
                     <Tippy content={interactiveDict['search-form'][this.props.tooltip][this.context]}>
-                        <input type="submit" value="Ok" />
+                        <input type='submit' value='Ok' />
                     </Tippy>
                 </form>
             </div>
         )
     }
 }
-
 SearchForm.contextType = LanguageContext;
-
 export default SearchForm;

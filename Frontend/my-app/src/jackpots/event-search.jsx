@@ -3,9 +3,10 @@ import React from 'react';
 
 //Packages
 import {Link} from "react-router-dom";
+import axios from "axios";
 
 //Local components
-import Search from "../search/search-main";
+import SearchList from "../search/search-list";
 
 //Useful functions
 import interactiveDict from "../language-display/interactive-classifier";
@@ -18,10 +19,15 @@ import LanguageContext from "../language-context";
 //StyleSheets
 import "./jackpot-box.css";
 
-class Jackpots extends React.Component{
+//Main class
+class WrappedEventSearch extends React.Component{
+    /*
+        Wraps the event list into the SearchList HOC in order to pass basic
+        data to the API through it.
+    */
     render(){
         return(
-            <Search
+            <SearchList
                 defaultSort="end"
                 displayPerPage = "2"
                 message="jackpot-message"
@@ -35,57 +41,87 @@ class Jackpots extends React.Component{
                 })}
                 location={this.props.location}
             >
-                <JackpotSearch />
-            </Search>
+                <EventSearch />
+            </SearchList>
         )
     }
 }
-Jackpots.contextType = LanguageContext;
+WrappedEventSearch.contextType = LanguageContext;
 
 
-class JackpotSearch extends React.Component{
+class EventSearch extends React.Component{
     constructor(props) {
         super(props);
         this.state = {
             error: null,
-            isLoad: false,
+            isLoaded: false,
             items: []
         };
+        this.updateSearch = this.updateSearch.bind(this);
     }
-    componentDidMount(){
+    updateSearch = () => {
         const page = this.props.page.toString();
         const sort = this.props.sort;
         const order = this.props.order;
         const search = this.props.search;
         const lan = this.context;
-        const fetchURL = `/jackpots/current?sort=${sort}&order=${order}&search=${search}&page=${page}&language=${lan}`;
-        fetch(fetchURL)
-            .then(res => res.json())
+        this.setState({
+            isLoaded: false
+        });
+        axios.get(`/jackpots/current?sort=${sort}&order=${order}&search=${search}&page=${page}&language=${lan}`)
             .then(
                 (res) => {
-                    console.log(res);
                     this.setState({
-                        isLoad: true,
-                        items: res.current
+                        isLoaded: true,
+                        items: res.data.current
                     });
-                    this.props.toParent(res.current_n, res.total_n)
+                    this.props.toParent(res.data.current_n)
                 },
                 (error) => {
                     this.setState({
-                        isLoad: true,
+                        isLoaded: true,
                         error
                     });
                 }
             )
     }
+    componentDidMount(){
+        this.updateSearch()
+    }
+    shouldComponentUpdate(nextProps, nextState, nextContext) {
+        return(
+            (this.props.sort !== nextProps.sort)
+            ||
+            (this.props.order !== nextProps.order)
+            ||
+            (this.props.search !== nextProps.search)
+            ||
+            (this.props.page !== nextProps.page)
+            ||
+            (this.state.isLoaded !== nextState.isLoaded)
+        )
+    }
+    componentDidUpdate(prevProps, prevState, snapshot) {
+        if(
+            (this.props.sort !== prevProps.sort)
+            ||
+            (this.props.order !== prevProps.order)
+            ||
+            (this.props.page !== prevProps.page)
+            ||
+            (this.props.search !== prevProps.search)
+        ){
+            this.updateSearch();
+        }
+    }
     render(){
-        if((this.state.error) || (this.state.items===undefined)){
+        if((this.state.error) || (this.state.items === undefined)){
             return(
                 <div className="jackpot_list">
                     Couldn't load current jackpots
                 </div>);
         }
-        else if(this.state.isLoad === false){
+        else if(this.state.isLoaded === false){
             return(<div><p>Loading ...</p></div>)
         }
         else if(this.state.items.length === 0){
@@ -94,47 +130,43 @@ class JackpotSearch extends React.Component{
         else{
             return(
                 <div className="jackpot_list">
-                    <ul style={{listStyleType: "none"}}>
-                        {this.state.items.map(item => (
-                            <li key={item.jackpot_id}>
-                                <Link to={`/events/${item.jackpot_id}`}>
-                                    <JackpotBox
-                                        jackpotId={item.jackpot_id}
-                                        jackpotClass={item.jackpot_class}
-                                        title={item.jackpot_title}
-                                        value={item.total_value}
-                                        start={item.start.slice(0, 10)}
-                                        final={item.final.slice(0, 10)}
-                                        status={item.user_status}
-                                        sponsor={item.jackpot_entity}
-                                    />
-                                </Link>
-                            </li>
-                        ))}
-                    </ul>
+                    <nav>
+                        <ul style={{listStyleType: "none"}}>
+                            {this.state.items.map(item => {
+                                return (
+                                    <li key={item.jackpot_id}>
+                                        <Link to={`/events/${item.jackpot_id}`}>
+                                            <EventBox
+                                                eventId={item.jackpot_id}
+                                                eventClass={item.jackpot_class}
+                                                eventThumbnail={item.jackpot_thumbnail}
+                                                title={item.jackpot_title}
+                                                value={item.total_value}
+                                                start={item.start.slice(0, 10)}
+                                                final={item.final.slice(0, 10)}
+                                                status={item.user_status}
+                                                sponsor={item.jackpot_entity}
+                                            />
+                                        </Link>
+                                    </li>
+                                )
+                            })}
+                        </ul>
+                    </nav>
                 </div>
             )
         }
     }
 }
-JackpotSearch.contextType = LanguageContext;
+EventSearch.contextType = LanguageContext;
 
-class JackpotBox extends React.Component{
-    iconPath = () => {
-        if(this.props.jackpotClass !== "special"){
-            return `./jackpot_icons/${this.props.jackpotClass}.jpg`
-        }
-        else{
-            return `./jackpot_icons/${this.props.jackpotId}.jpg`
-        }
-    };
-
+class EventBox extends React.Component{
     render(){
         return(
             <div className="jackpot_box">
                 <div className="jackpot_image_outercase">
                     <div className="jackpot_image_innercase">
-                        <img src={require(`${this.iconPath()}`)} alt="jackpot_icon" width="170" height="170"/>
+                        <img src={`data:image/png;base64, ${this.props.eventThumbnail}`} alt="jackpot_icon" width="170" height="170"/>
                     </div>
                 </div>
                 <div className="jackpot_description_case">
@@ -146,7 +178,7 @@ class JackpotBox extends React.Component{
                                     <h2>{otherDict['jackpot']['jackpot-class'][this.context]}</h2>
                                 </th>
                                 <th style={{textAlign:"right"}}>
-                                    <h2>{this.props.jackpotClass}</h2>
+                                    <h2>{this.props.eventClass}</h2>
                                 </th>
                             </tr>
                             <tr>
@@ -188,6 +220,6 @@ class JackpotBox extends React.Component{
         )
     }
 }
-JackpotBox.contextType = LanguageContext;
+EventBox.contextType = LanguageContext;
 
-export default Jackpots;
+export default WrappedEventSearch;

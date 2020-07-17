@@ -4,51 +4,45 @@ import React from "react";
 //Packages
 import { Line } from "react-chartjs-2";
 
-//Context
-import LanguageContext from "../language-context";
-
-class SimpleChart extends React.PureComponent{
-    render(){
-        const data = {
-            datasets: [
+//Main function
+const SimpleChart = ({title, points, tooltips, xAxes, yLabel}) => {
+    const data = {
+        datasets: [
+            {
+                label: title,
+                data: points,
+                borderColor: "rgba(0,0,0,1)",
+                backgroundColor: "rgba(0,0,0,1)",
+                pointBorderColor: "rgba(0,0,0,1)",
+                pointBackgroundColor: "rgba(0,0,0,1)",
+                pointBorderWidth: 1,
+                fill: false
+            }
+        ]
+    };
+    const options = {
+        responsive: true,
+        legend:{
+            display: false
+        },
+        tooltips: tooltips,
+        hover: {
+            mode: 'dataset'
+        },
+        scales: {
+            xAxes: [xAxes],
+            yAxes: [
                 {
-                    label: this.props.title,
-                    data: this.props.points,
-                    borderColor: "rgba(0,0,0,1)",
-                    backgroundColor: "rgba(0,0,0,1)",
-                    pointBorderColor: "rgba(0,0,0,1)",
-                    pointBackgroundColor: "rgba(0,0,0,1)",
-                    pointBorderWidth: 1,
-                    fill: false
+                    scaleLabel: {
+                        display: true,
+                        labelString: yLabel
+                    }
                 }
             ]
-        };
-        const options = {
-            responsive: true,
-            legend:{
-                display: false
-            },
-            tooltips: this.props.tooltips,
-            hover: {
-                mode: 'dataset'
-            },
-            scales: {
-                xAxes: [this.props.xAxes],
-                yAxes: [
-                    {
-                        scaleLabel: {
-                            display: true,
-                            labelString: this.props.yLabel
-                        }
-                    }
-                ]
-            }
-        };
-        return(
-            <Line data={data} options={options} />
-        )
-    }
+        }
+    };
+    return(
+        <Line data={data} options={options} />
+    )
 }
-SimpleChart.contextType = LanguageContext;
-
 export default SimpleChart;

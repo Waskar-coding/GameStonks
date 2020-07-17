@@ -95,7 +95,7 @@ class MyProfile extends React.Component{
             newRequestList.push(data.request);
             this.setState({
                 requests: newRequestList
-            })
+            });
         }
     }
     render(){
@@ -330,10 +330,10 @@ class UserEvents extends React.Component{
                 newDefaultGraph.push(processEvent(this.context, '1st', this.props.newEvent[1]));
                 const newDefaultWealth = this.state.wealth.slice();
                 newDefaultWealth.push(
-                    [
-                        getLocalDate( new Date(this.props.newEvent[0][0])),
-                        this.props.newEvent[0][1]
-                    ]
+                    {
+                        x: getLocalDate( new Date(this.props.newEvent[0][0])),
+                        y: this.props.newEvent[0][1]
+                    }
                 );
                 this.setState({
                     timeline: newDefaultGraph,
@@ -415,10 +415,7 @@ class UserEvents extends React.Component{
                             this.state.timeline.length === 0? (
                                 <div>{processMessage(this.context,["Timeline","no-list"])}</div>
                             ) : (
-                                <TimeLine
-                                    title = "Chad's awesome dids"
-                                    events = {this.state.timeline.slice().reverse()}
-                                />
+                                <TimeLine events = {this.state.timeline.slice().reverse()} />
                             )
                         )}
                     </section>
@@ -675,22 +672,25 @@ class RequestForm extends React.Component{
                 allowedRequests: [5, 10, 20, 25, 50, 100].filter(price => {
                     return props.wealth/price >= 1;
                 }),
-                selectedRequest: 5
-            };
-            this.handleChange = this.handleChange.bind(this);
-            this.handleSubmit = this.handleSubmit.bind(this);
-            this.closeModal = this.closeModal.bind(this);
-            this.makeRequest = this.makeRequest.bind(this);
-        }
-        else{
-            this.state = {
-                allowedRequests: [],
-                selectedRequest: undefined,
+                selectedRequest: 5,
                 isMessageModalVisible: false,
                 isConfirmModalVisible: false,
                 isConformModalClickable: false
             };
         }
+        else{
+            this.state = {
+                allowedRequests: [],
+                selectedRequest: 5,
+                isMessageModalVisible: false,
+                isConfirmModalVisible: false,
+                isConformModalClickable: false
+            };
+        }
+        this.handleChange = this.handleChange.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
+        this.closeModal = this.closeModal.bind(this);
+        this.makeRequest = this.makeRequest.bind(this);
     }
     shouldComponentUpdate(nextProps, nextState, nextContext) {
         return(
@@ -711,7 +711,7 @@ class RequestForm extends React.Component{
     }
     componentDidUpdate(prevProps, prevState, snapshot) {
         if(
-            (this.props.wealth > 5)
+            (this.props.wealth >= 5)
             &&
             (this.props.wealth !== prevProps.wealth)
         ){
@@ -720,8 +720,6 @@ class RequestForm extends React.Component{
                     return this.props.wealth/price >= 1;
                 })
             });
-            this.handleChange = this.handleChange.bind(this);
-            this.handleSubmit = this.handleSubmit.bind(this);
         }
     }
     handleChange(event){
@@ -808,7 +806,7 @@ class RequestForm extends React.Component{
                     useLinks={false}
                     target={null}
                 />
-                {(this.props.wealth > 5) && (this.props.requests.length < 3)? (
+                {(this.props.wealth >= 5) && (this.props.requests.length < 3)? (
                     <div>
                         <form onSubmit={this.handleSubmit}>
                             <label>
@@ -842,7 +840,7 @@ class RequestForm extends React.Component{
                         </form>
                     </div>
                 ):(
-                    (this.props.wealth < 5)? (
+                    (this.props.wealth <= 5)? (
                         <div>{processMessage('ES',['Request','cash'])}</div>
                     ):(
                         <div>{processMessage(this.context,['Request','limit'])}</div>

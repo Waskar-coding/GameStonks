@@ -1,33 +1,37 @@
+//Standard
 import React from 'react';
+
+//Packages
 import {
     BrowserRouter as Router,
     Switch,
     Route
 } from "react-router-dom";
-import AllJackpots from './jackpots/jackpot-router';
-import MyProfile from './users/my-profile';
-import Profiles from './users/profile-search';
-import FriendProfile from "./users/user-profile";
-import Modal from "react-modal";
+import { setAppElement } from "react-modal";
+
+//Local components
+import EventRouter from './jackpots/event-router';
+import ProfileRouter from './users/profile-router';
+
+//Context
 import LanguageContext from "./language-context";
 
-Modal.setAppElement('#root');
+//Modal settings
+setAppElement('#root');
 
+//Main class
 class App extends React.Component{
     render(){
         return(
             <LanguageContext.Provider value='ES'>
                 <Router>
                     <Switch>
-                        <Route path={'/users/profiles/my_profile'} component={MyProfile} />
-                        <Route path={'/users/profiles/:steamid'} component={FriendProfile} />
-                        <Route path={'/users/find'} component={Profiles} displayPerPage="2" />
-                        <Route path={'/events'}><AllJackpots /></Route>
+                        <Route path={'/users'} component={ProfileRouter} />
+                        <Route path={'/events'} component={EventRouter} />
                     </Switch>
                 </Router>
             </LanguageContext.Provider>
         )
     }
 }
-
 export default App;
