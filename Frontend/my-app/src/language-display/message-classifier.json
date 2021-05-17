@@ -1,5 +1,29 @@
 {
   "Search": {
+    "survey-message": {
+      "ES": "Encuestas encontradas: ",
+      "EN": "Surveys found: "
+    },
+    "survey-placeholder": {
+      "ES": "Busca una encuesta",
+      "EN": "Search for a survey"
+    },
+    "surveys-404": {
+      "ES": "No se encontraron encuestas",
+      "EN": "No surveys were found"
+    },
+    "doc-message": {
+      "ES": "Artículos encontrados: ",
+      "EN": "Found articles: "
+    },
+    "doc-placeholder": {
+      "ES": "Busca un artículo",
+      "EN": "Search for an article"
+    },
+    "doc-404": {
+      "ES": "No se han encontrado artículos",
+      "EN": "No articles were found"
+    },
     "user-message": {
       "ES": "Usuarios encontrados: ",
       "EN": "Found users: "
@@ -20,15 +44,15 @@
       "ES": "Comprobando usuario",
       "EN": "Checking user"
     },
-    "jackpot-message": {
+    "event-message": {
       "ES": "Eventos encontrados: ",
       "EN": "Events found: "
     },
-    "jackpot-placeholder": {
+    "event-placeholder": {
       "ES": "Busca un evento",
       "EN": "Search for an event"
     },
-    "jackpot-404": {
+    "event-404": {
       "ES": "No se encontraron eventos",
       "EN": "No events were found"
     },
@@ -39,138 +63,50 @@
     "j01-placeholder": {
       "ES": "Busca un juego",
       "EN": "Search for a game"
-    }
-  },
-  "Request": {
-    "success": {
-      "ES": [
-        "Has solicitado una transferencia de ",
-        "$ a tu cuenta de Steam. Te enviaremos una tarjeta de regalo los más pronto posible."
-      ],
-      "EN": [
-        "You requested a transference of ",
-        "$ to your Steam account. We will send you a gift card as soon as possible."
-      ]
     },
-    "limit": {
-      "ES": [
-        "No puedes hacer nuevas reclamaciones hasta que se procese una de las tres que ya has hecho."
-      ],
-      "EN": [
-        "You cannot make further requests until one of the three you have already made is processed."
-      ]
+    "event-offer-message": {
+      "ES": "Ofertas encontradas: ",
+      "EN": "Offers found: "
     },
-    "cash": {
-      "ES": [
-        "Fondos insuficientes para transferencias."
-      ],
-      "EN": [
-        "Not enough cash for transfers"
-      ]
+    "event-offer-placeholder": {
+      "ES": "Busca a un usuario",
+      "EN": "Search for an user"
     },
-    "confirm": {
-      "ES": [
-        "¿Estás seguro que quieres hacer esta reclamación? Recuerda que puedes tener un máximo de 3 reclamaciones pendientes"
-      ],
-      "EN": [
-        "Are you sure you want to make this request? Keep in mind you can have a maximum of three pending requests."
-      ]
+    "event-offer-404": {
+      "ES": "No se encontraron ofertas",
+      "EN": "No offers where found"
     }
   },
   "Timeline": {
-    "no-graph": {
-      "ES": ["No hay información disponible entre las fechas seleccionadas"],
-      "EN": ["No available information between the selected dates"]
-    },
     "no-list": {
-      "ES": ["No existe ningún evento entre las fechas seleccionadas"],
-      "EN": ["No events exist between the selected dates"]
+      "ES": ["No existe ninguna acción entre las fechas seleccionadas"],
+      "EN": ["No actions exist between the selected dates"]
     }
   },
-  "Donation":{
-    "confirm": {
-      "ES": [
-        "¿Estás seguro de que quieres donar ",
-        "$ a ",
-        "?"
-      ],
-      "EN": [
-        "Are you sure you want to donate ",
-        "$ to ",
-        "?"
-      ]
-    },
-    "success": {
-      "ES": [
-        "Has donado ",
-        "$ a ",
-        "."
-      ],
-      "EN": [
-        "You donated ",
-        "$ to ",
-        "."
-      ]
-    },
-    "main-error": {
-      "ES": [
-        "Tu donación no se realizó con éxito por las siguientes razones:"
-      ],
-      "EN": [
-        "Your donation was not succesful due to the following reasons:"
-      ]
-    },
-    "isNaN": {
-      "ES": [
-        "La cantidad a donar no es un número válido"
-      ],
-      "EN": [
-        "The donated amount is not a valid number"
-      ]
-    },
-    "sameId": {
-      "ES": [
-        "Has introducido tu propio steamid (no puedes donarte dinero a tí mismo)"
-      ],
-      "EN": [
-        "You introduced your own steamid (you cannot donate to yourself)"
-      ]
-    },
-    "hasWealth": {
-      "ES": [
-        "Estás donando más del que tienes en GameStonks"
-      ],
-      "EN": [
-        "You are donating more than you have in GameStonks"
-      ]
-    },
-    "isRegistered": {
-      "ES": [
-        "El usuario seleccionado no se registró en GameStonks"
-      ],
-      "EN": [
-        "The selected user is not registered in GameStonks"
-      ]
+  "profile-requests": {
+    "no-requests": {
+      "ES": "No tienes ninguna solicitud pendiente",
+      "EN": "You have not pending requests"
     }
   },
-  "jackpot-router": {
-    "jackpot-not-found": {
+  "event-router": {
+    "event-not-found": {
       "ES": "El evento seleccionado no existe",
       "EN": "The event does not exist"
     },
-    "jackpot-not-active": {
+    "event-not-active": {
       "ES": "El evento seleccionado ya no está activo",
       "EN": "The selected event is no longer active"
     },
-    "jackpot-505": {
-      "ES": "Error interno del servidor",
+    "event-505": {
+      "ES": "Error del servidor",
       "EN": "Internal server error"
     }
   },
-  "jackpot-stats": {
+  "event-stats": {
     "global-top": {
       "empty": {
-        "ES": "A\u00fan no se unió ningún usuario",
+        "ES": "Aún no se unió ningún usuario",
         "EN": "No user has joined yet"
       },
       "incomplete": {
@@ -179,13 +115,13 @@
       }
     }
   },
-  "jackpot-personal": {
+  "event-personal": {
     "kicked": {
       "ES": "Fuiste expulsado de este evento",
       "EN": "You were kicked from this event"
     },
     "no-auth": {
-      "ES": "Este campo requiere autentificaci\u00F3n, registrate a trav\u00e9s de Steam para ver tus estad\u00EDsticas",
+      "ES": "Este campo requiere autentificación, registrate a trav\u00e9s de Steam para ver tus estad\u00EDsticas",
       "EN": "This field requires authentication, authenticate through Steam to see your statistics"
     },
     "no-register": {
@@ -195,9 +131,109 @@
     "no-products": {
       "ES": "No has registrado ningún producto en este evento",
       "EN": "You have not registered any products in this event"
+    },
+    "j01-no-points": {
+      "ES": "Aún no tenemos información sobre tu tiempo de juego",
+      "EN": "We do not have any information on your gameplay yet"
+    }
+  },
+  "confirmation": {
+    "survey-submit-confirm": {
+      "ES": "¿Estás seguro de que quieres enviar estas respuestas?",
+      "EN": "Are you sure you want to submit these answers?"
+    },
+    "survey-condition-confirm": {
+      "ES": "El creador de esta encuesta ha impuesto ciertas condiciones para comprobar si puedes responder adecuadamente. Si decides continuar nos estarás dando permiso para realizar las comprobaciones necesarias con tu cuenta. Lee atentamente la introducción de la encuesta y comprueba si cumples los requisitos necesarios, continuar sin cumplir los requisitos puede suponer la aplicación de un strike o la expulsión.",
+      "EN": "The creator of this survey has impossed some conditions to check if you can answer it properly. If you decide to continue you autorize us to check if your account meets such conditions. Please read carefully the introduction to this survey and make sure your account is valid, continuing without meeting all conditions could lead to a strike or a ban."
+    },
+    "donation-confirm": {
+      "ES": ["¿Estás seguro de que quieres donar ", "$ a ", "?"],
+      "EN": ["Are you sure you want to donate ", "$ to ", "?"]
+    },
+    "request-confirm": {
+      "ES": ["¿Quieres solicitar una transferencia de ", "$ a tu cuenta de ", "?"],
+      "EN": ["Do you want to request a ", "$ transference to your ", "account?"]
+    },
+    "handshake-confirm": {
+      "ES": ["¿Quieres enviar un handshake a "," en el evento ","?"],
+      "EN": ["Do you want to send ", " a handshake in the event ", "?"]
+    },
+    "handshake-search": {
+      "ES": "Para enviar un handshake necesitamos el steamid del usuario",
+      "EN": "To send a handshake we need the user's steamid"
+    },
+    "bronze-confirm": {
+      "ES": ["Seguro que quieres usar un multiplicador de bronze en el evento ", "."],
+      "EN": ["Are you sure you want to use a bronze multiplier in the event ", "."]
+    },
+    "J01-post-confirm": {
+      "ES": ["¿Quieres registrar tu tiempo de juego en ", "?\n Recuerda que los juegos de tu biblioteca de Steam deben ser visibles para nosotros y este juego debe estar en ella.\n Si no cumples estas condiciones se te puede penalizar con un strike o expulsar"],
+      "EN": ["Would you like to register your gameplay for ", "?\n Remember that your games on your Steam library must be visible to us and this game must be included in it.\n If this conditions are not met you could be striked or banned"]
+    }
+  },
+  "success": {
+    "survey-submit-success": {
+      "ES": "Respuestas enviadas",
+      "EN": "Answers submitted"
+    },
+    "survey-condition-success": {
+      "ES": "Tu cuenta cumple con las condiciones para responder a esta encuesta, recuerda que debes realizarla sin pausas y sin recargar la pagina",
+      "EN": "You meet all the conditions to answer this survey, remember you must complete it without pauses and without refreshing this page"
+    },
+    "donation-success": {
+      "ES": ["Donaste ","$ a ",". Tu actual fortuna es de ","$"],
+      "EN": ["You donated ","$ to ",". Your current wealth is ", "$"]
+    },
+    "request-success": {
+      "ES": ["Solicitaste una transferencia de ", "$ de a tu cuenta de ", "."],
+      "EN": ["You requested a ", "$ transference to your ", "account."]
+    },
+    "handshake-success": {
+      "ES": ["Has enviado el handshake correctamente, tu nueva participación es de ", "$"],
+      "EN": ["You have successfully send the handshake, your new share is ", "$"]
+    },
+    "bronze-success": {
+      "ES": ["Usaste un multiplicador de bronce, tu nueva participación es de ", "$"],
+      "EN": ["You used a bronze multiplier, your new share is ", "$"]
+    },
+    "j01-post-success": {
+      "ES": ["Hemos comenzado a registrar tu tiempo de juego para ", " \n Tu nueva participatción es de ", "$\nAhora puedes usar multiplicadores para aumentar tu puntuación"],
+      "EN": ["We have started registering your gameplay for ", "\nYour new share is ", "$\nNow you can use multipliers to enchance your score"]
+    },
+    "event-post-strike": {
+      "ES": ["Has acumulado ", " strikes, si llegas a 3 serás temporalmente expulsado"],
+      "EN": ["Currently you have ", " strikes, if you reach to 3 you will be temporally banned"]
+    },
+    "survey-condition-strike": {
+      "ES": "Se te ha aplicado un strike por la siguiente razón:",
+      "EN": "You have been issued a strike for the following reason:"
     }
   },
   "loading": {
+    "default": {
+      "ES": "Cargando",
+      "EN": "Loading"
+    },
+    "doc-B02": {
+      "ES": "Comprobando perfil ...",
+      "EN": "Checking profile ..."
+    },
+    "doc-checking": {
+      "ES": "Comprobando document ...",
+      "EN": "Checking document ..."
+    },
+    "article-checking": {
+      "ES": "Comprobando artículo ...",
+      "EN": "Checking article ..."
+    },
+    "article-search": {
+      "ES": "Cargando artículos ...",
+      "EN": "Loading artcicles ..."
+    },
+    "auth-case": {
+      "ES": "Comprobando perfil",
+      "EN": "Checking profile"
+    },
     "event-checking": {
       "ES": "Comprobando evento ...",
       "EN": "Checking event ..."
@@ -209,11 +245,181 @@
     "event-personal": {
       "ES": "Cargando tu registro personal ...",
       "EN": "Loading your personal register ..."
+    },
+    "event-search": {
+      "ES": "Cargando eventos ...",
+      "EN": "Loading events ..."
+    },
+    "user-search": {
+      "ES": "Cargango usuarios ...",
+      "EN": "Loading users ..."
+    },
+    "multiplier-router": {
+      "ES": "Cargando multiplicador ...",
+      "EN": "Loading multiplier ..."
+    },
+    "my-profile": {
+      "ES": "Cargando tu perfil ...",
+      "EN": "Loading your profile ..."
+    },
+    "user-profile": {
+      "ES": "Cargando perfil ...",
+      "EN": "Loading profile ..."
+    },
+    "graph-timeline": {
+      "ES": "Cargando el gráfico",
+      "EN": "Loading plot"
+    },
+    "list-timeline":{
+      "ES": "Cargando timeline",
+      "EN": "Loading timeline"
+    },
+    "donation": {
+      "ES": "Cargando donaciones",
+      "EN": "Loading donations"
+    },
+    "transaction-confirm": {
+      "ES": "Cargando transacción",
+      "EN": "Loading transaction"
+    },
+    "multiplier": {
+      "ES": "Aplicando multiplicador",
+      "EN": "Appliying multiplier"
+    },
+    "transaction-apply": {
+      "ES": "Aplicando transacción",
+      "EN": "Applying transaction"
+    },
+    "features-post": {
+      "ES": "Comprobando producto",
+      "EN": "Checking product"
+    },
+    "features-search": {
+      "ES": "Cargando contenidos...",
+      "EN": "Loading features..."
+    },
+    "survey-search": {
+      "ES": "Cargando encuestas ...",
+      "EN": "Loading surveys ..."
+    },
+    "survey-main": {
+      "ES": "Cargando encuesta",
+      "EN": "Loading survey"
+    },
+    "survey-info": {
+      "ES": "Cargando información de la encuesta",
+      "EN": "Loading survey information"
+    },
+    "survey-wall": {
+      "ES": "Comprobando condiciones de la encuesta",
+      "EN": "Checking for survey conditions"
+    },
+    "survey-submit": {
+      "ES": "Enviando respuestas",
+      "EN": "Submitting answers"
     }
   },
   "error": {
+    "survey-reward-404": {
+      "ES": "Survey not found",
+      "EN": "No se encontró la encuesta"
+    },
+    "survey-reward-500": {
+      "ES": "Error en el servidor, no se pudo cargar tu rescompensa",
+      "EN": "Internal server error, could not load your reward"
+    },
+    "survey-condition-500": {
+      "ES": "Error en el servidor, no se pudieron confirmar las condiciones de la encuesta",
+      "EN": "Internal server error, could not confirm the survey's conditions"
+    },
+    "survey-validate-required": {
+      "ES": "Campo obligatorio",
+      "EN": "Required field"
+    },
+    "survey-validate-number": {
+      "ES": "La respuesta debe ser un número",
+      "EN": "The answer must be a number"
+    },
+    "survey-validate-lower-limit": {
+      "ES": ["La respuesta debe ser mayor o igual a ", ""],
+      "EN": ["The answer must be a number superior or equal to ", ""]
+    },
+    "survey-validate-upper-limit": {
+      "ES": "",
+      "EN": ""
+    },
+    "survey-submit-500": {
+      "ES": "Error en el servidor, no recibimos tus respuestas",
+      "EN": "Internal server error, we could not receive your answers"
+    },
+    "survey-auth": {
+      "ES": "Debes autentificarte para responder a encuestas",
+      "EN": "You must authenticate to answer surveys"
+    },
+    "survey-answered": {
+      "ES": "Ya respondiste a esta encuesta",
+      "EN": "You already answered this survey"
+    },
+    "survey-period": {
+      "ES": [
+        "Acabaste tu última encuesta en esta fecha: ",
+        ". Siempre debes esperar almenos una semana entre dos encuestas"
+      ],
+      "EN": [
+        "You finished your last survey on this date ",
+        ", you must wait at least a week between surveys"
+      ]
+    },
+    "survey-403": {
+      "ES": "Tu recompensa es de categoría 0, esto significa que tus respuestas a la encuesta no se han considerado válidas, y por tanto no recibirás ningún premio",
+      "EN": "Your reward is tier 0, this means that your answers to the surveys were not considerd as valid, and therefore your will not receive any price"
+    },
+    "survey-404": {
+      "ES": "La encuesta seleccionada no existe o no está disponible",
+      "EN": "The selected survey does not exist or is not available"
+    },
+    "survey-500": {
+      "ES": "Error en el servidor, no se pudo cargar las encuesta",
+      "EN": "Internal server error, could not load the survey"
+    },
+    "survey-search-500": {
+      "ES": "Error en el servidor, no se pudieron cargar las encuestas",
+      "EN": "Internal server error, could not load the surveys"
+    },
+    "survey-search-404": {
+      "ES": "No se han encontrado encuestas",
+      "EN": "No survyes were found"
+    },
+    "doc-B02-404": {
+      "ES": "No has sido expulsado",
+      "EN": "You were not banned"
+    },
+    "article-search-404": {
+      "ES": "No se han encontrado artículos",
+      "EN": "No articles were found"
+    },
+    "article-search-500": {
+      "ES": "Error en el servidor, no se pudieron cargar los artículos",
+      "EN": "Internal server error, could not load the articles"
+    },
+    "doc-checking-500": {
+      "ES": "Error en el servidor, no se pudo cargar el documento",
+      "EN": "Internal server error, could not load the document"
+    },
+    "article-checking-500": {
+      "ES": "Error en el servidor, no se pudo cargar el artículo",
+      "EN": "Internal server error, could not load the article"
+    },
+    "doc-checking-404": {
+      "ES": "No se encontró el documento",
+      "EN": "Could not find the documento"
+    },
+    "article-checking-404": {
+      "ES": "No se encontró el artículo",
+      "EN": "Could not find the article"
+    },
     "event-checking-500": {
-      "ES": "Error en el servidor, la comprobaci�n del evento fall�",
+      "ES": "Error en el servidor, la comprobación del evento falló",
       "EN": "Internal server error, could not check the event"
     },
     "event-checking-403": {
@@ -235,6 +441,166 @@
     "event-personal-403": {
       "ES": "Debes estar autentificado para acceder a tu registro personal",
       "EN": "You must be autenticated to access your personal register"
+    },
+    "event-search-404": {
+      "ES": "No se encontró ningún evento con estos parametros",
+      "EN": "No events were fount with this parameters"
+    },
+    "event-search-500": {
+      "ES": "Error en el servidor, no se pudieron cargar los eventos",
+      "EN": "Internal server error, could not load events"
+    },
+    "user-search-500": {
+      "ES": "Error en el servidor, no se pudieron cargar los eventos",
+      "EN": "Internal server error, could not load users"
+    },
+    "user-search-404": {
+      "ES": "No se encontraron usuarios con estos parámetros",
+      "EN": "No users were found with these parameters"
+    },
+    "my-profile-403":{
+      "ES": "Debes registrate a traves de Steam para cargar tu perfil",
+      "EN": "You must register through Steam to load your profile"
+    },
+    "my-profile-500": {
+      "ES": "Error en el servidor, no pudimos cargar tu perfil",
+      "EN": "Internal server error, could not load your profile"
+    },
+    "user-profile-404": {
+      "ES": "El usuario no se ha registrado en esta página",
+      "EN": "User has is not registered in this webpage"
+    },
+    "user-profile-500": {
+      "ES": "Error en el servidor, no pudimos cargar el perfil",
+      "EN": "Internal server error, we could not load the profile"
+    },
+    "graph-timeline-500": {
+      "ES": "Error en el servidor, no pudimos cargar el gráfico",
+      "EN": "Internal server error, we could not load the plot"
+    },
+    "list-timeline-500": {
+      "ES": "Error en el servidor, no pudimos cargar la timeline",
+      "EN": "Internal server error, we could not download the timeline"
+    },
+    "list-timeline-404": {
+      "ES": "No se encontraron acciones entre estas fechas",
+      "EN": "No actions were found between these dates"
+    },
+    "donation-invalid-type": {
+      "ES": "No has introducido una cantidad permitida",
+      "EN": "You have not introduced a valid quantity"
+    },
+    "donation-self-donate": {
+      "ES": ["Te acabas de donar ","$ a tí mismo, tu generosidad no conoce limites"],
+      "EN": ["You just donated yourself ", "$, your generosity knows no bounds"]
+    },
+    "donation-500": {
+      "ES": "Error en el servidor, no se cargaron las donaciones",
+      "EN": "Internal server error, could not load donations"
+    },
+    "donation-403": {
+      "ES": "Debes estar autentificado para realizar donaciones",
+      "EN": "You must be authenticated to make donations"
+    },
+    "donation-confirm-403": {
+      "ES": "No tienes el suficiente dinero para hacer esta donación",
+      "EN": "You do not have enough money for this donation"
+    },
+    "transaction-confirm-500": {
+      "ES": "Error en el servidor, no pudimos cargar tu transacción",
+      "EN": "Internal server error, we could not load your transaction"
+    },
+    "transaction-confirm-404": {
+      "ES": "El usuario al que intentas donar no se ha registrado",
+      "EN": "Te selected user is not registered"
+    },
+    "request-500": {
+      "ES": "Error en el servidor, no se pudo realizar la solicitud.",
+      "EN": "Internal server error, we could not process your request"
+    },
+    "request-cash": {
+      "ES": "No tienes las suficiente fortuna para retirar dinero a una cuenta externa",
+      "EN": "You do not have enough wealth to charge to an external account"
+    },
+    "request-length": {
+      "ES": "Has alcanzado el máximo de peticiones, espera a que se procese una de las que ya has hecho",
+      "EN": "You have reached the maximum amount of requests, wait until one of the current is processed"
+    },
+    "handshake-402": {
+      "ES": "Debes iniciar sessión para usar handshakes",
+      "EN": "You must authenticate to use handshakes"
+    },
+    "handshake-404": {
+      "ES": "El usuario seleccionado no se ha registrado",
+      "EN": "The selected user is not registered"
+    },
+    "handshake-multipliers": {
+      "ES": "No tienes handshakes disponibles",
+      "EN": "You do not have any handshake"
+    },
+    "handshake-events": {
+      "ES": "No puedes invitar al usuario a ningún evento",
+      "EN": "You cannot invite the user to any event"
+    },
+    "handshake-500": {
+      "ES": "Error en el servidor, no se pudo enviar el handshake",
+      "EN": "Internal server error, the handshake could not be sent"
+    },
+    "handshake-403": {
+      "ES": "Tu amigo ha sido expulsado del este evento o está baneado",
+      "EN": "Your friend was kicked from this event or has been banned"
+    },
+    "handshake-400": {
+      "ES": "Ya usaste el máximo número de multiplicadores para este evento",
+      "EN": "The selected event does not allow more multipliers"
+    },
+    "multipliers-403": {
+      "ES": "Ya has alcanzado el máximo número de multiplicadores permitidos en el evento",
+      "EN": "You have already reached the maximum number of multipliers allowed in this event"
+    },
+    "multipliers-500": {
+      "ES": "Error en el servidor, no se ha podido aplicar el multiplicador",
+      "EN": "Internal server, error, could not apply the multiplier"
+    },
+    "multipliers-empty": {
+      "ES": "No tienes multiplicadores",
+      "EN": "You do not have any multiplier"
+    },
+    "multipliers-max": {
+      "ES": "Has usado el máximo de multiplicadores permitido en este evento",
+      "EN": "You have already used the maximum number of multipliers allowed for this event"
+    },
+    "multipliers-no-products": {
+      "ES": "Debes registrar un producto en este evento para usar multiplicadores",
+      "EN": "You must register a products in this event to use multipliers"
+    },
+    "features-search-500": {
+      "ES": "Error en el servidor, no se pudieron cargar los contenidos",
+      "EN": "Internal server error, could not load features"
+    },
+    "features-search-404": {
+      "ES": "No se encontraron contenidos",
+      "EN": "Could not find any features"
+    },
+    "features-search-403": {
+      "ES": "Has sido expulsado de este evento, no puedes acceder a los contenidos",
+      "EN": "You were kicked from this event, you cannot access the features"
+    },
+    "features-monitored": {
+      "ES": "Registrado",
+      "EN": "Registered"
+    },
+    "features-500": {
+      "ES": "Error en el servidor, no pudimos registrar el producto",
+      "EN": "Internal server error, we could not register the product"
+    },
+    "event-offer-search-500": {
+      "ES": "Error en el servidor, no se pudieron cargar las ofertas",
+      "EN": "Internal server error, could not load the offers"
+    },
+    "event-offer-search-404": {
+      "ES": "No se encontraron ofertas",
+      "EN": "No offers where found"
     }
   }
 }

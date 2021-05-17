@@ -1,4 +1,22 @@
 {
+  "survey-search": {
+    "table-tier": {
+      "ES": "Categoría",
+      "EN": "Tier"
+    },
+    "table-creator": {
+      "ES": "Creador",
+      "EN": "Creator"
+    },
+    "table-start": {
+      "ES": "Inicio",
+      "EN": "Start"
+    },
+    "table-participants": {
+      "ES": "Participantes",
+      "EN": "Participants"
+    }
+  },
   "profile": {
     "joined": {
       "ES": "Ingreso",
@@ -51,6 +69,18 @@
     "steamid-info-link": {
       "ES": "¿Como puedo conseguir el steamid de un usuario?",
       "EN": "How do I get a user's steamid?"
+    },
+    "request-table-date": {
+      "ES": "Fecha",
+      "EN": "Date"
+    },
+    "request-table-cash": {
+      "ES": "Transferencia",
+      "EN": "Transference"
+    },
+    "request-table-platform": {
+      "ES": "Plataforma",
+      "EN": "Platform"
     }
   },
   "chart": {
@@ -89,48 +119,48 @@
       "EN": "wealth %"
     }
   },
-  "jackpot": {
-    "jackpot-user-chart-title": {
+  "event": {
+    "event-user-chart-title": {
       "ES": "Evolución del número de usuarios",
       "EN": "User numbers evolution"
     },
-    "jackpot-value-chart-title": {
+    "event-value-chart-title": {
       "ES": "Evolución del valor del evento",
       "EN": "Event's value evolution"
     },
-    "jackpot-dist-chart-title": {
+    "event-dist-chart-title": {
       "ES": "Distribución del valor del evento",
       "EN": "Event's value distribution"
     },
-    "jackpot-top-title": {
+    "event-top-title": {
       "ES": "Top 10 de Usuarios",
       "EN": "Top 10 Shareholders"
     },
-    "jackpot-allowed-multipliers": {
+    "event-allowed-multipliers": {
       "ES": "Máx. multiplicadores",
       "EN": "Allowed multipliers"
     },
-    "jackpot-users": {
+    "event-users": {
       "ES": "Usuarios",
       "EN": "Users"
     },
-    "jackpot-value":{
+    "event-value":{
       "ES": "Valor",
       "EN": "Value"
     },
-    "jackpot-class": {
+    "event-class": {
       "ES": "Clase",
       "EN": "Class"
     },
-    "jackpot-sponsor": {
+    "event-sponsor": {
       "ES": "Sponsor",
       "EN": "Sponsor"
     },
-    "jackpot-start": {
+    "event-start": {
       "ES": "Inicio",
       "EN": "Start"
     },
-    "jackpot-final": {
+    "event-final": {
       "ES": "Final",
       "EN": "Final"
     },
@@ -157,7 +187,7 @@
       "EN": "Days"
     }
   },
-  "jackpot-personal": {
+  "event-personal": {
     "active": {
       "ES": "Activo desde",
       "EN": "Active since"
@@ -181,6 +211,14 @@
     "multipliers": {
       "ES": "Multiplicadores",
       "EN": "Multipliers"
+    },
+    "available-multipliers": {
+      "ES": "Disponibles",
+      "EN": "Available"
+    },
+    "used-multipliers": {
+      "ES": "Usados",
+      "EN": "Used"
     },
     "timeline-list-title":{
       "ES": "Tu timeline en este evento",

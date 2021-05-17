@@ -1,0 +1,946 @@
+{
+  "T": {
+    "annotation-color": "Bisque",
+    "timeline-color": "Bisque",
+    "legend-tags": {
+      "ES": "Intercambio",
+      "EN": "Trade"
+    },
+    "Offer-out-multiplier-multiplier": {
+      "ES": {
+        "1st": ["Ofreciste un multiplicador de tipo ", " a ", " a cambio de un multiplicador de tipo ", ""],
+        "3rd": ["Ofreció un multiplicador de tipo ", " a ", " a cambio de un multiplicador de tipo ", ""]
+      },
+      "EN":{
+        "1st": ["You offered a ", " multiplier to ", " in exchange for a ", " multiplier"],
+        "3rd": ["User offered a ", " multiplier to ", " in exchange for a ", " multiplier"]
+      }
+    },
+    "Offer-out-cash-cash": {
+      "ES": {
+        "1st": ["Ofreciste ", "$ a ", " a cambio de ", "$"],
+        "3rd": ["Ofreció ", "$ a ", " a cambio de ", "$"]
+      },
+      "EN":{
+        "1st": ["You offered ", "$ to ", " in exchange for ", "$"],
+        "3rd": ["User offered ", "$ to ", " in exchange for ", "$"]
+      }
+    },
+    "Offer-out-handshake-handshake": {
+      "ES": {
+        "1st": ["Ofreciste un handshake para el evento ", " a ", " a cambio de un handshake para el evento ", ""],
+        "3rd": ["Ofreció un handshake para el evento ", " a ", " a cambio de un handshake para el evento ", ""]
+      },
+      "EN":{
+        "1st": ["You offered a handshake for the event ", " in exchange for a hanshake for the event ", ""],
+        "3rd": ["User offered a handshake for the event ", " in exchange for a hanshake for the event ", ""]
+      }
+    },
+    "Offer-out-multiplier-cash": {
+      "ES": {
+        "1st": ["Ofreciste un multiplicador de tipo ", " a ", " a cambio de ", "$"],
+        "3rd": ["Ofreció un multiplicador de tipo ", " a ", " a cambio de ", "$"]
+      },
+      "EN":{
+        "1st": ["You offered a ", " multiplier to ", " in exchange for ", "$"],
+        "3rd": ["User offered a ", " multiplier to ", " in exchange for ", "$"]
+      }
+    },
+    "Offer-out-multiplier-handshake": {
+      "ES": {
+        "1st": ["Ofreciste un multiplicador de tipo ", " a ", " a cambio de un handshake para el evento ", ""],
+        "3rd": ["Ofreció un multiplicador de tipo ", " a ", " a cambio de un handshake para el evento ", ""]
+      },
+      "EN":{
+        "1st": ["You offered a ", " multiplier to ", " in exchange for a handshake for the event ", ""],
+        "3rd": ["User offered a ", " multiplier to ", " in exchange for a handshake for the event ", ""]
+      }
+    },
+    "Offer-out-cash-multiplier": {
+      "ES": {
+        "1st": ["Ofreciste ,", "$ a ", " a cambio de un multiplicador de tipo ", ""],
+        "3rd": ["Ofreció", "$ a ", " a cambio de un multiplicador de tipo ", ""]
+      },
+      "EN":{
+        "1st": ["You offered ", "$ to ", " in exchange for a ", " multiplier"],
+        "3rd": ["User offered ", "$ to ", " in exchange for a ", " multiplier"]
+      }
+    },
+    "Offer-out-handshake-multiplier": {
+      "ES": {
+        "1st": ["Ofreciste un handshake para el evento ", " a ", " a cambio de un multiplicador de tipo ", ""],
+        "3rd": ["Ofreció un handshake para el evento ", " a ", " a cambio de un multiplicador de tipo ", ""]
+      },
+      "EN":{
+        "1st": ["You offered a handshake for the event ", " to ", " in exchange for a ", " multiplier"],
+        "3rd": ["User offered a handshake for the event ", " to ", " in exchange for a ", " multiplier"]
+      }
+    },
+    "Offer-out-cash-handshake": {
+      "ES": {
+        "1st": ["Ofreciste ,", "$ a ", " a cambio de un handshake para el evento ", ""],
+        "3rd": ["Ofreció ,", "$ a ", " a cambio de un handshake para el evento ", ""]
+      },
+      "EN":{
+        "1st": ["You offered ", "$ to ", " in exchange for a handshake for the event ", ""],
+        "3rd": ["User offered ", "$ to ", " in exchange for a handshake for the event ", ""]
+      }
+    },
+    "Offer-out-handshake-cash": {
+      "ES": {
+        "1st": ["Ofreciste un handshake para el evento ", " a ", " a cambio de ", "$"],
+        "3rd": ["Ofreció un handshake para el evento ", " a ", " a cambio de ", "$"]
+      },
+      "EN":{
+        "1st": ["You offered a handshake for the event ", " in exchange for ", "$"],
+        "3rd": ["User offered a handshake for the event ", " in exchange for ", "$"]
+      }
+    },
+    "Offer-in-multiplier-multiplier": {
+      "ES": {
+        "1st": ["", " ofreció un multiplicador de tipo ", " a cambio de un multiplicador de tipo ", ""],
+        "3rd": ["", " ofreció un multiplicador de tipo ", " a cambio de un multiplicador de tipo ", ""]
+      },
+      "EN":{
+        "1st": [" offered a ", " multiplier in exchange for a "," multiplier"],
+        "3rd": [" offered a ", " multiplier in exchange for a "," multiplier"]
+      }
+    },
+    "Offer-in-cash-cash": {
+      "ES": {
+        "1st": ["", " ofreció ", "$ a cambio de ", "$"],
+        "3rd": ["", " ofreció ", "$ a cambio de ", "$"]
+      },
+      "EN":{
+        "1st": [" offered ", " $ in exchange for a "," $"],
+        "3rd": [" offered ", " $ in exchange for a "," $"]
+      }
+    },
+    "Offer-in-handshake-handshake": {
+      "ES": {
+        "1st": ["", " ofreció un handshake para el evento ", " a cambio de un handshake para el evento ", ""],
+        "3rd": ["", " ofreció un handshake para el evento ", "$ a cambio de un handshake para el evento ", ""]
+      },
+      "EN":{
+        "1st": [" offered a handshake for event ", " in exchange for a handshake for event ", ""],
+        "3rd": [" offered a handshake for event ", " in exchange for a handshake for event ", ""]
+      }
+    },
+    "Offer-in-multiplier-cash": {
+      "ES": {
+        "1st": ["", " ofreció un multiplicador de tipo ", " a cambio de ", "$"],
+        "3rd": ["", " ofreció un multiplicador de tipo ", " a cambio de ", "$"]
+      },
+      "EN":{
+        "1st": [" offered a ", " multiplier in exchange for a ", " multiplier"],
+        "3rd": [" offered a ", " multiplier in exchange for a ", " multiplier"]
+      }
+    },
+    "Offer-in-multiplier-handshake": {
+      "ES": {
+        "1st": ["", " te ofreció un multiplicador de tipo ", "a cambio de un handshake en el evento ", ""],
+        "3rd": ["", " le ofreció un multiplicador de tipo ", "a cambio de un handshake en el evento ", ""]
+      },
+      "EN":{
+        "1st": [" offered a ", " multiplier in exchange for a handshake for the event ", ""],
+        "3rd": [" offered a ", " multiplier in exchange for a handshake for the event ", ""]
+      }
+    },
+    "Offer-in-cash-multiplier": {
+      "ES": {
+        "1st": ["", " ofreció ", "$ a cambio de un multiplicador de tipo ", ""],
+        "3rd": ["", " ofreció ", "$ a cambio de un multiplicador de tipo ", ""]
+      },
+      "EN":{
+        "1st": [" offered ", "$ in exchange for a ", " multiplier"],
+        "3rd": [" offered ", "$ in exchange for a ", " multiplier"]
+      }
+    },
+    "Offer-in-handshake-multiplier": {
+      "ES": {
+        "1st": ["", " ofreció un handshake en el evento ", "a cambio de un multiplicador de tipo ", ""],
+        "3rd": ["", " ofreció un handshake en el evento ", "a cambio de un multiplicador de tipo ", ""]
+      },
+      "EN":{
+        "1st": [" offered a handshake for the event ", " in exchange for a ", " multiplier"],
+        "3rd": [" offered a handshake for the event ", " in exchange for a ", " multiplier"]
+      }
+    },
+    "Offer-in-cash-handshake": {
+      "ES": {
+        "1st": ["", " ofreció ", "$ a cambio de un handshake en el evento ", ""],
+        "3rd": ["", " ofreció ", "$ a cambio de un handshake en el evento ", ""]
+      },
+      "EN":{
+        "1st": [" offered ", "$ in exchange for a handshake for the event", ""],
+        "3rd": [" offered ", "$ in exchange for a handshake for the event", ""]
+      }
+    },
+    "Offer-in-handshake-cash": {
+      "ES": {
+        "1st": ["", " ofreció un handshake en el evento ", " a cambio de ", "$"],
+        "3rd": ["", " ofreció un handshake en el evento ", " a cambio de ", "$"]
+      },
+      "EN":{
+        "1st": [" offered a handshake for the event ", " in exchange for ", "$"],
+        "3rd": [" offered a handshake for the event ", " in exchange for ", "$"]
+      }
+    },
+    "Expired-out": {
+      "ES": {
+        "1st": ["La oferta a ", " caducó"],
+        "3rd": ["La oferta a ", " caducó"]
+      },
+      "EN":{
+        "1st": ["Your offer to ", " expired"],
+        "3rd": ["User's offer to ", " expired"]
+      }
+    },
+    "Expired-in": {
+      "ES": {
+        "1st": ["La oferta de ", " caducó"],
+        "3rd": ["La oferta de ", " caducó"]
+      },
+      "EN":{
+        "1st": ["The offer made by ", " expired"],
+        "3rd": ["The offer made by "," expired"]
+      }
+    },
+    "Drop-out": {
+      "ES": {
+        "1st": ["Descartaste tu oferta a ", ""],
+        "3rd": ["Descartó su oferta a ", ""]
+      },
+      "EN":{
+        "1st": ["You dropped the offer to ", ""],
+        "3rd": ["User dropped the offer to ", ""]
+      }
+    },
+    "Drop-in": {
+      "ES": {
+        "1st": ["", " descartó su oferta"],
+        "3rd": ["", " descartó su oferta"]
+      },
+      "EN":{
+        "1st": ["", " dropped their offer"],
+        "3rd": ["", " dropped their offer"]
+      }
+    },
+    "Decline-out": {
+      "ES": {
+        "1st": ["Rechazaste la oferta de ", ""],
+        "3rd": ["Rechazó la oferta de ", ""]
+      },
+      "EN":{
+        "1st": ["You declined the offer ", " made you"],
+        "3rd": ["User declined the offer ", " made"]
+      }
+    },
+    "Decline-in": {
+      "ES": {
+        "1st": ["", " rechazó tu oferta"],
+        "3rd": ["", " rechazó su oferta"]
+      },
+      "EN":{
+        "1st": ["", " declined your offer"],
+        "3rd": ["", " declined user's offer"]
+      }
+    },
+    "Accept-handshake-handshake": {
+      "ES": {
+        "1st": ["Intercambiaste un handshake en el evento ", " por un handshake en el evento ", " con ", ""],
+        "3rd": ["Intercambió un handshake en el evento ", " por un handshake en el evento ", " con ", ""]
+      },
+      "EN":{
+        "1st": ["You exchanged ", " for a handshake for event ", " with ", ""],
+        "3rd": ["User exchanged ", " for a handshake for event ", " with ", ""]
+      }
+    },
+    "Accept-cash-cash": {
+      "ES": {
+        "1st": ["Intercambiaste ", "$ por ", "$ con ", ""],
+        "3rd": ["Intercambió ", " por ", " con ", ""]
+      },
+      "EN":{
+        "1st": ["You exchanged ", "$ for ", "$ with ", ""],
+        "3rd": ["User exchanged ", "$ for ", "$ with ", ""]
+      }
+    },
+    "Accept-multiplier-multiplier": {
+      "ES": {
+        "1st": ["Intercambiaste un multiplicador de tipo ", " por un multiplicador de tipo ", " con ", ""],
+        "3rd": ["Intercambió un multiplicador de tipo ", " por un multiplicador de tipo ", " con ", ""]
+      },
+      "EN":{
+        "1st": ["You exchanged a ", " multiplier for a ", " multiplier with ", ""],
+        "3rd": ["User exchanged a ", " multiplier for a ", " multiplier with ", ""]
+      }
+    },
+    "Accept-multiplier-cash": {
+      "ES": {
+        "1st": ["Intercambiaste un multiplicador de tipo ", " por ", "$ con ", ""],
+        "3rd": ["Intercambió un multiplicador de tipo ", " por ", "$ con ", ""]
+      },
+      "EN":{
+        "1st": ["You exchanged a ", " multiplier for ", "$ with ", ""],
+        "3rd": ["User exchanged a ", " multiplier for ", "$ with ", ""]
+      }
+    },
+    "Accept-multiplier-handshake": {
+      "ES": {
+        "1st": ["Intercambiaste un multitplicador de tipo ", " por un handshake en el evento ", " con ", ""],
+        "3rd": ["Intercambió un multitplicador de tipo ", " por un handshake en el evento ", " con ", ""]
+      },
+      "EN":{
+        "1st": ["You exchanged a ", " multiplier for a handshake for event ", " with ", ""],
+        "3rd": ["User exchanged a ", " multiplier for a handshake for event ", " with ", ""]
+      }
+    },
+    "Accept-cash-multiplier": {
+      "ES": {
+        "1st": ["Intercambiaste ", "$ por un multiplicador de tipo ", " con ", ""],
+        "3rd": ["Intercambió ", "$ por un multiplicador de tipo ", " con ", ""]
+      },
+      "EN":{
+        "1st": ["You exchanged ", "$ for a ", " multiplier with ", ""],
+        "3rd": ["User exchanged ", "$ for a ", " multiplier with ", ""]
+      }
+    },
+    "Accept-handshake-multiplier": {
+      "ES": {
+        "1st": ["Intercambiaste un handshake en el evento ", " por un multiplicador de tipo ", " con ", ""],
+        "3rd": ["Intercambió un handshake en el evento ", " por un multiplicador de tipo ", " con ", ""]
+      },
+      "EN":{
+        "1st": ["You exchanged a handshake for event ", " for a ", " multiplier with ", ""],
+        "3rd": ["User exchanged a handshake for event ", " for a ", " multiplier with ", ""]
+      }
+    },
+    "Accept-cash-handshake": {
+      "ES": {
+        "1st": ["Intercambiaste ", "$ por un handshake en el evento ", " con ", ""],
+        "3rd": ["Intercambió ", "$ por un handshake en el evento ", " con ", ""]
+      },
+      "EN":{
+        "1st": ["You exchanged ", "$ for a handshake for event ", " with ", ""],
+        "3rd": ["User exchanged ", "$ for a handshake for event ", " with ", ""]
+      }
+    },
+    "Accept-handshake-cash": {
+      "ES": {
+        "1st": ["Intercambiaste un handshake en el evento ", " por ", "$ con ", ""],
+        "3rd": ["Intercambió un handshake en el evento ", " por ", "$ con ", ""]
+      },
+      "EN":{
+        "1st": ["You exchanged a handshake for event ", " for ", "$ with ", ""],
+        "3rd": ["User exchanged a handshake for event ", " for ", "$ with ", ""]
+      }
+    },
+    "Offer-event-cash-multiplier": {
+      "ES": {
+        "1st": ["En el evento ", " ofreciste ", "$ a cambio de un multiplicador de tipo ", "."],
+        "3rd": ["En el evento ", " ofreció ", "$ a cambio de un multiplicador de tipo ", "."]
+      },
+      "EN": {
+        "1st": ["In event ", " you offered ", "$ in exchange for a ", " multiplier."],
+        "3rd": ["In event ", " the user offered ", "$ in exchange for a ", " multiplier."]
+      }
+    },
+    "Offer-event-multiplier-multiplier": {
+      "ES": {
+        "1st": ["En el evento ", " ofreciste un multiplicador de tipo ", " a cambio de un multiplicador de tipo ", "."],
+        "3rd": ["En el evento ", " ofreció un multiplicador de tipo ", " a cambio de un multiplicador de tipo ", "."]
+      },
+      "EN": {
+        "1st": ["In event ", " you offered a ", " multiplier in exchange for a ", " multiplier."],
+        "3rd": ["In event ", " the user offered a ", " multiplier in exchange for a ", " multiplier."]
+      }
+    },
+    "Offer-event-multiplier-cash": {
+      "ES": {
+        "1st": ["En el evento ", " ofreciste un multiplicador de tipo ", " a cambio de ", "$."],
+        "3rd": ["En el evento ", " ofreció un multiplicador de tipo ", " a cambio de ", "$."]
+      },
+      "EN": {
+        "1st": ["In event ", " you offered a ", " multiplier in exchange for ", "$."],
+        "3rd": ["In event ", " the user offered a ", " multiplier in exchange for ", "$."]
+      }
+    },
+    "Offer-event-handshake-cash": {
+      "ES": {
+        "1st": ["En el evento ", " ofreciste invitar con un handshake a un usuario a cambio de ", "$."],
+        "3rd": ["En el evento ", " ofreció invitar con un handshake a un usuario a cambio de ", "$."]
+      },
+      "EN": {
+        "1st": ["In event ", " you offered to invite an user with a handshake in exchange for ", "$."],
+        "3rd": ["In event ", " the user offered to invite another user with a handshake in exchange for ", "$."]
+      }
+    },
+    "Offer-event-handshake-multiplier": {
+      "ES": {
+        "1st": ["En el evento ", " ofreciste invitar con un handshake a un usuario a cambio de un multiplicador de tipo ", "."],
+        "3rd": ["En el evento ", " ofreció invitar con un handshake a un usuario a cambio de un multiplicador de tipo ", "."]
+      },
+      "EN": {
+        "1st": ["In event ", " you offered to invite an user with a handshake in exchange for a", " multiplier."],
+        "3rd": ["In event ", " the user offered to invite an user with a handshake in exchange for a", " multiplier."]
+      }
+    },
+    "Delete-event": {
+      "ES": {
+        "1st": ["Descartaste tu oferta del evento ", "."],
+        "3rd": ["Descartó su oferta del evento ", "."]
+      },
+      "EN": {
+        "1st": ["You dropped your offer from event ", "."],
+        "3rd": ["Dropped their offer from event ", "."]
+      }
+    }
+  },
+  "TJ": {
+    "annotation-color": "Bisque",
+    "timeline-color": "Bisque",
+    "legend-tags": {
+      "ES": "Comercio",
+      "EN": "Trade"
+    },
+    "Delete": {
+      "ES": {
+        "1st": ["Descartaste tu oferta"]
+      },
+      "EN": {
+        "1st": ["You dropped your offer"]
+      }
+    },
+    "Offer-cash-multiplier": {
+      "ES": {
+        "1st": ["Ofreciste ", "$ a cambio de un multiplicador de tipo ", "."]
+      },
+      "EN": {
+        "1st": ["You offered ", "$ in exchange for a ", " multiplier."]
+      }
+    },
+    "Offer-multiplier-multiplier": {
+      "ES": {
+        "1st": ["Ofreciste un multiplicador de tipo ", " a cambio de un multiplicador de tipo ", "."]
+      },
+      "EN": {
+        "1st": ["You offered a ", " multiplier in exchange for a ", " multiplier."]
+      }
+    },
+    "Offer-multiplier-cash": {
+      "ES": {
+        "1st": ["Ofreciste un multiplicador de tipo ", " a cambio de ", "$."]
+      },
+      "EN": {
+        "1st": ["You offered a ", " multiplier in exchange for ", "$."]
+      }
+    },
+    "Offer-handshake-cash": {
+      "ES": {
+        "1st": ["Ofreciste invitar con un handshake a un usuario a cambio de ", "$."]
+      },
+      "EN": {
+        "1st": ["You offered to invite an user with a handshake in exchange for ", "$."]
+      }
+    },
+    "Offer-handshake-multiplier": {
+      "ES": {
+        "1st": ["Ofreciste invitar con un handshake a un usuario a cambio de un multiplicador de tipo ", "."]
+      },
+      "EN": {
+        "1st": ["You offered to invite an user with a handshake in exchange for a", " multiplier."]
+      }
+    }
+  },
+  "U": {
+    "annotation-color": "grey",
+    "timeline-color": "grey",
+    "legend-tags": {
+      "ES": "Readmisión",
+      "EN": "Readmision"
+    },
+    "B01": {
+      "ES": {
+        "1st": ["Tu cuenta ya cumple con las condiciones de registro"],
+        "3rd": ["Su cuenta ya cumple con las condiciones de registro"]
+      },
+      "EN": {
+        "1st": ["Your account passed the register conditions"],
+        "3rd": ["User's account passed the register conditions"]
+      }
+    },
+    "B02": {
+      "ES": {
+        "1st": ["Terminó tu periodo de expulsión"],
+        "3rd": ["Terminó su periodo de expulsión"]
+      },
+      "EN": {
+        "1st": ["Your ban period has expired"],
+        "3rd": ["User's ban period has expired"]
+      }
+    }
+  },
+  "R": {
+    "annotation-color": "pink",
+    "timeline-color": "pink",
+    "legend-tags": {
+      "ES": "Reclamación",
+      "EN": "Request"
+    },
+    "Steam": {
+      "ES": {
+        "1st": [
+          "Reclamaste que GameStonks cargará ",
+          "$ a tu cuenta de Steam"
+        ]
+      },
+      "EN": {
+        "1st": [
+          "You requested GameStonks to charge ",
+          "$ into your Steam account"
+        ]
+      }
+    },
+    "SteamSS": {
+      "ES": {
+        "1st": [
+          "Transferiremos ",
+          "$ a tu cuenta de Steam."
+        ]
+      },
+      "EN": {
+        "1st": [
+          "We will transfer ",
+          "$ into your Steam account."
+        ]
+      }
+
+    }
+  },
+  "P": {
+    "annotation-color": "green",
+    "timeline-color": "green",
+    "legend-tags": {
+      "ES": "Ingreso",
+      "EN": "Entry"
+    },
+    "J01": {
+      "ES": {
+        "1st": [
+          "Fuiste registrado en el evento ",
+          "."
+        ],
+        "3rd": [
+          "Se registró en el evento",
+          "."
+        ]
+      },
+      "EN": {
+        "1st": [
+          "You were registered in event ",
+          "."
+        ],
+        "3rd": [
+          "Registered in event",
+          "."
+        ]
+      }
+    }
+  },
+  "PJ": {
+    "annotation-color": "green",
+    "timeline-color": "green",
+    "legend-tags": {
+      "ES": "Ingreso",
+      "EN": "Entry"
+    },
+    "J01": {
+      "ES": {
+        "1st": [
+          "Fuiste registrado en el evento."
+        ]
+      },
+      "EN": {
+        "1st":[
+          "You were registered in event."
+        ]
+      }
+    }
+  },
+  "D": {
+    "annotation-color": "purple",
+    "timeline-color": "purple",
+    "legend-tags": {
+      "ES": "Registro",
+      "EN": "Register"
+    },
+    "E": {
+      "ES": {
+        "1st": ["Te uniste a GameStonks"],
+        "3rd": ["Se unió a GameStonks"]
+      },
+      "EN": {
+        "1st": ["You joined GameStonks"],
+        "3rd": ["User joined GameStonks"]
+      }
+    },
+    "J01": {
+      "ES": {
+        "1st": [
+          "En el evento ",
+          " diste permiso a GameStonks para registrar tu actividad en ",
+          " (appid: ",
+          ")."
+        ]
+      },
+      "EN": {
+        "1st": [
+          "In event ",
+          "you gave GameStonks permision to register your activity in ",
+          " (appid: ",
+          ")."
+        ]
+      }
+    }
+  },
+  "DJ": {
+    "annotation-color": "purple",
+    "timeline-color": "purple",
+    "legend-tags": {
+      "ES": "Registro",
+      "EN": "Register"
+    },
+    "J01": {
+      "ES": {
+        "1st": [
+          "Diste permiso a GameStonks para registrar tu actividad en ",
+          " (appid: ",
+          ")."
+        ]
+      },
+      "EN": {
+        "1st": [
+          "You gave GameStonks permision to register your activity in ",
+          " (appid: ",
+          ")."
+        ]
+      }
+    }
+  },
+  "M": {
+    "annotation-color": "blue",
+    "timeline-color": "blue",
+    "legend-tags": {
+      "ES": "Multiplicador",
+      "EN": "Multiplier"
+    },
+    "COL": {
+      "ES": {
+        "1st": ["Recibiste un multiplicador de tipo ", ""],
+        "3rd": ["Recibió un multiplicador de tipo ", ""]
+      },
+      "EN": {
+        "1st": ["You received a ", " multiplier"],
+        "3rd": ["Received a ", " multiplier"]
+      }
+    },
+    "Bronze": {
+      "ES": {
+        "1st": [
+          "Usaste un multiplicador de Bronze en el evento ",
+          "."
+        ],
+        "3rd": [
+          "Usó un multiplicador de Bronze en el evento ",
+          "."
+        ]
+      },
+      "EN": {
+        "1st": [
+          "You used a Bronze multiplier in event ",
+          "."
+        ],
+        "3rd": [
+          "Used a Bronze multiplier in event ",
+          "."
+        ]
+      }
+    },
+    "Handshaker": {
+      "ES": {
+        "1st": [
+          "",
+          " (steamid: ",
+          ") ha recibido tu handshake en el evento ",
+          "."
+        ],
+        "3rd": [
+          " (steamid: ",
+          ") recibió su handshake en el evento ",
+          "."
+        ]
+      },
+      "EN": {
+        "1st": [
+          "",
+          " (steamid: ",
+          ") has received your handshake in event ",
+          "."
+        ],
+        "3rd": [
+          "",
+          " (steamid: ",
+          ") has received the user's handshake in event ",
+          "."
+        ]
+      }
+    },
+    "Handshaked": {
+      "ES": {
+        "1st": [
+          "",
+          " (steamid: ",
+          ") te ha dado un handshake en el evento ",
+          "."
+        ],
+        "3rd": [
+          "",
+          " (steamid: ",
+          ") le ha dado un handshake en el evento ",
+          "."
+        ]
+      },
+      "EN": {
+        "1st": [
+          "",
+          " (steamid: ",
+          ") gave you a handshake in event ",
+          "."
+        ],
+        "3rd": [
+          "",
+          " (steamid: ",
+          ") gave the user a handshake in event ",
+          "."
+        ]
+      }
+    }
+  },
+  "MJ": {
+    "annotation-color": "blue",
+    "timeline-color": "blue",
+    "legend-tags": {
+      "ES": "Multiplicador",
+      "EN": "Multiplier"
+    },
+    "Bronze": {
+      "ES": {
+        "1st": ["Usaste un multiplicador de Bronze"]
+      },
+      "EN": {
+        "1st":["You used a Bronze multiplier"]
+      }
+    },
+    "Handshaker": {
+      "ES": {
+        "1st": [
+          "",
+          " (steamid: ",
+          ") ha recibido tu handshake."
+        ]
+      },
+      "EN": {
+        "1st": [
+          "",
+          " (steamid: ",
+          ") has received your handshake."
+        ]
+      }
+    },
+    "Handshaked": {
+      "ES": {
+        "1st": [
+          "",
+          " (steamid: ",
+          ") te ha dado un apretón de manos."
+        ]
+      },
+      "EN": {
+        "1st": [
+          "",
+          " (steamid: ",
+          ") gave you a handshake."
+        ]
+      }
+    }
+  },
+  "S": {
+    "annotation-color": "orange",
+    "timeline-color": "orange",
+    "legend-tags": {
+      "ES": "Strike",
+      "EN": "Strike"
+    },
+    "S01": {
+      "ES": {
+        "1st": [
+          "En el evento ",
+          " diste permiso a GameStonks para registrar tu actividad en ",
+          " (appid: ",
+          ") pero no lo tenías en tu librería en ese momento."
+        ]
+      },
+      "EN": {
+        "1st": [
+          "In event ",
+          "you gave GameStonks permission to register your activity in ",
+          " (appid: ",
+          ") while not having it in your library at the moment."
+        ]
+      }
+    },
+    "S02-A": {
+      "ES": {
+        "1st": [
+          "Tu cuenta no era lo suficientemente antigua para la encuesta ", "."
+        ],
+        "3rd": [
+          "La cuenta del usuario no era lo suficientemente antigua para la encuesta", "."
+        ]
+      },
+      "EN": {
+        "1st": [
+          "Your account was not old enough for survey ", "."
+        ],
+        "3rd": [
+          "User's account was no old enough for survey ", "."
+        ]
+      }
+    },
+    "S02-B": {
+      "ES": {
+        "1st": [
+          "Tu cuenta era demasiado antigua para la encuesta ", "."
+        ],
+        "3rd": [
+          "La cuenta del usuario era demsiado antigua para la encuesta ", "."
+        ]
+      },
+      "EN": {
+        "1st": [
+          "Your account was too old for survey ", "."
+        ],
+        "3rd": [
+          "User's account was too old survey ", "."
+        ]
+      }
+    }
+  },
+  "SJ": {
+    "annotation-color": "orange",
+    "timeline-color": "orange",
+    "legend-tags": {
+      "ES": "Strike",
+      "EN": "Strike"
+    },
+    "S01": {
+      "ES": {
+        "1st": [
+          "Diste permiso a GameStonks para registrar tu actividad en ",
+          " (appid: ",
+          ") pero no lo tenías en tu librería en ese momento."
+        ]
+      },
+      "EN": {
+        "1st": [
+          "You gave GameStonks permission to register your activity in ",
+          " (appid: ",
+          "), but you did not have it in your library at the moment."
+        ]
+      }
+    }
+  },
+  "B": {
+    "annotation-color": "red",
+    "timeline-color": "red",
+    "legend-tags": {
+      "ES": "Bloqueo",
+      "EN": "Ban"
+    },
+    "B01": {
+      "ES": {
+        "1st": ["Fuiste expulsado por registrarte con una cuenta no compatible"],
+        "3rd": ["Fué expulsado por registrarse con una cuenta no compatible"]
+      },
+      "EN": {
+        "1st": ["You were banned for registering with a non-compatible account"],
+        "3rd": ["The user was banned for registering with a non-compatible account"]
+      }
+    },
+    "B02-A": {
+      "ES": {
+        "1st": ["Acumulaste tres strikes"],
+        "3rd": ["Acumuló tres strikes"]
+      },
+      "EN": {
+        "1st": ["You acumulated three strikes"],
+        "3rd": ["Acumulated 3 strikes"]
+      }
+    },
+    "B02-B": {
+      "ES": {
+        "1st": ["Bloqueaste el acceso a tu cuenta mientras participabas en el evento ", ""],
+        "3rd": ["Bloqueó el acceso a su cuenta mientras participaba en el evento ", ""]
+      },
+      "EN": {
+        "1st": ["You blocked access to your account while participating in event ", ""],
+        "3rd": ["Blocked access to their account while participating in event ", ""]
+      }
+    }
+  },
+  "G": {
+    "annotation-color": "yellow",
+    "timeline-color": "yellow",
+    "legend-tags": {
+      "ES": "Donación",
+      "EN": "Donation"
+    },
+    "D": {
+      "ES": {
+        "1st": ["Donaste ", "$ a ", "."],
+        "3rd": ["Donó ", "$ a ", "."]
+      },
+      "EN": {
+        "1st": ["You donated ", "$ to ", "."],
+        "3rd": ["Donated ", "$ to ", "."]
+      }
+    },
+    "R": {
+      "ES": {
+        "1st": ["Recibiste ", "$ de parte de ", "."],
+        "3rd": ["Recibió ", "$ de parte de ", "."]
+      },
+      "EN": {
+        "1st": ["You recieved ", "$ from ", "."],
+        "3rd": ["Recieved ", "$ from ", "."]
+      }
+    }
+  },
+  "E": {
+    "annotation-color": "black",
+    "timeline-color": "black",
+    "legend-tags": {
+      "ES": "Encuesta",
+      "EN": "Survey"
+    },
+    "SUB": {
+      "ES": {
+        "1st": ["Enviaste tu respuesta a una encuesta (id: ", ")"]
+      },
+      "EN": {
+        "1st": ["You submitted your answer to a survey (id: ",")"]
+      }
+    }
+  }
+}

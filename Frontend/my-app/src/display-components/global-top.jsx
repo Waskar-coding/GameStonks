@@ -1,6 +1,9 @@
 //Standard
 import React from "react";
 
+//Useful functions
+import configMoneyDisplay from "../data-manipulation/config-money-display";
+
 //Main function
 const GlobalTop = ({players, completeLength, incompleteMessage}) => {
     return(
@@ -21,7 +24,7 @@ const GlobalTop = ({players, completeLength, incompleteMessage}) => {
                                     {topPlayer.name}
                                 </div>
                                 <div>
-                                    Share: {topPlayer.share} $
+                                    Share: {configMoneyDisplay(topPlayer.share)} $
                                 </div>
                             </div>
                         </li>

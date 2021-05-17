@@ -64,8 +64,8 @@ Modifications
 |
 |   Frontend
 |   --------
-|   O sorting and classifying logic is to be removed and replaced in all components that used it
-|   O adapt frontend forms to new formats
-|   O frontend displays must adapt to the new APIs
+|   X sorting and classifying logic is to be removed and replaced in all components that used it
+|   X adapt frontend forms to new formats
+|   X frontend displays must adapt to the new APIs
 |   X annotated-chart: Must adapt to timeline format
 |   X timeline: Must adapt to timeline format

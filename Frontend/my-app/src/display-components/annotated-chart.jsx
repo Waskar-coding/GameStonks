@@ -6,15 +6,15 @@ import { Line } from "react-chartjs-2";
 import 'chartjs-plugin-annotation';
 
 //Main function
-const AnnotatedChart = ({title, points, events, tooltips, tags, xAxes, yLabel}) => {
-    const annotations = events.map(event => {
+const AnnotatedChart = ({title, points, actions, tooltips, tags, xAxes, yLabel}) => {
+    const annotations = actions.map(action => {
         return {
             type: 'line',
-            id: `${event[0]}_${event[1]}`,
+            id: `${action[0]}_${action[1]}_${action[2]}`,
             mode: 'vertical',
             scaleID: 'x-axis-0',
-            value: event[0].getTime(),
-            borderColor: event[2],
+            value: action[0].getTime(),
+            borderColor: action[2],
             borderWidth: 2
         }
     });

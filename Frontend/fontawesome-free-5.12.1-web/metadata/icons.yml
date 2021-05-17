@@ -9459,7 +9459,7 @@ handshake:
     - '4.7'
     - 5.0.0
     - 5.0.9
-  label: Handshake
+  label: MultiplierHandshake
   search:
     terms:
       - agreement

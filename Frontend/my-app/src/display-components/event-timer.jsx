@@ -8,7 +8,7 @@ import { floor } from "math";
 import otherDict from "../language-display/other-classifier";
 
 //Context
-import LanguageContext from "../language-context";
+import LanguageContext from "../context/language-context";
 
 //Main class
 const EventTimer = ({limitDate}) => {

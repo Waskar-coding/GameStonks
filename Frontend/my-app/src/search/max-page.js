@@ -1,6 +1,5 @@
 import Math from "math";
-
-function findMaxPage(current, display){
+const findMaxPage = (current, display) => {
     if(current===0){
         return 1;
     }
@@ -11,5 +10,4 @@ function findMaxPage(current, display){
         return current/display;
     }
 }
-
 export default findMaxPage;

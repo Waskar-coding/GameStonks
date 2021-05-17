@@ -11,6 +11,7 @@
     "axios": "^0.19.2",
     "chart.js": "^2.9.3",
     "chartjs-plugin-annotation": "^0.5.7",
+    "formik": "^2.1.5",
     "fs": "0.0.1-security",
     "list-react-files": "^0.2.0",
     "math": "0.0.3",
@@ -21,17 +22,22 @@
     "react-copy-to-clipboard": "^5.0.2",
     "react-datepicker": "^3.0.0",
     "react-dom": "^16.13.1",
-    "react-dynamic-import": "^1.1.4",
+    "react-google-recaptcha": "^2.1.0",
+    "react-html-parser": "^2.0.2",
     "react-modal": "^3.11.2",
+    "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.0",
-    "react-sidebar": "^3.0.2"
+    "react-sidebar": "^3.0.2",
+    "yup": "^0.29.3"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -p 6006 -s public",
+    "build-storybook": "build-storybook -s public"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -48,5 +54,15 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://localhost:8080"
+  "proxy": "http://localhost:8080",
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@storybook/addon-actions": "^6.0.27",
+    "@storybook/addon-essentials": "^6.0.27",
+    "@storybook/addon-links": "^6.0.27",
+    "@storybook/node-logger": "^6.0.27",
+    "@storybook/preset-create-react-app": "^3.1.4",
+    "@storybook/react": "^6.0.27",
+    "react-is": "^17.0.1"
+  }
 }

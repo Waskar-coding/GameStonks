@@ -1,0 +1,75 @@
+ON HOOKS AND USER OPTIMIZATION:
+user-profile and especially my-profile were really hard to implement and need a lot of improvement plus a
+cleanup when refracted to React Hooks.
+
+The main problems:
+|   "Exists" API is inefficient, it should return both user resume, and timeline provided that the user exists.
+|
+|   The donate, and handshake functionalities should be implemented within the user profile. It is inevitable
+|   that DB is checked to see available fortune for donate, however the available multipliers and the events with
+|   product can be stored within a cookie in order to perform the handshakes.
+|
+|   The components with the "donate" functionality should be reusable for my-profile, whereas the component with
+|   "handshake" functionality should be possible to reuse in event personal stats.
+|
+|   Class components must go away, functional components with hooks are to be introduced.
+|
+|   The timeline component must adapt to the date pickers and other changes.
+|
+|   Posting logic is complex and often repetitive, a reusable default component would be useful.
+|
+|   my-profile is complete clusterfuck, it should not occupy more than 200 lines and have a more elegant design.
+|   user-profile could use some rework too.
+
+The solutions:
+|   The Auth API must be modified to store user multipliers and events with products in cookies.
+|
+|   "Exists" API must be modified to pass resume and default timeline in case the user exists and to throw 404 in
+|   case they do not. A new field containing the events with products must be included. Once the API is well implemented
+|   the use profile main component can be wrapped inside a DefaultAPIGet that will execute only once when we open the
+|   user profile. The verification API for my-profile should do something similar.
+|
+|   Resume and timeline, will be managed from the parent component, if necessary and to avoid prop drilling timeline
+|   props will be passed to the timeline child component using context. A useEffect hook can be used to modify the url,
+|   passed to DefaultAPIGet every time startDate and endDate are modified and the DateForm is submit. DateForms can be
+|   placed on the main component to avoid having to use a context, a simple parent callback should be enough. The resume
+|   and timeline components should only receive props leaving all the logic to the parent. The callback function in
+|   of DateForms should to the following:
+|   |   Modifies the startDate and endDate, which in time modifies the url the DefaultAPIGet passes, since the timeline
+|   |   information should be on the parent component, a withAPICallback HOC should be created, Timeline, which should
+|   |   be the child component must get properties directly from the parent component.
+|
+|   A DefaultAPIPost component should be created to accept forms and use and API, post calls often come with:
+|   |   A confirm Modal
+|   |   Error modals
+|   |   A success modal
+|   All this messages can be included inside the same modal, while error messages can be generalized into the same
+|   schema, both confirm and success modals might need custom components of their own.
+|
+|   A reusable component must be created for donations, in for user-profile it must accept the user's id and for my
+|   my profile it will accept null, the internal logic should render an input conditionally for this, it will also
+|   accept money.
+|
+|   Another reusable handshake component must be created for
+
+|   X. Modify the exists API, it must return the resume and a default timeline,
+|   X. Wrap the parent component with a DefaultAPIGet that implements the exists API
+|   X. Repeat steps 1 and 2 with the isAuth API in my-profile.
+|   X. Modify date-form to ensure they pass data to the parent components
+|   X. Create the withAPICallback HOC and make sure it works
+|   X. Create a Timeline wrapper that accepts timeline arguments as context
+|   X. Try to modify the Resume component so only the wealth renders when it is updated (try React.Fragment)
+|   X. Repeat steps 6 and 7 with my-profile, both in the two timelines and resume.
+|   X. Modify donations API so it can be used from both my-profile and user-profile, it must also return new fortune
+|       and events (finalDate must be passed as a parameter).
+|   X. Create the DefaultAPIPost component.
+|   X. Combine DefaultAPIPost and withAPICallback to create a reusable donations component, test it on both user-profile
+|       and my-profile.
+|   X. Modify login API to register multipliers, requests and product events as cookies
+|   X. Modify handshake API to look into the cookies before opening DB, take into account users modifying cookies,
+|       send new timeline events (finalDate must be passed) and new fortune from DB.
+|   X. Implement the reusable handshake component combining DefaultAPIPost and with APICallback
+|   X. Modify the requests API to use new cookies
+|   X. Rewrite the requests component
+|   X. Implement all other functionalities in both user-profile and my-profile (make sure copy does not rerender the
+|       entire basic-profile component.

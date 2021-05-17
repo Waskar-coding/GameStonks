@@ -1,215 +1,67 @@
 //Standard
-import React from "react";
-
-//Packages
-import axios from "axios";
+import React, {useState} from "react";
 
 //Local components
-import BasicProfile from "./basic-profile";
-import DateForm from "../search/date-form";
-import TimeLine from "../display-components/timeline";
+import BoundedTimeLine from "../search/bounded-timeline";
+import DefaultAPIGet from "../api-interaction/default-api-get";
+import DefaultProfile from "./defaults/user-basic";
+import DonationForm from "./donations/user-donation-formik";
+import HandshakeForm from "./handshakes/user-handshake-form";
+import OfferCreator from "./trade/creator/user-trade-creator-main";
+import UserTimelineList from "./defaults/user-timeline-list";
 
 //Useful functions
-import processEvent from "../useful-functions/process-event";
-import getLocalDate from "../useful-functions/date-offset";
+import getDefaultProfile from "./defaults/user-basic-config";
+import withDefaultLoadError from "../api-interaction/with-default-load-&-error";
+import {withUserTransaction} from "./hocs/user-with-transaction";
 
-//Language jsons
-import otherDict from "../language-display/other-classifier";
-import messageDict from "../language-display/message-classifier";
-
-//Context
-import LanguageContext from "../language-context";
-import processMessage from "../useful-functions/process-message";
-
-
-class FriendProfile extends React.Component{
-    constructor(props){
-        super(props);
-        this.state = {
-            exists: undefined
-        }
-    }
-    componentDidMount() {
-        const { steamid } = this.props.match.params;
-        axios.get(`/users/profiles/${steamid}/exists`)
-            .then(() => {
-                this.setState({exists: true})
-            })
-            .catch(() => {
-                this.setState({exists: false})
-            })
-    }
-    render(){
-        const { steamid } = this.props.match.params;
-        if(this.state.exists === undefined){
-            return(<div>{messageDict['Search']['user-exists'][this.context]}</div>)
-        }
-        else if(this.state.exists === false){
-            return(<div>{messageDict['Search']['user-404'][this.context]}</div>)
-        }
-        else{
-            return(
-                <div>
-                    <FriendBasicProfile steamid={steamid} />
-                    <FriendEvents steamid={steamid} />
-                </div>
-            )
-        }
-    }
+//Wrapped main function
+const WrappedUserProfile = ({location}) => {
+    /*
+    Initial checking, ensures the queried user has an account, if so the user's basic profile is sent
+    with privacy restrictions (see friendCategories in user-get-packages at the Backend folder). If the
+    user does not exists a 404 error message will pop up.
+    */
+    return (
+        withDefaultLoadError(
+            DefaultAPIGet, UserProfile,
+            `/users/profiles/${location.pathname.split('/')[3]}/profile`,
+            "user-profile", {500: "user-profile-500", 404: "user-profile-404"}
+        )
+    )
 }
-FriendProfile.contextType = LanguageContext;
+export default WrappedUserProfile;
 
-class FriendBasicProfile extends React.Component{
-    constructor(props){
-        super(props);
-        this.state = {
-            isLoaded: false,
-            user: null,
-            error: false
-        }
-    }
-    componentDidMount() {
-        axios.get(`/users/profiles/${this.props.steamid}/profile`)
-            .then(res => {
-                this.setState({
-                    isLoaded: true,
-                    user: res.data
-                });
-
-            })
-            .catch(() => {
-                this.setState({
-                    error: true,
-                    isLoaded: true
-                });
-            })
-    }
-    render(){
-        if(this.state.isLoaded === false){
-            return <div>Loading profile...</div>
-        }
-        else if(this.state.error === true){
-            return(<div>{messageDict['Search']['user-404'][this.context]}</div>)
-        }
-        else{
-            return(
-                <BasicProfile
-                    person='3rd'
-                    user={this.state.user}
-                    wealth={this.state.user.wealth}
-                />
-            )
-        }
-    }
+//Inner main function
+const UserProfile = ({state}) => {
+    const {profile, setProfile, list, setList, processedListTimeLine} = getDefaultProfile(state, "3rd");
+    const [handshake, setHandshake] = useState({
+        isAuth: state.isAuth, multipliers: state.myMultipliers, events: state.handshakeEvents
+    });
+    const userTransactionData = [
+        state, profile, list,
+        setProfile, setList,
+        handshake, setHandshake
+    ];
+    return(
+        <div>
+            <DefaultProfile
+                profileState={profile}
+                profileSetter={setProfile}
+                person="3rd"
+                initialState={state}
+            />
+            {withUserTransaction(DonationForm, ...userTransactionData)}
+            {withUserTransaction(HandshakeForm, ...userTransactionData)}
+            {withUserTransaction(OfferCreator, ...userTransactionData)}
+            <BoundedTimeLine
+                contextSetter={setList} state={state} displayType="list"
+                apiPath={`/users/profiles/${state.steamId}/timeline`}
+            />
+            <UserTimelineList
+                listStatus={list.apiStatus}
+                processedListTimeLine={processedListTimeLine}
+            />
+        </div>
+    )
 }
-
-class FriendEvents extends React.Component{
-    constructor(props){
-        super(props);
-        const today = getLocalDate(new Date());
-        const tomorrow = new Date(today.setDate(today.getDate() + 1));
-        const monthAgo = new Date(today.setMonth(today.getMonth()-1));
-        this.state = {
-            isLoad: false,
-            error: null,
-            start: monthAgo.toISOString(),
-            final: tomorrow.toISOString(),
-            timeline: null
-        };
-        this.updateTimeline = this.updateTimeline.bind(this);
-    }
-    updateTimeline(){
-        fetch(
-            `/users/profiles/${this.props.steamid}/timeline?start=${this.state.start}&end=${this.state.final}`
-        )
-            .then(res => res.json())
-            .then(res => {
-                this.setState({
-                    timeline: res.timeline.map(event => {
-                        return (
-                            processEvent(this.context, "3rd", event)
-                        )
-                    }),
-                    minDate: getLocalDate(new Date(res.joined)),
-                    isLoad: true
-                });
-            })
-            .catch(err => {
-                console.log(err);
-                this.setState({
-                    error: err
-                })
-            })
-    }
-    handleDateChange(startDate, finalDate){
-        this.setState({
-            start: startDate,
-            final: finalDate,
-            isLoad: false
-        });
-    }
-    componentDidMount() {
-        this.updateTimeline()
-    }
-    shouldComponentUpdate(nextProps, nextState, nextContext) {
-        return(
-            (this.state.start !== nextState.start)
-            ||
-            (this.state.final !== nextState.final)
-            ||
-            (this.state.timeline !== nextState.timeline)
-            ||
-            (this.state.isLoad !== nextState.isLoad)
-        )
-    }
-    componentDidUpdate(prevProps, prevState, snapshot){
-        if(
-            (prevState.start !== this.state.start)
-            ||
-            (prevState.final !== this.state.final)
-        ){
-            this.updateTimeline()
-        }
-    }
-    render(){
-        if(this.state.error !== null){
-            return(
-                <div>Internal server error</div>
-        )
-        }
-        else if(this.state.isLoad === false){
-            return(
-                <div>Loading ...</div>
-        )
-        }
-        else{
-            const today = getLocalDate(new Date());
-            const tomorrow = new Date(today.setDate(today.getDate() + 1));
-            const reverseTimeline = this.state.timeline.slice().reverse();
-            return (
-                <div>
-                    <section>
-                        <h2>{otherDict['profile']['timeline-list-title-user'][this.context]}</h2>
-                        <DateForm
-                            defaultStart = {this.state.start}
-                            defaultFinal = {this.state.final}
-                            minDate = {this.state.minDate}
-                            maxDate = {tomorrow.getTime()}
-                            toParent = {(startDate, finalDate) => this.handleDateChange(startDate, finalDate)}
-                        />
-                        {this.state.timeline.length === 0? (
-                            <div>{processMessage(this.context, ['Timeline','no-list'])}</div>
-                        ) : (
-                            <TimeLine
-                                events = {reverseTimeline}
-                            />
-                        )}
-                    </section>
-                </div>
-            )
-        }
-    }
-}
-FriendEvents.contextType = LanguageContext;
-
-export default FriendProfile;

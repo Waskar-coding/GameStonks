@@ -1,0 +1,21 @@
+{
+  "invalid-account-ban": "5f56d51f573a621869471f4b",
+  "temporal-ban": "5f56d36c573a621869471edb",
+  "new-login": "5f67c1fa859e34b8d3dce629",
+  "prev-register": "5f692c1a39266d389919dc88",
+  "B02": "5f68c3697b4c54b7599c07d3",
+  "B01": "5f692fde39266d389919dcdf",
+  "B02-unbanned": "5f68cb197b4c54b7599c0998",
+  "B01-unbanned": "5f692a0639266d389919dc56",
+  "B01-new": "5f692f5239266d389919dcd1",
+  "welcome": "5f692a0639266d389919dc56",
+  "register-confirm": "5f6b327970de40319de89069",
+  "delete-confirm": "5f6b47544b57aa9deb50bcaa",
+  "delete": "5f6b495d4b57aa9deb50bd0c",
+  "delete-500": "5f6b4b344b57aa9deb50bd66",
+  "delete-404": "5f6bcc40a627b62f4883268e",
+  "delete-problems": "5f6c959f4e84544a60711b96",
+  "survey-submitted": "5f6b327970de40319de89070",
+  "strike": "5f6b327970de40319de8907a",
+  "trade-deleted-account": "5f9efb6ae4daf99e4e0f6390"
+}

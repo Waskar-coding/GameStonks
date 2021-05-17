@@ -1,5 +1,7 @@
 {
   "dependencies": {
+    "aes256": "^1.0.4",
+    "axios": "^0.20.0",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.17.1",
     "cookie-parser": "^1.4.5",
@@ -10,11 +12,13 @@
     "jsonwebtoken": "^8.5.1",
     "math": "0.0.3",
     "mongoose": "^5.9.21",
+    "node-html-parser": "^1.2.20",
     "passport": "^0.4.1",
     "passport-steam": "^1.0.12",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "request": "^2.83.0",
+    "simple-aes-256": "^3.0.1",
     "socket.io": "^2.0.3"
   }
 }

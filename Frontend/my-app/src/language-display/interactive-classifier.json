@@ -1,4 +1,40 @@
 {
+  "user-delete": {
+    "delete-button": {
+      "ES": "Borrar Cuenta",
+      "EN": "Delete Account"
+    },
+    "delete-confirm": {
+      "ES": "Borrar",
+      "EN": "Delete"
+    }
+  },
+  "auth-case": {
+    "register":{
+      "ES": "Registrate con Steam",
+      "EN": "Register through Steam"
+    },
+    "register-confirm": {
+      "ES": "Registrarse",
+      "EN": "Register"
+    },
+    "register-conditions": {
+      "ES": "He leído la política de privacidad y acepto sus condiciones",
+      "EN": "I have read the privacy policy and I accept its conditions"
+    },
+    "login": {
+      "ES": "Entra con Steam",
+      "EN": "Login through Steam"
+    },
+    "logout": {
+      "ES": "Salir",
+      "EN": "Logout"
+    },
+    "profile": {
+      "ES": "My Perfil",
+      "EN": "My Profile"
+    }
+  },
   "search-form": {
     "sort": {
       "ES": "Ordenar por:",
@@ -20,6 +56,30 @@
       "ES": "Busca:",
       "EN": "Search:"
     },
+    "doc-update": {
+      "ES": "Fecha",
+      "EN": "Date"
+    },
+    "doc-tooltip": {
+      "ES": "Encuentra artículos",
+      "EN": "Find articles"
+    },
+    "survey-start":{
+      "ES": "Inicio",
+      "EN": "Start"
+    },
+    "survey-tier": {
+      "ES": "Categoría",
+      "EN": "Tier"
+    },
+    "survey-users": {
+      "ES": "Participantes",
+      "EN": "Participants"
+    },
+    "survey-tooltip": {
+      "ES": "Busca encuestas",
+      "EN": "Find surveys"
+    },
     "user-name": {
       "ES": "Nombre",
       "EN": "Name"
@@ -32,23 +92,23 @@
       "ES": "Encuentra usuarios",
       "EN": "Find users"
     },
-    "jackpot-tooltip": {
+    "event-tooltip": {
       "ES": "Encuentra eventos",
       "EN": "Find events"
     },
-    "jackpot-start": {
+    "event-start": {
       "ES": "Inicio",
       "EN": "Starting"
     },
-    "jackpot-end": {
+    "event-end": {
       "ES": "Final",
       "EN": "Ending"
     },
-    "jackpot-users": {
+    "event-users": {
       "ES": "Num. de usuarios",
       "EN": "Num. of users"
     },
-    "jackpot-value": {
+    "event-value": {
       "ES": "Valor",
       "EN": "Value"
     },
@@ -63,6 +123,18 @@
     "j01-tooltip": {
       "ES": "Encuentra juegos en este evento",
       "EN": "Find games within this event"
+    },
+    "event-offer-tooltip": {
+      "ES": "Encuentra ofertas",
+      "EN": "Find offers"
+    },
+    "event-offer-date": {
+      "ES": "Fecha",
+      "EN": "Date"
+    },
+    "event-offer-name": {
+      "ES": "Nombre de usuario",
+      "EN": "User name"
     }
   },
   "pagination": {
@@ -87,12 +159,34 @@
       "EN": "Search events between two dates"
     }
   },
+  "survey-form": {
+    "enter-survey": {
+      "ES": "Inicia la encuesta",
+      "EN": "Enter the survey"
+    },
+    "tooltip-good": {
+      "ES": "Envia tu respuestas a la encuesta",
+      "EN": "Submit your answers to the survey"
+    },
+    "tooltip-bad": {
+      "ES": "No respondiste adecuadamente a todas las preguntas",
+      "EN": "You did not properly answered every question"
+    },
+    "submit": {
+      "ES": "Enviar",
+      "EN": "Submit"
+    },
+    "confirm": {
+      "ES": "Confirmar",
+      "EN": "Confirm"
+    }
+  },
   "donation-form": {
     "user-id": {
       "ES": "Usuario",
       "EN": "User"
     },
-    "donation": {
+    "donation-value": {
       "ES": "Donación",
       "EN": "Donation"
     },
@@ -100,25 +194,45 @@
       "ES": "Steamid del usuario",
       "EN": "User's steamid"
     },
-    "donation-placeholder": {
+    "donation-value-placeholder": {
       "ES": "Cantidad a donar ($)",
       "EN": "Amount to donate ($)"
     },
-    "donation-confirm": {
-      "ES": "Donar",
-      "EN": "Donate"
-    },
-    "donation-cancel": {
-      "ES": "Cancelar",
-      "EN": "Cancel"
-    },
-    "donation-submit": {
+    "submit": {
       "ES": "Donar",
       "EN": "Donate"
     },
     "tooltip": {
-      "ES": "Dona dinero a un amigo",
-      "EN": "Donate money to a friend"
+      "ES": "Dona dinero al usuario",
+      "EN": "Donate money to the user"
+    },
+    "validation-required": {
+      "ES": "Campo obligatorio",
+      "EN": "Required"
+    },
+    "validation-same-id": {
+      "ES": "No puedes donarte a tí mismo",
+      "EN": "You cannot self-donate"
+    },
+    "validation-commas": {
+      "ES": "Usa '.' en vez de ',' para los decimales",
+      "EN": "Use '.' instead of ',' for decimals"
+    },
+    "validation-number": {
+      "ES": "El valor debe ser un número mayor que cero",
+      "EN": "The value must be number larger than 0"
+    },
+    "validation-exp": {
+      "ES": "Notación no válida",
+      "EN": "Invalid notation"
+    },
+    "validation-wealth": {
+      "ES": "Fondos insuficientes",
+      "EN": "Not enough currency"
+    },
+    "validation-decimals": {
+      "ES": "Usa un número entero o dos decimales",
+      "EN": "Usa un número entero o dos decimales"
     }
   },
   "request-form": {
@@ -137,6 +251,44 @@
     "tooltip": {
       "ES": "Solicita una transferencia a tu cuenta de Steam",
       "EN": "Request a transfer to your Steam account"
+    },
+    "request-submit": {
+      "ES": "Solicitar",
+      "EN": "Request"
+    }
+  },
+  "handshake-user-form": {
+    "tooltip": {
+      "ES": "Envía un handshake a este usuario",
+      "EN": "Send a handshake to this user"
+    },
+    "handshake-submit": {
+      "ES": "Aplica",
+      "EN": "Apply"
+    }
+  },
+  "handshake-event-form": {
+    "confirm-search": {
+      "ES": "Busca",
+      "EN": "Search"
+    },
+    "cancel-search": {
+      "ES": "Cancelar",
+      "EN": "Cancel"
+    },
+    "placeholder-search": {
+      "ES": "Steamid del usuario",
+      "EN": "User's steamid"
+    }
+  },
+  "multiplier-form": {
+    "tooltip": {
+      "ES": "Usa este multiplicador",
+      "EN": "Use this multiplier"
+    },
+    "multiplier-submit": {
+      "ES": "Aplica",
+      "EN": "Apply"
     }
   },
   "copy-steamid": {
@@ -167,7 +319,7 @@
       "EN": "Copied"
     }
   },
-  "jackpot-tooltips": {
+  "event-tooltips": {
     "global-user-chart": {
       "ES": "Esta gráfica las subidas y bajadas de usuarios activos durante el evento, es decir aquellos que aportaron información útil o fueron invitados mediante un multiplicador handshake",
       "EN": "This chart represents the increases and decreases of active users in the event (shareholders), you can become a shareholder by providing useful information or by being invited through a handshake multiplier"
@@ -183,6 +335,24 @@
     "global-user-top": {
       "ES": "En este top se recogen los 10 usuarios con mayor puntuación junto al valor de sus acciones en el evento, puedes consultar sus perfiles e intentar adivinar que estrategia usaron, pero puede que nuestra política de privacidad nos obligue a ocultar la información que aportaron",
       "EN": "In this top the 10 greatest shareholders of the event are displayed along with their shares in the event, you can visit their profiles and try to figure out their strategies, however, our privacy policy might prevent us from showing the information they contributed"
+    },
+    "steamcharts-link": {
+      "ES": "Estadística de este producto en steamcharts",
+      "EN": "Product statistics in steamcharts"
+    },
+    "steamstore-link": {
+      "ES": "Busca este producto en la tienda de Steam",
+      "EN": "Search this product in Steam Store"
+    }
+  },
+  "J01-features": {
+    "J01-register-button": {
+      "ES": "Registra",
+      "EN": "Register"
+    },
+    "J01-register-tooltip": {
+      "ES": "Registra tu tiempo de juego",
+      "EN": "Register your gameplay"
     }
   },
   "event-router":{
@@ -201,6 +371,50 @@
     "personal": {
       "ES": "Tu estadística",
       "EN": "Your stats"
+    },
+    "offers": {
+      "ES": "Ofertas",
+      "EN": "Offers"
+    }
+  },
+  "message-modal": {
+    "ok": {
+      "ES": "Ok",
+      "EN": "Ok"
+    },
+    "close": {
+      "ES": "Cerrar",
+      "EN": "Close"
+    }
+  },
+  "confirm-modal": {
+    "continue": {
+      "ES": "Continuar",
+      "En": "Continue"
+    },
+    "confirm": {
+      "ES": "Confirmar",
+      "EN": "Confirm"
+    },
+    "request": {
+      "ES": "Solicita",
+      "EN": "Request"
+    },
+    "cancel": {
+      "ES": "Cancelar",
+      "EN": "Cancel"
+    },
+    "handshake": {
+      "ES": "Enviar",
+      "EN": "Send"
+    },
+    "multiplier": {
+      "ES": "Aplicar",
+      "EN": "Apply"
+    },
+    "event-post": {
+      "ES": "Registra",
+      "EN": "Register"
     }
   }
 }

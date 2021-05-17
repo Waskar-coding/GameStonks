@@ -2,18 +2,18 @@
 import React from "react";
 
 //Main function
-const TimeLine = ({events}) => {
+const TimeLine = ({actions}) => {
     return(
         <div style={{display: "inline-block", marginLeft: "5px", marginRight: "5px"}}>
             <ul style={{listStyleType: "none"}}>
-                {events.map(event => {
+                {actions.map(action => {
                     return(
-                        <li key={event[0]}>
-                            <TimeLineEvent
-                                bgColor={event[2]}
-                                day={event[0].toISOString().split('T')[0]}
-                                hour={event[0].toISOString().split('T')[1].split('.')[0]}
-                                message={event[3]}
+                        <li key={`${action[0]}_${action[1]}_${action[2]}`}>
+                            <TimeLineAction
+                                bgColor={action[2]}
+                                day={action[0].toISOString().split('T')[0]}
+                                hour={action[0].toISOString().split('T')[1].split('.')[0]}
+                                message={action[3]}
                             />
                         </li>
                     )
@@ -24,8 +24,8 @@ const TimeLine = ({events}) => {
 }
 export default TimeLine;
 
-//Timeline event
-const TimeLineEvent = ({day, hour, message, bgColor}) => {
+//Timeline action
+const TimeLineAction = ({day, hour, message, bgColor}) => {
     return(
         <div style={{backgroundColor: bgColor}}>
             <div style={{display: "inline-block", marginRight: "5px"}}>{day}</div>

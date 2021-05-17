@@ -1,5 +1,0 @@
-Backend:
-    router/getter_db/user_get:
-        O /my_profile
-        O /my_timeline
-        O /donate

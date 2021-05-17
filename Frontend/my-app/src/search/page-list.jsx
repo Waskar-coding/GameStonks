@@ -1,8 +1,8 @@
 //Standard
-import React from "react";
+import React, {useContext} from "react";
 
 //Packages
-import { Link } from "react-router-dom";
+import queryString from "query-string";
 
 //Stylesheets
 import "./PageBox.css"
@@ -11,273 +11,12 @@ import './PageList.css';
 //Language jsons
 import interactiveDict from "../language-display/interactive-classifier";
 
-//Main class
-class PageList extends React.Component{
-    /*
-        Child component of SearchList (see documentation on
-        search-list.jsx).
-    */
-    constructor(props){
-        super(props);
-        this.handlePageChange = this.handlePageChange.bind(this);
-    }
-    shouldComponentUpdate(nextProps, nextState, nextContext) {
-        return (this.props.current !== nextProps.current) || (this.props.maxpage !== nextProps.maxpage);
-    }
-    handlePageChange(page){
-        this.props.toParent(page);
-    }
-    render(){
-        const sort = this.props.sort;
-        const order = this.props.order;
-        const search = this.props.search;
-        const current = Number(this.props.current);
-        const maxPage = Number(this.props.maxpage);
-        const limitArray = getPageInterval(current, maxPage);
-        const pageArray = range(limitArray[0], limitArray[1]);
-        return(
-            <div className="pages_cage">
-                <nav>
-                    <ul
-                        style={{
-                            listStyleType: "none",
-                            display: "flex"
-                        }}
-                    >
-                        <li key='prev'>
-                            <PreviousPage
-                                sort={sort}
-                                order={order}
-                                search={search}
-                                current={current}
-                                maxPage={maxPage}
-                                toParent={this.handlePageChange}
-                            />
-                        </li>
-                        <li key='first'>
-                            <FirstPage
-                                sort={sort}
-                                order={order}
-                                search={search}
-                                limitArray={limitArray}
-                                toParent={this.handlePageChange}
-                            />
-                        </li>
-                        {pageArray.map(page => {
-                            return(
-                                <li key={page}>
-                                    <PageBox
-                                        sort={sort}
-                                        order={order}
-                                        search={search}
-                                        pageDisplay={page.toString()}
-                                        pageNum={page.toString()}
-                                        active={page===current}
-                                        toParent={this.handlePageChange}
-                                    />
-                                </li>
-                            )
-                        })}
-                        <li key='last'>
-                            <FinalPage
-                                sort={sort}
-                                order={order}
-                                search={search}
-                                limitArray={limitArray}
-                                maxPage={maxPage}
-                                toParent={this.handlePageChange}
-                            />
-                        </li>
-                        <li key='next'>
-                            <NextPage
-                                sort={sort}
-                                order={order}
-                                search={search}
-                                current={current}
-                                maxPage={maxPage}
-                                toParent={this.handlePageChange}
-                            />
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        )
-    }
-}
+//Context
+import LanguageContext from "../context/language-context";
+import {SearchParams} from "../context/search-context";
 
-class PreviousPage extends React.Component{
-    constructor(props) {
-        super(props);
-        this.handlePageChange = this.handlePageChange.bind(this);
-    }
-    handlePageChange(page){
-        this.props.toParent(page);
-    }
-    render(){
-        const current = this.props.current;
-        const maxPage = this.props.maxPage;
-        if((current !== 1) && (maxPage!==1)){
-            return(
-                <PageBox
-                    sort={this.props.sort}
-                    order={this.props.order}
-                    search={this.props.search}
-                    pageDisplay={interactiveDict['pagination']['previous']['ES']}
-                    pageNum={current-1}
-                    active={false}
-                    toParent={this.handlePageChange}
-                />
-            )
-        }
-        else{
-            return(<div />)
-        }
-    }
-}
-
-class NextPage extends React.Component{
-    constructor(props) {
-        super(props);
-        this.handlePageChange = this.handlePageChange.bind(this);
-    }
-    handlePageChange(page){
-        this.props.toParent(page);
-    }
-    render(){
-        const current = this.props.current;
-        const maxPage = this.props.maxPage;
-        if((current !== maxPage) && (maxPage!==1)){
-            return(
-                <PageBox
-                    sort={this.props.sort}
-                    order={this.props.order}
-                    search={this.props.search}
-                    pageDisplay={interactiveDict['pagination']['next']['ES']}
-                    pageNum={current+1}
-                    active={false}
-                    toParent={this.handlePageChange}
-                />
-            )
-        }
-        else{
-            return(<div />)
-        }
-    }
-}
-
-class FirstPage extends React.PureComponent{
-    constructor(props) {
-        super(props);
-        this.handlePageChange = this.handlePageChange.bind(this);
-    }
-    handlePageChange(page){
-        this.props.toParent(page);
-    }
-    render(){
-        const limitArray = this.props.limitArray;
-        if(limitArray[0]===2){
-            return(
-                <PageBox
-                    sort={this.props.sort}
-                    order={this.props.order}
-                    search={this.props.search}
-                    pageDisplay="1"
-                    pageNum="1"
-                    active={false}
-                    toParent={this.handlePageChange}
-                />
-            )
-        }
-        else if(limitArray[0]!==1){
-            return(
-                <PageBox
-                    sort={this.props.sort}
-                    order={this.props.order}
-                    search={this.props.search}
-                    pageDisplay="1 ..."
-                    pageNum="1"
-                    active={false}
-                    toParent={this.handlePageChange}
-                />
-            )
-        }
-        else{
-            return(<div />)
-        }
-    }
-}
-
-class FinalPage extends React.PureComponent{
-    constructor(props) {
-        super(props);
-        this.handlePageChange = this.handlePageChange.bind(this);
-    }
-    handlePageChange(page){
-        this.props.toParent(page);
-    }
-    render(){
-        const limitArray = this.props.limitArray;
-        const maxPage = this.props.maxPage;
-        if(limitArray[1] === maxPage-1){
-            return(
-                <PageBox
-                    sort={this.props.sort}
-                    order={this.props.order}
-                    search={this.props.search}
-                    pageDisplay={maxPage}
-                    pageNum={maxPage}
-                    active={false}
-                    toParent={this.handlePageChange}
-                />
-            )
-        }
-        else if(limitArray[1] !== maxPage){
-            return(
-                <PageBox
-                    sort={this.props.sort}
-                    order={this.props.order}
-                    search={this.props.search}
-                    pageDisplay={`...${maxPage}`}
-                    pageNum={maxPage}
-                    active={false}
-                    toParent={this.handlePageChange}
-                />
-            )
-        }
-        else{
-            return(<div />)
-        }
-    }
-}
-
-class PageBox extends React.PureComponent{
-    /*
-        Renders a page box, if it is active it is not clickable,
-        it will change the location and pass props to parent otherwise.
-    */
-    render(){
-        if(this.props.active){
-            return(
-                <span className="selected_page_box">
-                    {this.props.pageDisplay}
-                </span>
-            )
-        }
-        else{
-            return(
-                <Link to={`./find?sort=${this.props.sort}&order=${this.props.order}&search=${this.props.search}&page=${this.props.pageNum}`}>
-                    <button onClick={() => {this.props.toParent(this.props.pageNum)}}>
-                        <span className="page_box">
-                            {this.props.pageDisplay}
-                        </span>
-                    </button>
-                </Link>
-            )
-        }
-    }
-}
-
-function getPageInterval(p, m){
+//Get page interval function
+const getPageInterval = (p, m) => {
     /*
     Sets the number of PageBox instances that must be displayed according to the
     current page and the last page.
@@ -313,12 +52,106 @@ function getPageInterval(p, m){
     //Step 4
     return [infLimit, supLimit]
 }
-function range(start, end) {
-    var ans = [];
+
+//Range function
+const range = (start, end) => {
+    const ans = [];
     for (let i = start; i <= end; i++) {
         ans.push(i);
     }
     return ans;
 }
 
+//Main function
+const PageList = ({current, maxPage}) => {
+    const language = useContext(LanguageContext);
+    const limitArray = getPageInterval(current, maxPage);
+    const pageArray = range(limitArray[0], limitArray[1]);
+    return(
+        <div className="pages_cage">
+            <nav>
+                <ul style={{listStyleType: "none", display: "flex"}} >
+                    {((current !== 1) && (maxPage!==1)) &&
+                        <li key='prev'>
+                            <PageBox
+                                display={interactiveDict['pagination']['previous'][language]}
+                                number={current-1}
+                                active={false}
+                            />
+                        </li>
+                    }
+                    {(limitArray[0]!==1) &&
+                        <li key="first">
+                            {(limitArray[0]===2)? (
+                                <PageBox display="1" number="1" active={false} />
+                            ) : (
+                                <PageBox display="1 ..." number="1" active={false} />
+                            )}
+                        </li>
+                    }
+                    {pageArray.map(page => {
+                        return(
+                            <li key={page}>
+                                <PageBox display={page.toString()} number={page.toString()} active={page===current} />
+                            </li>
+                        )
+                    })}
+                    {(limitArray[1] !== maxPage) &&
+                        <li key="last">
+                            {(limitArray[1] === maxPage-1)? (
+                                <PageBox display={maxPage} number={maxPage} active={false} />
+                            ) : (
+                                <PageBox display={`...${maxPage}`} number={maxPage} active={false} />
+                            )}
+                        </li>
+                    }
+                    {((current !== maxPage) && (maxPage!==1)) &&
+                        <li key='next'>
+                            <PageBox
+                                display={interactiveDict['pagination']['next'][language]}
+                                number={current+1}
+                                active={false}
+                            />
+                        </li>
+                    }
+                </ul>
+            </nav>
+        </div>
+    )
+}
 export default PageList;
+
+const PageBox = ({display, number, active}) => {
+    /*
+    Renders a page box, if it is active it is not clickable,
+    it will change the location and pass props to parent otherwise.
+    */
+    const { setSearchParams } = useContext(SearchParams);
+    const handlePageClick = () => {
+        /*const {sort, order, search} = searchParams.withSearch === true?
+            searchParams : {sort: "", order: "", search: ""};
+
+        const nextUrl = searchParams.withSearch === true?
+            `?sort=${sort}&order=${order}&search=${search}&page=${number}` : `?page=${number}`;
+
+        */
+        const parsedUrl = queryString.parse(window.location.search);
+        let newUrl = Object.entries(parsedUrl).reduce((currentUrl, [key, value]) =>
+            key === 'page'? currentUrl : currentUrl + key + '=' + value +'&'
+        , '?');
+        newUrl = newUrl + `page=${number}`;
+        window.history.pushState({ ...parsedUrl, page: number }, 'title', newUrl);
+        setSearchParams({type: "page", page: number});
+    }
+    return(
+        <div>
+            {(active)? (
+                <span className="selected_page_box">{display}</span>
+            ) : (
+                    <button onClick={() => handlePageClick()}>
+                        <span className="page_box">{display}</span>
+                    </button>
+            )}
+        </div>
+    )
+}
