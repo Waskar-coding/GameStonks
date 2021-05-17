@@ -1,2 +1,4 @@
 # GameStonks
 This project aims to create an application that collects great amounts of data about videogames to help developers, games journalists and other entities while rewarding all the gamers who participate through an event system. Depending on the value of the information the users give their probabilities will increase or decrease, as time passes more complexity will be added to this scoring system, special events, inviting friends... . The scoring system must open the possibility for our users to enjoy sharing their information, employing their own strategies and collaborating with their friends.
+
+Note: This repository features an outdated iteration of GameStonks, since then the paradigm in which this app is based has slightly shifted, real time functionalities are being added, all the backend is being adapted so it can scale within the cloud and frontend programming is being delegated.
